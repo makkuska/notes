@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-03-02T16:15:51+01:00
+
+====== PHP ======
+Created Pátek 02 březen 2012
+
+=== PHP a Postgres ===
+* připojení k databázi: $connection = **pg_connect** ("host=$host dbname=$db user=$user password=$pass") or die ("Nelze spojit");
+* výběr z databáze:
+	* $query = "SELECT * FROM tbod;";
+	* $result = **pg_query**($connection, $query) or die ("Error in query: $query. " . pg_last_error($connection));
+* počet řádků: $rows = **pg_num_rows**($result);
+* název/číslo sloupce: $row = **pg_fetch_row**($result, $i, PGSQL_ASSOC); — PGSQL_ASSOC zajišťuje zjištění názvu, bez něj pouze čísla sloupců
+* **pg_close**($connection);
+

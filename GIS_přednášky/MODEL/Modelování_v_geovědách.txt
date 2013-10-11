@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-10-03T12:08:06+02:00
+
+====== Modelování v geovědách ======
+Čtvrtek 03 říjen 2013
+
+* modelování
+	* k přenosu informace formalizovaným jazykem k dalšímu uživateli
+	* změnou parametrů vyzkoušet různé varianty

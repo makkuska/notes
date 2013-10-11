@@ -1,0 +1,64 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-10-04T10:34:56+02:00
+
+====== 02 - Starověké Řecko ======
+Pátek 04. října 2013
+
+* historie Řecka viz. prezentace
+* moc se nedochovalo, přínos spíše teoretický - matematická kartografie
+* Achillův štít - vyobrazení představy světa
+* **Anaximandrova mapa** - Anaximandros z Milétu
+	* kruhová mapa, uprostřed Delphi, Středozemní moře dobře známo a pak velký flek Asie, Evropa a Lybie a kolem dokola všude oceán
+	* zobrazuje oikúmené = znamý obývaný svět
+	* začátky grafického vyjádření místo slovního
+	* nedochovala se
+* **Hekataiova mapa** (Hekataios z Milétu, žák Anaximandros)
+	* podrobnější mapa než Anaximandrova, ale vychází s ní, už nějaké topologie
+	* nedochovala se
+* Náčrtek stříbrného lomu
+	* dochoval se na skále před vstupem do lomu
+* __názory o tvaru Země__
+	* Homérový básně - Země je placatá obklopena Oceánem
+	* Anaximandros - nízký válec volně se vznášející uprostřed kruhového vesmíru
+	* Hekataios, Pythagoras, Aristoteles - Země je kulatá
+		* koule má dokonalý tvar → Země je kulatá
+		* zatmění slunce dělá kulatý stín
+		* lodě mizí za obzor
+* **Eudoxos z Knidu**
+	* zmapoval hvězdy na viditelné obloze → hvězdy začal spojovat do souhvězdí
+	* sestavil hvězdný glób, který se nezachoval
+		* později podle tohoto glóbu byla vytvořena socha s glóbem místo hlavy (Římané ho vytvořili)
+* **Aristoteles**
+	* učitel Alexandra Velikého - učil ho ať cestou i poznává, nejen dobývá
+	* racionalizovat argumenty o tvaru Země
+	* rozdělil Zemi na 5 pásů vzhledem ke klimatickým podmínkám obyvatelná
+	* popsal známé větry, které se používaly k navigaci na moři
+* helénská doba
+	* poznání Oikumeny, měření rozměrů Země
+	* **Pytheas z Massalie** (380-310 BC)
+		* zeměpisec, námořní cesta k Britským ostrovům, až k polárnímu kruhu - pozoroval, popisoval
+	* **Dikaiachos z Mesiny**
+		* začal používat kartografickou síť - měla jen jednu rovnoběžku =diafragma (36°) a jeden poledník = stragidy, prochází Rhodosem
+	* **Erastotenes z Kyrény** - 8 rovnoběžek, 7 poledníků - síť není pravidelná
+		* počítal velikost Země - vzal 2 místa na stejném poledníku a podle Slunce změřil zeměpisnou šířku
+		* celkem přesný výpočet
+* římská nadvláda = vrchol řecké kartografie
+	* vojenské a obchodní výjezdy, obchodování s Čínou
+	* **Poseidonios z Apameia**
+		* největší omyl antiky → různé hodnoty měly řecké stadium a egyptské stadium (jednotka) a pak to převzal Marinos i Kolumbus - Zeměkoule byla o třetinu menší
+	* **Marinos z Tyru**
+		* opravoval dosud vydané mapy tak, že se bavil s obchodníky, co cestovali
+		* rovnoběžky a poledníky se stejnými intervaly → Marinovo zobrazení - čtverečky
+		* podle Ptolemáia chyby: Marinos převzal špatnou délku od Poseidonia, má čtverečkovou síť - zkresluje to délky v pólech, nekriticky používal stará data bez korekcí
+	* **Klaudios Ptolemaios** (80-165 AD Alexandria)
+		* Syntaxis megale (Almagest ) - astronomický spis, encyklopedi hvězdářského 
+		* kniha Geographia Magna
+			* 8 kapitol:
+				* v jedné kritizuje Marina
+				* v jiné popisuje, jak udělat zeměpisnou síť a až do toho zapisovat data (dříve opačně)
+					* snažil se o lepší vyjádření zeměkoule na plochu
+					* 4 kartografická zobrazení - Marinovo, Ptolemaiovo kuželové, další dvě jsou celkem složité a moc se nepoužívají
+				* místopisný slovník - 8000 pojmů
+				* 27 map, 4 kontinenty, 0° poledník = Ferro na Kanárských ostrovech, bylo to poslední známé území směrem na západ
+				* nedochoval se originál (nejstarší přepis 12stol.)

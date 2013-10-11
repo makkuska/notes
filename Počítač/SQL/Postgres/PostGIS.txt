@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-03-15T17:40:31+01:00
+
+====== PostGIS ======
+Created Čtvrtek 15 březen 2012
+
+* reference POSTGIS - seznam funkcí
+	[[http://postgis.org/docs/reference.html|h]]ttp://postgis.org/docs/reference.html
+* Introduction to POSTGIS
+	http://workshops.opengeo.org/postgis-intro/equality.html
+* USING postgis
+	http://postgis.refractions.net/documentation/manual-1.3SVN/ch04.html
+
+
+* **ST_GeomFromText**
+	* __INSERT INTO ... ST_TheGeomFrom(POINT('52,23 14,33'))__
+* **ST_AsText **
+	* __select ST_AsText(the_geom) from tpolygon ;__
+	                                            st_astext                                            
+	-------------------------------------------------------------------------------------------------
+	 POLYGON((-757090 -1168128,-667238 -1128897,-741904 -1040310,-822265 -1069417,-757090 -1168128))
+	 POLYGON((-519172 -1166229,-549544 -1121936,-470449 -1101055,-497634 -1161800,-519172 -1166229))
+
+* **ST_GeomFromEWKT**
+	* __select ST_GeomFromEWKT(the_geom) from tbod ;__
+	                  st_geomfromewkt                   
+	----------------------------------------------------
+	 0101000020B38E0100000000005A9026C10000000040CE2FC1
+* **ST_X(the_geom), ST_Y(the_geom)**
+* **ST_Area**
+* **ST_Length**
+* http://workshops.opengeo.org/postgis-intro/geometries_exercises.html 
+
+POLYGON(EMPTY)',  'POLYGON((12.6 50.11, 14.57 49.33, 14.78 50.51, 15.65 50.23, 17.21 49.90, 12.6 50.11))'
+
+# CREATE TABLE atbod2 (aid SERIAL PRIMARY KEY);

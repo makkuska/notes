@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-02-06T20:41:21+01:00
+
+====== Linux ======
+Created Pondělí 06 únor 2012
+
+aurikelt_@0908
+.ssh/authorized_keys

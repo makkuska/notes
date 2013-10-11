@@ -1,0 +1,77 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-04-29T08:48:47+02:00
+
+====== 06 - Chceme-li být online... ======
+Created Pondělí 29 duben 2013
+
+====== LBS a mobilní GIS ======
+* technologie - zařízení, které je přenosný, je určen pro práci se službami
+* **Filed-based GIS**
+	* určen pro sběr (aktualizaci) dat
+	* sw: software typu ArcPAD, Locus
+* **LBS** - poskytování služeb
+	* sw: HTML 
+* **offline** - pracuje offline, jen načte polohu
+* **wired internet mode** - přistupuje pomocí internetu
+* **wireless**
+* lokalizace (kde?), najdi nejbližší, jak daleko, řekni mi předpověď (nebo jiný atribut) na základě pozice
+* začalo to na SMSkách, dnes SmartFouny
+* stanovení polohy
+	* podle rychlosti, úhlu signálu či odlišných časech příchodu tohoto signálu
+* datově založený
+	* pozice se dopočítává pomocí jednoho vysílače
+	* omezená přesnost dána hustotou rozmístění vysílačů
+	* Cell ID
+		* rozdělení na buňky, ve městech přesnost 100 až 500 m, v terénu ještě víc
+	* Timing advance
+		* čas šíření signálu mezi telefonem a vysílačem
+		* pomalejší, ale přesnější
+	* Enhanced Cell Galobal Identity
+* síťově založený
+	* přesnější, dražší pro provozovatele
+* A-GPS
+	* asistovaná GPS
+* E-OTD
+	* rozdíl ke 3 stanicím
+
+====== Virtualizace ======
+* na jedno počítači běží více virtuálních strojů
+* typy virtualizace:
+	* emulace
+		* dochází k překladu strojových instrukcí hostovaného systému na strojové instrukce hostitelského stroje
+		* emuluje se procesor, ROM paměť, hadrware
+	* plná virtualizace
+		* virtualizační vrstva nad hadrwarem
+		* př. VirtualBox, WMware
+	* paravitualizace
+		* virtualizace na úrovni operačního systému
+* Source - UPS
+	* Uninterruptible Power Supply
+	* zařízení, co pípá když nejde elektřina
+	* fungují na principu akumulátoru
+	* 9 základní bodů "Proč mít UPS"
+		* přepětí, pokles v síťi, změna frekvence, napěťové rázy, rušení v síti, ..
+	* typy:
+		* off-line - to co máme doma, neumí upravovat napětí, line-interactive - upravuje napětí, online - mají filtry
+	* přepne se do ups režimu a upozorní administrátora, nebo připraví komp na vypnutí, nebo přepnutí do jiného zdroje energie
+
+====== Zálohování a obnova dat ======
+* data pořád dostupná
+* **nestrukturovaná** záloha
+* **plná záloha**
+* **inkrementální** záloha - na začátku komplet záloha, pak už se zálohuje jen to, co se změnilo nebo přidalo
+	* rychlejší, míň dat
+	* při obnově se obnoví ta komplet záloha a pak se přidávají změny a nové věci
+	* př. plná záloha se přidává každých 7 dní, mezi tím jen částečná
+* **diferenciální** záloha
+	* plná záloha, pak se každý den udělá rozdílová podle plné zálohy
+	* 1 měsíčně plná, 1 týdně rozdílová, 1 denně inkrementální
+* **zrcadlo a zpětné rozdíly**
+	* RAID - více násobně diskové pole nezávislý disků
+
+====== RFID technologie ======
+* identifikace objektů **na základně radiové lokace**
+* aktivní x pasivní
+* **když se čip potká se čtečkou**
+* **read only** (sériové číslo) x **WOEM**(můžeš jednou zapsat) x **Read/Write**

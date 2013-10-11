@@ -1,0 +1,36 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-10-09T19:16:19+02:00
+
+====== xBakalářka ======
+Created Neděle 01 září 2011
+
+__Název: __
+* Tvorba modulu pro vstup a editaci dat pro Mapserver
+* Creating a module for input and editing data for mapserver
+__Vedoucí práce:__
+* RNDr. Vilém Pechanec, Ph.D. - KGI
+* __Cíl práce:__
+	* nástroje pro vstup  bod,linie,polygon,,
+	* editace
+	* tlačítka na obrazovce, popsaná struktura
+	* testovat na ArchonIS vc. konverze 
+
+==== Používané prostředky: ====
+* postgis, umn, pmapper 
+* __Používané jazyky:__ gml, js, php
+* Databáze: PostgreSQL, PostGIS
+* vyjít z GeoMoose – body klik JS, předat do db přes SFS, Mitchell opensource, Kimpl bcp 
+
+==== Zásady pro vypracování: ====
+* Cílem bakalářské práce je __návrh a tvorba modulu pro vstup a editaci vektorových dat v prostředí UMN Mapserver.__ Nástroje budou připraveny pro __webového rozhraní tenkých klientů__ a data se budou ukládat dle __standardů OGC do prostředí PostGIS__. Nástroje budou pracovat s geometrickou a atributovou složkou geoprvku. Na základě literární rešerše autorka zpracuje koncept projektové dokumentace, na jejímž základě modul zrealizuje. Při realizaci bude respektovat pravidla pro tvorbu webových aplikací a výsledný produkt bude zcela založen na nekomerčních řešeních. Funkční řešení bude dále implementováno do __systému ArchonIS__. 
+* Teoretická část práce se bude věnovat problematice vstupu a editace prostorových geodat skrze webová rozhraní. Proces praktické části bude dostatečným způsobem zdokumentován a  algoritmizován. Studentka odevzdá údaje o všech datových sadách, které vytvořil nebo získal v rámci práce, pro potřeby zaevidování do Metainformačního systému katedry geoinformatiky ve formě vyplněného webového formuláře. Celá práce (text, přílohy, výstupy, zdrojová a vytvořená data, metadatový xml záznam) bude odevzdána v digitální podobě na CD (DVD) a text práce s vybranými přílohami bude odevzdán ve dvou svázaných výtiscích na sekretariát katedry. O bakalářské práci student vytvoří webovou stránku, která bude v den odevzdání práce umístěna na katedrální server. Práce bude zpracována podle zásad dle Voženílek (2002). Na závěr bakalářské práce připojí student jednostránkové resumé v anglickém jazyce. 
+* __Seznam doporučené literatury:__
+	* Alková E. (2010): Archeologický informační systém Olomouce. [Diplomová práce]. Katedra geoinformatiky, PřF, Univerzita Palackého v Olomouci.
+	* Burian, J. (2005): Internetové řešení územního plánu města Náměště nad Oslavou. [Bakalářská práce] Katedra geoinformatiky, PřF, Univerzita Palackého v Olomouci.
+	* Grusová., L. (2002): XML pro úplné začátečníky. Praha, Computer Press, 2002 196 s. ISBN 8072266977
+	* Mitchel, T. (2005): Web mapping illustrated. Using Open Source GIS Toolkits. Sebastopol, O Reilly Media., 349 s.
+	* Kimpl L. (2010): Prostorové nadstavby nekomerčních databází - vstup a správa geoobjektů.[Bakalářská práce]. Katedra geoinformatiky, PřF, Univerzita Palackého v Olomouci.
+	* Peng, Z-R., Tsou, M-H. (2003): Internet GIS : distributed geographic information services for the Internet and wireless networks. Hoboken, Wiley and Sons, 2003 679 s. ISBN 0471359238
+	* Tang, W., Selwood, J. (2003): Connecting our world: GIS Web services. Redlands, ESRI, 2003, 164 s. ISBN 1589480759
+	* Welling, L., Thomson, L. (2002): PHP a MySQL - rozvoj webových aplikací. Praha, SoftPress, 718 s. ISBN 8086497208

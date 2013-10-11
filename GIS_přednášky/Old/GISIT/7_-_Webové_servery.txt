@@ -1,0 +1,82 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-11-12T08:02:34+01:00
+
+====== 7 - Webové servery ======
+Pondělí 12 listopad 2012
+
+====== Apache HTTP server ======
+* **httpd.conf (konfigurace HTTP démon)**
+	* umístění /etc/httpd/conf/httpd.conf
+	* 1) direktiva v první sekci Global Environment
+		* přidávají si statické a dynamické moduly
+	* 2) direktiva pro všechny aplikace (druhá sekce Main server confuguration)
+		* P//ort, User apache// (má právě spouštět server)
+		* //group, server, admin//
+		* D//ocumentRoot// (var/www/work) - může být mimo strukturu, direktoryIndex (index.html index.cgi)
+		* //AccessFileName .htaccess// - název souboru s informacemi o přístupu, omezující práva
+		* //DefaultType// text/plain - defaultní MIME typ pro nerozpoznané dokumenty 
+		* //HostnameLookups Off/On// - logovat jména klientů nebo IP adres
+		* //ScriptAlias ///cgi-bin/ "var/www/cgi-bin/" - kde jsou klíčové skripty
+		* //AddType application .cgi //
+	* 3) direktiva v třetí sekci Virtual Hosts umožňuje více domén pro jeden server
+		* jedna doména je hlavní, ta se řídí tou první 
+		* každé další domény jsou nastaveny ve Virtual Hosts
+		* pro každé domény se nastaví derektiva //<virtualHost IP>ServerAdmin; DokumentRoot; ServerName domain_one.com; ErrorLog; CustomLog</virtualHost>//
+	* SSL Secure Socket Layer
+		* umožňuje bezpečnou komunikaci pomocí HTTPS protokolu, standardní port pro HTTPS je 443
+		* používá asymetrické šifrování pomocí veřejného klíče (certifukátu), který je v souboru /etc/httpd/conf/ssl.crt/cerver.crt
+				//<virtualHost>SSLEngine on; SSLCertificateFile server.crt; SSLCertificateKey</virtualHost>//
+* **.htaccess** (ASCII soubor)
+	* používá se k vytvořžení vlastních chybových dokumentů
+	* //ErrorDocument// 404 ect/404.html 
+	* //DirectoryIndex// nastavení východí stránky, časté u mapových aplikací
+	* blokace souboru: deny/allow (zablokované/povolené)
+		* deny from 123.123.123.123; deny from 123.123
+		* allow from all; allow from 123.123.123.123
+* další důležité adresáře:
+	* /etc/httpd/modules/ (moduly) - u mě: /usr/lib/apache2/modules/
+	* /etc/httpd/logs/ (logovací soubory) - u mě: var/log/apache2
+	* /etc/www/ (kořenový soubor dokumentů serveru)
+	* /etc/www/cgi-bin/ (adresář pro skripty serveru) -  u mě: /usr/lib/cgi-bin
+
+====== Komunikace mezi vrstvami ======
+* komunikace mezi databázovým serverem a serverem aplikačním probíhá prostřednictvím stanoveného protokolu 
+	* univerzální protokoly (ODBC, GDBC s jádrem Javy) nebo speciální pro daný databázový server
+	* 5 parametrů, které se vždy musí nastavit: host=localhost dbname=my_db user=postgres password=dosys port: 5432
+
+===== Knihovny =====
+* napíšu zdrojový kód, přímo vkládám přes #iclude - nutná kompilace
+* __statické__ (soubory .lib) - je již překompilován
+* __dynamické__ - .so (Unix), .dll (Widle)
+	* knihovna nevisí v paměti, spustí se jen, když ji zavoláme
+	* **RPC** (vzdálené volání procedur)
+		* mechanismus volání pro aplikace typu klient/server
+		* server poskytuje své služby formou procedur (adresu+parametry), server zpracuje, posílá zpět
+		* platformní nezávislost, pokud je dodržena základní struktura dat, jednoduchost, dostupnost
+		* každá procedura má své jedinečné číslo (př. procedura SHPtoOGR pro verzi 2 a 3)
+	* RPC-XML
+		* vše se posílá pomocí xml struktury
+	* **COM **
+		* je to standart, jak programovat (není to jazyk ani soubor objektů), vyvinut pro Windows, ale je nezávislá
+		* určuje základní vlastnosti objektů a pravidla pro práci s daty
+		* modularita
+			* com objekt by se měl zabývat jen sám sebou, né ostatními objekty
+			* objekt má dané určité metody, pomocí nichž lze jim manipulovat
+			* objekt se v průběhu verzí měnit, ale jeho rozhraní je stabilní
+		* univerzálnost
+			* nezávislost na programovacím jazyku
+			* deklarace objektů a jejich metod pomocí interface Definiton Language (IDL)
+		* správa paměti
+			* životní cyklus komponent se řídí referencemi - počet pointerů, které na daný objekt ukazují
+			* klient pouze zvyšuje či snižuje počet referenci dle jednoduchých pravidel
+	* **DCOM** - distribuované
+		* Microsoft - ActiveX, není multiplatformní, uzavřenost
+	* **CORBA** - distribuované volání
+		* pro vývoj, návrh, pravidel distribuovaných aplikací
+		* mechanismus založen na tom, že každý objekt má definovaná pravidla
+		* multiplatformní
+	* OLE
+	* ActiveX - nástupce OLE
+	* ATL - VisualBasic
+	* WTL

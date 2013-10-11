@@ -1,0 +1,107 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-12-16T19:25:33+01:00
+
+====== 2 - Metody monitoringu na vodoměrné stanici ======
+Created Neděle 16 prosinec 2012
+
+* pozorování vodního stavu, teploty, plavenin - ČHMÚ, další organizace
+
+=== Přesnost hydrologických údajů ===
+* 4 třídy přesnosti
+* QN - průtok za N-letou vodu
+* třída - hodnoty získané přímým měřením: pro N=1-10 - přesnost 10%; N=20-100 - přesnost 150%
+* II. třída - odvozené analogií v případě, že charakteristiky povodí si plně odpovídají: pro N=1-10, 20%; pro N=20-100, 30%
+* III. třída - odvozené analogií v případě, že charakteristiky povodí si neodpovídají: pro N=1-10, 30-40%; pro N=20-100, 40-60%
+
+=== Hydrometrie ===
+* zabývá se měřením hydrologických jevů a jejich zpracováním
+* systematické měření vodních stavů
+* měření teploty vody, sledování ledovcových jevů
+* zjišťování fyzikálních nebo chemických vlastností vody
+* měření průtoků vody a množství splavenin
+* měření vydatnosti pramenů, sledování změn hladiny podzemní vody
+
+=== Pohyb vody v otevřeném korytě ===
+* **ustálené proudění** - průtok je v čase i prostoru konstantní
+	* rovnoměrné - hloubka, průtočná plocha a průřezová rychlost je v každém příčném řezu konstantní **x** nerovnoměrné
+* **neustálené** - průtok se mění v čase i prostoru
+* **laminární** - velikost a směr vektorů rychlosti zůstávají neměnné
+* **turbolentní** - velikost a směr se mění
+* Reynoldsovo číslo Re
+* pohyb vody v korytě je ovlivňován - gravitací, třením, nerovností dna a břehů
+	* **pulzace** - stálé kolísání rychlostí kolem průměrné hodnoty (turbolence)
+	* **izotachy** - izolinie stejných rychlostí v průtočném profilu
+
+=== Měření průtoku ===
+* **přímé měření průtoku Q**
+	* **objemová metoda (Q = V/t **objem/čas)
+		* měření pomocí kalibrované nádoby
+		* mění se čas naplnění nádoby - po naplnění se automaticky sklopí
+		* používá se pro kontinuální měření malých průtoků, kde není možno použít vrtuli
+		* přesné
+	* **měrný přepad (přeliv)**
+		* pro se opět pro malé vodní toky do šířce do 2 metrů
+		* kontinuální měření v uzávěrových profilech 
+		* voda protéká přes přepadovou stěnu výřezem ve stěně
+		* průtok je odvozený z výšky přepadajícího paprsku a šířky přepadové hrany
+		* přepad může být obdélníkový, trojúhelníkový, vaničkovitý
+		* přesné
+	* **chemická (směšovací) metoda**
+		* chemická látka (KMnO_{4}, NaCL) se vypouští hadičkou do vody
+		* v níže položeném profilu sledujeme její koncentraci
+		* Q1.c1 = Q2.c2 - průtok hadičkou * koncentrace látky v ní = průtok v níže položeném toku * koncentrace látky v toku
+		* využití pro horské bystřiny s turbolentním prouděním
+		* málo přesná
+	* **Venturiho žlab (Q = K.b.h**^{n}**)**
+		* využívá zúženého průřezu žlabu
+* **měření rychlosti	**
+	* __měrná křivka__ vyjadřuje vztah mezi vodním stavem a průtokem v daném profilu
+	* **hydrometrická vrtule**
+		* počítadlo otáček - na základě času T a otáček N se kalibrační rovnicí určuje rychlost proudění 
+		* n=N/T
+		* kalibrační rovnice v=alfa + beta*n
+		* upevnění vrtule - tyč, lanový závěs se závažím
+		* měření zpravidla 30-100s
+		* úplné měření - v 6-ti výškách (ode dna po hladinu)
+		* pětibodové měření - vypouští se 0,6h
+		* trojbodové - vypouští se 0,6, dno a hladina
+		* orientační měření - dvoubodové (0,2H, 0,8H), jednobodová (0,4H)
+	* **ultrazvukové měření rychlosti**
+		* založeno na Dopplerově efektu
+	* **plováková metoda**
+		* měření povrchové rychlosti
+		* není tak přesná jako měření vrtulí, ale není potřeba nákladného zařízení a jde použít tam, kde by bylo obtížné použít vrtuli
+	* **měření systémem ADCP**
+		* založeno na Dopplerově efektu - ultrazvuková sonda
+		* měření rychlostí a hloubek toků, výpočtu průtoku
+		* uložen na člunu
+		* používání hlavně při povodních
+		* rychlost a přesnost
+* **hydrotechnický výpočet rychlosti**
+	* Manningova rovnice, Chezyho rovnice
+* **měření vodní stavu**
+	* vodočet
+		* smaltovaná kovová lať, dělení po 2cm, upevnění k dlažbě břehu, zdi, mostu
+		* svislé (na zdi), svahové (na skloněném břehu)
+	* limnigraf
+		* zaznamenává se limnigram
+		* budka, princip spojených nádob
+	* tlakové hladinoměry
+		* měření hydrostatického tlaku, pro otevřená koryta
+	* ultrazvukové hladinoměr
+		* měření rychlosti odezvy ultrazvukového paprsku, pro otevřená koryta
+* **konsumpční (měrná) křivka**
+	* pro dané měřící zařízení nebo limnigrafický profil udávají vztah mezi polohou hladiny a průtokem
+* monitoring dalších veličin
+	* fyzikálně-chemické ukazatele
+		* fyzikální - teplota, reakce vody pH, obsah rozpuštěných látek, tvrdost, pach, barva
+		* kyslíkové poměry - obsah rozpuštěného kyslíku
+		* organické - přírodní x antropogenní
+		* anorganické látky - sloučeniny dusíku, fosforu, síry, chloru, floru
+		* těžké kovy
+		* radioaktivita
+	* biologické 
+	* kvalita vody - I. - V. třída velmi čistá - velmi silně znečištěná voda
+	* monitoring plavenin - 2x denně
+	* sedimenty - 2x ročně

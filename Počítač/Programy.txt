@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-05-29T16:19:54+02:00
+
+====== Programy ======
+Created Středa 29 květen 2013
+
+* **antiword** - umí převést doc file do text a pdf
+* **pdftk** - mimo jiné spojí všechna pdf do jednoho
+	* Merge PDF Documents or Collate PDF Page Scans
+	* Split PDF Pages into a New Document
+	* Burst a PDF Document into Single Pages
+	* Rotate PDF Documents or Pages
+	* Update PDF Metadata
+	* Attach Files to PDF, Unpack PDF Attachments
+	* spojení: __pdftk * output NazevVystupnihoSpojenehoSouboru.pdf__
+* **ferret** - intrakorpální nástroj pro detekci podobnosti textu
+* **ora2Pg** - Perlový modul a skript pro převod databáze z Oraclu do PostgreSql. 
+* **piwik** - nástroj pro analýzu návštěvnosti webových stránek
+* **APACHE2**
+	* konfigurace:
+		* základní konfigurace **/etc/apache2/apache2.conf**
+		* **/etc/apache2/sites-available/default**
+			* //DocumentRoot /var/www//
+			* tedy vytvořit složku /var/www - tam jsou data
+		* **/etc/apache2/envars **
+			* //export APACHE_RUN_USER=www-data//
+			* //export APACHE_RUN_GROUP=www-data//
+	* po instalaci Apache:
+		* 1) vytvořit složku /var/www
+		* 2) dej jí práva pro usera:skupinu www-data
+			* //chown -R www-data:www-data www///
+		* 3) vytvoř složku work - pokud chceš mít přístup z market (z homu), přidej market do **/etc/group**
+			* //www-data:x:33:market//
+		* 4) dej složce /var/www práva pro vlastníka a skupinu
+			* chmod -R 775 /var/www
+		* 5) vytvoř link do home/market
+			* ln -s ../../var/www/work
+              
+

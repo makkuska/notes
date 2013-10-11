@@ -1,0 +1,228 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-10-15T09:36:49+02:00
+
+====== 4 - XML ======
+Pondělí 15 říjen 2012
+viz prezentace 3-xml.pdf
+
+* obecný značkovací jazyk; formát, soubor pro výměnu dat
+* měl by být otevřený, sdílený, implementovaný (podpora na úrovni veřejných validátorů)
+* určen k vytváření konkrétního značkovacího jazyku pro různé účely, pro publikaci dat
+* nezávislé, podporované, zadarmo
+* zabývá se strukturou dokumentu (hlavička, telefonní číslo)
+* pomocí klonu xml
+* xml nemá žádnou značku, má pouze instrukce a pravidla, je přísnější než HTML
+* v xml si vymyslím pravidla, vše je nadefinováno
+* **+ pozitiva**
+	* snadná výměna na netu
+	* všeobecně přijímána syntaxe, která je standardizována, pro popis a strukturu (všichni ji přijímají i Windows)
+	* snadná konverze do jiných formátů
+	* spousta podpůrných nástrojů (parsery, editory) - zdarma
+* **— negativa**
+	* je ukecaný
+* slouží ke strukturalizaci dat
+	* k popisu struktury
+	* tabulky, adresáře, geodata, ..
+	* soubor pravidel	
+	* není programovací jazyk - není potřeba znalosti programování
+	* editor jednoduchý (gedit)
+	* rozšířitelné, nezávislé na platformě, podporuje lokalizaci
+	* vyhovuje standardu Unicode - jednoznačný zápis pro všechny, jednotná velikost, pevně zakódován
+* je celá skupina technologií
+	* xmlLink
+	* xPointer
+	* xSL
+	* DOM
+* staronové (*86)
+* XML → html → XHTML
+* je modulární
+	* různé namespaces
+* základem pro sémantický web a RDF
+* editor: Altova XML Spy, Xml Mind Xml
+* XML Parsery
+	* vykonává syntaktickou analýzu
+	* analýza posloupnosti prvků -> transformace vstupního textu do datové struktury (stromu)
+	* vstupním krokem SA - zpravidla lexikální analýza - za vstupního textu se vytváří posloupnost tzv. Tokenů (elementárních nositelů významu)
+
+===== Vlastnosti XML =====
+* mezinárodní podpora **jazyků** (UTF-8)
+* vysoký informační obsah
+* striktně odděleny - struktura (xml tag), obsah (uzavřen mezi tagy - žádný volný text), vzhled se neřeší - to celé element (viz prezentace 3-xml)
+* text čtený počítačem, není určen pro čtení člověkem
+* nešetří místem - **ukecaný**
+* **syntaxe xml **
+	* existuje jediný kořenový element
+	* elementy jsou uzavřené
+	* elementy se nepřekrývají, pouze mohou být vnořené
+	* hodnoty atributů jsou ohraničeny v uvozovkách
+* **typy uzlů:**
+	* element, atribut, text <element atribut="hodnota">text</element>
+	* komentář <!-- vykřičník pomlčka pomlčka -->
+	* processing instruction <?xml version="1.0" encoding="UTF-8"?>
+	* CDATA <!CDATA[neparsovaná část]>
+* postup: xml se zvaliduje (well formed document) a poté zvoliduje pomocí DTD nebo XSD
+* snadná **konverze dat** do jiných formátů
+* definování **stylu** pomocí CSS nebo XSL
+* **automatická kontrola struktury** dokumentu pomocí paseru (programu, který kontroly prování) - DTD, XSD (XML schéma)
+* styl = soubor pravidel, / příkazů, která definují, jak se dokument převede do jiného formátu - PostScript, Html, XML
+* kaskádové styly - pouze pro jednoduché formátování
+* **strojově kontrolovatelný**
+	* automatická kontrola
+	* možné definovat v souboru DTD (Document Type Definition) - ale není primárně určen pro XML
+	* kontroluje jen strukturu, né obsah
+	* parser = program, který provádí kontrolu
+		* xml schéma (XSD - nepoužívá se DTD) 
+* hypertext a odkazy
+	* rozšíření (samostatný program pro tvorbu odkazů) XLink - odkazuješ na dokument, aniž by ho dopředu znal - pomocí URL 
+
+===== Jmenný prostor / XML namespaces =====
+* seskupení příbuzních prvků xml dokumentů z důvodu snažšího rozeznávání
+* umožňuje kombinovat v 1 dokumentu pojmy/značky/tagy z různých xml schémat, tak aby nedošlo ke kolizi témat, aby vymezil kontext
+* formát
+	* xmlns(=xmlnamespaces):prefix="URI sady značek"
+		* př. xmlns:svg="hppt://www.w3.org/200/svg"
+		* př. xmlns:gml=""
+	* <svg:circle /> pro styl
+	* <mapa:linie mata:titulek="Linie1">bla bla obsah </mapa:linie>
+	* <můjElementBezNázvu xmlns="" />
+	* možnost kombinovat
+* vztahy k pochopení hierarchie dokumentu:
+* parent-child-sibling (rodič-dítě-sourozenec)
+* ancestor-descendat(předchůdce-následovník)
+* SAX (simple API for XML)
+	* umožňuje proudové zpracování - dokument se rozdělí na jednotlivé jeho části a začne zpracovávat, postupuje po jednotlivých tag značkách a přiřazuje pravidla
+	* proces:
+		* 1) otevření tagu - "založ uzel typu element"
+		* 2) otevřený element - získá vkládací kontext
+		* 3) ukončovací tag - "vrať kontext rodiči
+* návrh XML dokumentu
+	1. vytvořit slovník dat
+	2. analyzujeme závislosti (kurz 1 : 1 název, kurz 1 : 1 čas, kurz 1 : N student, student 1 : 1 jméno)
+	3. identifikujeme atributy <student jméno="Markéta" /> a elementy <student><jméno>Markéta</jméno></student>
+		* kvůli vyhledávání lepší mít více elementů, ale zase je to na úkol velikosti dat
+		* pro databázi lepší tagy s atributy než elementy
+
+===== DTD =====
+* převzato z SGML
+* jednoduchost, stručnost, může součástí xml dokumentu
+* nižší vyjadřovací schopnost, nepoužívá xml syntaxi - optížnější parsování
+* 1 element = 1 instrukce 
+	* <!ELEMENT adresa (ulice,mesto,psc)> posloupnost prvků, v závorce bez mezer
+	* <!ELEMENT ulice(PCDATA)>
+	* četnost elementů 
+		* !ELEMENT A (B) právě jednou
+		* A (B+) jednou a více
+		* A( B*) nula a více
+		* A (B?) nula nebo jedna
+		* A (B,C) sekvence B a C (pořadí)
+		* A (B|C) výběr B nebo C
+* atributy
+	* <!ATTLIST název atributy (B) barva (červená|oranžová|zelená) "zelená" ulice CDATA #REQUIRED> 
+		* "zelená"=výchozí hodnota
+		* CDATA - volná znaková data
+		* #REQUIRED #IMPLITED
+
+===== XSD =====
+* extrémní vyjadřovací schopnost, zavádí datové typy, jmenné prostory, nativní xml syntaxe
+* složité, obsáhlé
+* <xs:element name="adresa"> název
+	* <xs:complexType> obsahuje další elementy (simpleType pro jen text)
+	* <xs:sequence>
+		* <xs:element name="ulice" type="xs:string"/>
+		* <xs:element name="město" type="xs:string"/>
+		* <xs:element name="psč" type="xs:string"/>
+	* </xs:sequence>
+* </xs:element>
+* xs:string - text
+* xs:decimal - celočíselné
+* xs:integer - 
+* xs:boolean - 2 hodnoty opačné
+* xs:data - datum YYYY/MM/DD
+* xs:time - čas 00:00:00 
+			<xs:simpleType name="str20">
+				<xs:restriction base="xs:string">
+					<xs:maxLenght value="20">
+				</xs:restriction>
+			</xssimpleType>
+			<xs:simpleType name="psc">
+				<xs:restriction base="xs:string">
+					<xs:maxLenght value="\d{2} \d{2}">
+				</xs:restriction>
+			</xs:simpleType>
+			* identifikátory all(libovolné pořadí)|choice(=jeden nebo druhý)|sequence(jen jednou a v pevně daném pořadá|group
+
+===== Aplikace XML: =====
+* XHTML
+* RDF
+* **RSS & GeoRSS**
+	* metadatové formáty určení pro čtení zpráv, novinek
+	* Publikace ve formátu RSS + čtečka, která umí zpracovat RSS záznam
+	* původně využití pouze pro média, později pro uživatele
+	* hlavička, nadpis
+	* kanál může mít více kanálu na 1. zdroji (živě, kraje - novinky.cz)
+	* <rss><chanel><title><link><description> - povinné
+	* zbytek nepovinné <language><copyright><managingEditor-kdo je odpovědný za obsah><webmaster><datum publikování><category><docs><ttl><image><guid-jednoznačná identifikace toho souboru, která je dohledatelný - permanent link>
+	* GeoRSS - RSS + standart pro geografické polohy (gegrafická poloha webu + geografická poloha vztahující se k obsahu zprávy)
+		* geometrie - bod, linie, polygon (nejméně 4 páry souřadnic, poslední je totožný z prvním), box (čtverec, 2 páry, levý dolní pravý horní)
+		* souřadnice - šířka délka (hodnota mezera hodnota mezera hodnota mezera hodnota)
+	* simple GeoRSS - prefix:point <georss:point>45 15</georss:point>
+	* GML př.: <georss:where><gml:LineString><gml:posList>
+	* <exterior>vnější hranice polygonu, <linearRing> uzavřená linie, další možnosti linie, která se napojuje na další polygon
+	* w3c basic <geo:Point><geo:lat><geo:long> - nepoužívá se!
+	* souřadnicové refereční systémy - default WGS84
+	* nadmořská výška - pouze v simple RSS <elev-v metrech, od elipsoidu><floor-počet pater průměrné americké budovy>
+	* není specifikace pro 3D
+	* vzájemná vztahy (Relationship) - is-located-at, průsečík
+* **GeoTagging**
+	* GeoURL + Dublin Core (CD)
+	* GeoTag 
+* Atom Syndecation (podobný RSS)
+	* i pro videa, nekompatibilita s RSS
+* Podcast - miltimediální obsah, mp3
+* SMIL - multimédia, nahrazeno <audio/video> canvas
+* MathML - pro popis matematických vzorců a symbolů
+* SVG - vektorová grafika na webu
+* DocBook - sada definic pro publikační činnost
+* Jabber - protokol pro Instant messaging
+* SOAP - protokol pro komunikace mezi Webovými službami
+* OpenDokument - odt. OpenOffice, textový formát pro ukládání a výměnu
+* RPC - Remote Procedure Call
+	* vzdálené volání programů, pro práci v síti, 
+	* pracují jako požadavdky HTTP protokolu
+	* 3 datové typy - skalár (1 veličina), pole (více hodnot setříděných/indexovaných), struktura (hodnoty i pravidla hodnot)
+	* serializace - tranformace hodnot do podoby, která je uchopitelná a přenositelná sítí
+* **XPath** (xml path language)
+	* jazyk pro adresování části XML dokumentů - obdoba hypertextu
+	* standart W3C
+	* slouží jako navigační nástroj
+	* pravidla pro cestu: 
+		* před název atributu zavináč
+		* vypsání cesty k souboru (identifikátor osy, test uzlů (jestli je tam nějaká podmínka), celková podmínka)
+		* jednotlivé kroky se oddělují lomítkem
+		* čte se zleva doprava
+		* povinný test uzlů
+	* 13 os - rodič, descendat, part, ancestor, attribute, ...
+		* A/B/folowing-sibling::*[1]
+		* pro nejpouživanější osy existují zkratky - attribute::id = @id
+		* predikáty - //zboží[@sleva >= @cena div 2]
+	* porovnávací vzory:
+		* relativní cesta: B/@e
+		* absolutní cesta: A/B/C
+		* absolutní kořen: /
+		* aktuální uzel: . (tečka)
+		* rodič: ..
+		* libovolný název: *
+		* hlubší potomek: //C
+		* spojení: A|B
+	* predikáty:
+		* kurz/student[1] - první hodnota
+		* kurz/student[last()] - poslední
+		* //kurz[@nazev] - všechny s názvem
+	* operátory
+	* funkce:
+		* count(()) - vrací počet uzlů
+		* position()
+		* last()
+		* contat(str, str, ..) - spojuje řetězec
+		* substring(str,start,len) - podřetězec od pozice start s délkou len

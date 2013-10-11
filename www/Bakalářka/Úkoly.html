@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title></title>
+		<meta name='Generator' content='Zim 0.52'>
+		<style type='text/css'>
+			a          { text-decoration: none      }
+			a:hover    { text-decoration: underline }
+			a:active   { text-decoration: underline }
+			strike     { color: grey                }
+			u          { text-decoration: none;
+			             background-color: yellow   }
+			tt         { color: #2e3436;            }
+			pre        { color: #2e3436;
+			             margin-left: 20px          }
+			h1         { text-decoration: underline;
+			             color: #4e9a06             }
+			h2         { color: #4e9a06             }
+			h3         { color: #4e9a06             }
+			h4         { color: #4e9a06             }
+			h5         { color: #4e9a06             }
+			span.insen { color: grey                }
+		</style>
+	</head>
+	<body>
+
+<!-- Header -->
+
+	[ <a href='./Popis_prost%C5%99edk%C5%AF.html'>Prev</a> ]
+
+			[ <a href='/'>Index</a> ]
+
+	[ <a href='../DMREL.html'>Next</a> ]
+
+<!-- End Header -->
+
+<hr />
+
+<!-- Wiki content -->
+
+<h1>Úkoly</h1>
+
+<p>
+Created Pondělí 17 říjen 2011<br>
+</p>
+
+<p>
+<ul>
+<li style="list-style-image: url(../../_icons/checked-box.png)">přes prázdniny: instalace PostGIS, umn, GeoMoose, Kimpl bcp nastudovat </li>
+<li style="list-style-image: url(../../_icons/checked-box.png)">naistalovat postgreSQL, postGIS, UMN MapServer, pmapper, GeoMoose</li>
+<li style="list-style-image: url(../../_icons/checked-box.png)">vytvořit prezentaci, odprezentovat na 1.bd (21.10)</li>
+<li style="list-style-image: url(../../_icons/checked-box.png)">apache/conf/httpd.conf -&gt; poslat (do 14.10.)</li>
+<li style="list-style-image: url(../../_icons/unchecked-box.png)">struktura; kde instalace appache !!!!</li>
+<ul>
+<li style="list-style-image: url(../../_icons/checked-box.png)">1) vizualizovat 1 bod přes PostGIS (použitá projekce 4326 a 102067)</li>
+<ul>
+<li>vložena projekce 102067 do PostGISu (<a href="http://janitor.cenia.cz/www/public/manual/postgresql_install/ar01s04.html" title="http://janitor.cenia.cz/www/public/manual/postgresql_install/ar01s04.html">http://janitor.cenia.cz/www/public/manual/postgresql_install/ar01s04.html</a>)</li>
+<ul>
+<li>INSERT INTO "spatial_ref_sys" ("srid","auth_name","auth_srid","srtext","proj4text") VALUES(102067,'ESRI',102067,'PROJCS["S-JTSK_Krovak_East_North",GEOGCS["GCS_S_JTSK",DATUM["D_S_JTSK",SPHEROID["Bessel_1841",6377397.155,299.1528128]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]],PROJECTION["Krovak"],PARAMETER["False_Easting",0],PARAMETER["False_Northing",0],PARAMETER["Pseudo_Standard_Parallel_1",78.5],PARAMETER["Scale_Factor",0.9999],PARAMETER["Azimuth",30.28813975277778],PARAMETER["Longitude_Of_Center",24.83333333333333],PARAMETER["Latitude_Of_Center",49.5],PARAMETER["X_Scale",-1],PARAMETER["Y_Scale",1],PARAMETER["XY_Plane_Rotation",90],UNIT["Meter",1]]','+proj=krovak +lat_0=49.5 +lon_0=24.83333333333333 +alpha=30.28813975277778 +k=0.9999 +x_0=0 +y_0=0 +ellps=bessel +units=m');</li>
+<li>1) Pomocí pgAdmin III se konektuje postgreSQL server • 2) Dvojklikem na "PostgreSQL Database Server 8.1" se po zadání hesla provede připojení k serveru  • 3) Dvojklikem na databázi "postGIS" je daná databáze aktivována • 4) Z nástrojové lišty se spustí nástroj na vykonávání SQL příkazů • 5) Výše zobrazení sql příkaz se zkopíruje do schránky (Ctrl+C) a vloží se do horního okna SQL nástroje (Ctrl-V) • 6) Tlačítkem "Execute Query" je daný skript vykonán</li>
+</ul>
+</ul>
+<li style="list-style-image: url(../../_icons/checked-box.png)">data (shape) z p.mapperu 4.2. vložena do databáze (my_db, přes QGIS) a opraven mapscript, tak aby p.mapper zobrazovat data z databáze</li>
+<li style="list-style-image: url(../../_icons/unchecked-box.png)">nakreslit objekt - operace na stane klienta - javascript x canvas ...</li>
+<li>kde adresáře - cgi-bin x mapscript (lepší --  knihovny apache?) (28.10) --</li>
+<li>1) vizualizovat 1 bod přes post gis - mapserver, něco vykreslit</li>
+<li>2) -&gt; geometrická úroveň -&gt; souřadnice -&gt; fyzická paměť -- Klient JS</li>
+<ul>
+<li>JS, open.layers</li>
+</ul>
+<li>3) -&gt; přeposlat na mapserver -&gt; propojit přes db -&gt; převést do gml</li>
+<li>4) -&gt; zapsat/uložit do postGIS -&gt; zobrazit + jazyky</li>
+<li>jak začít, s čím začít, proč -&gt; jak sejmout souřadnice, uložit do fyzické paměti</li>
+<li>sdílet přes google doc</li>
+<li>struktura databáze podle EvyAlkové</li>
+</ul>
+</ul>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+Velmi dobry navod jak do PostGISu dostat podporu projekce 102067 je zde:<br>
+</div>
+<div style='padding-left: 60pt'>
+<a href="http://janitor.cenia.cz/www/public/manual/postgresql_install/ar01s04.html" title="http://janitor.cenia.cz/www/public/manual/postgresql_install/ar01s04.html">http://janitor.cenia.cz/www/public/manual/postgresql_install/ar01s04.html</a><br>
+</div>
+</p>
+	
+<p>
+<div style='padding-left: 30pt'>
+Stale mi chybi vase uvaha jak to chcete resit, takze jedna z moznych cest<br>
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+Rozfazovany postup:<br>
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+1. nakreslit objekt - operace na stane klienta - javascript x canvas ...<br>
+2. zachytit souradnice lomovych bodu objetu pri pohybu mysi - na strane klienta - JS<br>
+3. zachycene souradnice prevest do podoby prosteho textu a udelat z ni promenou - na strane klienta - JS + docasna pamet X PHP a docasny soubor, kam si je zapise a na klientovi ulozi<br>
+4. preformatovani textoveho retezce - JS x PHP dle volby v kroku 3<br>
+5. pripojeni na sde (pprostorrovou databazi) - server - PHP<br>
+6. pomoci SQL sekvence zapsat do db o predem zname strukture - server - PHP<br>
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+v priloze par zdrojaku co by Vam meli pomoc se rozjet soubory coor - postupny vyvoj a cesty pro body 2-3<br>
+soubory gdb - cesta k bodum 5-6<br>
+</div>
+</p>
+
+<p>
+<ul style='padding-left: 30pt'>
+<li>Základní problém, na kterém jsem teď zaseklá je, že nejsem schopna určit správné souřadnice a extent, chtěla jsem pomocí MapScriptu zobrazit data z PostGISu a nedaří se mi najít ten správný Extent. Stejný problém mám, když chci zobrazit data pomocí OpenLayers. Nad tím jsem teď strávila zbytečně hodně času a stejně jsem se nedobrala úspěšného konce. </li>
+<li>Začím jsem nepřišla to jak, jak souřadnice stáhnout a uložit do fyzické paměti, ale určitě by šlo využít knihovny OpenLayers. </li>
+</ul>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+klient: 	web - p.mapper:<br>
+</div>
+<div style='padding-left: 90pt'>
+ nakreslí prvek pomocí OpenLayers (ikona, nakreslí něco, uloží)<br>
+ viz <a href="http://www.peterrobins.co.uk/it/oledit.html" title="http://www.peterrobins.co.uk/it/oledit.html">http://www.peterrobins.co.uk/it/oledit.html</a><br>
+<a href="http://maps.peterrobins.co.uk/files/ol6.html" title="http://maps.peterrobins.co.uk/files/ol6.html">http://maps.peterrobins.co.uk/files/ol6.html</a><br>
+</div>
+</p>
+			
+<p>
+<div style='padding-left: 90pt'>
+<a href="http://mapshake.cz/mapjs.aspx?i=472" title="http://mapshake.cz/mapjs.aspx?i=472">http://mapshake.cz/mapjs.aspx?i=472</a><br>
+</div>
+</p>
+			
+<p>
+<div style='padding-left: 30pt'>
+<a href="http://mapserver.org/mapfile/projection.html" title="http://mapserver.org/mapfile/projection.html">http://mapserver.org/mapfile/projection.html</a><br>
+</div>
+<a href="http://mailman.fsv.cvut.cz/pipermail/freegeocz/2007-May/000216.html" title="http://mailman.fsv.cvut.cz/pipermail/freegeocz/2007-May/000216.html">http://mailman.fsv.cvut.cz/pipermail/freegeocz/2007-May/000216.html</a><br>
+<div style='padding-left: 30pt'>
+server: 	<br>
+</div>
+</p>
+
+<p>
+<ul>
+<li style="list-style-image: url(../../_icons/unchecked-box.png)">do konce roku: mít obecné rozhraní</li>
+<li style="list-style-image: url(../../_icons/unchecked-box.png)">napsat text bp: rešerše žádná – vstupy dat, vývoj umn</li>
+</ul>
+</p>
+
+
+<!-- End wiki content -->
+
+<hr />
+
+<!-- Backlinks -->
+
+	Backlinks:
+
+<!-- End Backlinks -->
+
+	</body>
+
+</html>

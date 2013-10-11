@@ -1,0 +1,520 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-05-13T22:01:43+02:00
+
+====== Ochrana ovzduší ======
+Pondělí 13. května 2013
+
+===== Atmosféra =====
+* vzdušný obal Země
+* Rozložení hmotnosti atmosféry: 50% hmotnosti je ve výšce 5,5km, 99% hmotnosti je ve výšce 36km
+* Vývoj atmosféry Země
+	* Země vznikla akrecí hmoty (gravitačním přitahováním hmoty z planetárního disku)
+	* Od počátku byla chladným tělesem
+	* Zprvu byla obklopena tenkou vrstvou vodíku a hélia, tyto plyny však disipovaly do kosmu
+	* Prvotní atmosféra vznikla odplyňováním páry
+* Průměrné složení vulkanických plynů
+	* H2O vodní pára         79%
+	* CO2 oxid uhličitý     12%
+	* SO2 oxid siřičitý       7%
+	* N2 dusík                    1%
+	* H2 vodík                    0,5%
+	* Ostatní                        0,5% 
+* Vývoj rané atmosféry
+	* Vodní pára kondenzovala (déšť) => vznik hydrosféry
+	* Vymývání atmosféry – SO2, CO2, NH3 aj.se rozpouštěly ve vodních kapkách a ve formě kyselých dešťů na zemský povrch, kde reagovaly s horninami
+* Vznik života
+	* Nepřítomnost O2, v prvotní atmosféře umožnil vznik org. molekul z neorganických sloučenin a tím i zvnik života (před 3,5 mld. Let)
+* **Kyslík v atmosféře**
+	* Volný kyslík vzniká fotodisociací vodní páry jen v omezené míře
+	* Nástup organismů využívající proces fotosyntézy => růst koncentrace O2
+	* Ve vyšších vrstvách atmosféry vznik ozonosféry (vlivem UV záření O2 na O3)
+	* Živé organismy se z oceánu rozšiřují na pevninu
+	* Současné složení: směs plynů, vodní páry, pevných a kapalných částic
+		* N2     dusík                 78,08%
+		* O2     kyslík                20,9%
+		* Ar      argon                 0,930%
+		* CO2   oxid uhličitý     0,036%
+		* Ne, He, CH2, N2,O
+	* Vzduch vždy obsahuje také určité množství vodní páry (až 4%)
+* **Atmosférické aerosoly**
+	* Pevné a kapalné částice rozptýlené v atmosféře, mají přírodní i antropogenní původ
+	* **Přírodní** – kosmický, vulkanický prach, tuhé částice kouře, krystalky ledu, částice mořské soli, půdní prach, pyl, aeroplankton
+	* **Antropogenní** – až 10% celkového objemu aerosolů
+	* **Aerosoly mořské vody** – kapky vysychají v částečky solí
+	* Antropogenní emise chápeme jako znečišťování ovzduší
+* Vertikální členění atmosféry
+	* 1) podle průběhu teploty vzduchu s výškou
+	* 2) podle chemického složení
+		* 1) (teplota, teplota rosného bodu, směšovací poměr,…)
+			* 2) homosféra – vrstva do výšky 90 km, v podstatě se v ní nemění objemové zastoupení plynů (78% dusík, 21% kyslík,…)
+			* heterosféra – vrstva do výšky nad 90 km, ubývá těžších plynů, převaha vodíku a helia, fotodisociace molekul plynů, teplota dosahuje několik set °C
+* **Troposféra**
+	* nejspodnější vrstva zemské atmosféry
+	* sahá od výšky zemského povrchu do 8 km (polární oblasti) až 17 km (tropy)
+	* oblast intenzivního proudění vzduchu (turbulentního, konvektivního)
+	* obsahuje téměř veškerou vodu v atmosféře (oblačné systémy)
+	* nejspodnější části troposféry je mezní vrstva
+* **Planetární mezní vrstva**
+	* nejspodnější část troposféry, která je v přímé interakci se zemským povrchem (ovlivnění pole proudění třením a obtékáním překážek)
+	* v závislosti na povaze proudění a charakteristikách zemského povrchu sahá do výšky 500 m až 2 km nad aktivní povrch
+	* převládá v ní turbulentní proudění, výrazně se projevuje denní režim teploty a vlhkosti
+	* klíčová vrstva atmosféry z pohledu jejího antorpogenního znečišťování (rozptyl a transport příměsí, výskyt intenzivních vrstev…) 
+{{./pasted_image006.bmp}}
+
+===== Typy zdrojů znečišťování =====
+* 1) podle původu:
+	* a) přirozené
+	* b) antropogenní
+* 2) podle doby působení: 	  
+	* a) kontinuální (továrny, domácnosti)
+	* b) diskontinuální (přetržitá – např. havárie, požáry, exploze)
+* 3) podle geometrické konfigurace: 
+	* a) bodové – továrna
+	* b) liniové – komunikace – silnice, dálnice atd..
+	* c) plošné – povrchové změny v krajině – doly, štěrkovny, průmyslové laguny, čtvrtě obytné zástavby, lomy
+* 4) podle vertikálního umístění: 
+	* a) přízemní – dostává se ihned do plic, dýchací zóna 10-15m
+	* b) vyvýšené - naředí se, než dojde do dýchací zóny
+	* c) výškové - letadla
+* 5) podle prostorové stálosti: 
+	* a) stacionární – jsou pořád na stálém místě
+	* b) mobilní – pohyblivé – auta, těžká technika
+* 6) podle procesu uvolňování emisí : 	
+	* a) spalovací
+	* b) ostatní – čistírny oděvů, lakovny, skládky, zemědělství, …
+* __Globální emise do ovzduší__
+	* Přírodní: mořský příboj 44 tun/rok, pevnina 48, oceán 50, vulkanická činnost 5 – 100
+	* Antropogenní – až 104
+	* Celkem : 251 – 346
+		* odstranění síry z atmosféry – kyselé deště – Krušné a Jizerské hoy
+* __Globální emise síry__
+	* mořský příboj + biosféra (moře, oceán) 150 mil. Tun /rok
+	* antrop. 100 mil tun/rok
+* __Globální emise oxidu dusíku__
+	* blesky 14%, požáry 21%, emise z oceánů 3%, spalování paliv 37%, půdní mikroby 14%, oxidace čpavku 10%
+
+===== Základní pojmy =====
+* **POLUTANT** - znečišťující látka - látka vnesená do ovzduší nebo druhotně vznikající, která má škodlivý vliv na životní prostředí a na klimatický systém Země nebo na hmotný majetek 
+* **Znečišťování (emise)** – vznášení znečišťujících látek do atmosféry
+* **Znečištění (imise)** – příměsi v ovzduší, které nejsou součástí čisté atmosféry
+* **EMISE**
+	* primární znečišťování atmosféry - vypouštění nebo únik populantů do atmosféry 
+	* sekundární znečišťování – vznik populantů přímo v ovzduší
+* **Emisní tok** – množství populantů emitované za jednotku času → určování množství emisí – metody → kontinuální měření přímo na zdroji, výpočet s využitím emisních faktorů, kvalifikovaný odhad
+* **Emisní faktor** – popisuje __množství znečišťující látky emitované do ovzduší__, obvykle jako množství populantů na jednotku výstupného produktu
+* **Přenos a rozptyl**- meteorologickými jevy se znečišťující látky promíchávají s atmosférou
+* **Přeměna** - chemickými reakcemi dochází k přeměně určitých příměsí na jiné chemické látky → mokrá př. (pára, déšť), → suchá (oxidace)
+* **Imise **- rozptyl emisí v ovzduší, obsah znečištěných látek vyjádřený hmotnostní koncentrací → sledují se měřením na stanicích monitorující kvalitu ovzduší
+* **Depozice **- dopad na zemský povrch (příjemce na povrchu)
+	* → mokrá – __vymývání__ polutantů z ovzduší působením atmosférických srážek
+	* → suchá – __usazování__ pevných částic a přestup molekul plynů na zemský povrch
+* Zásada prevence znečišťování (Ochrana ovzduší) – co nejvíce omezovat vypouštění znečišťujících látek ze zdrojů
+* Možnosti omezování emisí - úspora využívání zdrojů, použití modernějších technologií, úprava stávajících technologií
+* Snižování emisí SO2 - metoda odsiřování spalin: instalované odsiřovače na elektrárnách → Mokré vápencové vypírky
+	* energosádrovec – sloučeniny síry reagující s vápencem
+* Snižování emisí popílku - filtry ve spalovacích zařízeních zachytí až 95%
+* Omezování emisí
+* **Registry emisí**- svět rozdělen na malé pravidelné čtverce, které jsou ploště stejně velké, pro čr 5x5km
+	* Registr emisí a zdrojů znečišťování ovzduší **REZZO** (Česko)
+		* založen v první polovině 70. let za účelem systematizace agendy poplatků za znečišťování ovzduší
+		* správa ČHMÚ 
+		* **REZZO 1 – Velké zdroje znečišťování**
+			* jednotlivé sledované zdroje, ohlašovací povinnost	
+			* __spalovací zdroje o tepelném výkonu > 5MW (mega watt)__
+			* se vstupem do EU vymezena pod kategorie zvláště velké zdroje s tepelným příkonem 50 MW
+			* asi 3 500 provozoven v ČR (__spalovny odpadů, průmyslové podniky, teplárny, elektrárny__)
+		* **REZZO 2 – Střední zdroje znečištění**
+			* jednotlivé sledované zdroje, ohlašovací povinnost
+			* spalovací zdroje o tepelném výkonu 0,2 – 5 MW
+			* menší výrobní provozovny, __lakovny, pekárny__ atd..
+		* **REZZO 3 Malé zdroje znečišťování**
+			* hromadně sledované stacionární zdroje
+			* spalovací zdroje o tepelném výkonu < 0,2 MW
+			* lokální topeniště __(domácnosti)__
+			* metodika bilance vychází z údajů Sčítání lidu, ze statistiky paliv
+		* **REZZO 4 Mobilní zdroje znečišťování**
+			* hromadně sledované mobilní zdroje
+			* __dopravní prostředky__, nesilniční mobilní zdroje (lesní)
+			* modelování → centrum dopravního výzkumu Brno a krajské úřady
+	* **IRZ – Integrovaný registr znečišťování**
+		* __zahrnuje emise ovzduší, vod, půdy + odpady__
+		* ohlašovací povinnost mají provozovny, jejichž emise překračují stanovenou prahovou hodnotu
+		* www.irz.cz  http://portal.chmi.cz/portal/dt?action=content&provider=JSPTabContainer
+
+===== Rozptyl znečišťujících látek =====
+* zmenšování koncentrace škodlivin především turbulentní difuzí (vírovými pohyby)
+* rozhodující faktor rozptylu: charakter zdroje znečištění, meteorologické podmínky, orografické podmínky (vliv tvarů reliéfu)
+
+=== Meteorologické podmínky rozptylu ===
+* **1) Proudění vzduchu**
+	* ve výšce 500-2000 m, kde převládá turbulence nebo konvence
+	* **Turbulence** – nepravidelné vírů o rozměrech milimetrů až stovek metrů
+		* a) mechanická – vyvolaná drsností povrchu při obtékání překážek
+		* b) termická – vyvolaná nestabilitou teplotního zvrstvení
+		* největší význam pro rozptyl polutantů ovzduší mají turbulentní víry o rozměrech blízkých rozměrů kouřové vlečky nebo oblaku polutantů
+	* naopak jen málo k rozptylu přispívají víry → značně větší (přenášejí vlečku jako celek)  → značně menší (mísí polutant uvnitř vlečky)
+	* **Konvekce** – promíchávání ve vertikálním směru
+		* výstupné a sestupné proudy vzduchu vytvářejí dohromady uzavřené cirkulační systémy, tzv. konvekční buňky 
+		* a) termická (volná) → vyvolaná rozdíly v hustotě vzduchu závisející na teplotních rozdílech
+		* b) dynamická (nucená) → je podmíněna advekcí
+* **2) Charakter tlakového pole**
+	* možnosti prostorového rozptylu příměsi ovlivňuje také rozložení základních tlakových útvarů
+	* **cyklony** (níže) → výrazné vzestupné pohyby podporují vertikální promíchávání a                  napomáhají rozptylu
+	* **anticyklony** (výše) → typické jsou sestupné pohyby vzduchu, znečišťující látky se tak udržují blízko zemského povrchu
+* **3) Teplotní zvrstvené atmosféry**
+	* **Adiabatický děj** - vratný __termodynamický děj__ v určité soustavě (napr. Ve vzduchové hmotě), __probíhající bez výměny tepla s okolím__
+		* při adiabatickém poklesu tlaku se vzduch rozpíná a ochlazuje
+		* při adiabatickém vzrůstu tlaku se vzduch stlačuje, zhušťuje a zahřívá
+		* Vertikální teplotní gradient γa - určuje změnu teploty s výškou při adiabatickém ochlazování vzduchu
+		* Stabilita atmosféry - pozorování skutečného teplotního zvrstvení adiabatickým poklesem teploty s výškou γa odhaluje stabilitu atmosféry
+			* γ > γa labilní zvrstvení (podporuje vzestup vzduchu) 
+			* γ = γa indiferentní zvrstvení
+			* γ < γa  stabilní zvrstvení (potlačuje vzestup vzduchu)
+	* **Teplotní inverze** = __teplota vzduchu s výškou stoupá__
+		* pro kvalitu ovzduší představuje nejnepříznivější vztah 
+		* silně potlačuje vertikální pohyby a promíchávání vzduchu
+		* dle polohy inverzní vrstvy: přízemní, výšková
+		* dle typu: a) inverzní radiační – vyzařování tepla z aktivního povrchu do vyšších vrstev atmosféry, ochlazuje přízemní vrstvu
+				* b) inverze advekční – vzniká nasunutím teplejšího vzduchu nad studený, od něj se ochlazuje
+				* c) inverze subsidienční  - vyvolaná sesedáním vzduchu v anticyklonách
+		* v ČR nastávají podmínky vedoucí ke vzniku teplotních inverzí především v chladném půlroce, zejména v zimních měsících
+	* **Denní chod teploty v přízemní atmosféře**
+		* odvíjí se od intenzity slunečního záření
+		* nejlepší rozptylové podmínky kolem poledne, horší k večeru a ránu
+		* ráno po východu slunce izotermie → postupný vývoj turbulentní ho proudění
+		* večer – opět přechod k izotermii a po západu slunce vzniká přízemní radiační inverze     (ochlazování od zemského povrchu)
+		* ve druhé polovině noci dosažení stavu nasycení vzduchu vodní parou – tvorba mlhy
+	* **Atmosférické srážky**
+		* neovlivňují rozptyl, ale pro __kvalitu__ ovzduší jsou důležité
+		* důležité procesem vymývání znečišťujících příměsí (přímým negativním důsledkem je  vznik kyselých dešťů)
+
+==== Kouřové vlečky ====
+* rozmanité tvary kouřových vleček odrážejí charakter proudění na teplotní zvrstvení atmosféry a tím vypovídají o aktuálním stavu meteorologických podmínek
+* různé vysoké zdroje mohou mít odlišný tvar vlečky, tedy i jinou povahu rozptylu škodlivin
+* **1) vlnění CONING**
+	* __mírně stabilní zvrstvení, mírný až čerstvý vítr__
+	* vlečka má __tvar kužele__ a __horizontální__ symetrie
+	* kouř se vlečce __mírně vlní__
+	{{./pasted_image.bmp}}
+
+* **2) čeření FANNING**
+	* __teplotní inverze sahá vysoko nad vlečku, jen malý rozptyl kouře__ (noční a ranní inverze, v zimě někdy i po celý den)
+	* __u vysokých komínů v rovině příznivé__, v členitém terénu může vést k místě vysokým koncentracím
+	* __mírné proudění__ a teplotní inverze, noc, ráno, nebezpečné pro návětrný svah
+	{{./pasted_image001.bmp}}
+* **3) unášení LOFTING**
+	* __přízemní inverze nedosahuje až k vlečce__, kouř se __rozptyluje nad inverzí__ a přenos škodlivin směrem dolů je značně omezen
+	* inverze s horní hranicí níž než komín, dálkový přenos, nejpříznivější
+	* rozptylový typ
+	{{./pasted_image002.bmp}}
+* **4) zadýmování FUMIGATION**
+	* vzniká obvykle při dopoledním zániku inverze vzduchu se prohřívá odspodu až nad kouřovou vlečkou
+	* kouř se nemůže rozptylovat směrem vzhůru a kouř __je unášen k zemi__
+	* trvá obvykle desítky minut, nad umělými zdroji tepla i dny 
+	{{./pasted_image003.bmp}}
+* **5) odrážení TRAPPED PLUME**
+	* vlečka se tvarově podobá zadýmování
+	* škodliviny se mnohonásobně odrážení od povrchu výškové inverze
+	* vytv	áří	se pod subsidienční nebo advekční inverzí, trvá obvykle několik dnů
+	{{./pasted_image004.bmp}}
+* **6) přemetání LOOPING**
+	* silně instabilní zvrstvení, za __slunečních dnů kolem poledne + vertikálními proudy__ vzduchu k zemi
+	* mohou pronikat zvýšené koncentrace škodlivin (časté u menších zdrojů)
+	{{./pasted_image005.bmp}}
+
+
+==== Výška komína ====
+* výrazně __ovlivňuje rozptyl příměsi v atmosféře__
+* spaliny opouštějí komín s určitou výstupní rychlostí (a zpravidla jsou mnohem teplejší než okolní vzduch, proto mají tendenci dále stoupat)
+* __celková výška: výška komína + kouřová vlečka__ http://skyscraperpage.com/
+	* nejvyšší komíny v česku přes 300 m - Prunéřov, Tušimice, Chvaletice, ve světě přes 400 m
+
+===== Rozptylové podmínky =====
+* __Pasquillova typizace rozptylových podmínek (autorem Frank Pasquill)__
+	* vychází z meteorologické charakteristiky (rozdělení do A- F)
+	* → rychlost větru (ve výšce 10m nad zemí)
+	* → insolace (intenzita dopadajícího slunečního záření)
+	* → stupeň pokrytí oblohy oblačností
+* __Klasifikace podle Bubník – Koldovský__
+	* odvozena v ČHMÚ, vymezuje 5 tříd
+* __Monin – Obuchova délka L__
+	* vychází z teorie dynamiky tekutin, používá se proto pomocí modelování
+
+==== Teorie rozptylu z bodového pole ====
+* Modelování rozptylu od dvacátých lét 20. st.
+* Základní modelování rozptylu škodlivin (Pylor – studium turbulentního proudění)
+* __Oliver Graham Sutton__
+	* „klasická“ teorie rozptylu znečišťujících látek v ovzduší (třicátá a čtyřicátá léta)
+	* → Gaussovské modely rozptylu z bodového zdroje
+* __Suttonův model__
+	* je založen na těchto zjednodušujících podmínkách
+	* a) proudění je horizontální a prostorově konstantní
+	* b) počátek souřadnic je u paty komína, kladná směr osy x míří po směru proudění
+	* c) ve směru osy y a z difunduje vlivem turbulence
+	* d) rozložení koncentrace znečišťujících látek v příměsi v rovinách kolmých na osu x je popsáno dvourozměrným normálním rozložením (Gaussovým rozložením) s maximem v ose kouřové vlečky
+	* e) nebere se v úvahu sedimentace na zemském povrchu, vymývání srážkami ani zánik chemických reakcí
+* __Typy rozptylových modelů__
+	* fyzikální
+	* matematické – Gaussovské modely, Box – modely, lagrengeovské a eulerovské modely, Puff modely, receptorové modely
+* __Gaussovské modely__
+	* předpokládají dvourozměrné normální rozdělení koncentrací v kouřové vlečce
+	* omezení – jen stacionární řešení
+	* např – Symosi 97, Atem (ČR), ISC, AERMOD (USA)
+* __Box modely__
+	* velmi jednoduché, vhodné pro „první“ odhad koncentrací
+	* předpoklad: emise se rozptyluje rovnoměrně v určitém objemu vzduchu
+	* např. – BOXURB (UK)
+* __Lagrengeovské a eulerovské modely__
+	* sledují jednotlivé emitované částice nebo jejich určené dávky („puffy“)
+	* lagrengeovský : NAME (UK)
+	* eulerovský: CAMX (USA)
+* __Receptorové modely__
+	* s obráceným chodem → z naměřené imise a z podmínek rozptylu se určuje pravděpodobné místo a objem emise
+
+===== Chemie atmosféry =====
+* globální cyklus uhlíku (podle IPCC)
+* do atmosféry neustále vstupují nejrůznější sloučeniny a po určité době ji opouštějí, mohou při tom unikat chemickou formou
+* Setrvání látek v atmosféře
+	* neustálý přísun látek ze zdrojů vyrovnává existence tzv. propadů (anglicky SINKS) v atmosféře se vytváří stav dynamické rovnováhy 
+	* T=M/F             (T- doba setrvání látky v atm. , M – množství látky v atm., F – tok látky v atm.)
+
+==== Látky znečišťující ovzduší ====
+* Tuhé a kapalné
+* **Aerosol** – __suché kapalné částice__ rozptýlené v ovzduší
+	* a) disperzní – vznikají rozptýlením pevných a kapalných částic (kouř, prašný aerosol)
+	* b) kondenzační – vznikají kondenzací nasycených par
+* **Prach** – __větší prachové částice__ padají k zemskému povrchu (s rostoucí velikostí se zvyšuje rychlost pádu a zmenšuje se vzdálenost místa dopadu zdroje) → prašný spad) povrchové částice menší než 10 mikrometrů mohou setrvávat v ovzduší i několik dní
+	* tvoří **prašný aerosol** (dříve označováno jako polétavý prach)
+		* způsoby sledování prašného aerosolu: celkové suspendované částice – označuje se jako TSP (total suspens particles) nebo SPM (sespend particulate matter) nebo TZL (tuhé znečišťující látky)
+			* velikostní funkce tuhých částic – PM (particulate matter)
+			* PM 10 – částice menší než 10 mikrometrů
+			* PM 2,5 – částice menší než 2,5 mikrometrů
+			* PM 1 – částice menší než 1 mikrometr
+* **Těžké kovy**
+	* kovy se specifickou hmotností větší než 4gcm-3
+	* zejména – As;Cr;Cu;Hg;Ni;Pb;Zn
+	* jsou __toxické__ už při stopových koncentracích, bývají obsaženy __v prašném aerosolu__
+	* __Zdroje__ antropogenních emisních kovů
+		* spalování fosilních paliv	
+		* spalovny odpadu
+		* výroba a zpracování železa
+		* výroba cementu a skla
+		* doprava – olovnatá benzín Pb
+* **Sloučeniny síry**
+	* Oxid siřičitý SO2		
+	* spalovací procesy pevných paliv (uhlí)
+	* hlavním zdrojem jsou __elektrárny a teplárny__
+	* __v ovzduší se váže na oxid sírový SO3 a ten s vodní parou vytváří aerosol kyseliny sírové H2SO4__
+* **Kyselina sírová H2SO4**
+	* reaguje s částicemi prachu → sírany podléhají depozici na zemském povrchu
+	* při nedostatku povrchových částic v ovzduší dochází k okyselení srážek → kyselé deště
+* **Sloučeniny dusíku **
+	* oxidy dusíku NOx 
+	* N2O – oxid dusný – nejrozšířenější, neškodný
+	* NO – oxid dusnatý – škodlivý
+	* N2O3 – oxid dusitý – v nepatrném množství
+	* NO2 - oxid dusičitý – škodlivý
+	* N2O5 – oxid dusičný – bezvýznamný
+	* zdroj: __spalovací procesy v energetice a dopravě__
+	* NO samovolně existuje na NO2 a následně se tvoří kyselina dusičná HNO3
+	* HNO3 reaguje s částicemi povrchu nebo okyseluje srážky
+	* Oxidy dusíku tvoří součást fotochemického smogu
+* **Čpavek NH3**
+	* vytváří se chemickým průmyslem a tepelným zpracováním uhlí, ale také zemědělskou výrobou
+* __Sloučeniny uhlíku__
+	* **Oxid uhelnatý CO**
+		* vzniká při __nedokonalém spalováním hořlavých látek__ jeho antropogenním zdrojem je proto spalování paliv, včetně dopravy
+		* v ovzduší pozvolna oxiduje na CO2
+	* **Oxid uhličitý CO2**
+		* vzniká __při spalováním hořlavých látek__, zejména uhlíkatých paliv
+		* není znečišťující složkou ovzduší, tomuto plynu je však přisuzován negativní jev __zesílení skleníkového efektu a globálního oteplování__
+	* **Uhlovodíky CxHy**
+		* některé z uhlovodíků a jejich derivátů jsou těkavé
+* __Halogenové sloučeniny__
+	* anorganické (HF;HCl…)
+	* organické - freony (CFC), chlorované pesticidy, dioxiny, polychlorované bifenyly, chlorovaná rozpouštědla (chloroform)
+* __Persistentní organické polutanty POP__
+	* znečišťující organické látky s dlouhým setrváním v prostředí
+	* hexachlorbenzen, heptachlor
+	* __chemické přeměny látek v ovzduší__
+		* atmosféra obsahuje volný O2 a má oxidační povahu
+		* hlavní oxidanty jsou ozon a dva produkty jeho fotodisociace
+		* Hydroxylový radikál OH
+		* Peroxid vodíku H2O2
+	* **Hydroxylový radikál OH **„čistící prostředek atmosféry“
+		* reaguje se stovkami škodlivin
+		* jeho nižší koncentrace → pomalejší transformace škodlivin → delší doby setrvání v ovzduší
+	* **Peroxid vodíku H2O2**
+		* dominantní oxidant SO2 na H2SO4 v oblacích
+		* dobře rozpustný ve vodě, zvyšování jeho koncentrace se podílí na kyselosti srážek
+	* **Ozón v atmosféře**
+		* koncentrace 0,000 004%
+		* z celkového množství je asi 8 – 15% v troposféře, zbytek je ve stratosféře
+		* celkové množství ozonu se udává v Dobsonových jednotkách
+	* **Stratosférický ozón**
+		* vzniká ve vyšších vrstvách atmosféry jako produkt fotochemických reakcí
+		* Význam stratosférického ozónu
+			* intenzivní pohlcování ultrafialového záření o vlnových délkách 220-360 nm
+			* měřením – Pozemní (Dodonův spektrofotometr); letecká; družicová (přístroji TMOS – Total Ozone Mapping Spectometr)
+			* snižování ozonové vrstvy v polárních oblastech
+	* **Freony CFC**
+		* vliv na stratosférický ozón
+		* vznik ozonové redukce
+	* **Troposférický přízemní ozón**
+		* je buď stratosférického původu nebo vzniká v troposféře fotochemickými reakcemi ve směsi těkavých organických látek
+		* přízemní ozon je tedy sekundární znečišťující látka, bez vlastního zdroje emisí
+		* koncentrace O3 rostou s intenzitou slunečního záření, proto v ročním chodu jsou maxima na jaře a v létě
+
+===== Dopady znečištění ovzduší =====
+* znečištění ovzduší ovlivňuje řadu receptorů: lidskou populaci, ekosystémy, materiály, konstrukce, stavby
+* účinek znečišťujících látek
+	* odvíjí se od : koncentrace během expozice, doby trvání expozice, synergie (společné působení více škodlivin)
+	* může být: přímý nebo nepřímý; akutní nebo chronický
+* Světová zdravotnická organizace **WHO**
+	* podporuje výzkum účinků znečištěného ovzduší na lidské zdraví, vydává doporučení k limitům přípustných hodnot, koncentrací a doby expozice škodlivin (prostředek mezi výzkumnými pracovišti)
+
+==== Dopad na lidské zdraví ====
+* fotochemický smog
+	* **Oxid siřičitý SO2**
+		* drážní sliznici nosu a horních cest dýchacích
+		* při vysokých koncentracích vyvolává bronchitidu
+	* **Oxid dusičitý NO2**
+		* snížená funkce plic (zvláště u astmatiků), podporuje rozvoj respiračních chorob
+		* je těžké zhodnotit přímo účinek NO2 vzhledem k jeho provázanému výskytu společně s dalšími škodlivinami
+	* **Ozon O3**
+		* snížená funkce plic, zánětlivá reakce dýchacího ústrojí
+		* při delší expozici strukturní změna plic – zvýšená tvorba hlenu
+		* při vyšších koncentracích dochází k podráždění sliznice, očí, nosu, krku, vzniká pocit tlaku na hrudi, dráždění ke kašli, bolesti krku
+		* doporučení při fotochemickém smogu – omezit pohyb venku, omezit fyzickou aktivitu, větrat jen v nočních hodinách, zvýšit příjem tekutin
+	* **Oxid uhelnatý CO**
+		* vzniká při spalování s nedostatkem přístupu kyslíku
+		* vdechnutí: váže se na hemoglobin (asi 200x lépe než O2)
+		* namísto oxyhemoglobinu vzniká karboxyhemoglobin, vyvolává vnitřní dušení (hypoxie, modrá krev)
+		* při špatném technickém stavu kotlů, sporáků a komínů, při požáru nebo inhalací spalin z motorů v uzavřených prostorách
+		* počet otrav v ČR 1 000 – 1 500 ročně 
+* **prašný aerosol**
+	* zahrnuje částice __různých velikostí,__ pro hodnocení zdravotních účinků se sledují určitě frakce
+	* **vdechovatelná** – částice procházející do dýchacího ústrojí
+	* **thorakální** – částice procházející hrtanem
+	* **respirabilní** – částice procházející do plicních sklípků
+	* větší částice zachycovány řasinkový epitelem a postupně fyziologicky odstraňovány (vykašlávání), menší částice pronikají hluboko do plic
+	* přestup rozpustných chemických složek prachu do krve
+	* __akutní__ – podráždění, zánět, alergie, snížení funkce plic
+	* __chronické__ – rakovina, respirační a kardiovaskulární choroby
+* **Toxické kovy**
+	* v běžných podmínkách na člověka nepůsobí
+	* problémy vyvolává spíš jejich depozice a akumulace v půdě a ekosystémech
+	* toxické působení v ovzduší nastává obvykle při expozici v pracovním prostředí
+* **Olovo Pb**
+	* do ovzduší se dostává __při těžbě a zpracovávání rud, při výrobě baterií, spalováním olovnatého benzínu__
+	* z výfukových plynů a usazuje se jako oxid, chlorid a bromid na vegetaci a v půdě
+	* zpomaluje se působené enzymů, chemicky poškozuje buněčná jádra, chronická otrava, poškozuje krvetvorbu,
+* **Kadmium Cd**
+	* do ovzduší se dostává při výrobě plastů, sléváním kovů, výrobě barviv a akumulátorů, cigaretový kouř
+	* účinky na ledviny a plíce
+* **Rtuť Hg**
+	* výroba a zpracování tohoto kovu při spalování fosilních paliv, ale také z odpadů nebo různými průmyslovými a zemědělskými postupy
+	* chronická expozice par rtuti nejvíce poškozuje mozek
+* **Nikl Ni**
+	* znečišťuje hlavně __městské ovzduší__
+	* zdrojem __spalování uhlí a nafty__ – lokálně pak težba a produkce, obsažen v cigaretovém kouři
+	* chronická expozice – rakovina plic, nosních dutin a hrtanu
+* **Arsen As**
+	* spalováním __fosilních paliv, výroba kovu__
+	* chronická otrava – kožní změny, trávicí potíže, břišní koliky, hubnutí, nervové potíže, změny krevního obrazu
+* **Těkavé organické látky VOC**
+	* benzen, polycyklické aromatické uhlovodíky vyjadřované jako benzo(a)pyren
+	* poškozují játra, imunitu, plíce
+	* neexistuje bezpečná koncentrace
+* **Dioxiny a furany**
+	* vyvolávaní patologické změny
+	* relativně dlouhá latence mezi expozicí a projevem symptomů
+	* vystavením vysokým koncentracím narušuje mentální schopnosti
+
+==== Účinky znečištění ovzduší na ekosystémy ====
+* Základní faktory - míra poškození se odvíjí nejen od koncentrace škodlivin a doby expozice, ale závisí také na faktorech stanoviště (dostupnost vláhy a živin) a meteorologických podmínkách
+* **Ozon O3**
+	* fotochemický smog působí i na rostliny
+	* __ovlivňuje chod fotosyntézy, dýchání, syntézu aminokyselin, metabolismus bílkovin, cukrů a tuků__
+	* citlivější rostliny reagují bílými nebo tmavě hnědými skvrnami
+* **Oxidy So2 Nox**
+	* chronické působení plynů ničí chlorofyl
+	* depozice se srážkami zvyšuje kyselost půdy, což navíc mobilizuje některé toxické kovy v půdě (pb;Cd;Hg)
+	* výsledkem je rozsáhlé poškození lesních ekosystémů „kyselými deště“
+
+===== Vývoj systému sledování kvality ovzduší =====
+* 1971 IIS – __imisní informační systém__ (shomážďování naměřených dat)
+* 90.léta ČHMÚ úsek chrany čistoty ovzduší - zpřístupnění informací o kvalitě ovzduší pro veřejnost.
+* 2000 – modernizace sítě stanic
+* **Státní imisní síť SIS**
+	* síť monitorovacích stanic: 206 měřících lokalit v ČR, z toho 126 ČHMÚ, 39 zdravotní ústavy, 14 ČEZ, 17 města, 10 ostatní
+	* dlasifikace stanic – třídění Eoi (oxchange of information) podle směrnic EU
+		* dopravní stanice – do 50m od komunikace
+		* průmyslová – v areálu továrny nebo v místě předpokládaného vlivu kouřovou vlečkou ve směru větru
+		* pozaďová – není ovlivněná konkrétním zdrojem, měří imisní pozadí regionů, měst a průmyslových komunikací
+	* typ oblastí:
+		* Příměstská – 3-10 km od zdroje
+		* Regionální – 10-50km
+		* Odlehlá – více než 50km (evropské měřítko, v ČR nejsou)
+	* AIR POINTER - monitorovací stanice na sloupu, osvětlení, budově
+* **Informační systém kvality ovzduší ISKO**
+	* Pokračování IIS, pod správou __ČHMÚ__
+	* Celostátní __databáze imisí, emisí__ a chemického složení srážek
+* **Hodnocení kvality ovzduší**
+	* Ročenka ČHMÚ ke kvalitě ovzduší – dostupná online od roku 2000 - také grafické ročenky
+* **Imise – hodnocení za rok 2011**
+	* Hodnocení ČR a zvlášť vybraná území: __aglomerace Praha, Brno, moravskoslezský kraj, ústecký kraj__. Modelové hodnocení..
+	* Vzhledem k ochraně lidského zdraví – znečištění PM10 a benzopyrenem (karcinogen)
+	* Kvalita ovzduší vzhledem k ochraně ekosystémů – SO2
+* **Depozice znečišťujících látek**
+	* 2011 podprůměrný na srážky 93%  – depozice síry v ČR 45tis. Tun/rok (max – krušné hory) - depozice dusíku 64.tis tun/rok  (max – orlické a jizerské hory)
+* **Oblasti se zhoršenou kvalitou ovzduší (OZKO)**
+	* Na základě překročení imisních limitů znečišťujících látek. Místní orgány mají povinnost vypracovat plány na snižování emisí a posudky o vlivu na ŽP.
+* **Systém řízení kvality ovzduší (SŘKO)**
+* **Nízkoemisní zóny (NEZ) **- v CHKO , lázně, parky
+* __Závěry__
+	* Přes 50% populace žije v oblastech s překročeným imisním limitem PM10
+	* Koncentrace přízemního ozonu překročily imisní limit 10% populace
+	* Benzoapyren 16,8% území postiženo nad imisnim limitem, ale žije zde 60% populace.
+	* Značný vliv má spalování odpadu v domácnostech, protože se do ovzduší vypouští velké množství další škodlivých imisních látek.
+
+===== Změna klimatu =====
+* klima je ovlivňováno sluneční činností, oceánem, pevninami, ledovci a biosférou
+* vzájemné vlivy tvoří složitý propojený systém → stále je předmětem vědeckého výzkumu
+* KLIMATICKÝ SYSTÉM → 5 složek – atmosféra, oceán, povrch pevnin, ledovce, biosféra
+* Zdrojem je sluneční záření
+* Jednotlivé srážky se vzájemně ovlivňují řadou vazeb
+* Zkoumá se odezva klimatického systému na změny v jeho jednotlivých složkách (pomocí klimatických modelů)
+* **Skleníkový efekt**
+	* __tepelné záření země je zachycováno některými plyny v atmosféře, takže neuniká do kosmu__
+	* __skleníkové plyny__ – oxid uhličitý, metan, vodní pára, oxid dusný, ozon
+	* přirozený skleníkový efekt je prospěšný, ohřívá atmosféru z -18°C na +15°C
+	* problematické je zesílení skleníkového efektu emisemi skleníkových plynů z lidských aktivit:
+		* hospodářské aktivity člověka významně mění krajinu
+		* využití půdy → odlesňování, zemědělství, města 
+	* keelingova křivka → graf vyjadřující růst CO2
+	* hokejkový graf → graf vyjadřující průměrnou globální teplotu země
+	* využití fosilních paliv → emise skleníkových plynů
+	* důledky:
+		* změna klimatu může výrazně ovlivnit přírodu i lidskou civilizaci
+		* zvýšení extrémních jevů počasí (sucho, povodně, větrné smrště)
+		* vzestup hladiny moří
+		* tání ledovců
+		* rozšiřování pouští
+		* ohrožení živočišných druhů
+* **Mezivládní panel OSN pro změnu klimatu IPPC** od roku 1988
+	* hlavní činností je příprava tzv. hodnotící zprávy
+	* 3 skupiny: vědecká báze; dopady; co by se s tím mohlo dělat
+	* **čtvrtá hodnotící zpráva IPPC** (AR4, __2007__)
+		* globální teplota na zemi se dlouhodobě zvyšuje
+		* __úroveň mořské hladiny__ se ve 20. století zvýšila o 17 cm, ve 21. stol. se očekává zvýšení o 18 – 59 cm
+		* pevninské a horské __ledovce__ a sněhová pokrývka se na obou polokoulích __zmenšili__ a trend má pokračovat
+		* srážkové úhrny se dlouhodobě mění
+		* od 70. let v tropech a subtropech pozorována období __intenzivnějších a dalších such__
+		* od 60. let došlo k __zesílení západních větrů__ v mírných šířkách
+		* pravděpodobně v budoucnu vzroste vlna oblastí postihovaných suchem a zvýší se vlna tropických cyklón
+* __Ochrana klimatu__
+	* **Kjótský protokol** – snižování emisí, snižování energetických náročností, změny ve využívání krajiny (např. zalesnění), Emisní povolenky – obchod s investicemi do jiných států, kdy se emise pak odečítají investujícím státům. Nedodržení emisních povolenek => pokuty. USA odmítlo. Japonsko a španělsko odkoupilo část našich emisních povolenek.
+	* **Klimaticko-energetický balíček EU** – omezení skleníkových plynů od roku 1990 o 20% do r. 2020, dosažení 20% výroby energie z alternativních zdrojů (větrné, vodní, jaderné) do r. 2020, snížit celkovou spotřebu energie o 20% do r. 2020
+* vysoký smog: Londýn, Los Angelos, Donora (Pensylvánie), Bhópal (Indie)

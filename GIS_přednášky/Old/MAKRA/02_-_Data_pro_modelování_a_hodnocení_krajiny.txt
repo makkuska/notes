@@ -1,0 +1,124 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-02-18T13:17:21+01:00
+
+====== 02 - Data pro modelování a hodnocení krajiny ======
+Pondělí 18. února 2013
+
+* kvalita výsledků odpovídá kvalitě dat
+* práh měřítka - kde se chování procesů mění
+* komplikováno složitostí jednotlivých typů krajiny
+* některé charakteristiky krajiny je nutno přenést do číselných hodnot (měření z laboratorních studií v kombinaci s expertním úsudkem)
+* data x informace x znalosti
+* __vlastnosti dat__: **formát, podrobnost, velikost, kvalita, význam, aktuálnost**
+* data pro modelování krajiny nalezneme v průsečíku: 
+	* **data tématická** - ochrana přírody (data nálezová & územní ochrana & mapování boitopu & PPK)
+	**+ data tématická** - vědní obory (ČUZK, ÚHUL, ČHMÚ, ČGS) 
+	**+ referenční data a kartografická a správní** (ČÚZK, ÚHUL, GEODIS, ČGS, VÚ Dobruška)
+
+
+===== Dělení: =====
+* __podle charakteru:__ prostorová (GIS data) x neprostorová (informační registry)
+* __podle formátu:__ 
+	* vektor
+	* rastr
+	* webové služby (GML)
+	* senzorová (EM čidla, bóje)
+	* EM GPS, zaměřovací zařízení
+* __podle vlastnictví:__
+	* vlastní x převzatá
+* __nálezová data:__
+	* zelená složka
+	* černá složka
+
+===== Vektor dle garance dat: =====
+* __data základní__
+	* garantované státem nebo státem pověřené instituce
+	* jednotná metoda zpracování, pravidelný cyklus aktualizace, jednoznačná interpretace
+	* **klad listů** ZM50, 25, 10
+	* klad listů SMO5 - státní mapa odvozená z KM, bezešvá, digitální, aktuální, ale neobsahuje parcelní čísla
+	* klad listů ZMVM2tis., 1tis.,  500
+	* **Zabaged 1** (2) (1:10tis.) - vektorový, web. služba, aktualizovaný
+	* **DMÚ25** - digitální model území, Dobruška, nesmí být poskytnuta civilní sféře kvůli NATO, už nám ji aktuální neprodají, poslední rok 2003
+	* letecké snímkování ČR - ČUZK
+	* hranice administrativních jednotek - přesná pro měřítko dáno zákonem
+	* data OPRL (Oblastního plánů rozvoje lesů)
+	* mapy vojenského mapování
+	* majetkoprávní mapy:
+		* rastrová mapa **SMO5** - státní mapa odvozená z KM, bezešvá, digitální, aktuální, ale neobsahuje parcelní čísla
+		* rastrové mapy __pozemkového katastru__
+			* naskenovaná analogová forma ČUZK, nutno ručně zpracovat, jako neveřejná služba běží digitální forma, kdy se odvodily centroidy pozemků
+		* rastrové mapy __katastru nemovitostí__
+			* dodáváno ve formátu CIT (ERSI nepodporuje)
+			* rastrový soubor zachycuje i mimorámové údaje
+			* KMD - dekadická katastrální mapa
+		* __vektorová digitální KM__
+			* **KM-D** - digitalizovaná KM (odpovídá původním souřadnicovým systémům, bez vyrovnání hranic)
+			* **DKM** - digitální KM, využití pro tvorku SMO, umožňuje propojení se ZABAGED
+			* **SPI** (subsystém popisných informací) - nemovitosti, vlastnické vztahy, práva
+			* **SGI** (subsystém geodetických informací) - digitální KM, souřadnice podrobných bodů
+			* **SPE** (subsystém pomocných evidencí, dokumentační data)
+			* **JPU** (pozemková úprava) - tvorba nového operátu grafické informace
+* __data povinná:__
+	* vyplývají ze zákona o ochraně přírody (vytvoření, financování, garance)
+	* 1:10 tis. nebo KM
+	* hranice ZCHU + ochranná pásma
+	* zonace
+	* památná stromy + ochranná pásma
+	* přechodně chráněné plochy + ochranná pásma
+	* ÚSES
+	* významné krajinné prvky
+	* jeskyně
+	* paleontologické nálezy
+	* zvláště chráněné rostliny a živočichové
+	* Natura 2000
+* __data doporučená:__
+	* kdo chce, ať si je vytvoří, ať si je aktualizuje
+	* kvadráty síťového mapování
+	* značení ZCHÚ
+	* management zásahy v přírodě
+	* naučné stezky + panely NS
+	* cyklotrasy, turistické trasy
+	* přírodní poměry, revíry, profily vodních toků, vodní nádrže, sesuvy, letiště, ... ... 
+
+===== Rastr (letecké snímky, orfotofo snímky): =====
+* měřičské snímky (upraveny atmosférické, geometrické korekce, vyrovnány prvky vnitřní a vnější orientace)
+* černobílé snímky
+* barevné snímky (3 pásma RGB)
+* spektro-zonální (3 pásma, posunutá citlivost G+B+IČ) x multispektrální
+* digitální skenování
+* Dobruška VGHMÚř
+	* archiv historických snímků
+
+===== Zdroje dat: =====
+* **geoportal.cenia.cz**
+	* souřadnicové systémy: S-JTSK, S-42, UTM, WGS-84, ETRS-89 (evropský, rozdíl v použitém geoidu, aby celá Evropa měla stejné vyrovnání, kvůli nadmořským výškám - používá se v geodézii)
+* **heis.vuv.cz**
+	* data týkající se vodních toků, povrchových vodních tvarů a podzemních vod, chráněná území, koupací vody, ...
+	* 1:50tis.
+* **ČGS**
+	* geologická data, včetně hydrogeologie
+	* mapy malých měřítek (max. 1:50tis.)
+* registry (dle prezentace)
+	* **ÚSOP **(Ústřední seznam ochrany přírody)
+• dokumentace týkající se chráněných území, památných stromů, vyhlášky, nařízení, mapy, .. 
+• AOPK ČR
+	* **MIS** Metainformační systém ŽP
+		* metadata, katalogová služba
+	* **Portál Životního prostředí**
+		* rozcestník k informacím o ŽP v ČR
+	* **ISSaR** Informační systém statistiky a reportingu
+	* **Informační systém EIA/SEA**
+		* posuzování vlivů záměrů na životní prostředí
+	* **IRZ** Integrovaný registr znečišťování
+	* **Centrální ohlašovna**
+	* **SEZ** Systém evindence kontaminovaných míst
+	* **SEIS** Shared Environmental Information System
+	* Statistické ročenky životního prostředí ČR
+	* Indikátory Státní politiky životního prostředí
+		* Indikátory CENIA
+			* ovzduší (% lidí žijících v nadlimitních zátěží hluku, znečištění)
+			* voda (výskyt průměrných průtoků)
+			* půda a zemědělství
+			* doprava
+			* zdraví (ošetření akutních respiračních onemocnění)

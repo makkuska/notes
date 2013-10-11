@@ -1,0 +1,64 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-07-18T13:46:59+02:00
+
+====== Instalace ======
+Created Středa 18 červenec 2012
+
+=== Instalace ===
+* instalace **./configure make make install**
+* odinstalovat se vším všude **aptitude pudge**
+* aptitude search linux-image | grep '^i'
+* restart cinamon: **/etc/init.d/mdm restart**
+
+==== Přeinstalace ====
+* před přeinstalací si vždy uvědomit/vyzkoušet, zda by nepomohlo pouhé smazání konfiguráků
+* záloha
+	[*] záloha: Dokumenty
+	[*] záloha: Notes
+	[*] záloha: var/www
+	[*] pg_dumpall -f dump.sql (být ve složce, kde mám práva pro postgres tedy var/lib/postgres
+	[ ] překopírovat konfigurák root:/etc/vim/vimrc jako zálohu do home a pak překopírovat zase zpátky (Kuba mi ho 23.9. upravoval, aby byl vim použitelnější)
+* vytvoření bootovací flashky
+	* stáhnout iso
+	* naformátovat flashdisk: gparted
+	* vytvořit bootovací flashdisk: unetbootin
+* upgrade pustit v konzoli, aby se to nemohlo časem nechtě přerušit
+* firmware (síťovka - wifi) sudo aptitu install bcmwl-kernel-source
+* __SYSTEM UTILS__
+	guake mc moc vim-gtk arj zip tree htop nmap ncdu
+	zim graphviz dvipng bzr python-gtkspell aspell-cs r-recommended
+	(fireware)
+	cifs-utils lftp filezilla openssh-server smbfs antiword pdftk openssh-server
+* naistalovat jinak než přes aptitide instal
+	truecrypt
+* __APPLICATIONS__
+	thunderbird chromium-browse flashplugin-installer
+	skype pidgin dropbox
+	smplayer (verbiste)
+	texlive texlive-lang-czechslovak texlive-latex-recommended texlive-latex-extra
+	virtualbox + rozšířené utility virtualboxu (Zařízení -> Instalovat přídavky pro hosta), nastavení sítě: Síťový most (né NAT)
+	kolourpaint4 gimp mypaint pinta gwenview 
+
+* __WEB, DATABASES__
+	apache2 php5 --- nastavení po instalaci apache viz programy!
+	postresql postgresql-9.1-postgis  postgis php5-pgsql pgadmin3 phppgamin
+	mysql-server phpmyadmin
+
+* __MAP APPLICATIONS__
+1) přidání "UbuntuGIS" repozitáře
+	aptitude install python-software-properties 
+	add-apt-repository ppa:ubuntugis/ppa
+	aptitude update
+2) mapserver
+	cgi-mapserver mapserver-bin mapserver-doc php5-mapscript  python-mapscript
+3) geoserver
+4) desktop GIS
+	qgis viking grass
+	googleearth googleearth-package
+5) framework geomoose
+	./configure
+	make
+	make install
+	Include “/opt/geomoose2/geomoose2_httpd.conf” to /etc/apache2/httpd.conf
+

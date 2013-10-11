@@ -1,0 +1,134 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-03-05T12:32:19+01:00
+
+====== 04 - Vodní eroze ======
+Úterý 05. března 2013
+
+* obecné dělení eroze
+	* příčina:
+		* vodní - rozrušování zemského povrchu působením vodní síly
+		* větrná - mechanické rozrušování zemského povrchu větrem, v suchých větrných oblastech
+		* ledovcová
+		* zemní
+		* antropogenní
+	* podle intenzity:
+		* normální
+		* zrychlená
+	* podle časového hlediska
+	* podle směru působení
+		* podélná
+		* příčná
+ 
+
+====== Vodní eroze ======
+* v malé míře normální a přirozený jev
+* zrychlená eroze je nežádoucí, způsobuje škody
+* plošná eroze - nepravidelná, 50% půdy v ČR je ohrožená plošnou erozí
+* vyvolána destrukční činností dešťových kapek, podpovrchového odtoku a transportem uvolněných půdních částic (spraše)
+* __ovlivněna:__
+	* intenzita dána charakterem srážek a odtoku
+	* ovlivňována půdními poměry, spraš se uvolňuje hned
+	* dále záleží na geomorfologii tvaru a vegetačních poměrů
+* __podle formy__
+	* **plošná** - nesoustředný odtok
+	* **výmolná** - soustřeďování plošného odtoku
+		* __podle intenzity: __
+			* **rýžková** (výmol až 30cm), 
+			* **brázdová, rýhová, **
+			* **výmolná** (až 100cm, vzniká v místech koncentrace vody - př. polní cesty), 
+			* **stržová** (hloubka až 2m, vzniká kvůli nadměrnému množství vody, větš. po době sucha, velký podíl má odlesňování)
+	* **proudová**
+* **eroze v=(d*s)/l**
+* **přírodní eroze - faktory: N = D*P*G**
+	* erodobilita půdy - náchylnost půdy k erozi P
+	* geologický podklad G
+	* koeficient klimatu - srážky, povrchový odtok D
+* **antropogenní faktory A=H*O*C**
+	* organické hnojení H
+	* osevní postup O
+	* protierozní ochrana C
+* sklon pozemku
+* negativní vlivy eroze, důsledky
+	* odnos půdy
+	* snižování obsahu živin a hloubky půdy
+	* zanášení příkopů, nádrží, škody na komunikacích
+* __základní činitelé eroze půdy:__
+	* klima
+	* sklon svahu
+	* délka svahu a kompaktnost
+	* podzemní voda
+	* zasolení půdy
+	* obsah hrubé frakce
+* __hrozba zvýšené akumulace__
+	* v místech splavování materiálu
+	* důležité při plánování vodních nádrží, komunikací
+* __důsledky v.e:__
+	* ztráta půdy
+	* transport chemických látek
+	* zanášení příkopů, kanalizací, nádrží, zmenšení průtočnosti koryt
+* __protierozní opatření__
+	* organizační
+		* delimitace kultur
+		* rozmístění plodin
+		* pásové hospodaření
+	* technická
+		* terénní urocvnávky
+		* protierozní meze, příkopy
+		* průlehy
+		* zatravnění údolnice
+		* terasování
+	* agrotechnická
+		* vrstevnicové obdělávání
+		* ochranné obdělávání
+		* gislib.upol.cz/app/katalog
+
+===== Erozní modely =====
+* předpovídání rizika eroze
+* __fyzikální-matematické modely:__
+	* odtok vyjádřen na základě matematického vyjádření odtoku
+	* **model SWRRB**
+* __empirický model:__
+	* hledání statistické závislosti mezi sledovanými veličinami
+	* kvantitativní
+	* semikvantitativní
+	* **model USLE**
+		* univerzální rovnice pro výpočet průměrné dlouhodobé ztráty půdy
+		* **G = R*K*L*S*C*P**
+		* **R faktor erozní účinnosti deště**
+			* s jakou intenzitou dopadá déšť na zemský povrch
+			* součin kinetické energie deště a jeho nejvyšší 30-ti minutové intenzity
+			* **R = E. * i30 / 100**
+			* loni vypočítána nová hodnota pro ČR
+		* **K erodovatelnosti půdy**
+			* náchylnost půdy k erozi podle struktury půdy, obsahu organické hmoty
+		* **L délky svahu**
+		* **S sklonu svahu**
+			* orná půda do 12°, do 25° trvale travnaté porosty, nad zalesnění
+			* křivost reliéfu - konvexní, lineární, konkávní (zrychlování a zpomalování povrchového odtoku
+			* mikropovodí
+				* všechna voda (povrchový odtok) je sváděna do vodního toku
+				* oblast do 5 km^{2}
+		* **C ochranného vlivu vegetace**
+			* projevuje se přímou ochranou půdy před destruktivním způsobem dopadajících dešťových kapek na zemský povrch
+		* **P účinnosti protierozních opatření**
+	* **model RUSLE**
+		* revidovaná USLE
+			* **R** - 15-ti minutová intenzita
+			* **LS** - topografický faktor
+	* USPED
+	* SWRRB
+	* SWAT (Soil and Water Assessement Tool)
+	* EUROSEM
+	* LISEM
+	* KINEROS
+	* CASC2d
+	* WEPP (Water Erosion Prediction Project)
+	* CREAMS
+	* GLEAMS
+	* AGNPS - !
+	* AnnAGNPS
+	* SIMWE
+	* ANSWERS
+	* EPIC
+	* PRMS

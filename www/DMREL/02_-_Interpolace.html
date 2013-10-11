@@ -1,0 +1,312 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title></title>
+		<meta name='Generator' content='Zim 0.52'>
+		<style type='text/css'>
+			a          { text-decoration: none      }
+			a:hover    { text-decoration: underline }
+			a:active   { text-decoration: underline }
+			strike     { color: grey                }
+			u          { text-decoration: none;
+			             background-color: yellow   }
+			tt         { color: #2e3436;            }
+			pre        { color: #2e3436;
+			             margin-left: 20px          }
+			h1         { text-decoration: underline;
+			             color: #4e9a06             }
+			h2         { color: #4e9a06             }
+			h3         { color: #4e9a06             }
+			h4         { color: #4e9a06             }
+			h5         { color: #4e9a06             }
+			span.insen { color: grey                }
+		</style>
+	</head>
+	<body>
+
+<!-- Header -->
+
+	[ <a href='./01_-_%C3%9Avod.html'>Prev</a> ]
+
+			[ <a href='/'>Index</a> ]
+
+	[ <a href='./03_-_Datov%C3%A9_modely.html'>Next</a> ]
+
+<!-- End Header -->
+
+<hr />
+
+<!-- Wiki content -->
+
+<h1>02 - Interpolace</h1>
+
+<p>
+Created Pondělí 21 února 2011<br>
+</p>
+
+
+<p>
+<ul>
+<li>lze ji použít pouze pro spojité jevy</li>
+<li><u>hlavní princip</u> - <strong>jevy, které jsou v prostoru blíže k sobě, mají tendenci se časově více podobat</strong>, více spolu souvisí a opačně</li>
+<li><u>hlavní cíl</u> - naměření určého počtu bodů s nadmořskou výškou + odvození neznámech hodnotyí ve všech vybraných místech (každé místo bude mít hodnotu danou měřením nebo odhadem)</li>
+<li>odvozování hodnot <em>uvnitř</em> modelované část z okolních bodů o známé hodnotě</li>
+<li>pozn. <em>extrapolace</em> - odvozování hodnot nadmořské výšky <em>vně</em> modelované oblasti v místech, kde nebyla zaměřena - použití: hydrologické charakteristiky</li>
+<li><strong>využití:</strong></li>
+<ul>
+<li>určení nadmořské výšky z nadmořských výšek ve známých bodech</li>
+<li>určení nadmořské výšky v zadané síti bodů z nadmořských výšek ve známých bodech - griding</li>
+<li>určování souřadnic bodů polév vrstevnic - generování vrstevnic</li>
+<li>zvyšování nabo snižování husototy bodů v gridu - převzorkování</li>
+</ul>
+<li>kvalita výstupu je dána:</li>
+<ul>
+<li>rozložením vstupních bodů (viz. sampling)</li>
+<li>přesností hodnot nadmořské výšky v těchto bodech - sběr dat</li>
+<li>vhodností interpolační metody s ohledem na chování - výběr interpolační metody</li>
+</ul>
+<li>kritéria výběru metody:</li>
+<ul>
+<li>míra s jakou vybraná metoda zohledňuje charakteristické prvky reliéfu</li>
+<li>míra s jakou je schopna se přizpůsobit změnám reliéfu (př. hustotě a pravidelnosti prvků)</li>
+<li>výpočetní náročnost</li>
+</ul>
+</ul>
+</p>
+
+
+<h2>dělení:</h2>
+<p>
+<ul>
+<li>dle věrnosti k hodnotám vstupních bodů:</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<ul>
+<li>exaktní - zachovává naměřené hodnoty ve známých bodech, př. idw, spline, výsledný povrch přesně prochází vstupními body</li>
+<li>aproximující - nezachováná - neprochází vstupními body, př. griging</li>
+</ul>
+<li>dle počtu bodů vstupujicích do interpolace:</li>
+<ul>
+<li>globální</li>
+<ul>
+<li>vezmou se všechny body a určí se jedna globální funkce, ze které se odvozují hodnoty nodmořské výšky pro jakkýkoliv bod</li>
+<li>používání polynomických funkcí, př. metoda trend</li>
+<li>pozn. změna hodnoty jednoho vstupního bodu ovlivní výsledky pro celé území</li>
+</ul>
+<li>lokalní</li>
+<ul>
+<li>pro odvození n eznámých hodnot se používá omezený počet vstupních bodů</li>
+<li>nutnost správního definování velikosti, tvaru a orientaci okolí, počet vstpních bodů a distribuci bodů</li>
+<li>povrch je interpolován po častech</li>
+<li>vystupní data jsou vyhlazována</li>
+<li>př. metody nejbližších sousedů, IDW, kriging, spline, triangulace</li>
+</ul>
+</ul>
+<li>dle použití náhodného prvku:</li>
+<ul>
+<li>determinické </li>
+<ul>
+<li>neznámé hodnoty je vypočítají pomocí deterministické funkce</li>
+<li>př. IDW, spline</li>
+<li>použití pro přírodní procesy, ikdyž to není podmínou</li>
+</ul>
+<li>stochastické </li>
+<ul>
+<li>založeny na statistickém modelu, který v sobě obsahuje (prostorovou) autokoleraci a apriorní předpoklad nejistoty mezi měřenými místy - prostorová predikce, určení přesnosti předpovědi</li>
+<li>př. kriging</li>
+</ul>
+</ul>
+<li>analýza vstupních dat:</li>
+<li>autokorelace (závislost) - dana musí být závislá, inak nelze sledovat hodnoty - semivariogram</li>
+<li>stacionarita:</li>
+<ul>
+<li>nezávislost na místě měření</li>
+<li>pro ověření stacionality 1. řádu se používá analýza trendu - pokus existuje trend, je to špatně, musí se trend odstanit, aby byla zachována stacionalita prvního řádu</li>
+<li>stacinarita 2. řádu - vnitřní - ověřuje se tak, že se sleduje hodnota nudget efektu - hodnota semiovariogramu v počátku</li>
+</ul>
+<li>normální rozdělení </li>
+<ul>
+<li>pokud data nemají normální rozdělení, je nutné data transformovat, buď histogramem, nebo normal QQ plotem, šikmost, špičatost</li>
+</ul>
+</ul>
+</p>
+
+
+<h2>Interpolační metody</h2>
+<p>
+<ul>
+<li>1. Metoda nejbližšího souseda - hledanému bodu se přiřadí hodnota nadmořské výšky nejbližšího známého bodu (používá se zřídka, není to úplně interpolace)====</li>
+</ul>
+</p>
+
+<h4>2. Metoda iverzní vážené vzdálenosti - IDW:</h4>
+
+<p>
+<ul>
+<li>k určení neznámé hodnoty nadmořské výšky Z v bodě (x,y) používá vážený průměr z hodnot nadmořských výšek bodů ležících do určité vzdálenosti od počítaného bodů</li>
+<li><img src="./idw.png" alt=""></li>
+<ul>
+<li>parametry:</li>
+<ul>
+<li>Wi - váha bodu (funkce, která se se vzdáleností snižuje)</li>
+<li>di - vzdálenost mezi interpolovaným bodem a dataových (= známým) bodem</li>
+<li>p (power) - ovlivňuje rychlost změny váhy </li>
+<ul>
+<li>čím vyšší hodnota (p &gt; 1), tím větší je důraz na bližší body → členitější povrch. ostré vrcholky a opačně </li>
+<li>nižší hodnota (p &lt; 1), tím větší je vliv pro vzdálenější body v okolí → shlazený povrch</li>
+<li>p=0 → výsledný bod je pouze průměrem všech vstupiních bodů</li>
+<li>nejčastěji p=2</li>
+</ul>
+<li>n (počet vstupních bodů)</li>
+<ul>
+<li>počet nejblžších vstupních bodů nebo použití vyhledávací kružnice</li>
+<li>možnsot výběru z oktantů (vybráj jeden nejbližší bod z každé 45° výseče) či směrové vážení (vyhledávací okrub rozdělen na výseše definovaných úhlů a vahami jsou zvýhodněny výseče v určitém směru)</li>
+</ul>
+</ul>
+<li>nevýhody:</li>
+<ul>
+<li>vznik depresí, které se řeší shlazením, ztráta původních hodnot</li>
+<li>nelze interpolovat vrcholy či deprese</li>
+</ul>
+<li>využití: pro analýzy, kde je potřeba hladkosti modelu, př. modelování proudění, eroze, dopravních procesů, hydrologických výpočtů</li>
+<li>metody: Shepardova metoda (Surfer) - využívá metodu nejmenších čtverců; průměrové filtry</li>
+</ul>
+</ul>
+</p>
+
+
+<h4>3. Spline</h4>
+<p>
+<ul>
+<li>využívá matematicky definovaný křivky - vyberou se segmenty, přibližně stejně velké, měly by obsahovat alespoň 8 bodů</li>
+<li>nejčastěji kubický splajny - principem je spojování dvojic daných bodů segmenty kubické křivky</li>
+<li>výsledný povrch je velice hladký</li>
+<li>každá část povrchu je reprezentována samostatnou polynomickou funkcí</li>
+<li>nevýhody: tvorba lokálních minim a maxim, spline nedokáže udělat ostrý zlom</li>
+<li>povrch musí přesně procházet datovými body - musí mít minimální křivost</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>regularizovaný spline (ESRI) </li>
+<ul>
+<li>vyšší váha znamená hladší výsledný povrch</li>
+<li>shlazený, postupně se měnící povrch s hodnotami, které mohou ležet mimo rozsah vstupních dat</li>
+<li>hodnoty &gt;= 0 (0, 0.0001, 0.01, 0.5)</li>
+</ul>
+<li>spline s tenzí (ESRI) </li>
+<ul>
+<li>ovlivňuje tuhost (= napětí) povrchu</li>
+<li>vyšší váha znamená hrubší výstupní povrch</li>
+<li>hodnoty &gt;= 0 (0, 1,5, 10)</li>
+</ul>
+<li>regularizovaný splajn s tenzí (GRASS) - kombinace obou - mohou být nastavené pomocí dvou parametrů:</li>
+<ul>
+<li>tenze (napětí povrchu)</li>
+<li>vlastnost týkající se těsnosti průchodů interpolovanýho povrchu datovými body</li>
+<li>segmentace, anizotropie</li>
+</ul>
+</ul>
+</p>
+
+
+<h4>4. Kriging</h4>
+<p>
+<ul>
+<li>původně využíván v těžebním průmyslů (autoři Krig, Matheron)</li>
+<li>geostatistické interpolační metody , které určují lokální odhad - výpočet pravděpodobné hodnoty buď v bodě (bodový odhad) nebo v relativně malé ploše (blokový odhad)</li>
+<li>odhady jseou počítány pomocí vážených lineárních průměru → pro každé místo  je optimalizována soustava vah tak, aby měl výsledný odhaz co nejmenší chybu</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<ul>
+<li>váhy jsou závislé:</li>
+<ul>
+<li>na vzdálenosti mezi měřenými body (jako u IDW)</li>
+<li>prostorovém vztahu mezi měřenými body</li>
+<li>hodnotách daných semiogramem</li>
+</ul>
+</ul>
+<li>pro minimalizaci chyb je nutné provést strukturální analýzu a popsat vztahy ve zkoumaném poli → tz. sestavit empirický semivariogram</li>
+<li>semiovariogram</li>
+<ul>
+<li>využívá lineární vážené hodnoty, poskytuje popis prostorové variability → <u>empirický semivariogram</u> je pro určení hodnot odhadu ve všech směrech a všech vzdálenostech prokládán vybraným modelem (funkcí), který nejlépe vystihuje prostorou korelaci</li>
+<li>umožňuje kvantifikace korelace mezi 2 proměnnými</li>
+<li>1. výpočet vzdáleností</li>
+<ul>
+<li>výpočet vzdálenosti mezi jednotlivými páry bodů je založen na Euklidovské metrice (vzorec viz. skripta)</li>
+<li>čím víc pozorování, tím víc lokací párových bodů → nezvladatelné</li>
+<li>→ řešením je <em>seskupování:</em></li>
+<ul>
+<li>určení tříd vzdáleností</li>
+<li>ale jestliže je vzdálestno příliš velká, místní působení autokorelace může zůstat skryto</li>
+<li>naopak jestli je vzdálenost malá, mohou existovat třídy bez zastoupení a tím empirický semivariogram zkreslit</li>
+<li>nejlepší je, když jsou body rovnoměrně rozloženy</li>
+</ul>
+</ul>
+<li>2. výpočet semivariace - vzorec viz. prezentace</li>
+<li>3. tvorba empirického semivariogramu</li>
+<ul>
+<li>získané hodnoty semivariace jsou vyneseny do (empirického) semivarogramu </li>
+<li>empirické hodnoty vykreslené v semivariogramu se nazývají <u>shluk</u> (mračnp)</li>
+</ul>
+<li>4. proložení funkcí</li>
+<ul>
+<li>pužití teoretického semivariogramu</li>
+<li>výběr funkce (= modelu) teoretického semivariogramu = křivka kterou proložím množstvím bodů: sférický, lineární, exponenciální, gaussovský kruhový</li>
+<li>obecně platí: čím lépe vystihuje funkce empirický průběh, tím přesnější je prostorová predikce</li>
+<li>vybraná funkce by měla nejlépe vystihovat průběh prostorové korelace</li>
+</ul>
+<li>5. určení parametru funkce </li>
+</ul>
+</ul>
+<div style='padding-left: 30pt'>
+<img src="./krig.png" alt=""><br>
+</div>
+</p>
+
+<p>
+<ul style='padding-left: 60pt'>
+<li>sill (práh) - rozptyl (semivariace), pokud existuje část s lineárním průběhem → hodnoty variace se nemění</li>
+<li>range (rozsah) - vzdálenost, ve které semivariace dosáhne prahové hodnoty (přestane působit), vyjadřuje míru korelace uvnitř množity dat (velká korelace → vysoká korelace a naopak)</li>
+<li>nugget effect (efekt počátení hodnoty) - v nulové vzdálenosti bydu by měla být hodnota autokorela nulová</li>
+</ul>
+</p>
+
+
+<h4>5. Trend</h4>
+<p>
+<ul>
+<li>používat ji nebudeme</li>
+<li>interpolacepovrchu polynomickou funkcí, tzv. trendem</li>
+<li>příklad globální metody, nikdy neprochází vstupními body - výsledný povrch hladký, původní a odhadnuté hodnoty mají ce nejmenší odchylky</li>
+<li>lineární rovnice (lineární regresní model - polynom 1. rádu) vyjadřeje nakloněný plochý povrch →  z=a+bx+cy</li>
+<li>kvadratická rovnoce (polynom 2. řádu) popisuje mírně zvlěnný povrch s jednoduchými vrcholy a údolími → z=a+bx+cy+dx2+exy+fy2</li>
+<li>zvyšováním stupně polynomu lze vystihnout složitější tvary, extrémní povrchy</li>
+<li>používají jen do 3.tího řádu</li>
+<li>problém v okrajových oblastech</li>
+</ul>
+</p>
+
+
+
+<!-- End wiki content -->
+
+<hr />
+
+<!-- Backlinks -->
+
+	Backlinks:
+
+<!-- End Backlinks -->
+
+	</body>
+
+</html>

@@ -1,0 +1,93 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-03-09T21:54:51+01:00
+
+====== JavaScript ======
+Created Pátek 09 březen 2012
+
+* function has **()**; 
+* function name (parameters) {instructions}
+* function name (parameters) {
+	if (condition) {instruction};
+	};
+* global functions:
+	alert();
+	confirm(); - true x false
+	prompt(); - return string
+* object functions:
+	* string
+		"BLA".toLowerCase();
+		.toUpperCase();
+		.charAt(//číslo//);
+		.replace("//co//", "//čím//");
+		.split("//čím//") 
+		"blaklahla".substring(0,3) → bla
+	* number
+		parseInt("123 bla"); -> 123
+		.toString();
+	* array
+		var x = ["one","two","three"]
+		x[2]="three"
+		x.lenght
+		x.reverse(); 
+		
+
+
+
+* document.write();
+* získat den: new Date → getDate (var d = new Date; var date=d.getDate();)
+* získat hodinu: new Date → getHour (var d = new Date; var date=d.getDate();)
+* if () {} else if {} else {}
+* switch:
+	* switch (theDay) {
+		case 5: document.write("<b>Finally Friday</b>");
+		  break;
+		default: document.write("<b>I'm really looking forward to this weekend!</b>");  }
+* <input type="button" onclick="show_confirm()" value="Show confirm box" />
+	* alert("sometext");
+	* výběr ano ne - confirm("Opravdu do chceš");
+	* pro získání hodnoty - prompt("Zadej","defaultvalue");
+
+
+<html>
+<head>
+<script type="text/javascript">
+
+function zjisti_cisla()
+{
+var a=prompt("Zadej prvni cislo","2");
+var b=prompt("Zadej druhe cislo","3");
+if (a!=null && a!="" && b!=null && b!="")
+  {
+  document.write("cisla jsou " + a + "a " + b "<br />");
+  }
+}
+
+</script>
+</head>
+<body>
+<p>The script in the body section calls a function with two parameters (4 and 3).</p>
+<p>The function will return the product of these two parameters.</p>
+
+<input type="button" onclick="zjisti_cisla()" value="Zadej cisla" />
+
+
+</body>
+</html>
+
+
+
+
+
+fuction do_databaze()
+{
+var r=confirm("Opravdu chcete přidat do databáze?");
+if (r==true)
+{ 
+alert("Prvek přidán do databáze"); 
+}
+else
+{ 
+alert("Nepřidáno!"); 
+}
+}

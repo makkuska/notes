@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-04-30T12:29:20+02:00
+
+====== 09 - Monitoring krajiny ======
+Úterý 30. dubna 2013 
+poslední hodina, prezentace //2-blok-integrace_sensoru_GIT//
+
+* snímače se skládají z:
+	* signál:
+		* analogový - převod pomocí A/D P
+		* digitální - převod v čidle
+			* převodník
+	* dataloggery
+		* zařízení, do kterého se data zapíší, uloží
+		* jednoúčelové - k jednomu konkrétnímu zařízení
+		* univerzální
+	* zobrazovací jednotka
+		* display
+* senzorový web
+* SensorML - Senson Model Language
+	* standard, založen na XML
+* SPS Sensor Planning Service Interface Standard
+* SOS Sensor observation Serviced

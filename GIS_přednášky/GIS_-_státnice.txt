@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-04-20T16:20:09+02:00
+
+====== GIS - státnice ======
+Created Pátek 20 duben 2012
+

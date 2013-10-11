@@ -1,0 +1,84 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-04-23T11:12:53+02:00
+
+====== RPRR ======
+Created Úterý 23 duben 2013
+
+* růst - dílčí za určitý čas
+* územní rozvoj - proces, kterým dosáhnu růstu
+* udržitelný rozvoj území
+* regionální politika - činnost za účel snížení rozdílů mezi regiony
+* MMR - ministerstvo pro místní rozvoj, cíl: regiony mají stejné šance pro růst
+
+* Ty můžeme rozčlenit do fáze:
+	* poznávací (identifikační, analytické),
+	* plánovací (formulační, strategické, návrhové)
+	* realizační (implementační)
+
+* Metoda - postup nebo návod
+* Metodika – pracovní postup, nauka	
+* Metodologie – vědní disciplína
+
+Dokumenty
+* strategie - dlouhodobý koncepční dokument (3-7 let)
+* program - střednědobý dokument
+* plán - krátkodobý dokument
+
+* SWOT - silné, slabé, příležitosti, ohrožení
+
+* zákon č. 248/2000 Sb., o podpoře regionálního rozvoje
+* novela č.154/2000 Sb.
+	* ESUS - evropské seskupení pro územní spolupráci
+
+===== Zákon 480 =====
+* ministerstvo pro místní rozvoj
+* strategie - dokument, 3-7 let
+	* obsahuje analýzu stavu, slabé silné stránky, cíle RR
+* RR zaměřen na rozvoj podnikání, lidských zdrojů, výzkum a technologický vývoj, - rozvoj cestovního ruchu, zlepšování infrastruktury, dopravní obslužnosti, rozvoj tělovýchovných, sportovních, kulturních aktivit, rozvoj občanské vybavenosti, rozvoj sociálních služeb, dostupnost zdravotnickcých služeb, ochrana prostředí, provádění pozemkových úprav, dosažení cílů
+* __podpora státem: __
+	* stát podporuje postižené regiony, kde dochází k útlumu podniků a nezaměstnanosti, hospodářsky slabší regiony než je průměr, venkovské regiony a další oblasti (vojenského prostory, pohraničí, regiony postižené katatrofou
+	* **státní program regionálního rozvoje:**
+		* dokument, zaměření podpory
+		* vymezení regionu, cíl, oblasti podpory, opatření
+		* finanční prostředky schvaluje __Poslanecká sněmovna__ - příjemci finanční podpory mohou být kraje, sdružení obcí, obce, nestátní neziskové organizace
+		* finanční prostředky ve formě dotací, úvěrů, návratných finančních výpomocí
+* __podpora krajem:__
+	* **program rozvoje územního obvodu kraje:**
+		* dokument, zaměření podpory
+		* obsahuje analýzu stavu, slabé silné stránky, cíle RR
+		* vymezení regionu, cíl, oblasti podpory, opatření
+		* finanční prostředky schvaluje __zastupitelstvo kraje__ - příjemci finanční podpory mohou být kraje, sdružení obcí, obce, nestátní neziskové organizace
+		* finanční prostředky ve formě dotací, úvěrů, návratných finančních výpomocí
+* __Ústřední správní úřady - Ministerstvo:__
+	* koordinuje činnost při uskutečňování a přípravě strategie, analýzy, návrchy 
+	* zabezpečuje, kontroluje plnění státního programu RR
+	* zabezpečuje mezinárodní spolupráci
+* __Kraje:__
+	* schvaluje, analyzuje a hodnotí úroveň RR na svém území
+	* podpora rozvoje soukromého podnikání prospěšného pro kraj
+	* vyčleňování finančních prostředků
+	* podílí se na plnění úkolů, spolupracuje, realizuje strategii RR a státního progrmu RR
+* __Obce:__
+	* podpora podnikatelských aktivit 
+	* sdružování prostředků
+* koordinace hospodářské a sociální soudržnosti 
+	* definice NUTS2 pro využívaní finančních prostředků = **regiony soudržnosti**
+		* 9: Praha, Střední Čechy, Jihozápad, Severozápad, Severovýchod, Severozápad, Jihovýchod, Střední Morava, Ostravsko
+	* **regionální rada**
+		* zřizuje se v regionu soudržnosti
+		* zabezpečuje vypracování, realizaci programů spolufinancovaných z fondů
+		* provádí sběr stat. a fin. inforamcí k hodnocení průběhu, provádí průběžné vyhodnocování, zabezpečuje publicitu, informovanost
+		* každý kraj zastoupen 10-ti členy
+		* radu má předsedu
+	* **výbor regionálního rozvoje**
+		* sleduje a vyhodnocuje realizaci
+		* zástupci krajů, obcí, správních úřadů, podnikatelů, odborů, neziskových oranizací, ..
+	* řídící a koordinační výbor
+		* zřízeno ministerstvem
+
+===== Novela 154 =====
+* 2009
+* Evropská seskupení pro územní spolupráci
+	* ESUS - Evropské uskupení pro územní spolupráci
+	* seskupení se právnickou osobou, vzniká zápisem do registru

@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-10-17T17:29:27+02:00
+
+====== Homeworks ======
+Created Pondělí 17 říjen 2011
+
+[*] simple web interface with some layers with more advanced symbology (SLD)
+[*] use google maps or openstreetmaps as baselayers
+[*] basic controls (zoom, layerswitcher)
+

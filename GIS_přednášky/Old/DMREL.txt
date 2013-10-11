@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-06-03T19:58:22.745819
+
+====== DMREL ======
+Created Pátek 03 červen 2011
+
+[[./01_-_Úvod.txt|01 - Úvod]]
+[[./02_-_Interpolace.txt|02 - Interpolace]]
+[[./03_-_Datové_modely.txt|03 - Datové modely]]
+[[./04_-_Chyby_v_DMREL.txt|04 - Chyby v DMREL]]
+[[./05_-_Hodnocení_přesnosti_DMR.txt|05 - Hodnocení přesnosti DMR]]
+[[./06_-_Zdroje_dat_v_DMREL.txt|06 - Zdroje dat v DMREL]]
+[[./07_-_Analýzy_DEM.txt|07 - Analýzy DEM]]

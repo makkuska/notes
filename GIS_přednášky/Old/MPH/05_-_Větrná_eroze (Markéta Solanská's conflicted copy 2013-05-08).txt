@@ -1,0 +1,161 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-03-19T12:17:26+01:00
+
+====== 05 - Větrná eroze ======
+Úterý 19. a 26. března 2013
+
+* hybnou sílu má vítr, určuje intenzitu, částicí, která provádí erozi je materiál, kt. vítr unáší
+* eroze vzniká mechanickou činností, rozrušuje, odnáší a ukládá
+* **eolizace** - větrná eroze
+* dělí se na **větrnou erozi** (sypké hmoty) a **korazi** (obrušování horninových pevných útvarů)
+* __se dělí na:__
+	* **abraze** - rozrušování povrchu půdy a uvolnění jednotlivých částic
+	* **deflace** - odnášení uvolněných částic a jejich přemisťování = pohyb
+		* __pohyby v podobě:__
+			* **suspenze** - přenos částic na dlouhé vzdálenosti, př. v ČR padne saharský písek
+			* **saltace** (pohyb skokem) - nejčastější pohyb u nás, 
+			* **sunutím** po povrchu - velké těžké částice (až do 3mm)
+	* **sedimentace** - ukládání
+* **podmínky vzniku:**
+	* suché oblasti (srážky 250-300mm/rok)
+	* směr větru je stále stejný
+	* podle FAO:
+		* půdy náchylné k erozi: 
+			* uvolněné částice, přiměřeně jemné (do 2 mm)
+			* hladké půdy bez vegetace
+			* vítr v 10 cm musí být silný (anemometr)
+			* dlouhé pole
+	* riziko věrné eroze v ČR
+		* četné větry (růžice s ČHMÚ)
+		* srážky < 500 mm (stanice ve stejné orografické situaci)
+		* lesnatost < 20% (landuse v ideální v 10tis. - Zabaged)
+		* lehké písčité a hlinitopísčité půdy (BPEJ)
+		* jemnozrnné jílovité půdy, došli-li před erozní události k jejich vyschnutí (jedině v terénu)
+		* v Čechách ohroženo 26% zemědělské půdy (od Lovosic po HK)
+		* na Moravě 45% 
+
+===== Faktory pro modelování: =====
+* **klimatické**
+	* vítr
+		* rychlost (svět od 27 - 35 km/hod) - v ČR od 18 km/hod
+			* kritická rychlost větru je rychlost, kdy dochází k větrné erozi nad přípustnou mez 
+				* tabulka pro vztah: druh půdy + vlhká/písčitá + rychlost větru
+		* dobu trvání, převládající směr
+	* ovzdušné srážky - množství a rovnoměrné rozložení
+	* teplota ovzduší - vlhkost (která ovlivní evapotranspiraci)
+	* evapotranspirace - výpar z půdy a povrchu vegetace (slunečním zářením, teplotou půdy, vlhkostí vzduchu - data z terénního měření)
+	* atmosférický tlak - teplý a suchý vzduch narazí na pohoří, snižuje se tlak, zvětšuje se rozdíl tlaku mezi územím před a za pohořím, tím rychlejší proudění
+* **půdní**
+	* zajímá nás mechanická stabilita - jak je odolná 
+	* → stupeň erodovatelnosti (poměr mezi erodovatelnou  a neerodovatelnou půdní částicí (erodovatelné od 2mm v ČR)
+	* půdní struktura
+	* velikost a tvar částic
+	* vlhkost půdy - saturace (póry jsou zaplněné vodou), polní kapacita, bod vadnutí (rostliny spotřebovaly všecku vodu, vzduchu je víc než vody, půda není suchá, pro rostliny už ale není přístupná) 
+	* drsnost půdního povrchu - závisí na půdních agregátu, vegetačním krytu, mikroreliéfu půdy
+* **územní **
+	* délka pozemku ve směru převládajících větrů
+	* sklonitost pozemku
+* **porostní**
+	* plošný vegetační kryt - 
+	* vegetační bariéry
+
+===== Modely =====
+* **Odhad hrozby větrné eroze**
+	* E = (T + R + S + O + B) * P * V * U
+	* T poloha, R výška, Sklon Orientace, faktor Bariéry, P erodovatelnost (půdní typ a druh), V faktor nadměrné vlhkosti, U využití země (orná půda 1, ostatní 0)
+	* spočítá se to v závorce, pokud je hodnota záporná, nedochází k erozi, ale sedimentaci a pak se dál nepočítá
+* **Určení ohroženosti pozemků **
+	* výsledkem absolutní hodnota
+	* Erodovatelnost půdy = 22,02 - 0,72Vv - 1,69Wv + 2,64Rv peo čechy
+	* Vv obsah neerodovatelných agregátů
+	* Wv poměr přístupná voda/ nepřístupná voda
+	* Rv rychlost větru, která je očekávána
+	* Ev = 16,091 - 0,584J - 0,177VV + 0,422 RV pro moravu, písčito-hlinité půdy
+* **Potenciální intenzita větrné eroze**
+	* E = I * K * C * L * V
+	* I erodobilita
+	* K drsnost půdního povrchu (terénní průzkum nebo odhad z BPEJ)
+	* C klimatický faktor
+	* L délka pozemku 
+	* V vegetační kryt - 10-ti násobek v. bariéry na návětrné a 20-ti na závětrné straně
+	* převodní tabulka WEQ
+* Vyvrhnout protierozní opatření a pak znovu modelovat
+	* organizační opatření - změna hospodaření
+	* agrotechnické - závlahy, mulčování, podsevy, ..
+	* technické - zábrany, větrolamy
+* složité zjištění faktoru erodobility
+* správné výsledky všech modelování přírodních jevů jsou prezentovány za nějaké období (po měsících, vegetační období)
+* __European soil portal (ESP)__
+	* modely se vyvíjí, podporují v rámci této organizace
+	* data jsou stáhnout z webu
+	* **PESERA**
+		* vynikající výsledky při dobrých datech
+		* zabývá se erozí (i vodní)
+		* výstupem data a mapový server
+		* vstupná data: typy půd, ladnuse, DEM, klimatické faktory
+		* výstup: index erodobility
+	* **MESALES**
+		* "white box" model 
+		* vstupní data - landuse, půdní typy, půdní faktory, reliéf, klimatické faktory, náchylnost k erozi
+		* textové výstupy
+	* **SMIP **
+		* pro Itálii
+		* vychází z USLE
+	* **ClimChAplg**
+		* Švýcarský model, určený pro oblast Alp
+		* RUSLE v kombinaci
+		* není dobrý, ale průkopnický
+		* jako první prezentovali výsledky v GoogleEarth
+
+===== Data pro =====
+
+* __podle místa použití:__
+	* laboratorní - nevhodné
+	* terénní
+* __podle odběru vzorku a způsobu měření vlhkostí:__
+	* destruktivní - narušuje půdu + přímé
+	* nedestruktivní + nepřímé
+* __metody měření:__
+	* **gravimetrické**
+		* destruktivní a přímá metoda
+		* dobré výsledky, ale nezopakovatelné
+		* standardně se odebere 100m^{3}, suší se 24 hodin při 110 st
+		* založeno na rozdílu hmotnosti vlhké a suché půdy
+		* data je potřeba ručně zpracovat
+	* **odporové**
+		* nedestruktivní nepřímá metoda - metoda jde zopakovat
+		* vlkhá půda = polovodivý nehomogenní materiál, měří se čidlem z kovových elektrod
+		* je potřeba kalibrovat sondy, jsou celkem levné (1 set ~ 5 tis.)
+		* relativně nepřesné
+	* **tenzometrické**
+		* nedestruktivní nepřímá
+		* měří se **sací tlak**
+		* přístroj **tenzometr **- porcelánová nádobka, které měří rozdíl tlaku uvnitř a venku
+		* levné (1 čidlo ~ 4 tis. kč, na základní měření asi 6, základní set 15 tis.), rychlé
+	* **kapacitní**
+		* nedestruktivní nepřímá
+		* půda je dielektrikum, měří se rozdíl dielektrické konstanty 
+		* závislá na teplotě, jsou nutné korekce
+	* **reflektometrie v časové doméně**
+		* nedestruktivní nepřímá (sondy ve tvaru kruhu)• 
+		* v půdě se měří rychlost šíření elektromagnetických vln
+		* výsledkem rychlost, za který impuls proběhne tam a zpět po jehlách sondy
+		* přesné, není třeba kalibrovat, snadno opakovatelné, automatické, ale velice drahé
+	* Time domain transmission
+		* podobné jak předchozí, jen to tam asi nějak jinak přechází přes ty jehly
+	* Neutronová metod
+		* nedestruktivní nepřímá
+		* měří se zpomalení rychlosti neuronů na vodíkových jádrech
+		* drahé, radioaktvní
+	* Gamaskopická metoda
+		* nedestruktivní, nepřímá
+		* přesné, drahé
+	* **DPZ** - optická metoda
+		* nedestruktivní nepřímá
+		* čím větší vlhkost, tím větší odrazivost
+		* velká spojitá ploch, ale drahé a pouze řeší svrchní vrstvu, vliv vegetace
+		* potřeba kalibračních hodnot - vlhkost povrchu x vlhkost půdy
+* zdroje chyb:
+	* vliv na měření má kvalita půdy kolem sondy
+	* při měření by nemělo dojít na velké narušení půdy, měřit nepozměněnou půdu

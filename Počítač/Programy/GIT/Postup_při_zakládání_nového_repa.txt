@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-10-09T20:28:52+02:00
+
+====== Postup při zakládání nového repa ======
+Created Středa 09 říjen 2013
+
+* na webu založit repo pouze z název (nezakládat README ani LICENCI)
+* touch README.md
+* touch .gitignore
+	* echo "*~" > .gitignore
+* git init
+* git add -A . (přidá vše, -A znamená, že se na serveru smažou věci, které jsem smazala v počítači)
+* git commit -m "first commit"
+* git remote add origin git@github.com:makkuska/solanska-ucetnictvi.git
+* git push -u origin master

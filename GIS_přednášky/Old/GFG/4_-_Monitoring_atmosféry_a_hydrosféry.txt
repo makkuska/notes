@@ -1,0 +1,51 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-12-17T00:25:25+01:00
+
+====== 4 - Monitoring atmosféry a hydrosféry ======
+Created Pondělí 17 prosinec 2012
+
+* na územi ČR měření tlaku, teploty vody a srážek už od 1752
+* provozovatelé stanic ČHMÚ (30 stanic), VGHMÚ Dobruška, Amatérské, HZS
+* meteorologické stanice
+	* synoptické - každou hodinu posílají data
+	* klimatologické - v 7, 13, 21 hod.
+	* srážkoměrné stanice
+* měřené prvky: teplota, vlhkost a tlak vzduchu, směr a rychlost větru, úhrn sráže, výška sněhu, doba trvání slunečního svitu
+* pozorované prvky: vodorovná dohlednost, pokrytí oblohy oblačností, charakteristiky oblačnosti, stav a průběh počasí, nebezpečné a zvláštní atm. jevy, náhlé změny počasí
+* nadstandardní veličiny: výbar vody z v. hladiny, teplota půdy v hloubkách 5? 10, 20, 50, 100cm, sluneční záření, čistota ovzduší, fotografování bolidů
+* typy přístojů:
+	* registrační - veličinu zaznamenávají na papír, nebo digitálně a pak ji předávají (barograf, hygrograf)
+	* neregistrační - veličiny se musí odečítat (teploměr, barometr, vlhkoměr)
+	* radary
+		* vysílač generuje krátné pulsy EM energie do atmosféry, kde dochází k odrazu části energie od meteorologických částic (srážky)
+		* anténa odraženou energii zachytí
+		* podle doby mezi vysláním a přijetím a podle polohy antény určí polohu cíle
+		* 2 radary v Česku: Brdy, Skalky u Protivanova
+
+===== Monitoring =====
+* **teplota vzduchu:**
+	* meteorologická budka, teploměr 2 m nad povrchem
+	* pro klim. účely: teplocha suchá, vlhká, max, min, min. přízemní
+	* teploměry:
+		* staniční - rtuť, -30 - 50°C
+		* Sixův max - min teploměr - kapilára ve tvaru U (plněno líhem, toluenem)
+		* termograf - průběh v čase
+		* elektrické t.
+		* půdní t. - hloubka 5, 10, 20, 50, 100 cm
+* **tlak vzduchu:**
+	* aneroid - pérový barometr: pracuje na základě měření deformace kovové krabičky, která je uvnitř vzduchoprázdná, deformace tlakového prvku se mechanicky přenáší na ukazatel
+	* rtuťové barometry
+	* barograf
+* **vlhkost vzduchu**
+	* **absolutní**
+		* udává obsah vodních par v objemové jednotce vzduchu při dané teplotě
+		* jednotky: gm-3, Pa
+		* psychrometr
+			* Augustův - obsahuje 2 teploměry, jeden je vlhčený, rozdíl teplot se nazývá psychrometrická diference, rozdíl teplot získáme rozdílem teplot obou teploměrů  (protože odpařováním vody klesá teplota vlhkého teploměru)
+	* relativní - vlasový, kapacitní elektrický
+	* sytostní doplněk
+* srážky
+* čistota ovzduší 
+	* imise
+		* sleduje se oxid siřičitý SO2, oxidy dusíku NOX

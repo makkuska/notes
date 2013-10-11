@@ -1,0 +1,73 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-02-16T15:11:25+01:00
+
+====== MapFile ======
+Created Čtvrtek 16 únor 2012
+
+=== ÚPRAVA MAPFiLE: ===
+* **původně: **#JTSK / Krovak 5514 <-- ESRI 102067
+#<102067> +proj=krovak +lat_0=49.5 +lon_0=24.83333333333333 +alpha=30.28813975277778 +k=0.9999 +x_0=0 +y_0=0 +ellps=bessel +units=m<>
+<102067> +proj=krovak +lat_0=49.5 +lon_0=24.83333333333333 +alpha=30.28813972222222 +k=0.9999 +x_0=0 +y_0=0 +ellps=bessel +pm=greenwich +units=m +no_defs<>
+
+	* 102067 změna na **5514**
+* **teď: **#JTSK / Krovak 5513
+	  <5513> +proj=krovak +lat_0=49.5 +lon_0=24.83333333333333 +alpha=0 +k=0.9999 +x_0=0 +y_0=0 +ellps=bessel +towgs84=589,76,480,0,0,0,0 ;+units=m +no_defs  <>
+* **extent: ** #EXTENT [minx][miny][maxx][maxy] #######
+		  #EXTENT -555336 -1128909 -534603 -1113135  #z,j,v,s  s-jtsk krovak east-north (epsg: 102067)
+		  #EXTENT  -9.717 35.01 56.358 66.317 #WGS84 Evropa
+		  #EXTENT  12.09 48.55 18.86 51.09 #WGS84 Cesko
+		  #EXTENT -904539,625 -1227290,25 -431680,59375 -935232,3125 # KROVAK 2065
+		  EXTENT -933797.16456 -1274107.28212 -418114.33334 -852184.96567 # KROVAK
+* **IDENTIFY:**
+	* TOLERANCE 5
+	    TEMPLATE "void"
+	    TOLERANCEUNITS pixels
+	    **METADATA** 
+		    "description" "Mesta"
+		    "RESULT_FIELDS" **"gid, name" — u postgis všecko malým, u shapu všecko velkým!**
+		    "RESULT_HEADERS" "GID, Jmeno"
+		    "ows_title"      "tbod"
+		    "LAYER_ENCODING" "UTF-8"
+		    "own_title" "tbod"
+	    END  # Metadata 
+
+* **PROJECTION**
+	          "init=epsg:5513"
+	          "init=epsg:4326"
+	  END
+* **příklad vrstvy s postgisem**
+	__LAYER #### Cities__
+	  NAME 'city'
+	  TYPE POINT
+	  CONNECTIONTYPE POSTGIS
+	  CONNECTION "host=localhost port=5432 dbname=my_db user=postgres password=dosys"  
+	  DATA "the_geom from cities10000eu"
+	  STATUS DEFAULT
+	  PROJECTION 
+	       "init=epsg:4326"
+	  END
+	  CLASS
+	      STYLE
+	         COLOR 773 128 888
+	      END
+	    END
+	END   # Layer
+	
+	* vrstva z mojí tabulky
+	 LAYER
+	  NAME 'tlinie'
+	  TYPE LINE
+	  CONNECTIONTYPE POSTGIS
+	  CONNECTION "host=localhost port=5432 dbname=postgisdatabaze user=postgres password=dosys"  
+	  DATA "**the_geom from tlinie USING UNIQUE gid USING srid=4326**"
+	  STATUS DEFAULT
+	  PROJECTION 
+	       "init=epsg:4326"
+	  END
+	  CLASS
+	      STYLE
+	         COLOR 111 128 111
+	      END
+	    END
+	END   # Layer

@@ -1,0 +1,59 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-10-17T16:42:17+02:00
+
+====== Úkoly ======
+Created Pondělí 17 říjen 2011
+
+[*] přes prázdniny: instalace PostGIS, umn, GeoMoose, Kimpl bcp nastudovat 
+[*] naistalovat postgreSQL, postGIS, UMN MapServer, pmapper, GeoMoose
+[*] vytvořit prezentaci, odprezentovat na 1.bd (21.10)
+[*] apache/conf/httpd.conf -> poslat (do 14.10.)
+[*] vizualizovat 1 bod přes PostGIS (použitá projekce 4326 a 102067 → 5514)
+	* vložena projekce 102067 do PostGISu (http://janitor.cenia.cz/www/public/manual/postgresql_install/ar01s04.html)
+[*] data (shape) z p.mapperu 4.2. vložena do databáze (my_db, přes QGIS) a opraven mapscript, tak aby p.mapper zobrazovat data z databáze
+[ ] do 11.4.
+	[*] Ve formuláři znemožnit úpravu geometrie, upravit formulář (smazat id, srid, ..), připravit na prezentaci — do bakalářského dne
+	[ ] Umožnit změnit koordinační systém pro ukládání, podle toho jaká jsou data
+	[*] Geometry lepší - **GEOGRAPHY pro měření vzdáleností**
+	[*] vyřešit coordinační systém
+	[*] mapfile v openlayers
+	[*] OpenLayes:offline
+[ ] do 30. března
+	POZN: redraw: function()  http://dev.openlayers.org/apidocs/files/OpenLayers/Layer/Vector-js.html#OpenLayers.Layer.Vector
+	[*] UTF-8 
+	[*] polygon bez výplně
+	[*] z databáze zpětně vypsat souřadnice
+	[*] a) atributy ve speciální tabulce 
+	[*] b) zapisovat přes formulář do obou tabulek součastně
+	[*] i → zobrazit atributy (přes metadata)
+	[*] najít data přes search (postgis, shape)
+	[*] formulář linie, polygon, bod
+	[ ] rozhraní pro pmapper - odkaz na formuláře
+	[*] vyřešit souřadnice ve formuláři
+[*] do 6.března
+	[*] hotová rešerše
+	[*] vidět v PMA – vizualizované B, L, P z PostGISu v JTSK
+	[*] postgis  - BPL data zapsána ve WKT
+	[*] vstup via QGIS
+	[*] psgl to psql
+	[*] PHP / PSQL – shp / csv/txt/xml
+	[*] extenze kreslení
+	[*] COORDINATES   - incphp/uielement.php — 
+		* /**
+			* Coordinates display
+		    */
+		__    public static function displayCoordinates()__
+		    {
+		        $html = "<div id=\"showcoords\" class=\"showcoords1\"><div id=\"xcoord\"></div><div id=\"ycoord\" ></div></div>";
+		        return $html;
+		    }
+	[*] kreslení objektu: http://svn.pmapper.net/trac/wiki/PluginsDynamicData
+[*] po kliknutí se zobrazí pop up okno z informacemi o prvku - bod, lini, polygon 
+[*] Editace atributů
+[ ] po kliknutí se bod překreslí ve vektorovou vrstvu http://openlayers.org/dev/examples/getfeatureinfo-control.html
+[*] přidat edit, reshape, drag, modify
+[ ] do 7.8. webovky
+[ ] do 14.8. napsat text bp
+	
+	

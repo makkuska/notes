@@ -1,0 +1,56 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-12-17T12:17:39+01:00
+
+====== Písemka2 ======
+Created Pondělí 17 prosinec 2012
+
+
+=== Inášecí schopnost a rychlost unášení vodního toku ===
+unášecí schopnost - schopnost unášet částice :-D
+unášecí rychlost toku - udává největší průměr částic, které tok může dopravovat po dně jako splaveninu
+
+==== Nezkrácená hydrologická bilance ====
+P = E + R + ΔW
+
+P – úhrn srážek
+E – výpar (evapotranspirace) = evaporace + transpirace
+R – odtoková výška (povrchový, podpovrchový odtok)
+ΔW – změna objemu vody v povodí
+
+==== Skleníkový efekt ====
+- ohřívání planety tím, že snadno propouští sluneční záření, ale tepelné záření o větších vlnových délkách zpětně vyzařované z povrchu planety účinně absorbuje a brání tak jeho okamžitému úniku do prostoru
+- výskytu skleníkových plynů by průměrná teplota při povrchu Země byla −18 °C
+
+==== Rozdělení S-O modelů podle kauzality ====
+-  kauzalita je vyjádřena vztahem příčina-důsledek
+* deterministické modely - vztah závislých (výstupní veličiny) a nezávislých (vstupní v) proměnných
+	- hydrodynamické modely - respektují zákony zachování hmoty, hybnosti, energie
+	- koncepční modely - reflektují fyzikální zákony ve zjednodučené formě
+	- black-box modely - neberou v úvahu žádný zákon
+* stachastické modely - primárně neobashjí vazbu mezi příčinou a důsledkem
+	- pravděpodobnostní modely -  min Q, max Q, vodní stav
+	- m. generování časových řad -  př. extrapolace časových řad pozorovaných parametrů
+
+
+==== Kladná zpětná vazba ====
+- zesiluje účinky
+- př. vazba mezi teplotou vzduchu a rozsahem polárního zalednění
+- pokles teploty může znamenat zvětšení rozsahu sněhové či ledové pokrývky, tedy zvýšení odrazivosti zemského povrchu, který odráží více sluneční energie než povrch bez sněhu a ledu, což vede k dalšímu poklesu teploty v okolí
+
+==== aneroid - pérový barometr ====
+- pracuje na základě měření deformace plechové krabičky, která je uvnitř vzduchoprázdná
+- deformace tlakoměrného prvku se mechanicky přenášejí na ukazatele
+
+==== HED-HMS ====
+ - je nutný ke komponentům dopsat ještě metody, nestačí jen vyjmenovat 
+komponenty; použití v GIS a vstupní data
+- od 60. let - armáda USA
+- komponenty: 
+- počítající objem odtoku - metoda SCS CN křivek, Green-Ampt metoda, m. SMA (Soil Maoisture Accounting)
+- přímého odtoku - metoda jednotkového hydrogramu + modifikace či model kinematické vlny
+- podzemního odtoku - model lineární nádrže, exponenciálního pokledu nebo kostatního odtoku
+- korytového odtoku - Lag model, model kinematické vlny; všechny metody založeny na řešení zákl. rovnic proudění v otevřených korytech
+- další modely - simulace rozdělovacích objektů, nádrží
+- vstupní data - hodnoty CN křivek, srážky, odhad intercepce a evapotranspirace, hydrologická data (průtoky)
+- GIS - nadstavby pro ArcGIS, snadný import z GIS, tvorba hydrologicky korektního modelu terénu, počítají charakteristiky (hranice povodí, směr a akumulaci odtoků)

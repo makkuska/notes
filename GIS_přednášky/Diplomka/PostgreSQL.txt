@@ -1,0 +1,34 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-04-02T19:28:59+02:00
+
+====== PostgreSQL ======
+Created Úterý 02 duben 2013
+
+* PostgreSQL 9 admin cookbook
+	* PostgreSQL is **100% open source software**. PostgreSQL is freely **available to use, alter, or redistribute in any way you choose**. PostgreSQL's license is an approved open source license very similar to the BSD (Berkeley Distribution Software) license, though only just different enough that it is now known as **TPL (The PostgreSQL License)**.
+* PostgreSQL up and running
+	* PostGIS přes 800 funkcí, typů a prostorových indexů.
+* http://www.postgresql.org/about/
+	**Limit				  Value**
+	Maximum Database Size		Unlimited
+	Maximum Table Size			32 TB
+	Maximum Row Size			1.6 TB
+	Maximum Field Size			1 GB
+	Maximum Rows per Table		Unlimited
+	Maximum Columns per Table	250 - 1600 depending on column types
+	Maximum Indexes per Table	Unlimited
+ 
+* replication:
+	* master x slave
+	* built-in replication - only one master, slave supports read-only
+	* WAL - write-ahead log 
+		* transaction log
+	* synchronous x asynchonous
+	* streaming replication
+		* it does not require direct file access between master and slaves
+	* cascading replication
+		* slaves can receive logs from nearby slaves instead of directly from the master.
+		* This allows a slave to also behave like a master for replication purposes but still only allow read
+		only querie
+		

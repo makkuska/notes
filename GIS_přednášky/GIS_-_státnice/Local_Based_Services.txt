@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-11-26T16:46:32+01:00
+
+====== Local Based Services ======
+Created Pondělí 26 listopad 2012
+

@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-09-23T22:09:24+02:00
+
+====== bash příkazy ======
+Created Pondělí 23 září 2013
+
+* zapnutí disků po zapnutí: **ntfs-config**
+
+* **smbdoma**
+* **route21/route20**
+* **clear**
+
+Dokumenty2externi; Dokumenty2Server -- musím být root
+* /home/market/bin/Dokument2Server
+* /home/market/.bashrc    .vimrc   text.vim — configuráky

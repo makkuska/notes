@@ -1,0 +1,67 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-02-06T20:41:21+01:00
+
+====== Linux ======
+Created Pondělí 06 únor 2012
+
+až mě Kuba hodně nasere, tak smaž klíč tady: .ssh/authorized_keys, v nejhorším případě přeinstalovat notebook!
+
+* zapnutí disků po zapnutí: **ntfs-config**
+* **df** — přehled o discích (volná místa)
+* **pwd**
+* **smbdoma**
+* **route21/route20**
+* **clear**
+* **whereis**
+* **which**
+* když chcu něco přidat do souboru apropos gtk >> vypis.txt
+
+* **ls -laR** podadresářová struktury	
+* **ls -t** nejnovější soubory
+* **ls -A| ws -l** — zjištění počtu souborů v adresáři
+* **tree**
+
+* **mkdir** -p něco/neco/něco -- vytvoření adersářové struktury
+* **rmdir** — smazání prázdné složky
+* **rm -r** — smazání plné složky 
+* **touch** — rychlé vytvoření souboru
+* **file *** — zjistění typu souboru
+
+* **rename** 's/^[^[:digit:]]*//g' *.mp3
+* rename 's/(:digit:*) /\1 - /g'd
+* aptitude search linux-image | grep '^i'
+
+* **GREP**
+	* vyhledá text v souborech
+	* grep -r (-r i v podsložkách) moje (řetězec) * 
+	* grep -lR 'geoserver' *
+	* grep -R 'geoserver' *
+	* grep -lir 'geoserver' *
+
+* Dokumenty2externi; Dokumenty2Server -- musím být root
+* /home/market/bin/Dokument2Server
+* /home/market/.bashrc    .vimrc   text.vim — configuráky
+
+== porovnání dvou zdrojáků: ==
+
+	* **diff** název_jednoho název_druhého
+		* pokud se nic nestane, jsou stejné
+	* **md5sum:**
+		* md5sum název_jednoho
+		* md5sum název_druhého
+		* vygeneruje se číslo, pokud je číslo stejné, zdrojáky jsou stejné
+
+* instalace ./configure make make install
+	* odinstalovat se vším všude aptitude pudge
+
+* restart gnome-shell: **/etc/init.d/lightdm **
+
+auri_kelt@0908
+
+Ora2Pg
+
+Ora2Pg je Perlový modul a skript pro převod databáze z Oraclu do PostgreSql. 
+Piwik
+
+Piwik je nástroj pro analýzu návštěvnosti webových stránek,

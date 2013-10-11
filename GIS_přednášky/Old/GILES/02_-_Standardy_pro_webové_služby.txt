@@ -1,0 +1,248 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-02-18T10:23:21+01:00
+
+====== 02 - Standardy pro webové služby ======
+Pondělí 25. února a 4., 11. března 2013
+
+* __modul FME__ - převod formátů (i ESRI ho používá)
+* decentralizovaný distribuovaný (=běží na několika serverech) systém
+* snaha o distribuovaná, nezávislá data, která se dají tahat po síti
+* nový trend - distribuované celé řešení GIS (cloud)
+* komunikační prostředek mezi jednotlivými komponentami sw nástrojů - klient-server
+* přenos požadavků, dat a map skrze webové služby
+* měly by být chráněny proti zneužití
+* zobrazení map z několika zdrojů v prostým překrýváním obrázků
+* pomocí kaskádování, orchestrace
+* nezávislost na formátech, nativních řešeních (=MapServer, ArcGIS), protože my nepřistupujeme k datům, ale ke službě, která pracuje s daty
+* standard = sada pravidel
+* technologie svázané s určitým softwarem (proprietární, firemní) - př. standard ArcIMS (formát XML) od ESRI
+* veřejně definované technologie
+	* probíhají dlouhodobých standardifikačním mechanismem
+	* nelze standart změnit ze dne na den
+	* největší vlivy na vývoj standardů:
+		* **W3C (WorldWideWeb)** - ovlivňuje tím, že určuje základní protokoly internetu
+		* **ISO** - jediný standardizační mechanismus s kulatým razítkem
+			* standardy pro GIS: IS/TC 211
+		* **směrnice INSPIRE** - zavádí nařízení, které jsou závazné pro členské státy EU
+		* **iniciativa OGC (Open Geospatial Concorcium) **
+			* dobrovolné mezinárodní neziskové sdružení, průmyslové využití, 
+			* někdy spolupracují s ISO, většinou nejdou proti sobě - jsou v rozporu v katalogových službách
+			* používají standardů OGC není závazné
+			* vývoj je rychlejší než v ISO
+			* cílem interoperability v GIS a LBS (služby používané pro určování polohy)
+			* 398 standardů - Google, vládní agentury, univerzity, výzkumné instituce, dobrovolné sdružení (EuroG)
+			* vznik specifikace: 
+				* 1. řešení problému, který projde vývojem, diskusi, praktickým testováním
+				* 2. a 3. viz prezentace
+			* definovány v XML - vytváří geonames, parsery, ..
+			* neustále se vyvíjejí, nekonkurují si, sdílí společný rámec (standard OWS, který pak dodržují všechny další standardy)
+
+===== Mapové standardy OGC =====
+* OWS, WMS, WMTS, SLD, SE - přenos rastrových obrázků
+* **OWS (OGC Web Services)**
+	* standard zahrnující WMS, WCS, WFS, je jim nadřazený
+	* specifikuje formát, který je společný pro WMS, WCS, WFS
+	* definuje pojmy, parametry, formáty
+	* žádost kódována skrze HTTP (HTTPS), založeno na XML
+	* http://adresa/?**service**=WMS&**request**=GetCapabilities
+	* HTTP GET http://host:port/cesta/?**service**=WMS&**request**=GetCapabilities
+	* HTTP POST
+	* __Coordinates Systems__
+		* **map CRS**
+			* ortogální, obrazový, použit při generování výsledku
+			* kladné hodnoty, začíná 0,0, mapa v 1. kvadrantu
+		* **layer CRS** - referenční, projektovaný, podle OGC musí existovat alespoň 1 CRS systém, aby se dal kaskádovat
+		* lépe se zpracování v map CRS, proto se při procesech převádí do map CRS
+		* **vertikální CS** - připouští, že může být definována max. 1, není potřeba označení výšek
+		* **časové **(není standardizován) a další CS (vlnové délky satelitních snímků)
+	* __BoundingBox__
+		* rámeček pro zobrazení mapy 
+		* BB CRS="" minx="" miny="" maxx="" maxy=""
+* **WMS (Web Map Service)**
+	* od 2000, není 1.3.0.
+	* __přenos hotové mapy pomocí raster obrázku včetně popisu, stylování__
+	* __výsledky:__
+		* obrázky z mapou generovány z dat na uložišti
+		* výsledek dotazu v textové podobě - dotazy na jednotlivé prvky mapy
+		* jiná: metadata, chybová hlášení, procesní hlášení
+	* požadavky předávány pomocí parametrů v URL
+	* musí obsahovat grafickou knihovnu: GD, imageStick
+	* formáty: PNG, GIF, JPEG, SVG, WebCGM (Web Computer Graphics Metafile)
+	* služba typu RESP → svázaná s unikátním URL
+	* požadavky se posílají metodou GET nebo POST skrze protokol HTTP
+	* podpora kartografických zobrazení, volba mezi více předdefinovanými styly, podpora SLD
+	* __3 základní operace:__
+		* **getCapabilities** (povinné) - metadata o dané službě
+		* **getMap** (povinné) - vytvoří a pošle obrázek
+		* **getFeature** - informace o objektech v mapě jsou vybrána z dat
+	* klady WMS - data online, někde na serveru, nezávislost na softwaru, platformě
+	* zápory WMS - neexistuje mechanismus pro autorizaci uživatelů, není kompatibilita se SOAP (je zápor?), není dořešen dotaz přes POST, nereferencovaný obrázek
+* **WMTS (Web Map Tiling Service)**
+	* rastrová služba, rastry jsou připraveny v několika měřítkových řadách (= dlaždice)
+	* rychlejší než WMS, protože odpadá nutnost generování z dat
+	* ideální pro podkladová data
+	* stejná projekce, stejný výchozí bod, stejné měřítko, stejná velikost dlaždice
+	* __3 základní operace:__
+		* **getCapabilities** - metadata o dané službě
+		* **getTile** - zisk dlaždice
+		* **getFeatureInfo** - informace o prvku
+	* ČUZK má používá WMTS
+	* klient musí mít podporu WMTS, což není ještě plně rozšířeno
+* **SLD (Style Layers Desciption)**
+	* rozšíření wms o 4 operace
+	* kódování symbologie - zadání barvy, symbolů, popisu (font, úhel), vybírat prvky pro zobrazení, vytvářet tématické mapy z hodnot atributů
+	* __4 základní operace:__
+		* **DescribeLayer** (povinné)
+		* **GetLegendGraphics **(povinné)
+		* **GetStyle**
+		* **PutStyle** - k nahrávání vlastních symbolů
+	* Vrstva **<NamedLayer>**
+		* 1 mapová třída **<Rule>**
+			* třída má 1 a víc symbolik **<Point/Line/PolygonSymbolizer>**
+				* **<Fill></Fill> **
+				* **<Stroke></Stroke>**
+		* </Symbolizer></Rule></NameLayer>
+* **SE (Symbology Encoding)**
+	* od roku 2005, nástupce SLD
+	* určeno pro Feature a Coverage data
+	* kódování symbologie + kartogramy a kartogiagramy
+	* kartogram s intervalovou stupnici
+		* 1 interval = 1 třída <Rule> = 1 barva
+	* sloupcový kartodiagram
+		* 1 dílčí území = 1 třída <Rule> = 1 obrázek
+* **TSE (Thematic Symbology Encoding)	**
+	* vyvíjeno od 2007, není standardizováno
+	* návrh rozšíření SE o přímý popis kartogramů a kartodiagramů 
+	* nové symboliky: **ChoroplethSymbolizer, DaigramSymbolizer**
+* **CMS (Content Management Services)**
+	* kontextová mapová služba, která vyskytuje kontextovou mapu dle potřeb uživatele
+	* využívá se pro krizový management
+	* založená na WMS a kontextu
+	* __projekt Sissi__: **GetContextParameters** - definování o jaký kontext žádáš - jsem hasič + vedoucí zásahu
+
+
+===== Datové standardy OGC =====
+* přenáší nezvizualizovaná data - př. GML
+* WFS, WCS, KML, FE, SFS
+* **WFS (Web Feature Service)**
+	* služba, která umožňuje vzdáleně v distribuovaném prostředí pracovat **přímo s geografickými daty (vektory)** vybraných geografických prvků
+	* získání dat, dotazování (gazeteer service), editace, smazání, manipulace, analýza
+	* data můžou být v jakémkoliv formátu (**csv, shp, xls, gml,** ...)
+	* pro **přenos nejčastěji používá GML**
+	* základní verze **umožňuje editaci na straně klienta**, nikoliv editace na straně serveru
+	* prostorových tezaurus (Praha = Prague = Praga = Praha 4-Kobylice) - založeno na porovnání souřadnice
+	* negativa:
+		* riziko zneužití dat
+		* pomalé při pomalém připojení k netu :-D
+		* data jen v jedné kartografické projekci
+	* __6 základních operací:__
+		* Basic WFS - pouze pro čtení:
+			* **getCapabilities** - metadata
+			* **getFeature** - vrátí data v GML i s atributy (generování a přenos)
+			* **describeFeatureType** - vrací atributy
+		* XLink WFS
+			* **getGmlObject** - vrací jednotlivé GML elementy
+		* transaction WFS
+			* **LockFeature** - pro bezpečnou transakci
+			* **Transaction **- vytvoření nového prvku, aktualizace objektu, mazání
+				* **insert/update/deleteFeature**
+	* GML v ESRI
+		* umí připojit WFS, ale zobrazí jen atributy, nepracuje s geometrickou složkou, protože neumí číst GML
+		* pokud se použijete dataInterobality (drahá instalace), pokud člověk nezaplatí, fungujou mu 2 funkce, jedno z toho převod pro GML
+		* pokud zaplacená dataInterobality - pak asi jóóó
+		* vyplatí se investovat do dataInterobality (50tis kč)
+* **WCS (Web Coverage Services)**
+	* služba pro přenos, sdílení geodat v síti, **přenáší data v nativních formátech** společně **s metadaty**
+	* coverage =** souvislá geoprostorová** data pokrytí (rastry) → původně navržena pro **rastrová data**, ale přenáší jakákoliv data
+	* přenáší jednotlivé vrstvy (né jako WMS jednu rastrovou mapu složenou z více vrstev)
+	* výhledově: pro vektorová data (Lidar, model reliéfu)
+	* možnosti analyzování, dotazování, zobrazení, editace
+	* povinná časová složka
+	* nevýhoda: velké objemy dat
+	* __3 základní operace:__
+		* **getCapabilities** - metadata
+		* **describeCoverage **- popisuje jednotlivou vrstvu
+		* **getCoverage **- stáhnutí dat
+	* hojně využívaná (př. NASA), nejvíce využívaná pro satelitní data
+* **KML (Keyhole Markup Language)**
+	* Keyhole = dnes GoogleEarth
+	* **KMZ** (komprimovaná podoba KML)
+	* doplňující jazyk k GML → KML mu přidává možnost anotace a vizualizace (barvy, styly, ..)
+	* časový atribut - možnost animace → virtuální přelety
+* **FE (Filter Encoding)**
+	* přenáší podle filtrovaná data pomocí query jazyku CQL
+	* služba pro výběr podmnožiny instance objektů
+	* přenáší se jen omezené množství dat
+	* __operace:__
+		* **getFeature** - operace pro specifikaci omezení dotazu
+	* založen na CQL (Common Query Language), který vychází z SFS (Simple Feature Specifition)
+	* dotazování do databáze - dotaz přeložený do SQL
+	* nebo je dotaz přeměněn na XPath, XPointer
+	* __FE předpoklady o objektech:__
+		* musí být rozložitelné
+		* objekty jsou zakódovány v XML
+		* vlastnosti jsou kódovány jako XML elementy nebo XML atributy
+	* __typy filtrů:__
+		* prostorové operátory
+		* srovnávací o.
+		* logické o.
+		* identifikátory prvku
+	* __typy filtrů definovány OGC:__
+		* aritmetrické operátory
+		* literals (textové řetězce)
+		* výrazy (expressions)
+		* funkce
+	* webová služba, která podporuje FE, by měla zveřejnit možnosti, které podporuje
+	* __2 typy filtru:__
+		* filter capabilities - všechny prostorové operátory
+		* scalar capabilities - neprostorové operátory (logické, srovnávací, aritmetrické, funkce ..)
+	* přehled operátorů viz fe.pdf
+* **SFS (Simple Feature Specification)**
+	* jednoznačná definice geoprvků a jejich prostorových vazeb
+	* WKT a WKB
+* **CSW (Catalogue Service)**
+	* rozhraní pro vytváření aplikačních profilů pro prohledávání, procházení a dotazování **metadat**
+	* __operace:__
+		* **GetCapabilities**
+		* **GetRecords** - získání všech záznamů
+		* **GetRecordsByID** - získání konkrétního záznamu
+		* **Transaction **- insert, delete, update záznamu
+		* **Harvest** - sběr dalších dat
+
+===== Procesní služby OGC =====
+* **WPS (Web Processing Services)**
+	* navrženo** pro výpočty GIS funkcí skrze internet**
+	* obecný mechanismus k popisu široké škály různých výpočetních úkonů
+	* __nejčastější formáty:__
+		* GeoTIFF (georeferencované souřadnice přímo v hlavičce - byl rektifikován, TIFF v dalším souboru .tfw)
+		* GML
+	* __operace:__
+		* **GetCapabilities**
+		* **DescribeProcess** - vrátí detailní popis dostupných procesů, popis vstupních vrstev 
+		* **Execute** - spustí proces
+* **PyWPS (Python WPS)**
+	* rozhraní mezi Internetem a spec. softwarem Grass, R, GDAL/OGR, PROJ4
+	* z příkazového řádku
+	* syntaxe Python
+* **(IMS dříve ArcIMS)**
+	* protokol od ESRI pro přenos dat
+	* podpora formátu shp
+	* vše jde vyřešit i standardy OGC, např. WMS
+* Spatial referencing by coordinates
+	* ISO norma, nestandardizovaná
+	* definuje souřadnicové systémy a operace mezi nimi 
+* **WCTS (Web Coordinate Transformation Services)**
+	* OGC specifikace pro to, jakým **způsobem mít připravená data**
+	* nezná rovnice pro transformaci souřadnic, ty řeší nějaký software na serveru
+	* vstup: data v GML
+	* __operace:__
+		* **GetCapabilities**
+		* **IsTransformable **- info jestli je soubor tranformovatelný
+		* **GetTransformation**
+	* ČUZK poskytuje
+* **WMC (Web Map Context)**
+	* doplněk pro WMS, popisuje ukládání mapy složené z různých zdrojů (WMS serverů)
+	* kontextová služba (definice v prezentaci - poskládá mapu dle kartografických pravidel podle potřeb uživatele)
+	* přidává parametr kontextu
+	* ukládá uživatelské sezení asi

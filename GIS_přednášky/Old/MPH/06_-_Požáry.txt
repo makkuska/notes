@@ -1,0 +1,126 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-03-26T12:53:37+01:00
+
+====== 06 - Požáry ======
+Úterý 26. března 2013
+
+* __typy přírodních požárů__
+	* podle místa:
+		* "crawling" fire = pozemní
+			* hoří bylinné a rostlinné patro
+		* "crown" fire
+			* hoří větve a koruny bez kontaktu se zemí
+			* blbě se modelují
+		* "jumping" fire 
+			* špatně se modelují, nebezpečné
+			* hořící větve a listí jsou unášny větrem
+		* podzemní
+			* nejsou tam nebezpečné
+	* požár má velkou rychlost šíření
+	* na velkých plochách
+	* často špatná dostupnost, která ztěžuje přístup
+* __důsledky:__
+	* narušuje strukturu stabilitu povrchu
+	* umožňuje větrnou erozi
+	* hašení může ovlivnit - vodní eroze, ..
+* __faktory__
+	* vlhkost vzduchu a půdy
+	* výpar, teplota vzduchu půdy
+	* síla a směr větru
+	* stáří a druh dřevinného porostu
+* __nejvíce náchylná místa:__
+	* USA, Kanada
+	* subtropy - Austrálie, Brazílie, Jižní Evropa
+	* suché tropy - savany
+* __riziko vzniku:__
+	* vysoké teploty a dlouhotrvající období sucha (sucho = výpar převyšuje srážky)
+* __příčiny:__
+	* 80% ničivých požárů způsobuje člověk
+		* řízená - zemědělská, leso-hospodářská
+		* neřízená
+	* zapálení porostů bleskem
+	* důsledek vulkanické činnosti
+* __faktory:__
+	* ovlivňují rozsah, délku, intenzitu požáru
+	* **vlastnosti paliva**
+		* typ vegetace, struktura vegetace, výsušnost materiálu
+		* trvale travní porosty (rychle vzplane, hoří krátce), křoviny, lesy (pomaleji vzplane, vyšší teplota, dýl hoří)
+	* **uspořádání**
+		* požár na stromě nebo pouze na zemi
+	* lesácká data + využití země
+	* **klima**
+		* období sucha, deštů
+		* síla a směry větrů
+		* aktuální klimatické poměry
+	* **vítr**
+		* většinou žene, ovlivňuje rychlost, vzdálenost
+		* požár často vzniká blízko studené fronty
+	* **topografie území**
+		* sklon a orientace svahu, dostupnost vody, identifikace Spotfire - jak se zahřívá půda v okolí
+		* při sklonu 10° se rychlost šíří 2x
+* __preventivní opatření:__
+	* zákaz vstupu do lesa, zákaz rozdělávání ohně
+	* kontroly optickými metodami (letadlo, věž, zařízení, kamera)
+	* výstavba požárních nádrží
+	* kontrolované požáry
+* postup hašení požáru:
+	* 1. lokalizace
+		* kde je, odkud přišel, kam se bude šířit
+	* 2. izolace
+		* využití přirozených bariér, nasměruje se tam, kde přirozeně dohoří
+		* bariéra polom, odtěžení půdy), nebo technické bariéry
+	* 3. likvidace
+		* hašení (voda, písek), zapálením zbývajícího porostu, snížení obsahu kyslíku ve vzduchu
+
+===== Modely =====
+* v ČR: čtyři roční období jsou aspoň k něčemu, netrvají tu dlouhodobá sucha :-D
+* **Index nebezpeční požáru INP (pro ČR)**
+	* stanovují je ČHMÚ s využitím modelu ALADIN
+	* vlhkost půdy v 15cm pod povrchem, rychlost větru, ovlhnutí povrchu
+	* 5 tříd - 1 velmi nízké - 5 velmi vysoké (barvy: modrá - zelené)
+	* data dostupná
+* **Fire danger Index**
+	* rychlost a směr větru, odhadnutá výška plamenů, průměrná vzdálenost od míst, kde může požár vzniknout, objem zelené hmoty
+	* 5 tříd
+* **Oklahoma FDI**
+	* modelování na gridu 1km
+	* modeluje se crawling fire
+	* biomasa se stanovuje pomocí NDVI
+* **Fire Weather Index (FWI)**
+	* v Kanadě: teplota, vítr, srážky, vlhkost
+* **National Fire Danger Rating System NFDRS **
+	* v USA, protože mají data
+	* srážky, rychlost a směr větru, výpar, teplota min max, vlhkost za 24 hodin, dostupnost vody pro vegetaci, vegetační vlastnosti
+* **European Forest Fire Inforamtion System**
+	* z několika modelů používaných v Evropě se snaží vytvořit jeden
+	* **FIMEX** 
+		* sw pro monitorování lesních požárů a boj s nimi, predikuje simuluje požár
+		* intenzita a rychlost postupu ohně, rychlost větru
+	* **Freeware (www.fire.org)**
+		* free software pro modelování požárů
+		* **FARSITE sw moed**
+			* komplexní modelování - simulační model
+			* vstupní data: rastr nadmořských výšek, sklon, orientaci, typ paliva a strukturu lesních porostů, (počasí, rychlost větru, ...)
+			* povrchový, korunový požár, simulace dýmení, žhnutí povrchu
+			* výstup: rastrová i vektorová podoba
+			* formát: ASCII, shp, tabulky, grafy
+		* **FlamMap sw**
+			* vstup: data reliéfu, povětrnostních podmínek, paliv (data mohou být načtena z Farsitu)
+			* 5 modelů chování požáru: pozemní, korunový, šíření, vlhkost suchého paliva (jak se postupně ochlazuje)
+				* korunový: výška nejvyšší živých větší, výška porostu, objemová hmotnost korun stromů
+					* rast, srovnávají se intenzity přízemního požáru
+					* 0 nevzniká, 1 přízemní požár, 2 pozemní, 3 aktivní oheň (spodní i korunové patro)
+			* vstup a výstup v prezentaci, formáty
+		* FOFEM
+			* důsledky požárů, mortalita stromů, zahřívání půdy, spotřeba paliva (prach, humus, dřevo, ..), kouř
+			* viz. prezentace
+* aplikace
+	* rozdělení čidel
+		* venkovní
+			* ruční
+			* statické
+		* vnitřní 
+			* domácí stanice
+			* bezdotykové (infračervené)
+		* podvodní

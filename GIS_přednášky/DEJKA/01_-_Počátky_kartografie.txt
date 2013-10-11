@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-09-27T10:17:31+02:00
+
+====== 01 - Počátky kartografie ======
+Pátek 27. září 2013
+
+(paleolit)
+* rytiny na kamenech, kostech, hliněných destičkách, kovových
+* za účely navigace, zaznamenávání struktury, tah zvěře, vytyčení pozemku
+* mamutí kel
+	* Pavlovská mapa (stará 25tis. let)
+	* Mezeričská mapa (stará 14tis. let, Ukrajina)
+* Bedolinská mapa (stará 8tis. let)
+	* Itálie, skalní rytina - pole, cesty, domy
+* Catalhoyuk Turecko - plánek vesnice, co vypadá jak obrázek
+* Starověké středomoří
+	* vyspělejší blízký východ, Egypt - plány měst, pozemky, zavlažování, ..
+	* hliněné destičky (i papyrus jsou nestabilní materiály)
+		* mapa Mezopotámie (4,5tis.)
+		* plán města Nippur - pozemnková správa
+		* Babylonská (2,5tis)
+	* papyrus
+		* Plán zlatých dolů (3,3tis)
+* Starověká Čína
+	* izolovaní od Evropy, i kartografie je specifická, odlišná
+	* mapy na hedvábí (160t př. n. l.)
+		* topogorafická mapa
+	* říká se, že objevili kompat i metody tisku, mapovali oblohu, katastrální mapy
+	* Pei Xiu - "Ptolemaios z ČÍny" - matematický kartograf, používat triangulaci
+		* jeho mapa se nedochovala 
+* "primitivní" národy (týká se to i indiánů a Eskymáků, Tuaregovéú
+	* mapy na kůži, kůře, v písku
+	* Marshallovy ostrovy
+		* mapy složeny z: řapíky palmových listů (=proudění), kokosová vlákna, mušličky (=ostrov)
+		* dokumentuje proudy a větry, které ovlivňují přepravu mezi jednotlivými ostrovy
+		* 3 typy:
+			* mattang - pro vyučování budoucích mořeplavců
+			* meddo - mapa pro 2 ostrovy
+			* rebbilib - mapa souostroví

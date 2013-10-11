@@ -1,0 +1,96 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-03-25T13:18:33+01:00
+
+====== 05 - Typologie krajiny ======
+Pondělí 25. března 2013
+
+* individuální krajiny - jedinečné, individuální, takové, které se odlišují od ostatních
+* typologické krajiny - soubor podmínek, které vyjadřují shodnou kombinace, tento celek má podobné vlastnosti a liší se od ostatních
+* → výsledkem obou způsobů členění jsou regionalizace a typizace krajiny
+* proces - zjištění (identifikace vlastností, selekty), ohraničení (prostorové vyznačení), klasifikace
+
+===== Data =====
+* datové sady pro individuální členění:
+	* biografické členění ČR (volně dostupná na ministerstvu) — jednotky: provincie, podprovincie, bioregiony
+	* geomorfologické členění reliéfu ČR — jednotky: provincie, soustava, pod soustava, celek, pod celek, okrsek, pod okrsek
+	* regionální fytogeografické členění — jednotky: oblast, obvod, okres, pod okres
+* datové sady pro typologické členění krajiny:
+	* biografické členění — jednotky: biochora, skupina typu geobiocenu
+	* hlavní typy reliéfu — jednotky: rovina, sníženina, pahorkatina, vrchovina, hornatina
+	* vegetační stupně — jednotky: db, sm, db-bk, bk, alpinský, klečový, ..
+	* klimatické regiony — jednotky: VT, TI, ..
+
+===== Obecná metodika typologie krajiny =====
+* 3 kroky:
+	* sběr tématických podkladů, které popisují data
+	* předběžná syntetická mapa - přírodní a funkční potenciál krajiny
+	* vlastní typologická mapa
+* otevřená metoda - během tvorby možno vkládat další informace
+* nezbytná několikastupňová generalizace a přizpůsobování typu hranic dílčích jednotek
+* hierarchie (od abiotických přes biotické po kulturní)
+	* abiotické
+		* klima/geologie - formují povrch a lokální podmínky (1:200 tis)
+		* geomorfologie - 1:50 tis. 
+		* hydrologie - 1:50 tis.
+		* půdy
+	* biotické
+		* vegetace
+		* fauna - výskyt druhů, .. nejsou data pro celou ČR
+	* land-use - CORINE
+	* krajinná mozaika
+* __Typologie Evropy dle EU__
+	* **Type_N = (1000 * DTM) + (10 * PM) + LC**
+		* DTM - 5 kategorií podle nadmořské výšky
+		* PM - 15 kategorií
+		* LC - 10 kategorií podle CORINE
+	* výsledkem 202 různých typů krajiny, které se mohou v Evropě vyskytovat
+	* data z volně dostupných dat
+		* __reliéf DEM:__ **USGS GTOPO 30 DEM **(odvozen ze stereoskopických snímků), volně se stažení na stránkách NASY, ASCII formát)
+		* __matečná hornina__: **European Soil Database**, dobrá, aktuální data, formát raster
+		* __LandUse__: **CORINE**, **PELCOM land cover**
+	* kombinací těchto 3 vrstev se typizuje Evropa
+* __Typologie české krajiny__
+	* přírodní základ - geologie, reliéf, půdní poměry, klima, biotické poměry → typy přírodní krajiny
+		* česká krajina == 271 typů přírodní krajiny, kombinace několika vrstev
+	* funkční typ - landuse, landcover → funkční typy krajiny (= mapa využití ploch)
+		* zachycení zásahu člověka
+		* statistická data (Databáze využití ploch v ČR) + družicové snímky (LANDSAT)
+	* typy současné krajiny = kombinace funkční + přírodní
+* __biogeografická diferenciace__
+	* 4 typy diferenciace (gis vrstvy)
+		* **BPEJ**
+		* **SLT - **soubor lesních typů
+			* vegetační stupeň 1K (číslo písmeno)
+			* lesní typ 1K1 = kyselá doubrava (číslo písmeno číslo)
+		* **JPPV** - jednotka potenciální přirozené vegetace
+		* **STG** - skupina typů geobiocénů
+			* STG - alfanumerický kód nebo název dřeviny
+			* **1 A-AB 2** - vegetační stupeň — písmena trofické řady —  hydrické řady
+				* vegetační stupeň
+					* 9 stupňů: dubový, bukový, jedlo-bukový, smrk-o-jedlo-bukový, ... 
+					* existuje pro celou ČR — CENIA, ÚHUL
+				* trofické řady - vyjádření kyselosti půdy a jeho zásobení živinami
+					* A - oligotrofní (kyselá a chudá)
+					* B - mezotrofní
+					* C - nitrofilní
+					* D - bazická
+					* přechody AB BC BD DA
+				* hydrické řady - 6 tříd: zásobování vodou, vlhkostní režim
+			* veřejně dostupné klíče a převodní tabulky, dají se odvodit s KPP (komplexní průzkum zemědělských půd), BPEJ, typologií lesa
+			* povinná při pozemkových úpravách
+			* nejhrubší 1:10 tis.
+			* 90 bioregionů v ČR - individuální jednotka, kt. je odlišná od ostatní v ČR
+	* SLT a STG jsou navzájem převoditelné
+	* v ČR se stýkají 4 biogeografické oblasti: Hercynská, Panonská, Karpatská, Polonská oblast
+	* přechodné klima mezi kontinentálním a oceánským
+	* hodně vlivů člověka
+	* skupina typů geobiocénu
+		* = sdružení typů geobiocénů s podobnými trvalými ekologickými podmínkami
+* __Typologický systém ÚHUL__
+	* založen na vertikálním a horizontálním členěním — výsledkem tabulka
+	* vertikální - lesní vegetační stupně (9, viz. vegetační stupeň STG)
+	* horizontální - půda, dostupnost vody, .. 
+		* 8 základních řad Z, K, B, J, L, P, G, R - ty se dále dělí
+	* 1:5 tis., na map. serveru ÚHULu, aktualizované co 10 let
+

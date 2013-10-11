@@ -1,0 +1,19 @@
+digraph G {
+rankdir = "TB"
+u1 -> u2;
+PC1 -> u1;
+PC2 -> u1;
+PC3 -> u1;
+u2 -> PC4;
+u2 -> PC5;
+u2 -> PC6;
+
+PC1 [shape=box];
+PC2 [shape=box];
+PC3 [shape=box];
+PC4 [shape=box];
+PC5 [shape=box];
+PC6 [shape=box];
+u1 [shape=box,style=filled,color="grey"];
+u2 [shape=box,style=filled,color="grey"];
+}

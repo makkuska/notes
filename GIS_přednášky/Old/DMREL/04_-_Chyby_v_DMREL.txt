@@ -1,0 +1,83 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-06-05T01:26:19.426694
+
+====== 04 - Chyby v DMREL ======
+Created Neděle 05 červen 2011
+
+* referenční data ve formě referenčních bodů nebo povrchů -- přesnost odhadů je hodnocena validací
+* **validační techniky:**
+	* __crass validace__ (křížová validace) 
+		* nejvěžnější formou je "leave one technique"
+		* vždy se vypustí jeden bod, spočítá se model, vypočítá odchylka, pak se vypustí jiný bod a takhle dokola; používá se při velkém počtu bodů 
+		* výhodné, protože můžu vypustit bod, který je chybný
+	* __split sample__ validace 
+		* rozdělení vstupího souboru na vstupní body a referenční body (to, co sme dělali na cvičení (85procent referenčních bodů))
+	* __jack-knifing__ validace 
+		* ke srovnání používáme jiný soubor dat než vstupoval do interpolace
+* **faktory ovlivňující kvalitu DMR** (potencionální zdroje chyb)
+	* typ datového modelu
+		* grid x TIN
+		* důležitá je velikost pixelu, čím menší, tím kvalitnější, ale náročné na objem dat (měřítko)
+		* TIN pro vizualizaci, nemožnost použití v rovných oblastech
+	* datové zdroje a metody sběru dat
+		* typ a přesnost zdrojových dat
+		* přesnost metod sběru
+	* metody vzorkování
+		* záleží na hustotě a rozmístění vstupních dat
+		* čím hustější jsou data, tím lepší
+	* interpolační metody - různé matematické modely s různou přesnosti
+* **typy chyb:**
+	* __hrubé chyby __
+		* často jesou to extrémní hodnoty (maxima, minima)
+		* zaviněné člověkem, je dobře patrná, takže snadno ji najdeme a odstaníme
+	* __systematické chyby__
+		* chovají se podle stejného pravidla
+		* vznikají nedostatečným počtem dat či průběhem zpracování
+		* př. stačí, když máme jeden základní bod posunutý špatně a tím se posune celá vstva
+		* př. umělé "terasy" vytvotené z vrstevnic
+	* __náhodné chyby__ 
+		* jsou náhodné, nelze je modelovat
+		* četnost rozdělení odpovídá náhodnému rozdělení
+* **identifikace chyb a hodnocení přesnosti**
+	* __metrická přesnost__
+		* standardně jsou chyby popisovány jako metrická přesnost hodnot nadmořské výšky -- používá se pro určování kvality
+		* rozdíl mezi modelovanými hodnotami a skutečnými hodnotami
+	* __tvarová věrnost__
+		* věrné zobraní povrchu reliéfu (nevyžaduje přesnost nadmořské výšky) <-- vliv artefaktů (hrubé, systematické chyby)
+		* např. že řeka teče z kopce -- neexistuje vzorec
+	* hodnocení přesnoti pomocí: 	
+		* contour bias (vliv vrstevnic) - podíl pixelů s hodnotami odpovídajícími násobkům intervalu vrstevnic +/- 0,5m
+		* flatness index (index zproštění) - podíl piselů s hodnotami sklonu do 0,5%
+		* pit volume (objem prohlubní) - objem bezodtokových lokálních deprosí
+	* přesto to není dokonalé pro zhodnocení, důležitější je vizualice tvarů reliéfu než jejich kvantifikace
+* vizualizace pro hondnocení 
+	* stínovaný reliéf
+	* hypsometrie
+	* vrstevnice
+* pro hodnocení kvality modelu
+	* hustota vstupních bodů
+	* měřítko -- velikost pixelu
+	* použitá interpolační metoda včetně nastavení parametrů
+	* morfometrické parametry 
+	* zobrazení vrstevnic
+	* zobrazení histogramu, pomocí kterého lze odhalit hrubé i systematické chyby 
+		* ideální je normální rozdělení (př. když vyjde histogram s pravidelnými výstupky, jedná se o systematickou chybu)
+* **hammock plot **
+	* model se musí převést na celočíselný grid, pak se vydělí číslem, které odpovídá ekvidistanci vrstevnic (5 m) 
+	* fuknce MOD -- výsledek bude mít hodnoty od 0-4, protože př. 25/5=>0; 26/5=>1; 27=5>2; 29/5=>4
+	* pokud histogramy před a pod odpovídají, tak je to v pořádku, pokud ne, pak je datový model závislý na vstupních datech
+	* lze zobrazit povrchem i histogramem - výsledkem je četnost pixelů ve všech modulech
+* odstanění dat 
+	* nahrazení hrubých chyb:
+		* průměrem z okolí, nebo převést grid do ASCII a najít chybu a ručně opravit
+		* není vhodné použít filtr
+	* odstanění systematických chyb:
+		* pokud vzniknou umělé terasy -- pak použít jinou interpolační metodu (nepoužít IDW, ale Kkiging), nebo zvolit jinou velikost pixlů, nebo použí vrstevnice místo izolovaných bodů
+	* plošiny (tj. území se sklonem 0°) - nemusí být chyba (př. niva), vyplňování strží a roklin, zplošťování vrcholů
+* trend kvality DMR
+	* velikost chyb je přímo závislá na typu reliéfu, na jeho členitosti
+	* směrem od členitějších typů reliéfu k méně členitým typům se zmenšují:
+		* odchylky vzhledem k referenčním bodům
+		* rozdíly mezi výsledky jednotlivých interpolačních metod
+		* rozdíly v rámci jednotlivých interpolačních metod

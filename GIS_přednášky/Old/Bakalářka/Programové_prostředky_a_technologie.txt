@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-10-10T08:59:01+02:00
+
+====== Programové prostředky a technologie ======
+Created Pondělí 10 říjen 2011	
+
+* __programovací jazyky: PHP (verze 5.3.5), JS__
+* __databáze: PostgreSQL (verze 8.4--> 9.1.) + PostGIS (verze 1.5.3) → 9.1 (pgadmin 1.14.)__
+* __UMN Mapserver (verze 6.0.1)__
+	* naistalované** mapserver-bin, cgi-mapserver**
+	* http://www.root.cz/clanky/mapovy-server-snadno-a-rychle-1/
+	* adresářová struktura:
+		/var/mapservdata/       # adresář na data
+		/var/mapservdata/data/  # podadresář s vlastními daty
+		/var/mapservdata/tmpls/ # podadresář se šablonami a dalšími proprietamy
+		/var/www/mapserver/     # adresář s CSS, applety a podobně
+		/var/www/mapserver/temp/ # dočasné a výsledné obrázky pro klienta
+		/usr/lib/cgi-bin/mapserv # vlastní CGI mapserver
+	* tady najdu kódy EPGS  [[/usr/share/proj/epgs]] 
+* __webový server: Apache HTTP Server (verze 2.2.17)__
+* __data a mapová server: ArchonIS__
+* modul bude založen na nekomerčním řešení
+* ukládání dat dle standardů OGC
+	* vyvíjí veřejně specifikované formáty pro výměnu geoprostorov ́ch dat
+	* SFS (Simple Feature - SQL) – ukládání dat ve formě geoprvku do PostGIS
+	* GML (Geography Markup Language - verze 3.2.1) – norma pro ukljádání dat do xml, použití pro MapScript
+
+

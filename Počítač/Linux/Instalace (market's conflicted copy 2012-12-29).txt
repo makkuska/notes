@@ -1,0 +1,48 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-07-18T13:46:59+02:00
+
+====== Instalace ======
+Created Středa 18 červenec 2012
+
+__SYSTEM UTILS__
+guake zim mc moc vim-gtk arj zip tree htop nmap
+graphviz dvipng bzr python-gtkspell aspell-cs
+fireware
+cifs-utils lftp filezilla openssh-server smbfs
+
+dropbox truecrypt 
+
+
+* APPLICATIONS
+thunderbird chromium-browse flashplugin-installer
+skype pidgin
+smplayer
+texlive texlive-lang-czechslovak 
+
+r-base-core
+kolourpaint4 gimp mypaint pinta gwenview 
+
+virtualbox + rozšířené utility virtualboxu (Zařízení -> Instalovat přídavky pro hosta), nastavení sítě: Síťový most (né NAT)
+
+backintime-gnome 
+
+__WEB + DATABASES__
+apache2
+postresql postresql-postgis 
+mysql-server phpmyadmin
+
+__MAPS APPLICATIONS__
+1) přidání "UbuntuGIS" repozitáře
+	aptitude install python-software-properties 
+	add-apt-repository ppa:ubuntugis/ppa
+	aptitude update
+cgi-mapserver mapserver-bin mapserver-doc php5-mapscript python-mapscript
+qgis viking
+googleearth googleearth-package
+
+* geomoose
+./configure
+make
+make install
+Include “/opt/geomoose2/geomoose2_httpd.conf” to /etc/apache2/httpd.conf

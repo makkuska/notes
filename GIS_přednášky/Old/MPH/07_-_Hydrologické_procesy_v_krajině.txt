@@ -1,0 +1,126 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-04-02T12:44:28+02:00
+
+====== 07 - Hydrologické procesy v krajině ======
+Úterý 02. a 09. dubna 2013
+
+* **hydrologický** 1 rozměrný
+* **hydraulický **2 rozměrný - hydrologie v čase
+* měření možné jen na malých povodích, potřebuji spočítat a evidovat povrchovou i podpovrchovou přicházející, zůstávající i odcházející vodu
+* __rozvodí__ - všechna voda zachycena na jednom území
+* __topografická rozvodnice__ (né administrativní) je identifikovatelná
+	* data jedině z HEISu (nepoužívat rozvodnici z ČUZK)
+* potřebuji znát fyzikální vlastnosti povodí, způsob obhospodařování, průtočnou kapacitu koryta
+* landuse + srážky + časové události
+	* + metoda CN křivky - v jednom místě kolik 
+	* nebo metoda hydrogramu
+* přímé odtoky
+
+* základní 
+	* infiltrace - jak přechází voda do podpovrchové vrstvy
+	* redistribuce - rozmístění v prostoru
+	* drenáž v hladině podzemní vody po infiltraci
+	* výpar z holé půdy
+	* transpirace - výpar a odběr vody rostlinami
+* základní odtok
+	* událost vyjádřena v čase, ze stejného místa
+	* kolik vody za danou časovou jednotku odteče z jednoho území (povrchově i podpovrchově)
+	* nemodeluje se
+* model
+	* průtok nebo specifický odtok
+	* hodnota průtoku na počátku modelování odtoku, nikdy nebude 0
+	* a další
+* __algoritmy (prezentace):__
+	* **Darcyho zákon**
+		* proudění vody v půdě
+		* pro nasycené prostředí
+		* q =
+	* **Richardsonova rovnice**
+		* proudění vody v půdě
+		* pro nasycené prostředí
+		* pro heterogenní prostředí
+	* **proudění vody v pórovitém prostředí**
+	* **infiltrace**
+		* vertikální pohyb vody v půdním profilu
+		* pohyb přes topografický povrch
+		* zaznamenává se rychlost infiltrace
+		* stacionární infiltrace
+		* nestacionární - proměnlivá v čase
+		* základní infiltrace se popisuje Richardsonovou rovnicí
+	* **Hortonova metoda**
+		* založena na empirickém měření rychlosti vsaku
+		* vzorec prezentace
+	* **Green-Ampt metoda**
+		* prezentace 
+	* **Soil Moisture Accounting (SMA)**
+	* **Modelace objemu územně specifikovaného aktuálního přímého odtoku**
+		* CN křivka že poměr objemu odtoku k úhrnu přívalové srážky se rovná poměru objemu vody zadržené při odtoku k potenciálnímu objemu, který může být zadržen
+		* CN křivky
+			* jednoduchá, stabilní metoda
+			* nevýhoda - parametry nejsou v souladu s teorií o proudění v nenasycené zóně půdního profilu 
+				* rovná poměru objemu vody zadržené při odtoku k potenciálnímu objemu, který může být zadržen
+				* při dlouhotrvajících srážkách se infiltrace blíží nule
+				* nedokáže pracovat s dynamikou
+			* délka odtoku
+				* nepoužívat Flow lenght od ERSI
+				* Idrisi Flow
+				* vícesměrný odtok podle Swima
+	* Chjo unavné, všecko v přednášce 04-retence.pdf
+	* **Model klimatické změny	**
+	* **Prostorová specifikace hydrologických zón povodí**
+		* hydrologická zóna se chová stejně
+			* denudační
+			* transitně-denudační
+			* transitní
+			* transitní-akumulační
+			* akumulační
+		* orografický/geografický index: sklon, orientace, odvodňovaná oblast, pozice na reliéfu (výš, níž) 
+		* tvary reliéfu:
+			* Pennockovo schéma reliéfu
+				* rovina, shoulder, strmý svah, úpatí, rovina
+				* 15 různých směrů
+				* nakloněná rovina - divergentní, 
+			* základní tvary reliéfu: plošina, hřbet, sedlo, údolí, svah
+		* data:	
+			* krajinné faktory - dobrá říční síť (Geodis, VUV 50, ČUZK 10, ÚHUL 5, vojáci - nejlepší je ÚHUL) funkce Flip pro orientaci řek (linií), DEM (LIDAR od ČUZK, popř. Geodis)
+			* hydrologické podmínky - CN křivky, hydrologické skupiny půd, srážky, odvodňovací oblasti, průtok
+		* klínová, parizmatická retance
+		* chezyho rovnice
+		* maningova
+		* pohybové rovnice
+	* hydrologie přístup
+		* předpoklad - průtok (nedochází k únikům), retenční konstanta
+		* méně dat, malé povodí
+	* hydraulický routing
+		* předpoklad - příčné profily, sklon koryta, drsnost, překážky proudění, přítok v mezipovodí
+		* ustálené x neustálené prouděí
+		* fyzikální podstata přesunu hmoty
+		* zohledňuje technické parametry
+		* náročný na data
+__modely pro povodně	__
+	* základ hydrologický model, který se skládá z:
+		* sněhový model - kolik vody a váhy je v napadnutém sněhu, teplota srážky, tlak, 
+			* model SNOW17
+		* model simulující chování nádrží	
+			* sada rovnic, která řeší, co se řeší z vodou ve stojatém stavu
+			* uzavřený, sedimentace, co se z vodou děje
+		* model proudění vody korytem
+			* hydraulický x hydrologický model
+		* srážko-odtokový model
+			* kolik srážek dopadá a kolik odtéká
+	* **model HEC - HMS (Hydrologic Modeling System)**
+		* hydrologická i hydrologický přístup, simulace odtoku srážek
+		* zadarmo, dobrá dokumentace
+		* všechny algoritmy
+		* propojení - vizualizace s ERSI
+	* **model Hydrog**
+		* povodí Odry, Bečvy, horní Moravy, Dyje
+	* **model Aqualog**
+		* Čechy
+	* **HEC - RAS (Hydrologic Engineerigh Centers - River Analysis System)**
+		* hydraulika, modelování průtoku říčním korytem
+		* používá geometrický model
+		* v ČR - Hydrosoft jej používá
+	* **Hazus - Flood Model**
+		* analýza říční a pobřežní povodeň, povodňové škody

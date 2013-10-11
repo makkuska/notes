@@ -1,0 +1,148 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-12-31T14:45:16+01:00
+
+====== 1 - Počítačové sítě ======
+Pondělí 17 září 2012
+
+* internet
+* extranet - slouží pro komunikaci se zákazníky a partnery
+* intranet (nezávislý na internetu, počítačové, lokální, soukromá) • komunikační protokol TCP/IP
+* internetové služby (webové servery, ftp servery, email, servery, map servery, jabber servery, licenční servery, autorizační servery)
+* počítačové sítě od 60. let, přestavují souhrnné označení pro technické prostředky, která realizují spojení a výměnu informací mezi počítači
+* síťová architektura
+	* soubor řídících činností umožňujících výměnu dat mezi servery
+	* struktura řízení komunikace v systémech rozdělená do skupin - vrstev 
+	* každá vrstva sítě je definována:
+		* službou - je poskytována sousední vyšší vrstvě nad sebou
+		* funkcemi - vykonávají se v rámci protokolu
+	* vrstva nabízí službu vyšší vrstvě
+* protokoly 
+	* souhrn pravidel, formátů a procedur, které říkají jakým způsobem se mají předávat informace mezi dvěma či více komunikujícími prvky
+
+===== Typy sítí =====
+* podle typu přepojování
+	* sítě na komutačních sítích (telefonní síť, ISDN, ADSL)
+	* paketové sítě (ATM) - rozlišují se hlavičky souborů
+* podle druhu signálu
+	* analogové - přes elektrickou zásuvku
+	* digitální
+* z hlediska rozsahu a účelu
+	* LAN (Local Area Network)
+		* spojuje koncové uzly - počítače, servery, tiskárny
+		* soukromá správa
+		* rozsah v rámci budovy, blízkých budov, př. UPOL
+		* pracují bez navazování spojení
+		* sdílí jen přenosový prostředek - drát, rádiové vrly
+		* protokoly přenosové - ethernet nebo bezdrátové sítě typu WIFI
+	* MAN (Metropolitan Area Network)
+		* vyšší rychlosti, větší území
+		* datový, televizní, mobilní přenos, optika (Olomouc)
+		* protokol Distributed Queue Dual Bus (DQDB)
+		* městské sítě, průmyslové sítě (Pražská Energietika, Mittal)
+	* WAN (Wide Area Network)
+		* veřejné, rozsáhlé, spojují LAN, MAN
+		* nepoužívají sdílený přenos
+		* 2 optická vlákna spojují Ameriku a Evropu (Cern - Amerika)
+		* protokoly ISDN, SMDS, X35, ATM, IEEE (wi MAX)
+	* PAM (Personal Area Network)
+		* pro propojení osobních zařízení jako mobil, PDA, notebook, dosah několik metrů
+		* snadná konfigurovatelnost, nízká spotřeba energie, odolná proti rušení
+		* protokoly IrDA (infra), bluetooth, ZigBee
+* z hlediska vzájemného vztahu stanic
+	* klient - server
+		* server generuje služby, nabízí to dál
+		* webový server, ftp server, email server, map server, jabber server, licenční server, autorizační server, tiskový server, souborový server
+	* peer to peer (P2P)
+		* všechny PC mají stejnou roli 
+		* nabídne část procesoru, část na disku a může použít část jiného počítače, tiskárnu
+		* nelze centrálně spravovat (problematické ho spravovat, nelze monitorovat, nelze ho hlídat)
+		* torrenty
+	* cloud 
+		* Dropbox, ArcGIS server, Google Drive
+* dle použité technologie
+	* ArcNET
+	* Token Ring
+	* 100VG-AnyLAN
+	* FDDI
+	* Ethernet
+
+===== Síťová zařízení =====
+* každá síť má svou topologii
+	* uzel - zařízení, které je připojeno do sítě jako součást, má svou mac adresu. př. PC, tiskárna, anténa, datové uložiště
+	* síťový uzel - několik prvků se tváří jako jeden (1 servis = víc PC)
+* komunikační kanály
+	* optické nebo metalické kabely - koaxiální kabel nebo strukturovaná kabeláž (jeden a více vodičů v kabelu)
+	* rádiové spoje - satelit
+	* vzdušné optické spoje - laser, infra
+	* ultrazvukové spoje
+
+=== Topologie ===
+* aktivní síťové prvky
+* **sběrnicová topologie**
+	* jeden kabel propojuje všechna zařízení
+	* každý uzel kontroluje každé zařízení
+	* data posílána všem počítačům, informaci přijímá pouze jeden z nich
+	* pokud jeden počítač selže, neovlivní to zbytek sítě
+	* pozitiva
+		* rychlé, levné, jednoduché propojení, není potřeba hodně kabeláže
+	* negativa
+		* čím víc počítačů, tím pomalejší
+		* pokud chci připojit něco nového, vždy se přeruší síť
+		* kolize - může se odeslat příkaz vždy jen z jednoho PC 
+			* řešení kolize - //systém náhodného přístupu// jen když dva chcou totéž, zpoždění v milisekundách
+		* omezená délkou kabelu
+* **hvězdicová topologie**
+	* switch, hub
+	* pozitiva
+		* posíláno pouze počítači, kterého se to týká (posílám soubor na Atlantidu) = rozlišená identifikace
+		* jeden počítač se pokazí - nic se nemění
+		* výkonnější než sběrnicová
+		* závady se dají snadno nalézt, nejsou kolize mezi packety, protože na jednom kabelu je připojen pouze 1 počítač
+	* negativa
+		* větší investice - síťový hardware + velké množství kabelů
+		* při závadě na hubu, switchi přestane fungovat celá síť
+* **kruhová topologie**
+	* jeden uzel připojen k dalším dvěma uzlům tak, že tvoří kruh
+	* výkonnější než sběrnicová, ale méně výkonnější než hvězdicová, protože data musí projít přes několik uzlů
+	* packety se posílají jedním směrem, nevznikají kolize
+	* negativa 
+		* 1 prvek se zhroutí - všechno v háji
+		* data prochází přes každý počítač mezi odesílatelem a příjemcem, což zvyšuje dobu trvání přenosu
+		* těžké najít závadu
+		* při přidání nového počítače se síť musí vypnout
+* **stromová topologie**
+	* spojení několika hvězdicových 
+	* pokud selže nějaké zařízení, nic se neděje, snižuje se počet kabelů
+	* zvýšení bezpečnosti - obtížnost odposlouchání síťové komunikace
+* **neomezená topologie**
+	* segmenty sítě zapojeny libovolně mezi sebou
+	* nejde o zapojení samostatných počítačů, ale o navzájem propojené sítě
+	* základ internetu
+
+=== Síťové prvky ===
+* **router (směrovač) (byt Komenského)**
+	* přeposílá datagramy směrem k jejich cíli, spojení **IP protokolem**
+	* příjde paket, router podívá se dovnitř a podle směrovací tabulky určí na které rozhraní síťové karty konkrétního počítače má paket poslat
+	* používá se mezi sítěmi a pro komunikaci s dalšími sítěmi
+* **switch (přepínač) (kolej)**
+	* příjde mu paket, on se podívá dovnitř a podle cílové adresy pošle kam patří, **pracuje na MAC**
+	* propojuje jednotlivé segmenty sítě
+	* používá se pro domácí použití, spojení zařízení
+* **hub (rozbočovat)**
+	* opakovač (prostě co vezme, to zopakuje na všechny porty)
+* **bridge (síťový most)**
+	* pro propojení dvou segmentů LAN
+	* Ve své RAM paměti sestaví tabulku MAC adres a portů, za kterými se dané adresy nacházejí. Leží-li příjemce ve stejném segmentu jako odesílatele, most rámce do jiných částí sítě neodešle. V opačném případě je odešle do příslušného segmentu v nezměněném stavu.
+	* výhody: není potřeba konfigurace, snižuje velikost kolizní domény, levnější než router
+	* nevýhody: neomezuje rozsah všesměrového vysílání, vyšší latence, než opakovače z důvodu čtení MAC adresy, přemosťováním různých MAC protokolů dochází k chybám
+* **repeater (opakovač)**
+	* obnova síťového signálu v bitové úrovni, aby  byl umožněn přenos na větší vzdálenosti v mediu
+	* přijímá zkreslený, zašuměný nebo jinak poškozený signál a opravený, zesílený, správně časovaný ho vysílá dále
+	* zařízení s jedním vstupní a jedním výstupním portem
+	* muž umístěný na kopci opakoval signál, který přijal od osoby na kopci vlevo a postupně předal signál osobě na kopci vpravo
+* **modem (Tylovice)**
+	* zařízení pro převod mezi analogovým a digitálním signálem (od modulátor)
+	* modulace radiového signálu, telefonní linky, koaxiálního kabelu
+* transciever (vysílač / přijímač)
+* firewall (bezpečnostní zábrana)

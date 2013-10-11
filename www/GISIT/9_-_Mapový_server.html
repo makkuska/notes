@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>9 - Mapový server</title>
+		<meta name='Generator' content='Zim 0.54'>
+		<style type='text/css'>
+			a          { text-decoration: none      }
+			a:hover    { text-decoration: underline }
+			a:active   { text-decoration: underline }
+			strike     { color: grey                }
+			u          { text-decoration: none;
+			             background-color: yellow   }
+			tt         { color: #2e3436;            }
+			pre        { color: #2e3436;
+			             margin-left: 20px          }
+			h1         { text-decoration: underline;
+			             color: #4e9a06             }
+			h2         { color: #4e9a06             }
+			h3         { color: #4e9a06             }
+			h4         { color: #4e9a06             }
+			h5         { color: #4e9a06             }
+		</style>
+	</head>
+	<body>
+
+<!-- zápisky 9 -->
+
+<h1>9 - Mapový server</h1>
+
+<p>
+Pondělí 05 listopad 2012<br>
+</p>
+
+<p>
+<ul>
+<li>aplikační server</li>
+<li>internetová aplikace, která zpřístupňuje geografická data a umožňuje práci s nimi bez nutnosti instalace speciálního softwaru</li>
+<li>klient/server</li>
+<li>poskytuje: dotazy filtrace, vyjmutí dat, geokódování, prostorové analýzy, tvoření map</li>
+<li>služby zajištěny funkčními knihovnami, mohou být umístěny na různých serverech jako individuální komponenty</li>
+<li>výsledky typu:</li>
+<ul>
+<li>vlastní data, vybraná skupina dat, která je předává klientovi v dané podobě</li>
+<li>vygenerovaný náhled (JPEG, GIF) nebo grafický prvek (legenda, měřítko) - vložené do nějakého formátu</li>
+<li>chybová hláška (data nesplňují požadavek, ..)</li>
+</ul>
+</ul>
+</p>
+
+<h2>UMN MapServer</h2>
+<p>
+<ul>
+<li>open source, sponzorovaný agenturou NASA</li>
+<li>skládá dohromady funkce dalších úspěšných open sourcových software (GDAL, OGR, Shapelib, FreeType, Proj.4, libTIFF, Perl, ...)</li>
+<li>multiplatformní</li>
+<li>podporuje různé typy klientů (browser, aplikace podporující protokoly WMS, WFS)</li>
+<li>není plně funkční webový gis - jen vezme data, zpracuje požadavek, předá data, sdílení pomocí WMS, WFS; nedělá procesy (analýzy)</li>
+<li>* 1997, změna licence 2008</li>
+<li>aplikační server</li>
+<ul>
+<li>CGI program </li>
+<ul>
+<li>zkompilovaný program, je externí (statická) aplikace</li>
+<li>má prostředí, může být samostatně spuštěná</li>
+<li>dlouhá inicializace (pomalé spouštění)</li>
+<li>výstupem obrázek</li>
+<li>výstupem interní aplikace - začlenění do rozhraní včetně zoom, pan, ..</li>
+</ul>
+<li>MapScript - integrován do jádra webového serveru, rozhraní k různým programovacím jazykům (Python, Perl, PHP)</li>
+</ul>
+<li>formát http:// ... / mapserv?map=/var/../map.map&amp;MODE=MAP&amp;LAYERS&amp;</li>
+<li>webový server + program MapServer + inicializační soubor, šablona + mapsoubor.map + geodata</li>
+</ul>
+diga  <br>
+<ul>
+<li>knihovny:</li>
+<ul>
+<li>podpora formátu pro načtení a zobrazení (GDAL + shapefile)</li>
+<li>konverze: vektor &gt; raster (výsledek je obrázek)</li>
+<li>podpora indexů (quadtree spatial indexing) pro shapefile</li>
+<li>nastavitelné chování</li>
+<li>funkce pro výběr (atributový, geometrický)</li>
+<li>podpora TrueType fontů</li>
+<li>generování legendy, měřítka</li>
+<li>podpora dlaždic</li>
+<li>tvorba tématických map pomocí tříd založených a na logických a reg. výrazech</li>
+<li>popisky prvků (včetně kolizí)</li>
+<li>reakce na vnější podněty přes URL za běhu aplikace</li>
+<li>změna kartografického zobrazení za běhu aplikace</li>
+<li>2 verze (pro PNG, GIF)</li>
+<li>knihovnu GD, podpora připojení OGR, GDAL</li>
+<li>podpora PostGIS/Oracle Spatial</li>
+<li>podpora WMS, WFS</li>
+</ul>
+<li>inicializační soubor:</li>
+<ul>
+<li>vyvolává zobrazení aplikace</li>
+<li>samostatný html soubor, nebo součástí jiného html souboru</li>
+</ul>
+<li><strong>mapsoubor</strong></li>
+<ul>
+<li>nastavení všech prvků výstupu: mapa, legenda, přehledná mapa, měřítko</li>
+<li>MAP END</li>
+<ul>
+<li>NAME</li>
+<li>IMAGETYPE PNG</li>
+<li>EXTENT</li>
+<li>SIZE</li>
+<li>UNITS</li>
+<li>PROJECTION PROJ 4 #10206 #5514</li>
+<li>SYMBOLSET</li>
+<li>FONTSET</li>
+<li>SHAPEPATH</li>
+<li>WEB END</li>
+<ul>
+<li>IMAGEPATH zde se ukládá /var/www/tmp</li>
+<li>IMAGEURL mapový server bere obrázek z /tmp/ (musí být přístupný z venku)</li>
+<li>METADATA END</li>
+<ul>
+<li>"title" "author" "wms srs" "wms onlineresource" "wms encoding"</li>
+</ul>
+</ul>
+<li>LAYER END</li>
+<ul>
+<li>NAME</li>
+<li>METADATA END</li>
+<li>DATA</li>
+<li>DUMP</li>
+<li>TYPE STATUS</li>
+<li>PROJECTION</li>
+<li>TRANSPARENT</li>
+<li>CLASS END</li>
+<ul>
+<li>LABEL END</li>
+<ul>
+<li>COLOR</li>
+<li>OUTLINECOLOR</li>
+</ul>
+<li>SIZE</li>
+<li>UNITS</li>
+<li>INTERVAL (velikost intervalu)</li>
+<li>INTERVALS (počet intervalů)</li>
+</ul>
+</ul>
+</ul>
+<li>REFERENCE, LEGEND, SCALEBAR</li>
+</ul>
+<li><strong>šablona</strong></li>
+<ul>
+<li>html soubor, rozhraní mezi uživatelem a mapserverem</li>
+<li>poskytuje omezenou množinu operací, která můžou s aplikací  provádět - zvětšovat/zmenšovat, zapínání vypínání vrstev</li>
+<li>formulář</li>
+<li>obsahuje [klíčové slovo]</li>
+<li>dotazovací šablony - pro dotazy</li>
+<ul>
+<li>soubory záhlaví (header), tělo dotazu, zápatí (footer)</li>
+<li>definující se v LAYER</li>
+</ul>
+</ul>
+</ul>
+</p>
+
+<h3>Geodata</h3>
+<p>
+<ul>
+<li>k zobrazovaní potřebuje externí knihovny, většinou opět cgi aplikace:</li>
+<li><u>shapefile</u> definice tvaru, vnitní ID, vnější ID, measure</li>
+<ul>
+<li>.shp - definice geometrické složky - posloupnost souřadnic</li>
+<li>.dbf - struktura dat (tabulka, dataType) + posloupnost vlastních hodnot + ID každého záznamu</li>
+<li>.shx - vazby mezi vnitřními identifikátory</li>
+<li>.cp - kódování znaková sady v atributech</li>
+<li>.idx - škodí, výsledkem indexace → zpomalují</li>
+<li>.prj - projekce</li>
+<li>(FID dočasné v systému pro ArcGIS, GID dočasné v QGIS)</li>
+<li>knihovna shapelib - čtení, tvorba, zápis do souborů shapefile a dbf</li>
+<li>v LAYER TYPE LINE | POLYGON | ANOTATION | POINT</li>
+<ul>
+<li>CLASSITEM • CLASS • STYLE NAME OUTLINECOLOR COLOR END END</li>
+<li>LABELITEM</li>
+</ul>
+</ul>
+<li><u>GDAL, OGR</u> (externí knihovny)</li>
+<ul>
+<li>nepoužívají je ESRI</li>
+<li>číst a zapisovat</li>
+<li>SDTS, POSTGIS, SPATIL ORACLE, S-57, Mapinfo mid/mif, TAB, GML, KML, GeoJSON, GPX (data z GPS), GRASS, AutoCAD (dwg, dwx) + SDE s rozšíření pro SDE</li>
+<li>OGR je součástí GDAL</li>
+<li>CONNECTIONTYPE OGR • CONNECTION cesta • DATA</li>
+<li>renderování - slouží k urychlení načítání</li>
+<ul>
+<li>dlaždice</li>
+<ul>
+<li>vytváří se nové fyzické soubory, je jich hodně, omezení přenosu dat</li>
+<li>dlaždicový index je nový shapefile - 6 atributů (název, cesta k souboru, souřadnice rohů)</li>
+<li>objemová velikost dlaždic 256x256 (512kb)</li>
+</ul>
+<li>pohledová pyramida</li>
+<ul>
+<li>převzorkování rastru (bilineární interpolace, kubická konvoluce) - zapisuje se do hlavičky souboru (u ESRI se ukládá do dalšího souboru)</li>
+</ul>
+</ul>
+<li>transformace do jiného souřadnicového systému</li>
+<ul>
+<li>pomocí GDAL a PROJ4</li>
+<li>dochází k převzorkování pixelu</li>
+</ul>
+<li>podpora práce s hlavičkovými soubory (World soubory)</li>
+<ul>
+<li>pro BMP, JPEG, PN, GeoTIFF</li>
+<li>6 koeficientů - používají se pro výpočet souřadnic pixelů mapy pomocí afinní tranformace</li>
+<li>vypočtené souřadnice, velikost pixelů + rotační konficienty</li>
+</ul>
+</ul>
+<li><u>rastr</u></li>
+<ul>
+<li>knihovna GD (Graphic Library)</li>
+<li>TIFF, GeoTIFF, PNG, JPEG, GIF</li>
+<li>TYPE RASTER</li>
+</ul>
+<li><u>PROJ4</u> (Cartographic projections library), <u>EPSG</u> (Europeal Petroleum Survey Group)</li>
+<li><u>WMS (png, jpeg, gif)</u>, <u>WFS (gml)</u></li>
+<ul>
+<li>jako klient nebo jako server</li>
+<li>CONNECTIONTYPE WMS, CONNECTION url</li>
+<li>vyžaduje metadata</li>
+</ul>
+<li>senzorová data (geosenzor)</li>
+</ul>
+</p>
+
+
+<!-- End wiki content -->
+
+	</body>
+
+</html>

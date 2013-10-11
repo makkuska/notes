@@ -1,0 +1,44 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-03-23T13:08:26+01:00
+
+====== SQL ======
+Created Pátek 23 březen 2012
+
+[[~/000/moje_poznamky.sql|sql formátováno]]
+* create table 'nazevtable' (seznam atributů);
+	* datové typy: varchar(), int(), date
+* create TABLE pokus as select the_geom from tlinie where id=1;
+	SELECT 1
+	postgisdatabaze=# select * from pokud;
+
+* __SELECT * FROM 'nazevtabulky'  order by 'atribut' ASC/DESC;__
+	* __WHERE 'nazevatributu'=hodnota or 'nazevatributu'=hodnota;__
+	* nebo __WHERE 'nazevatributu' IN/NOT IN ('hodnota','hodnota')__
+	* nebo __WHERE 'nazevatributu' LIKE 'hodnota%'__ (% doplní všechny hodnoty, která mají společný základ)
+	* nebo __WHERE 'nazevatributu' BETWEEN  hodnota and hodnota__
+	* nebo __WHERE 'nazevatributu' >= hodnota or 'nazevatributu' <= hodnota__
+	* __GROUP BY 'nazevatributu'__; (vypiš všechny)
+
+* __SELECT DISTINCT(vypsat všechny) / sum / count / min / max / avg(nazevatributu) AS 'novynazevatributu' FROM 'nazevtabulky' WHERE podminka or podminka;__
+                                                                                        group by atribut;
+                                                                                        order by atribut ASC/DESC;
+* __INSERT INTO 'nazevtabulky' VALUES (,);__
+* __UPDATE tabulka SET sloupec=nová hodnota WHERE id=1;__
+
+* __ALTER TABLE 'nazevtabulky' ADD nazevsloupce datovytyp;__
+		                                  __DROP nazevsloupce; __
+		                                  __MODIFY nazevsloupce novydatovy typ__; (změní datový typ sloupce)
+                                                
+* __RENAME TABLE 'nazev' to 'nazev2'__;
+* __DROP TABLE/DATABASE 'nazev';__
+* SHOW dat/rec
+
+=== JOIN ===
+* **T1 [INNER] JOIN T2 ON a=b;** jen ty, co mají dvojici
+* **T1 [LEFT / RIGHT / FULL OUTER] JOIN T2 ON a=b;** — všechno z pravé se přidá k levé a opačně, popř. všechny z levé, všechny z pravé, můžou nastat null
+* **T1 CROSS JOIN T2;** — všechno se vším
+
+* nový sloupec, kde se podělí hodnoty ze dvou sloupců: __select hdp/population from table;__
+* __select count(distinct winner) from nobel__;
+

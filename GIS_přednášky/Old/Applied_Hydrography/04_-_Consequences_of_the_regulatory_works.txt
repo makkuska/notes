@@ -1,0 +1,38 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-11-07T15:10:16+01:00
+
+====== 04 - Consequences of the regulatory works ======
+Created Pondělí 07 listopad 2011
+
+//according the paper: Consequences of regulatory works//
+([[~/Dokumenty/Erasmus/Applied Hydrography/IV_Reg_consequences.ppt|Presentation]])
+* regulations -- cut-offs:
+	* → shortened + increased slope
+	* 1. faster, greater floods
+		* increase flood level 3,5 m
+		* more than cut-off influence flood level <-- local factors
+		* incresing flood hazard: still is it the same problem, nothing change
+		* each flood destroy levees
+	* flood are 3 month later
+	* → incision - prohlubování dna
+		* → bank-slide 
+		* → 2. decreasing LOW water lever -- dno je níž, než bývalo
+			* intensive accumulation -- při každé povodni dochází k velké akumulaci sedimentů - průměrně 2,5 cm za rok
+				* → ground-water lever change 
+	* revetments (=zpevnění břehu) cause narrowing -- regulacemi někdy zrušili přirozený průběh -- dříve to byl velký oblouk, po regulacích se vytvořily ještě větší meandry
+	* land-use change of the catchment -- cutting of forests
+		* → record floods
+* flood protection -- levee constructions:
+	* 3.
+		* a. tam kde byla voda, teď je tam slaná půda -- salt accumulation with salty ground water
+			* they needed more soil to agriculture, instead of that they have soil water -- sůl se akumuluje za hrázemi, protože voda je nemůže spláchnout
+		* b. irrigation 
+			* → ground-water lever change 
+	* 4. disappearance of wetlands
+		* → mikroclimate change - evaportaion -> takes a heat → dryer and warmer microclimate
+		* → flora and fauna change
+		* → need of irigation → change soils and → inland-waters
+		* invasive plantes -- vodní rostliny
+	* no wetland → disappearance of traditional life-style like fishing, rákosové rosliny zmizely - lidi nepletou košíky a rohožky
+* Szeged is sinking (1mm per years) → prohlubování půdy způsobuje dorovnávání se na hladinu podzemní vody

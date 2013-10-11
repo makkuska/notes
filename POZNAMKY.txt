@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-01-22T23:22:41+01:00
+
+====== POZNAMKY ======
+Created Neděle 22 leden 2012
+
+zápočet rprr
+úkol segm
+úkol mph
+úkol atpg
+
+**Tipy na filmy:**
+	Live is beatiful
+	Intouchable
+
+**TaTa solanskysro.cz**
+* sídlo firmy: Vigantice 278, PSČ
+* W3C - 3x chybí script type v <script>
+* zadat do katalogů na firmy.cz, atlas.cz (google najde sám)
+* flavicon chybí
+* špatně keywords
+* přidat GeoURL
+	* <meta name="ICBM" content="49.444594, 18.183485">
+	* <meta name="DC.title" content="Jmeno webu">
+
+
+
+ <div id="jumbotron-kontakt" class="container">
+          <p>
+          <a href="mailto:jana.solanska@gmail.com">jana.solanska@gmail.com</a><br />
+            TEL: 724 063 868</p>
+        </div>

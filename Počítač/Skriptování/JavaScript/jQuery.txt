@@ -1,0 +1,49 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-01-20T20:37:47+01:00
+
+====== jQuery ======
+Created Neděle 20 leden 2013
+
+mdn.
+* selectors:
+	$('#first_class li');
+	$('ul#first_class > li > ul > li')
+	$('li:first')
+* $(p).css("font-size");
+* map (=hash) 
+	* .css  **{"font-size":"24px",**
+		**    "font-weight":"bold" } **
+
+* .addClass("bigger");
+* .removeClass();
+* .toggleClass();
+* SKRÝVÁNÍ TEXTŮ (animations) hide(spped)
+	* .hide(slow/fast); -> style="display:none" (hide skryje text  - pomalu x rychle, slideDown/Up ho taky skryje, ale jako by sjel zvrhu nahoru a opačně) 
+	* slideUP(slow/fast) x slideDown x slideToggle
+	* fadeOut x fadeIn
+	* .show(); -> style="display:normal"
+* .remove() -> element se úplně smaže
+* .toogle(slow/fast)
+* .text("blsd")
+* .html("<h1>Bla</h1>");
+* .prepend() přidá před
+* .append('<li>bla</li>') přidá za
+* .before("<h3>Podpodnadpis</h3>") - přidá celou část před nějakou část
+* .after
+* JSON = JavaScript Map
+* .attr(); - hodnota atributu tagu - attr('href') -> www.blbec.cz
+
+* **document ready wrapper**
+	$(document).ready(function(){
+	});
+* **events**
+	$(document).event(function(){
+	});
+	* ready, click, keypress, hover
+	* event object
+		* which
+		* pageX, pageY
+		* preventDefault
+		* stopPropagation
+* $(element).load(adress);

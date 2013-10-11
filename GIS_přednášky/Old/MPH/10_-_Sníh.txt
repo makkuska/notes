@@ -1,0 +1,48 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-05-14T19:47:31+02:00
+
+====== 10 - Sníh ======
+Úterý 14. května 2013
+
+* zajímá nás __tíha sněhu__ = vodní hodnota sněhové pokrývky
+* __postup:__
+	* zjistit __v jaké oblasti__ zatížení sněhem __leží stavba__ (dle mapy sněhových oblastí)
+		* data:
+			* sněhové oblasti ČHMU
+				* mapa sněhových oblastí čr - 8 kategorií, jen mapa, dig. data nejsou dostupná
+			* polohopis
+			* UAP vrstva budov	
+			* zaměření GPS
+	* určit __na jaké zatížení__ sněhem (kg/m2) je střecha stavby __pravděpodobně navržena__ (dle zařazení do oblasti)
+		* 8 kategorií, ke každé kategorii určena kN/m^{2} a kb/m^{2}
+	* __změřit (odhadnout) výšku__ vrstvy sněhu (cm)
+		* **ultrazvuková sonda**
+			* střechy do 30°, na 3 místech
+			* monitorovat: v 7, 14, 21 h, při sněžení klidně každou hodinu
+			* měření ultrazvukovým čidlem 
+		* **sněhoměrná tyč + kamera, která snímá odečet**
+	* určit __typ sněhu__
+		* čerstvý, ulehlý, starý, mokrý
+	* určit výšku vrstvy sněhu odpovídající normovému zatížení pro daný typ sněhu a oblast zatížení sněhem (z tabulky charakteristické hodnoty sněhu)
+		* tabulka: sněhová oblast (8) - hodnota zatížení, hmotnost sněhu, 
+		* tabulka: druh sněhu (4) - výška sněhu při objemové objemová hmotnost sněhu pro jednotlivé oblasti
+	* __porovnat výslednou hodnotu__ (výšku sněhu odpovídající normovému zatížení) a skutečnou výšku sněhu na střeše
+* __přímé zjištění váhy sněhu__
+	* **sněhoměrný polštář**
+		* naplněný vodným roztokem ethylenglykolu se váží pomocí tlakového čidla 
+		* velikost 1,5x1,5 m, jen vodorovně na písčité ploše
+		* drahé, obtížně použitelné
+	* __srážky__
+		* **ombrometr **(srážkoměr) - nádoba, ze které se pak voda přelije do kalibrovaného odměrného válce
+		* **ombrograf** - nádoba s plovákem, plovák napojený na registrační zařízení (= ombrogram)
+			* sníh odebrat, nechat __roztát__, změřit nebo __vytápět__
+		* **totalizátor**
+			* obsahuje nemrznoucí směs, používán na horách, v obtížných terénech
+	* __sníh__
+		* **sněhoměrná lať**
+			* výška sněhu, cm stupnice, 
+		* **choinograf**
+		* **sněhoměrné prkénko**
+			* 30x30cm - výška nového sněhu
+		* **váhový sněhometr**

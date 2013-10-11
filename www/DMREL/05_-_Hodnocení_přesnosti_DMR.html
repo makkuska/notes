@@ -1,0 +1,353 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title></title>
+		<meta name='Generator' content='Zim 0.52'>
+		<style type='text/css'>
+			a          { text-decoration: none      }
+			a:hover    { text-decoration: underline }
+			a:active   { text-decoration: underline }
+			strike     { color: grey                }
+			u          { text-decoration: none;
+			             background-color: yellow   }
+			tt         { color: #2e3436;            }
+			pre        { color: #2e3436;
+			             margin-left: 20px          }
+			h1         { text-decoration: underline;
+			             color: #4e9a06             }
+			h2         { color: #4e9a06             }
+			h3         { color: #4e9a06             }
+			h4         { color: #4e9a06             }
+			h5         { color: #4e9a06             }
+			span.insen { color: grey                }
+		</style>
+	</head>
+	<body>
+
+<!-- Header -->
+
+	[ <a href='./04_-_Chyby_v_DMREL.html'>Prev</a> ]
+
+			[ <a href='/'>Index</a> ]
+
+	[ <a href='./06_-_Zdroje_dat_v_DMREL.html'>Next</a> ]
+
+<!-- End Header -->
+
+<hr />
+
+<!-- Wiki content -->
+
+<h1>05 - Hodnocení přesnosti DMR</h1>
+
+<p>
+Created Neděle 05 červen 2011<br>
+Nejedná se o výpisky z prezentace, ale o zkopírování prezentace<br>
+</p>
+
+<p>
+<ul>
+<li>Klasifikace metod:</li>
+<ul>
+<li>variabilita:</li>
+<ul>
+<li>neprostorové: střední kvadratická chyba, celková aboslutní chyby, hammoct index, ...</li>
+<li>prostorové: hammock plot</li>
+</ul>
+<li>shlukování:</li>
+<ul>
+<li>neprostorové: Moranovo I, G statistika</li>
+<li>prostorové: LISA, Gi*</li>
+</ul>
+<li>závoslost (regresní analýzy):</li>
+<ul>
+<li>neprostorové OLS regrese</li>
+<li>prostorové: GWR</li>
+</ul>
+</ul>
+<li>střední kvadratická chyba (RMSE - root mean square error)</li>
+<ul>
+<li>globální metoda hodnocní kvality DMR</li>
+<li>měří rozptyl rozdělení četnosti echylek mezů původními výškovými daty a daty DMR</li>
+<li>ideální hodnota by neměla překročit polovinu hodnoty intervalu původních vrstevnic</li>
+</ul>
+</ul>
+<div style='padding-left: 30pt'>
+<img src="./rmse.png" alt=""><br>
+</div>
+<ul style='padding-left: 30pt'>
+<li>kde: • Zdi je i-tá hodnota nadmořské výšky z povrchu DMR</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Zri je korespondující původní nadmořská výška</li>
+<li>n je počet kontrolovaných bodů</li>
+<li>celková absolutní chyba</li>
+<ul>
+<li>vyjadřuje skutečnou velikost (sumu) všech odchylek od referenčního gridu v kladném i záporném směru</li>
+</ul>
+</ul>
+<div style='padding-left: 30pt'>
+<img src="./aee.png" alt=""><br>
+</div>
+<ul style='padding-left: 30pt'>
+<li>kde: • Zdi je i-tá hodnota nadmořské výšky z povrchu DMR</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<ul>
+<ul>
+<li>Zri je korespondující původní nadmořská výša</li>
+</ul>
+</ul>
+<li>hammock plot</li>
+<ul>
+<li>globální metoda hodnocení kvality DMR</li>
+<li>rozsah hodnot se pohybuje v intervalu &lt;-1, i-1&gt; – ideální hodnoty – okolo nuly</li>
+</ul>
+</ul>
+<div style='padding-left: 30pt'>
+<img src="./hm.png" alt=""><br>
+</div>
+<ul style='padding-left: 30pt'>
+<li>kde: • n je interval vrstevnic</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<ul>
+<ul>
+<li>f0 je četnost mod0 (četnost pixlů se zbytkem 0)</li>
+<li>fi je četnost ostatních mod</li>
+</ul>
+</ul>
+<li>základní statistické charakteristiky</li>
+<ul>
+<li>průměrná hodnota</li>
+<ul>
+<li>pokud vstupními daty byly vrstevnice – srovnání průměrné hodnoty nadmořské výšky DMR s váženým průměrem z hodnot původních vrstevnic, kdy váha je určena délkou příslušných vrstevnic </li>
+</ul>
+<li>rozsah dat </li>
+<ul>
+<li>závisí na použité interpolační metodě</li>
+<li>významné překročení minimální či maximální hodnoty v porovnání se vstupními daty indikuje přítomnost hrubých chyb</li>
+</ul>
+<li>minimální, maximální hodnota, ...</li>
+</ul>
+<li>shlukování</li>
+<ul>
+<li>1. Určení obsahu analyzovaného atributu</li>
+</ul>
+</ul>
+<div style='padding-left: 60pt'>
+a. Hodnota = intenzita výskytu prvků, velikost jevu<br>
+b. Hodnota = pouze výskyt/nevýskyt → agregace dat<br>
+</div>
+<div style='padding-left: 30pt'>
+2. Výběr koncepce vyjádření prostorových vztahů<br>
+</div>
+<ul style='padding-left: 30pt'>
+<li>na základě znalosti analyzovaného jevu</li>
+</ul>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+3. Jakaá je základní otázka?<br>
+</div>
+</p>
+
+<p>
+<div style='padding-left: 60pt'>
+a. Kde se prostorově shlukují vysoké/nízké hodnoty jevu? → 1a<br>
+    Kde je nejvíce výskytů jevu? → 1b<br>
+b. Kde se nachází neočekávané vysoké hodnoty?<br>
+</div>
+</p>
+
+<p>
+<ul>
+<ul>
+<ul>
+<ul>
+<li>očekáváme, že výskyt jevu je funkcí výskytu jiného jevu (atributu)</li>
+<li>jako vstupní atribut je použit poměr těchto dvou jevů</li>
+</ul>
+</ul>
+</ul>
+<li>výběr základního koncepteptu prostorových vztahů (obr. viz prezentace)</li>
+<ul>
+<li>inverzní vzdálenost (Inverse distance)</li>
+<ul>
+<li>se vzrůstající vzdáleností klesá vliv hodnot</li>
+<li>pro spojitá data je vhodnější euklidovský typ vzdálenosti</li>
+<li>u větších souborů je třeba definovat prahovou vzdálenost</li>
+</ul>
+<li>konstantní vzdálenost (Distance band)</li>
+<ul>
+<li>analýzy jsou prováděny vzhledem k těm sousedícím prvkům, které se nachází do určité prahové vzdálenosti. Prvky za touto vzdáleností nemají na výpočty vliv.</li>
+<li>časté využití u Hot spot analýz</li>
+</ul>
+<li>zóna netečnosti (Zone of indifference)</li>
+<ul>
+<li>Prvky do určité (prahové) vzdálenosti jsou zahrnovány do analýz všechny, za touto hodnotou vliv prvků rychle klesá.</li>
+<li>Prahová vzdálenost zde odpovídá konstantní vzdálenosti, takže do analýzy vstupují všechny prvky a proto není vhodné použít tuto metodu na velké soubory dat.</li>
+</ul>
+</ul>
+<li>výběr základního konceptu prostorových vztahů</li>
+<ul>
+<li>možnosti určení prahové vzdálenosti:</li>
+<ul>
+<li>vzdálenost, která odráží maximální prostorovou autokorelaci – provést několikrát analýzu autokorelace pro různé vzdálenosti a vybrat tu, pro kterou bude Z score největší (K fce)</li>
+<li>vzdálenost zajišťující daný minimální počet sousedů (Calculate Distance Band from Neighbor Count)</li>
+<li>empiricky</li>
+</ul>
+<li>styčné polygony (polygon contiguity)</li>
+<ul>
+<li>pro polygonové vrstvy</li>
+<li>výsledek analýzy pro cílový polygon je ovlivněn pouze polygony sousedícími hranou či alespoň bodem (vrcholem)</li>
+<li>vhodné zejména pro polygony o přibližně stejné velikosti a rovnoměrném rozmístění</li>
+</ul>
+<li>K nejbližších sousedů (K Nearest Neighbors)</li>
+<ul>
+<li>výsledek analýzy pro cílový prvek je ovlivněn hodnotami K nejbližších sousedů</li>
+<li>každý prvek bude mít minimálně K počet sousedů a to i tehdy, kdy je hustota vstupních prvků různá</li>
+</ul>
+<li>Delaunay triangulace (Delaunay Triangulation)</li>
+<ul>
+<li>sousedy cílového prvku (bodu) jsou vrcholy trojúhelníků, jejichž součástí je i cílový bod</li>
+<li>vhodné tehdy, kdy je hustota vstupních prvků různá nebo zde existují izolované „ostrovy“ (např. polygony)</li>
+</ul>
+</ul>
+<li>matice prostorových vah</li>
+<ul>
+<li>kdy je vhodné vytvořit matici prostorových vah:</li>
+<ul>
+<li>velké datové soubory! (více jak 3 000 prvků)</li>
+<li>při analýze více jak jednoho atributu</li>
+<li>při výpočtu lokální i globální verze statistické analýzy</li>
+</ul>
+<li>jak vytvořit matici:</li>
+<ul>
+<li>ASCII soubor se speciálním formátováním</li>
+<li>pomocí nástroje Generate Spatial Weights Matrix (.swm )</li>
+</ul>
+<li>matice prostorových vah je N×N tabulka, kde N je počet prvků v datasetu </li>
+<li>binární nebo variabilní vážení</li>
+<li>prahová vzdálenost - obr. viz prezentace</li>
+<li>standardizace</li>
+<ul>
+<li>doporučována, pokud rozložení vstupních prvků je zkresleno způsobem vzorkování</li>
+<li>každá váha podělena „row sum“ (součtem vah všech sousedních prvků)</li>
+</ul>
+</ul>
+<li>obecné předpoklady</li>
+<ul>
+<li>data musí mít definován souřadnicový systém</li>
+<li>funkce pracují v jednotkách definovaných při nastavování souřadnicového systému</li>
+<li>pracuje s body (nebo centroidy z linií a polygonů)</li>
+<li>pracuje pouze s kladnými hodnotami</li>
+<li>vyžaduje variabilitu vstupních hodnot</li>
+<li>vstupní soubor nesmí obsahovat null hodnoty</li>
+</ul>
+<li>Z score a p-value</li>
+<ul>
+<li>nulová hypotéza: hodnoty (prvky) jsou v území rozmístěny náhodně (neexistuje zde prostorové shlukování)</li>
+<li>Z score je test statistické významnosti, který nám umožní rozhodnout, zda přijmout či zamítnout nulovou hypotézu</li>
+<li>P-value je pravděpodobnost, se kterou je zamítnuta nulová hypotéza </li>
+<li>Pokud výsledkem analýzy je malá hodnota p-value a velmi vysoká či nízká (záporná) hodnota Z score znamená to, že je velmi nepravděpodobné, že pozorovaný (analyzovaný) model je jedním z teoretických náhodných prostorových modelů jak bylo předpokládáno nulovou hypotézou a lze ji tedy zamítnout.</li>
+<li>P-value 0,05 ~ Z score -1,96 a +1,96 STD</li>
+</ul>
+<li>shlukování - globální metody</li>
+<ul>
+<li>základem je nulová hypotéza, která říká, že prvky (hodnoty prvků) mají náhodné rozdělení </li>
+<li>výpočet p-value, Z score, příslušného indexu</li>
+<li>Vykazují data (hodnoty) prostorové shlukování?</li>
+<li><strong>K-function</strong> – měří míru prostorového shlukování pro různé hodnoty vzdálenosti vymezující sousedství mezi prvky</li>
+<li><strong>Moranovo I</strong></li>
+<ul>
+<li>měří prostorovou autokorelaci na základě vzdálenosti mezi prvky a hodnot jejich atributů</li>
+<li>výsledkem je Moranovo I a odpovídající Z score a p-value (které vyjadřují statistickou významnosti Moranova I)</li>
+<li>hodnota Moranova I vyjadřuje, zda model vykazuje shlukování, rozptyl nebo náhodnost rozdělení </li>
+<li>pokud Z score a p-value poukazují statistickou významnost, pak kladná hodnota Moranova I (&gt; 0, okolo +1) znamená tendenci ke shlukování, zatímco záporné Moranovo I (&lt; 0, okolo -1) tendenci k rozptylu</li>
+</ul>
+<li><strong>Getis - Ord G</strong></li>
+<ul>
+<li>měří stupeň shlukování vysokých či nízkých hodnot</li>
+<li>výsledkem je General G index a odpovídající Z score a p-value</li>
+<li>hodnoty Z score blízké nule znamenají, že v datech není patrné shlukování</li>
+<li>čím vyšší (nižší) je hodnota Z score, tím je shlukování intenzivnější</li>
+<ul>
+<li>kladné hodnoty znamenají shlukování vysokých hodnot</li>
+<li>záporné nízkých hodnot</li>
+</ul>
+</ul>
+</ul>
+<li>shlukování - lokální metody</li>
+<ul>
+<li>analýza shluků, tj. lokalizace statisticky významných hot spots, cold spots či prostorových outliers</li>
+<li>umožňují vizualizaci rozložení a rozsahu prostorových shluků či outliers</li>
+<li>LISA </li>
+<ul>
+<li>identifikuje shluky (bodů) s podobnými hodnotami a shluky s rozdílnými hodnotami (nezabývá se velikostí hodnot)</li>
+<li>lokální Moranovo I, LISA = local indicators of spatial association</li>
+<li>výsledkem je:</li>
+<ul>
+<li>hodnota indexu lokálního Moranova I</li>
+<li>Z score a p-value</li>
+<li>typový kód shluku (cluster type code)</li>
+</ul>
+</ul>
+</ul>
+<li>pro každý prvek zvlášť je na základě Z score a p-value, které vyjadřují statistickou významnost, rozhodováno, zda bude potvrzena či zamítnuta nulová hypotéza</li>
+<ul>
+<ul>
+<ul>
+<li>potvrzení či zamítnutí podobnosti (či rozdílnosti) hodnot prvku a jeho okolí</li>
+</ul>
+<li>vysoká kladná hodnota Z score a LISA pro daný prvek znamená, že se v jeho okolí nachází prvky s podobnými hodnotami, prvek je tedy součástí shluku</li>
+<li>nízká negativní hodnota Z score a LISA pro daný prvek znamená, že se jedná o statisticky významný (při 0,05) prostorový outlier</li>
+<li>1. Hot spot: HH → v okolí daného prku došlo ke shluku vysokých hodnot</li>
+<li>2. Cold spot: LL → v okolí daného prvku došlo ke shluku nízkých hodnot</li>
+<li>3. Outlier: </li>
+<ul>
+<li>HL → prvek s vysokou hodnotou je obklopen prvky s nízkou hodnotou</li>
+<li>LH → prvek s nízkou hodnotou je obklopen prvky s vysokou hodnotou</li>
+</ul>
+<li>4. lokace bez významné autokorelace</li>
+</ul>
+<li>Getis - Ord lokální Gi* </li>
+<ul>
+<li>identifikuje shluky vysokých hodnot (hot spots) a shluky s nízkými hodnotami (cold spots)</li>
+<li>slouží k identifikaci rozmístění prostorových shluků vysokých hodnot (hot spots) a prostorových shluků nízkých hodnot (cold spots)</li>
+<li>výstupem jsou hodnoty Z score a p-value pro každý prvek, které určují statistickou významnost prostorového shlukování (Gi* je přímo hodnota Z score)</li>
+<li>vysoká kladná hodnota Z score a hodnota p-value &lt; 0,05 pro daný prvek znamená existenci prostorového shluku vysokých hodnot v okolí → hot spot</li>
+<li>nízká záporná hodnota Z score a hodnota p-value &lt; 0,05 pro daný prvek znamená existenci prostorového shluku nízkých hodnot v okolí → cold spot</li>
+<li>čím je Z score větší/menší, tím je shlukování intenzivnější</li>
+<li>Z score blízké nule znamená, že se zde nevyskytuje žádný zjevný shluk</li>
+<li>Lokální součet hodnoty prvku a hodnot jeho okolí je proporcionálně srovnáván se součtem hodnot všech prvků v území. Pokud je lokální součet značně odlišný od očekávaného lokálního součtu, znamená to, že tento rozdíl nemůže vzniknout náhodně a jedná se tedy o statisticky významný výsledek (Z score).</li>
+</ul>
+</ul>
+</ul>
+</p>
+
+
+<!-- End wiki content -->
+
+<hr />
+
+<!-- Backlinks -->
+
+	Backlinks:
+
+<!-- End Backlinks -->
+
+	</body>
+
+</html>

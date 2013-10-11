@@ -1,0 +1,254 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>6 - Servery</title>
+		<meta name='Generator' content='Zim 0.54'>
+		<style type='text/css'>
+			a          { text-decoration: none      }
+			a:hover    { text-decoration: underline }
+			a:active   { text-decoration: underline }
+			strike     { color: grey                }
+			u          { text-decoration: none;
+			             background-color: yellow   }
+			tt         { color: #2e3436;            }
+			pre        { color: #2e3436;
+			             margin-left: 20px          }
+			h1         { text-decoration: underline;
+			             color: #4e9a06             }
+			h2         { color: #4e9a06             }
+			h3         { color: #4e9a06             }
+			h4         { color: #4e9a06             }
+			h5         { color: #4e9a06             }
+		</style>
+	</head>
+	<body>
+
+<!-- zápisky 6 -->
+
+<h1>6 - Servery</h1>
+
+<p>
+Pondělí 22 října 2012<br>
+</p>
+
+<p>
+<ul>
+<li>server: počítač nebo proces, který poskytuje službu</li>
+<li>v Unixu - démon, ve Widlích - služba</li>
+<li><u>druhy serverů:</u> (poskytování služeb je realizováno pomocí aplikačního síťového protokolu)</li>
+<ul>
+<li><strong>webový server</strong></li>
+<ul>
+<li>protokol HTTP (Apache HTTP Server, Internet Information Services IIS, Sun Java System Web Server)</li>
+<li>statický obsah (předem připravený) x dynamický (vytvoří se podle požadavků klienta)</li>
+<li>fce: odpovídání na požadavky webových prohlížečů přes http</li>
+</ul>
+<li><strong>tiskový server </strong>- protokol LPD</li>
+<li><strong>souborový server</strong> - protokol SMB (sdílení disků, tiskáren)</li>
+<li><strong>databázový server</strong></li>
+<ul>
+<li>uložiště strukturovaných dat, vyhledávání</li>
+<li>spravuje data, prostorová i neprostorová, v relační nebo nerelační datové struktuře</li>
+<li>klient jako web server nebo map server získávají přístup do databáze skrz SQL</li>
+<li>př. ODBC, Java Database Connectivity (JDBC), ActiveX Data Object (ADO)</li>
+<li>MySQL (GPL licence), PostgreSQL (BSD licence) - rozšířitelnost, PostGIS, Tsearch2 (fulltextové vyhledávání), Slony-I (master to multiple slaves replikace)</li>
+<li>databáze s podporou prostorových dat: <strong>PostgreSQL (PostGIS), Oracle Database (OracleSpatial), MySQL, MS SQL, Firmware Database, SQL Light</strong></li>
+<li>terminál, emulátor terminálu (phpMyAdmin, Janitor - SQL tools, QGIS nástavba	)</li>
+</ul>
+<li><strong>faxový server</strong></li>
+<li><strong>proxy server </strong>- zprostředkovává ostatním uživatelům sítě přístup do sítě jiné (př. Internet)</li>
+<li><strong>aplikační server</strong></li>
+<ul>
+<li>specializovaný na provoz nějaké aplikace, př. MapServer, CGI model, CGI extenze, Apctive Server Pages, Apple's WebObject, JSP servlets</li>
+<li>možné odpovědi: </li>
+<ul>
+<li>poslání existujícího HTML dokumentu nebo hotového mapového obrázku klientovi</li>
+<li>poslání Java applets nebo ActiveX controls webovému klientovi</li>
+<li>předání požadavku a vyvolání dalšího program, který zpracuje požadavek </li>
+</ul>
+</ul>
+<li><strong>herní server</strong></li>
+</ul>
+</ul>
+</p>
+
+<h1>Interaktivita na straně serveru</h1>
+<p>
+<ul>
+<li>server-side scripting</li>
+<li>dynamické generování webového obsahu/rozhraní</li>
+<li>znaky:</li>
+<ul>
+<li>tenký klient - bez hardwarových nároků</li>
+<li>bezstavovost - neuchovává spojení s klientem, nepamatuje si nic</li>
+<li>ke každému klientu se musí chovat samostatně, žádné globální funkce (typu výřez mapy)</li>
+</ul>
+<li>identifikace klienta:</li>
+<ul>
+<li>Cookies - identifikuje klienta tím, že si o něm uloží základní údaje, uloží si jej u něj v počítači a při dalším spojení si jen nahraje ten soubor z počítače klienta</li>
+<li>session proměná - neukládá to v klientovi, ale na serveru do databáze; </li>
+</ul>
+<li>prostředky skriptování:</li>
+<ul>
+<li>externí aplikace napojená na web server</li>
+<li>aplikační server, která řeší i webový přístup</li>
+<li>webový kontejner, který umožňuje aplikační komunikaci - v členěno pod server, řídí web, používá knihovny</li>
+<li>embedded skriptování</li>
+</ul>
+</ul>
+</p>
+
+<h2>CGI (common gateway interface)</h2>
+<p>
+<ul>
+<li>protokol, jak předat parametry webovému serveru</li>
+<li>snaha přidat na webové stránky vyšší funkcionality a interaktivitu</li>
+<li>ten co zpracováná požadavky klienta (server jen předává požadavek cgi)</li>
+<li>platformní závislost</li>
+<li>bezestavovost - nepamatují si nic (řeší se cookies nebo session)</li>
+<li>vysoká systémová režie - zabírá dost paměti při zpracovávání</li>
+<li>nízký výkon - každý požadavek nastavuje nový proces</li>
+<li>bezpečnost - riziko pro webový server, protože se skládá z nativních kódů (exe, dll), která mají přístup k dalším nativním programům</li>
+<li>vhodné pro nižší počet současně volajících programů</li>
+<li>princip práce:</li>
+</ul>
+<div style='padding-left: 30pt'>
+1. adresa Ulice=Bla&amp;Mesto=Olomouc - shromáždí data z vyplněného formuláře - sestaví řetězce páru jmen proměnných a hodnot a oddělí &amp; <br>
+2. na serveru zachytí požadavek, rozebere adresu, <br>
+3. -12. není v prezentaci<br>
+</div>
+<ul>
+<li>CGI+ rozšíření</li>
+<li>po dokončení procesu se neukončují, ale zůstávání připraveny v paměti na další požadavky</li>
+<li>v C++, rychlá, ložitá na programování, bezpečnostní problémy</li>
+<li>(NSAPI) WAI - nové řeší rychlejšího CGI od Netscapu</li>
+<li>Javasoft servlets, Allaire Cold Fusion (má řešení i nad mapovými servery)</li>
+<li>mapové servery pořád u CGI</li>
+<li>šablony</li>
+<li>každá stránka, která se má dynamicky vygenerovat, se skládá ze dvou souborů</li>
+<ul>
+<li>soubor DC s SQL dotazem</li>
+<li>soubor HTX = html stránka, viz bakalářka moja</li>
+<li>velmi omezené programování</li>
+</ul>
+</ul>
+</p>
+
+<h2>Skriptovací jazyky v kódu stránky</h2>
+<p>
+<ul>
+<li>jednoduše propojeno, vložen do html kódu, (nečitelná změt znaků)</li>
+<li>uložené v paměti, aby se s každým procesem nemusely zapínat</li>
+<li>odpovědi nejsou připraveny, musí se generovat</li>
+</ul>
+</p>
+
+<h3>PHP Hypertext Presprcessor PHP</h3>
+<p>
+<ul>
+<li>vkládá se do kódu html, umístěn na strašně serveru, jen výsledek je přenášen do výsledné stránky</li>
+<li>nezávislý na platformě, zcela zdarma</li>
+<li>pro webové i desktopové, pro textové i grafické xindly, práce se soubory</li>
+<li>jednoduchá syntaxe, kombineje ji s několika programovacími jazyky (Perl, C, Java)</li>
+<li>přístup k databázi</li>
+<li>podpora řady internetových protokolů (POP3, HTTP, FTP, ...)</li>
+<li>dynamicky typovaný - datový typ definuji až v okamžiku přiřazení hodnoty (pro porovnání se používají dvě rovnítka</li>
+<li>heterogenní pole - obsahuje hodnoty včetně jejich indexů</li>
+<li>obsah se uzavírá do uvozovek, rozdíl mezi "obsahu je parsová" 'obsah není parsován' </li>
+<li>instalace 2 způsoby - php.exe nebo modul Apache, nebo jiného webového serveru → to ovlivňuje rychlost</li>
+<li>zpracování formulářů</li>
+</ul>
+</p>
+
+<h3>JAVA</h3>
+<p>
+<ul>
+<li>programovací jazyk všetně platformy, osbahuje mnoho hotových knihoven tříd, nebo ve formě API</li>
+<li>objektově orientovaný</li>
+<li>používá koncerp virtuálního stroje - apbsatraktně definované prostředí spolu s příšlušným emulétorem, načítá se to ze zdrojáku a zde se spouští</li>
+<ul>
+<li>kód - přeloží se do Java VS - spouštěcí prostředí se skládá z emulétoru a řady knihoven tříd - Java RunTime</li>
+</ul>
+<li>zdrojový kód .java</li>
+<li>Java applety, desktop aplikace, CGI programy</li>
+<li><strong>JavaServerPage JSP </strong>skriptovací jazyk určený pro server, používá se přímo ve webové stránce</li>
+<ul>
+<li><strong>Servlet</strong> - program v jazyce Java, běží na straně serveru</li>
+<li>napíšu kód v JSP (ve html kódu), Servlet zpracovává </li>
+<li>4 typy elementů:</li>
+</ul>
+</ul>
+<div style='padding-left: 90pt'>
+1. skriptovací elementy a proměnné<br>
+2. direktivy<br>
+3. instrukce<br>
+4. elementy XML<br>
+</div>
+<ul style='padding-left: 60pt'>
+<li>deklarace &lt;%! %&gt;</li>
+<li>výraz &lt;%= %&gt;</li>
+<li>skriplety &lt;% %&gt;</li>
+<li>základní princip:</li>
+</ul>
+<div style='padding-left: 90pt'>
+1. dokument JSP umístíme na server - kde je spuštěn kontejner JSP<br>
+2. uživatel spustí, načte se JSP, vytvoří z něj program v jazyce Java - Servlet<br>
+3. servlet přeložen do bajtového kódy a vznikne bouro (.class), umístí jej do zvláštního adresáře<br>
+4. kontejner JSP načte soubor tříd, na základě zjištěné definice vytvoří nový objekt, inicializuje všechny proměnné nového objektu<br>
+5. kontejner vytvoří odpovědní dokument, odešle jej uživateli<br>
+6. při žádosti na stejný dokument se konterner vrátí do bodu 5 , ve kterém vytvoří nový odpovědní dokument<br>
+7. pokud nic, server zaniká<br>
+</div>
+<ul>
+<ul>
+<ul>
+<li><strong>Java Servlet API</strong> - dá se použít jako webový server - využívá HTTP, požadavek - odpověď; skládá se z balíčků (javax.servlet a javax.servlet.http</li>
+<ul>
+<li>nejpoužívanější Servlet/JSP kontejner pod Javou <strong>Tomcat</strong></li>
+</ul>
+</ul>
+</ul>
+<li><strong>ASP</strong> (Active server pages - mrtvý) → nezávislá na programovacím jazyku (C, VisualBasic), komerční (Microsoft), singleplatformní, ale hluboká integrace, zároveň nebezpečný</li>
+<li><strong>ASP.NET</strong> (nástupce ASP)</li>
+<ul>
+<li>nezávislý na programovacím jazyku</li>
+<li>jsou rychlejší než ostatní konkurenční, předkompilovány do jednoho či několika málo DDL souborů</li>
+<li>ASP.NET WebForms - stránky poskládány z objektů, prvky (Button, Label)</li>
+<li>výhody oproti ASP:</li>
+<ul>
+<li>díky kompilovanému kódu běží rychleji, chyby jsou zachyceny už při vývoji; možnost programovat i v dalších prog. jazyků</li>
+<li>multiplatformní - modifikace .Net Mone</li>
+<li>generuje validní HTML/XHTML, JavaScript</li>
+</ul>
+<li>bezstavovost - ViewStat - uchovává informace v zakódovaném tvaru ve skrytých formulářových polích ; Session State - informace v databázi</li>
+</ul>
+<li><strong>.NET</strong></li>
+<ul>
+<li>soubor technologií v softwarových produktech pro web, windows, pocket PC</li>
+<li>základem Microsoft .NET Framework</li>
+<li>vývoj Microsoft Visual Studio .NET</li>
+<li>možnost výběru programovacího jazyku - C#, Deplhi, Visual Studio .NET, VB.NET, C Java</li>
+<li>bez ohledu se vždy první přeloží do Common Language Infrastructure - starndardizovaná specifikace jázdra .NET</li>
+<li>1) CTS (The Common Type System - sady datových typů a operací</li>
+<li>2) Metadata</li>
+<li>3) CLS Common Language Specification - definuje pravidla, které je potřeba dodržet</li>
+<li>4) VES Virtual Execution System - pomocí metadat zjistí, z jakými daty pracuje, pomocí CTS zjistí datové typy opera, CLS zkontroluje pravidla — a spustí</li>
+</ul>
+<li>komponentové technologie</li>
+<ul>
+<li>knihovna ADO firmy Microsoft</li>
+<ul>
+<li>databázová knihovna - používá se pro přístup k databázi v prostředí ASP</li>
+<li>zaobaluje poměrně složitý přístup k datovým zdrojům do jednoduchého rozhraní</li>
+</ul>
+</ul>
+</ul>
+</p>
+
+
+<!-- End wiki content -->
+
+	</body>
+
+</html>

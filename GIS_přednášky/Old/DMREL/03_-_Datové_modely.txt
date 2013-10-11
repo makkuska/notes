@@ -1,0 +1,148 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-06-03T20:53:07.414319
+
+====== 03 - Datové modely ======
+Created Pátek 03 červen 2011
+
+* hlavním cílem je získání optimální reprezentace terénu
+* __datové modely:__ polyedrický model reliéfu //(TIN)//, rastrový model reliéfu //(grid)//, plátový model reliéfu //(lattice)//
+* nejlépe vystihuje modelovaný povrch TIN nebo lattice, ale nedají se moc používat pro modelování, kde chceme provádět mapovou algebru
+* lattice znázorňuje povrch hladce
+* **Polyedrický model reliéfu:**
+	* tvoří jej nepravidelné trojúhelníky, které na sebe navazují hranami a vytváří nepravidelný mnohostěn → tím tvoří polyedr
+	* trojúhelníky mění tvar a velikost
+	* trojúhelníky jsou vyjadřovány polynomy nultého a prvního řádu, které vyjadřují rovinný povrch
+	* hustota a rozmístění vstupních dat
+		* body na povrchu reliéfu je možné rozmístit tak, aby ce nejvíce vystihovaly členitosti terénu - **hustější síť v členitém terénu, řidší v plošším terénu**
+		* je nutné zahrnout body ležící na všech důležitých singulárách - vrcholy, hřebeny
+		* v případě různé hustoty a rozmístění bodů je TIN lepší než grid
+	* vektorový topologický datový model
+		* body -  vrcholy trojůhelníku
+		* linie - hrany spojující vrcholy
+		* plochy - trojúhelníky se třemi vrcholy a hranami
+		* trojúhelníky dobře navazují, tvoří hladký povrch
+	* konstukce polyedrického modelu
+		* 1. určení trojúhelníkové sítě 
+			* určení vrcholů trojúhelníků body - nutné zahrnout i body ležící na významných singularitách
+			* optimalizační kritéria:
+				* Delaunay kritérium - kritérium opsané kružnice
+				* co největší rovnostrannost
+				* minimální obdov
+		* 2. tvorba polyedrického modelu 
+			* vrcholy P1[x1,y1,z1],P2[x2,y2,z2],P3[x3,y3,z3] každého trojúhelníku proložíme rovinu z=ax+by+c
+			* • uvnitř trojúhelníkových ploch je předpokládám pravidelný rovnoměrný průběh změn výšek
+			* delaunay triangulace - jen tehdy, pokud do kružnice opsané každému z trojúhelníků nepadne žádný jiný bod
+			* středy kružnic opsaných Dalaunay trojúhelníkům odpovídají vrcholů tzv.varonoi polygonů - viz. prezentace
+	* **Triangulace**
+			* povrch je spojitý, hrany na sebe navazují, derivace nejsou
+			* pro jakýkoliv bod uvnitř plochy lze odvodit nadmořskou výšku lineární interpolací
+			* jeden chybný bod může ovlivnit/zkazit průběh svého okoli
+			* vznik umělých ploch, řeší se přidáním hran
+	* výhody: 
+		* dobře reprezentuje reliéf
+		* umí se přizpůsobit množství dat
+		* umí reprezentovat srázy
+		* pracuje přímo se vstupními daty (žádná interpolace)
+		* využívá všech typů geoprvků
+		* menší nároky na paměť
+	* nevýhody: 
+		* těžší algoritmy pro analýzu (sklon, ..)
+		* špatně reprezentuje rovný porvch
+* **Rastrový modelreliéfu**
+	* tvořen čtvercovou maticí bodů
+	* jeden bod reprezentuje čtvercovou plošku s konstantní
+	* nadmořská výška se vztahuje ke středu
+	* reliéf je reprezentován hranoly, je nespojitý 
+	* reprezentace reliéfu
+		* záleží na velikosti pixelu (né moc velký, ale ani malý)
+		* čím větší rozlišení, tím větší náročnost na zpracování a oběm dat
+	* hustota a rozmístění vstupních bodů
+		* lze palikovat na pravidelně i nepravidelně rozmístěná bodová data
+	* výhody: 
+		* dobře modeluje plochý reliéf bez hran
+		* snadné výpočty, analýzy
+		* dobře se integruje s rastrovými daty
+	* nevýhody: 
+		* neumí dobře modelovat hrany, vrcholy, sedla
+		* špatně reprezentuje človenitý terén
+		* pracuje s bodovými geoprvky, neumí pracovat s liniemi apolygony
+		* velký objem dat
+* **Plátový model reliéfu**
+	* nadmořská výška je vstahována k průsečíkům v síti
+	* reprezentuje nadmořskou výšku pouze v daném místě
+	* čtyřúhelníkové pláty, někdy trojúhelníkové pláty
+	* uvnitř plátů je povrch složitý (né rovinný)
+	* výhodou: styk sousedních plátů je složitý, ale souvislý
+	* pro vyjádření plošek se používají Beziérovy čtvercové pláty:
+		* 4 hlavní body v rozích (celkem 16) = nositelé nadmořské výšky
+		* přechod mezi plýty může být ostrý nebo hladký
+		* nutné dodržet 2 podmínky:
+			* dva na sebe navazující pláty musí mít stené řídící body na společné hraně těchto plátů
+			* oba pláty musí mít v dotykových bodech skutečnou tečnu, musí existovat 4 trojice bodů, které leží na jedné usečce
+	* výhody: 
+		* vhodný pro vizualizaci
+		* přechod mezi pláty je hladký
+	* nevýhody: 
+		* není vhodný pro odvozování a analýzy
+		* průběh plošek není rovninný, ale složitý
+		* velký objem dat
+* **Pro vyjádření reliéfu se někdy doplňuje vrstevnicemi**
+	* způsob získávání: 
+		* fotogrammetricky ze stereopárů - poměrně přesné
+		* odvozování z bodových dat - nižší kvalita
+* **Postupy tvorby DMR:**
+	* __1. generování__
+		* výběr datového modelu
+			* transformace vstupních dat do zvoleného datového modelu
+				* zvolený datový model (grid nebo TIN) je určující pro celý proces generování DMR
+			* v případě generování modelu typu grid je zpravidla nezbytné z nepravidelně rozmístěných bodů provádět interpolaci v pravidelné čtvercové síti 
+				* tento krok může výrazně (zpravidla negativně) ovlivnit kvalitu výsledného modelu
+			* při generování modelu typu TIN lze vrcholy modelu ztotožnit s naměřenými vstupními body a tím dosáhnout velké věrnosti vytvořeného modelu
+		* výběr interpolační metody či triangulace
+	* __2. manipulace__
+		* → modifikace, kalibrace a ladění DMR
+		* editace
+			* oprava chyb a aktualizace DMR
+			* vkládání a rušení bodů, změna polohy, změna atributu
+			* ruční vkládání strukturních linií
+		* filtrování
+			* oprava chyb
+			* snižování objemu dat – odstraňování redundantních dat, odstraňování dat v závislosti na prostorovém rozlišení DMR (VIP)
+			* odstraňování nepotřebných detailů
+			* vyhlazování (shlazování) a zvýrazňování hran (často používány stejné metody jako v DPZ)
+		* slučování
+			* provádí se nad alespoň částečně překrývajících se DMR
+			* zpravidla na datové úrovni (tj. u vstupních dat)
+			* nutno řešit problémy s odlišnostmi a systematickými chybami v datech
+		* spojování
+			* aplikovatelné pouze na sousedící DMR stejného typu a geometrických parametrů
+			* pro gridy: velikost buňky, směr os, návaznost sloupců a řádků
+			* pro TIN: návaznost na hranách (nutné zavedení topologických pravidel)
+		* konverze DMR z jednoho datového modelu do jiného
+			* TIN → grid/lattice
+				* nadefinují se parametry sítě bodů
+				* pro každý bod gridu se pomocí interpolace odvodí z TIN nadmořská výška
+			* grid/lattice → TIN
+				* buňky se rozdělí na dvojice trojúhelníkových plošek a vygeneruje se TIN
+		* převzorkování gridu
+			* vytvoření nového gridu z původního gridu – liší se jinými parametry
+			* změna rozlišení – velikosti buňky gridu (pokud je potřeba sjednotit více gridů, použije se nejhrubší rozlišení)
+			* pootočení – změna orientace souřadnicového systému
+			* transformace – změna souřadnicového systému
+	* __3. analýza__
+		* oskytuje další informace o modelovaném území
+		* odvozením lze získat
+			* informace o délce, ploše ve 3D
+			* morfometrické charakteristiky (sklon, orientace, ..., směr odtoku, rozvodnice a povodí, ...)
+		* zde se projeví, jak kvalitně byl vygenerován DMR
+	* __4. vizualizace__
+		* vizualizace DMR i vizualizace morfometrických charakteristik
+		* základním posláním je zobrazit a zpřístupnit získané výsledky
+		* slouží však i pro prvotní kontrolu kvality DMR
+		* lze využít různé metody
+			* statická, dynamická vizualizace
+			* klasické metody (hypsometrie, stínování,...), pokročilé metody (animace, průlety, VR)
+	* __5. aplikace DMR__
+		* konkrétní aplikace udává požadavky na parametry výsledného modelu
+	* Tvorba DMR není přímočarý proces. Postupuje v iteracích, které postupně procházejí jednotlivé fáze.

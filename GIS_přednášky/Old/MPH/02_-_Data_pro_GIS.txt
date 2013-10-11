@@ -1,0 +1,166 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-02-19T13:02:04+01:00
+
+====== 02 - Data pro GIS ======
+Úterý 19. února 2013
+
+====== Krizový management v ČR ======
+* analýza problémů, návrh možných přístupů, definování plánu postupu, implementace toho plánu na konkrétní podmínky
+* 3 relativně samostatné oblasti
+	* ochranné plánování - armáda
+	* civilní nouzové plánování - složky civilní obrany (není armáda)
+	* havarijní plánování
+* úrovně KM ČR
+	* státní správa (řídící)
+	* krajské - hejtman, HZS (hasiči), PČR (policie),
+	* obecní - obecní úřad, starosta, bezpečnostní rady
+	* krizové štáby
+
+==== IZS Integrovaný záchranný systém ČR ====
+* skládá se z HZSČR + jednotky požární ochrany, orgány ozbrojených sil, orgány veřejné ochrany zdraví, Havarijní a pohotovostní složky (voda, elektrika), odborná zdravotnická zařízení, Zdravotnická záchranná služba
+* __Operační střediska jednotlivých zdrojů__
+	* 112 přijímá HZS
+	* koordinační skupina - přijímá, vyhodnocuje žádosti, přiřazuje zásahových zdrojů podle obsahu tísňové zprávy, ..
+	* centrum tísňového volání
+		* každý kraj zabezpečuje příjem a zprac. 
+		* společné dispečerské pracoviště IZS v Ostravě
+		* 4 úrovně:
+			* komunikační (sítě, servery)
+			* informační (všichni jsou informovaní)
+			* organizační (jasně rozdělené role)
+			* technologické (agregáty, 1 společná linka, ..)
+		* __linka 112__
+			* min. 7 operátorů
+			* hovory přijímají kraje, vždy se musí dát dovolat, pokud je kraj obsazen, přesměrovává se na jiný kraj
+			* min. 2 světové jazyky
+			* hovory se pak předávají dál příslušným subjektům
+		* __Telefonní centrum tísňového volání__
+			* lokalizace hovoru
+			* integrace telefonního a informačního systému
+
+==== GIS v krizovém managementu ====
+* modelování: retrospektivy, soudobého stavu, predikce
+* dbá se na kvalitu součinnosti v rámci GIS → sdílení, správa dat, efektivní rozhodování
+* propojení GIS v rámci všech subjektů
+* specializovaný GIS software
+	* speciální funkce, jednoduchý vzhled
+	* systémy v terénu: žáruvzdorné, snadné jasné rychlé ovládání
+
+=== Data ===
+* musí být jednoznačná, bezchybná
+* mapový podklad: ZABAGED
+* souřadnicové systémy:
+	* Policie data v S-42(WGS84) - protože patří pod Ministerstvo obrany
+	* Hasiči v S-JTSK
+	* Záchranka nedostává data
+* každá vrstva = 1 krizová situace
+* krizový plán - pořizují si je státní i soukromé subjekty - nemají povinnost předávat to záchranným složkám  (často v pdf)
+* údaje o geografickém chování rizikového objektu (odkud tam, znalost hybné síly)
+* údaje o směrech a místech možného šíření (inženýrské sítě, dopravní spojnice, vodstvo)
+* lokalizace míst pomoci (nemocnice, ..) - zajišťují si ji záchranné složky sami
+* povodně:
+	* zvláštní povodně - která vznikají jinou než meteorologickou situací (přetržení hráze) - pdf 1:50tis
+	* historické povodně (100, 20, 5let průtocích)
+	* sirény a další mechanismy, které slouží pro varování obyvatel - umístění, dosah, ..
+* komunikace:
+	* poskytuje Správa silnic a dálnic ČR
+	* dodělávají si šířky, výškové profily, zaznamenávají každou zpevněnou komunikaci
+	* nejoptimálnější trasy
+* chemické znečištění:
+	* Registr znečišťovatelů
+	* dostupné (geoportal), dobře lokalizované
+* evakuační statistika
+	* databáze obyvatel (nedá se na ni úplně spolehnout), sami si doplňují informace
+	* údaje o obyvatelstvu (demografie) - RÚIAN
+* krajina:
+	* topografie (ZABAGED, DMÚ25)
+	* terén (DMR - ČUZK)
+		* údaje o povrchu (geomorfologie) - DEM, DPZ
+	* ortofoto (Geodis)
+	* meteorologická situace - ČHMÚ
+	* geologie - ČGS
+	* půdy - BPEJ
+	* vodstvo - VÚV TGM
+	* biota a lesy - ÚHUL
+	* obrana přírody - AOPK
+* interpretace standardních datových vrstev 2 různých zdrojů
+* interpretace dat (čísel) s ohledem na účastníky
+
+=== Software ===
+* ESRI + nádstavba GISellZS - T-mapy
+* výjezdové aplikace (v autech, v terénu) od firem, které se specializují (př. RCS Kladno)
+* typická architektura:
+	* centrální uložiště dat, centrální desktopy, mapservery, mobilní GIS (tablety), 
+* specializované SW
+	* EOD, SensAware, NBC-Analysis - modelace hazardů
+	* ALOHA, SPIRS - propojené s databází pro identifikaci nebezpečných látek
+	* ROZEX (na míru pro ZHS) - podobný ALOZE, modelace úniku a šíření nebezpečných chem. látek
+		* datábze o druhu chem. látek, prostředí v okolí úniku, vertikální stálost atmosféry
+
+====== Projekty a modely v EU ======
+* důležitá návaznosti dat, algoritmy výpočtů
+* v EU dohoda o výměně a poskytování informací prvním důležitým krokem k úspěšné spolupráci
+* velké množství projektů na harmonizaci dat
+	* stejný režim aktualizace, významovou logiku, metod, algoritmů, ...
+	* zajištění interoperability
+* **ESA European Space Agency**
+	* pomocí DPZ, telekomunikace a GNSS
+	* materiály na průzkum Země, možnost telekomunikace (satelitní telefony)
+	* používají se pro zmírňování dopadů katastrof
+	* data dostupná všem v EU
+	* projekty GEOSS, GMES
+		* Risk-EOS soužástí GMES
+			* na lokální a národní úrovni řešit rizika
+			* tahouni projektu francouzi
+	* přístup k datům z ESY mají orgány na základě legislativy - v ČR Cenia
+	* **projekt GMES**
+		* global monitoring for environment and secukrity
+		* → kopernikus
+		* INSPIRE 
+			* sdílení dat (zodpovědnost za správnost, aktuálnost, formátú
+			* legislativní, datová struktura
+		* SEIS
+			* evropský systém pro sdílení indikátorových dat → poskytuje data z DPZ
+			* statistická, kvantitativní → referenční data
+		* GMES 
+			* řeší data (aktuální, popisná) 
+			* zpracovává data
+		* GNSS - lokalizuje, naviguje
+		* GMES a ČR - zapojeno od 2006, Cenia správce
+		* data z projektu GMES budou subjektům zdarma, přístup bude zprostředkovávat národní sekretariát
+		* cíle harmonizace standardů, využívání dat z DPZ, poskytování služeb
+		* služby 
+			* emergency management (krizového řízení)
+				* rychlé mapování satelitem
+				* podpůrné služby
+			* land service (CORINE2012, ...)
+		* složky GMES:
+			* obsahuje 3 komponenty:
+				* **komponenta služby** - geoportály, IS
+				* **komponenta in-situ** - letecké, námořní, pozemní sběr dat, terénní měření, sběr dat
+				* **vesmírná komponenta** (ex-site) - Landsat, Spot, družice Sentinel, placená EU
+		* **Sentinel 2014**
+			* Sentinel 1
+				* 2 družice, obě polární
+				* k mapování zemského povrchu
+				* radarové senzory → radarová data
+			* Sentinel 2
+				* 2 polární družice
+				* optický multispektrální spektrometr s vysokým rozlišením
+			* Sentinel 3
+				* 2 družice
+				* k pozorování moře, altimetrie )rozdílové měření?)
+				* mapování tsunami
+				* optický a radarový senzor
+			* Sentinel 4 (2020)
+				* 1 geostacionární družice
+				* mapování chemických látek v atmosféře (ozón, Nx, SO, aerosoly)
+				* meteorologická družice
+			* Sentinel 5
+		* Eoli - web, Eolisa - software
+	* projekt EnviSec (v ČR), OASIS, Orchstra, WIN, MEDIGRID, FloodMan, EGERIS, 
+	* OSN - má jen pracovní skupinu, nemá data ani metody
+* HAZUS - nástroj pro krizový management
+
+

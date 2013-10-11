@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-09-23T22:33:56+02:00
+
+====== Skriptování ======
+Created Pondělí 23 září 2013
+

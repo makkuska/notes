@@ -1,0 +1,92 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-02-16T15:07:19+01:00
+
+====== Tvorba geodatabáze - postup ======
+Created Čtvrtek 16 únor 2012
+
+=== Postup založení nové databáze postgisové, včetně zobrazení v mapserveru: ===
+	* instalace postgis z repozitáře:
+		* //postgis//
+		* **postgresql-9.1-postgis**
+		* //postgresql-server-dev-9.1  //
+		* //postgresql-client-9.1//
+		* //postgresql-client-common//
+		* //postgresql-common    //
+		* //postgresq//l
+	* //postgres=#// __CREATEDB postgisdatabaze__;
+	* **přidání extenzí** - př. POSTGIS
+		* POSTGIS do každé nové databáze se musí přidat soubory** 'postgis.sql' 'spatial_ref_sys.sql'**
+		* **starý způsob:**
+			* cesta k nim /usr/share/postgresql/9.1/contrib/postgis-1.5/
+				* **!!** //postgres@marketka /home/market $// __psql -d postgisdatabaze -f /usr/share/postgresql/9.1/contrib/postgis-1.5/postgis.sql__
+				* **!!** //postgres@marketka /home/market $ //__psql -d postgisdatabaze -f /usr/share/postgresql/9.1/contrib/postgis-1.5/spatial_ref_sys.sql__
+		* **nový způsob:**
+			* v databázi - __CREATE EXTENSION postgis; postgis_topology__**;**
+		* __Přidat SJTSK do POSTGIS__
+			* INSERT INTO "spatial_ref_sys" ("srid","auth_name","auth_srid","srtext","proj4text") VALUES(102067,'ESRI',102067,'PROJCS["S-JTSK_Krovak_East_North",GEOGCS["GCS_S_JTSK",DATUM["D_S_JTSK",SPHEROID["Bessel_1841",6377397.155,299.1528128]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]],PROJECTION["Krovak"],PARAMETER["False_Easting",0],PARAMETER["False_Northing",0],PARAMETER["Pseudo_Standard_Parallel_1",78.5],PARAMETER["Scale_Factor",0.9999],PARAMETER["Azimuth",30.28813975277778],PARAMETER["Longitude_Of_Center",24.83333333333333],PARAMETER["Latitude_Of_Center",49.5],PARAMETER["X_Scale",-1],PARAMETER["Y_Scale",1],PARAMETER["XY_Plane_Rotation",90],UNIT["Meter",1]]','+proj=krovak +lat_0=49.5 +lon_0=24.83333333333333 +alpha=30.28813975277778 +k=0.9999 +x_0=0 +y_0=0 +ellps=bessel +units=m');
+	* **vytvořit novou tabulku:**
+		* //postgisdatabaze=# //
+					__CREATE TABLE tlinie ( gid serial NOT NULL PRIMARY KEY, __
+									__nazev character varying(30) NOT NULL UNIQUE, __
+									__geometrie geometry, __
+									id_kraj integer NOT NULL,
+								           __) __
+						WITH (OIDS=FALSE);
+
+						geodatabaze=# \d bod;
+		                               Table "public.bod"
+					 Column  		| Type				| Modifiers                     
+					 -----------+-----------------------+---------------------------------------------------
+					 gid       		| integer				| not null default nextval('bod_gid_seq'::regclass)
+					 nazev     		| character varying(30) 	| not null
+					 geometrie 	| geometry              		| 
+					 id_kraj   		| integer          			| not null
+					 Indexes:
+					    "bod_pkey" PRIMARY KEY, btree (gid)
+					    "bod_nazev_key" UNIQUE CONSTRAINT, btree (nazev)
+
+						
+	* vložit hodnoty:
+		* **POINT** 
+			* //postgisdatabaze=#// __INSERT INTO tbod VALUES ('bod1', 3, GEOMFROMTEXT('POINT(72 27)'));__
+			* INSERT INTO tbod VALUES (0,'bod1_PRAHA',1,GeomFromText('POINT(-739373 -1042208)',102067),102067);
+		* **LINIE**
+			* //postgisdatabaze=# //
+				__INSERT INTO tlinie VALUES (0, 'linie1', 1, GeomFromText('LINESTRING(49.459757 18.143206, 49.596387 17.252777)', 4326));__
+				INSERT INTO tlinie VALUES (1, 'linie2', 2, GeomFromText('LINESTRING(18.143206 49.459757, 17.252777 49.596387)', 4326));
+				INSERT INTO tlinie VALUES (2, 'linie3', 3, GeomFromText('LINESTRING(18 49, 18 52)',4326));
+				__INSERT INTO tlinie VALUES (1,'linie2', 2, GeomFromText('LINESTRING(-472980 -1102321, -646989 -1061824, -743802 -1042208, -764683 -975135 )',102067),102067);__
+
+		* **POLYGON**
+			* //postgisdatabaze=#//
+				__INSERT INTO tpolygon VALUES (2,'poly3',3,GeomFromText('POLYGON((17.664184 49.196064, 16.554565 49.196064, 15.928345 49.830896, 17.059936 50.057139, 17.664184 49.196064))',5513));__
+					* pozn.: 	ERROR:  geometry contains non-closed rings - poslední hodnota musí být stejná jako první
+						      Dvojité závorky před a za souřadnicama!
+
+	* **select **
+		* //postgisdatabaze=#// select * from tlinie;
+ gid |  name  | id |                                          the_geom                                          
+-----+--------+----+--------------------------------------------------------------------------------------------
+   0 | linie1 |  1 | 0102000020E610000002000000B58D3F51D9BA48404A97FE25A92432403961C26856CC4840552E54FEB5403140
+   1 | linie2 |  2 | 0102000020E6100000020000004A97FE25A9243240B58D3F51D9BA4840552E54FEB54031403961C26856CC4840
+   2 | linie3 |  3 | 0102000020E6100000020000000000000000003240000000000080484000000000000032400000000000004A40
+(3 rows)
+
+* **mapfile:**
+		LAYER
+		  NAME 'tlinie'
+		  TYPE LINE
+		  CONNECTIONTYPE POSTGIS
+		  CONNECTION "host=localhost port=5432 dbname=postgisdatabaze user=postgres password=dosys"  
+		  DATA "**the_geom from tlinie USING UNIQUE gid USING srid=4326**"
+		  STATUS DEFAULT
+		  PROJECTION 
+		       "init=epsg:4326"
+		  END
+		  CLASS
+		      STYLE
+		         COLOR 111 128 111
+		      END
+		    END
+		END   # Layer

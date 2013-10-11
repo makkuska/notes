@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title></title>
+		<meta name='Generator' content='Zim 0.52'>
+		<style type='text/css'>
+			a          { text-decoration: none      }
+			a:hover    { text-decoration: underline }
+			a:active   { text-decoration: underline }
+			strike     { color: grey                }
+			u          { text-decoration: none;
+			             background-color: yellow   }
+			tt         { color: #2e3436;            }
+			pre        { color: #2e3436;
+			             margin-left: 20px          }
+			h1         { text-decoration: underline;
+			             color: #4e9a06             }
+			h2         { color: #4e9a06             }
+			h3         { color: #4e9a06             }
+			h4         { color: #4e9a06             }
+			h5         { color: #4e9a06             }
+			span.insen { color: grey                }
+		</style>
+	</head>
+	<body>
+
+<!-- Header -->
+
+	[ <a href='../Skripty.html'>Prev</a> ]
+
+			[ <a href='/'>Index</a> ]
+
+	[ <a href='./Postgres.html'>Next</a> ]
+
+<!-- End Header -->
+
+<hr />
+
+<!-- Wiki content -->
+
+<h1>Latex</h1>
+
+<p>
+Created Sobota 22 říjen 2011<br>
+</p>
+
+<h3>Beamer</h3>
+<p>
+<ul>
+<li><code>\documentclass[xcolor=dvipsnames]{beamer}</code></li>
+</ul>
+    <code>\usetheme</code>{<u>Darmstadt</u> or <u>Warsaw</u>}<br>
+<ul style='padding-left: 60pt'>
+<li>dobré jsou: </li>
+<ul>
+<li>Berkeley - pěkná zvýraznění sktruktury - nalevo</li>
+<li>Antibes - struktura nahoře</li>
+<li>Boadilla - jednoduché, žádná lišta nahoře, hodně místa na text a obr</li>
+<li>default (boxes) - bez jakých kolik lišt, jen nadpis a text</li>
+<li>CambridgeUS - pěkné, i lišta dole, jen červené?</li>
+<li>Copenhagen - pěkné, málo místa na text, pozn. dobré na konferenci, když někdo příde pozdě, ví co je za téma, kdo prezentuje a v jaké části prezentace je</li>
+<li>Frankfurt, Darmstadt - podobné, Frankfurt o lištu méně</li>
+<li>Goettingen - lišta napravo = Hannover - lišta nalevo (modré?!)</li>
+<li>JuanLesPins 	- super, pěkné, podobné Darmstadt, lepší struktura</li>
+</ul>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>\usefonttheme{default | professionalfonts | serif | structurebold | structureitalicserif |	structuresmallcapsserif }</li>
+<li>\usecolortheme{albatross | beaver | beetle | crane | default | dolphin | dove | fly | lily | orchid | rose |seagull | seahorse | sidebartab | structure | whale | wolverine}</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li><u>hyperlinkn a jiný slide prezentace</u>: <code>\hyperlink{zacatek&lt;5&gt;}{\beamergotobutton{Návrat na úvod}}</code></li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li><u>sloupce + animace </u>- postupné zobrazování</li>
+</ul>
+<div style='padding-left: 30pt'>
+\begin{frame}<br>
+<code>\frametitle{Classifiers}</code><br>
+<code>\begin{columns}</code><br>
+      <strong>\column{5cm} </strong><br>
+</div>
+<div style='padding-left: 60pt'>
+<code>        \begin{itemize}</code><br>
+<code>          \item</code><strong>&lt;1-3&gt;</strong><code> Indice NDVI</code><br>
+<code>          \item</code><strong>&lt;2-3&gt; </strong><code>Unsupervised Classification (ISOdata)</code><br>
+<code>          \ite</code>m<strong>&lt;3&gt; </strong><code>Supervised Classification (used Signature Editor)</code><br>
+<code>        \end{itemize}</code><br>
+<code>      \column{5cm} </code><br>
+<code>        \includegraphics</code><strong>&lt;1&gt;</strong><code>[scale=0.35]{pict/NDVI.png}</code><br>
+<code>        \includegraphic</code>s<strong>&lt;2&gt;</strong><code>[scale=0.35]{pict/Isodata.png}</code><br>
+<code>        \includegraphics</code><strong>&lt;3&gt;</strong><code>[scale=0.35]{pict/SupervisedCl.png}</code><br>
+<code>\end{columns}</code><br>
+</div>
+<div style='padding-left: 30pt'>
+\end{frame}<br>
+</div>
+</p>
+
+
+<p>
+<ul>
+<li><u>pictures: </u></li>
+<ul>
+<li>%\begin{picture}(50,20)(30,70)</li>
+</ul>
+</ul>
+<div style='padding-left: 30pt'>
+%\includegraphics[scale=0.25]{chart.png}<br>
+</div>
+<ul>
+<li><u>block:</u>    \begin{block}{Cíle}</li>
+</ul>
+<div style='padding-left: 30pt'>
+      \end{block}<br>
+</div>
+<ul>
+<li><u>table:</u> <a href="http://en.wikibooks.org/wiki/LaTeX/Tables" title="http://en.wikibooks.org/wiki/LaTeX/Tables">http://en.wikibooks.org/wiki/LaTeX/Tables</a></li>
+<ul>
+<li>\begin{tabular}{l*{6}{c}r}</li>
+</ul>
+</ul>
+<div style='padding-left: 30pt'>
+        curve &amp; 1890	&amp; 1926 &amp; 1974 \\<br>
+        \hline<br>
+        1 &amp; 2,70 &amp; 4,30	&amp; 3,95 \\<br>
+        2 &amp; 2,68 &amp; 4,53	&amp; 4,45 \\<br>
+        3 &amp; 2,78 &amp; 3,89	&amp; 3,97 \\<br>
+        4 &amp; 2,81 &amp; 3,97	&amp; 3,86 \\<br>
+        5 &amp; 2,64 &amp; 3,83	&amp; 3,75 \\<br>
+    \end{tabular}<br>
+</div>
+<ul style='padding-left: 30pt'>
+<li>{|l|l|} <img src="./Latex/pasted_image.png" alt=""></li>
+<li>{|@{}l|l@{}|} 	<img src="./Latex/pasted_image001.png" alt=""></li>
+<li>{|@{}l@{}|l@{}|} 	<img src="./Latex/pasted_image002.png" alt=""></li>
+<li>{|@{}l@{}|@{}l@{}|} 	<img src="./Latex/pasted_image003.png" alt=""></li>
+</ul>
+</p>
+
+
+
+
+<!-- End wiki content -->
+
+<hr />
+
+<!-- Backlinks -->
+
+	Backlinks:
+
+<!-- End Backlinks -->
+
+	</body>
+
+</html>

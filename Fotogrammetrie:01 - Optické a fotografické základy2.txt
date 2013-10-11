@@ -1,0 +1,85 @@
+====== 01 - Optické a fotografické Základy ======
+
+==== Fotografické meteriály ====
+• **jednovrstevné = černobílé:**
+
+	* složení černobílého filtru:
+		* 1. ochranná vrstva
+		* 2. citlivá vrstva - obsahuje krystalky sloučinin stříbra (AgBr, AgI, AgCl) v želatině
+		* 3. mezivrstva
+		* 4. filmová vrstva 
+		* 5. antihalační vrstva - zabraňuje zpětnému odrazu (hallo efektu)
+	* princip vzniku fotografie
+	* citlivá vrstva:
+		* může být citlivá na různě široký interval vlnových délek
+		* 1. ortochromatická - nesnímá oranžovou a červenou část spektra
+		* 2. panchromatická - viditelné spektrum - nesmímá modrou
+		* 3. infrachromatická - snímá v intervalu 0,6-0,9 
+		* vlastnosti:
+			* citlivost ke světlu - zčernání citlivé vrstvy - rychlý film, malé množství světla - pomalý film, více nebo dlouho otevřená uzávěrka
+			* gradace - vztah mezi množstvím světla a zčernáním - gradační křivka
+	* __panchromatická černobílé snímky__
+		* různé odstíny šedi, snímá ve stejném rozsahu jako lidské oko → převedeno do černé a bíle škály
+		* výhodné: dobrá platicita, neztrácí se kresba ve stínech
+		* nevhodné pro vegetaci
+		* vzdálenější prvky jsou rozmazanější než blízké
+	* __infračervené černobílé snímky__
+		* černobílý infrachromatický film
+		* méně roztylován než viditelné světlo, prochází aerosoly, kouřem; ale neprochází hustou mlhou, deští, oblačností
+		* vyžaduje objektiv s delší ohniskovou vzdáleností
+		* obrazy se jeví plošně, vše je stejně výrazné
+		* kontrasnější
+		* vhodné pro rozlišování porostů, druhů zemědělskýchplodinzdraví vegetace → zemědělství, lesnictví
+		* zanikají liniové prvky, síť komunikací
+* **vícevrtevné = barevné:**
+	* __barevné snímky ve viditelném oboru spektra __
+		* 3 citlivé vrstvy - modrá, zelená, červená
+		* pozitiv, diapozitiv
+		* složení:
+			* 1. ochranná vrstva
+			* 2. citlivá na modrou
+			* 3. žlutý filtrační mezivrstva
+			* 4. citlivá k zelené
+			* 5. citlivá k červené
+			* 6. filmová podložka
+			* 7. antihalační vrstva
+		* skládání barev
+		* nelepší kresba ve stínech, reliéf pod vodou, nižší rozlišovací schopnost (dochází k rozptylu světla)
+	* __barevná infračervená fotografie__
+		* zelená → modrá, červená → zelená, infračervená → červená
+		* rozpozná velice teplé povrch (pořáry, láva)
+
+
+==== Filtry: ====
+• plyne z výšky letu - vzniká mezi předmětem a komorou vzdušný zákal, který vzniká rozptylem krátkovlnných paprsků na vzdušných aerosolech
+• rozptyl degraduje konstrast a kvalitu
+• filtr odstraní paprsky rozptýleného světla
+• zdůrazňuje barvu, kterou je zabarven a zeslabuje doplňkovou
+• je charakterizován spektrální propustností - množství propuštěného záření v daném vlnovém rozsahu
+• panchromatické - žluté, žlutozelené, červené
+• černobílé infračervené - žluté v lestnictví, temně červené u vodních ploch
+• barevné - UV absorpční filtry
+• barevné infračervené - žluté
+
+	* vignetace - speciální filtry, které absorbují silněji ve střední části snímku a méně směrem k okrajům
+* optické vlastnosti:
+
+
+==== Optické vlastnosti ====
+
+* konstast
+	* rozdíl mezi světlými a tmavými plochami - nižší kontrast, výrazné členění
+* ostrost				
+	* schopnost zachytit změnu konstrastu
+	* závisí na zaostření objektivu, průhlednosti atmosféry, optické dokonalosti přístroje
+* prostorová rozlišovací schopnosty
+	* schopnost odlišit na snímku jakékoliv dva sousední objekty
+	* měří se počtem rozpoznatelných čárek na 1mm šírky - vzorkovníky
+	* 100 - 150 čas/mm
+	* negativ má větší rozlišovací schopnost než pozitiv
+* vnější vlivy:
+	* oblačné jasné skvrny - odraz od okrajů oblačnosti - přezáření terénu
+	* sluneční skvrna - na vodních plochách, odrazem slunečních paprsků přímo od objektivu kamery
+	
+	• 
+

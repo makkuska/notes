@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-10-11T07:51:23+02:00
+
+====== VGI a Crowdsourcing ======
+Created Pátek 11 říjen 2013
+
+* data dostupná, dostupné nástroje pro sběr dat i pro negisáky (neogeografie, neokartografie)
+	* sběrači dat - analyzátoři - tvůrci prezentací
+	* kvalita dat ?
+* **VGI Voolungtereed Geographic Information** jako součást **UGC User Generated **Geographic** Content**
+	* UGC obsah produkován uživateli nejčastěji přes web, často spojeno se sociální sítí, nebo mají sociální kontext (místo, kde se sejdeme)
+	* technologie + internet + mobilní aplikace
+	* čím více lidí, tím více chyb objeví, ale těch dat je kvantum, takže nikdy nezaručíš správnost všech
+	* kontrolované údaje:
+		* Navteq, TeleAtlas
+	* Hybrid (jejich data + data od uživatelů)
+		* Google, TomTom
+	* **Cordswources** (jen data od uživateků
+		* OSM
+* neokartografie

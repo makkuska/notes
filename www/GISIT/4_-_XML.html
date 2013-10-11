@@ -1,0 +1,379 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>4 - XML</title>
+		<meta name='Generator' content='Zim 0.54'>
+<style type='text/css'>
+      p          { font-size: small;  }
+      div        { font-size: small;  }
+      li         { font-size: small; 
+                   list-style-type: disc;
+                   list-style-image: none;    }
+      a          { text-decoration: none      }
+      a:hover    { text-decoration: underline }
+      a:active   { text-decoration: underline }
+      strike     { color: grey                }
+      u          { text-decoration: none;
+                   background-color: yellow   }
+      tt         { color: #2e3436;            }
+      pre        { color: #2e3436;
+                   margin-left: 20px          }
+      h1         { text-decoration: underline;
+                   color: #4e9a06             }
+      h2         { color: #4e9a06; text-decoration: underline;            }
+      h3         { color: #4e9a06; text-decoration: underline;            }
+      h4         { color: #4e9a06             }
+      h5         { color: #4e9a06             }
+    </style>
+	</head>
+	<body>
+
+<!-- Wiki content -->
+
+<h1>4 - XML</h1>
+
+<p>
+Pondělí 15 říjen 2012<br>
+viz prezentace 3-xml.pdf<br>
+</p>
+
+<p>
+<ul>
+<li>obecný značkovací jazyk; formát, soubor pro výměnu dat</li>
+<li>měl by být otevřený, sdílený, implementovaný (podpora na úrovni veřejných validátorů)</li>
+<li>určen k vytváření konkrétního značkovacího jazyku pro různé účely, pro publikaci dat</li>
+<li>nezávislé, podporované, zadarmo</li>
+<li>zabývá se strukturou dokumentu (hlavička, telefonní číslo)</li>
+<li>pomocí klonu xml</li>
+<li>xml nemá žádnou značku, má pouze instrukce a pravidla, je přísnější než HTML</li>
+<li>v xml si vymyslím pravidla, vše je nadefinováno</li>
+<li><strong>+ pozitiva</strong></li>
+<ul>
+<li>snadná výměna na netu</li>
+<li>všeobecně přijímána syntaxe, která je standardizována, pro popis a strukturu (všichni ji přijímají i Windows)</li>
+<li>snadná konverze do jiných formátů</li>
+<li>spousta podpůrných nástrojů (parsery, editory) - zdarma</li>
+</ul>
+<li><strong>— negativa</strong></li>
+<ul>
+<li>je ukecaný</li>
+</ul>
+<li>slouží ke strukturalizaci dat</li>
+<ul>
+<li>k popisu struktury</li>
+<li>tabulky, adresáře, geodata, ..</li>
+<li>soubor pravidel	</li>
+<li>není programovací jazyk - není potřeba znalosti programování</li>
+<li>editor jednoduchý (gedit)</li>
+<li>rozšířitelné, nezávislé na platformě, podporuje lokalizaci</li>
+<li>vyhovuje standardu Unicode - jednoznačný zápis pro všechny, jednotná velikost, pevně zakódován</li>
+</ul>
+<li>je celá skupina technologií</li>
+<ul>
+<li>xmlLink</li>
+<li>xPointer</li>
+<li>xSL</li>
+<li>DOM</li>
+</ul>
+<li>staronové (*86)</li>
+<li>XML → html → XHTML</li>
+<li>je modulární</li>
+<ul>
+<li>různé namespaces</li>
+</ul>
+<li>základem pro sémantický web a RDF</li>
+<li>editor: Altova XML Spy, Xml Mind Xml</li>
+<li>XML Parsery</li>
+<ul>
+<li>vykonává syntaktickou analýzu</li>
+<li>analýza posloupnosti prvků -&gt; transofrmace vstupního textu do datové struktury (stromu)</li>
+<li>vstupním krokem SA - zpravidla lexikální analýza - za vstupního textu se vytváří posloupnost tzv. Tokenů (elementárních nositelů významu)</li>
+</ul>
+</ul>
+</p>
+
+<h2>Vlastnosti XML</h2>
+<p>
+<ul>
+<li>mezinárodní podpora <strong>jazyků</strong> (UTF-8)</li>
+<li>vysoký informační obsah</li>
+<li>striktně odděleny - struktura (xml tag), obsah (uzavřen mezi tagy - žádný volný text), vzhled se neřeší - to celé element (viz prezentace 3-xml)</li>
+<li>text čtený počítačem, není určen pro čtení člověkem</li>
+<li>nešetří místem - <strong>ukecaný</strong></li>
+<li><strong>syntaxe xml </strong></li>
+<ul>
+<li>existuje jediný kořenový element</li>
+<li>elementy jsou uzavřené</li>
+<li>elementy se nepřekrývají, pouze mohou být vnořené</li>
+<li>hodnoty atributů jsou ohraničeny v uvozovkách</li>
+</ul>
+<li><strong>typy uzlů:</strong></li>
+<ul>
+<li>element, atribut, text &lt;element atribut="hodnota"&gt;text&lt;/element&gt;</li>
+<li>komentář &lt;!-- vykřičník pomlčka pomlčka --&gt;</li>
+<li>processing instruction &lt;?xml version="1.0" encoding="UTF-8"?&gt;</li>
+<li>CDATA &lt;!CDATA[neparsovaná část]&gt;</li>
+</ul>
+<li>postup: xml se zvaliduje (well formed document) a poté zvoliduje pomocí DTD nebo XSD</li>
+<li>snadná <strong>konverze dat</strong> do jiných formátů</li>
+<li>definování <strong>stylu</strong> pomocí CSS nebo XSL</li>
+<li><strong>automatická kontrola struktury</strong> dokumentu pomocí paseru (programu, který kontroly prování) - DTD, XSD (XML schéma)</li>
+<li>styl = soubor pravidel, / příkazů, která definují, jak se dokument převede do jiného formátu - PostScript, Html, XML</li>
+<li>kaskádové styly - pouze pro jednoduché formátování</li>
+<li><strong>strojově kontrolovatelný</strong></li>
+<ul>
+<li>automatická kontrola</li>
+<li>možné definovat v souboru DTD (Document Type Definition) - ale není primárně určen pro XML</li>
+<li>kontroluje jen strukturu, né obsah</li>
+<li>parser = program, který provádí kontrolu</li>
+<ul>
+<li>xml schéma (XSD - nepoužívá se DTD) </li>
+</ul>
+</ul>
+<li>hypertext a odkazy</li>
+<ul>
+<li>rozšíření (samostatný program pro tvorbu odkazů) XLink - odkazuješ na dokument, aniž by ho dopředu znal - pomocí URL </li>
+</ul>
+</ul>
+</p>
+
+<h2>Jmenný prostor / XML namespaces</h2>
+<p>
+<ul>
+<li>seskupení příbuzních prvků xml dokumentů z důvodu snažšího rozeznávání</li>
+<li>umožňuje kombinovat v 1 dokumentu pojmy/značky/tagy z různých xml schémat, tak aby nedošlo ke kolizi témat, aby vymezil kontext</li>
+<li>formát</li>
+<ul>
+<li>xmlns(=xmlnamespaces):prefix="URI sady značek"</li>
+<ul>
+<li>př. xmlns:svg="<a href="hppt://www.w3.org/200/svg" title="hppt://www.w3.org/200/svg">hppt://www.w3.org/200/svg</a>"</li>
+<li>př. xmlns:gml=""</li>
+</ul>
+<li>&lt;svg:circle /&gt; pro styl</li>
+<li>&lt;mapa:linie mata:titulek="Linie1"&gt;bla bla obsah &lt;/mapa:linie&gt;</li>
+<li>&lt;můjElementBezNázvu xmlns="" /&gt;</li>
+<li>možnost kombinovat</li>
+</ul>
+<li>vztahy k pochopení hirearchie dokumentu:</li>
+<li>parent-child-sibling (rodič-dítě-sourozenec)</li>
+<li>ancestor-descendat(předchůdce-následovník)</li>
+<li>SAX (simple API for XML)</li>
+<ul>
+<li>umožňuje proudové zpracování - dokument se rozdělí na jednotlivé jeho části a začne zpracovávat, postupuje po jednotlivých tag značkách a přiřazuje pravidla</li>
+<li>proces:</li>
+<ul>
+<li>1) otevření tagu - "založ uzel typu element"</li>
+<li>2) otevřený element - získá vkládací kontext</li>
+<li> 3) ukončovací tag - "vrať kontext rodiči </li>
+</ul>
+</ul>
+<li>návrh XML dokumentu</li>
+</ul>
+<div style='padding-left: 30pt'>
+  <p>1. vytvořit slovník dat<br>
+2. analyzujeme závislosti (kurz 1 : 1 název, kurz 1 : 1 čas, kurz 1 : N student, student 1 : 1 jméno)<br>
+3. identifikujeme atributy &lt;student jméno="Markéta" /&gt; a elementy &lt;student&gt;&lt;jméno&gt;Markéta&lt;/jméno&gt;&lt;/student&gt;</p>
+</div>
+<ul style='padding-left: 60pt'>
+<li>kvůli vyhledávání lepší mít více elementů, ale zase je to na úkol velikosti dat</li>
+<li>pro databázi lepší tagy s atributy než elementy</li>
+</ul>
+</p>
+
+<h3>DTD</h3>
+<p>
+<ul>
+<li>převzato z SGML</li>
+<li>jednoduchost, stručnost, může součástí xml dokumentu</li>
+<li>nižší vyjadřovací schopnost, nepoužívá xml syntaxi - optížnější parsování</li>
+<li>1 element = 1 instrukce </li>
+<ul>
+<li>&lt;!ELEMENT adresa (ulice,mesto,psc)&gt; posloupnost prvků, v závorce bez mezer</li>
+<li>&lt;!ELEMENT ulice(PCDATA)&gt;</li>
+<li>četnost elementů </li>
+<ul>
+<li>!ELEMENT A (B) právě jednou</li>
+<li>A (B+) jednou a více</li>
+<li>A( B*) nula a více</li>
+<li>A (B?) nula nebo jedna</li>
+<li>A (B,C) sekvence B a C (pořadí)</li>
+<li>A (B|C) výběr B nebo C</li>
+</ul>
+</ul>
+<li>atributy</li>
+<ul>
+<li>&lt;!ATTLIST název atributy (B) barva (červená|oranžová|zelená) "zelená" ulice CDATA #REQUIRED&gt; </li>
+<ul>
+<li>"zelená"=výhozí hodnota</li>
+<li>CDATA - volná znaková data</li>
+<li>#REQUIRED #IMPLITED</li>
+</ul>
+</ul>
+</ul>
+</p>
+
+<h3>XSD</h3>
+<p>
+<ul>
+<li>extrémní vyjadřovací schopnost, zavádí datové typy, jmenné prostory, nativní xml syntaxe</li>
+<li>složité, obsáhlé</li>
+<li>&lt;xs:element name="adresa"&gt; název</li>
+<ul>
+<li>&lt;xs:complexType&gt; obsahuje další elementy (simpleType pro jen text)</li>
+<li>&lt;xs:sequence&gt;</li>
+<ul>
+<li>&lt;xs:element name="ulice" type="xs:string"/&gt;</li>
+<li>&lt;xs:element name="město" type="xs:string"/&gt;</li>
+<li>&lt;xs:element name="psč" type="xs:string"/&gt;</li>
+</ul>
+<li>&lt;/xs:sequence&gt;</li>
+</ul>
+<li>&lt;/xs:element&gt;</li>
+<li>xs:string - text</li>
+<li>xs:decimal - celočíselné</li>
+<li>xs:integer - </li>
+<li>xs:boolean - 2 hodnoty opačné</li>
+<li>xs:data - datum YYYY/MM/DD</li>
+<li>xs:time - čas 00:00:00 </li>
+</ul>
+<div style='padding-left: 90pt'>
+&lt;xs:simpleType name="str20"&gt;<br>
+</div>
+<div style='padding-left: 120pt'>
+&lt;xs:restriction base="xs:string"&gt;<br>
+</div>
+<div style='padding-left: 150pt'>
+&lt;xs:maxLenght value="20"&gt;<br>
+</div>
+<div style='padding-left: 120pt'>
+&lt;/xs:restriction&gt;<br>
+</div>
+<div style='padding-left: 90pt'>
+&lt;/xssimpleType&gt;<br>
+&lt;xs:simpleType name="psc"&gt;<br>
+</div>
+<div style='padding-left: 120pt'>
+&lt;xs:restriction base="xs:string"&gt;<br>
+</div>
+<div style='padding-left: 150pt'>
+&lt;xs:maxLenght value="\d{2} \d{2}"&gt;<br>
+</div>
+<div style='padding-left: 120pt'>
+&lt;/xs:restriction&gt;<br>
+</div>
+<div style='padding-left: 90pt'>
+&lt;/xs:simpleType&gt;<br>
+</div>
+<ul style='padding-left: 90pt'>
+<li>identifikátory all(libovolné pořadí)|choice(=jeden nebo druhý)|sequence(jen jednou a v pevně daném pořadá|group</li>
+</ul>
+</p>
+
+<h2>Aplikace XML:</h2>
+<p>
+<ul>
+<li>XHTML</li>
+<li>RDF</li>
+<li><strong>RSS &amp; GeoRSS</strong></li>
+<ul>
+<li>metadatové formáty určení pro čtení zpráv, novinek</li>
+<li>Publikace ve formátu RSS + čtečka, která umí zpracovat RSS záznam</li>
+<li>původně využití pouze pro média, později pro uživatele</li>
+<li>hlavička, nadpis</li>
+<li>kanál může mít více kanálu na 1. zdroji (živě, kraje - novinky.cz)</li>
+<li>&lt;rss&gt;&lt;chanel&gt;&lt;title&gt;&lt;link&gt;&lt;description&gt; - povinné</li>
+<li>zbytek nepovinné &lt;language&gt;&lt;copyright&gt;&lt;managingEditor-kdo je odpovědný za obsah&gt;&lt;webmaster&gt;&lt;datum publikování&gt;&lt;category&gt;&lt;docs&gt;&lt;ttl&gt;&lt;image&gt;&lt;guid-jednoznačná identifikace toho souboru, která je dohledatelný - permanent link&gt;</li>
+<li>GeoRSS - RSS + standart pro geografické polohy (gegrafická poloha webu + geografická poloha vztahující se k obsahu zprávy)</li>
+<ul>
+<li>geometrie - bod, linie, polygon (nejméně 4 páry souřadnic, poslední je totožný z prvním), box (čtverec, 2 páry, levý dolní pravý horní)</li>
+<li>souřadnice - šířka délka (hodnota mezera hodnota mezera hodnota mezera hodnota)</li>
+</ul>
+<li>simple GeoRSS - prefix:point &lt;georss:point&gt;45 15&lt;/georss:point&gt;</li>
+<li>GML př.: &lt;georss:where&gt;&lt;gml:LineString&gt;&lt;gml:posList&gt;</li>
+<li>&lt;exterior&gt;vnější hranice polygonu, &lt;linearRing&gt; uzavřená linie, další možnosti linie, která se napojuje na další polygon</li>
+<li>w3c basic &lt;geo:Point&gt;&lt;geo:lat&gt;&lt;geo:long&gt; - nepoužívá se!</li>
+<li>souřadnicové refereční systémy - default WGS84</li>
+<li>nadmořská výška - pouze v simple RSS &lt;elev-v metrech, od elipsoidu&gt;&lt;floor-počet pater průměrné americké budovy&gt;</li>
+<li>není specifikace pro 3D</li>
+<li>vzájemná vztahy (Relationship) - is-located-at, průsečík</li>
+</ul>
+<li><strong>GeoTagging</strong></li>
+<ul>
+<li>GeoURL + Dublin Core (CD)</li>
+<li>GeoTag </li>
+</ul>
+<li>Atom Syndecation (podobný RSS)</li>
+<ul>
+<li>i pro videa, nekompatibilita s RSS</li>
+</ul>
+<li>Podcast - miltimediální obsah, mp3</li>
+<li>SMIL - multimédia, nahrazeno &lt;audio/video&gt; canvas</li>
+<li>MathML - pro popis matematických vzorců a symbolů</li>
+<li>SVG - vektorová grafika na webu</li>
+<li>DocBook - sada definic pro publikační čínnost</li>
+<li>Jabber - protokol pro Instant messaging</li>
+<li>SOAP - protokol pro komunikace mezi Webovými službami</li>
+<li>OpenDokument - odt. OpenOffice, textový formát pro ukládání a výměnu</li>
+<li>RPC - Remote Procedure Call</li>
+<ul>
+<li>vzdálené volání programů, pro práci v síti, </li>
+<li>pracují jako požadavdky HTTP protokolu</li>
+<li>3 datové typy - skalár (1 veličina), pole (více hodnot setříděných/indexovaných), struktura (hodnoty i pravidla hodnot)</li>
+<li>serializace - tranformace hodnot do podoby, která je uchopitelná a přenositelná sítí</li>
+</ul>
+<li><strong>XPath</strong> (xml path language)</li>
+<ul>
+<li>jazyk pro adresování části XML dekumentů - obdoba hypertextu</li>
+<li>standart W3C</li>
+<li>slouží jako navigační nástroj</li>
+<li>pravidla pro cestu: </li>
+<ul>
+<li>před název atributu zavináč</li>
+<li>vypsání cesty k souboru (identifikátor osy, test uzlů (jestli je tam nějaká podmínka), celková podmínka)</li>
+<li>jednotlivé kroky se oddělují lomítkem</li>
+<li>čte se zleva doprava</li>
+<li>povinný test uzlů</li>
+</ul>
+<li>13 os - rodič, descendat, part, ancestor, attribute, ...</li>
+<ul>
+<li>A/B/folowing-sibling::*[1]</li>
+<li>pro nejpouživanější osy existují zkratky - attribute::id = <span class="zim-tag">@id</span></li>
+<li>predikáty - //zboží[@sleva &gt;= <span class="zim-tag">@cena</span> div 2]</li>
+</ul>
+<li>porovnávací vzory:</li>
+<ul>
+<li>relativní cesta: B/@e</li>
+<li>absolutní cesta: A/B/C</li>
+<li>absolutní kořen: /</li>
+<li>aktuální uzel: . (tečka)</li>
+<li>rodič: ..</li>
+<li>libovolný název: *</li>
+<li>hlubší potomek: //C</li>
+<li>spojení: A|B</li>
+</ul>
+<li>predikáty:</li>
+<ul>
+<li>kurz/student[1] - první hodnota</li>
+<li>kurz/student[last()] - poslední</li>
+<li>//kurz[@nazev] - všechny s názvem</li>
+</ul>
+<li>operátory</li>
+<li>funkce:</li>
+<ul>
+<li>count(()) - vrací počet uzlů</li>
+<li>position()</li>
+<li>last()</li>
+<li>contat(str, str, ..) - spojuje řetězec</li>
+<li>substring(str,start,len) - podřetězec od pozice start s délkou len</li>
+</ul>
+</ul>
+</ul>
+</p>
+
+
+<!-- End wiki content -->
+
+	</body>
+
+</html>

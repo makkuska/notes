@@ -1,0 +1,119 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-02-13T14:05:05+01:00
+
+====== 01 - Hazard ======
+Úterý 12. a 19. února 2013
+
+* **hazard** 
+	* je součástí života člověka, s některými se člověk naučil žít (nedostatek vláhy)
+	* v očích člověka je brán jako negativní - škody hazardu jsou odvíjeny od úrovně lidského života (vybavený dům, auta)
+	* přírodní nebo člověkem podmíněné procesy, které představují možné ohrožení
+	* extrémní hodnota
+	* přírodní katastrofy tu byly vždy, člověk se jich nezbaví, leda je může někdy mírně ovlivnit
+	* souvisí s rozvojem lidské společnosti
+		* populační růst
+		* míra urbanizace (zaplaveno město - statek - louka)
+		* ekonomická produkce (škoda záleží pouze na ceně, honosnosti obydlí, ..)
+		* technologický pokrok
+	* **= přírodní hrozba**
+		* má potenciál ohrozit, neohrožuje
+* **riziko hazardu** - vliv, které se projeví
+	* pravděpodobnost, že se stane událost, kterou hazard představuje
+	* pravděpodobnost negativních účinků katastrofy
+	* riziko = **f(PA, PB, PCB, C) **
+	* f - faktor je různý u různých katastrof
+	* PA - pravděpodobnost závislá na četnosti
+	* PB - pravděpodobnost vzniku jisté kvality ničivého procesu při katastrofě (výška vlny při tsunami, rychlost větru při tornádu)
+	* PCB - vnější podmínky (hustota osídlení, charakter staveb, sociální a politické změny)
+	* c - následek katastrofy
+* **katastrofa**
+	* událost, která nastala v přírodě, změní dosavadní způsob vývoje
+	* je když je někdo usmrcen, zraněn, negativně je ovlivněna velká část obyvatelstva
+	* společenský jev, souvisí převážně ze ztrátami člověka (hustota osídlení, technologická vyspělost)
+	* ekologické katastrofy
+		* ekologických činitelem se naruší kritický bod → pak se nastolí nový stabilní stav - vše je založeno na rovnováze
+* dříve byly hazardy vždy negativní, dnes už se hodnotí jinak:
+	* přímé efekty x nepřímé efekty
+	* přímé zisky x nepřímé zisky
+	* přímé ztráty x nepřímé ztráty
+* koncept zranitelnosti vůči hazardu
+* **odolnost **- schopnost organismu svými vnitřními procesy odolávat procesům a dostat se do do nového stabilního stavu
+* spolehlivost
+* teorie dynamických systémů
+* **hazard a člověk:**
+	* často se snižuje tolerance společnosti (viz povodně - i menší povodně jsou problém)
+	* problém médií, které z extrému na 5% území udělá celorepublikovou krizovou situaci
+* velikost a frekvence událostí
+* země je dynamický systém, procesy se objevují v cyklech - vždy se dá vypočítat velikost a doba trvání
+* **interval opakování** - průměrná doba, na základě dlouhodobé statistiky, která uplyne mezi výskytem dvou událostí o stejné velikosti
+* __před modelováním__
+	* identifikace a vyhodnocení přírodních hrozeb
+	* monitoring
+	* analýza
+	* regulativy - legislativní směrnice, která koriguje činnost v daném prostoru (územní plán, ÚSES, ..)
+* **přírodní hazard** = vlastní přírodní proces, který ho vyvolal (fyzikální) + citlivost přírodního prostředí
+* **riziko** = přírodní hrozba + porovnání s aktuální sociální a technickou infrastrukturou
+* **environmentální limit** = přírodní riziko + lidi
+* **regulativ** = environmentální limity + zájmy lidí
+
+===== Klasifikace hazardů: =====
+* __přírodní hazardy__
+	* fyzicko-geografický princip vzniku a působení (sopka, zemětřesení, ..)
+	* dnes již téměř neexistuje přírodní hazard, všechny jsou ovlivňovány člověkem (kromě zemětřesení a impaktu z vesmíru) → mají hybridní povahu
+	* když se přírodní proces dostane do extrému, můžeme ho chápat jako přírodní hazard; až něco provede, jedná se o katastrofu 
+* __technologické hazardy__
+	* souvisí s technologickou výrobou
+	* průmyslové nehody, úniky chemických látek, havárie, požáry rafinérií
+	* určitý rozsah je považován za normální
+* __environmentální hazardy__
+	* všechny typy hazardů od přírodních, přes technologické až po sociální hazardy
+	* sociální hazard - samota, hladomor, kriminalita)
+	* jedná se o rychlé události, které přímo ohrožují:
+		* obyvatelstvo - zranění, smrt, stres
+		* majetek - zničení, zastavení ekonomického vývoje (firmy)
+		* životní prostředky - škody na flóře, fauně, znečištění vzduchu
+* __faktory:__
+	* atmosférické (extrémy teplon, srážek, cyklóny)
+	* hydrologické
+	* geologické 
+	* biologické (požáry, epidemie)
+	* technologické (průmyslové nehody)
+* __podle doby trvání:__
+	* v sekundách (zemětřesení), dny, měsíce, roky (sucho)
+* __podle zasaženého území:__
+	* lokální (tornádo), regionální, globální (impakt)
+* __podle doby__ od zjištění vlivu a jeho dostavení k účinku (vodní eroze)
+* __podle četnosti opakování: __časté, ojedinělé
+* __přehled přírodních hazardů__
+	* vulkanismus, zemětřesení, sesuvy, eroze (vodní, větrné), požáry, tsunami, hurikán, sníh, mráz, oteplování, povodně, impakt, biohazardy, sucha
+	* jeden hazard může vyvolat další hazard - zemětřesení → tsunami
+	* většinou se modeluje několik hazardů, které spolu souvisí, najednou
+* **modelování**
+	* snaha nasimulovat, né hodnotit
+* studium environmentálních hazardů a přírodních katastrof
+	* komplexní disciplína
+	* geofyzika, geologie, geografie - studují přírodní procesy, které příčinou přírodních katastrof
+	* technické vědy - stavební inženýři
+	* statistika - výskyt, účinky minulých událostí
+	* sociální a politické vědy - prevence, ochrana a obnova po katastrofách
+
+==== Obecná struktura popisu hazardu ====
+* typ, příčina, výskyt, monitoring, sanace, opatření předpověď, typický zástupce
+* **předpověď, ochrana a obnova**
+	* znalost lokálních podmínek zasaženého území
+	* připravenost veřejnosti, informovanost
+	* ochrana před účinky přírodních hazardů
+		* aktivní
+		* pasivní
+* **prognóza**
+	* informace, která vychází z historických dat, které se statisticky analyzují, výsledkem je pravděpodobnost výskytu hazardu
+* **předpověď**
+	* platná pro krátký časový horizont (v řádu desítek hodin), vychází z aktuálních údajů
+	* říká jestli to v nejbližší době nastane nebo nenastane
+	* GIS - zpracování dat (ze senzorů)
+* **varování**
+	* nejkratší časová platnost (desítky minut)
+	* informuje o vzniklém hazardu
+	* GIS - zpracovává informace, analyzuje
+	* obsahují i pokyny pro úspěšné překonání krizové situace

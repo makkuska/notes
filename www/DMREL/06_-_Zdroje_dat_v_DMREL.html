@@ -1,0 +1,230 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title></title>
+		<meta name='Generator' content='Zim 0.52'>
+		<style type='text/css'>
+			a          { text-decoration: none      }
+			a:hover    { text-decoration: underline }
+			a:active   { text-decoration: underline }
+			strike     { color: grey                }
+			u          { text-decoration: none;
+			             background-color: yellow   }
+			tt         { color: #2e3436;            }
+			pre        { color: #2e3436;
+			             margin-left: 20px          }
+			h1         { text-decoration: underline;
+			             color: #4e9a06             }
+			h2         { color: #4e9a06             }
+			h3         { color: #4e9a06             }
+			h4         { color: #4e9a06             }
+			h5         { color: #4e9a06             }
+			span.insen { color: grey                }
+		</style>
+	</head>
+	<body>
+
+<!-- Header -->
+
+	[ <a href='./05_-_Hodnocen%C3%AD_p%C5%99esnosti_DMR.html'>Prev</a> ]
+
+			[ <a href='/'>Index</a> ]
+
+	[ <a href='./07_-_Anal%C3%BDzy_DEM.html'>Next</a> ]
+
+<!-- End Header -->
+
+<hr />
+
+<!-- Wiki content -->
+
+<h1>06 - Zdroje dat v DMREL</h1>
+
+<p>
+Created Neděle 05 červen 2011<br>
+</p>
+
+<p>
+<ul>
+<li>zdroje dat</li>
+<ul>
+<li>Primární zdroje dat</li>
+<ul>
+<li>zemský povrch - různé typy povrch vyžadují různé způsoby měření (př. vysoké hory lepší letecké či družicové snímkování)</li>
+<li>letecké snímky - hodnotý zdroj dat především pro tvorbu vysoce kvalitních DMR velkých měřítek (tvorba topografických map)</li>
+<li>družicové snímky </li>
+<ul>
+<li>získávany pasivními systémy - skenery na družicích</li>
+<ul>
+<li>SPOT - pro tvorbu DMR malých měřítek, rozsáhlých území</li>
+<li>IKONOS - široké využití, snímky mají pixely o velikosti 1 m</li>
+</ul>
+<li>aktivní systémy - radary → střední a malá měřítka</li>
+</ul>
+</ul>
+<li>Sekundární zdroje dat</li>
+<ul>
+<li>existují topografické mapy (digitální data - ZABAGED, DMÚ, analogová data)</li>
+<li>přesnost závisí na původních vrstevnicích a jejich přesnosti</li>
+<li>obecně se předpokládá přesnost jakéhokoli interpolovaného bodu okolo 1/2 nebo 1/3 intervalu původních vrstevnic</li>
+</ul>
+</ul>
+<li><strong>vzorkování:</strong></li>
+<ul>
+<li>povrch se skládá z několika množství bodu -- jeden bod nahrazuje nějaké své okolí, takže lze použít konečný počet bodů</li>
+<li>cílem vzorkování: popsat spojitý jev, jakým je povrch terénu, pomocí konečného počtu vzorků a určit jejich optimální rozmístění</li>
+<li>podle předem určené přesnosti, určit kolik bodů se bude používat a jaké je obecné rozmístění</li>
+<li><strong>velikost kroku:</strong> krok měření má být větší nebo rovem minimální velikosti objektu, který chceme zachytit (<strong>Δ l &lt;= 1/2 l min</strong>)</li>
+<li><em>př:</em> budovy 20x20 m, mezery 10m → velikost kroku 10 pixelů nebo 5 m</li>
+<li>pokud by velikost Δl větší, pak některé tvary můžou zaniknout; a naopak, při velkém množství dat se můžou objevit jevy, které nejsou vhodné pro modelování</li>
+<li>pokud by byla velikost Δl větší než toto kritérium mohlo by dojít k výraznému zkreslení vyjádření povrchu v důsledku <strong>podvzorkování</strong>, <em>př.</em> e-f</li>
+<li>naopak příliž malý Δl může způsobit <strong>převzorkování</strong>, povrch sice je povrch reprezentován vzorky téměř dokonale, ale velké množství dat, <em>př.</em> a-b</li>
+<li>optimální krok Δ l, <em>př.</em> d(c)</li>
+<li>pro určení <em>optimální hustoty bodů </em>existují i další postupy: analýza pomocí Fourierovy analýzy, variogramů terénu, soběpodobnosti pomocí fraktálních technik</li>
+</ul>
+<li><strong>strategie vzorkování:</strong></li>
+<li>selektivní vzorkování (selective sampling)</li>
+<ul>
+<ul>
+<li>výběr velmi důležitých bodů (VIP bodů) se vybírá ručně (nelze to automatizovat)</li>
+<li>vybereme si body (vrcholy, nejnižší body)</li>
+<li>výhoda: k věrnému vystižení povrchu stačí mnohem méně bodů než u jiných metod</li>
+</ul>
+<li>vzorkování s jednou fixovanou dimenzí</li>
+<ul>
+<li>dimenze ve směru osy Z - vzorkování podél vrstevnic  (contouring)</li>
+<li>dimenze ve směru osy X - tvorba profilů (profiling)</li>
+<li>profilování lze provádět v rovině mezi XZ z YZ</li>
+</ul>
+<li>vzorkování s dvěma fixními dimenzemi</li>
+<ul>
+<li>pravidelné vzorkování (regular grid sampling)</li>
+<ul>
+<li>nastavením fixního intervalu ve směru x i y  je zajišťěno, že data budou vytvářet pravidelnou síť </li>
+<li>kvůli potřebě zaznemat všechny nespojitosti svahů a změny v topografii dochází k nadměrnému získávání dat (redundanci)</li>
+</ul>
+<li>progresivní vzorkování</li>
+<ul>
+<li>modifikace předchozí metody řešící refundanci dat</li>
+<li>velikost intervalu se postupně mění - při prvním kroku se vybere hrubá síť bodů (ta je analyzována), a až ve druhém kroku se vybírají další důležité body</li>
+<li>→ může se několikrát opakovat</li>
+<li>nevýhody: </li>
+<ul>
+<li>v prní kroku (hrubé vzorkování) nezastihneme významné objekty a v dalších krocích již s nimi nebude počítáno</li>
+<li>velká redundance dat v místech, kde dochází k náhlým změnám v průběhu terénu</li>
+<li>zdlouhavé</li>
+</ul>
+</ul>
+</ul>
+<li>kombinované vzorkování (composite sampling)</li>
+<ul>
+<li>pravidlného a selektivního vzorkování - určí se hrubá síť a pak se určí významné body (kombinace účinného a efektivního)</li>
+<li>selektivní a progresivní vzorkování  - nevýhodné</li>
+</ul>
+<li>nepravidelné vzorkování</li>
+<ul>
+<li>náhodné (random selection) - může to vytvářet nežádoucí shluky</li>
+<li>shlukové (cluster sampling) - časté v geologickém mapování</li>
+<li>proudové (string sampling) - sleduje skutečné liniové prvky v terénu (zlomy, řeky). často v kombinaci s pravidelným vzorkováním</li>
+</ul>
+</ul>
+</ul>
+</p>
+
+
+<h2>metody získávání dat:</h2>
+<p>
+<ul>
+<li>pozemní měření</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<ul>
+<li>geodetická měření -- přímo použitelné a přesné, kvalitní, ale drahé a pracné, zachyceny všechny VIP prvky, použití v lesních porostech</li>
+<li>globální polohové systémy --  výsledky přesně a použitelné pro DMR</li>
+</ul>
+<li>DPZ </li>
+<ul>
+<li>fotogrammetrie</li>
+<ul>
+<li>přesnost záleží na měřítku, prostorovém rozlišení, přesnosti vlícovacích bodů</li>
+<li>umožňuje plošný sběr dat, zaměřování specifických geoprvků</li>
+<li>z leteckých snímků kvalitní DMR, družicové nemají požadovanou přesnost</li>
+<li>data relativně levná</li>
+</ul>
+<li>radarové snímání </li>
+<ul>
+<li><strong>radarová interferometie</strong></li>
+<ul>
+<li>zaznamenává radarové echo stejného místa z různých poloh, z nichž lze získat rozdíl fází radarového signálu, který je nositelem informace o výšce</li>
+<li>zpracováním hodnot obrazových prvků z dva radarových snímků se vytváří tz. interferograf → výškové rozdíly</li>
+<li>vertikální přesnost 4-5m</li>
+<li><u>deferenční interferometrie</u> - založena na rozdílu dvou interferogramů -- modelování pohybu (výška hladiny, sesuvy, DMT, časové změny, mocnoct sněhové pokrývky, monitorování vulkanizmu), přesnost na cm</li>
+<li>zdroje dat pro interferometrii</li>
+<ul>
+<li>družice ERS (European Remote Sensing setallite), RADARSAT nebo JERS</li>
+<li>SRTM (Shuttle RADAR Topography Mission)</li>
+<li>letecké: TOPSAR, IFSARE</li>
+</ul>
+</ul>
+<li><strong>radarová altimetrie</strong></li>
+<ul>
+<li>radarová měření jsou ve své podstatě měření vzdáleností - echo zaznamenávené jako časový interval (vyslání, přijetí) nebo jako signál modifikovaný povrchem</li>
+<li>přesnost větší než interferometrie, lepší než 10 m ??</li>
+<li>intenzita přijatého echo tvoří tz. křivku intenzity signálu, lze s ní získat informace o odrazivých vlastnostech a drsnosti povrch</li>
+<ul>
+<li>a) tvar křivky pro hladký povrch	</li>
+<li>b) tvar krivky pro drsný povrch (viz prezentace)</li>
+</ul>
+<li>aplikační oblasti: měření výšky hladiny oceánů, povrchů pokrytých ledem, studium slapových jevů, mořských proudů, měření charakteristiky vlnění</li>
+</ul>
+<li><strong>laserové snímání</strong></li>
+<ul>
+<li>laserové paprsky vysílané nosičem, diferencialní GPS nebo inerciální zaznamenává se echo paprsku</li>
+<li>vizualizace: prvního echa → DMP, posledního echa → DMR (čím výš se snímá, tím větší kužel snímání a tím menší přesnost)</li>
+<li>→ jejich rozdíl definuje objem objektů nad zemnským povrchem či výšku vegetačního krytu</li>
+<li>aplikace: tvorba modelů měst, počítání objemů, sledování mraků, primárně tvorba drm, analýza vegetačního pokryvu</li>
+<li>vysvětlení viz prezentace</li>
+</ul>
+</ul>
+</ul>
+<li><strong>digitalizace existujích analogových dat</strong></li>
+<li>ČÚZK ZABAGED:</li>
+<ul>
+<li>vrstevnice 2,4,5,6,8,10 m</li>
+<li>v místech singularit přerušené</li>
+<li>přesnější v členitém terénu, horší v rovinatém terénu a v sídlech</li>
+</ul>
+<li>Dobruška VGHú:</li>
+<ul>
+<li>DMÚ25, DMÚ 100</li>
+<li>DRM1 - pixel 1x1km, přesnost 15-30</li>
+<li>DMR2 - 100x100m, skutečná výška bodů, přesnost 3-15 m</li>
+<li>DVD (DMR 2,5) - digitální výškopisná data - z vrstevnic dmú25 + výškové body I.-IV. řádu, síť 100x100 m, přesnost 3-15m, zasahuje 50 km za hranice</li>
+<li>DMR X - fotogrammetrický výškový model, ze stereomodelů, TIN, západní část ČR</li>
+<li>DMR3 - měl by nahradi DMR1,2, přesnot 1-7 m, 50x50 m, doplněný o terenní hrany</li>
+<li>DTED (digited terrain elevation data) - standar pro armády NATO, AČR jej tvoří z DMR2, DVD a DMÚ</li>
+</ul>
+<li>T-Mapy: Výškopis ČR - vektorová databáze vrstevnic v 1:50 000</li>
+<li>ArcData Praha: ArcČR 500, využito: vrstevnice, linie vodních toků, vodní plochy, výškové body, kódy hladin vybraných vodních nádrží, generovaný jako GRID</li>
+<li>Geodis Brno: DEM vytváří fotogrammetrickými metodami nebo LIDARem</li>
+</ul>
+</p>
+
+
+<!-- End wiki content -->
+
+<hr />
+
+<!-- Backlinks -->
+
+	Backlinks:
+
+<!-- End Backlinks -->
+
+	</body>
+
+</html>

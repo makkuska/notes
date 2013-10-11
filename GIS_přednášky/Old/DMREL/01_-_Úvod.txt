@@ -1,0 +1,82 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-06-03T20:37:26.468244
+
+====== 01 - Úvod ======
+Created Pondělí 14 února 2011
+
+* způsob vizualizace dat - 3D - papírový, plastový
+* reprezentace reálného objektu
+* Model je objekt nebo koncept, který je použit pro vyjádření něčeho jiného. Je to zmenšená realita, převedená do formy, kterou můžeme pochopit. (Meyer)
+* používán pro vyjádření současné situace (systému, jevy), navrhované či předvídané situace
+* zmenšená krajina
+* **3 typy:**
+	* __koncepční__ (1.fáze) - model určitěného objektu, situace v mysli člověka
+	* __fyzický__ - analogický model z 3D tiskárny, z gymu, plastu; stereomodel založený na optické či mechanické projekci
+	* __matematický__ - využívá matematický výrazů - vzorce, proměnné, funkce; používám pro popis terénu
+* __kritéria:__ správnost, přesnost, popisná věrnost (model je založen na správných předpokladech, věrně popisujích skutečnost), robustnost (odolný vůči chybám v datech), všeobecnost, univerzálnost, užitečnost, jednochudost (založen na co nejmenším počtu proměnných)
+* **historie vyjádření reliéfu **
+	* počátky digitálního modelu terénu
+		* vytvářeny urbanisty, krajináři, stavaři, ...
+		* využití analogových modelů během války - 2. sv, bitva o Falkladny (80.léta) - z písku a jílu
+	* kresba - nejstarší způsob znázornění, informace o barvě a tvarech
+	* mapy 
+		* ve starověku se používaly obrázky a symboly → nepříliž dobrá metrická přesnost
+		* dnes navržený systém souborů a propravovaný matemický základ →  vysoká metrická přesnost
+	* vrstevnicové topografické mapy 
+		* používaný od 18.stol - výška terénu a morfologické informace dle měřítka
+		* linie (vrstevnice)
+		* využití 2D vyjádření pro 3D realitu
+	* fotografie - od 1849
+		* pomocí stereogrametrie je možné odvozovat i nadmořskou výšku
+		* zavedení matematických digitálních technik díky fotogrametrům
+		* satelitní snímky, letecké snímky - pořizují snímky v překryvy, radary
+		* perspektivní zobrazení - mechanická i optická
+	* blokdiagramy, perspektivní vrstevnicové diagramy
+	* digitální modely reliéfu
+		* první DMR v 50.letech v MIT (Massachusetts Institute of Technology) v Bostnu
+		* využito 3D souřadnic získaných ze stereo modelu → digitální profily
+		* optimalizované pro návrh silnic, dálnic, generování vrstevnic
+		* od 70.let - analýzy terénu
+		* první modely v Cadech, profily náspů při tvorbě dálnice
+		* digitální data, počítačově zpracovaný
+* **znaky DMT**: 
+	* různé formy pro vyjádření - topografické mapy, příšné, podélné řezy, 3D animace
+	* trvanlivost - během času nestrácí svou přesnost 
+	* flexibilita - integrace
+	* aktualizace
+	* jednoduchá změna měřítka 
+* **definice:** DMR je digitální reprezentací reliéfu terénu, která je složena z dat a interpolačního algoritmu umožňujícího odvozovat nadmořskou výšku v libovolných bodech nacházejících se uvnitř modelované oblasti. 
+* **terén:**
+	* __nepravidelnost__ 
+		* místa s hladkým průběhem
+		* místa, kde je hladkost narušena 
+			* terén je nepravidelný - podél linií, vrcholy, hrany, sedla, údolnice, hřbetnice = singularity 
+	* __anizotropie__ - vlastnosti terénu jsou závislé na směru a dalších činitelích (klima, geologii)
+	* __fraktální struktura__ 
+		* opakuje se stejná nepravidelná struktura v různých měřítcích, až vznikne věrný obraz povrchu
+		* systém výběžků a zátok
+		* struktura se fyzicky neopakuje zcela přesně, ale statisticky ano - míra této nepřevidělnosti se označuje jako fraktální dimenze
+* **terminologie:	**
+	* digitální model reliéfu (__DMR__), digitální model terénu (__DMT__) ang. digital terrain model (DTM) - může obsahovat terénní hrany, průběh řek, výšková data, hrany, vrcholy, polygony
+	* digitální výškový model (__DEM__ - digital elevation model) - pouze výškové body (vrstevnice)
+	* digitální model povrchu (__DSM__ - digital surface model) - TIN, včetně budov, stromů, všeho
+	* digitální topografický model, digitální model území (__DMÚ__), ang. digital landscape model (DLM) - datová sada (obsahuje i výškopis) 
+	* digitální model krajiny (__DMK__) - systém 3 rozměrný - 1. část reliéf, 2. část představují přírodní prvky, 3. část antropické prvky (vytvořené člověkem)
+* **omezení DMR **
+	* DMR nejsou 3D, ale je to perspektivní model (max. 2,5D) 
+	* voxel (né pixel) -- více Zi v jednom bodě
+	* diskrétní reprezentace povrchu - přestože se tváří jako hladký
+	* nelze srovnávat DEM o různém rozlišení a DEM odlišné geneze (př. nelze srovnat rastr s TINem)
+* **základní oblasti využití:**
+	* stavební inženýrství - projektování silnic, železnic (náspů, zářezů), příčných profilů
+	* vodní hospodářství - vodní kanály, přehrady (př. simulace kritické vodní hladiny)
+	* DPZ - ortorektifikace snímků (odstranění nepřesností vlivem různé výškové členitosti terénu), korekce zastínění v důsledku měnícího se sklonu a orientace
+	* životní prostředí a geovědy - modelování povětrnostních situací, oslunění svahů, modelování povodní, hydrologické analýzy, modelování sesuvů
+	* zemědělství a lestnictví - precizní zemědělství (sklon, typ půdu, pěstované plodiny), eroze půdy, lestnictví
+	* armádní inženýrství - simulace letu, bitvy, analýzy viditelnosti pro radoravý průzkum
+	* územní plánování
+	* cestovní ruch
+	* hornictví
+	* vizualizace krajiny
+	* plánování mobilních, radiových, komunikačních sítí

@@ -1,0 +1,39 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-02-01T22:00:26+01:00
+
+====== GIS přednášky ======
+Created Středa 01 únor 2012
+
+
+===== DPZG =====
+http://earthobservatory.nasa.gov/Features/MeasuringVegetation/measuring_vegetation_2.php
+Dokument ve stažených 52960....pdf
+
+
+
+
+**Co chybí GISy:**
+* PONAS - kočka (GPSdrawing), DPSplanning, lavičky vrstva nadigitalizovaná  --- Michal
+* INFUZ :-( informační systém
+* přednášky DMREL, PONAS
+
+===== POKR =====
+__LZW:__
+jedno (acsii), pak dvojice
+
+
+__Metoda blokovým tříděním__
+* založena na seřazení bloku textu
+* srovnáš podle abecedy a poslední 
+* výsledkem je poslední sloupeček se všemi písmenky z původního textu + kód = pořadí po seřazení
+* bzip2 - srovnáš a pak komprimuješ huffmanovým nebo aritmetrickým
+
+Obrazová komprese
+
+
+
+
+
+
+

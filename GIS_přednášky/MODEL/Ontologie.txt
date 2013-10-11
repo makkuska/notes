@@ -1,0 +1,66 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-10-10T12:26:32+02:00
+
+====== Ontologie ======
+Created Čtvrtek 10 říjen 2013
+
+* = výslovný popis určitě problematiky, zápis znalosti (chci popsat robotovi, jak operovat)
+* slovník, který slouží k předání a uchování znalostí týkajících se určitě problematiky
+* formální reprezentace, obsahuje **glosář** = definici pojmů a **tezaurus** = definice vztahů mezi pojmy
+* využití: umělá inteligence, sémantický web, softwarové inženýrství, ..
+* matika + filosofie + jazyk
+* datový model ontologie obsahuje
+	* jedince - objekt (člověk, tabulka, pojem, událost), více nedělitelný
+	* třídy - množina jedince a podtřídy
+		* podtřídy
+		* dělí se na 
+			* koncepty
+			* typy
+			* kategorie
+			* rámce
+	* atributy - popisují vlastnosti jedince
+	* vazby - propojení dvou jedinců (jednosměrná, obousměrná)
+
+
+==== Dělení ====
+• druhy dle užití:
+	* terminologická - tezaurus (slovník) - př. vyhledávání v katalogu
+	* informační - nástavba nad informačními databázemi
+	* znalostní - logické teorie, využívají se v umělé inteligenci
+* podle míry kormalizace
+	* neformální
+	* semi-formální
+	* formální
+* dle předmětu formalizace (druhy dle rozsahu)
+	* top-level (nejobecnější
+	* doménové - jeden obor (lékařství)
+		* v kartografie - kartografická pravidla + tezaurus
+	* generické - obecné, nejsou tak přesné
+	* úlohové - diagnostika
+	* aplikační
+* objektové modelování 
+	* konceptuální modelování = pojmové modelování
+		* modeluje reálný svět kolem nás
+		* není závislé na programovacím jazyku
+		* analýza - návrh - implementace
+		* ontologie pomáhá aby konceptuální model byl přesný na významu
+		* konceptuální model se dá graficky vyjádřit pomocí UML Unified modeling language
+			* grafický jazyk pro vizualizaci, specifikaci, navrhování
+* sémantické vazby
+	* homonyma, synonyma, holonyma 
+* axiomy (pravidla)
+	* vyjadřují vlastnosti
+* facety 
+* základy pro zápis ontologií
+	* eXtensible Ontology Language (XOL)
+	* CyC - nejstařší
+	* Open Knowledge Base Connectivity (OKBC)
+	* Ontology Interence Layer (OIL) - XML
+* specifikace - sběr znalostí - konceptualizace - formalizace - evaluace - dokumentace
+* sběr znalostí:
+	* ze stávající ontologie, slovníky, tezaury, mapy, atlasy, software, algoritmy, rozhovor, dotazníky
+* efekt hrdla láhve - znalostí znám, jen je těžké je přespat/předat
+
+===== Ontologie v kartografii =====
+

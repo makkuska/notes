@@ -1,0 +1,81 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-07-26T13:20:10+02:00
+
+====== GIS podstranka ======
+Created Čtvrtek 26 červenec 2012
+
+
+
+<script language="JavaScript">
+  function showhidefield()
+  {
+    if (document.frm.chkbox.checked)
+    { document.getElementById("hideablearea").style.visibility = "visible"; }
+    else
+    { document.getElementById("hideablearea").style.visibility = "hidden";  }
+  }
+</script>
+
+ <form name='frm' action='nextpage.asp' onsubmit="return checkscript()">
+  <input type="checkbox" name="chkbox" onclick="showhidefield()">
+  Check/uncheck here to show/hide the other form fields
+  <br>
+  <div id='hideablearea' style='visibility:hidden;'>
+    <input type='text'><br>
+    <input type='submit'>
+  </div>
+  This is a text line below the hideable form fields.<br>
+</form>
+
+<script language="JavaScript">
+function start() {
+myform.tx.disabled = true;
+}
+onload = start;
+function chgtx() {
+myform.tx.disabled = !myform.cb.checked;
+}
+</script>
+<form name="myform" action="#">
+<input type="checkbox" name="cb" onchange="chgtx();" />
+<input type="text" length="10" name="tx" />
+</form>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-NZ">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Unhide on checkboxes/radio buttons</title>
+		<script type="text/javascript">
+		function toggleLayer(val)
+		{
+			if(val == 'on' || val === true)
+			{
+				document.a('b1').checked = true;
+				document.getElementById('a1').checked = true;
+				document.getElementById('layer1').style.display = 'block';
+			}
+			else if(val == 'off' || val === false)
+			{
+				document.getElementById('b1').checked = false;
+				document.getElementById('a2').checked = true;
+				document.getElementById('layer1').style.display = 'none';
+			}
+		}
+		</script>
+	</head>
+
+	<body onload="document.getElementById('layer1').style.display = 'none'; document.getElementById('a2').checked = true; document.getElementById('b1').checked = false;">
+		<form action="" method="post">
+			<fieldset>
+				<legend>Unhide Layer Form</legend>
+				<ul>
+					<li><label for="a1">On</label> <input id="a1" name="switcher" type="radio" value="on" checked="checked" onclick="toggleLayer(this.checked);" /> <label for="a2">Off</label> <input id="a2" name="switcher" type="radio" value="off" onclick="toggleLayer(!this.checked);" /></li>
+					<li><label for="b1">Check Me:</label> <input id="b1" name="b1" type="checkbox" value="on" checked="checked" onclick="toggleLayer(this.checked);" /></li>
+				</ul>
+			</fieldset>
+		</form>
+		<div id="layer1">You can now see this.</div>
+	</body>
+

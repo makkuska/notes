@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-04-08T09:26:50+02:00
+
+====== 04 - ESRI ======
+Pondělí 01. dubna 2013
+
+Chyběla jsem
+* ArcGIS server
+* Flex
+	* ArcGIS Viewer for Flex
+	* base data (statická, cachují se) + operační vrstvy, jejíž obsah je možno měnit dynamicky - dotazovat se, editovat
+	* ArcGIS API for JS, Flex, Silverlight
+	* aplikace je přenositelná, nepotřebuje ArcGIS server

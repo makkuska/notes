@@ -1,0 +1,61 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-12-16T22:52:07+01:00
+
+====== 3 - Modelování srážko-odtokových procesů ======
+Created Neděle 16 prosinec 2012
+
+* matematický model
+* vztah mezi vstupními a výstupními veličinami
+* definován převážně fyzikálními procesy, která působí na vstupní data, jež se transformují ve výstupní veličiny
+
+===== Rozdělení podle: =====
+* **účelu aplikace:**
+	* **operativní hydrologie** - údaje z meteorologických stanic a radarů, důležitá je rychlost zpracování
+	* **pro návrhovou a projekční činnost** - protipovodňová ochrana, stavba přehrad, ...
+	* **výzkum**
+* **z hlediska typy systému**, který je simulován
+	* **elementární** - malá odtoková plocha (říční síť, nádrže, jezera)
+	* **komplexní systém** - velké (povodí, systém říčních sítí, jezer, ..)
+* **z hlediska typu hydrologického procesu**, který je modelován
+	* model výpočtu - **půdní vlhkosti, evapotranspirace, proudění vody, teploty vody, šíření znečištění,** ..
+* **stupně kauzality**
+	* kauzalita je vyjádřena vztahem __příčina-důsledek__
+	* **deterministické modely**
+		* vztah závislých (výstupní veličiny) a nezávislých (vstupní veličin) proměnných
+		* **hydrodynamické modely** - respektují zákony zachování hmoty, hybnosti, energie
+		* **koncepční modely** - reflektují fyzikální zákony ve zjednodučené formě
+		* **black-box modely** - neberou v úvahu žádný zákon
+	* **stachastické modely** - primárně neobsahují vazbu mezi příčinou a důsledkem
+			* **pravděpodobnostní modely** - min Q, max Q, vodní stav
+			* **model generování časových řad** - př. extrapolace časových řad pozorovaných parametrů
+* **míry časové a prostorové diskreditace**
+	* modelování v časovém kroku (15min, hodina, den)
+	* rozdílné nároky na vstupní data
+	* kontinuální model - delší, víceleté období
+	* epizodní model - simulace na dílčí události
+	* celistvé modely - parametry jsou vztahovány k celému povodí 
+	* distribuované - založené na distribuovaných systémech
+	* semi-distribuované - rozdělení povodí na elementární odtokové plochy, které se vyznačují homogenními prostorovými parametry
+
+===== Komponenty hydrologického modelu =====
+* vodní bilance **P = E + R + ΔW**
+	P – úhrn srážek
+	E – výpar (evapotranspirace) = evaporace + transpirace
+	R – odtoková výška (povrchový, podpovrchový odtok)
+	ΔW – změna objemu vody v povodí
+* srážky - bodové x plošné, skutečné x teoretické, padající (vertikální), usazené (horizontální), kapalné x pevné
+* intercepce - dočasné zachycení srážek na povrchu vegetace
+
+===== Využití CN křivek =====
+* model používaný pro prognózování povrchového (přímého odtoku) způsobeného přívalových deštěm z povodí
+	* odtok povrchový i hypodermický 
+	* použita pro navrhování a posuzování technických protierozních opatření
+	* lze použít pro výpočet odtoku z tání sněhu
+	* použití pro malá povodí do 10km2
+	* odtok ovlivněn: množstvím srážek, infiltrací vody do půdy, vlhkostí půda, porostem, nepropustnými plochami, retencí povrchu
+	* základní vstup: srážkový úhrn (konkrétní přívalové srážky)
+
+
+
+

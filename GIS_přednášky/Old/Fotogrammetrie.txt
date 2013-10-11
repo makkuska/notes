@@ -1,0 +1,47 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-05-04T10:51:30.405989
+
+====== Fotogrammetrie ======
+Created Středa 04 květen 2011
+
+* definice:
+	* fotogrammetrie je měřická metoda, která se zabývá rekonstrukcí tvaru, velikosti a polohy předmětů z jejich fotografických snímků
+	* fotogrammetrie se zabývá měřickými vlastnostmi leteckých a družicových snímků s cílem přesných měření polohy bodů a získáváním map nebo digitálních modelů terénu z těchto snímků
+	* fotogrammetrie je měřická metoda umožňující modelování v 3D prostoru s využitím 2D snímků
+* dělení:
+	* podle polohy stanoviska:
+		* pozemní - z pevného místa o známé poloze; využítí v architektuře, archeologii, hornictví, lékařství, ...
+		* letecká - letecké nebo družicové snímky; k tvorbě topografických map, tématických map, pozemkových úpravách, v různých oborech lidské činnosti
+	* podle počtu snímků:
+		* jednosnímkové - vyhodnocuje předměty ve dvou rozměrech - půdorys
+		* dvousnímková - průseková fotogrammetri, stereometrie
+	* podle způsobu zpracování:
+		* analogová
+		* analytická
+		* digitální
+* historie:
+	* vývoj ovlivněn: vynálezem fotografie, rozvojem letectví, jemné mechaniky, optiky, výpočetní techniky
+	* 1839 - vynález fotografie
+	* 1851 - použití snímků pro měřické účely - první fototeodolit
+	* 1858 - první fotografie pořízená z balónu
+	* (výpisky:
+		* „camera obscura“ – r.1032 Hasan Haitkam, L. da Vinci (1452-1519)
+		* spojné čočky – r.1558 G.B. della Porta
+		* „camera clara“ – světelná komora za J.Keplera – základ FTGM
+		* 1.rekonstrukce perspektivních obrazů – r.1726 M.A.Cappeler
+		* vynález fotografie – r.1839 Niepce a Daquerrem 
+		* použití snímků pro měřické účely – r.1851 A.Laussedat
+		* 1.snímky ze vzduchu – balón – r.1858 G.F.Tournachon (Nadar)
+		* 1.fototheodolit – r.1859 dle návrhu A.Laussedata
+		* průseková fotogrammetrie na fotografiích – r.1861 Francie
+		* „fotogrammetrie“ – r.1867
+		* vynález filmu – r.1884 G.Eastman
+		* 1.letecká komora – r.1890 firma Pathé
+		* Analogová FTGM - stereokomparátor – r.1901 Dr.Pulfrich
+		* stereoskopické měření z dvojice překrývajících se snímků optickou cestou
+		* „autostereograf“ – r.1908 E.Orel – „stereoautograf“ – Zeiss Jena
+		* letecká FTGM – poč.20.stol. – W.Wright, L.Blériot, 1.sv.válka
+		* další FTGM přístroje – autokartograf (1920), stereoplanigraf (1923) stereometrograf, stereoautograf, topokart
+		* Analytická FTGM – princip r.1957 U.Helava, praxe o 20let později
+		* Digitální FTGM – 90.l. 20.stol.)

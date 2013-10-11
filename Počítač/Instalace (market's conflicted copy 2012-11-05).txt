@@ -1,0 +1,39 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-07-18T13:46:59+02:00
+
+====== Instalace ======
+Created Středa 18 červenec 2012
+
+smbfs backintime-gnome gqview krita kchmviewer streamer streamtuner openshot pinta gwenview
+nmap wireshark
+graphviz dvipng r-base-core bzr
+
+• SYSTEM 
+guake mc htop gparted zip openssh-server arj vim-gtk tree 
+
+* DEVELOPMENT
+apt-get install xorg-dev gcc gpp g++ make automake imagemagick libmagickwand-dev ruby-full rubygems libfox-1.6-dev sqlite3 libsqlite3-dev rake libtk-img jhead mysql-server phpmyadmin
+
+* APPLICATIONS
+evince
+gthumb kolourspaint4 gimp
+zim filezilla
+thunderbird chromium firefox skype pidgin
+smplayer 
+virtualbox
+latex texlive-lang-czechslovak texmaker texlice-fonts-recommended
+postgresql postgis mysql apache phpmyadmin 
+truecrypt dropbox
+ 
+* MAP aplications
+qgis googleearth googleearth-package
+cgi-mapserver mapserver-bin mapserver-doc php5-mapscript python-mapscript
+geomoose
+	./configure
+	make
+	make install
+	Include “/opt/geomoose2/geomoose2_httpd.conf” to /etc/apache2/httpd.conf
+
+
+

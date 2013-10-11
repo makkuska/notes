@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>7 - Webové servery</title>
+		<meta name='Generator' content='Zim 0.54'>
+		<style type='text/css'>
+			a          { text-decoration: none      }
+			a:hover    { text-decoration: underline }
+			a:active   { text-decoration: underline }
+			strike     { color: grey                }
+			u          { text-decoration: none;
+			             background-color: yellow   }
+			tt         { color: #2e3436;            }
+			pre        { color: #2e3436;
+			             margin-left: 20px          }
+			h1         { text-decoration: underline;
+			             color: #4e9a06             }
+			h2         { color: #4e9a06             }
+			h3         { color: #4e9a06             }
+			h4         { color: #4e9a06             }
+			h5         { color: #4e9a06             }
+		</style>
+	</head>
+	<body>
+
+<!-- zápisky 7 -->
+
+<h1>7 - Webové servery</h1>
+
+<p>
+Pondělí 12 listopad 2012<br>
+</p>
+
+<h1>Apache HTTP server</h1>
+<p>
+<ul>
+<li><strong>httpd.conf (konfigurace HTTP démon)</strong></li>
+<ul>
+<li>umístění /etc/httpd/conf/httpd.conf</li>
+<li>1) direktiva v první sekci Global Environment</li>
+<ul>
+<li>přidávají si statické a dynamické moduly</li>
+</ul>
+<li>2) direktiva pro všechny aplikace (druhá sekce Main server confuguration)</li>
+<ul>
+<li>P<em>ort, User apache</em> (má právě spouštět server)</li>
+<li><em>group, server, admin</em></li>
+<li>D<em>ocumentRoot</em> (var/www/work) - může být mimo strukturu, direktoryIndex (index.html index.cgi)</li>
+<li><em>AccessFileName .htaccess</em> - název souboru s informacemi o přístupu, omezující práva</li>
+<li><em>DefaultType</em> text/plain - defaultní MIME typ pro nerozpoznané dokumenty </li>
+<li><em>HostnameLookups Off/On</em> - logovat jména klientů nebo IP adres</li>
+<li><em>ScriptAlias </em>/cgi-bin/ "var/www/cgi-bin/" - kde jsou klíčové skripty</li>
+<li><em>AddType application .cgi </em></li>
+</ul>
+<li>3) direktiva v třetí sekci Virtual Hosts umožňuje více domén pro jeden server</li>
+<ul>
+<li>jedna doména je hlavní, ta se řídí tou první </li>
+<li>každé další domény jsou nastaveny ve Virtual Hosts</li>
+<li>pro každé domény se nastaví derektiva <em>&lt;virtualHost IP&gt;ServerAdmin; DokumentRoot; ServerName domain_one.com; ErrorLog; CustomLog&lt;/virtualHost&gt;</em></li>
+</ul>
+<li>SSL Secure Socket Layer</li>
+<ul>
+<li>umožňuje bezpečnou komunikaci pomocí HTTPS protokolu, standardní port pro HTTPS je 443</li>
+<li>používá asymetrické šifrování pomocí veřejného klíče (certifukátu), který je v souboru /etc/httpd/conf/ssl.crt/cerver.crt</li>
+</ul>
+</ul>
+</ul>
+<div style='padding-left: 120pt'>
+<em>&lt;virtualHost&gt;SSLEngine on; SSLCertificateFile server.crt; SSLCertificateKey&lt;/virtualHost&gt;</em><br>
+</div>
+<ul>
+<li><strong>.htaccess</strong> (ASCII soubor)</li>
+<ul>
+<li>používá se k vytvořžení vlastních chybových dokumentů</li>
+<li><em>ErrorDocument</em> 404 ect/404.html </li>
+<li><em>DirectoryIndex</em> nastavení východí stránky, časté u mapových aplikací</li>
+<li>blokace souboru: deny/allow (zablokované/povolené)</li>
+<ul>
+<li>deny from 123.123.123.123; deny from 123.123</li>
+<li>allow from all; allow from 123.123.123.123</li>
+</ul>
+</ul>
+<li>další důležité adresáře:</li>
+<ul>
+<li>/etc/httpd/modules/ (moduly) - u mě: /usr/lib/apache2/modules/</li>
+<li>/etc/httpd/logs/ (logovací soubory) - u mě: var/log/apache2</li>
+<li>/etc/www/ (kořenový soubor dokumentů serveru)</li>
+<li>/etc/www/cgi-bin/ (adresář pro skripty serveru) -  u mě: /usr/lib/cgi-bin</li>
+</ul>
+</ul>
+</p>
+
+<h1>Komunikace mezi vrstvami</h1>
+<p>
+<ul>
+<li>komunikace mezi databázovým serverem a serverem aplikačním probíhá prostřednictvím stanoveného protokolu </li>
+<ul>
+<li>univerzální protokoly (ODBC, GDBC s jádrem Javy) nebo speciální pro daný databázový server</li>
+<li>5 parametrů, které se vždy musí nastavit: host=localhost dbname=my_db user=postgres password=dosys port: 5432</li>
+</ul>
+</ul>
+</p>
+
+<h2>Knihovny</h2>
+<p>
+<ul>
+<li>napíšu zdrojový kód, přímo vkládám přes #iclude - nutná kompilace</li>
+<li><u>statické</u> (soubory .lib) - je již překompilován</li>
+<li><u>dynamické</u> - .so (Unix), .dll (Widle)</li>
+<ul>
+<li>knihovna nevisí v paměti, spustí se jen, když ji zavoláme</li>
+<li><strong>RPC</strong> (vzdálené volání procedur)</li>
+<ul>
+<li>mechanismus volání pro aplikace typu klient/server</li>
+<li>server poskytuje své služby formou procedur (adresu+parametry), server zpracuje, posílá zpět</li>
+<li>platformní nezávislost, pokud je dodržena základní struktura dat, jednoduchost, dostupnost</li>
+<li>každá procedura má své jedinečné číslo (př. procedura SHPtoOGR pro verzi 2 a 3)</li>
+</ul>
+<li>RPC-XML</li>
+<ul>
+<li>vše se posílá pomocí xml struktury</li>
+</ul>
+<li><strong>COM </strong></li>
+<ul>
+<li>je to standart, jak programovat (není to jazyk ani soubor objektů), vyvinut pro Windows, ale je nezávislá</li>
+<li>určuje základní vlastnosti objektů a pravidla pro práci s daty</li>
+<li>modularita</li>
+<ul>
+<li>com objekt by se měl zabývat jen sám sebou, né ostatními objekty</li>
+<li>objekt má dané určité metody, pomocí nichž lze jim manipulovat</li>
+<li>objekt se v průběhu verzí měnit, ale jeho rozhraní je stabilní</li>
+</ul>
+<li>univerzálnost</li>
+<ul>
+<li>nezávislost na programovacím jazyku</li>
+<li>deklarace objektů a jejich metod pomocí interface Definiton Language (IDL)</li>
+</ul>
+<li>správa paměti</li>
+<ul>
+<li>životní cyklus komponent se řídí referencemi - počet pointerů, které na daný objekt ukazují</li>
+<li>klient pouze zvyšuje či snižuje počet referenci dle jednoduchých pravidel</li>
+</ul>
+</ul>
+<li><strong>DCOM</strong> - distribuované</li>
+<ul>
+<li>Microsoft - ActiveX, není multiplatformní, uzavřenost</li>
+</ul>
+<li><strong>CORBA</strong> - distribuované volání</li>
+<ul>
+<li>pro vývoj, návrh, pravidel distribuovaných aplikací</li>
+<li>mechanismus založen na tom, že každý objekt má definovaná pravidla</li>
+<li>multiplatformní</li>
+</ul>
+<li>OLE</li>
+<li>ActiveX - nástupce OLE</li>
+<li>ATL - VisualBasic</li>
+<li>WTL</li>
+</ul>
+</ul>
+</p>
+
+
+<!-- End wiki content -->
+
+	</body>
+
+</html>

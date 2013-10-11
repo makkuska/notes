@@ -1,0 +1,392 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-09-24T08:01:18+02:00
+
+====== GISIT ======
+Created Pondělí 24 září 2012
+
+2. Kruhová topologie a její vlastnosti
+	* Zapojení, kde jeden uzel je připojen dalším dvěma uzlům tak, že vytvoří kruh
+	* Data musí projít přes mnoho uzlů, než se dostanou ke svému cíli delší doba trvání
+	* Nevznikají kolize
+	* Menší náklady
+	* Pokud se zhroutí 1 uzel, zhroutí se celá síť
+	* Těžké nají a odstranit závadu
+4. IPv4
+	* IP adresa= jednoznačná identifikace konkrétního zařízení v prostředí Internetu
+	* 32bitové číslo, 4 desítková čísla v rozmezí 0-255 oddělená tečkou
+	* č.sítě . hlavní podsíť . upřesnění podsítě . č. konkrétního zařízení
+	* úIP adresa se přiděluje dynamicky (DHCP server)
+5. HTTP
+	* HypertextTransfer Protokol
+	* Protokol pro výměnu hypertextových dokumentů ve formátu HTML
+	* Díky  rozšíření MIME umí přenášet jakýkoliv soubor
+	* Používá port TCP/80, URL
+	* HTTPS-bezpečnější verze, port 443, pomocí protokolu SSL
+	* Operace - get, head, post, put/delete
+	* Odpověď - verze protokolu, stavový kód, stavové hlášení, hlavičky, oddělovač (prázdný řádek), tělo odpovědi
+6. co obsahuje DTD
+	* Document Type Definition	
+	* Definice pravidel
+	* Uveden pomocí DOCTYPE
+	* Definuje pro určitou verzi značkovacího jazyka, které elementy je možné používat a s jakými atributy
+	* Mimo značkování může obsahovat další prvky:
+		* Direktivy
+		* Komentáře
+		* Kód skriptovacích jazyků
+	* Definice událostí a kód pro jejich obsluhu
+
+7. XHTML
+eXtensible Hypetrtext Markup Language
+Značkovací jazyk pro tvorbu hypertextových dokumentů v prostředí www vyvinutý konsorciem W3C
+Nástupce jazyka HTML
+3 druhy-Strict, Transitional, Frameset
+Všechny tagy ukončené, zapsány malými písmeny, atributy v “ “
+Dokument musí začínat XML hlavičkou
+Některé tagy jsou nepovolené např <font> 
+8. Webový server
+Server, který poskytuje především www stránky
+Je připojen k počítačové síti, přijímá požadavky ve tvaru http, ty zpracovává a vrací odpověď v HTML dokumentu, či v jiném formátu
+Součástí odpovědi serveru je stavový kód - udává, zda byl požadavek vyřízen v pořádku 
+
+9. ASP
+Active Server Pages
+Technologie skriptování nezávislá na programovacím jazyce
+Pro tvorbu a provozování dynamických, interaktivních webových aplikací
+Programovací jazyky: VBScript, JScript
+Lze kombinovat HTML stránky, skripty, COM komponenty
+Přípona *.asp
+
+10. Jaké výstupy poskytuje mapový server
+Mapový obrázek v grafovém formátu (GIF, JPG)
+Jakýkoliv grafický prvek mapy
+Vyfiltruje přímo jednotlivé objekty/data ve formátu gml pro klientovu vlastní manipulaci
+
+11. SOAP
+Simple Object Access Protokol
+Protokol pro komunikaci mezi webovými službami, posílání zpráv xml pomocí html protokolu
+Pracuje na principu peer-to-peer a RCP
+Skládá se z kořenového elementu Envelope
+Head-uložené informace pro pomocné informace
+Body-vlastní obsah, informace identifikující volanou službu	
+
+
+12.  WSDL
+Web Services Description Language
+XML dokument, který popisuje konkrétní webovou službu-jaké má parametry při volání, návratový typ, co nabízí za funkce, jak se na ní zeptat…
+Operace a zprávy jsou popisovány na abstraktní úrovni
+Elementy-types, message, operation…
+
+13. Co je to a k čemu je GeoNetwork
+GeographyNetwork
+Celosvětová síť pro uživatele a poskytovatele geografických informací
+Poskytuje infrastrukturu potřebnou k podpoře sdílení geografických informací mezi datovými poskytovateli, poskytovateli služeb a uživateli na celém světě
+Mezinárodní mapy s odkazy na informace o dopravních sítích, topografických a katastrálních údajích, výsledcích průzkumech…
+Internetové tržiště pro vyhledávání, zprostředkování a využívání zeměpisných dat a služeb
+Zřízen a udržován ESRI
+
+14. Typy mobilních klientů
+local based service
+bezdrátová sítě a klient
+PDA+GPS
+WAP-XTML
+
+15. WMS
+Web Map Service
+Slouží k poskytování map, které jsou generovány dynamicky z geografických dat
+Obsahuje rastrová i vektorová data
+Na základě požadavku připraví rastrový obrázek, který poskytne klientovy
+Požadavky na službu předá klient pomocí parametrů v adrese
+Na základě požadované operace vrátí obrázek s mapou, výsledek dotazu (tabulku), jinou požadovanou informaci (metadata, chybové hlášení…)
+Není kompatibilita se SOAP, POST
+Pro vyhledávání třeba volat další služby (WFS)
+Definuje 3 operace
+getCapibilities-produkuje metadata obsahující informace o poskytované službě
+getMap-vytváří mapu na základě požadavků uvedených v URL adrese
+getFeatures-poskytuje informace o objektech na mapě
+
+16. WPS
+Web Processing Service
+Rozšiřuje možnost zpracování a provádění různých výpočetních úkonů
+Zpracování rastrových a vektorových prostorových dat
+Nejčastěji při práci s rastrovými daty využívá formát GeoTIFF a vektorovými daty GML (Geography Markup Language)
+Operace-GetCapabilities, DescribeProcess, Execute
+
+17. Tenký klient
+klienti se klasifikují podle toho, které funkce se provádí na straně klienta a které na straně serveru
+u tenkého klienta všechnu funkci přebírá aplikační server, podle zadaného požadavku zpracuje data a vygeneruje rastrový obrázek
+výhoda v přenosu malého množství dat
+formáty gif, jpg,html, protokol http
+při každé změně musí server vygenerovat nový obrázek
+vyšší zátěž na straně serveru z důvodů častějších dotazů na straně klienta
+
+18. monolitická architektura
+file server/pracovní stanice
+předchůdce dvouvrstvé architektury klient/server
+možnost uložení dat do file serveru místo na lokálním disku, ale zprcování dat na jiném místě, než jsou data uloženanutné přenosy velkého množství dat
+zpomalení prácezhroucení
+databázová, aplikační i prezentační logika soustředěna v jednom monolitickém bloku
+architektura, kterou využívaly první softwarové aplikace
+snadná implementace, žádné přehnaně náročné požadavky na technické vybavení
+
+19. Z.39.50
+Standardizovaný protokol pro vyhledávání a přejímání dat
+Specifikuje abstraktní informační systém
+
+20. 4 přístupy zavádění nebo použití skriptovacích jazyků (NEVIM)
+DHTML
+Plug-in
+AJAX
+ActiveX controls
+Dojo
+Java Apletts
+
+21. Tlustý klient
+Na straně serveru pouze služba, která zpracovává požadavky klienta do formy dotazů do příslušného datového úložiště a obdržená data přeposílá zpátky na klienta
+Data se na serveru nijak nezpracovávají
+Veškerá práce s vykreslením grafických dat je na klientské aplikaci
+Př. ArcGIS na straně klienta a ArcsSDE na straně serveru
+
+22. Složky mapového serveru
+Knihovny jádra - CGI externí
+Data
+Konfigurační soubor
+Šablony výstupu tenkého e-klienta - souřadnice, PNG
+Pracovní adresář (temp) - to co je vygenerováno map serverem
+Map.map - rozvržení klienta, odkazuje na knihovnu
+css, fonts, images
+
+23. SOAP
+Simple Object Access Protokol
+Protokol pro komunikaci mezi webovými službami v xml pomocí html protokolu
+Umí vzdáleně volat funkce (RCP)
+Skládá se z kořenového elementu Envelope
+Head-uložené informace pro pomocné informace
+Body-vlastní obsah, informace identifikující volanou službu	
+
+24. Dublin Core – ISO 15836
+Standard určený k vytváření metadat dokumentů na internetu
+Vychází z knihovnických systémů-definuje omezené množství položek s možností jejich další strukturalizace ve stromové struktuře podle potřeb uživatelů
+Položky pouze textového charakteru
+
+25. WFS operace
+GetCapabilities-pro získání metadat o službách WFS serveru
+GetFeature-vrací geografická data objektů
+GetFeatureType-poskytuje detailní informace o objektech
+InputFeature-pro vložení objektu do systému
+UpdateFeature-pro aktualizaci objektu
+DeleteFeature-pro odstranění objektu ze systému
+
+26. SLD
+Style Layer Deskriptor
+Samostatná služba, která je rozšíření WMS
+Umožňuje zadat barvy, symboly, vlastnosti popisných textů v mapě, vytvořit tematické mapy
+
+27. HTTPS
+Bezpečnější verze protokolu http
+Data jsou přenášena pomcí http
+Komunikuje prostřednictvím portu 443
+Data šifrována pomocí protokolu SSL nebo TSL
+
+28. ArcIMS Designer
+Pro přípravu webové aplikace pro přístup k mapovému serveru
+
+29. 4  řesení map serveru (NEVIM)
+KYGEONET
+DATAMIL
+UMN Map Server
+ArcGIS Server
+Intergraph GeoMedia Web Map
+
+30. XML Namespaces
+Dokument, který obsahuje klíčová slova pro XML dokument v různých schématech
+Definuju jazyk (svg, gml…) a adresu, ze které budu brát již zhotovené kódy
+
+31. Jak funguje map server
+1. Z pracovní stanice přijde dotaz na server s požadovanými mapovými vrstvami a souřadnicemi zájmového území
+2. MapServer vyrobí z daného území obrázek mapy se všemi vrstvami, legendu...
+3. Vše je definováno v konfiguračním souboru
+4. Klientovi je vrácen obrázek mapy, celá HTML stránka nebo výsledek dotazu do databáze
+
+32. JSP
+Java Server Pages
+Technologie od společnosti Sun Microsystem pro tvorbu dynamických webových stránek na platformě Javy (J2EE)
+Kombinace příkazů jazyka Java a formátovacích značek HTML
+
+33. XML
+eXtensible Markup Language
+obyčejný značkovací jazyk pro výměnu dat mezi aplikacemi a pro publikování dokumentů
+nemá předdefinované značkydefinovat vlastní, které budeme používat (lze definovat v DTD)
+ založen na jednoduchém textu
+Umožňuje vytvářet odkazy v rámci jednoho dokumentu i mezi dokumenty
+3 standardy
+XPath - adresuje jednotlivé části dokumentu
+XPointer - rozšíření XPath
+XLink - jednotlivé odkazy se určují pomocí jejich URL adresy
+
+34. Webová služba
+Softwarový systém umožňující interakci 2 strojů na síti
+Komunikace mezi 2 počítači, při níž má jeden funkci poskytovatele webové služby a druhý je klient
+Komunikace zajištěna na jazyce xml a protokolu http
+Aplikace mezi sebou posílají xml zprávy, které přenášejí dotazy a odpovědi jednotlivých aplikací
+Infrastruktura: SOAP, WSDL, UDDI
+V oblasti GIS poskytuje mapová data prostřednictvím počítačové sítě
+
+35. Aplikační server
+server, který webovému poskytuje nadstavbovou službu 
+přetlumočení požadavků klienta a předání mapovému serveru
+přilepený (nedílná součást webového serveru)/středně přilepený (pro svůj chod potřebuje webový server, ale instaluje se jinde)
+př. mapový server
+odpovědi
+HTML dokument nebo mapového obrázku klientovi
+Java apletts nebo Active X Controls webovému klientovi
+Předání požadavku dalšímu programu a vyvolání dalšího programu jako CGI, který zpracuje požadavek
+
+36. Dynamický a statický obsah
+Statický obsah-předem připravené datové soubory (HTML stránky), který webový server bez změny poskytne klientovi-nic nevytváří
+Dynamický obsah-na základě požadavku klienta jsou data shromážděna, zformátována a připravená k prezentaci ve formátu HTML a poskytnuta webovému prohlížeči
+Statický rychlejší než dynamický, ale v dynamickém větší obsah informací
+
+37. K čemu je protokol v síťové architektuře
+Pro přenos služby - http, FTP…
+XML komunikace mezi poskytovatelem a klientem - SOAP, REST
+Popis služby - WSDL
+Vyhledání služby - UDDI
+38. DNS
+Domain Name Systém
+Hierarchický systém doménových jmen
+Převod doménových jmen a IP adres uzlů sítě
+Používá port TCP/53 i UDP/53
+
+39. Intranet
+Počítačová síť, které používá stejné technologie jako internet, ale není na něm závislý - nepotřebuje přístup k internetu
+Soukromá počítačová síť - pro použití malé skupiny uživatelů
+Komunikační protokol TCP/IP
+Základem je webový server – umožní provozovat vnitřní intranetové stránky přes prohlížeč
+
+40. ICBM
+Jeden ze standardů pro geotagging
+Souřadnice – úhlové stupně ve formátu desetinného čísla
+Druhým standardem je DC (pro popis digitálních objektů)
+
+41. SISSi
+Kontextová mapová služba
+Spojování vrstev z různých WMS serverů
+Symbolika definovaná pomoci SLD
+
+42. DHTML
+Dynamické html
+Skriptovacími jazyky (např, HTML, JavaScrpt, VBScript) umožňuje uživateli zasahovat přímo do vzhledu stránky-měnit parametry prvků, obsah dokumentu
+Např. vysunovací menu
+
+43. DOJO
+Open source toolkitu DHTML napsané v Java Scriptu
+
+44. JSON
+JavaSript Object Notation
+Textový, odlehčený, na jazyce zcela nezávislý formát pro výměnu dat
+
+45. AJAX
+Asynchronous JavaScript and XML
+Technologie vývoje interaktivních webových aplikací, které mění obsah svých stránek bez nutnosti jejich znovunačítání
+Využívá HTML (XHTML), CSS, DOM, JavaScript, XML
+Např. při udělení hlasu, server zašle jen části stránky, které se změnily, a jen tyto části se uživateli na stránce zaktualizují a překreslí
+Nevýhoda-moderní grafické prohlížeče, které podporují potřebné technologie
+
+46. RPC
+Remote Procedure Call
+Vzdálené volání procedur
+Technologie, dovolující programu vykonat proceduru, která může být uložena na jiném místě, než je umístěn sám volající program
+Platformová nezávislost
+
+47. UDDI
+Universal Description, Discovery and Integration
+XML dokument umožňující registraci a vyhledávání webových služeb
+Adresářová služba popisující společnosti a webové služby, které poskytují
+Komunikace s ní probíhá pomocí SOAPu
+4 druhy entit
+Podnikatelské-název, stručný popis, kontaktní údaje
+Služby- seznam služeb, které firma poskytuje
+šablony vazeb-popisují jak a kde je možné se službou komunikovat
+typy služeb-definuje abstraktní službu
+
+48. CGI
+Common Gateway Interface
+Protokol pro pojení externích aplikací s webovým serverem
+Umožňuje serveru přenést požadavek od klienta na externí aplikaci, která dle požadavku vrátí výstup
+Bez knihovny-při každém požadavku do paměti zaveden celý program a je spuštěn jako samostatný proces s vlastním paměťovým prostorem a poté opět odstraněn z paměti
+
+49. ISAPI
+Rozhraní mezi webovým serverem a CGI aplikací
+Vytvoří se knihovna (DLL knihovna), kde bude celý proces (program) nahrán
+
+50.  Co vrací mapový server 
+obrázek mapy, celá HTML stránka, výsledek dotazu do databáze
+
+51. 3 programy interaktivity na klientovi (webove mapy)
+ActiveX, JavaApplet, Flash Plugins, AJAX
+
+52. REST
+Representational State Transfer
+Architektura webových služeb jako hierarchie zdrojů
+služby a operace s nimi = zdroje
+každý zdroj má své jedinečné URL, využití http operací
+bezstavová → vše v dotazu
+vysoce interoperabilní, přesně stanovená hierarchie, plně využívá vlastnosti webu a http, vše lze popsat pomocí URL, možnost použití záložek
+
+53. Jak funguje webovy server
+přijímá požadavky ve tvaru http → požadavky vyřizuje a počítači, který požadavek vznesl vrací odpověď → obvykle nějaký HTML dokument, či jiný formát (text, obrázek)
+počítač x počítačový programovací
+statické a dynamické získání obsahu
+
+54. Mapserver – popis
+internetová aplikace, která zpřístupňuje geografická data a umožňuje práci s nimi bez nutnosti speciálního softwaru
+aplikační server a architektura klient-server
+zpracovává požadavky klienta a generuje výsledek
+výsledky mohou být ve formátech – filtrovaná objektová data a jednoduchý mapový obrázek (GIF, JPEG)
+
+55. Stromová topologie
+propojení PC do útvaru připomínající strom
+vychází z hvězdicové topologie spojením aktivních síťových prvků, jež jsou v centrech jednotlivých hvězd
+použití především v rozsáhlých PC sítích ve velkých firmách
++ selhání jednoho prvku neovlivní ostatní části sítě, menší množství kabelů, větší bezpečnost
+
+56. GIS podle vztahu k síti
+Mainframe GIS, Desktop GIS, Distributed GIS
+
+57. Orchestrace
+popis chování služby jako součást větší, více komplexní spolupráce
+business proces – spolupráce, která je kolekcí aktivit (metod, služeb) navržených tak, aby úspěšně plnila daný business cíl
+vytvoření struktury WS plnící určitý úkol (statický/dynamický)
+zapojování služeb dle aktuální potřeby (cena, rychlost, přesnos)
+
+58. Jak pracuje mapový server
+zpracovává klientovy požadavky a generuje výsledek, vykonává prostorové dotazy, řídí prostorové analýzy, generuje a předává mapy
+přijde dotaz na server s požadovanými map vrstvami a souřadnicemi zájmového území → MapServer vytvoří z území obrázek mapy se všemi vrstvami, legendu, refer. mapu → vše definováno v konfiguračním souboru → ke klientovi vrácen obrázek mapy, celá HTML stránka nebo výsledek dotazu do databáze
+
+59. Cookies
+malé textové soubory uložené na straně klienta
+umožňují uložení krátké informace na klientském počítači
+informace posílána na server spolu s každým požadavkem → identifikace jednotlivých klientů
+vzniká virtuální spojení mezi klientem a webovým serverem
+
+50. 60. Static web mapping
+využití (X)HTML formulářů a předávání parametrů do CGI aplikacei, jenž mapu zobrazí
+tvorba map a provádění dotazů včetně určitých omezených prostorových analýz na straně serveru
+výstupy jsou statické kopie originálních dat, jež jsou automaticky henerovány zválštními programy na serveru → částečně distribuované GIS služby
+základní klient velmi limituje uživatelskou interaktivitu
+pro uživatele pracující s mapami a prosotorovými objekty je nedostačující
+61. Definujte klíčově slovo SCALEBAR
+nastavení grafického měřítka
+
+63. Servlety - co, jak, k čemu
+implementují princip požadavek – odpověď
+Java Servlet API → množina tříd tříd definující standardní rozhraní pro obsluhu požadavků a odpovědi mezi klientem a serverem
+Server obdrží požadavek → server pošle požadavek na konkrétní servlet → servlet vytvoří odpověď a předá ji serveru → server pošle odpověď klientovi
+
+64. IPv6 vysvětlit na příkladu
+nová verze IP protokolu pro trvalejší řešení problémů s nedostatkem adres
+podpora bezpečnosti, mobilních zařízení a fce pro zajištění úrovně služeb
+adresa o délce 128 bitů, zápis jako osum skupin po čtyřech hexadecimálních číslech → 2001:0718:1c01:0016:0214:22ff:fec9:0ca5
+
+66. Napsat syntaxi kreslení polygonu v RSSGml 

@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-12-16T23:42:21+01:00
+
+====== 4 - Klimatický systém ======
+Created Neděle 16 prosinec 2012
+
+* pojmy: meteorologie, klimatilogie, počasí, podnebí
+
+===== Úplný klimatický systém =====
+* skládá se z atmosféry, hydrosféry, povrchu pevnin, biosféry, kryosféry
+* geografické faktory: zeměpisná šířka, nadmořská výška, rozložení pevnin a oceánů, sníh, sklon a orientace svahů, vegetační pokryv, mořské proudy
+* astronomické faktory - postavení Země, natočení, oběh
+* radiační - výměna energie
+* cirkulační - pohybu vzduchových hmot
+* antropogenní
+* všeobecná cirkulace atmosféry
+	* proudění - tryskové, cyklony/anticyklony, pasáty, monzuny
+	* výměna zonální (podél rovnoběžek), meridiální (podél poledníků)
+* **zpětná vazva**
+	* je důležitá vlastnost klimatického systému - v důsledku těchto vazeb se mohou __anomálie způsobené určitou počáteční poruchou zesilovat nebo zeslabovat__
+	* **kladná zpětná vazba (zesilování)** 
+		* př. vazba mezi teplotou vzduchu a rozsahem polárního zalednění
+		* pokles teploty může znamenat zvětšení rozsahu sněhové či ledové pokrývky, tedy zvýšení odrazivosti zemského povrchu, který odráží více sluneční energie než povrch bez sněhu a ledu, což vede k dalšímu poklesu teploty v okolí
+		* podporují nestabilitu klim. systému
+	* **záporná zpětná vazba (zeslabování)**
+		* zvyšují stabilitu
+
+
+

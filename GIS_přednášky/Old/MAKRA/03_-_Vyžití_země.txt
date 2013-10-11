@@ -1,0 +1,309 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-02-18T14:29:29+01:00
+
+====== 03 - Vyžití země ======
+Pondělí 18., 25. února a 3. března 2013
+
+* landuse = využití půdy (legislativní pojem)
+* vegetační kryt povrchu země, který je formován přírodní sférou modifikovaný lidskou aktivitou
+* __využití země:__
+	* podmíněno biofyzikálními faktory (přírodní sférou)
+		* makro, mezo, reliéf, nadmořská výška, sklonitost, expozice, nerostné zdroje, klima, vodní zdroje, půda, biota
+	* podmíněno socioekonomickými faktory (meliorace, zavlažování, vše, co chci i když tak krajina na to nemá)
+		* makro, mezo, suroviny, trh, nabídka, poptávka, doprava, dostupnost, pracovní síly, ekonomický cyklus
+	* humánní - tradice, majetkové poměry, organizovanost, vzdělanost, technické schopnosti, hustota obyvatelstva, mentalita, životní úroveň, politický a ekonomický systém
+* __výzkumné otázky:__
+	* **Co?** - smysl činností na daném typu krajiny
+	* **Kde?** - jednoznačné vymezení
+	* **Kdy?** - časový aspekt, aktuálnost
+	* **Jak?** - technologie
+	* **Kolik?**
+	* **Proč?**
+	* analýza aktuálního stavu → porovnání historický stav → hodnocení → porovnání ze způsobem využití krajiny
+* __klasifikace ovlivněna:__
+	* účelem, měřítkem, metodou zpracování, geog. polohou daného státu
+	* ČR základní klasifikace (používá se, není daná zákonem):
+		* les, orná půda, zahrady, sady, pastviny, louky, vodní plochy, zastavěné plochy, ostatní plochy
+	* Evropská národní klasifikace (je uzákoněna):
+		* je dána kódy, přeloženy do daných jazyků
+	* **RIVM10**
+		* po 10min. s.š.
+		* zabezpečuje ji FAO
+		* tabulková databáze, NUTS0-2
+		* LuStat, LuVec, LuGrid
+* **mapování krajiny:**
+	* celoplošné zachycení ekologické diverzity krajiny v 1:10 000
+	* cíl: přehled o současném stavu a rozložení různých společenstev v krajině pro navazující vymezení ekologicky významných segmentů krajiny (EVSK), vyžadujících péči a ochranu
+
+====== Data pro ČR: ======
+* převzetí z digitální mapové databáze (CORINE, DMÚ 25, ZABAGED, LPIS)
+* ruční digitalizace (ortofoto, rastrový ZABAGED)
+* automatická klasifikace DPZ (rektifikované snímky LANDSAT) ve spolupráci s terénním průzkumem
+* **ZABAGED** 
+	* __podrobnost:__ celá ČR
+	* __měřítko:__ 1:10tis
+	* __aktualizace:__ tak, jak je snímkování
+	* __poskytovatel: __zodpovídá ČUZK (Zeměměřický úřad)
+	* __formát:__ prostorová databáze (Oracle spatial), file systém: DGN, přesná konstruovaná linie, zachovává pravidlo jediné hranice
+		* **DNG (Microstation)**
+			* vrstvy = hladiny; objekt se skládá z hladin; popisy jsou taky jako hladiny (má 68 hladin)
+			* pravidlo právě jediné hranice (potok + hranice k.ú. → jedna hranice)
+			* neuzavřená topologie (2 silnice - mezi spojuje je kruháč → 2 hladiny: silnice + kruháče)
+			* __atributy:__ barva, hladina, @smlink (vazební prvek, který odkazuje do databáze, kde jsou informace o tom, kdy to bylo aktualizované, kdo to vytvořil, ..)
+			* postup pro konverzi (viz prezentace):
+				* zjistit verzi (hraniční je v8)
+				* DGN → konverze do DXF → převést zvlášť do linií a bodů
+				* vygenerování topologii (build poly)
+				* přiřazení ID point / polygon (prostorový join)
+				* převod bodu na polygon
+	* __souřadnicový systém:__ S-JTSK (nativní), WGS84
+	* má WMS službu
+* **DMÚ25**
+	* __poskytovatel:__ Armáda ČR
+	* __podrobnost:__ celá ČR
+	* __měřítko:__ 1:25tis.
+	* __aktualizace:__ 1 za rok - dnes neveřejné info
+	* __formát: __ ESRI libraries (dnes file geodatabase) 
+	* __souřadnicový systém:__ WGS84, S42
+* **CORINE LandCover**
+	* v 85 založeno Evropskou komisí
+	* 1. metodikou sesbírat data, 1 klasifikační metodou je zpracovat
+	* __účel:__ mezinárodní projekty, finanční ohodnocení
+	* **LandCover** (krajinný povrch), **Biotopes** (biotopy), **Air** (Ovzduší)
+	* **CORINE90** - mapování probíhalo 1986 - 1995 příliš dlouhé časové období, technologie se vyvíjely, ..)- 90 tříd
+	* **CORINE2000** - přebrali metodiku C90
+		* __poskytovatel:__ správu přebrala Evropská agentura životního prostředí (EEA)
+		* __formát:__ ke stažení i originální snímky
+		* slouží k analýzám prostorovým, porovnáním
+		* geometrie (do vrstvy CLC2000 se dostane jen jednotka s rozlohou min. 25ha, min. šíře 100m)
+		* vrstva změny 1990-2000 (min. 5ha jednoho prvku se muselo změnit)
+		* Project IMAGE2000 - databáze satelitních snímků
+		* __měřítko:__ 3 rozlišovací úrovně
+			* 1:1mil. - 5 tříd
+			* 1:5tis. - 1mil. - 15 tříd (v ČR 13)
+			* 1:100tis - 44 tříd (v ČR 28)
+		* __zdroj: __
+			* dotazovatelné WMS (geoportál nebo EEA)
+			* ke stažení na EEA po listech, které odpovídají snímkům LandSatu
+		* jeden atribut TAG - číselný kód → katalog (národního překladu)
+	* **CORINE2006**
+		* aktualizace v rámci projektu GMES
+		* __zdroj: __
+			* dotazovatelné WMS (geoportál nebo EEA)
+			* ke stažení na EEA po listech, které odpovídají snímkům LandSatu
+	* **CORINE2012**
+		* dochází ke snímkování, zpracování dat, k dispozici nejspíš počátkem příštího roku
+* **LPIS**
+	* __podrobnost:__ celá ČR, ale není to souvislé, jsou to jen pozemky, které byly nahlášeny v roce 2003, když se systém zaváděl
+	* __poskytovatel:__ Ministerstvo zemědělství
+	* __formát:__ prostorová databáze (Oracle spatial), podobné jako ZABAGED (DGN)
+	* __měřítko:__ 1:10tis
+	* __souřadnicový systém:__ S-JTSK
+	* __aktualizace:__ 
+	* //zemědělský hon// - souvislé území s jednou kulturou patřící jednomu vlastníku
+	* oficiálně nemá WMS službu (ale služba stále funguje)
+	* nejlepší zdroj na ověření kultur; má historii (zachovává stavová topologie v čase - vše v jedné vrstvě)
+* **mapování krajiny skrze metodou fyziotypů aktuální vegetace**
+	* 20 různých fyziotypů pro ČR (př. smrčiny, vodní a bažinná společenstva, ..)
+	* fyziotyp - účelové typy vegetace odvozené kombinací ekologických fyziognomických a floristických znaků
+	* kombinace se Zabaged
+	* 2 verze metodiky - jsou vzájemně převoditelné
+	* __měřítko:__ 1:10 tis. 
+* **mapování biotopů na základě fytocenóz**
+	* z hlediska (významných) fytocenóz významných z hlediska ochrany přírody a krajiny
+	* __měřítko:__ 1:10 tis. 
+* **mapování biotopů (NATURA 2000)**
+	* soustava lokalit chránících nejvíce ohrožené druhy rostlin, živočichů, přírodních stanovišť
+	* ochrana - v rámci EU (15% území EU je chráněná)
+	* aktualizace 1 za 10let
+	* 1 za 6 let se má reportovat Bruselu stav stanovišť (což vyžaduje mapování) - odevzdávají se formuláře + GIS data (shp)
+	* celá ČR
+	* **1. mapování **
+		* mapování 2000-2003, do ortofoto snímku
+		* __měřitko:__ 1:10tis
+		* špatná návaznost na hranicích mapových listů (toto nebylo odstraněno)
+		* zvlášť se zakresloval na pouzák bod, linie, polygon (linie jsou nepřesné)
+		* zvlášť se digitalizovaly geoprvky, poškození topologie
+		* atributy odkazují na Katalog biotopů ČR (Chytrý, Kučera, Kočí, 2001)
+		* zápis hranic + doprovodné popisné atributy
+		* zpracování v ArcView: __formát:__ shp, __souřadnicový systém:__ S-JTSK
+		* typ: mozaika (v atributech (= série atributů) je složení mozaiky (typ povrchu) v %) → nevěřit klasifikaci
+	* aktualizace se plánuje skrze web = WANAS (=modul nad ArcGIS server, určený k editaci), formát dat: centroid + navázané liniové hranice 
+			→ předělání topologie, atributy jsou přímo v aplikace (né v tom katalogu)
+		* data dostupná zdarma
+		* výsledkem mapování biotopů je NATURA 2000 - nenesou informaci o využití krajiny
+			* **Evropsky významné lokality EVL**
+			* **Ptačí oblasti **
+	* **data z CENSŮ**
+		* zdrojem statistických dat - dá se z nich odvodit využití země
+		* žádá se o ně na národní úrovni
+		* měřítko a formát odpovídá státu
+		* v ČR je udržuje ČSÚ, celá ČR, formát (excel, pdf) - jen atributy, geometrie - adresní bod (zdroj: RÚIAN, ČUZK - Zeměměřický úřad, UIR-ADR)
+		* agregováno na nějakou úroveň
+	* **administrativní data **(členění)
+	* **z přímého pozorování **(terénního mapování)
+	* **data z DPZ**
+	* **National Land Cover Database **
+		* zadarmo, z Landstatu, pokrává USA
+	* **Pan-european Land Use and Land Cover**
+		* Evropa, zadarmo jako služba, rozlišení 1km
+	* **International Geoshpere-Bioshphere Programme**
+	* **FAO **- zdarma, poskytuje opravdická data
+
+====== Historická data ======
+* časové řady neúplné, né vždy pro celou ČR
+* možno modelovat:
+	* délka trvání jevu, plynulost, dynamika
+	* změna krajinné struktury
+	* vývoj - vznik, trvání, zánik vazeb
+	* určení trvalosti
+
+===== 1. Písemné (statistické záznamy, zápisy) =====
+* lze je geokódovat
+* evidence pozemku a využití půdního fondu
+* soupisy půdy = pozemkové katastry
+* → 4 zemské pozemkové ruly
+	* **berní rula (1653 - 57) s revizitací (1667 - 82)**
+		* pouze pro zemědělskou půdu, poddanské půdy, soupisy a popisy měst
+		* __lze vyčíst: __
+			* stav osídlení, základní formy využití krajiny (zemědělská plocha, počet obcí, objektů)
+			* jaké zkázy a změny způsobila 30-ti letá válka
+			* které oblasti zůstaly nedotčené a mělo plynulý ekonomický vývoj po 30-ti leté válce
+		* nově přehledně zpracován, uspořádán
+	* **tereziánský katastr (1713 - 57)**
+		* rustikální a dominikální
+		* plošné výměry (v korcích) polí, lad, pastvin, vinic, chmelnic a lesů
+			* pole a louky rozepsané na tratě (= to je pole jednoho vlastníka)
+		* __lze vyčíst:__
+			* průměrná bonita půdy, seznamy rybníků (napuštěných, vypuštěných), mlýny, hamry
+			* údaje o počtu obyvatel podle farnosti
+			* vsi mají přidělenou farní příslušnost
+		* nově přehledně zpracován, uspořádán
+	* **josefský katastr (1985 - 89)**
+		* usedlost → pozemek (už není rozdíl mezi půdou dominikální a rustikální)
+		* geometricky vyměřen (jednotky 1 jitro)
+		* __lze vyčíst:__
+			* plošná výměra každého pozemku a jeho využití
+	* **stabilní katastr (1817 - 43)**
+		* císařský patent z roku 1817
+		* každých 15 let měl být revidován
+		* založen na přesném geometrickém měření - měřítko 1:2880, souřadnicový systém není jednotný
+		* pozemky mají parcelní čísla
+		* **duplikát stabilního katastru** - přidává bonitní třídu, čistý roční výnos, ..
+		* **oceňovací elaborát** - přidává info o klimatu, poloze pozemku, popis řek, rybníků, cest ... 
+		* **konečný elaborát** - tvoří tabulky upravené jako sešity velkého formát a shrnující hlavní statistická data stabilního katastru včetně sumarizace
+		* tabelární i mapová podoba, podrobný, precizní
+		* pojmy jako intravilán
+		* klasifikace
+		* kopie u Zeměměřičském ústavu ČUZK - http://archivnimapy.cuzk.cz
+	* **katastrální mapa (od 1817)**
+		* u každého pozemku určena půdní kultura
+		* evidence pozemkového katastru - narušena válkou
+		* od 48 vznik JZD 
+		* od 56 Jednotná evidence půdy - údaje o využití půdy bez info o vlastníkovi
+		* od 76 vrácena na úroveň katastrálních území
+* **veřejné knihy**
+	* železniční knihy, horní knihy, vodní knihy, pozemkové knihy
+* **obecní kroniky, pamětní knihy**
+* **urbáře a historické popisy šlechtických velkostatků a panství**
+* **lesní hospodářské plány** - aktualizují se dodnes
+* **farmářský registr (LPIS) **- neveřejný
+* **Agrocensus 2000**
+	* metodika EU a FAO
+	* 2003 a 2005
+* **statistické ročenky půdního fondu** - veřejně dostupná, ČUZK
+* **statistická ročenka životního prostředí**
+* **FAO**
+* **EUROSTAT**
+
+==== 2. Grafické ====
+* mapy, skici, pohledové obrazy 
+* **indikační skici**
+	* pro každou boec
+	* vznikaty 1825 - 1843
+	* lze sloučit k zjišťování výměry pozemků, administrativní a technické účely
+	* změny se zaznamenávaly šrafou
+* **mapy vojenského mapování**
+	* **I. vojenské Josefovské (1763 - 1787)**
+		* nemají geometrický základ
+		* lze zjistit procenta
+	* **II. vojenské Františkovo (1842 - 1852)**
+		* má geometrický základ
+		* lepší měřítko
+		* WMS, zbytek lze získat z ČUZK
+	* **III. vojenské Františko-Josefské**
+		* měřítko 1:25tis
+		* zdokonalilo se znázornění reliéfu a komunikací, barevné odlišení vodstva, luk, zahrad, lesů
+		* české popisy
+
+==== 3. Snímkové ====
+* letecké snímky
+
+
+====== Analýza ======
+
+===== Typy analýz =====
+* analytický
+	* zkoumání současného stavu
+	* zkoumaní historické podoby, změn a jejich důsledků
+	* sledování dynamických změn
+	* predikční - predikce do budoucna, co se stane když tohle změním
+	* lokační
+* syntetický
+	* modelování vývojových tendencí
+	* vyhledávání střetů a rizik
+* praktický
+	* hledání alternativních řešení pro nějakou činnost
+* časoprostorové modelování
+
+===== Analýza: =====
+* snažím se odvodit novou informaci
+* **časoprostorová změna**
+	* co se změnilo mezi 2-ma roky
+	* index změny: B-A / průměr(A,B)
+* **overlay pro detekci rozdílů**
+	* 2 atributy ze 2 vstupních zdrojů by si měly odpovídat
+	* přechodová tabulka - sumarizovaný přesný popis přesunu z kategorie do kategorie
+* **analýza persistence (stálost) ploch**
+* **analýza proměnlivosti (počtu změn)**
+* **LandCover**
+	* **= krajinný pokryv** je to, co je na povrchu vidět a je tvořen přírodními procesy
+	* kategorie homogenní a viditelně odlišné
+	* měřítko a rozlišení → hranice dány vodními toky, hranice mezi odlišnými ekosystémy, hranice cest, okraje zastavěných území
+	* klasifikace: vodní a suchozemský povrch
+	* = LandUse (pole, les, louka) + struktura pozemků (homogenní, fragmentovaná) + formace dřevinných porostů (lesní okraje, souvislé, bez porostu, ..)
+* **LandUse**
+	* **= využití země** je to, co přetvořil člověk, jak to člověk využívá
+* **predikce do budoucna**
+	* předpokládá se, že budou pořád stejné podmínky, že je člověk nezmění
+	* __software:__ Land Change Modeler for Ecological Sustainability	
+		* modul pro Idrisi, má i klon pro Esri
+		* první "vertikální" nástroj
+	* analýza změn - vstupem stávající a současný landuse → mapa trendu
+	* __modelování změn:__
+		* statický - nevyvíjí se v čase 
+		* dynamický - vyvíjí se v čase
+	* __metoda predikce - využití:__
+		* logická regrese (algoritmus geomod)
+		* neuronové sítě
+		* rozhodování na základě multikriteriálních analýz
+		* proměnné nesmí být kategorické, je třeba je převést na booleanovské soubory nebo je transformovat do škály (porovnáváme číslo s číslem)
+	* matematický algoritmus, který za daných vstupních podmínek, v daném území k určitému datu bude vypadat předpověď
+	* do modelování se zahrnují vstupní faktorů včetně těch lidských, dynamických změn
+	* __dělení:__
+		* **tvrdá predikce** - Markovy řetězce - výsledek je jenom jeden
+		* **měkká predikce** - výsledkem pravděpodobnostní matice 
+		* ideální kombinace obou predikcí
+		* **Markovy řetězce** - pracuje s pravděpodobností na časové ose, jaká je pravděpodobnost, že ta změna může nastat
+			* potřebuje dvojici obrazů krajinného pokryvu a matici pravděpodobnosti přechodu
+		* **Cellular automata** (celulární automata) - budoucí stav se posuzuje za základě současného stavu a stavu jeho sousedů, jestli se vůbec může změnit
+			* jaká bude hodnota pixelu, kt. sledujeme
+			* **filtrační** (filtr kolem pixelu, když kolem lesu je jen les) a **reklasifikační** soubor (v co se může změnit, př. les se můžu změnit v pole, zástavba se nemůže změnit ve vodní plochu)
+			* důležitý počet iterací
+			* pro jakou časovou platnost
+		* kombinace: 
+			* **rastr podmíněné pravděpodobnosti** - s jakou pravděpodobností bude každý typ krajinného pokryvu nalezen v každém pixelu po uplynutí definovaného počtu časových jednotek
+			* **matice pravděpodobného přechodu**
+			* **matice přechodových oblastí **- u kolik pixelů se předpokládá, že přejdou do jiné kategorie
+ 

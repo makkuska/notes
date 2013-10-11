@@ -1,0 +1,54 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-10-17T16:55:53+02:00
+
+====== GIS Project ======
+Created Pondělí 17 říjen 2011
+
+===== System components: =====
+[*] Operating system: GNU/Linux Ubuntu
+[*] Database: PostgreSQL		
+[*] DB Spatial Extension: PostGIS
+[*] Web server: Apache
+[*] Map server: Geoserver (+JRE)
+[ ] Visualization: OpenLayers + ExtJS → GeoExt	!!!
+[ ] Programming lang.: Javascript, PHP, HTML, CSS, XML
+[*] Desktop GIS: QuantumGIS	
+
+===== Tasks: =====
+[*] Installation + setup
+[*] Data selection and loading to DB (QGIS, shp2pg) (Hungarian EOV EPSG:23700)
+[*] Map composition and styling (Geoserver, SLD, OpenLayers)
+[ ] Viewer customization (GeoExt, HTML, PHP?): Map, Layers, Legend, Tools
+[ ] Extra features: uploading user data from file (tracklog), create user contents (POIs with photos), geotools (selection, buffer, network), download (kml)
+
+===== Milestones: =====
+Please write here some date with expected results…
+[*] 3. October 2011: DB + Geoserver is installed, configured	
+[*] 14. October 2011: Vector dataset is loaded into the DB, Geoserver is tested
+[*] 18. October 2011 : SLD Styling, Creating layer groups
+[ ] ……………….	……………….
+
+===== Results: =====
+* Running DB and web services
+* Customized web interface for visualization of geodata (using GeoExt)
+* Some extra tools → 16. December 2011
+* Project documentation (10-15 pages) → 20. January 2012
+
+===== Links & Books =====
+* 1) PostGIS in Action (link)
+	* You can read the whole book, but I think, it will be enough: Part 3 / Chapter 11 and Chapter 12.3
+* 2) OpenGeo Tutorials with data
+	* Introduction to GeoServer http://workshops.opengeo.org/geoserver-intro/ -> SLD Styling http://workshops.opengeo.org/geoserver-intro/styling/index.html#geoserver-styling
+	* Introduction to OpenLayers http://workshops.opengeo.org/openlayers-intro/
+	* Developing OGC Compliant Web Applications with GeoExt http://workshops.opengeo.org/geoext/
+	* Spatial Database Tips and Tricks → extra tools (?) http://workshops.opengeo.org/postgis-spatialdbtips/
+* 3) Openlayers Examples http://openlayers.org/dev/examples/
+* 4) GeoExt Examples http://geoext.org/examples.html
+
+===== Data =====
+* Vector data have to be uploaded to the DB. All data have Hungarian EOV coordinates, but you have to check and define it in QGIS, EPSG:23700.
+* Raster data should be converted to other raster format (that Geoserver can handle), might be… :)
+
+Don’t forget, max. (and min.) 5 hours per week! :) I hope, you can use this work in your bsc thesis… And if you have any questions… 
+

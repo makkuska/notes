@@ -1,0 +1,130 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-01-03T20:25:34+01:00
+
+====== 8 - Internetový GIS ======
+Pondělí 05 listopad 2012
+
+===== Historie vývoje mapových služeb =====
+* 89 - vytvořen WWW v Cernu
+* 92 - Open GRASS
+* 94 - OGC
+* 95 - JAVA
+* 97 - UMN MapServer
+* 2000 - ArcIMS
+* 2001 - GeoServer, SVG
+* 2004 - OpenStreetMap
+* 2005 - Google maps, Google Earth, KML
+* 2006 - OpenLayers
+
+===== Distribuce geodat =====
+* způsob šíření dat, kdy jsou uživatelům zpřístupněna geodata ke stažení v jejich surové nebo upravené podobě
+* formát - shapefile, geoTiff
+* jsou oddělena od prohlížečů — vhodné mít aktuální verzi prohlížečů
+* data možné použít jako data pro další analýzy a aplikace
+* k přenosu protokoly HTTP, HTTPS, FTP, SFTP
+
+===== Publikace geodat na Netu =====
+* = vizualizace
+* umožňuje interaktivně procházet mapou
+* přestup přes SQL
+* Tenký klient - jen pro vizualizaci, většina webový prohlížeč
+* Tlustý - možnost manipulace, přístup k datům
+* __výhody:__ nízké náklady na vybavení klientské pracovní stanice programovým vybavením, klientem www browser, jednoduchá správa z hlediska klienta, data i aplikace umístěny centrálně, snadné zvýšení počtu uživatelů
+* __nevýhody:__ relativně obtížné propojení s jinými aplikacemi, zvýšené nároky na výkon serveru, nedostatečná rychlost spojení
+
+===== Sdílení geodat =====
+* služba, která umožňuje uživatelům dostat se k prostorovým datům umístěných na serverech, které sdílení podporují a možnost s těmito daty dále pracovat jako s plnohodnotnými daty, přítomnými na lokálním počítači
+* fyzicky uložena na vzdáleném serveru
+* standardizovaná rozhraní a formáty (př. WMS, GML, SVG)
+* možno použít wms jako podkladovou vrstvu
+
+====== GIS technologie ======
+* **statické mapy**
+	* server na požádání pošle kopii html stránek s připravenými obrázky map klientovi
+	* mapa je pevnou součástí stránky, formát jpg, png, svg
+	* formát obrázku musí být podporován protokolem MIME
+	* klady a zápory vymyslíš :-D
+* **klikací mapy **
+	* <map name="mapa"><area coord>
+	* čtverec, obdélník, kruh, mnohoúhelník
+* **klientově orientovaná**
+	* interaktivita na straně klienta (v okně klienta)
+	* odpovědi na dotazy jsou předem připravené - připravené výřezy, obrázky rozdělené do dlaždic
+	* tedy možnost zoomovat
+	* programování JavaScript, Ajax
+	* pouhý web server s obrázkama a html kódem
+* **serverově orientovaná aplikace**
+	* webový + mapový server (+ datový server)
+	* na straně klienta jen prohlížeč - dotazy na webový server
+	* komerční (ArcIMS), nekomerční (UMN, Geoserver)
+	* __static web mapping__
+		* využití html formulářů a předávání parametrů do CGI aplikace, jež zobrazí mapu
+		* tvorba map a provádění dotazů včetně určitých omezených prostorových analýz se odehrává na straně serveru, na straně klienta pouze prezentace výstupů
+		* předávání výstupů pomocí http protokolu do CGI aplikace
+		* ve formulářích často hidden skrytá pole, která uchovávají informaci o stavu aplikace
+	* __interaktive web mapping__
+		* doplnění klientů o interaktivní prvky pomocí DHTML, Java applets, ActiveX či pluginů
+		* mapy se generují na vyžádání
+		* potřeba softwarového řešení - propojení web a map serveru
+		* GeoMoose
+	* CGI jádro aplikačního serveru
+* **API** - "light" mapový server
+	* Application Programming Interface - rozhraní pro programovaní aplikací
+	* sbírka procedur, funkcí a tříd knihovny
+	* založena na známých standardních protokolech
+	* rychlá impementace
+	* potřeba dobrá dokumentace, dobrý poměr čas/vzhled funkce
+	* není potřeba serverových prostředků
+	* jen pro omezené množství dat, omezená funkcionalita	
+* **RIA (Rich Internet Application) = internetová aplikace**
+	* zvyšují se nároky na: komplexnost grafického rozhraní, user-friendly rozhraní, webové mapové aplikace ovládáním podobné desktopovým řešením (drag&drop, klávesové zkratky, ..)
+	* důvodem těchto aplikací je omezené možnosti prezentačních technologií (HTML, CSS) pro komplexní grafická rozhraní
+	* internetová aplikace, která se striktně nedrží žádost - odpověď
+	* přímí interakce - RIA využívají bohatší spektrum ovládacích prvků - umožňují vyšší efektivitu a komfort pro uživatele
+		* prvky stránky lze přímo editovat, přesouvat
+	* obnovování části stránky - RIA obsahují doplňkové technologie - real-time streamování, výkonné virtuální stroje běžící na strašně klienta, cacheovací mechanismy - rychlejší odpovědi
+	* //Flex (Adobe)// - využití technologie Flash, interaktivní uživatelské rozhraní (s podporou Flash)
+	* //OpenLaszlo// - XML + JavaScript
+	* //Silverlight// (Microsoft) - konkurence Flexu; XAML + JavaScript, vazba na .NET
+	* //Java FX// (sun) - GPL lic., JAva Runtime, základem JavaFX script
+* __GIS Technologie pro web:__
+	* OpenLayers
+	* GoogleMaps API
+	* p.mapper
+	* MapBender
+	* OpenStreetMap
+
+====== Klienti ======
+* **tlustý klient**
+	* na straně serveru služba, která zpracovává požadavky klienta do formy dotazů do příslušného datového uložiště, obdržená data přeposílá zpět
+	* data se na serveru nezpracovávají
+	* vykreslení dat provádí klientská aplikace př. ArcGIS na strašně klienta, ArcSDE na straně serveru
+	* vlastní data se přenáší ve formátu stanoveném příslušným GIS
+	* výjimkou  WMS, kde se data přenáší v XML dle OGC
+* **střední klient**
+	* dvě úrovně - komunikace probíhá přímo mezi klientem a serverem
+	* server vygeneruje grafické objekty, které odešle klientovi
+	* klient obdrží obrazy objektů vytvořené podle svých požadavků
+	* např. obraz parcely jako polygon vyplněný zadanou barvou x obraz ulice jako linii příslušné barvy a tloušťky
+	* výhody: minimalizuje počet dotazů na server, klient si vystačí s již přenesenými data a vyžádá pouze minimální počet nových objektů, nároky na HW jsou rozděleny mezi klientem  a serverem
+	* nevýhody: klient musí mít instalovaný odpovídající software, jednorázově se muže přenášet velké množství dat, k přenosu dat nelze použít žádný ze standardních formátů
+* **tenký klient**
+	* klient neobsahuje aplikační logiku, tu zprostředkuje aplikační server, přenáší se pouze obrázek, všechny operace probíhají na serveru
+	* výhody: přenos malého množství dat, standardní formáty dat, minimální zátěž na klienta, přístupná odkudkoliv
+	* nevýhody: použití prohlížeče omezuje funkčnost, při každé změně se vygeneruje nový obrázek, zátěž na serveru
+
+====== Interaktivita na straně klienta ======
+* ECMAScript
+* Macromedia Flash
+* Dynamické HTML
+	* JavaScript, VB Script
+	* DOM
+	* CSS
+	* Plug-in
+	* ActiveX controls
+	* Java aplet prohlížeče
+	* AJAX
+	* JSON
+	* DOJO
+	* Mash-up

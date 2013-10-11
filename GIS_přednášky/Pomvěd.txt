@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-09-09T22:14:12+02:00
+
+====== Pomvěd ======
+Created Pondělí 09 září 2013
+
+* 1) simky - telemetrie (2h)
+	[*] 10.9. pošle info o tom, jaké simky shánět 
+	* měla bych to zjistit do 14dní tedy do 23.10.
+* 2) SQL lite - 2,5h
+	* zadání:
+		* webový přístup - skrze web se dostat do sqlite
+		* knihovna sql + apache + php
+		* povolit konfiguraci
+		* gaia-gis.it
+		* najít návod
+		* vyzkoušet, zda to jde na linuxu, pak to rozjet na windows (na Pechancově kompu to nejede)
+	* 9.10. (1hodina) Linux
+		* instalace //(sqlite, sqlitebrowser,) sqlite-bin, sqlite-gui, php5-sqlite//
+		* http://www.gaia-gis.it/spatialite-2.4.0-4/splite-php.html TOTO?
+	* 1.10. (od 21:30 - 23:00)
+		* instalace php5-cli, sqlite3
+		* editace etc/init.d/php.ini:
+			* [sqlite3]
+			  ;sqlite3.extension_dir = __/var/www/sqlite3-ext__
+		* nešel mi restartovat apache, tak jsem zakomentovala řádek __214 # Include httpd.conf__
+		* __php log: /var/log/apache2/error.log__
+* 3) Flex (4hodiny-odhad)
+	* upravit prezentaci (v OpenOffice)
+	* podle prezentace z loňska
+* 4) cvičení zadání
+

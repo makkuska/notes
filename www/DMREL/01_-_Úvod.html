@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title></title>
+		<meta name='Generator' content='Zim 0.52'>
+		<style type='text/css'>
+			a          { text-decoration: none      }
+			a:hover    { text-decoration: underline }
+			a:active   { text-decoration: underline }
+			strike     { color: grey                }
+			u          { text-decoration: none;
+			             background-color: yellow   }
+			tt         { color: #2e3436;            }
+			pre        { color: #2e3436;
+			             margin-left: 20px          }
+			h1         { text-decoration: underline;
+			             color: #4e9a06             }
+			h2         { color: #4e9a06             }
+			h3         { color: #4e9a06             }
+			h4         { color: #4e9a06             }
+			h5         { color: #4e9a06             }
+			span.insen { color: grey                }
+		</style>
+	</head>
+	<body>
+
+<!-- Header -->
+
+	[ <a href='../DMREL.html'>Prev</a> ]
+
+			[ <a href='/'>Index</a> ]
+
+	[ <a href='./02_-_Interpolace.html'>Next</a> ]
+
+<!-- End Header -->
+
+<hr />
+
+<!-- Wiki content -->
+
+<h1>01 - Úvod</h1>
+
+<p>
+Created Pondělí 14 února 2011<br>
+</p>
+
+<p>
+<ul>
+<li>způsob vizualizace dat - 3D - papírový, plastový</li>
+<li>reprezentace reálného objektu</li>
+<li>Model je objekt nebo koncept, který je použit pro vyjádření něčeho jiného. Je to zmenšená realita, převedená do formy, kterou můžeme pochopit. (Meyer)</li>
+<li>používán pro vyjádření současné situace (systému, jevy), navrhované či předvídané situace</li>
+<li>zmenšená krajina</li>
+<li><strong>3 typy:</strong></li>
+<ul>
+<li><u>koncepční</u> (1.fáze) - model určitěného objektu, situace v mysli člověka</li>
+<li><u>fyzický</u> - analogický model z 3D tiskárny, z gymu, plastu; stereomodel založený na optické či mechanické projekci</li>
+<li><u>matematický</u> - využívá matematický výrazů - vzorce, proměnné, funkce; používám pro popis terénu</li>
+</ul>
+<li><u>kritéria:</u> správnost, přesnost, popisná věrnost (model je založen na správných předpokladech, věrně popisujích skutečnost), robustnost (odolný vůči chybám v datech), všeobecnost, univerzálnost, užitečnost, jednochudost (založen na co nejmenším počtu proměnných)</li>
+<li><strong>historie vyjádření reliéfu </strong></li>
+<ul>
+<li>počátky digitálního modelu terénu</li>
+<ul>
+<li>vytvářeny urbanisty, krajináři, stavaři, ...</li>
+<li>využití analogových modelů během války - 2. sv, bitva o Falkladny (80.léta) - z písku a jílu</li>
+</ul>
+<li>kresba - nejstarší způsob znázornění, informace o barvě a tvarech</li>
+<li>mapy </li>
+<ul>
+<li>ve starověku se používaly obrázky a symboly → nepříliž dobrá metrická přesnost</li>
+<li>dnes navržený systém souborů a propravovaný matemický základ →  vysoká metrická přesnost</li>
+</ul>
+<li>vrstevnicové topografické mapy </li>
+<ul>
+<li>používaný od 18.stol - výška terénu a morfologické informace dle měřítka</li>
+<li>linie (vrstevnice)</li>
+<li>využití 2D vyjádření pro 3D realitu</li>
+</ul>
+<li>fotografie - od 1849</li>
+<ul>
+<li>pomocí stereogrametrie je možné odvozovat i nadmořskou výšku</li>
+<li>zavedení matematických digitálních technik díky fotogrametrům</li>
+<li>satelitní snímky, letecké snímky - pořizují snímky v překryvy, radary</li>
+<li>perspektivní zobrazení - mechanická i optická</li>
+</ul>
+<li>blokdiagramy, perspektivní vrstevnicové diagramy</li>
+<li>digitální modely reliéfu</li>
+<ul>
+<li>první DMR v 50.letech v MIT (Massachusetts Institute of Technology) v Bostnu</li>
+<li>využito 3D souřadnic získaných ze stereo modelu → digitální profily</li>
+<li>optimalizované pro návrh silnic, dálnic, generování vrstevnic</li>
+<li>od 70.let - analýzy terénu</li>
+<li>první modely v Cadech, profily náspů při tvorbě dálnice</li>
+<li>digitální data, počítačově zpracovaný</li>
+</ul>
+</ul>
+<li><strong>znaky DMT</strong>: </li>
+<ul>
+<li>různé formy pro vyjádření - topografické mapy, příšné, podélné řezy, 3D animace</li>
+<li>trvanlivost - během času nestrácí svou přesnost </li>
+<li>flexibilita - integrace</li>
+<li>aktualizace</li>
+<li>jednoduchá změna měřítka </li>
+</ul>
+<li><strong>definice:</strong> DMR je digitální reprezentací reliéfu terénu, která je složena z dat a interpolačního algoritmu umožňujícího odvozovat nadmořskou výšku v libovolných bodech nacházejících se uvnitř modelované oblasti. </li>
+<li><strong>terén:</strong></li>
+<ul>
+<li><u>nepravidelnost</u> </li>
+<ul>
+<li>místa s hladkým průběhem</li>
+<li>místa, kde je hladkost narušena </li>
+<ul>
+<li>terén je nepravidelný - podél linií, vrcholy, hrany, sedla, údolnice, hřbetnice = singularity </li>
+</ul>
+</ul>
+<li><u>anizotropie</u> - vlastnosti terénu jsou závislé na směru a dalších činitelích (klima, geologii)</li>
+<li><u>fraktální struktura</u> </li>
+<ul>
+<li>opakuje se stejná nepravidelná struktura v různých měřítcích, až vznikne věrný obraz povrchu</li>
+<li>systém výběžků a zátok</li>
+<li>struktura se fyzicky neopakuje zcela přesně, ale statisticky ano - míra této nepřevidělnosti se označuje jako fraktální dimenze</li>
+</ul>
+</ul>
+<li><strong>terminologie:	</strong></li>
+<ul>
+<li>digitální model reliéfu (<u>DMR</u>), digitální model terénu (<u>DMT</u>) ang. digital terrain model (DTM) - může obsahovat terénní hrany, průběh řek, výšková data, hrany, vrcholy, polygony</li>
+<li>digitální výškový model (<u>DEM</u> - digital elevation model) - pouze výškové body (vrstevnice)</li>
+<li>digitální model povrchu (<u>DSM</u> - digital surface model) - TIN, včetně budov, stromů, všeho</li>
+<li>digitální topografický model, digitální model území (<u>DMÚ</u>), ang. digital landscape model (DLM) - datová sada (obsahuje i výškopis) </li>
+<li>digitální model krajiny (<u>DMK</u>) - systém 3 rozměrný - 1. část reliéf, 2. část představují přírodní prvky, 3. část antropické prvky (vytvořené člověkem)</li>
+</ul>
+<li><strong>omezení DMR </strong></li>
+<ul>
+<li>DMR nejsou 3D, ale je to perspektivní model (max. 2,5D) </li>
+<li>voxel (né pixel) -- více Zi v jednom bodě</li>
+<li>diskrétní reprezentace povrchu - přestože se tváří jako hladký</li>
+<li>nelze srovnávat DEM o různém rozlišení a DEM odlišné geneze (př. nelze srovnat rastr s TINem)</li>
+</ul>
+<li><strong>základní oblasti využití:</strong></li>
+<ul>
+<li>stavební inženýrství - projektování silnic, železnic (náspů, zářezů), příčných profilů</li>
+<li>vodní hospodářství - vodní kanály, přehrady (př. simulace kritické vodní hladiny)</li>
+<li>DPZ - ortorektifikace snímků (odstranění nepřesností vlivem různé výškové členitosti terénu), korekce zastínění v důsledku měnícího se sklonu a orientace</li>
+<li>životní prostředí a geovědy - modelování povětrnostních situací, oslunění svahů, modelování povodní, hydrologické analýzy, modelování sesuvů</li>
+<li>zemědělství a lestnictví - precizní zemědělství (sklon, typ půdu, pěstované plodiny), eroze půdy, lestnictví</li>
+<li>armádní inženýrství - simulace letu, bitvy, analýzy viditelnosti pro radoravý průzkum</li>
+<li>územní plánování</li>
+<li>cestovní ruch</li>
+<li>hornictví</li>
+<li>vizualizace krajiny</li>
+<li>plánování mobilních, radiových, komunikačních sítí</li>
+</ul>
+</ul>
+</p>
+
+
+<!-- End wiki content -->
+
+<hr />
+
+<!-- Backlinks -->
+
+	Backlinks:
+
+<!-- End Backlinks -->
+
+	</body>
+
+</html>

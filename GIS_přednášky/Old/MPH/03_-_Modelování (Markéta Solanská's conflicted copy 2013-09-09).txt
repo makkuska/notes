@@ -1,0 +1,104 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-03-05T12:24:27+01:00
+
+====== 03 - Modelování ======
+Úterý 05. března 2013
+
+==== Nasazení GIT ====
+* role GIT - analýza interakce mezi lidmi a ŽP
+* identifikace a plánování
+* zmírnění, otestování připravenosti území
+* připravenost
+* odpověď, reakce
+* obnovení
+* využití DPZ	
+	* rychlá dostupnost dat
+	* družice, radary
+	* senzory
+	* snadné monitorování těžce přístupného terénu
+	* data nemusí být jen výsledkem - data mohou vstupovat do jiných projektů a modelů
+	* velká náročnost na odborníky
+* využití GIS
+	* v krajinném plánování
+	* využití krajiny - výstavba preventivní opatření
+	* rychlá prostorová analýza
+	* systém organizace
+	* zpřístupnit data médií
+* krizová místa v krajině
+
+===== Modelování =====
+* __modeluje se pro:__
+	* reprodukci, dokumentaci, prognózu stavu, jevu a procesu
+	* vizualizaci
+	* experimentování s proměnnými
+* největší důraz se klade na mapování (před, aktuálně, po)
+* největší slabina - data
+	* hardware je silný, software ok, lidi jsou schopní, data chybí
+* vývoj online technologií (sledování hrozby na mobilu)
+* matematické modelování
+	* 1. fáze - koncepční analýza problému - proč, kdy, jak - rozmyslet
+	* 2. fáze - sestavení modelu z daných veličin
+	* 3. fáze - verifikace modelu
+	* 4. fáze - stanovení míry a oboru platnosti (s jakou přesností je to použitelné, jak je to robustní systém)
+	* černá skříňka - neznámý mechanismus procesu - na základě pozorování
+	* šedá skříňka - je znám aspoň částečně
+	* bílá skříňka
+* prostorová data 
+	* důraz by měl být klade na integraci dat
+	* informace je potřeba však předat ve formě, kterou potřebují (informace musí dorazit do několika skupin lidí - hasiči, obyvatelé, média, policie, ..)
+* hlavní oblasti modelování
+	* opatření proti vzniku hazardů
+	* plány pro obnovu po katastrofách
+	* krizová hlášení
+	* management využití krajiny
+* požadavky:
+	* data musí být aktuální
+	* dynamické znázornění
+	* automatizované procesy sběhu a procesu dat  (aby nedošlo k přesycení informací)
+	* interoperabilita (=schopnost systémů vzájemně si poskytovat služby a efektivně spolupracovat): 
+		* sdílení dat, modelů a algoritmů, znalostí, webové technologie, sdílení dat v řídících centrech
+	* dostatečně rozlišení: GTOPO30 (grid DEM cca 30m) - není dostatečné; dobrá laserová data
+* historie se zkoušet nebude
+	* Gilbert White
+	* přístupy: 
+		* hazard-based (geografický - znám příčinu vzniku)
+		* disaster-based view (sociologický)
+
+====== Modely: ======
+* __teoretické:__
+	* deterministické
+		* mají pevný výsledek pro specifický výstup
+		* 2 části:
+		* deduktivní - snažíme se postupovat od obecných pravd k konkrétním závěrům
+		* induktivní - vychází z jednotlivých faktorů - opačné
+	* fyzikální
+	* vychází ze znalostí pochodů (př. sesuvů)
+* __empirické:__
+	* regresivní
+	* prahové
+	* statistické - dvou a více rozměrné analýzy
+	* znalostní - přímé a nepřímé
+* __predikční modely:__
+	* predikují, odhadují budoucí vývoj
+	* iterační modelování - modeluje se v iteraci (opakování), přehodnoceno po každé iteraci
+	* scénářovité modelování - verze s takovýmto scénářem, změním jeden nebo víc parametrů
+	* ikonické modely krajiny
+		* podávají krajinu s max. možnou přesností
+		* profily, fotografie, 3D modely, blokdiagramy, 4D modely, ortofoto
+	* abstraktní modelování krajiny
+		* souvislosti mezi složkami krajiny, prvky, procesy, jevy
+	* symbolické modely krajiny
+		* nahrazeny matematickými symboly
+	* digitální model krajiny
+* modelovat můžeme strukturu a stav skutečnosti, libovolný proces, posloupnost stavů (jaká je frekvence) 
+* __podle použitý prostředků:__
+	* numerické
+	* grafické
+	* verbální - slovní popis, vlastnosti
+* __podle vztahu k času__
+	* statické
+	* dynamické
+* __podle použité technologie__
+	* tradiční
+	* **digitální**

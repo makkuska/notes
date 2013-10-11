@@ -1,0 +1,35 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-10-09T18:49:27+02:00
+
+====== GIT ======
+Created Středa 09 říjen 2013
+
+https://help.github.com/
+kurz CodeSchool Git Real
+* configurace GIT
+	* git config --global user.name "Markéta Solanská"
+	* git config --global user.email "magiess@volny.com"
+	* git config --global color.ui true
+* **HEAD** is last commit in current branch
+* **git status** - vypíše, co se změnilo od posledního commitu
+* **git log **- vypíše celou historii comitů
+* **git pull** - stáhne změny z webu
+* **git checkout - - názevsouboru** - blow away all changes since last commit
+* **git commit -a -m "bla"**
+	* = git add + git commit -m "bla"
+* ''git reset -- soft HEAD^ '' - vrátí soubory před jedním commitem
+* git reset - - hard HEAD^^  - vrátí a úplně smaže soubory před 1. i 2. commitem
+* git commit  - - amend -m "bla"
+	* přidá do předchozího commitu
+* git remote -v
+	origin	git@github.com:makkuska/solanska-ucetnictvi.git (fetch)
+	origin	git@github.com:makkuska/solanska-ucetnictvi.git (push)
+* pak vždy při každé změně
+	* git status
+	* git add -A
+	* git commit -m ""
+	* git push 
+		* nahraje změny na web
+	* git push -f
+		* nahraje změny a ignoruje změny, které vytvořil někdo přes web

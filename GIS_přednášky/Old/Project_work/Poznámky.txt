@@ -1,0 +1,58 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-10-17T17:36:11+02:00
+
+====== Poznámky ======
+Created Pondělí 17 říjen 2011
+
+* příklad Tobak -- Dokumenty/geoext_maros.html
+* /etc/init.d/geoserver stop → /etc/init.d/geoserver start
+* instalace podle http://funnymonkey.com/install-geoserver-ubuntu
+* login geoserver: admin, password: password
+* login: makubu, passw: dosys
+
+* vložit vrstvy, vytvořit skupinu vrstev, vytvořit symbologii
+	http://workshops.opengeo.org/geoserver-intro/styling/styles.html
+* barvy: http://www.jakpsatweb.cz/archiv/barvy-pojmenovane.html
+
+* instalace GeoExplorer: http://repo.opengeo.org/suite/releases/community/docs/OpenGeoSuite-2.4.3-README-linux.txt
+
+* GML
+	* <p>ML¶
+	
+	The GML layer is a vector layer subclass designed to read data from a file once and display it. It is ideal for working with many formats, not just GML, and can be configured to read other formats via the ‘format’ option on the layer.
+	
+	The simplest use case of the GML layer is simply to load a GML file. The GML Layer Example shows this: simply add:
+	
+	__var layer = new OpenLayers.Layer.GML("GML", "gml/polygon.xml")__
+	__map.addLayer(layer);__
+	
+	If you want to add a different type of format, you can change the format option of the layer at initialization. The KML example demonstrates this:
+	
+	__var layer = new OpenLayers.Layer.GML("KML", "kml/lines.kml", {__
+	__   format: OpenLayers.Format.KML__
+	__})__
+	map.addLayer(layer);
+	
+	You can also add formatOption to the layer: these options are used when creating the format class internally to the layer.
+	
+	__var layer = new OpenLayers.Layer.GML("KML", "kml/lines.kml", {__
+	__   format: OpenLayers.Format.KML,__
+	__   formatOptions: {__
+	__     'extractStyles': true__
+	__   }__
+	__});__
+	__map.addLayer(layer);__
+	
+	The format options are determined by the format class.
+	
+	For API information, see the GML Layer API Docs.</p>
+* OSM
+	* ''var layerMapnik = new OpenLayers.Layer.OSM.Mapnik("Mapnik");''
+	'''
+	  var layerTah    = new OpenLayers.Layer.OSM.Osmarender("Tiles@Home");
+	  var layerCycle  = new OpenLayers.Layer.OSM.CycleMap("Cycle map");
+	  map.addLayers([layerMapnik, layerCycle, layerTah]);
+	'''
+
+

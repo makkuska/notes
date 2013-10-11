@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-11-27T00:10:52+01:00
+
+====== MapServer ======
+Created Úterý 27 listopad 2012
+
+* **usr/share/proj/epsg**  -- cesta k nastavení projekcí pro mapserver
+
+==== Volání MapFile ====
+
+http://localhost/cgi-bin/mapserv?
+map=/var/www/BC_mapserver/data/pmapper_demo.map
+&LAYERS=countries%2Ccities10000eu%2Crivers
+&STYLE=
+&FORMAT=image%2Fpng
+&SERVICE=WMS&VERSION=1.1.1
+&REQUEST=GetMap
+&STYLES=&
+SRS=EPSG%3A4326
+&BBOX=-10.947097196531,52.716102803469,9.3715056069388,73.034705606939&WIDTH=256&HEIGHT=256
+
+http://localhost/cgi-bin/mapserv?map=/var/www/work/my/pmapper_demo.map&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&LAYERS=tlinie&STYLE=&SRS=EPSG%3A4326&BBOX=12,48,18,51&WIDTH=400&HEIGHT=300&FORMAT=image%2Fpng
+
+ http://localhost/cgi-bin/mapserv?map=/var/www/BC_mapserver/data/pmapper_demo.map&LAYERS=countries%2Ccities10000eu%2Crivers&STYLE=&FORMAT=image%2Fpng&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&SRS=EPSG%3A4326&BBOX=-10.947097196531,52.716102803469,9.3715056069388,73.034705606939&WIDTH=256&HEIGHT=256

@@ -1,0 +1,129 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-09-24T08:01:25+02:00
+
+====== 2 - Identifikace a protokoly ======
+Pondělí 24. září 2012
+
+=== IP protokol - internet protocol ===
+* základní protokol síťové vrstvy a celého internetu
+* posílá datagramy (samostatnou datovou jednotku, obsahuje adresu a další informace o adresátovi i odesílateli a pořadové číslo datagramu ve zprávě, pokud je delší) - 
+* datagramy putují nezávisle na sobě, na konci se seřadí
+* IPv4, předchod na IPv6 (verze 6)
+* IP adresa - každé zařízení má jednoznačnou identifikaci v prostředí Internetu
+* IPv4 (verze 4)
+	* 32-bitové číslo - 4 čísla v desítkové soustavě v rozsahu 0-255, každé z nich vznikne převodem osmi bitů adresy.
+	* adresa sítě (upol 159.194), podsítě, adresa počítače (zařízení)
+	* některé jsou rezervovány	
+		* localhost (lookback) adresy začíná 127.x.x.x - volám své vlastní zařízení, abych nasimulovala fungování v síti, prvek potom pvypadá jako jiný prvek
+	* typy adres:
+		* dynamické přidělování (DHCP)
+			* koncový prvek si v lokální podsíti nenese svou adresu, nadřazený prvek mu přidá nějakou adresu, která zařízení zůstává pokud se zařízení neodpojí - adresa je putovní
+			* počet adres je omezen
+		* překlad adres (NAT Network address translation)
+			* na začátku dostavou všichni svou adresu, která zařízením zůstává, ale jsou to adresy, které ve skutečnosti neexistují
+			* NAT - jednoduchý proxy server - zařízení se chce připojit, NAT zjistí jeho požadavek a dál je pošle jako kdyby byl jeho pořadavek
+			* problém, když dva chcou protichůdný dotaz
+* IPv6
+	* vyšší pravidla bezpečnosti, možnosti získání IP adresy mobilním veselým chytrým zařízením, rozšířené funkce
+	* délka 128 bitů, 8 skupin o 4 znacích; pokud je na začátku 0, může se vypustit
+	* typy adres:
+		* individuální - přiřazují se právě jednomu zařízení
+		* skupinové - přidělují se pro skupinu síťových rozhraní - proxy servery, mobily ve skupině, ..
+		* výběrové - data se doporučují jen jejím nejbližším členům
+	* od ledna 2012 jediný standard v Evropě
+
+=== DNS (domain name system) ===
+* převod jednoznačné číselní identifikace na slovní a opačně
+	* PTR záznam v PTR tabulce
+* DNS server - zařízení, které umí dělat překlad adres + protokol DNS
+* doména serveru, subdoména sítě, doména sítě - gislib.upol.cz
+	* čte se zprava doleva z hlediska důležitosti v síti
+* líp se pamatují názvy než číselné kombinace
+* primární DNS server - ten kde data vznikají, tabulka do které se zapisuje
+* sekundární server - automatická kopie primárního - kopie primárního, slouží jako záloha, popř. funguje při přetížení primárního
+* pomocný / caching only - eviduje jako dotazy se vyřizují, ty nejčastější se ukládají, aby odležčil, zrychlil, zefektivnil dotaz
+* odpověď pocházející od primárního či sekundárního serveru je autoritativní = je brána za správnou
+* DNSsec - DNS security - přidává se ještě jeden server, který zajišťuje bezpečnosti - HW architektura chráněna 7 klíči (2 z nich v ČR)
+
+=== TCP/IP (Transmission Control Protocol) ===
+* protokol používaný při přenosu dat prostřednictvím internetu
+* definována sadou protokolů pro komunikaci v počítačové síti
+* celá síťová komunikace je rozdělena do vrstev, každá vrstva využívá služeb nižších služeb a co může poskytuje vrstvě vyšší
+* členěna do 4 vrstev (od nejvyšší):
+	* aplikační
+		* programy, které využívají přenosu dat po síti ke konkrétním službám pro uživatele (Telnet, FTP, HTTP, DHCP, DNS)
+		* **porty** se používají pro rozlišení aplikačních protokolů (25 mailová komunikace, 80 HTTP)
+		* firewall
+	* transportní (přenos)
+		* sada pravidel, která umožňuje přenos
+		* spojovaná = spolehlivější (protokol TCP), nespojované = nespolehlivé (protokol UDP)
+	* síťová (navazování)
+		* zajišťuje síťovou adresaci, směrování a předávání datagramů
+		* protokoly - IP, ARP, RAPR, ICMP, ...
+	* síťové rozhraní (překlad)
+		* dráty (Ethernet, FDDI, X.25) - umožňuje přístup k fyzickému přenosovéhu médiu
+			* 2 x čtyři typy drátů
+			* obousměrná komunikace
+* historie internetu
+* první síť 1962 - propojení 2 počítačů kabelem
+
+=== HTTP protokol (verze HTTP 0.9, 1.0 a 1.1) ===
+* určen pro výměnu hypertextových dokumentů ve formátu HTML
+* port TCP/80
+* bezstavový (=nepamatuje si historii) protokol modelu požadavek/odpověď (=nic není vnucováno, klient se ptá, server mu odpoví)
+	* požadavek/odpověď
+		* 1) navázání spojení
+		* 2) zaslání požadavku klientem
+		* 3)
+		* 4)
+* původně jen pro hypertext
+* rozšíření 
+	* MIME - rozšíření o nestandardní soubory - soubor, obrázek, zvuk, pdf
+	* rozšíření pomocí formátu XML
+	* FTP, SMTP
+* HTTP načte webovou stránku, umí získat info o webové stránce (hlavička), odešle data z formuláře či skriptu vloženého do www stránky na HTTP server
+	* uživatel pošle dotaz serveru
+	* server odpoví pomocí několika řádků textu popisujících výsledek
+	* bezstavový - vždy se musí znovu navázat spojení a vyhodnotit dotaz (ikdyž jen posunu výřez mapy
+		* to se částečně řeší pomocí cookies (textový soubor, do kterého si server zapíše jednotné číslo = číslo jednací) - čili při novém navázání spojení se podívá do tohoto souboru
+		* snižuje se objem dat
+		* pamatuje si historii, nastavení webových stránek
+* metody dotazu (nejvíce používané get, head, post)
+	* pro verzi 0.9 <metoda><URL>
+	* pro verzi 1.0 <metoda><objekt - URL> HTTP/<verze>
+	* pro verzi 1.1 <metoda><URL> HTTP/<verze> Host: <hostitel -  př. www.server.cz> prázdný řádek
+	* GET - pořadavek na uvedený objekt, informace se přenáší pomocí url adresy
+	* HEAD - to samé jako GET, ale nepředává data, ale metadata k souboru (velikost, typ, datum změny, ..)
+	* POST - odešle uživatelská data na server, ale využívá se formulářů, data nejsou v url adrese, ale v doprovodném souboru
+	* PUT - nahrává soubory na server - používá se zřídka, zakázány při save modu
+	* DELETE - maže požadovaný soubor ze serveru
+	* TRACE - odešle kopii obdrženého požadavku zpět odesílateli - pošle v kopii jaký požadavek od vás obdržel
+	* OPTIONS - server odpoví jaké metody server používá
+	* CONNECT - spojí se s uvedeným objektem přes uvedený port
+	* struktura požadavku (metoda, url adresa, verze, hlavička, tělo dotazu) - ukázka viz prezentace
+	* struktura odpovědi
+		* verze protokolu, stavový kód (jestli byl zpracováván, jestli byl pozastaven, kde byl pozastaven - 1xx - ok, 2xx- úspěch, 3xx - přesměrování, 4xx - chyba na straně klienta, 5xx - chyba na straně serveru), stavové hlášení, hlavičky, oddělovač, tělo odpovědi
+		* stavový kód 
+			* 200 - pořadavek byl přijat, ale dosuk není zpracován
+			* 403 - zamítnutý požadavek, všechny je ok, ale server nemá práva to pro vás vykonat, nebo neexistuje index s definovanými právy
+			* 404 - pokud chcete objekt, který na serveru není
+			* 500 - při chybách na serveru
+			* 501 - při chybách na serveru - server nepodporuje metodu uvedenou v požadavku
+			* 502 - při chybách na serveru bad gateway
+			* 503 - při chybách na serveru služba nedostupná, např. při přetížení
+
+=== HTTPS ===
+* stejný protokol jako HTTP, odlišujese pouze v tom, že funguje na portu 443, data, která jsou přenášena, jsou šifrována
+* certifikáty vytvořeny (např. z balíku OpenSSL)
+* certifikát by měl být podepsán (certifikační autoritou - celosvětový VeriSign, ale česko ho nepodporuje)
+
+=== Další protokoly ===
+(viz prezentace)
+* ARP (address resolution protocol)
+	* pomocí toho se páruje mac adresa s IP adresou
+	* znám IP adresu - podle toho zjistím mac adresu
+	* RARP opak ARP
+* ICMP - používá se na kontrolní procesy - ping
+* TCP - transportní služby zajišťující přenos datagramu, na začátku naváže komunikaci mezi koncovými aplikacemi - spolehlivý přenos dat
+* UDP 

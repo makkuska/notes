@@ -1,0 +1,148 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-01-03T20:16:44+01:00
+
+====== 6 - Servery ======
+Pondělí 22 října 2012
+
+* server: počítač nebo proces, který poskytuje službu
+* v Unixu - démon, ve Widlích - služba
+* __druhy serverů:__ (poskytování služeb je realizováno pomocí aplikačního síťového protokolu)
+	* **webový server**
+		* protokol HTTP (Apache HTTP Server, Internet Information Services IIS, Sun Java System Web Server)
+		* statický obsah (předem připravený) x dynamický (vytvoří se podle požadavků klienta)
+		* fce: odpovídání na požadavky webových prohlížečů přes http
+	* **tiskový server **- protokol LPD
+	* **souborový server** - protokol SMB (sdílení disků, tiskáren)
+	* **databázový server**
+		* uložiště strukturovaných dat, vyhledávání
+		* spravuje data, prostorová i neprostorová, v relační nebo nerelační datové struktuře
+		* klient jako web server nebo map server získávají přístup do databáze skrz SQL
+		* př. ODBC, Java Database Connectivity (JDBC), ActiveX Data Object (ADO)
+		* MySQL (GPL licence), PostgreSQL (BSD licence) - rozšířitelnost, PostGIS, Tsearch2 (fulltextové vyhledávání), Slony-I (master to multiple slaves replikace)
+		* databáze s podporou prostorových dat: **PostgreSQL (PostGIS), Oracle Database (OracleSpatial), MySQL, MS SQL, Firmware Database, SQL Light**
+		* terminál, emulátor terminálu (phpMyAdmin, Janitor - SQL tools, QGIS nástavba	)
+	* **faxový server**
+	* **proxy server **- zprostředkovává ostatním uživatelům sítě přístup do sítě jiné (př. Internet)
+	* **aplikační server**
+		* specializovaný na provoz nějaké aplikace, př. MapServer, CGI model, CGI extenze, Apctive Server Pages, Apple's WebObject, JSP servlets
+		* možné odpovědi: 
+			* poslání existujícího HTML dokumentu nebo hotového mapového obrázku klientovi
+			* poslání Java applets nebo ActiveX controls webovému klientovi
+			* předání požadavku a vyvolání dalšího program, který zpracuje požadavek 
+	* **herní server**
+
+====== Interaktivita na straně serveru ======
+* server-side scripting
+* dynamické generování webového obsahu/rozhraní
+* znaky:
+	* tenký klient - bez hardwarových nároků
+	* bezstavovost - neuchovává spojení s klientem, nepamatuje si nic
+	* ke každému klientu se musí chovat samostatně, žádné globální funkce (typu výřez mapy)
+* identifikace klienta:
+	* Cookies - identifikuje klienta tím, že si o něm uloží základní údaje, uloží si jej u něj v počítači a při dalším spojení si jen nahraje ten soubor z počítače klienta
+	* session proměnná - neukládá to v klientovi, ale na serveru do databáze; 
+* prostředky skriptování:
+	* externí aplikace napojená na web server
+	* aplikační server, která řeší i webový přístup
+	* webový kontejner, který umožňuje aplikační komunikaci - v členěno pod server, řídí web, používá knihovny
+	* embedded skriptování
+
+===== CGI (common gateway interface) =====
+* protokol, jak předat parametry webovému serveru
+* snaha přidat na webové stránky vyšší funkcionality a interaktivitu
+* ten co zpracovává požadavky klienta (server jen předává požadavek cgi)
+* platformní závislost
+* bezestavovost - nepamatují si nic (řeší se cookies nebo session)
+* vysoká systémová režie - zabírá dost paměti při zpracovávání
+* nízký výkon - každý požadavek nastavuje nový proces
+* bezpečnost - riziko pro webový server, protože se skládá z nativních kódů (exe, dll), která mají přístup k dalším nativním programům
+* vhodné pro nižší počet současně volajících programů
+* princip práce:
+	1. adresa Ulice=Bla&Mesto=Olomouc - shromáždí data z vyplněného formuláře - sestaví řetězce páru jmen proměnných a hodnot a oddělí & 
+	2. na serveru zachytí požadavek, rozebere adresu, 
+	3. -12. není v prezentaci
+* CGI+ rozšíření
+* po dokončení procesu se neukončují, ale zůstávání připraveny v paměti na další požadavky
+* v C++, rychlá, ložitá na programování, bezpečnostní problémy
+* (NSAPI) WAI - nové řeší rychlejšího CGI od Netscapu
+* Javasoft servlets, Allaire Cold Fusion (má řešení i nad mapovými servery)
+* mapové servery pořád u CGI
+* šablony
+* každá stránka, která se má dynamicky vygenerovat, se skládá ze dvou souborů
+	* soubor DC s SQL dotazem
+	* soubor HTX = html stránka, viz bakalářka moja
+	* velmi omezené programování
+
+===== Skriptovací jazyky v kódu stránky =====
+* jednoduše propojeno, vložen do html kódu, (nečitelná změt znaků)
+* uložené v paměti, aby se s každým procesem nemusely zapínat
+* odpovědi nejsou připraveny, musí se generovat
+
+==== PHP Hypertext Presprcessor PHP ====
+* vkládá se do kódu html, umístěn na strašně serveru, jen výsledek je přenášen do výsledné stránky
+* nezávislý na platformě, zcela zdarma
+* pro webové i desktopové, pro textové i grafické xindly, práce se soubory
+* jednoduchá syntaxe, kombinuje ji s několika programovacími jazyky (Perl, C, Java)
+* přístup k databázi
+* podpora řady internetových protokolů (POP3, HTTP, FTP, ...)
+* dynamicky typovaný - datový typ definuji až v okamžiku přiřazení hodnoty (pro porovnání se používají dvě rovnítka
+* heterogenní pole - obsahuje hodnoty včetně jejich indexů
+* obsah se uzavírá do uvozovek, rozdíl mezi "obsahu je parsová" 'obsah není parsován' 
+* instalace 2 způsoby - php.exe nebo modul Apache, nebo jiného webového serveru → to ovlivňuje rychlost
+* zpracování formulářů
+
+==== JAVA ====
+* programovací jazyk včetně platformy, obsahuje mnoho hotových knihoven tříd, nebo ve formě API
+* objektově orientovaný
+* používá koncept virtuálního stroje - abstraktně definované prostředí spolu s příslušným emulátorem, načítá se to ze zdrojáku a zde se spouští
+	* kód - přeloží se do Java VS - spouštěcí prostředí se skládá z emulátoru a řady knihoven tříd - Java RunTime
+* zdrojový kód .java
+* Java applety, desktop aplikace, CGI programy
+* **JavaServerPage JSP **skriptovací jazyk určený pro server, používá se přímo ve webové stránce
+	* **Servlet** - program v jazyce Java, běží na straně serveru
+	* napíšu kód v JSP (ve html kódu), Servlet zpracovává 
+	* 4 typy elementů:
+			1. skriptovací elementy a proměnné
+			2. direktivy
+			3. instrukce
+			4. elementy XML
+		* deklarace <%! %>
+		* výraz <%= %>
+		* skriplety <% %>
+		* základní princip:
+			1. dokument JSP umístíme na server - kde je spuštěn kontejner JSP
+			2. uživatel spustí, načte se JSP, vytvoří z něj program v jazyce Java - Servlet
+			3. servlet přeložen do bajtového kódy a vznikne bouro (.class), umístí jej do zvláštního adresáře
+			4. kontejner JSP načte soubor tříd, na základě zjištěné definice vytvoří nový objekt, inicializuje všechny proměnné nového objektu
+			5. kontejner vytvoří odpovědní dokument, odešle jej uživateli
+			6. při žádosti na stejný dokument se konterner vrátí do bodu 5 , ve kterém vytvoří nový odpovědní dokument
+			7. pokud nic, server zaniká
+		* **Java Servlet API** - dá se použít jako webový server - využívá HTTP, požadavek - odpověď; skládá se z balíčků (javax.servlet a javax.servlet.http
+			* nejpoužívanější Servlet/JSP kontejner pod Javou **Tomcat**
+
+==== Active Server Pages ====
+* **ASP** (Active server pages - mrtvý) → nezávislá na programovacím jazyku (C, VisualBasic), komerční (Microsoft), singleplatformní, ale hluboká integrace, zároveň nebezpečný
+* **ASP.NET** (nástupce ASP)
+	* nezávislý na programovacím jazyku
+	* jsou rychlejší než ostatní konkurenční, předkompilovány do jednoho či několika málo DDL souborů
+	* ASP.NET WebForms - stránky poskládány z objektů, prvky (Button, Label)
+	* výhody oproti ASP:
+		* díky kompilovanému kódu běží rychleji, chyby jsou zachyceny už při vývoji; možnost programovat i v dalších prog. jazyků
+		* multiplatformní - modifikace .Net Mone
+		* generuje validní HTML/XHTML, JavaScript
+	* bezstavovost - ViewStat - uchovává informace v zakódovaném tvaru ve skrytých formulářových polích ; Session State - informace v databázi
+* **.NET**
+	* soubor technologií v softwarových produktech pro web, windows, pocket PC
+	* základem Microsoft .NET Framework
+	* vývoj Microsoft Visual Studio .NET
+	* možnost výběru programovacího jazyku - C#, Deplhi, Visual Studio .NET, VB.NET, C Java
+	* bez ohledu se vždy první přeloží do Common Language Infrastructure - starndardizovaná specifikace jázdra .NET
+	* 1) CTS (The Common Type System - sady datových typů a operací
+	* 2) Metadata
+	* 3) CLS Common Language Specification - definuje pravidla, které je potřeba dodržet
+	* 4) VES Virtual Execution System - pomocí metadat zjistí, z jakými daty pracuje, pomocí CTS zjistí datové typy opera, CLS zkontroluje pravidla — a spustí
+* komponentové technologie
+	* knihovna ADO firmy Microsoft
+		* databázová knihovna - používá se pro přístup k databázi v prostředí ASP
+		* zaobaluje poměrně složitý přístup k datovým zdrojům do jednoduchého rozhraní

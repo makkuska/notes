@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title></title>
+		<meta name='Generator' content='Zim 0.52'>
+		<style type='text/css'>
+			a          { text-decoration: none      }
+			a:hover    { text-decoration: underline }
+			a:active   { text-decoration: underline }
+			strike     { color: grey                }
+			u          { text-decoration: none;
+			             background-color: yellow   }
+			tt         { color: #2e3436;            }
+			pre        { color: #2e3436;
+			             margin-left: 20px          }
+			h1         { text-decoration: underline;
+			             color: #4e9a06             }
+			h2         { color: #4e9a06             }
+			h3         { color: #4e9a06             }
+			h4         { color: #4e9a06             }
+			h5         { color: #4e9a06             }
+			span.insen { color: grey                }
+		</style>
+	</head>
+	<body>
+
+<!-- Header -->
+
+	[ <a href='./Odkazy%2C_%C4%8Dl%C3%A1nky.html'>Prev</a> ]
+
+			[ <a href='/'>Index</a> ]
+
+	[ <a href='./%C3%9Akoly.html'>Next</a> ]
+
+<!-- End Header -->
+
+<hr />
+
+<!-- Wiki content -->
+
+<h1>Popis prostředků</h1>
+
+<p>
+Created Neděle 09 říjen 2011<br>
+</p>
+
+<p>
+<ul>
+<li>Konceptuální modelování databází pomocí E-R diagramů</li>
+<ul>
+<li>Prvním úkolem této práce bylo vytvoření struktury databáze archeologických nálezů. K tomuto účelu sloužila metoda konceptuální modelování databází pomocí E-R diagramů. Úlohou databáze je popsat část reálného světa. Realita je ale příliš složitá, proto se pro její popis vybírá jen určitá množina objektů a jejich vlastností. Při modelování se postupně prochází několika úrovněmi, které se liší podle míry abstrakce. Proces, který na základě požadavků na databázový systém plynoucích z reality definuje strukturu databáze bývá často označován jako konceptuální modelování. Srozumitelným a názorným přístupem k modelování databází je grafické vyjádření pomocí diagramů. Metodu zobrazení do diagramů poprvé zavedl Peter Pin-Shan Chen v roce 1976. Tyto digramy nazval E-R diagramy (modely), podle pojmů na kterých jsou založeny: entity (Entity) a vztah (Relationship).</li>
+</ul>
+<li>Reverzní inženýrství</li>
+<ul>
+<li>Při návrhu i při realizaci databáze bylo využito metody reverzního inženýrství. V zdroj je uvedena definice reverzní inženýrství jako proces analýzy předmětného systému s cílem: 1. identifikovat komponenty systému a jejich vzájemné vztahy, 2. vytvořit reprezentaci systému v jiné formě na vyšším stupni abstrakce. Podle uvedené definice se reverzní inženýrství týká pouze prozkoumávání systému. Úpravy systému stejně tak jako jiné formy jeho restrukturalizace do přesné definice reverzního inženýrství nespadají. V této práci byla zkoumaným systémem struktura databáze. Průběh reverze tak můžeme jednoduše popsat následujícím způsobem. Prvním krokem je výběr databáze a seznamu objektů (triggery, indexy, pohledy, práva a další), které chcete získat. Po připojení k databázi je uživateli nabídnut seznam načtených objektů, které lze do modelu vložit. Zde je možné provést výběr objektů pro další zpracování. Následně dojde k vytvoření nového modelu, který lze upravovat. Velmi užitečnou funkcí je možnost převést schéma na jinou databázi. Takovýto převod je relativně složitá věc – každý databázový stroj má například nadefinovány jiné datové typy, což je možné vyřešit převedením, na podobný typ. Po automatickém převodu je tedy nutné manuálně zkontrolovat konzistenci typů. Zdroj: Novacek_2006</li>
+</ul>
+<li>Mapové servery</li>
+<ul>
+<li>Data z vytvořené archeologické databáze jsou přístupná 2 cestami i) primárně zobrazením a výběrem z mapového okna, ii) formulářovými průvodci přímím dotazováním do databáze. Mapové okno je založeno na technologiích mapového serveru. Co to tedy mapové servery jsou? Zjednodušeně můžeme mapové servery označit za programy pracující na bázi architektury klient-server, které zpracovávají data s geografickým vztahem. Mohli bychom také říci, že jsou to v podstatě geografické informační systémy, které jsou obvykle ovládány pouze pomocí parametrů – textově – a neinteraktivně. Spolupracují s některým z webových serverů, který jim předá potřebné parametry z webového formuláře. Ty jsou zpracovány a zpět je vrácen buď soubor s mapou, a nebo výsledek dotazu.</li>
+<li>Fungování mapového serveru popisuje podrobněji Srejber_2002. Mapové servery, jak uvádí Srejber_2002, mají většinou dvě části: jedna pracuje s grafickými daty a druhá s popisnou složkou. Na základě požadavků klienta server zpracuje příslušná mapová a databázová data a výslednou stránku prostřednictvím www serveru klientovi odešle. Zobrazení požadované mapy v okně webového prohlížeče probíhá ve třech krocích, které používají http protokol: </li>
+<ul>
+<li>1) Webový prohlížeč (klient) zašle dotaz WWW serveru, kde je vystavena požadovaná aplikace (HTML stránka s URL adresou, obsahující např. volání CGI (Common Gateway Interface) skriptu - tj. v našem případě programu, který vygeneruje HTML dokument a mapu v rastrovém či vektorovém formátu). </li>
+<li>2)WWW server pošle požadavek na vyvolání CGI skriptu aplikačnímu mapovému serveru </li>
+<li>3) Mapový server CGI skript spustí a výsledek odešle WWW serveru. Ten jej doplní do HTML dokumentu, který se objeví v prohlížeči uživatele. Zdroj: <a href="http://gis.zcu.cz/studium/ugi/referaty/05/ArchivReferatu/srejber_vojtech_distribGIS.pdf" title="http://gis.zcu.cz/studium/ugi/referaty/05/ArchivReferatu/srejber_vojtech_distribGIS.pdf">http://gis.zcu.cz/studium/ugi/referaty/05/ArchivReferatu/srejber_vojtech_distribGIS.pdf</a> Schematické znázornění výše popsaného postupu fungování mapového serveru je zobrazeno na následujícím obrázku.</li>
+</ul>
+</ul>
+</ul>
+<div style='padding-left: 60pt'>
+<img src="./Popis_prost%C5%99edk%C5%AF/pasted_image.png" alt=""><br>
+</div>
+<ul style='padding-left: 30pt'>
+<li>Schéma fungování mapového serveru:</li>
+<ul>
+<li>Mapové servery jsou v dnešní době poměrně rozšířenou záležitostí. Uživatelé proto u nových aplikací předpokládají určitou funkcionalitu, která v současnosti odpovídá standardní nabídce. Takovými funkcemi jsou zejména <u>posouvání výřezu obrazu, změna měřítka (tzv. zoomování), zapnutí/vypnutí viditelných vrstev, jednoduchá identifikace objektů, vyhledávání, případně funkce měření vzdáleností a ploch</u>. Na základě účelu konkrétního mapového serveru mohou být součástí také nejrůznější <u>síťové služby umožňující zobrazení dat z jiných zdrojů v síti</u> –<strong> WMS</strong> (Web Map Services), <strong>WFS</strong> (Web Feature Service), nebo služby <u>umožňující analýzu dat</u> – <strong>WPS</strong> (Web Processing Service). Existují různé <u>technologie poskytování mapových dat</u>. Jedná se jak o technologie svázané s určitým softwarem pro GIS (např. <strong>ArcIMS</strong> firmy ESRI), tak o <u>veřejně definované</u> technologie, které jsou implementovány a integrovány do různých softwarů a umožňují tak jejich spolupráci. Hlavním principem takovýchto webových mapových služeb je <u>umožnit klientům přístup k datům pomocí standardizovaných protokolů</u>, ale zároveň tato data ochránit před zneužitím. Institucí, která definuje otevřené technologie, je <strong>Open Geospatial Consortium (OGC)</strong>. OGC je <u>mezinárodní standardizační organizací</u>, jejímiž členy jsou firmy a vládní organizace. Cílem OGC je <u>vyvíjet veřejně specifikované formáty pro výměnu geoprostorových dat</u>.</li>
+<li>Seznam nejdůležitějších OGC specifikací (celkem je jich 28):</li>
+<ul>
+<li><strong>WMS</strong> - Web Map Service: Poskytuje mapu ve formě obrazových dat.</li>
+<li><strong>WFS</strong> - Web Feature Service: Určená pro získání a změnu popisu prvků.</li>
+<li>WCS - Web Coverage Service: Poskytuje coverage objekty daného území.</li>
+<li>WPS - Web Processing Service: Služba pro vzdálené zpracování dat.</li>
+<li><strong>SFS</strong> - Simple Features - SQL</li>
+<li><strong>GML</strong> - Geography Markup Language: formát XML pro geografická data.</li>
+<li>KML - Keyhole Markup Language: jazyk založený na XML schématu pro vyjádření popisu geografických dat, jejich vizualizaci v existujících či budoucích webových, 2D a 3D datových prohlížečkách.</li>
+<li>WSC - Web Service Common</li>
+</ul>
+</ul>
+</ul>
+</p>
+
+<h5>Programy a technologie</h5>
+<p>
+<ul>
+<li>Při tvorbě databáze bylo využito těchto programů:</li>
+<ul>
+<li>PostgreSQL</li>
+<ul>
+<li>PostgreSQL je relační databázový systém s otevřeným zdrojovým kódem. Jedná se o platformě nezávislý systém, je tedy možné jej nativně spustit na všech rozšířených operačních systémech včetně Linuxu, UNIXů a Windows. PostgreSQL je šířen pod BSD licencí, která je velice liberální open source licencí. Tato licence umožňuje neomezené bezplatné používání, modifikaci a distribuci PostgreSQL a to ať pro komerční nebo nekomerční využití. Předností systému PostgreSQL je rozšiřitelnost. Databázový systém Postere SQL byl pro tuto práci zvolen zejména kvůli jeho podpoře pro geografické informační systémy v podobě rozšíření PostGIS. Systém je možné stáhnout z oficiálních stránek <a href="http://www.postgresql.org/" title="http://www.postgresql.org/">http://www.postgresql.org/</a>.</li>
+</ul>
+<li>ESF Database Migration Toolkit Proffesional</li>
+<ul>
+<li>ESF Database Migration Toolkit umožňuje snadnou konverzi mezi databázemi různých formátů. Podporuje konverzi do databází Oracle, MySQL, SQL Server, PostgreSQL, IBM DB2, Visual Foxpro, SQLite, FireBird, InterBase, Microsoft Access, Microsoft Excel, Paradox, Lotus, dBase, CSV/Text, z libovolného ODBC DSN datového zdroje. Ovládání je poměrně jednoduché. Stačí jen zadat vstupní a výstupní databázi a spustit konverzi. Před vlastním převodem můžete nastavit změnu kódování řetězců znaků, názvů polí, datových typů, povolení Null hodnoty a další. Program je součástí vybavení Katedry geoinformatiky Univerzity Palackého v Olomouci. Zdroj: <a href="http://www.studna.cz/esf-database-migration-toolkit-standard-edition-p-5400.html" title="http://www.studna.cz/esf-database-migration-toolkit-standard-edition-p-5400.html">http://www.studna.cz/esf-database-migration-toolkit-standard-edition-p-5400.html</a>, <a href="http://www.easyfrom.net/" title="http://www.easyfrom.net/">http://www.easyfrom.net/</a></li>
+<li>Tvorba webových mapových aplikačních serverů sebou přináší potřebu důkladnějšího proniknutí do problematiky využití jazyků k tvorbě těchto aplikací uzpůsobených. Jednalo se zejména o následující značkovací, skriptovací a formátovací jazyky: XHTML (verze 1.0), XML (verze 1.0), PHP (verze 5.2.6), JS (verze 1.4.0) a CSS (verze 2). Následuje stručný popis zmíněných jazyků. XHTML (Extensible HyperText Markup Language) XHTML je nástupce HTML založený na XML. Stejně jako HTML je i XHTML značkovacím jazykem využívaným při tvorbě webových stránek. Služba WWW pak umožňuje publikaci těchto stránek na Internetu. Rozlišujeme 3 druhy XHTML: XHTML Strict, XHTML Transitional XHTML Frameset, které se od sebe liší přísností používání formátovacích značek a možností využití rámců. XHTML využívá ke strukturování textu tagy, tak jako HTML, pravidla jejich užití jsou ale mnohem přísnější. Specifikace XHTML je dostupná z <a href="http://www.w3.org/TR/xhtml1/" title="http://www.w3.org/TR/xhtml1/">http://www.w3.org/TR/xhtml1/</a>. Jak pracovat s XHTML je pěkně popsáno včetně příkladů na <a href="http://www.jakpsatweb.cz/html/xhtml.html" title="http://www.jakpsatweb.cz/html/xhtml.html">http://www.jakpsatweb.cz/html/xhtml.html</a>. Konkrétní příklad využití v této práci – generování webových stránek. Zdroj: <a href="http://www.webtvorba.cz/xhtml/uvod-do-xhtml.html" title="http://www.webtvorba.cz/xhtml/uvod-do-xhtml.html">http://www.webtvorba.cz/xhtml/uvod-do-xhtml.html</a></li>
+</ul>
+<li>XML (eXtensible Markup Language)</li>
+<ul>
+<li>XML je rozšiřitelný značkovací jazyk, jenž byl navržen pro snadný přenos a uchování informací. Vychází ze staršího jazyka SGML. Vyvinut a standardizován byl konsorciem W3C. Hlavním smyslem tohoto jazyka je popsat strukturu dokumentu, která je zcela odprostěna od formátování. Tento přístup má usnadnit vyhledávání údajů v dokumentech a jejich přenos mezi aplikacemi. Anglická definice jazyka je dostupná z <a href="http://www.w3.org/XML/" title="http://www.w3.org/XML/">http://www.w3.org/XML/</a>, manuál pro použití se nachází na adrese <a href="http://www.w3schools.com/xml/default.asp" title="http://www.w3schools.com/xml/default.asp">http://www.w3schools.com/xml/default.asp</a>, podrobný český popis nabízí např. <a href="http://www.kosek.cz/clanky/xml/index.html" title="http://www.kosek.cz/clanky/xml/index.html">http://www.kosek.cz/clanky/xml/index.html</a>. Konkrétní příklad využití v práci – vyhledávání v mapovém serveru.</li>
+</ul>
+<li>PHP (Hypertext Preprocessor)</li>
+<ul>
+<li>PHP je skriptovací jazyk určený zejména pro programování dynamických internetových stránek a rozvíjení webových aplikací. Je možné jej začlenit přímo do HTML/XHTML kódu. PHP skripty se provádějí na straně serveru, webový prohlížeč obdrží pouze výsledek. Jde o jazyk nezávislý na platformě, jehož skripty fungují na různých operačních systémech. Oficiální stránky jazyka PHP jsou dostupné z <a href="http://php.net/index.php" title="http://php.net/index.php">http://php.net/index.php</a>, český manuál je destupný např. z <a href="http://www.kosek.cz/php/index.html" title="http://www.kosek.cz/php/index.html">http://www.kosek.cz/php/index.html</a>. Konkrétní příklad využití v práci – generování interface mapového serveru. Pro komunikaci s databází při vyhledávání bylo v této práci využito frameworku PEAR. Zkratka PEAR znamená PHP Extension and Application Repository. Můžeme jej popsat jako distribučním systém knihoven. Rozšiřující funkcionalita je realizována prostřednictvím „balíčků“ (packages). Pro usnadnění komunikace s databází slouží balík MDB2 – abstraktní databázová vrstva. Stránky popisující framework PEAR jsou dostupné z <a href="http://pear.php.net/index.php" title="http://pear.php.net/index.php">http://pear.php.net/index.php</a>.</li>
+</ul>
+<li>JS (JavaScript)</li>
+<ul>
+<li>JavaScript je objektově orientovaný skriptovací jazyk. Používá se zejména pro tvorbu interaktivních internetových stránek. Skripty JS jsou prováděny na straně klienta, není nutné čekat na odezvu serveru (jako je tomu u PHP). Nevýhodou je, že uživatel může spouštění JS skriptů v prohlížeči zakázat. Přehledný český manuál je dostupný např. z <a href="http://www.kosek.cz/php/index.html" title="http://www.kosek.cz/php/index.html">http://www.kosek.cz/php/index.html</a>. Konkrétní příklad využití v práci – funkčnost tlačítek v mapovém serveru.</li>
+</ul>
+<li>CSS (Cascading Style Sheets)</li>
+<ul>
+<li>CSS neboli kaskádové styly představují jazyk pro popis způsobu zobrazení stránek (barva textu, pozadí, zarovnání, velikost písma …). Tento formátovací jazyk byl navržen organizací W3C, která již vydala druhou verzi CSS2. Hlavním smyslem je umožnit programátorům oddělit vzhled dokumentu od jeho struktury a obsahu. Oficiální stránky jazyka CSS jsou dostupné z <a href="http://www.w3.org/Style/CSS/" title="http://www.w3.org/Style/CSS/">http://www.w3.org/Style/CSS/</a>, český manuál je dostupný např. z <a href="http://www.jakpsatweb.cz/css/" title="http://www.jakpsatweb.cz/css/">http://www.jakpsatweb.cz/css/</a>. Konkrétní příklad využití v práci – formátování vzhledu uživatelského rozhraní MapServeru.</li>
+</ul>
+</ul>
+<li>Dalšími technologiemi, které byly při budování mapového serveru: Apache HTTP server (verze 2.2.10) jako webový server, UMN MapServer (verze 5.2.1) jako aplikační mapový server, instalační balík ms4w (verze 2.3.1) a nádstavbová aplikace p.mapper (verze 4.0.0).:</li>
+<ul>
+<li>Apache HTTP server</li>
+<ul>
+<li>Server Apache HTTP („http“) je projekt Apache Software Foundation. Snahou projektu je rozvíjet a udržovat open-source HTTP server pro moderní operační systémy, včetně UNIX a Windows. Cílem tohoto projektu je poskytnout bezpečný, efektivní a rozšiřitelný server, který poskytuje HTTP služby v synchronizaci s platnými normami HTTP. Principem webového serveru je vyřizování požadavků ze stran klientů, což znamená, že posílá obsah webových stránek (na základě zaslaného požadavku) klientovi, který si jej přes http protokol zobrazí ve svém prohlížeči. Apache httpd dnes patří k nejvyužívanějším webový serverům na internetu. Na webu je dostupný z <a href="http://httpd.apache.org/" title="http://httpd.apache.org/">http://httpd.apache.org/</a>, český popis nabízí např. článek Malý průvodce konfigurací Apache, nebo novější článek Hrajeme si s Apachem na <a href="http://www.root.cz/" title="http://www.root.cz/">http://www.root.cz/</a>.</li>
+</ul>
+<li>UMN MapServer</li>
+<ul>
+<li>MapServer je open source platforma pro publikování prostorových dat a interaktivních mapových aplikací na webu. Původně byl vyvinut v polovině 90. let na Minnesotské univerzitě. Mapový server bývá někdy označován jako aplikační server. Principem mapového serveru je především sestavení odpovědi na dotazy ze strany klienta, zpracování geodat, generování a předávání sestavené mapy směrem k uživateli a u pokročilejších řešení i provádění analýz. Nazpět jsou klientovi poslána data v předdefinované podobě. Nejčastěji se jedná o rastrový obrázek. Mezi nejrozšířenějsí rastrové formáty se řadí GIF, PNG, JPEG, TIFF/GeoTIFF a další. MapServer je spustitelný na všech hlavních platformách (Windows, Linux, Mac OS X). Pracuje jako CGI program či přes Mapscript podporující řadu programovacích jazyků. Software je postaven na ostatních populárních Open Source, nebo freeware projektech jako Shapelib, FreeType, Proj.4, GDAL/OGR a dalších. K jeho přednostem patří i podpora čtení dat uložených v rozdílných souřadnicových systémech. Zdroj: <a href="http://gisak.vsb.cz/livecd/sw/umn.html" title="http://gisak.vsb.cz/livecd/sw/umn.html">http://gisak.vsb.cz/livecd/sw/umn.html</a> Pro přenos vzdálených dat jsou použity standardní OGC formáty WMS a WFS.</li>
+</ul>
+<li>ms4w (MapServer for Windows)</li>
+<ul>
+<li>MS4W je instalační balík, jehož cílem je usnadnit a zpřístupnit uživatelům všech úrovní rychlou instalaci pracovního prostředí pro rozvoj MapServeru na platformě Windows. Balík obsahující instalační a konfigurační soubory CGI MapServeru, MapScriptu, Apache HTTP serveru, PHP, předkompilované různé knihovny (např. GDAL/OGR nebo PROJ.4) a může obsahovat i další podpůrné aplikace. Instalace MS4W je dostupná ve dvou verzích. První možností je samospustitelný .exe soubor, který provede stažení potřebných souborů a instalaci softwaru téměř sám. Druhou verzí je .zip soubor, jehož obsah je zapotřebí nakopírovat do rootu (neboli kořenového adresáře) jednoho z disků počítače a po té provést instalaci softwaru. Adresářová struktura je vytvořena za účelem jasné identifikace jednotlivých komponent balíku. Více o tomto balíku se můžete dozvědět na internetové adrese <a href="http://www.maptools.org/ms4w/" title="http://www.maptools.org/ms4w/">http://www.maptools.org/ms4w/</a>, kde také najdete možnost stáhnutí tohoto balíku (viz <a href="http://www.maptools.org/ms4w/index.phtml?page=downloads.html" title="http://www.maptools.org/ms4w/index.phtml?page=downloads.html">http://www.maptools.org/ms4w/index.phtml?page=downloads.html</a>).</li>
+</ul>
+<li><u>p.mapper</u></li>
+<ul>
+<li>Jedná se o framework nabízející širokou funkčnost a množství konfigurací pro usnadnění nastavení aplikace MapServer. Založený je na PHP / MapScript. V podstatě můžeme říct, že se je to jakési přednastavené uživatelské rozhraní poskytující množství předchystaných ovládacích funkcí, které je možné pomocí konfiguračních souborů upravit/nastavit pro potřeby konkrétní aplikace. Tato open source aplikace by měla usnadnit práci s MapServerem zejména novým uživatelům. Struktura této aplikace je však značně složitá, a tím pádem i místy nepřehledná. A právě z důvodu složitých propojení a návazností souborů ve struktuře p.mapperu není vlastní customizace této aplikace snadnou záležitostí. Více o této aplikaci se můžete dozvědět na internetové adrese <a href="http://www.pmapper.net/" title="http://www.pmapper.net/">http://www.pmapper.net/</a>, což je také domovská stránka této aplikace.</li>
+</ul>
+</ul>
+</ul>
+</p>
+
+
+<!-- End wiki content -->
+
+<hr />
+
+<!-- Backlinks -->
+
+	Backlinks:
+
+<!-- End Backlinks -->
+
+	</body>
+
+</html>

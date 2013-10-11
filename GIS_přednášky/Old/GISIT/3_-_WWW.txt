@@ -1,0 +1,82 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-10-01T08:09:36+02:00
+
+====== 3 - WWW ======
+Created Pondělí 01 říjen 2012
+
+===== WEB 1.0 =====
+* aplikace internetového protokolu HTTP - hypertext i další dokumenty (značkovací makrojazyk)
+* nedostatek: archivace zveřejněných dokumentů a možnost podvrhu, falšování soubor (změnit text nebo nabídnout jiný soubor)
+* stavební kameny: hypertext (strukturovaný text s odkazy), značkovací jazyk (určení vzhledu, funkčnosti), klient-server, jednotná identifikace zdrojů (URL)
+
+==== Browser ====
+* program, jehož účelem je prezentovat soubory www na zobrazovacím zařízení
+* zajišťuje komunikaci s http serverem, zpracování přijetého kódu (html, xml)
+* **parsování** v prohlížeči
+	* dokument je prohlížečem načítán a rozkládán (parsován, syntaktická analýza) na jednotlivé elementy
+	* prohlížeč obsahuje tabulku značek, které podporuje - tabulku možné omezit type dokumentu (DTD), je-li deklarován
+	* přiřadí styl každému elementu
+	* __standardní režim__ - dodržovaná specifikace verze html, deklarovaná v dokumentu, netolerují se syntaktické chyby, nezobrazují se chyby, chybné elementy
+	* __quirk mód__ - nestandardní režim - domýšlí si chybějící koncové párové značky
+	* režim se stanoví podle doctype sniffing
+	* prohlížeče mají různé implicitní styly zobrazování a chovají se různě v quirk módu
+
+===== WEB 2.0 =====
+* nemá technologicky nic nového, stále stojí na stejných kamenech, které splňují min. 1 z charakteristik:
+	* uživatelsky generovaný obsah (RSS)
+	* interaktivita v rámci použité části stránky (ajax)
+	* sdílené služby mezi weby (hesla)
+	* kontextově přizpůsobivé aplikace
+	* sofistikované vyhledávání
+* z centrálního zpracování k decentralizaci
+* **technologie: **
+	* **tagy** (pojmenování skupin, přiřazení do skupin; taxonomy x folksonomy - ontologie)
+	* **sociální vztahy** (LinkedIn, Facebook, sdílení souborů za účelem vývoje)
+	* **RSS** - informace tečou kanálem
+	* **Long tail** - vezmu šablonu - umožňuje komentáře, diskuze, .. (80%) a naplním obsah (20%) - blogy, RSS, Google adsense - malé zdroje
+	* **blogy, wikipedia** - uživatel je přispěvatel, tvůrce obsahu
+	* **AJAX** - divy, technologie, umožňuje asynchronizaci dat
+	* **API** - webová rozhraní pro přístup nástavbových části třetích stran - svou službu nabízí někdo a my ji můžeme využít, upravit, ale neovlivníme, když oni něco změní (mapy.cz), tak se nám to taky změní
+
+==== WEB 3.0 (od 2006) ====
+* propojení multimedeálního obsahu s obsahem textovým - televizí IPTV, notebook, mobil, terminál, mp3 přehrávač, foťák s GPS, lednička)
+	* vyfotím fotku, hned se uloží na net
+* geografické vyhledávání pomocí významu vět - sémantika 
+* personalizace - pamatuje si, co klikám, vybírám a podle toho upravuje nabídku, vzhled
+* přizpůsobování
+* znalost polohy
+* inplice prvků sémantického webu
+* mikroformáty
+* sdílené aplikace
+* přístup na web skrze různá zařízení
+* vetší interakce na softwarevé úrovni
+* rozostření hranic profesionál/poloprofesionál/uživatel
+* dotazovaní v přirozeném jazyce (SQL, ústní dotaz)
+* umělá inteligence webu
+* videa
+* 3D
+* kombinace reality a internetu - Layer
+
+===== Web 4.0 =====
+* XML 
+
+===== Sémantický web =====
+* web, kde jsou informace strukturovány a uloženy podle standardizovaných pravidel, což usnadňuje jejich vyhledávání a zpracování
+* současný stav je pouze změť stránek, stále těžší najít relevantní informace
+* základem sémantického webu - konceptualizace (=proces pomocí nějž specifikujeme termíny, které používáme v rámci výzkumu) dat dostupných na netu, formalizované reprezentace určené ke sdílení a znovupoužití (=ontologie)
+* každý zdroj (text, obrázek, video) by měl obsahovat charakteristiky typu autor, typ zdroje, klíčová slova
+* práce s webem jako s relační databází - vysoká přesnost, relevanci odpovědi na dotaz
+* specifikace World Wide Web Concorsiom (W3C)
+	* Resource Description Framework (RDF) - rámec pro popis, výměnu, znovupoužití metadat, jednoduchý model pro popis zdrojů
+	* Ontology Web Language 
+
+---
+pozn.:
+ETRS souřadnicový systém pro Evropu
+SPARSQL, OpenID
+distribuovaná databáze - několik databázi řízený
+---
+URI - Uniform Resource Identifier
+URL - Uniform Resource Locator
+URN - Uniform Resource Name

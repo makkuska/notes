@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-12-08T12:41:56+01:00
+
+====== Mysql ======
+Created Čtvrtek 08 prosinec 2011
+
+[[~/000/moje_poznamky.sql|sql formátováno]]
+* create database (if not exist) 'nazevdatabase';
+* show databases;
+* → use 'nazevdatabase';
+* → show tables; nebo show tables from ukoly;
+* describe 'nazev tabulky'
+
+* show dat/rec
+
+* mysql -u root -p 'nazevdatabaze' < <cochcuimportovat>.sqp > <kamtochcuimportovat>
+* kódování: ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+
+* href=http://www.mysqltutorial.org
+* http://maisonbisson.com/blog/post/12147/working-with-spatial-data-in-mysql/ — Spatial MYSQL
+

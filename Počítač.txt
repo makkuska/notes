@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-10-22T13:18:38+02:00
+
+====== Počítač ======
+Created Sobota 22 říjen 2011
+
+přihlášení WIKI Eduoram
+* zabezpečení WPA & WPA2
+* ověření PEAP
+* vnitřní ověření MSCHAPv2
+* heslo úplně první do portálu
+
+PDFTK - naistalovat!
+
+
+ <style type='text/css'>
+      p          { font-size: small;  }
+      li         { font-size: small; 
+                   list-style-type: disc;
+                   list-style-image: none;    }
+      a          { text-decoration: none      }
+      a:hover    { text-decoration: underline }
+      a:active   { text-decoration: underline }
+      strike     { color: grey                }
+      u          { text-decoration: none;
+                   background-color: yellow   }
+      tt         { color: #2e3436;            }
+      pre        { color: #2e3436;
+                   margin-left: 20px          }
+      h1         { text-decoration: underline;
+                   color: #4e9a06             }
+      h2         { color: #4e9a06; text-decoration: underline;            }
+      h3         { color: #4e9a06; text-decoration: underline;            }
+      h4         { color: #4e9a06             }
+      h5         { color: #4e9a06             }
+    </style>

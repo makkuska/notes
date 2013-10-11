@@ -1,0 +1,91 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-02-13T14:04:28+01:00
+
+====== 01 - Krajina ======
+Pondělí 11. února 2013
+
+* **krajina:**
+	* vymezena (územní celek)
+	* kvantitativně nebo kvalitativně odlišná od okolních celků
+	* má přirozené hranice a je homogenní (má podobné vlastnosti)
+	* má charakteristickou strukturu
+	* krajina je dynamická - vyvíjí se v prostoru a čase
+	* struktura krajiny → funkce krajiny → dynamika (změny)
+	* základní rys - prostorová heterogenita vyjádřená krajinnou strukturou
+	* záleží na: faktory, měřítko, formát, kvalita dat
+* dle prezentace:
+	* **ekosystém **- všechny organizmy v daném prostoru, které vzájemně působí na neživé prostředí
+	* **biogeocenóza **- část zemského povrchu, na kterém biocenóza, atmosféra, litosféra a pedosféra tvoří jednotný vnitřně podmíněný komplex
+	* **geosystém** - relativně homogenní část zemského povrchu, které ovlivňují bilogické, chemické, fyzikální, sociálně-ekonomické a technické faktory
+	* **ekotop** - ekologicky relativně homogenní část globální sféry
+	* **biotop** - abiotické protředí - často vztažen ke konkrétnímu jedinci, populaci či společenstvu
+	* **biocenóza** - systém zahrnující živou i neživou složku
+* podle hospodářského využití
+	* zemědělská krajina
+	* lesohospodářská krajina
+	* těžební krajina
+	* městská a průmyslová krajina
+
+==== Faktory: ====
+* __fyzikální a biologické faktory__
+	* geologické poměry
+	* reliéf
+	* hydrologické poměry
+	* půdní poměry
+	* organismy
+* __antropogenní faktory__
+	* land use
+	* osídlení a výstavba
+	* historický vývoj
+* __estetické faktory__
+	* vizuální: proporce, měřítko, pohledové expozice, zrnitost, barevnost, kontrast
+	* ostatní vjemy: zvukové, pachové, hmatové, chuťové
+* __asociace__
+	* historické: významné události, historie osídlení
+	* kulturní: významné osobnosti, umění (literatura, výtvarné umění, hudba)
+
+==== Kategorie krajiny: ====
+* krajina přírodní - minimální zásah člověka, ale tvořena pouze přírodními prvky
+* krajina přirozená - bez zásahu člověka, přirození vegetace
+* prakrajina - už se neobjevuje, poslední stav před zásahem člověka
+* potenciálně přirozená krajina - jak by vypadala krajiny, kdyby člověk a jeho působení zmizelo
+* krajina kulturní "Má smysl chránit  to, co člověk změnil?"
+	* kladné i záporné změny
+	* 1. vlastní kulturní krajina (kultivovaná, harmonická)
+		* rovnováha mezi působením antropogenních a ostatních faktorů (CHKO Šumava)
+	* 2. narušená kulturní krajina
+		* antropogenní vlivy narušují stabilitu přírodních slože
+	* 3. devastovaná krajina
+		* těžké narušení člověkem (hnědouhelné pánve)
+* krajina blízká přirozené - převaha vegetace, která je však ovlivněna lidskou činností
+
+==== Digitální model krajiny ====
+* digitální reprezentace 2 až 3 (předpokládá se 4) rozměrného systému, který bude využívat integrovaného systému
+* vrstvy:
+	* __integrovaná__ vrstva přírodního pozadí (= fyzikální a biologické faktory)
+		* integrovaná databáze (model)
+			* = minimální počet analytických vrstev (stačí vzít sekundární data, než brát 2 různé vrstvy — př. digitální model (primární) → slope (sekundární))
+			* 2 datové složky:
+				* stejné území
+				* vymezený formát = jednotný
+				* stejné měřítko
+				* stejná projekce
+				* odstraněný nesoulad vytvořených dat
+		* geodatabáze
+		* postup zpracování dat: 
+			* a. manuální integrace (překreslování)
+				* zpracování začíná na sestavení závislostní (logické) pyramidy, kterou může sestavit pouze odborní - př. geologická struktura (nestabilnější) - podnebí (energie) - zvětralinový pokryv - reliéf - vlhkostní poměry - půdy - biota (nejméně stabilní)
+			* b. on-screen - digitálně
+			* c. semiautomatická integrace - (každý polygon je popsán vektorem v databázi) - ručně se editují jen problémové areály
+		* u analýzy 70% příprava dat
+	* antropického působení (= antropogenní faktory)
+	* rozvojové limity (hranice CHKO, stavební uzávěry, regulativy, vyhlášky - nehmatatelná omezení)
+	* digitální model terénu (musí být kvalitní, věrohodný, dotažený až po hranice)
+	* manipulační systém (formalizovaný (= formálně doložený) expertní systém) - př. spadne-li na takovýto typ půdy takovéhle množství vody po tom, co 3 dny pršelo ..
+* data:
+	* geologická data - Česká geologická data
+	* reliéf - lasererová nejkvalitnější
+	* pedologie - od BPEJ (data z 60.let, nekvalitní, jen v rozsahu zemědělského půdního fondu), půdní mapa ČR (1:200tis a doplnit), posbírat si vlastní data
+	* lesy - od lesáků - dobrá data
+	* zemědělská data - BPEJ, UZKUZ, družstva si dělají průzkumy

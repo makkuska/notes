@@ -1,0 +1,63 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-09-17T17:30:17+02:00
+
+====== Teorie ======
+Created Úterý 17 září 2013
+
+==== Configuration Files ====
+	* __postgresql.conf__ controls **general settings**, such as how much memory to allocate, default storage location for new databases, which IPs PostgreSQL listens on, where logs are stored, and so forth.
+	* __pg_hba.conf__ **controls security**. It manages access to the server, dictating which users can login into which databases, which IPs or groups of IPs are permitted to connect and the authentication scheme expected.
+	* __pg_ident.conf__ is the mapping file that maps an authenticated OS login to a Post-greSQL user. This file is used less often, but allows you to map a server account to a PostgreSQL account. For example, people sometimes map the OS root account to the postgre’s super user account. E
+	* **umístění konfiguračních souborů:**
+		* SELECT name, setting FROM pg_settings WHERE category = 'File Locations';
+	           name          		   |                 setting                  
+		------------------------+------------------------------------------
+		 config_file      	 | /etc/postgresql/9.1/main/postgresql.conf
+		 data_directory	 | /var/lib/postgresql/9.1/main
+		 external_pid_file | /var/run/postgresql/9.1-main.pid
+		 hba_file          	 | /etc/postgresql/9.1/main/pg_hba.conf
+		 ident_file        	 | /etc/postgresql/9.1/main/pg_ident.conf
+		 (5 rows)
+	* __listen_addresses__ tells PostgreSQL **which IPs to listen on**. This usually defaults to **localhost**, but many people change it to** ***, meaning **all available IPs**.
+	* __port__ defaults to 5432. Again, this is often set in a different file in some distributions, which overrides this setting. For instance, if you are on a Red Hat or CentOS, you can override the setting by setting a PGPORT value in /etc/sysconfig/pgsql/your_service_name_here. 
+	* __max_connections__ is the maximum number of concurrent connections allowed.
+
+==== Roles ====
+	* SELECT * FROM pg_roles;
+	* nebo \du
+	* s přihlašováním byl zmatek → první jsme zakomentovali v //pg_hba.conf//
+			# "local" is for Unix domain socket connections only
+			#local   all        all                     peer
+		* pak není možno se přihlásit z shellu bez parametru -h localhost
+	* **postgres** se může přihlásit bez hesla viz //pg_hba.conf//
+		* #Database administrative login by Unix domain socket
+		  local    all            postgres             peer
+		* market@market:~$ __psql -h localhost -U postgres__ (vždy tam musí být IP adresa/localhost)
+			psql:/home/market/.psqlrc:0: could not read from input file: je adresářem
+			psql (9.1.9)
+			SSL connection (cipher: DHE-RSA-AES256-SHA, bits: 256)
+			Type "help" for help.
+			
+			postgres=# 
+
+	* **všichni uživatelé**, kteří mají ENCYPTED PASSWORD se můžou přihlašovat z shellu, potřeba zadat hosta a název db:
+		* psql -h localhost -U postgres  -d nova
+		* psql -h localhost -U vcelicka -d nova
+		* psql -h localhost -d nova
+			* market@market:~$ __psql -h localhost -d nova__
+			Password: 
+			psql:/home/market/.psqlrc:0: could not read from input file: je adresářem
+			psql (9.1.9)
+			SSL connection (cipher: DHE-RSA-AES256-SHA, bits: 256)
+			Type "help" for help.
+			
+			nova=# 
+
+* CREATE ROLE name; 	http://www.postgresql.org/docs/8.1/static/sql-createrole.html
+	* DROP ROLE name;		http://www.postgresql.org/docs/8.1/static/sql-droprole.html
+	* SELECT rolname FROM pg_roles;
+	* každému uživateli můžeš nastavit, co všecko může
+
+==== Create table ====
+* CREATE TABLE prvni (id serial, name character varying(10));

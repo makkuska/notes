@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-05-02T19:25:51+02:00
+
+====== Firmy GIS ======
+Created Čtvrtek 02 květen 2013
+
+Vars Brno - skriptování v Pythnu (Honza Proch praxe)
+GISoft Opava - nadstavby nad MicroStation (Bently), inženýrské sítě, KN (TaTa) http://www.gisoft.cz/GISoft/ProduktyGISoft
+Státní plavební správa Děčín
+VUGTK Zdiby - Výzkumný ústav geodetický, topografický a kartografický (včetně Pecný)
+T-Mapy HK
+Geodis Brno
+SmartGIS
+
+

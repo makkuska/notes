@@ -1,0 +1,73 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-10-24T21:56:10+02:00
+
+====== 03 - River regulation works: The Tisza ======
+Created Pondělí 24 říjen 2011
+
+([[~/Dokumenty/Erasmus/Applied Hydrography/III_Tisza Regulation.ppt|Presentation]])
+* Tisza the most regulated river
+* 1. Need of regulation started in early and mid-19th century
+	* Aims:
+		* population was increaing → they want to increase the territory of agricultural lands
+			* opened Western markets
+		* to provide safter transport system - they built roads, railway (E-W)
+		* to improve health conditions (stop malaria)
+		* to protect towns from the increasing floods (Szeged 1879)
+* 2. Early works
+	* 1613 - first law of regulations
+	* 17-18 th.c. local works started with regional effects, mill construction works
+	* 1770s - regulation of the tributaries of the Upper Tisza cut-offs, levee contructions, scouring (deeper river), mill destructions (are dangerous for villages), very good maps (1:14 000, cross-sections)
+	* regulation of the Mirhó - classical usages of the water, 
+		* 1754 - first deconstraction of (brook)
+		* 1775 - dectruction of the dam
+		* 1785 rebuilding of the dam
+* 3. 19th.c.river regulation works
+	* a) preconditions: social background
+		* stabile society (no wars, people was happy), stabile country
+		* modern scientific methods (carhography, engineering)
+		* training of engineers
+		* regulation was profit oriented, payed by these, who had profit from that, ex. farmers - new land, shipping
+		* increasing population
+		* copy W-EU standarts
+	* b) policital factors
+		* 1825-1850: Reform Age
+			* Széchenyi: the basic of economic and political develepment is technology
+				* he believe that transportations is important - shipping → regulatoin of Tisza
+				* financial supper: tax on salt transport summarising of former ideas
+				* Vásárhelyi - leader engineer
+	* c) Vásárhelyi Plan
+		* elements:
+			* national interest
+			* everybody pays based on his profit
+			* the Tisza and its tributaries are one system
+			* rise over local interest: long term and national aims
+			* he planed not only regulations, but also builing irrigations system, land-use change(forestation), water retention: reservoirs
+			* uses of water: irrigation, shipping
+			* run-off and erosion controll
+* 4. Regulatory works
+	* 1. cut-offs - channel regulations - zkrácení meandru, useknutí meandrů (zkráceno o 30-50%) Tisza o 30%
+		* small driver channel (spojovací kanál) - "auto-channel development" kanál ale udělali uzší s tím, že si to voda potom sama rozšíří (river insized inselves) - 	
+		* 1846 the first hoe cut - 1. kopání
+	* 2. Levee-contructions (hrááááz) - floodplain regulation
+		* protect villages from the flood
+		* assist channel development (0,3-1km from river) - they built them closed together
+		* když měla krajina kolem řeky konkávní tvar, stavěli hráz blízko, protože čím dál ji stavěli, tím musela být vyšší - along higher surfaces, but close to the channel
+		* trees in front of levees
+		* meantenance
+	* 3. Inland-water controll
+		* podmáčená půda - protože v minulosti tam byla voda, nízko položená místa
+		* reason of inlad-water high amount of pre
+		* frozen soils
+		* levees prevent water to get to the chanell
+		* → canal systems to colect inland-water - 40000km system 
+			* → pumping station 
+	* 4. bank erosion control (made by revetment = zpevnění břehu)
+* Results of the Tisza regulation
+	* the largest human induces environmental changes in Carpatian Basin
+	* slope of the river increased 3,8cm/cm → 6 cm/km -- basicly doubled
+	* lenght decreased by 1/3 - 1214 → 761m)
+	* small water level - decreased by 150-250 cm
+	* floodwater level - increased by 330-350 cm
+	* duration of floods: from 5,6 months to 2,5 months
+	* contructed levee - 3555m (lenghts)

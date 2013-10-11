@@ -1,0 +1,42 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-03-25T14:12:46+01:00
+
+====== 06 - Analýza ekologické stability ======
+Pondělí 25. března 2013
+
+* **schopnost systému uchovat a reprodukovat** charakteristiky pomocí autoregulačních procesů a vyrovnávat změny způsobené vnitřními a vnějšími činiteli
+* ekologická rovnováha - dynamický stav ekologických systémů, který se udržuje .. 
+* hodnocení ES:
+	* kombinace využití země + výpočet krajinné metriky pro ES
+	* používá se pro relativní porovnání stability
+* důležité vhodně vymezit území
+	* měřítko pro malé území větš. 1:10tis. 
+	* omezená vypovídající úroveň pro okresy a větší
+
+===== Indexy =====
+* **Koeficient ekologické stability** (podle Michala 1985) K_{es}
+	* K_{es} = plocha relativně stabilních / relativně labilních ploch
+	* nepoužívá se
+* **Vážený K**_{es} (podle Mikloše 1986)
+	* vezmu kategorii a přiřadím ji index ekologické významnosti
+	* K_{es} = (Pa výměra jednotlivých kategorií * Kpn koeficient ekologický významnosti) / P výměra katastrálního území
+	* lepší
+* **Podrobná analýza es**
+	* krajina mapována 1:10tis. 
+	* výsledkem plocha aktuální vegetace
+	* stupeň ekologické stability pro každý pozemek, nabývá hodnot 0-5 (bez významu - velmi velký význam)
+	* **aktuální vegetace + klasifikace + stupeň ES + charakteristika**
+	* výpočet dle ÚSES (dle Argoprojekt 1995)
+		* poměr o dané ekologické stabilitě
+		* potřeba terénního průzkumu → jen pro aktuální data, né historická
+		* kritéria pro hodnocení přirozené krajiny:
+			* změna struktury společenstva
+			* podíl počtu původních a stávajících druhů
+			* podíl vymřelých druhů původních bioty
+			* podíl spontánních sekundárních organizmů
+			* životní trvalost kultivovaných i spontánních druhů v ekosystémů
+			* významné události - požár, stavěný plynovodu, ropovodu, 
+	* nechce po nás ek. sukcesi?
+* Koeficient míry antropogenního ovlivnění a dalších
+* SWOT analýza se nedá použít na analýzu krajiny!

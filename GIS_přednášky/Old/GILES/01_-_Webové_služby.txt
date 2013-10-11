@@ -1,0 +1,169 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-02-11T08:43:08+01:00
+
+====== 01 - Webové služby ======
+11. a 18. února 2013
+
+__Dali doporučuje:__
+**php, PDO (součást php), NotORM (vrána), Nette**
+
+* služba: stroj - stroj
+* softwarový systém navržený k podpoře operabilita machine-to-machine skrze internet
+* požadavek - odpověď (jednoduchý datový typ, složený objekt - GML, SVG, aktivita)
+* synchronní - v jednom časovém běhu je obdržena odpověď na požadavek
+* asynchronní - spojení je přerušeno, odpověď je obdržena až odpověď hotova (spojení vzniká aktivitou na serveru)
+* SOAP x REST
+
+====== Architektura webových služeb založená na: ======
+
+===== 1.vrstva: komunikační služba =====
+* pro přenos zprávy mezi zařízeními
+* __SOA - servisně orientovaná architektura__
+	* od 1991
+	* mechanismus komunikace - co si řeknou, jak si to řeknou
+	* dodržuje standardy
+	* spatial data in RDBMS 
+		* dlouhé transakce
+		* objektové programování
+		* správě rozsáhlých databází (big data)
+		* time GIS
+	* dynamicky generovaní klienti
+	* distribuované programové mapové komponenty
+* __REST (representational state transfer)__
+	* **textový řetězec v URL zdroji** (přímo volám metodu) - rychlejší, kratší než XML zápis
+	* základní rozhraní je použitelné pro přístup k vlastním zdrojům, neboli vše, co je na internetu, by mohlo být sámo o sobě zdrojem nějaké funkce, dat, služby
+	* funkce, data nebo služby tedy nemusí být poskytovány, ale jsou automaticky zdrojem 
+	* __cíle:__ obecná rozhraní, škálovatelnost komunikujících komponent, nezávislé nahrávání, menší datové přenosy, snížení doby odezvy
+	* __základní principy:__
+		* pro REST jsou všechno data → všechno na internetu je zdroj (stavy, HTML soubor, URL, fragment XML kódu, JSON, SVG, PDF, )
+		* každý zdroj má svou jedinečnou identifikaci
+		* každý zdroj je definován jednotným přístupem pro manipulaci ze zdroje (operace Creat, Read, Update, Delete)
+		* využití HTTP operací (GET nebo POST), do URL vložen požadavek
+		* bezstavovost
+	* __komunikační protokol:__
+		* klient/server
+		* cache je paměť
+			* rozlišitelné, zda je služba cacheovatelný nebo ne, zda dotaz může použít data z cache, nebo musí vždy proběhnout celý požadavek
+			* né vše musí být cacheovatelnost
+			* NAS - aktivní síťový prvek, datové uložiště na síťi
+			* SUN - není aktivním prvek, datové uložiště na síťi 
+		* code-on-demand
+			* jestli funkcionalita může být rozšířená další funkcí
+		* vrstevnatost
+			* jakým způsobem se komunikuje, skládání vrstev
+	* __formáty pro výměnu dat:__
+		* všechny jsou textové
+		* JSON (JavaScript objekt notation)
+		* XML (HTML, KML, ATOM/RSS)
+		* ESRI podporuje i další formáty: image (satelitní snímek), help, lyr (binární soubor), nmf, jsapi, gmaps (google maps - dlaždice, jednotné číslování pro cacheování, jednotný souřadnicový systém, má zachovanou pevnou strukturu resamplování), ve (virtual earth - dlaždice, pevná měřítka, jednoznačná úroveň pyramid)
+	* __výhody:__
+		* jednoduchá filosofie, odolné na změny rozhraní
+		* malé nároky na klienta
+		* transparentnost - zdroje jsou snadno cacheovat 
+	* __nevýhody:__
+		* horší podpora middleware
+* __REST x SOAP (nekompletní, viz prezentace)__
+	* REST:
+		* vysoce interperobilní
+		* JS, Ruby, Python, ..
+		* přesně stanovena hierarchie
+	* SOAP:
+		* těžkopádnost
+		* .NET, JAVA, C+
+		* plně integrovaný do vývojového prostředí
+		* výhody typové kontroly
+* __shrnutí:__
+	* XML-RCP, SOAP (xml), RESP (xml, json, html, pdf, ..) - komunikační protokoly pro přenos dat
+	* používají se přenos velkého množství dat, dlouhých transakcí
+
+===== 2. vrstva: popis služby =====
+* odpovídá jazyku **WSDL** - seznam metod, parametrů, návratových hodnot, .. ; kde se nachází; zda je přístupná
+* **WSDL** je samo generující služba (sám si vygeneruje zprávu)
+	* **XML **dokument, **který popisuje jaké jsou parametry, návratový typ**
+	* popisováno na abstraktní úrovni
+	* každá webová služba má svůj popis
+	* __elementy__ tvořící zprávu WSDL
+		* times - definice datových struktur používaných ve zprávě
+		* message - formát předávaných zpráv
+		* operation - definice operací, kterou služba podporuje (operace = metoda)
+		* portType - sdružuje dohromady několik operací tak, aby služba byla komplexní
+		* binding - navázání určitého typu portType na určitý protokol (na jakém protokolu v jakým formátu)
+		* port - definice síťové adresy, na které to bude komunikovat
+		* service - sdružuje několik bodů do jedné služby
+* __shrnutí:__
+	* XML dokument pro popis serveru, jaké umožňuje služby (web services description languge)
+
+===== 3. vrstva registrů =====
+* seznam, ve které služby zaregistruji pro **kategorizování a vyhledávání**
+* všechny fungují přes SOAP, popisují se pomocí WSDL
+* protokol **UDDI**
+	* XML standard
+	* adresářová služba, která popisuje a registruje služby
+	* pracuje jako webová služba, celý záznam běží v SOAPu, popis uložený ve WSDL
+	* 4 druhy entit
+		* business entita - kdo je vlastník, za jakých podmínek
+		* business services - konkrétně definované služby
+		* binding template - jak a kde je možné ze službou komunikovat
+		* service typ - definice rozhraní
+* protokol **WSIL **(dnes už používanější)
+	* funguje přesně opačně jako UDDI - poskytovatel nehledá klienty, ale naopak klient hledá poskytovatele a jeho služby
+* katalog **OGC CAT**
+	* umožňuje publikovat a vyhledávat metadata pro data
+* __shrnutí:__
+	* XML protokoly pro kategorizování a vyhledávání: UDDI, WSIL, OGC CAT
+
+===== 4. bezpečnostní vrstva =====
+* jak zabezpečit komunikaci proti ztrátě, modifikaci, ukradení
+* WS-security - rozšíření SOAP o hlavičku
+* XML-signature - digitální podpis
+* XML-ecnryption
+
+===== 5. vrstva spolehlivosti zpráv =====
+* zajišťuje ověřování spolehlivosti, ověření zdroje
+
+===== 6. vrstva pro kontext, koordinaci, přenos =====
+
+===== 7. bussiness process language layer - řízení kontroly =====
+
+===== 8. vrstva pro choreografii =====
+* obecný popis chování služeb
+* protokoly architektury WS
+* přenos služby - HTTP, HTTPS, SMTP (mail), FTP
+* XML komunikace
+	* komunikace mezi poskytovatelem a klientem
+	* protokoly:
+		* XML-RCP - vzdálené volání procedur
+		* SOAP-XML zpráva (co, v jaké formě)
+			* peer-to-peer
+			* zpráva (kořenový element Envelope - Header - Body)
+			* přenáší se skrze HTTP (POST) 
+* ukazuje základní popisy, zachycuje vztahy globálně
+* **jazyk WS-CDL** - specifikováno pomocí W3C - není úplně využíván
+* chronologie uspořádání webových služeb - vrstvení
+* __shrnutí:__
+	* jak mám uspořádané servery
+
+==== Kaskádování (=řetězení služeb) ====
+* severy mohou služby nejen poskytovat, ale také i zpracovávat
+* dodržování standardů
+* je-li klientem aplikace, která je zároveň WMS serverem, může poskytovat mapy vytvořené kombinací map z různých jiných serverů = síť distribuovaných mapových serverů
+* __shrnutí:__
+	* jedna mapa vznikne kombinací více vrstev z více zdrojů: př. mapa složená s vlastní vrstvy, KN vrstvy a podkladu z OSM
+
+=== Orchestrace WS ===
+* zajištění spolupráce, která při kolekci aktivit spolu spolupracuje, aby úspěšně splnila cíl
+* dynamická struktura webových služeb
+* kvalita je závislá na kvalitě popisu služeb, dat a algoritmů
+* __shrnutí:__
+	* schéma/struktura sítě 	
+
+===== Jazyky pro webové služby =====
+* WS-BPEL (Business proces exucution language)
+	* vyvinuto Microsoftem a IMB, standardizován konsorciem OASIS
+	* verze 2.0
+	* vznikl kombinací XLANG + WSFL 
+	* využívám WSDL, XML schéma, XPath (jazyk pro procházení xml dokumenty - snadno procházet dokumenty - př. html/body/div/h1), XSLT 
+	* spustitelné (spoléhá se na webové služby) **x** abstraktní procesy 
+	* popisuje služby serveru
+	* vyšší dívčí

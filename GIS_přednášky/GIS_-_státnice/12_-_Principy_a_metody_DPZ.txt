@@ -1,0 +1,105 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-04-20T16:20:19+02:00
+
+====== 12 - Principy a metody DPZ ======
+Created Pátek 20 duben 2012
+**(konvenční a nekonveční metody, aktivní vs. pasivní metody, přímé a nepřímé interpretační znaky)**
+
+===== Konvenční metoda =====
+* přednosti konvenčního snímání (letecké fotografie)
+	* úplný a bezchybný (z hlediska obsahu) pohled shora - nepodléhá generalizaci, ukazuje detaily i celky vyšších řádů
+	* podává info o okamžitém stavu různě intenzivních dynamických procesů - trvalý záznam, který lze opakovaně porovnávat s jinými zdroji info
+	* oproti lidskému zraku se vyznačuje rozšířenou spektrální citlivostí (0,3-0,9 mikrom) – můžeme postihnout jevy či vlastnosti nepostižitelné pouhým okem
+	* vysoká prostorová rozlišovací schopnost a geometrická kvalita snímků – po zpracování lze přesně měřit vzdálenosti plochy či úhly
+* činitelé ovlivňující zobrazení terénu – __technické__:
+	* výška snímkování: měřítko, rozloha území (čím větší výška, tím světlejší tón a ztráta přirozených barev)
+	* barevné filtry – viz dále
+	* ohnisková vzdálenost kamer: čím větší ohnisková vzdálenost, tím preciznější zobrazení terénu
+			* objektivy: 	normální do 70°, širokoúhlé 70° až 110°, speciální přes 110°, rybí oko 180°a více
+* činitelé ovlivňující zobrazení terénu (povrchu) – __vnější__:
+	* vlhkost – vlhká místa jsou na snímku tmavší – homogenní plochy (pole a louky)
+	* intenzita a směr osvětlení
+		* zaleží na geografické šířce, denní a roční době a atmosférických podmínkách
+		* vhodné jsou krátké stíny (v archeologii jsou naopak výhodné dlouhé stíny)
+	* počasí – nízká oblačnost
+	* čistota atmosféry
+* černobílé snímky:
+	* 1. ochranná vrstva – chrání citlivou vrstvu před mechanickým poškozením
+	* 2. citlivá vrstva = emulze (krystalky sloučením stříbra (AgBr, AgI, AgCl) v želatině)
+	* 3. mezivrstva – spojuje citlivou vrstvu a filmovou podložku
+	* 4. filmová podložka – dříve skleněné destičky, dnes polyester; odolná vůči rozměrovým změnám způsobeným změnami teploty či vlhkosti, odolný vůči poškození při přetáčení filmu
+	* 5. antihalační vrstva – absorbuje část světla, které prochází citlivou vrstvou i filmovou podložkou a zabraňuje tak jeho zpětného obrazu
+	* citlivé vrstvy filmu: různě citlivé k různě širokému intervalu vlnových délek
+* ortochromatická – nesnímá oranžovou a červenou složku viditelné část. spektra
+* panchromatická – nejméně citlivá v modré
+snímají barvy ve stejném rozsahu jako lidské oko a převádí je do tónu šedi
+			* výhody: snadné zpracování, využitelnost – většina našich leteckých snímků
+			* nevhodný pro práci s vegetací – tmavé tóny, které nahrazují zelenou navzájem splývají
+		* infrachromatická
+		* infračervené černobílé letecké snímky:
+			* jsou méně rozptylovány než viditelné světlo
+			* lze je pořizovat i za špatného počasí, ne však přes hustou mlhu, oblačnost nebo déšť
+			* obrazy se jeví plošně
+			* vodní plochy, které pohlcují záření téměř dokonale jsou sytě černé
+			* jehličnatý les absorbuje víc IČ záření jako listnatý – jehličnatý les je tmavší
+			* krajina se zelenými plochami – „ozářená“, bílé plochy
+			* zaniká síť komunikací a ztrácí se liniové prvky
+* filtry: 
+	* používají se podle výšky letu a kvůli atmosféře, která snižuje kvalitu snímku
+	* fcí je odstranit paprsky rozptýleného světla
+	* barevný filtr zdůrazňuje barvu, kterou je zabarven (žlutý filtr zdůrazňuje žlutou barvu, zelená zelenou) a zároveň zeslabuje barvu doplňkovou, pro červenou je doplňková azurová, pro zelenou purpurová, pro modrou žlutá
+	* panchromatické fotografie – používají se světle žlutou…
+	* jsou charakterizovány spektrální propustností (= propuštění záření v dané vlnové délce)
+	* multispektrální fotografie, kde f
+	* osvětlení fotografie klesá od středu k okrajům – nazývá se to vinětace – používají se na to filtry
+
+===== Nekonvenční metoda =====
+* specifika nekonvenčních metod
+	* výška, ze které se snímá, je větší
+	* velké spektrální rozlišení (0,3 až 14 mikrom)
+	* omezené prostorové rozlišení od jednotek metrů do několika desítek či stovek metrů na pixel
+	* nosiče se pohybují po předem definované dráze, obrazový záznam je zaznamenám elektronicky (digitálně) a tím jsou snáze porovnatelné
+	* vznikají řádkováním pomocí radiometrů nebo skecerů
+
+=== a) zobrazující ===
+* a1) pasivní systémy (televizní systémy, snímací rozkladová zařízení = skenery)
+	* snímací rozkladová zobrazení (skener)
+		* základem radiometr, který měří radiaci ze zemského povrchu v určitém intervalu spektra 
+		* měří množství odraženého a emitovaného záření
+		* detektory radiometrů lze rozdělit na: __tepelné__ (množství dopadající energie je přímo úměrné změně teploty čidla), __fotonové__ (zaznamenávají intenzitu dopadajících fotonů - přesnější)
+		* šum – část signálu, který nenese žádnou informaci
+		* bitová hloubka – výstupní signál je zaznamenáván v určitém počtu úrovní
+		* výsledkem je matice dat o určitém počtu řádků a sloupců (rastr) → pixel (DN číslo)
+		* mechanooptický skener
+			* používá příčné skenování = snímá kolmo na směr letu (zrcadlo rotující pod obrazovým úhlem 90°až 120°)
+			* pak je tam rozdělovač, který rozděluje data podle pásem spektra 
+		* elektrooptický skener 
+			* skenuje podélně (taky stírací skener)
+			* série CCD detektorů (v jednom řádku i 10 tis.) – každý detektor registruje záření z plochy 
+			* kolik pixelů má detektor (resp. kolik CCD prvků má jeden detektor; 1CCD odpovídá 1 pixlu), tolik jich bude mít výsledný snímek
+			* výhody: lepší radiometrická a geometrická rozlišovací schopnost, spolehlivější, zachycují silnější signál z plochy
+* a2) aktivní (RADAR, LASER)
+	* RADAR s reálnou aparaturou SLAR (Side Looking Ariborne RADAR – měří do stran) 
+		* aparatura je uchycena nahoře na střeše letadla
+		* snímkuje po řádcích:
+			* //příčné rozlišení// (kolmé na směr letu, důležité pro rozlišení dvou sousedních objektů; je rovno polovině délky pulsu), 
+			* //podélné rozlišení// (vztah mezi šířka řádků, vlnovou délku a délkou antény) vzdálenost mezi dvěmi osami záběru)
+	* RADAR se syntetickou aparaturou SAR (Synthetic Aperture RADAR)
+		* využití na družicích (u Envisat anténa ASAR)
+		* anténa je krátká, která lze uměle prodloužit – syntetizovat
+		* zaznamenaný signál je zpracován tak, jako by byl přijat anténou jíž délka je rovna dráze, kterou nošič urazil za dobu, po kterou bys snímaný objekt v jeho zorném poli
+	* LIDAR (light detection and ranging) 
+zdroj laserového paprsku: (= vysílač) rubínové nebo diodové
+součásti:
+
+=== b) nezobrazující ===
+* b1) aktivní (Altimeter, Skatetometr)
+	* dodávají zdroj energie
+	* údaje o měřených objektech jsou kódovány v rozdílných charakteristikách vyslaného a přijatého záření
+	* profilové radiometry – změny radiace v určitém povrchu
+	* výškoměry (altimetry) – měří výšku družice nad povrchem
+	* rozptyloměry (katetometry) – pracuje na principu měření zpětného rozptylu; měření síly vlnění vodní plochy, směr větru, směr proudů
+	* RADAR  nezobrazující: Dopplerův RADAR (měření rychlosti), PPI RADAR (meteorologie, navigace, pohyb letadel)
+* b2) pasivní
+

@@ -1,0 +1,54 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-01-13T23:58:02+01:00
+
+====== Diplomka ======
+Created Neděle 13 leden 2013
+
+pg_bench
+pg_basebackup
+slony (nerozumí si s 64bit verzí)
+
+
+[*] __6.3.__ 1. Bakalářský den
+[ ] Rešerše
+[ ] 2. Bakalářský den
+[ ] 3. Bakalářský den
+[ ] Odevzdání práce
+[ ] Obhajoba práce
+
+===== Pojmy: =====
+* souborová synchronizace - zálohy na druhý disk, algoritmy jsou připraveny tak, aby se nekopírovala identická data
+	* na principu
+* synchronizace není verzování 
+* replikace - master-slave
+
+
+Práce na diplomce:
+* rešerše:  17-20-6., 
+		2.8., 4.8., - Esri, ArcSDE
+		8.8. - PostgreSQL
+		12,26, 27.8, - MS SQL Server 2008
+* kapitoly:
+	[ ] Úvod
+	[ ] 1 CÍLE PRÁCE
+		* Opis zadání + jeden odstavec mého přínosu
+	[ ] 2 POUŽITÉ METODY A POSTUPY PRÁCE
+		* Napsat úplně nakonec, v rozsahu 1 stránky.
+	[ ] 3 TEORETICKÁ VÝCHODISKA
+		[ ] 3.1 Použité programové prostředky
+			[*] (Co je Esri platforma)
+			[ ] 3.1.1 SQL Server Express 2008
+			[*] 3.1.2 PostgreSQL 9.x (PostGIS)
+			[*] 3.1.3 ArcSDE geodatabase
+		[ ] 3.2 Použité postupy
+			[ ] 3.2.1 Replikace
+			[ ] 3.2.2 Synchronizace
+			[ ] 3.2.3 Verzování
+		[ ] 3.3 Geodata
+	[ ] 4 VÝSLEDKY
+	[ ] 5 DISKUZE
+	[ ] 6 ZÁVĚR
+	Zkratky
+	ZDROJE
+

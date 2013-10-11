@@ -1,0 +1,12 @@
+digraph G {
+754 -> root;
+root -> rwx111;
+rwx111 -> 7;
+754 -> user;
+user -> rwx101;
+rwx101 -> 5;
+754 -> other;
+other -> rwx100;
+rwx100 -> 4;
+
+}

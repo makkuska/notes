@@ -1,0 +1,65 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-10-09T19:16:51+02:00
+
+====== Odkazy, články ======
+Created Neděle 01 září 2011
+http://jsfiddle.net/vLpt6/12/
+
+Článek EPGS změna kódů pro Křováka:
+		* http://geoportal.cuzk.cz/%28S%28eliabw45zbdxpf3cgqvws055%29%29/Default.aspx?mode=News&head_tab=sekce-00-gp&newsTyp=id&newsID=203
+		* http://geoportal.cuzk.cz/%28S%28rlgwjlfxhbdjcc45yzihkl55%29%29/Default.aspx?mode=TextMeta&side=sit.trans&text=souradsystemy .. popis všech systémů i změn
+		* koordinační systémy: http://grass.fsv.cvut.cz/wiki/index.php/K%C5%99ov%C3%A1kovo_zobrazen%C3%AD#Jak_aplikovat_patch
+		* __http://geoportal.cuzk.cz/%28S%28scfduqykkl22pn45vk3hhx55%29%29/Default.aspx?lng=CZ&mode=TextMeta&text=souradsystemy&side=WMS.INSPIRE&menu=314&head_tab=sekce-03-gp__
+		* navod jak do PostGISu dostat podporu projekce 102067 http://janitor.cenia.cz/www/public/manual/postgresql_install/ar01s04.html
+	* http://spatialreference.org/ref/esri/102067/ — 102067
+	
+* Alková bp: http://www.geoinformatics.upol.cz/dprace/magisterske/alkova10//metody_zpracovani.html
+* UMN MapServer
+	* http://gisak.vsb.cz/livecd/sw/umn.html - popis, tutoriál
+	* http://gisak.vsb.cz/livecd/tutor/umn/cepik/clanky/index.html 	-- tutorial
+	* http://umn.mapserver.ch/index_en.php — popis jednotlivých parametrů
+	* http://mapserver.org/input/vector/postgis.html   —  POST gis a MapServer
+	* http://mapserver.org/ogc/wms_server.html#setting-up-a-wms-server-using-mapserver  — __WMS__
+	* http://trac.osgeo.org/openlayers/wiki/AvailableWMSServices  — __AVAILABLE WMS SERVICES__
+	* http://www.scribd.com/doc/13023159/Map-Server-Manual#outer_page_501 — __KNIHA__
+* GeoMoose
+	* http://www.geomoose.org
+* p.mapper
+	* http://svn.pmapper.net/ 
+* PostgreSQL
+	* http://www.postgresql.org/
+	* http://www.postgresql.org/docs/9.1/interactive/index.html - manuál
+	* http://www.linuxsoft.cz/article.php?id_article=304 - tutoriál
+	* http://www.java2s.com/Code/PostgreSQL/CatalogPostgreSQL.htm - příklady
+	* http://www.postgresql.org/docs/9.1/static/app-psql.html — popis základních příkazů v shellu
+	* PostGIS
+		* http://mapserver.org/input/vector/postgis.html
+		* http://www.postgis.org/docs/PostGIS_FAQ.html - manuál
+		* http://janitor.cenia.cz/www/public/manual/postgresql_install/ar01s04.html - přidání Křováka
+		* http://mapserver.org/input/vector/postgis.html — PostGIS/PostgreSQL pro MapServer
+		* http://geo.fsv.cvut.cz/gwiki/PostGIS — ČVUT postgis
+		* http://workshops.opengeo.org/postgis-intro/index.html — OpenGeo - Introduction to POSTGIS
+* Postgres PHP:
+	* http://www.php.net/manual/en/function.pg-select.php
+* http://maptools.org/
+* PHP, JavaScript
+	* http://javascript.cz/ — český návod
+	* http://www.jakpsatweb.cz/javascript/
+	* OPENLAYERS http://dev.openlayers.org/releases/OpenLayers-2.11/examples/draw-feature.html
+	* OPENLAYERS http://openlayers.org/dev/examples/vector-formats.html — generování GML nebo KML kódu automaticky podle toho, co nakreslím
+	* http://openlayers.org/dev/examples/vector-formats.html
+	* http://openlayers.org/dev/examples/draw-feature.html
+
+* http://www.cartovirtual.es/navegar/    — kreslení bod, linie, polygon
+* http://www.sig.camacari.ba.gov.br/urbam/map_default.phtml — kreslení
+* http://gis.zcu.cz/studium/agi/referaty/2007/Viletova_VcelarskyGIS/ — navod mapserver
+* gis.ibbeck.de/ginfo/apps/OLExamples/Index/index.html
+
+* kniha APACHE: http://books.google.cz/books?id=N-4_nOLUB0gC&lpg=PA4&hl=cs&pg=PA522#v=onepage&q&f=false
+* GEOSERVER, 102067 http://geo.fsv.cvut.cz/gwiki/G%20eoServer#Podpora_pro_ESRI:102067_.28Krovak.29
+
+* OpenLayers + Geonames http://net.tutsplus.com/tutorials/javascript-ajax/using-openlayers-with-geonames-webservices/
+
+http://www.paolocorti.net/2008/01/30/installing-postgis-on-ubuntu/ - PostGIS
+

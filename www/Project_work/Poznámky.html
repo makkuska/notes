@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title></title>
+		<meta name='Generator' content='Zim 0.52'>
+		<style type='text/css'>
+			a          { text-decoration: none      }
+			a:hover    { text-decoration: underline }
+			a:active   { text-decoration: underline }
+			strike     { color: grey                }
+			u          { text-decoration: none;
+			             background-color: yellow   }
+			tt         { color: #2e3436;            }
+			pre        { color: #2e3436;
+			             margin-left: 20px          }
+			h1         { text-decoration: underline;
+			             color: #4e9a06             }
+			h2         { color: #4e9a06             }
+			h3         { color: #4e9a06             }
+			h4         { color: #4e9a06             }
+			h5         { color: #4e9a06             }
+			span.insen { color: grey                }
+		</style>
+	</head>
+	<body>
+
+<!-- Header -->
+
+	[ <a href='./Homeworks.html'>Prev</a> ]
+
+			[ <a href='/'>Index</a> ]
+
+	[ <a href='../Recepty.html'>Next</a> ]
+
+<!-- End Header -->
+
+<hr />
+
+<!-- Wiki content -->
+
+<h1>Poznámky</h1>
+
+<p>
+Created Pondělí 17 říjen 2011<br>
+</p>
+
+<p>
+<ul>
+<li>příklad Tobak -- Dokumenty/geoext_maros.html</li>
+<li>/etc/init.d/geoserver stop → /etc/init.d/geoserver start</li>
+<li>instalace podle <a href="http://funnymonkey.com/install-geoserver-ubuntu" title="http://funnymonkey.com/install-geoserver-ubuntu">http://funnymonkey.com/install-geoserver-ubuntu</a></li>
+<li>login: admin, password: password</li>
+<li>login: makubu, passw: dosys</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>vložit vrstvy, vytvořit skupinu vrstev, vytvořit symbologii</li>
+</ul>
+<div style='padding-left: 30pt'>
+<a href="http://workshops.opengeo.org/geoserver-intro/styling/styles.html" title="http://workshops.opengeo.org/geoserver-intro/styling/styles.html">http://workshops.opengeo.org/geoserver-intro/styling/styles.html</a><br>
+</div>
+<ul>
+<li>barvy: <a href="http://www.jakpsatweb.cz/archiv/barvy-pojmenovane.html" title="http://www.jakpsatweb.cz/archiv/barvy-pojmenovane.html">http://www.jakpsatweb.cz/archiv/barvy-pojmenovane.html</a></li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>instalace GeoExplorer: <a href="http://repo.opengeo.org/suite/releases/community/docs/OpenGeoSuite-2.4.3-README-linux.txt" title="http://repo.opengeo.org/suite/releases/community/docs/OpenGeoSuite-2.4.3-README-linux.txt">http://repo.opengeo.org/suite/releases/community/docs/OpenGeoSuite-2.4.3-README-linux.txt</a></li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>GML</li>
+<ul>
+<li>&lt;p&gt;ML¶</li>
+</ul>
+</ul>
+</p>
+	
+<p>
+<div style='padding-left: 30pt'>
+The GML layer is a vector layer subclass designed to read data from a file once and display it. It is ideal for working with many formats, not just GML, and can be configured to read other formats via the ‘format’ option on the layer.<br>
+</div>
+</p>
+	
+<p>
+<div style='padding-left: 30pt'>
+The simplest use case of the GML layer is simply to load a GML file. The GML Layer Example shows this: simply add:<br>
+</div>
+</p>
+	
+<p>
+<div style='padding-left: 30pt'>
+<u>var layer = new OpenLayers.Layer.GML("GML", "gml/polygon.xml")</u><br>
+<u>map.addLayer(layer);</u><br>
+</div>
+</p>
+	
+<p>
+<div style='padding-left: 30pt'>
+If you want to add a different type of format, you can change the format option of the layer at initialization. The KML example demonstrates this:<br>
+</div>
+</p>
+	
+<p>
+<div style='padding-left: 30pt'>
+<u>var layer = new OpenLayers.Layer.GML("KML", "kml/lines.kml", {</u><br>
+<u>   format: OpenLayers.Format.KML</u><br>
+<u>})</u><br>
+map.addLayer(layer);<br>
+</div>
+</p>
+	
+<p>
+<div style='padding-left: 30pt'>
+You can also add formatOption to the layer: these options are used when creating the format class internally to the layer.<br>
+</div>
+</p>
+	
+<p>
+<div style='padding-left: 30pt'>
+<u>var layer = new OpenLayers.Layer.GML("KML", "kml/lines.kml", {</u><br>
+<u>   format: OpenLayers.Format.KML,</u><br>
+<u>   formatOptions: {</u><br>
+<u>     'extractStyles': true</u><br>
+<u>   }</u><br>
+<u>});</u><br>
+<u>map.addLayer(layer);</u><br>
+</div>
+</p>
+	
+<p>
+<div style='padding-left: 30pt'>
+The format options are determined by the format class.<br>
+</div>
+</p>
+	
+<p>
+<div style='padding-left: 30pt'>
+For API information, see the GML Layer API Docs.&lt;/p&gt;<br>
+</div>
+<ul>
+<li>OSM</li>
+<ul>
+<li><code>var layerMapnik = new OpenLayers.Layer.OSM.Mapnik("Mapnik");</code></li>
+</ul>
+</ul>
+</p>
+<pre style='padding-left: 30pt'>
+  var layerTah    = new OpenLayers.Layer.OSM.Osmarender("Tiles@Home");
+  var layerCycle  = new OpenLayers.Layer.OSM.CycleMap("Cycle map");
+  map.addLayers([layerMapnik, layerCycle, layerTah]);
+</pre>
+
+
+
+
+<!-- End wiki content -->
+
+<hr />
+
+<!-- Backlinks -->
+
+	Backlinks:
+
+<!-- End Backlinks -->
+
+	</body>
+
+</html>

@@ -1,0 +1,54 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-10-03T15:07:38+02:00
+
+====== 02 - Needs of regulation ======
+Created Pondělí 03 říjen 2011
+
+([[~/Dokumenty/Erasmus/Applied Hydrography/II_Tisza_before_NAT_HUMAN.ppt|Presentation)]]
+* 1-26 slide (I missed because of FieldTrip)
+* Human impact - Arpád-Age (896 - 1301)
+	* water-dependence: rich fishing waters in artificial water system (lakes, rivers)
+	* animal husbandry - they used the lower areas in summer time
+	* transportation - it was easy to use boats
+	* differentiated landscape → different soils → agriculture used this 
+	* built canals - canals had double function 
+	* forest cover huge area - forest clearances - orchard, gardens
+	* settlement structure:
+		* one road to the higher areas → small territories, villages (20-25km2, distance 4-5km one next other)
+		* marshes and open water bodies around
+		* landuse: quater village (+ vineyards) + quater plough fields + quater pasture + quater wetland (60-75% of a population depends on it)
+* Uses of the water:
+	* Fishing
+		* the most important at that time → exported ex. to England
+		* fishing on smaller brooks (=malá říčka), they made a "trups?", so only bigger fish ware caught
+		* it existed fishing villages
+	* Transportation
+		* Along rivers
+			* salt transport - only royal boats could do that (Buda, Szeged) - there were tax for changing salt in Buda and Szeged from boats to coaches - rich cities
+		* Ferry
+			* main crossing towns: Szeged, Szolnok, Tokaj, Csongrád - they have pay for it
+		* On streams
+			* crevasses, brooks
+	* Mills
+		* 2 different types: mill on "mill passige?" x mill ships
+		* mills :flour, oil, frieze (klobouky z toho materiálu), saw (wood)
+		* value of mill was 3-6x higher of a castle
+		* 10 000 of mill ships on the Tisza
+		* millers were first, who made water regulations by mill passages (thet also made first bridges)
+	* Irrigation
+		* since the 14th century, they made complex ditch system: irrigation <-> drainage
+		* very dense system - in 22km2 was 52 km ditch system (today in same area only 9 km ditches)
+		* well designed slope, served as roads
+	* Irrigates pastures, anmal husbandry
+		* great cow - they are wild, sheeps - long hornes and long hair, cattle, bee
+		* main period: Middle Ages (Turkish - animals was important during the wars)
+		* market towns: Szeged, Debrecen, Buda
+	* Protection
+		* when Tatars (Mongols - Tatar invastion 1241-42) came, people in castles could excape, because there was water, which got slower Tatars (swamps)
+		* Ottoman Empire (1526-1686) - artificial floods: castles, villages
+	* other
+		* building material: sticks, mud
+		* weaving: rush, furniture
+		* orchard: pear, plum (lower water height) → lekvár, palinka
+		* hunting, trapping (=pastičky, crab, turtle export to Englang)

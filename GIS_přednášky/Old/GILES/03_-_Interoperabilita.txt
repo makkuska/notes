@@ -1,0 +1,90 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-03-18T08:47:13+01:00
+
+====== 03 - Interoperabilita ======
+Pondělí 18.března 2013
+
+* schopnost vzájemně komunikovat
+	* OGC - schopnost **vyměňovat data a instrukce online** pro účely poskytování služby
+	* IEEE (Institute of Electrical and Electronics Engineers) 
+		* standardy pro zařízení př. GPS, wifi
+		* **schopnost 2 a více systému vyměňovat informace** a tyto informace využívat
+	* ISO - schopnost **komunikovat**,** spouštět procesy**, aniž by uživatel něco znal :-D
+	* v GI systém vzájemně spolupracovat,** poskytnout pojmu**
+		* potřebná pro **sdílení dat**, **komunikace mezi aplikacemi**, mezi **zařízení**,** znalostí** (interpretačních, procesních..)
+* vnímána jako:
+	* otevřenost (dostupné formáty, kódy, ..)
+	* propojitelnost
+* interoperabilita:
+	* technická
+	* sociální
+	* politická
+	* spolupráce služeb
+* IO bolí 
+* může přinést flexibilitu systému, jednodušší a rychlejší vývoj aplikací, kontrolu nad tokem dat, nad zabezpečením
+* přínos pro uživatele: nové datové zdroje, ..
+* vyžaduje: změnu přístupu programátorů, zásah do řízení organizace, zapojení managementu a uživatelů, orientaci na procesy
+* OGC, INSPIRE, ISO, W3C, OASIS, FOSS, komerční firmy, 
+* __pro ČR:__
+	* **CAGI** (nevládní organizace, dobrovolné sdružení: univerzity, soukromníci jednotlivci, studenty; setkání a diskuze)
+	* **Nemoforum** (zřizovatelem ČUZK, zastoupeno i univerzitami, Asociací krajů (GIS oddělení), Svazy měst a obcí)
+	* **KOVIN** (**Ko**ordinační **v**ýbor (dokumentu) **IN**SPIRE) - ministerstva, .., legislativní skupina, nedělá nic
+* na úrovni dat:
+	* otevřený, dobře zdokumentovaný formát, který načteme bez nutnosti spešl sw (formát: GML, PNG)
+	* otevřený, dobře dokumentovaný transportní protokol
+	* distribuce dat: globální (WMS, WFS, ..), firemní (ESRI, UMN, Autodesk)
+* na úrovni metadat:	
+	* otevřený, dobře dokumentovaný formát metadat
+	* formát dat: ISO 19115, CSDGM, Dubline Core
+	* popis metadat: 
+		* globální: ISO 19115, 1319, CEN (pro EU, vytrácí se, možná nahrazen 19115)
+		* lokální
+		* firemní: ESRI ISO
+	* správa metadat:
+		* globální: OpenGIS (Micka, METIS)
+		* firemní: ESRI, Intergraph
+	* distribuce: ISO 23950, WCS
+
+===== Metadata =====
+* popis obsahu, reprezentace (vector, raster, bod, polygon, ..), geografický a časový rozsah, prostorové reference (polohové, výškové, vztah topologických vazeb), ..
+* __směrnice INSPIRE__
+	* **založeno na ISO a OGC normách**
+	* síťové služby pro soubory prostorových dat
+	* pro jednotlivé služby **definována implementační pravidla, technické pokyny**
+	* **nařízení** pro všechny členské země EU, včetně kdo má co na starost
+	* prostorová data:
+		* mají být **sbírána** **jen jednou** pro dané území
+		* **zpřístupněna ostatním **včetně metadat
+		* měly by se **bezešvě** napojovat
+	* metadata, SDI, IDO 19115, 19139, OGC CSW
+* __metainformační systém__ (MetaIS) by měl být schopný
+	* identifikovat metadata - zobrazit, načíst, ..
+	* verifikovat metadat
+	* interpretace metadat - zpracování obsahu, validity
+	* distribuce metadat
+	* **MIDAS** (aplikace GeoNetwork) - oživen 
+	* **MetIS** (T-mapy) - vyvinuta pro veřejnou správu
+	* **Micka** (BN help)
+	* Metainformační portál od ESRI
+	* **Dublin CORE** (ISO 15836)
+		* metadata dokumentů na internetu (v HTML)
+		* 15 prvků, žádný není povinný
+	* **ISO 19115**
+		* standardizuje metapopis vlastní prostorových dat
+		* číselníky
+		* navazuje na další normy ISO 19xxx
+		* povinné, nepovinné, podmíněně povinné položky 
+		* jádro metadat (Core metadat) - sada dat povinných položek (nejmenší sada obsahuje jen kontakt)
+		* struktura metadat ve formě sady UML modelů a datovém slovníku (uspořádaný seznam krátkých a dlouhých jednoznačných pojmů)
+		* převod z Dublic Core do ISO 19115
+		* komunitní profily - úpravy k jádrové položce, = vymyšlení vlastních položek
+	* **ISO 19119**
+		* zásady pro vývoj softwaru podporujících geoslužby
+		* informace o službách a procesech, rozhraní
+		* kategorizovány dle taxonomie:
+			* geografické služby pro interakci s uživatelem
+			* GS pro správu informací modelů
+			* GS řídící návaznost úloh
+			* ...
+	* ISO 19139

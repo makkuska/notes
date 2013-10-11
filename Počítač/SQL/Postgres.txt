@@ -1,0 +1,46 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-10-27T15:49:39+02:00
+
+====== Postgres/PostGIS ======
+Created Čtvrtek 27 říjen 2011
+
+
+* root:
+	* su postgres
+* restore 
+	* pg_restore jen pro soubory.**dump**
+	* psql -f soubor.**sql**
+* umístění souborů:
+	* SELECT name, setting FROM pg_settings WHERE category = 'File Locations';
+* postgres@makkubu:/home/marketka$: 
+	http://www.postgresql.org/docs/9.1/static/app-psql.html
+	* psql -l  → výpis databází
+
+	* psql {název databáze: př. my_db} -W {=heslo}
+		* select version();
+	* \l → výpis databází  [OBRACENA závorka  \ ]
+	* \d → výpis tabulek
+	* \d 'nazevtabulky' → výpis sloupců a jejich datových typů
+	* \q \quit 
+* __restart__
+	sudo /etc/init.d/postgresql restart
+	* Restarting PostgreSQL 9.1 database server 
+* zdroj:
+	* file:///home/market/Dokumenty/Bakalarka/literatura/bcp/Kimpl_2010/priloha/docbook/chunks/ch07s03.html
+	* http://geo.fsv.cvut.cz/gwiki/PostGIS
+
+* connection:
+	* host=localhost
+	* dbname=my_db
+	* user=postgres
+	* password=dosys
+	* port: 5432
+
+* PGadmin3
+	* usr/local/pgadmin3/bin/pgadmin3 
+
+* __Přidat SJTSK do POSTGIS__
+		* INSERT INTO "spatial_ref_sys" ("srid","auth_name","auth_srid","proj4text") VALUES(102067,'ESRI',102067,'+proj=krovak +lat_0=49.5 +lon_0=24.83333333333333 +alpha=30.28813975277778 +k=0.9999 +x_0=0 +y_0=0 +ellps=bessel +units=m');
+		* INSERT INTO "spatial_ref_sys" ("srid","auth_name","auth_srid","srtext","proj4text") VALUES(102067,'ESRI',102067,'PROJCS["S-JTSK_Krovak_East_North",GEOGCS["GCS_S_JTSK",DATUM["D_S_JTSK",SPHEROID["Bessel_1841",6377397.155,299.1528128]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]],PROJECTION["Krovak"],PARAMETER["False_Easting",0],PARAMETER["False_Northing",0],PARAMETER["Pseudo_Standard_Parallel_1",78.5],PARAMETER["Scale_Factor",0.9999],PARAMETER["Azimuth",30.28813975277778],PARAMETER["Longitude_Of_Center",24.83333333333333],PARAMETER["Latitude_Of_Center",49.5],PARAMETER["X_Scale",-1],PARAMETER["Y_Scale",1],PARAMETER["XY_Plane_Rotation",90],UNIT["Meter",1]]','+proj=krovak +lat_0=49.5 +lon_0=24.83333333333333 +alpha=30.28813975277778 +k=0.9999 +x_0=0 +y_0=0 +ellps=bessel +units=m');
+	* podle tohoto http://redmine.ccss.cz/projects/geohosting/wiki/S-JTSK_transformation

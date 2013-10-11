@@ -1,0 +1,165 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-04-08T13:27:43+02:00
+
+====== 07 - GIT v ... ======
+Pondělí 08., 16. a 22. dubna 2013
+
+* viz prezentace
+* základ: aktuální landuse, KM
+* lesnictví
+* zemědělství
+* vodní hospodářství a revitalizace
+* krajinné plánování a urbanismus
+* pozemkové fondy
+* demografie a rekreace
+* průmyslové aktivity - znečišťovatelé REZZO 1-3
+* analýza rizikových míst krajiny, krizový management
+	* bude nás zajímat homogenní jednotka v krajině
+
+===== Telemetrické sledování aktivity/pohybu živočichů =====
+* radiotelemetrie - vysílač na zvířeti - vysílá signál + potřebuješ přijímač, souřadnice se zachycuje do texťáku, na papír
+* navigační s využitím GPS - určí polohu, vysílač to vysílá do centra, kde se to zpracovává, energeticky náročnější a dražší, nutnost datového tarifu, satelitního přijímače
+* výskyt, monitoring pohybu, vitalita zvířete a další
+* __nálezová data__
+	* časově (interval nebo datum) + prostorově (souřadnice) lokalizované údaje o výskytu určitého taxonu
+	* platná nálezová data = co + kde + kdy + ??
+	* nálezové databáze ISOP a další (slide 71 MAKRA_vsechny_prednasky.pdf)
+* __síťové mapování__
+	* technika na tvorbu biogeografických map, slouží k zaznamenání základních vlastností
+	* určen k vizualizaci **výskytu druhů**
+	* typy sítí - čtverce
+		* KFME - 10° zd. 6 zš. 
+			* označuje se čtyřmístným kódem
+		* Universal Transverse Mercator
+			* základní čtverec 100x100km, 50x50, 10x10
+	* analýzy (možnost časových řad)
+		* výskyt v daném časovém období
+		* časový vývoj za 2 časové období
+		* číselný údaj, který vyjadřuje počet nálezů všech druhů za dané období
+		* počet druhů v daném období
+* __metody sběru dat (sběr nálezových dat)__
+	* terénní záznamním (papír) bez lokalizace v mapě
+		* nepřesné, pomalé
+	* diktafon bez lokalizace v mapě (lepší)
+	* škrtací seznam s kopií mapy
+		* soupis druhů, které se tam můžou vyskytovat
+		* přesnější, kreslení do mapy
+		* zdlouhavá příprava
+		* čím delší příprava tím lepší data
+	* s mapou a škrtacím seznamem
+		* lokalizaci píšu do čtverců
+	* terénní záznamník + turistická GPS
+		* + přesnější lokalizace, orientace podle podkladové mapy
+		* — kvalita signálu, nepřesnosti měření, akumulátor
+	* turistická GPS se systémem 6-ti místních kódů (+ škrták)
+		* škrták - druhy mají své kódy
+* __aplikační podpora ND__
+	* požadavky
+		* užití technologie - zaškolit terénní pracovníky
+		* vše by mělo být nejjednodušší 
+	* procesy: 
+		* vycházíme z toho, že už nějaká nálezová data firma má
+		* ''data'' z databáze → příprava dat (podkladových a nálezových v případě aktualizace) do GPS → terénní práce → verifikace → příprava dat k uložení do databáze → verifikace → nálezová databáze
+		* zálohy, verifikace, autorizace
+* sw **Janitor** jako generátor pro sítě
+		* freeware, koncept prostorové databáze
+		* původně vyvinut pro krajinářské účely
+		* pokročilé metody lokalizace
+			* kódem čtverce síťového mapování
+			* názvem kú
+			* GIS vrstvami,
+			* zákres nad rektifikovanými daty
+			* ..
+	* Janitor2 - komponenty: JanDat, JanMap, SQL Tools, DataBuilder, JanField (mobily), Publisher, Analyzer
+* dobrá infra satelitní data ve velkém rozlišení: Spot, GeoEye
+
+===== GIT a krajinotvorné programy v ČR =====
+* programy MŽP
+	* úkolem GIT: plánování (potencionály, nástrahy), průběžná evidence, archivace činnosti a dějů v krajině
+* __příprava__
+	* základ: **topografický podklad**
+		* v celém zájmovém území musí být jednotný (mozaikování pro vyrovnání barev, transformace do stejného souřadnicového systému)
+		* aktuální
+		* přesný
+		* ortofoto (WMS), ZABAGED 1/2
+	* vyjádření majetkoprávní vztahů: **katastrální mapa**
+		* příložná mapa - intravilán v 1:2880, extravilán 1:500, 1:1000 nebo 1:2000
+	* **režim ochrany **
+		* ideálně vektor na disku (ne WFS)
+		* velkoplošné, ÚSES, památné stromy, ochranná pásma, telekomunikace ... 
+	* **realizovaný management **(= co se v tom území událo)
+		* historický vývoj (časové řady + typy zásahů)
+	* terénní šetření
+* __analýzy__
+	* vhodnost k pastvě, vodní větrná eroze, svážná území
+	* potřeba znát podmínky, faktory, kritéria
+* __výsledkem:__ 
+	* **areál plánovaných zásahů**
+* __využití získaných dat:__
+	* při uzavírání smlouvu:
+		* rozloha v ha, kú (název, kód), výpis všech parcel (pro kontrolu, kterých parcel se to týče cele (inside) a kterých jen částečně)
+		* souřadnice lomových bodů
+		* výtisk mapy
+	* při kontrole průběhu práce
+		* kontrola rozsahu a zacílení prací
+	* při přebírání prací
+		* kontroluje se rozsah a kvalita práce
+
+==== ÚSES ====
+* územní systém ekologicky stabilnější segmentů v krajině, rozmístěny tak, aby byla zachována stabilita
+* části: biokoridor, biocentrum, interakční prvky
+* pro EU EECONET (Evropská ekologická síť)
+* NATURA 2000
+* generel ÚSES - teoretická část
+* plán ÚSES - závazný, pokud je schválen
+* projekt ÚSES
+* zdroje dat:
+	* orgány ochrany přírody
+		* lokální - obecní úřad, obec s pověřenou působností
+		* regionální - AOPK, krajské úřady
+		* nadregionální - MŽP ČR (CENIA), MMR - ÚPD
+
+==== Pasport zeleně ====
+* grafická a popisná, včetně základní charakteristiky a vlastnických vztahů (s majetkoprávním vztahem (vlastnické vztahy - vlastník, nájem, legislativou dané))
+* slouží k evidenci, propojení s dokumenty (fotografie, smlouvy), tiskové výstupy, získávání podkladové dokumentace pro údržbu zeleně, ... 
+* monotématické, aktuálnost (pravidelná aktualizace)
+* obsah:
+	* základní evidovanou jednotkou - plocha zeleně
+	* údaje o biologických prvcích - trávníky, záhony, skupiny keřů, ...
+	* údaje o technických prvcích - cesty, schodiště, pískoviště, .. 
+* správci veřejné zeleně
+	* odbor ŽP, odbor majetkový (př. natřít lavičku), odbor investic (zaplacení škod)
+	* ostatní - servisní organizace (ta, která je najmuta na práci typu zalít, zasadit, zamést), odborné firmy
+* sw aplikace pro pasporty
+	* Gs Web - webová aplikace, data shp, Oracle nebo MS SQL 
+	* Gisel - desktop, SDE nebo shp
+	* Misys - desktop, MS Access
+	* vlastní (MapServer, ArcGIS Server)
+* podkladová data
+	* DKM, KM-D, soubor popisných informací SPI
+	* digitální technická mapa (DTM) - včetně technických a přírodních objektů
+	* ZABAGED
+	* ortofoto
+	* protokoly o převzetí zeleně
+
+==== Analýza viditelnosti a hodnocení krajinného rázu ====
+* analýza krajinného rázu 
+	* při hodnocení stavby, která by mohla narušit krajinný ráz
+* krajinná dominanta
+	* krajinný prvek, složka krajiny, která výrazně převažuje tvarem, vertikálním umístěním okolí
+	* nebezpečné - potírání dominant
+		* mělo by se i 3D hodnotit (viz. mrakodrapy OL)
+* vymezení dominant podle původu, počtu, rozsahu
+* přímá viditelnost mezi 2-mi body
+	* funkce //line of sight// - 2 souřadnice + DEM
+* dohlednost - jak daleko vidím, plocha - věže mobilních operátorů
+	* funkce //viewshed//
+	* funkce //visibility// - úhel, dohlednost lidského oka, zakřivení terénu, 
+
+==== Krajinná jednotka ====
+* část území, něčím charakteristický
+* sw Arboreus - vyhodnocení dřevinné skladby dle daných charakteristik
+	* zdarma, 1:100 tis.
+* krajinná diagnóza a prognóza
+

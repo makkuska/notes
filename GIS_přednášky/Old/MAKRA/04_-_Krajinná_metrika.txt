@@ -1,0 +1,105 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-03-18T13:16:13+01:00
+
+====== 04 - Krajinná metrika ======
+Pondělí 18. března 2013
+
+* struktura krajiny je dána roložením energie, látek, druhů ve vztahu k tvarům, velikostem, počtům, způsobům a k uspořádání krajinnýc hsložek a ekosystémů
+* porovnávají se čísla
+* dána řadou** standardizovaných indexů**
+* krajinná metrika dána:
+	* komplexností
+		* jednoduché (obvod)
+		* složené (kes) - kombinuje se více vlastností dohromady
+	* časovostí
+		* analýza v rámci jednoho období
+		* analýza napříč časem - pro jedno území
+* lze je počítat 
+	* za území jako celek (land scape, česky krajinná úroveň)
+	* kategoriích (class indices), pro každou kategorii se počítá
+* __indexy velikosti a hustoty (není potřeba umět):__
+	* popisující** velikost **S 
+	* hustotu plošek v prostoru
+	* **hustota okraje plošky**
+	* **obvod **plošky L
+	* výměry v daném území
+	* počtu ploch - kolikrát se vyskytuje
+	* **průměr** 2 a více entit
+	* střední velikost (**medián**) pro 2 a více entit
+	* bohatost, rozdílnost, variant dané položky
+	* relativní výskyt 
+	* **stanovení okrajového efektu **- buffer
+* __indexy tvarů plošek:__
+	* tvar rozhoduje o interakci s okolím
+	* poměr obvod/plocha
+	* opravený poměr obvod (CPA)
+* __indexy hran, okrajů:__
+	* celkové délky okraje
+	* hustoty okrajů
+	* průměrné délky okrajů
+* __ekotony__
+	* přechod mezi 2-mi či více rozdílnými společenstvími, územími 
+	* většinou fyzzy přechod, rovné přechody jen po zásahu člověka
+	* počet druhů a hustota v ekotonu je vyšší než sousedních společenstvech
+	* počítají se
+		* druhy okrajového prostředí
+		* druhy vnitřního prostředí
+	* prostorové vlastnosti (co měřit):
+		* šířka ekotonu
+		* relativní délka ekotonu
+		* index křivolakosti (skutečná délka/nejkratší možná délka)
+		* spojitost koridoru (taky poměr délek)
+		* druhové složení:
+			* Sorensenův koeficient
+			* Jaccardův k. 
+			* Kluzyňského k 
+			* počet druhů v první čtverci, .. viz prezentace
+* __vzdálenost plošek nebo skupin plošek od druhých (prezentace)__
+	* vzdálenost = ztráta energie pohybem, zvýšení rizika predace, ..
+	* vazba (= stupeň izolace) ploše
+	* od plošky ke všem ostatních ploškám  .. co?
+	* 4x od plošky, každé plošky
+	* index blízkosti
+	* izolovanost plošky
+	* prostorová autokorelace - data platná pro různé lokality odráží krajinnou strukturu, jakým způsobem nám měřítko ovlivňuje data
+		* všechna data musí mít po celou dobu stejné měřítko
+* __fraktální dimenze__
+	* příroda má v sobě pravidelné tvary
+
+==== Heterogenita krajiny ====
+* znak krajinného systému, jejíž míru lze objektivně vyjádřit
+* procesy
+	* geologické a geomorfologické
+	* kolonizace, sukcese - způsob jakým se tam dostává biota
+	* přírodní disturbance - narušení, které vyvolávají další proces
+	* antropologie - co člověk udělal
+* atributy heterogenity
+	* 1. typová rozmanitost zastoupených ekosystémů
+	* 2. intenzita vzájemných vztahů - indexy které odpovídají dotykovým a společným hranám, hustota hran, ..
+	* 3. velikost a tvar
+	* 4. prostorové uspořádání (jak má daleko k nejbližší podobné ploše)
+	* 5. povaha vzájemných vztahů mezi elementy a vývojovými změnami předchozích charakteristik
+* 3 stupně heterogenity
+	* alfa-heterogenita - prostorová h. konkrétního ekosystému
+	* beta - p. h. krajinné mozaiky, ..
+	* gama - .. 
+* __indexy diversity a vyváženosti:__
+	* **Shannonův index diversity** - míry nahodilosti, neuspořádanosti
+		* Ai - relativní plocha pokrytou i-tou třídou pokryvu pro n třídu
+	* index dominance - stanovení nadřízenosti
+	* entropie - míra neuspořádanosti jednotlivých složek
+
+==== Fragmentace krajiny ====
+* proces, kterého je rozlehlé stanoviště rozděleno na menší části
+* vede ke zvyšování krajinné heterogenity
+* neúměrný nárůst heterogenity vede k zániku a vyhubení některých druhů
+* index lokální fragmentace - fce Near (jen 2D = bez vlivu reliéfu)
+* nástroje pro popis krajiny
+	* Landscape analyst (už se nepoužívá)
+	* Patch analyst - dbf
+	* VLATE - stejné výsledky jako Patch analyst, protože běží nad Fragstatem, ten je nej; není tam vysvětlení vzorců, jen u fragstatu
+		* výsledkem je vždy texťák
+	* StraKA - vyvinuta na katedře pro starší verzi ArcGISu
+		* 1 toolbox → 2 toolsety - charakteristiky a indexy (7 indexů)
+		* většina indexů není obsažena v předchozích dvou

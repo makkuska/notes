@@ -1,0 +1,84 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-04-08T09:49:14+02:00
+
+====== 05 - Geodatabáze ======
+Pondělí 08., 15. a 22. dubna 2013
+
+* simplex - z jednodušších entit skládám složitější
+	* simplex 0 - bod, simplex 3 - čtyřstěn, ..
+* úplně deskriptory - popis od "vrchu" - množina bodů, úseček
+	* každý bod je bodem sítě, žádný vnitřní bod není zaznamenáván v síti
+* prostorová data popíšu prostorovými datovými daty + prostorovou operaci
+* operace:
+	* predikáty - výsledkem operace je 0 nebo 1 - pravda, nepravda
+	* relace - vztah mezi skupinou prvků jedné nebo více množin 
+	* ostatní operace - výsledkem matematických operací, s hodnot vypočítám/získám jinou hodnotu - Area()
+* doména: textová, numerická, logická, datumová, spatial
+* **prostorové operace:**
+	* __přistupují k jedné prostorové položce (1 vrstva):__
+		* **topologické** - určím dimenzi, hranici, co je vně a uvnitř prvku, 
+			* //dimension//
+			* //boundary// - hranice (vnější, vnitřní (celistvá nebo složená)
+			* //interior// - popis objektu včetně hranice
+			* //interiorNodes, interiosEdges, interiorAreas//
+		* **aritmetrické**
+			* //lenght //- 1D
+			* //area// - 2D
+			* //volume //- 3D
+		* **složené **(kombinace topologie a aritmetrie)
+			* //perimeter// 
+			* //extreme coordinates //- rohové, ulítlé body v topologii
+			* //complement//
+			* //convex hull// - konvexní obaly
+	* __binární operace (kombinace 2 prostorových složek)__
+		* //distance// - výsledek nezáporné reálné číslo
+		* //direction// - úhel udávající azimut
+* **prostorové predikáty**
+	* vyjádření prostorové relace (vztahu) mezi dvěma prostorovými atributy
+	* výsledkem vždy Booleanovská hodnota
+	* //disjoint//
+	* //meet// - potkávají se hraně
+	* //overlap//
+	* //inside/contains// - bod je uvnitř nebo obsahuje
+	* //covers/coveredBy//
+	* //equal// - mají stejné hrany i body
+	* left/right // - dotyk z leva z prava//
+	* //south/north//
+	* //over/under//
+	* predikát PICK - vybírá podle pozice kurzoru
+* dotazovací jazyk + prezentační jazyk	
+	* GPL (Graphical presentation language)
+		* zobrazování položených dotazů
+		* instrukce: SET, CANCEL, SHOW
+		* modifikátory: PERMANENT, IMMEDIATELY
+		* zobrazovací mód: 
+			* udává jak se zobrazují výsledky sekvence dotazů
+			* new, overlay, remove, intersect, highlight, alfa
+		* grafická prezentace:
+			* nastavení legendy, měřítka, výřezu (window), kontext, zjištění obsahu kresby
+
+===== Uložení geodat v databázi =====
+* standart SQL-92
+* standard **SFS (od OGC) Simple Feature**
+	* 2D objekty
+	* **WKT** (well-known text)
+	* **WKB** (well-known binary)
+* __geometrický objektový model__
+	* souřadnicový systém buď **EPSG** nebo **default -1** (= planární systém)
+	* třída **Geometrie**
+		* třída **Point**
+		* třída **Curve** (1-rozměrný)
+			* sekvence bodů
+			* LineString, LineRing
+		* třída **Surface** (2-rozměrný)
+			* GeometryCollection je množina složená s více geometrických objektů, ve stejném souřadnicovým systém
+* analytické prostorové funkce - často je používána knihovna **GEOS**
+	* contains (g1,g2) - g2 je obsažená v  BoundaryBoxu g1
+	* within
+	* equal
+	* crosses
+	* intersect - pokud se dotýkají nebo překrývají
+	* overlap
+	* touches
+	* disjoint

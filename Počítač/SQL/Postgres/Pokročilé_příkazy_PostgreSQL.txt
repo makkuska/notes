@@ -1,0 +1,47 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-04-04T18:46:55+02:00
+
+====== Pokročilé příkazy PostgreSQL ======
+Created Čtvrtek 04 duben 2013
+
+* logy uloženy ve /var/log/postgresql a /var/lib/postgresql 
+
+==== su postgres ====
+* backup
+	* pg_dump --column-inserts //nazev_databaze//
+	* pg_dumpall --column-inserts -t //table// -d //database -//f //nazev_dumpu.sql//
+
+* restore 
+* **non-interactive psql** - kombinace psql a SQL příkazu
+	* př. 
+	'''
+	psql -d recepty -c "CREATE TABLE (id integer); INSERT INTO bla VALUES (1);"
+	psql -d recepty -c "DROP TABLE bla;"
+	psql -d recepty -c "SELECT * from bla;"
+	'''
+
+
+==== psql ====
+* vyhledání nainstalovaných **extenzí**:
+	''SELECT * from pg_available_extensions;''
+* **umístění konfiguračních souborů:**
+	SELECT name, setting FROM pg_settings WHERE category = 'File Locations';
+* \h help
+* \h CREATE TABLE - formát create table
+* **TIMING ON**
+	''recepty=# ''__\timing on__
+	'''
+	  Timing is on.
+	recepty=# SELECT * from bla ;
+	 id 
+	----
+	  1
+	  2
+	  5
+	(3 rows)
+	'''
+**Time: 0,453 ms**
+
+
+

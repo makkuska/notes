@@ -1,0 +1,159 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-05-18T21:49:57+02:00
+
+====== 11 - Mlhy a smog ======
+Sobota 18. května 2013
+
+====== Mlha ======
+* oblak, který leží bezprostředně nad zemí a výrazně omezuje viditelnost
+	* malé vodní kapičky a drobné ledové krystalky
+	* dotýká se zemského povrchu
+* vzniká kondenzací vodní páry v přízemní vrstvě vzduchu
+	* poklesne-li teplota vzduchu pod teplotu rosného bodu
+	* nejčastěji v místech zasažených exhalacemi - množství kondenzačních jader – tvorba kondenzačních center
+* dělení mlhy
+	* podle viditelnosti
+		* do 1 km ~ mlha
+		* 1 – 10 km ~ kouřmo
+		* více než 10 km ~ zákal
+	* podle způsobu, jakým dochází k ochlazování vzdušné masy
+		* **radiační mlha**
+			* vznik __při nočním ochlazování__ vzduchu při zemském povrchu (vznik v druhé polovině noci)
+			* nutné __pomalé proudění__ (1–3 m/s) => nasycení vzduchu vodními parami
+			* //léto// – tenká vrstvička, rozpad po východu
+			* //podzim// – vrstva 100-200 m, rozpad dopoledne nebo metamorfóza na Stratus
+			* //zima// – může trvat i celý den
+		* **advekční mlha**
+			* vznik __při přemísťování vlhkého teplého vzduchu nad studené __zemské podloží
+			* při pohybu ochlazování od země => nasycení vzduchu vodními parami
+			* při __rychlém proudění__ zvednutí → Stratus
+			* vznik kdykoliv, obvykle podzim, zima
+				* teplý a vlhký oceánský vzduch
+			* spojené s mrholením, v noci sílí radiační efekt
+			* mocnost __20-100 m__, __dlouhé trvání__
+		* **mlha z vypařování**
+			* před frontou – předfrontální mlha
+			* studeným vzduchem propadávají relativně teplé kapky → vypařování → nasycení vzduchu vodními parami
+			* nejčastěji před teplou frontou - 100 – 200 km před frontální čárou
+		* **mlha z promíchávání**
+			* za frontou – zafrontální mlha
+			* podmíněna advekcí teplého a vlhkého vzduchu nad studené podloží =>nasycení vzduchu vodními parami
+			* velká rozloha, za teplou frontou nebo teplou okluzí, spojená s frontální oblačností
+		* orografické - frontální
+		* **městské - smog (smoke + fog)**
+			* __chemické znečištění__ atmosféry, které je způsobené lidskou činností
+			* směs především __vodního aerosolu, prachu, kouře a exhalací__ z dopravy
+			* namodralý až našedlý nádech
+			* kondenzace v městském prostředí je velmi snadná
+			* ráno – nejpříznivější podmínky pro vznik mlhy + ranní dopravní špička
+			* dělení smogu
+				* redukční (zimní) - **londýnský**
+					* směs městského a průmyslového kouře s mlhou
+					* výskyt typicky __v zimních__ podmínkách
+					* výrazné přízemní __inverze__ teploty vzduchu
+					* složen s látek snadno podléhající oxidaci - převážně __SO__
+					* silně redukční účinky pro své okolí
+					* typický pro Londýn – vlhký mořský vzduch (smogová situace 1952)
+				* oxidační (letní) - **fotochemický, kalifornský, losangelský**
+					* vliv __slunečních paprsků__, v __létě__
+					* vysoké koncentrace __přízemního ozónu__
+						* slunečního záření + exhalace (NO ,VOC) → fotochemická reakce →  přízemní ozón
+					* silné oxidační, agresivní, dráždivé a toxické účinky - sliznice, dýchací cesty, oči atd.
+* hazard:
+	* mlha snižuje viditelnost - doprava (námořní, letecká, silniční, ...)
+	* smog způsobuje zdravotní komplikace - respirační onemocnění, pálení očí, ...
+	* mlha však může být i příznivá
+		* některé rostliny i plodiny na mlze závislé
+		* vlhkost, snížení teploty a slunečního záření
+* METEOROLOGICKÉ VYBAVENÍ
+	* Net-pyranometr, pyrgometr, spektroradiometr
+	* Spektrofotometr (Dobson, Brewer)
+	* Půdní teploměry, mrazoměry
+	* Srážkoměry, ombrograf, totalizátor
+	* vlhkost vzduchu: psychrometr, barometr, anemometr, hygrometr
+		* psychrometrická metoda
+			* měření teploty na 2 stejných teploměrech, na jednom bavlněná látka ponořená do vody
+			* vlhký teploměr < teplota až do 100%
+			* vlhkosti vzduchu (mlha) = vzduch zcela nasycen vodími param
+	* Nefometr, nefoskop
+	* Evaporimetr, evapotranspirometr, lyzimetr
+	* Drosometr
+	* Sněhoměrná lať, prkénko, váhový sněhoměr
+	* Půdní tenzometr (sací tlak, vodní režim půd)
+	* Piezometr (hladina podzemní vody)
+	* Neutronová vlhkostní sonda (půdní vlhkost)
+	* Tzv. sběrný objekt (zachycení vody z půdních profilů)
+	* Vzorkovače kvality vody
+	* Meteorologická budka (standardizované měření WMO)
+		* orientace (dvířka na S)
+		* barva (bílá), materiál (dřevo), typ (lamely na okrajích)
+		* výška dna (1,8m nad zemí)
+		* rtuťový (etanolový) teploměr
+		* odečet 7, 14, 21h SEČ
+
+====== Znečištění ======
+* 1991-1999 došlo v ČR k výraznému snížení znečistění ovzduší
+* převážně se jednalo o snížení koncentrace suspendovaných částic (PM), oxidu siřičitého (SO2) a oxidu dusíku (NOx).
+* od 1999 kvalita ovzduší vykazuje konstantní spíše zvyšující se hodnoty 
+* __Integrovaný národní program snižování emisí v ČR__ 
+	* přijat v roce 2004 a aktualizován v roce 2006.
+	* V roce 2005 byla realizována opatření, která si kladla za cíl snížit znečistění ovzduší PM10, PM2,5, benzo(a)pyranem a oxidy uhlíku.
+	* **PM = prachové částice**, s aerodynamickým průměrem do 10 (2,5) μm, které v důsledku zanedbatelné pádové rychlosti setrvávají v ovzduší.
+		* hlavní zdroje: dopravu, elektrárny, spalovací zdroje, báňskou činnost a stavební práce
+		* přispívají ke kardiovaskulárním problémům, ke snižování imunity a zánětlivá onemocnění plicní tkáně
+		* jemné prachové částice PM2,5 nejvýrazněji ohrožují zdravotní stav lidí.
+		* **ČHMÚ**: __153 monitorovacích stanic__ měření koncentrací prachových částic
+		* Největší roční hodnoty PM10 Karviná a Ostrava
+		* ČHMÚ identifikovala 2,9 % plochy (15 % obyvatel ČR) s přeskočením imisních limitů pro PM10
+		* na 9 místech byl imisní limit v roce 2008 překročen (Ostrava, Karviná, Brno)
+	* **Oblast se zhoršenou kvalitou ovzduší (OZKO)** = zóna či aglomerace, kde došlo k překročení hodnoty imisního limitu u jedné nebo více znečisťujících látek.
+	* **Oxid siřičitý SO2** - vzniká spalováním uhlí a olejů a tavením rudy s obsahem síry, koncentrace SO2 nebyla v roce 2008 překročena na stanici ČHMÚ
+	* **Oxid dusičitý (NO2)** - monitorován ve 175 lokalitách, imisní limit v roce 2008 překročen na 13 místech (hlavně doprava)
+	* **Oxid uhelnatý CO** - nedošlo k překročení imisních limitů, nejvyšší koncentrace Ostrava
+* **Automatické měřící stanice (AMS)**
+	* ČHMÚ, hodinové nebo 10 min intervaly
+	* koncentrace SO2, NOx, PM10, PM2,5, PAHs, CO, O3, aromatických uhlovodíků.
+	* kvalitativní rozbor srážek.
+	* data ukládána do PC umístěného uvnitř stanice, který data dále posílá do centrální republikové databáze
+* **modelování** 
+	* zajímá nás transport a rozptyl znečištění v atmosféře
+	* **SYMOS ́97** (Systém modelování stacionárních zdrojů)
+		* výpočet znečištění ovzduší plynnými látkami z bodových, liniových a plošných zdrojů
+		* stanovit charakteristiky znečištění a připravit podklady pro kartograf. zprac.
+		* uvažovat statistické rozložení směru a rychlosti větru
+		* stanovované charakteristiky
+			* max. možné krátkodobé hodnoty koncentrací znečišť. látek
+				* s ohledem na třídy rychlosti větru a stability ovzduší
+				* bez ohledu na třídy rychlosti větru a stability ovzduší
+			* roční průměrné koncentrace
+			* doby trvání koncentrací převyšujících imisní limity 
+			* + doplňkové charakteristiky
+		* metodika je doplněna o dva speciální postupy výpočtu znečištění ovzduší
+			* 1) výpočet extrémního znečištění ovzduší při inverzích a bezvětří
+			* 2) stanovení rozptylu exhalací vypouštěných s chladících věží tepelných elektráren
+	* **ALOHA** (Areal Locations of Hazardous Atmospheres)
+		* jednoduchý 2D simulační software - freeware
+		* přibližně modeluje tvar a rozsah úniku nebezpečné látky do atmosféry
+		* dokáže určit velikost ohrožené oblasti výbuchem či hořením hořlavé látky
+		* obsahuje databázi několika set nejběžnějších chemických látek používaných v průmyslu
+		* lze stáhnout databázi CAMEO - obsahuje mnohem větší databázi chemikálií - hlavně méně obvyklé
+		* výpočty pomocí
+			* statistického gaussovského rozdělení
+			* modelu „heavy gas“ pro simulace pohybu mraků plynů těžších než vzduch
+		* definice:
+			* město, datum a čas události
+			* vybrání chemické látky z databáze
+			* vložení informací o počasí
+			* popsat jak chemická látka uniká
+			* zobrazení zón ohrožení
+		* nespolehlivá, pokud nastane některá z těchto situací:
+			* příliš nízká rychlost větru - 1 m/s ve výšce 3 metry
+			* velmi stabilní atmosférické podmínky
+			* poryvy větru a vliv terénu
+			* koncentrace látek, hlavně v blízkosti zdroje – ALOHA počítá s průměry v časové periodě
+• nepočítá s efektem:
+			* vedlejších produktů z ohňů, explozí nebo chemických reakcí částic
+			* chemických směsí
+			* terénu - počítá s rovinou
+			* nebezpečných fragmentů – trajektorie předmětů z výbuchu

@@ -1,0 +1,207 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>5 - N-vrstvé aplikace</title>
+		<meta name='Generator' content='Zim 0.54'>
+		<style type='text/css'>
+			a          { text-decoration: none      }
+			a:hover    { text-decoration: underline }
+			a:active   { text-decoration: underline }
+			strike     { color: grey                }
+			u          { text-decoration: none;
+			             background-color: yellow   }
+			tt         { color: #2e3436;            }
+			pre        { color: #2e3436;
+			             margin-left: 20px          }
+			h1         { text-decoration: underline;
+			             color: #4e9a06             }
+			h2         { color: #4e9a06             }
+			h3         { color: #4e9a06             }
+			h4         { color: #4e9a06             }
+			h5         { color: #4e9a06             }
+		</style>
+	</head>
+	<body>
+
+<!-- Wiki content -->
+
+<h1>5 - N-vrstvé aplikace</h1>
+
+<p>
+Pondělí 22 říjen 2012<br>
+viz prezentace 05-server<br>
+</p>
+
+<h1>Architektura Klient/Server</h1>
+<p>
+<ul>
+<li>princip poskytování služeb</li>
+<li><strong>server</strong> - poskytovatel služeb, nevnucuje služby, pasivně čeká na požadavek od klienta</li>
+<li><strong>klient</strong> - aktivně využívá služby, koncový uživatel souborů a aplikací</li>
+<li>založeno na LAN, serveru + PCs</li>
+<li>komunikace na základě dotazování klienta na server</li>
+</ul>
+</p>
+
+<h3>Druhy architektur K/S</h3>
+<p>
+<ul>
+<li><strong>file server/pracovní stanice</strong></li>
+<ul>
+<li>předchůdce - k uchování a poskytování souborů dat</li>
+<li>uložení dat na file server místo na lokální disk (bezdisková stanice)</li>
+<li>nutné přenosy velkého množství dat - zpomalení práce</li>
+<li>databázová, aplikační i prezentační logika soustředěna v 1 monolitickém bloku</li>
+</ul>
+<li><strong>dvouvrstvá architektura K/S</strong></li>
+<ul>
+<li>oddělena prezentační a databázová logika - jedna část přemístěna na server, kde zpracovává požadovaná data, druhá část zůstavá na klientovi a komunikuje s ním</li>
+<li>aplikační logika umístěna na databázovém serveru nebo v klientské části aplikace - aplikační logika rozdělena mezi K/S</li>
+<li>— pro každou aplikaci za serveru nutný specifický klient, synchronní zpracování, omezená přenositelnost, různý jazyk aplikační a prezentační logiky, omezená rozšířitelnost, intenzivní obousměrná komunikace, která při větším počtu klientských stanic přetěžuje zejména sítě se sběrnicovou topologií</li>
+<li>varianta s tenkým klientem - aplikační logiky na databázovém serveru</li>
+<ul>
+<li>+ zajištění integrity dat na vyšší úrovní</li>
+<li>— zvýšené nároky na výkon serveru</li>
+</ul>
+<li>varianta s tlustým klientem - aplikační logika na klientské stanici</li>
+<ul>
+<li>+ menší nárok na výkon serveru, efektivnější využití výkonnostního potenciálu klientských počítačů</li>
+<li>— zajištění integrity dat na nižší úrovni - výkonnostní omezení - neustálé zamykání záznamů v databázi jednotlivými klienty</li>
+</ul>
+</ul>
+<li><strong>třívrstvá architektura K/S</strong></li>
+<ul>
+<li>důsledně oddělena:</li>
+<ul>
+<li>prezentační logika - uživatelský rozhraní (PC rozhraní)</li>
+<li>aplikační logika - identifikace uživatelů pro zajištění bezpečnosti</li>
+<ul>
+<li>zajišťují mechanismus pro pojmenování souborů a adresářů</li>
+<li>propojení s externími zdroji dat, transformace dat do formátů požadovaných jinými servery a klienty</li>
+<li>speciální fce manipulující s daty - pro synchronizaci</li>
+<li>kontrola verzí, správa aplikací</li>
+</ul>
+<li>databázová logika - zdroje dat pro jednotlivé aplikace</li>
+</ul>
+<li>databázový server komunikuje s aplikačními servery pomocí páteřní sítě</li>
+<li>aplikační servery s klienty pomocí lokálních sítí</li>
+<li>flexibilní řešení - všechny vrstvy na jednom počítačí</li>
+</ul>
+<li><strong>vícevrstvá architektura K/S</strong></li>
+<ul>
+<li>třívrstvá + www server</li>
+</ul>
+<li><u>přínos vícevrstvých aplikací:</u></li>
+<ul>
+<li>vznik univerzálního klienta</li>
+<li>rychlost vývoje aplikací</li>
+<li>propojenost systému</li>
+<li>vývoj k tzv. gateway architektuře</li>
+<li>aplikace postavené z částí</li>
+<li>platformní nezávislost</li>
+</ul>
+<li><u>výhody vícevrstvých aplikací:</u></li>
+<ul>
+<li>bezpečnost, dynamické zálohování</li>
+<li>flexibilita doplňování libovolného grafického rozhraní a nových technologií</li>
+<li>online přístup k datům</li>
+<li>nižší cena HW</li>
+<li>silní transakce, dvoufázový přístup</li>
+</ul>
+<li><u>nevýhody:	</u></li>
+<ul>
+<li>komplikovanější návrh a implementace</li>
+<li>pokud je návrh nevhodně proveden a vazba mezi vrstvami je příliš silná, dochází k přílišnému zatížení komunikačního kanálu</li>
+</ul>
+</ul>
+</p>
+
+<h1>Network Computing</h1>
+<p>
+<ul>
+<li>založen na bázi tenkých klientů, kde tenký klient nahrazuje tlustého</li>
+<li>výsledek - snížení nákladů na systémovou správu ve firmách</li>
+<li><strong>tlustý klient</strong></li>
+<ul>
+<li>zbytečné množství aplikací (některé zřídka používané)</li>
+<li>aplikace nainstalované dopředu s předpokladem budoucího využití</li>
+<li>zabírání místa na disku, paměti, spotřeba času procesoru → rostou požadavky na vybavení PC → zvýšení celkových nákladů</li>
+</ul>
+<li><strong>tenký klient</strong></li>
+<ul>
+<li>minimální potřebná vybavenost PC</li>
+<li>vše si stáhne ze serveru</li>
+<li>po skončení práce se vše smaže</li>
+<li>výběr serveru pro tenkého klienta dokonce zajistí i sama síť a její vlastně inteligence</li>
+<li>administrátorské zásahy jsou centrální</li>
+<li>zmenšení provozních nákladů</li>
+</ul>
+<li><u>distribuovaný výpočet</u></li>
+<ul>
+<li>= výpočet rozdělený na více menších, méně náročných úloh za účelem rychlejšího vyřízení požadavku předaného programu</li>
+<li>využití jen u výpočtů, jejichž algoritmus lze paralelizovat = nezávislé části výpočtu běží současně</li>
+<li>simulace složitých jevů - operace probíhaní současně na mnoha procesorech - medicínské, matematické, fyzikální problémy</li>
+</ul>
+<li><strong>Grid Computing </strong></li>
+<ul>
+<li>výpočetní cluster = propojení několika počítačů tak, že mohou vykonávat práci na společné úloze</li>
+<li>výpočetní GRID = hardwarová a softwarová infrastruktura, která poskytuje spolehlivý, standardizovaný a levný přístup ke špičkovým výpočetním službám</li>
+<ul>
+<li>Grid koordinuje zdroje nepodléhající centralizované správě, používá standardní, otevřené, obecné protokoly a rozhraní, poskytuje netriviální kvalitu služeb</li>
+</ul>
+<li>viz prezentace</li>
+</ul>
+<li><strong>Cloud Computing</strong></li>
+<ul>
+<li>výkonný výpočetní systém, k němuž se můžete připojit, požádat o nějakou službu a on ji vykoná</li>
+<li>poskytování služeb či programů uložených skrze Internet s tím, že uživatelé k němu přistupují skrze webový prohlížeč a používat odkudkoliv</li>
+<li>uživatel neplatí za software, ale za jeho využívání</li>
+<li>kacelářské aplikace, systémy pro distribuované výpočty, operační systémy (eyeOS, Cloud)</li>
+<li>pozitiva: </li>
+<ul>
+<li>dostupnost dat a služeb, připojení kdekoliv, multiplatformní</li>
+<li>snížení nákladů, úspora energie, snadnější údržba systému</li>
+</ul>
+<li>nevýhody:</li>
+<ul>
+<li>přenosová kapacita sítě (mobilní), nutnost internetového připojení - výpadky sítě</li>
+<li>právní aspekty - jiné zákony lze státu</li>
+<li>možnost zneužití dat, ztráta dat, není jistota, kde data jsou</li>
+</ul>
+<li>veřejný, soukromý (organizace), hybridní (kombinace veřejného a soukromého), komunitní (skupina lidí, organizace) cloud computing</li>
+<li>tíha nasazené technologie musí ležet na serveru, nesmí klást vysoké nároky na SW a HW klienta</li>
+<li>síť by měla přenášet minimální datové packety</li>
+</ul>
+<li>distribuční model</li>
+<ul>
+<li>udává, co je v rámci služby nabízeno (SW + HW)</li>
+<li>IAAS - infrastruktura jako služba (Infrastructure as a Service)</li>
+<ul>
+<li>poskytování infrastruktury - virtualizace</li>
+</ul>
+<li>PASS - platforma jako služba</li>
+<ul>
+<li>kompletní prostředky pro tvorbu webových aplikací a služeb bez možností stažení softwaru</li>
+</ul>
+<li>SAAS - software jako služba</li>
+<ul>
+<li>program je poskytován jako služba, př. Google Apps</li>
+</ul>
+</ul>
+<li>příklady</li>
+<ul>
+<li>P2P sítě - BitTorrent, FOLDING@HOME</li>
+<li>software - Google Apps, Microsoft Online Services</li>
+<li>Amazon Simple Queue Service</li>
+<li>3Tera ... většinu neznám, viz prezentace</li>
+</ul>
+</ul>
+</p>
+
+
+<!-- End wiki content -->
+
+	</body>
+
+</html>

@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-04-29T13:21:17+02:00
+
+====== 08 - Potenciál krajiny ======
+Pondělí 29. dubna 2013
+
+* potenciál - schopnost plnit požadavky společnosti
+* plánování v krajině - územní plánování
+* výsledkem hodnocení:
+	* informace o strukturní rozmanitosti (co a kde)
+	* využitelnosti území - volný x vázaný potenciál
+	* stupeň antropogenních přeměn ploch
+	* vlivech a jejich rozsahu
+	* citlivost prostředí k jednotlivým činnostem, které jsou navrhovány
+* zásady hodnocení
+	* přesné stanovení cíle
+	* podle čeho budu hodnotit, podle jakého kritéria
+	* měřítko hodnocení
+	* víceparametrové hodnocení, kolik hodnot, kolik vstupních složek, kolik desetinných, ..
+	* jak prezentovat, v jaké podobě

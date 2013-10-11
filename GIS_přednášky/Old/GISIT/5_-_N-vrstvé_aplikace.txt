@@ -1,0 +1,113 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-01-03T14:21:46+01:00
+
+====== 5 - N-vrstvé aplikace ======
+Pondělí 22 říjen 2012
+viz prezentace 05-server
+
+====== Architektura Klient/Server ======
+* princip poskytování služeb
+* **server** - poskytovatel služeb, nevnucuje služby, pasivně čeká na požadavek od klienta
+* **klient** - aktivně využívá služby, koncový uživatel souborů a aplikací
+* založeno na LAN, serveru + PCs
+* komunikace na základě dotazování klienta na server
+
+==== Druhy architektur K/S ====
+* **file server/pracovní stanice**
+	* předchůdce - k uchování a poskytování souborů dat
+	* uložení dat na file server místo na lokální disk (bezdisková stanice)
+	* nutné přenosy velkého množství dat - zpomalení práce
+	* databázová, aplikační i prezentační logika soustředěna v 1 monolitickém bloku
+* **dvouvrstvá architektura K/S**
+	* oddělena prezentační a databázová logika - jedna část přemístěna na server, kde zpracovává požadovaná data, druhá část zůstavá na klientovi a komunikuje s ním
+	* aplikační logika umístěna na databázovém serveru nebo v klientské části aplikace - aplikační logika rozdělena mezi K/S
+	* — pro každou aplikaci za serveru nutný specifický klient, synchronní zpracování, omezená přenositelnost, různý jazyk aplikační a prezentační logiky, omezená rozšířitelnost, intenzivní obousměrná komunikace, která při větším počtu klientských stanic přetěžuje zejména sítě se sběrnicovou topologií
+	* varianta s tenkým klientem - aplikační logiky na databázovém serveru
+		* + zajištění integrity dat na vyšší úrovní
+		* — zvýšené nároky na výkon serveru
+	* varianta s tlustým klientem - aplikační logika na klientské stanici
+		* + menší nárok na výkon serveru, efektivnější využití výkonnostního potenciálu klientských počítačů
+		* — zajištění integrity dat na nižší úrovni - výkonnostní omezení - neustálé zamykání záznamů v databázi jednotlivými klienty
+* **třívrstvá architektura K/S**
+	* důsledně oddělena:
+		* prezentační logika - uživatelský rozhraní (PC rozhraní)
+		* aplikační logika - identifikace uživatelů pro zajištění bezpečnosti
+			* zajišťují mechanismus pro pojmenování souborů a adresářů
+			* propojení s externími zdroji dat, transformace dat do formátů požadovaných jinými servery a klienty
+			* speciální fce manipulující s daty - pro synchronizaci
+			* kontrola verzí, správa aplikací
+		* databázová logika - zdroje dat pro jednotlivé aplikace
+	* databázový server komunikuje s aplikačními servery pomocí páteřní sítě
+	* aplikační servery s klienty pomocí lokálních sítí
+	* flexibilní řešení - všechny vrstvy na jednom počítačí
+* **vícevrstvá architektura K/S**
+	* třívrstvá + www server
+* __přínos vícevrstvých aplikací:__
+	* vznik univerzálního klienta
+	* rychlost vývoje aplikací
+	* propojenost systému
+	* vývoj k tzv. gateway architektuře
+	* aplikace postavené z částí
+	* platformní nezávislost
+* __výhody vícevrstvých aplikací:__
+	* bezpečnost, dynamické zálohování
+	* flexibilita doplňování libovolného grafického rozhraní a nových technologií
+	* online přístup k datům
+	* nižší cena HW
+	* silní transakce, dvoufázový přístup
+* __nevýhody:	__
+	* komplikovanější návrh a implementace
+	* pokud je návrh nevhodně proveden a vazba mezi vrstvami je příliš silná, dochází k přílišnému zatížení komunikačního kanálu
+
+====== Network Computing ======
+* založen na bázi tenkých klientů, kde tenký klient nahrazuje tlustého
+* výsledek - snížení nákladů na systémovou správu ve firmách
+* **tlustý klient**
+	* zbytečné množství aplikací (některé zřídka používané)
+	* aplikace nainstalované dopředu s předpokladem budoucího využití
+	* zabírání místa na disku, paměti, spotřeba času procesoru → rostou požadavky na vybavení PC → zvýšení celkových nákladů
+* **tenký klient**
+	* minimální potřebná vybavenost PC
+	* vše si stáhne ze serveru
+	* po skončení práce se vše smaže
+	* výběr serveru pro tenkého klienta dokonce zajistí i sama síť a její vlastně inteligence
+	* administrátorské zásahy jsou centrální
+	* zmenšení provozních nákladů
+* __distribuovaný výpočet__
+	* = výpočet rozdělený na více menších, méně náročných úloh za účelem rychlejšího vyřízení požadavku předaného programu
+	* využití jen u výpočtů, jejichž algoritmus lze paralelizovat = nezávislé části výpočtu běží současně
+	* simulace složitých jevů - operace probíhaní současně na mnoha procesorech - medicínské, matematické, fyzikální problémy
+* **Grid Computing **
+	* výpočetní cluster = propojení několika počítačů tak, že mohou vykonávat práci na společné úloze
+	* výpočetní GRID = hardwarová a softwarová infrastruktura, která poskytuje spolehlivý, standardizovaný a levný přístup ke špičkovým výpočetním službám
+		* Grid koordinuje zdroje nepodléhající centralizované správě, používá standardní, otevřené, obecné protokoly a rozhraní, poskytuje netriviální kvalitu služeb
+	* viz prezentace
+* **Cloud Computing**
+	* výkonný výpočetní systém, k němuž se můžete připojit, požádat o nějakou službu a on ji vykoná
+	* poskytování služeb či programů uložených skrze Internet s tím, že uživatelé k němu přistupují skrze webový prohlížeč a používat odkudkoliv
+	* uživatel neplatí za software, ale za jeho využívání
+	* kacelářské aplikace, systémy pro distribuované výpočty, operační systémy (eyeOS, Cloud)
+	* pozitiva: 
+		* dostupnost dat a služeb, připojení kdekoliv, multiplatformní
+		* snížení nákladů, úspora energie, snadnější údržba systému
+	* nevýhody:
+		* přenosová kapacita sítě (mobilní), nutnost internetového připojení - výpadky sítě
+		* právní aspekty - jiné zákony lze státu
+		* možnost zneužití dat, ztráta dat, není jistota, kde data jsou
+	* veřejný, soukromý (organizace), hybridní (kombinace veřejného a soukromého), komunitní (skupina lidí, organizace) cloud computing
+	* tíha nasazené technologie musí ležet na serveru, nesmí klást vysoké nároky na SW a HW klienta
+	* síť by měla přenášet minimální datové packety
+* distribuční model
+	* udává, co je v rámci služby nabízeno (SW + HW)
+	* IAAS - infrastruktura jako služba (Infrastructure as a Service)
+		* poskytování infrastruktury - virtualizace
+	* PASS - platforma jako služba
+		* kompletní prostředky pro tvorbu webových aplikací a služeb bez možností stažení softwaru
+	* SAAS - software jako služba
+		* program je poskytován jako služba, př. Google Apps
+* příklady
+	* P2P sítě - BitTorrent, FOLDING@HOME
+	* software - Google Apps, Microsoft Online Services
+	* Amazon Simple Queue Service
+	* 3Tera ... většinu neznám, viz prezentace

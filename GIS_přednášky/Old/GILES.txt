@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-02-11T08:43:00+01:00
+
+====== GILES ======
+Created Pondělí 11 únor 2013
+
+* knihovna GeoTools - knihovna geoprostorových funkcí 
+* mapguide - pro web
+* OSSM - pro zpracování DPZ snímků
+* FDO - pro získání a analýzu geodat
+* MapFish, GeoMoose, Mapnik
+* DotSpatial pro Windows
+* EasyWMS
+* OpenJump klienti pro WPS
+
+__funkce spatilite:__
+CONTAINS (g1, g2) - TRUE pokud g2 leží uvnitř BB g1
+WITHIN - TRUE pokud g1 leží uvnitř BB g2
+EQUALS - TRUE pokud jsou si rovny
+INTERSECTS - TRUE pokud se překrývají nebo dotýkají
+OVERLAPS - TRUE pokud se překrývají
+TOUCHES - TRUE pokud se dotýkají
+DISJOINT - TRUE pokud se nedotýkají ani nekříží
+CROSSES - TRUE pokud se nekříží
+
+př. SELECT __disjoint__(giles1.geometry, giles2.geometry) FROM giles_polygon AS giles1, giles_polygon AS giles2 WHERE giles1.id=1 AND giles2.id=2
+SELECT __overlaps__(giles1.geometry, giles2.geometry) FROM giles_polygon AS giles1, giles_polygon AS giles2 WHERE giles1.id=1 AND giles2.id=2
+   
+__glength__(geometry) - linie
+__area__(geometry) - polygon
+__glength__(__exteriorring__(geometry) - délka obvodu polygonu
+interiorringN(geometry,N)
+StartPoint, EndPoint
+NumPoint
+PointN
+IsClosed

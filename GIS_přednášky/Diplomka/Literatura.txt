@@ -1,0 +1,39 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-02-26T01:08:17+01:00
+
+====== Literatura ======
+Created Úterý 26 únor 2013
+
+http://it-ebooks.info/
+
+====== ESRI ======
+* odkazy na GDB knihy, pdf, návody http://www.esri.com/software/arcgis/geodatabase/whitepapers-podcasts
+* __články:__
+	[ ] !!! přečíst **Enterprise Geodatabase** review of design and key features for GIS managers and database administrators http://www.esri.com/news/arcuser/0408/entergdb_101.html
+	* Real-Time Updating of ArcSDE through SQL http://www.esri.com/news/arcuser/0112/real-time-updating-of-arcsde-through-sql.html
+	* Creating an ArcSDE Service on Windows using ArcGIS 10.1 http://esriaustraliatechblog.wordpress.com/2012/09/27/creating-an-arcsde-service-on-windows-using-arcgis-10-1/
+* knihy:
+	* **ArcGIS 9 - Co je ArcGIS 9.2?** (ESRI. ArcGIS 9: Co je ArcGIS 9.2?. United States: ESRI Press, US, 2006. ISBN 15-894-8166-6. )
+	* Building geodatabase - komentovaná přednáška o geodatabázích od Esri (skripta od Pechance)
+	* Modelling our world - od Pechance
+
+====== SQL ======
+* __obrázek:__
+	* podobný, jak je v prezentaci: http://3.bp.blogspot.com/-nBKMs4n5y_U/Tp7Lkp4SzGI/AAAAAAAAAIE/ZbLSqeRtFTs/s1600/ha.PNG
+* __knihy:__
+	* SQL and Relation Theory
+	* **Professional Microsoft SQL server 2008 programming** (VIEIRA, Robert. Professional Microsoft SQL server 2008 programming. Indianapolis, IN: Wiley Pub., 2009, 893 s. Wrox professional guides. ISBN 04-702-5702-4.)
+	* **Microsoft SQL Server 2005: velký průvodce administrátora **- od Pechance (WHALEN, Edward a kol. Microsoft SQL Server 2005: velký průvodce administrátora. Vyd. 1. Překlad Jakub Mikulaštík, David Krásenský. Brno: Computer Press, 2008, 1080 s. Administrace (Computer Press). ISBN 978-80-251-1949-5.)
+
+===== PostgreSQL: =====
+* __články:__
+	* PostgreSQL: High Availability, Load Balancing, and Replication http://www.postgresql.org/docs/8.3/static/high-availability.html
+	* __replikace:__
+		* Postup replikace: http://postgres.cz/wiki/Replikace
+* __knihy:__
+	* **PostgreSQL 9 administration cookbook **(RIGGS, Simon a Hannu KROSING. PostgreSQL 9 administration cookbook: solve real-world PostgreSQL problems with over 100 simple, yet incredibly effective recipes. Birmingham: Packt Publishing, 2010, 345 s. ISBN 978-1-849510-28-8.)
+
+===== SQL Server =====
+
+

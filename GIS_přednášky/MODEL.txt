@@ -1,0 +1,48 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-10-03T10:59:18+02:00
+
+====== MODEL ======
+Čtvrtek 03 říjen 2013
+
+* časová škála
+	* spojitost (kontinuální/diskrétní)
+		* diskrétní - měří se skokem, není plynulá (kalendář)
+	* cykličnost
+		* lineární - pevně definovaný počátek a konec, je možno změřit čas
+		* cyklické - periodicky se opakují, není možné jednoznačně určitě čas události
+	* závislost určování času na jiné události
+		* absolutní - fyzikální základ
+		* relativní - př. geologie - prvohory, druhohory
+	* prostorový rozsah (globální/lokální)
+	* vztažené k/ke:
+		* místnímu poledníku - určují čas platný pro místo měření a místa na stejném poledníku
+		* konkrétnímu místu
+	* určování času (přímý/nepřímý)
+		* přímý: 3.10. 2013 11:07:43
+		* nepřímý: doba bronzová, za 2 sv. války
+	* čas: siderický, solární, univerzální, atomový, univerzální koordinovaný, efemeridový, dynamický, juliánský, .. 
+		* univerzální - od 1926, vztažen k nultému poledníku
+			* zpřesnění: UT0, UT1, UT2 (korigován dle kolísání rychlosti země)
+		* atomový čas atomovými hodinami
+		* univerzální koordinovaný čas UTC
+			* Pražský koordinovaný čas od r. 1969 UTCTP Tempus Pragense
+	* časové signály
+		* vysílá je pro Česko německá stanice
+* koncepce prostoru (viz prezentace)
+	* historie viz prezentace (chce se nás na to zeptat?)
+	* prostor:
+		* topologický prostor (metrický) 
+			* euklidovský - v souřadnicicích
+			* manhattanovský - bez souřadnic pouze vztahy mezi objekty
+	* teorie grafů G
+		* sestava bodů a jejich spojnic → G = uzly + hrany
+		* množina uzlů U = {u1,u2}
+		* množina hran H={h _{i j }}
+		* sled bez hran = cesta
+		* uzavřený sled = uzly se neopakují, ani hrany
+		* strom souvislý graf neobsahující cykly
+			* kořenový strom, dceřiné uzly
+			* binární pokud má 2 dceřiné uzly
+			* topologický rovinný - žádné dvě roviny se nekříží
+

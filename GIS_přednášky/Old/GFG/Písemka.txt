@@ -1,0 +1,74 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-12-17T10:43:30+01:00
+
+====== Písemka ======
+Created Pondělí 17 prosinec 2012
+
+==== 1. CN křivka ====
+* slouží pro výpočet přímého odtoku z povodí
+* přímý odtok zahrnuje odtok povrchový a část hypodermického
+* podíl těchto dvou se  oceňuje pomocí čísel odtokových křivek
+* čím větší CN, tím pravděpodobnější, že se přímý odtok týká povrchového odtoku
+* zákl. výstupem je srážkový úhrn konkrétní přívalové srážky nebo výška návrhové srážky
+* pro malá povodí do 5 - 10 km2  
+
+==== 2. Psychrometr ====
+* přístroj na měření absolutní vlhkosti vzduchu
+* obsahuje 2 teploměry, jeden je vlhčený
+* udává obsah vodních par v objemové jednotce vzduchu při dané teplotě
+* jednotky: gm-3, Pa
+* rozdíl teplot se nazývá psychrometrická diference a je nepřímo úměrná relativní vlhkosti
+
+==== 3. Přesnost měření dle ČSN ====
+RMSE (střední kvadratická odchylka)
+I. třída - hodnoty získané přímým měřením: pro N=1-10 - přesnost 10%; N=20-100 - přesnost 15%
+II. třída - odvozené analogií v případě, že charakteristiky povodí si plně odpovídají: pro N=1-10, 20%; pro N=20-100, 30%
+III. třída - odvozené analogií v případě, že charakteristiky povodí si neodpovídají +
+IV. třída - hodnoty odvozené pomocí empirických vzorců:
+pro N=1-10, 30-40%; pro N=20-100, 40-60% (platí pro třídu III. a IV.)
+
+==== 4. Komponenty MIKE-SHE ====
+* koncepčně distribuovaný model
+* možnost simulovat kontinuálně i epizodně
+* sledování: 
+	* srážek (dešťové, sněhové) - ve formě časových řad ze srážkoměrných stanice
+	* evaporace včetně iterpcepce - počítána z časových řad
+	* povrchového odtoku z povodí - 2D metoda konečných diferencí šíření vlny
+	* odtoku v korytě - pro popis postupu vlny
+	* podpovrchového odtoku v nenasycené zóně půdního profilu 
+* tři přístupy: jednoduchý dvouvrstvý model, gravitační model proudění a model založený na řešení Richardsonovy rovnice
+* všechny modely vyžadují zadání specifických vlastností půdy (pórovitost, vodivost) podzemního odtoku 
+* 2D a 3D model proudění podzemní vody založený na množství konečných diferencí
+* vstupní data - ASCII formáty, shapefile, data z vlastní databáze půd a osevních plodin
+* Geomodel - nadstavba ArcGISu pro vytváření geologických modelů
+ 
+
+==== 5. 3 způsoby měřená malých toků (nejpřesnější první dvě) ====
+* **objemová metoda (Q = V/t objem/čas)**
+	* měření pomocí kalibrované nádoby
+	* mění se čas naplnění nádoby - po naplnění se automaticky sklopí
+	* používá se pro kontinuální měření malých průtoků, kde není možno použít vrtuli
+* **měrný přepad (přeliv)**
+	* pro se opět pro malé vodní toky do šířce do 2 metrů
+	* kontinuální měření v uzávěrových profilech
+	* voda protéká přes přepadovou stěnu výřezem ve stěně
+	* průtok je odvozený z výšky přepadajícího paprsku a šířky přepadové hrany
+	* přepad může být obdélníkový, trojúhelníkový, vaničkovitý
+* **chemická (směšovací) metoda**
+	* chemická látka (KMnO4, NaCL) se vypouští hadičkou do vody
+	* v níže položeném profilu sledujeme její koncentraci
+	* Q1.c1 = Q2.c2 - průtok hadičkou * koncentrace látky v ní = průtok v níže položeném toku * koncentrace látky v toku
+	* využití pro horské bystřiny s turbolentním prouděním
+* **Venturiho žlab (Q = K.b.hn)** - využívá zúženého průřezu žlabu
+
+==== 6. Izotropický, anizotropický povrch ====
+* **Izotropický povrch** je povrch u kterého se předpokládá, že možnost pohybu je ve všech směrech stejná a stejně nákladná
+	* nelze určit preferenční směry, ve kterých se je do určité vzdálenosti možné dostat za kratší čas, s menší vynaloženou námahou, nebo s nejnižšími náklady (Hlásný, 2007). 
+	* př: silniční síť v nížinné oblasti či plavba po jezeře kde rozdíly nákladů v různých směrech budou zanedbatelné
+* **Anizotropický povrch** je povrch, u kterého je možnost pohybu závislá na směru. Méně náročný terén v jistých částech území, lepší pokrytí komunikační sítí, nebo lepší
+spojení hromadnou dopravou, tvoří v prostoru preferenční směry, ve kterých je možné dosáhnout vzdálené lokality se stejnou námahou, jako blízké v jiném směru. 
+
+==== 7. M-denní a p-procentní průtok ====
+* **M-denní průtok** - průměrný denní průtok, který je dosažen nebo překročen během M dní v roce
+* **P-procentní průtok** - aritmetický průměr průtoků za určitě období (den, měsíc)

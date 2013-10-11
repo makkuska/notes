@@ -1,0 +1,39 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2011-06-04T16:43:40.131506
+
+====== Notebook ======
+Created Sobota 04 červen 2011
+
+* HP 6730s:
+	* 15.6.2009
+	* název Makkubu :-D
+	* 15,4", rozlišení 1200x800, matný display
+	* 2-jádro
+	* procesor: Intel Pentium Dual CPU T3400 2.16GHz
+	* pevný disk původně 250GB → upgrade (24.12.2010) 500GB
+	* → 250GB nyní externí disk
+	* původně 2GB → upgrade (24.12.2010) 4GB pamět
+	* klávesnice bez numeriky - externí bezdrátová myš+klávesnice (dosah 10m)
+	* reproduktor, webová kamera, mikrofon
+	* wifi, bluetooth
+	* operační systémy: 
+		* Windows XP
+		* GNU/Linux Ubuntu (první verze 9.10 Ubuntu Classinc), verze 11.11. (Gnome-Shell), Linux Mint 13
+	* 2x nová baterie
+	* rozměry 3,2 x 35,8 x 26,6 cm 35,75 x 25,5 x 2,97 mm
+	* hmotnost 2.5 kg
+		{{../../68336as.jpg}}{{../../68336cs.jpg}}
+	* p/n: NA780ES#AKS
+	* s/n: CNU9090DQ12
+	* seriové číslo: C6730sUT3400W5X25FBBNNN20Fa
+	* series HSTNN-IB51
+	* baterka: Nihon HP
+		* 10,8 Vdc (47 WH)
+		* 4200 mAh 
+
+* Používaný GIS softwary: 
+	* ArcGIS (verze 9.3, 10), QGIS, GeoMedia, R-projekt, IDRISI, ERDAS 9.2.
+	* servery, knihovny: MapServer, GeoServer
+http://www.servishp.cz/index.php?site=kontakt&lang=cz#mapa
+

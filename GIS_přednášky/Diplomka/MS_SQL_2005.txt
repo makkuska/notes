@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-04-05T18:53:23+02:00
+
+====== MS SQL 2005 ======
+Created Pátek 05 duben 2013
+
+* tuna verzí
+* rozlišují clustering, zasílání protokolu, zrcadlení databáze, replikace - str. 84
+	* snímková replikace - vytvoří snímek dat
+* Connecting to a server instance allows you to work with that particular server and its related components. (See Figure 1-2.) Typically, you want to connect to a server’s Database Engine. The Database Engine gives you access to the following components and features:
+	* **Databases**  Manage system databases, including the master and model databases, as well as user databases and database snapshots. If you’ve installed Reporting Services, you also can access the ReportServer and Report ServerTempDB databases under this node.
+	* **Security**  Manage SQL Server logins, server roles, stored credentials, cryptographic providers, and auditing.
+	* **Server objects**  Configure backup devices, HTTP endpoints, linked servers, and server triggers.
+	* **Replication**  Configure distribution databases, update replication passwords, and launch Replication Monitor.
+	* **Management**  View SQL Server logs, create, view, and manage maintenance plans, Microsoft Distributed Transaction Coordinator ­ (MSDTC), and Database Mail. Configure data collection, Resource Governor, and Policy-Based Management policies.
+	* **SQL Server Agent**  Configure SQL Server Agent jobs, alerts, operators, proxies, and error logs.
+	* STANEK, William R. Microsoft sql server 2012 pocket consultant. Redmond, WA: Microsoft Press, 2012, p. 590. ISBN 978-073-5663-763.
+* Replication Services
+	* SQL Server 2008 Replication Services provides the ability to automate and schedule the copying and distribution of data and database objects from one database or server to another, while ensuring data integrity and consistency. Replication has been enhanced in SQL Server 2008 to include a new Peer-to-Peer Topology Wizard, which allows replication nodes to be managed using a topology viewer. The process of adding and removing nodes has also been made easier in this version of SQL Server. More detail about replication can be found in Chapter 13.
+	* Beginning Microsoft® SQL Server® 2008 Administration

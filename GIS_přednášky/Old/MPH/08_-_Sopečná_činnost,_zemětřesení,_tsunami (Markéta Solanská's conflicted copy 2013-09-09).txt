@@ -1,0 +1,130 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-04-23T13:15:35+02:00
+
+====== 08 - Sopečná činnost, zemětřesení, tsunami ======
+Úterý 23. dubna 2013
+
+viz prezentace
+
+====== Zemětřesení ======
+* kontinentální x podmořské
+* **ohnisko zemětřesení** - místo v zemské kůře nebo plášti, kde dané otřesy vznikají
+	* někdy i několika set kilometrů (dlouhá zlomová území, subdukční zóny, riftové zóny)
+* **hypocentrum** – těžiště plochy ohniska (bod) – místo, odkud se šíří seismické vlny po kuloplochách celým prostředím
+* **epicentrum** – kolmý průmět hypocentra na povrch Země bod na povrchu, který je nejblíže k oblasti vzniku otřesů.
+* **hloubka** **ohniska** - vzdálenost mezi epicentrem a hypocentrem zemětřesné roje – skupina otřesů následujících po sobě o stejné intenzitě
+* **hypocentrální** **čas** - doba vzniku zemětřesení v ohnisku
+* **epicentrální** **čas** - okamžik, kdy seismické vlny dorazí do epicentra
+	* oba časy se většinou udávají v UTC, aby byla možné porovnávat projevy konkrétního zemětřesení v rámci celé planety.
+* **epicentrální** **vzdálenost** - vzdálenost epicentra od daného místa pozorování
+* **pleistoseistní** **oblast** - území v okolí epicentra, které je zpravidla nejvíce postiženo účinky otřesů
+* dělení 
+	* __podle vzniku__
+		* řítivá (3%)
+		* vulkanická (7%)
+		* tektonická (90%)
+	* podle hloubky ohniska
+		* mělká (do 60km)
+		* středně hluboká
+		* hluboká (nad 300km)
+* seismické vlny
+	* P-vlny - podélné, prochází celým prostředím
+	* S-vlny - nebezpečnější, vlní se
+	* povrchové vlny
+	* Leveho vlny
+	* Rayleighovy vlny
+	* obrázky v prezentaci
+* **mapy zemětřesné aktivity - izolinie**
+	* izoseist (stejná pozorovaná intenzita zemětřesení)
+	* izoblab (místa stejných škod)
+	* izakust (místa zaznamenání shodných doprovodných akustických projevů zemětřesení, tj. dunění, hřmění apod).
+* přístroj **seismograf**
+	* **magnitudo **- velikost zemětřesení
+		* základ Richterova stupnice
+* sledování:
+	* příčiny zemětřesení
+	* intenzita zemětřesení (následky způsobené zemětřesením)
+	* velikost zemětřesení (magnitudo)
+	* předpověď zemětřesení
+	* studium fyzikálních polí
+	* sledování mikroseismity
+	* změna hladiny podzemní vody
+	* reakce zvířat
+* modely
+	* FEMA
+	* HAZUS-MH
+	* Earthquake model
+
+====== Tsunami ======
+* **blízká** **ohniska** - ve vzdálenosti desítek, maximálně stovek km od konkrétního pobřeží
+* **vzdálená** **ohniska** - na opačné straně oceánu a mohou být tisíce až desetitisíce km daleko
+* predikce
+	* doby, kdy vlna dorazí k pobřeží
+	* výšky vlny
+	* rozlohy zaplavené oblasti
+* Modelování zatopení území
+	* model MOST (Method of Splitting Tsunami) – diferenční model
+	* TUNAMI-N2 (Tohoku University's Numerical Analysis Model for Investigation of Near field tsunamis) – diferenční model
+	* model ADCIRC – elementární model
+
+
+====== Sopečná činnost ======
+* **sopka** = vyvýšenina na zemském povrchu tvořená sopečným materiálem, v rámci které dochází k výstupu magmatu na zemský povrch
+* **sopečný** **kužel** - budovaný vulkanickými horninami
+* **kráter** - místo erupční činnosti
+* **sopouch** - přívodní kanál hlavního kráteru
+* **magmatický** **krb** - zdroj energie i materiálu pro sopečnou činnost - hloubce 30 - 100 km
+* **magma** - horniny v tekutém stavu v magmatickém krbu
+* **láva** = magma, které se dostává na zemský povrch 
+* **lávové** **proudy** - pokud stéká po svazích sopky
+* **pyroklastika** - pevné částice, vyvržené při erupci - ztuhlé magma i kusy hornin sopečného kužele, které jsou při explozi rozmeteny po okolí
+* **tefra** - pyroklastický materiál, který opět dopadá na povrch - utváří část vlastního materiálu kužele
+	* sopečné pumy
+	* lapilli
+	* sopečný popel nebo prach
+* **stratovulkán** - vyvýšenina vzniklá střídáním kompaktní lávy a pyroklastických usazenin, vzniká typická vrstevnatá struktura sopečného kužele
+* **kaldera** - destruktivní tvar sopečného kužele 
+	* zničení horní kráterové části vulkánu a rozšíření jícnu sopky a snížení celkové nadmořské výšky hory
+	* kolaps materiálu kužele do vyprázdněného magmatického krbu
+	* postupná eroze původního kráteru
+* __hazard__
+	* Výbuchy sopečných vyvřelin
+	* Lávové dómy (andezitové)
+	* Plyny
+	* Laháry (tečení půdy)
+	* Pyroklastický proud
+	* Sesuvy a mury
+	* Tsunami (přílivové a odlivové vlny)
+* **mapy vulkanického ohrožení**
+	* pro účely předpovědi a ochrany
+	* vychází se především z historických statistik erupcí daného sopky a z hodnocení minulých účinků 
+* __predikce erupce __
+	* zemětřesná aktivita - v blízkosti aktivního vulkánu - seismické stanice, zaznamenávají otřesy, které mohou indikovat postup magmatu k zemskému povrchu
+	* deformace povrchu - pomocí technologií DPZ a GPS změny v terénu (poklesy, vzestupy) v okolí sopky
+	* tepelné monitorování - družicové infračervené snímkování může odhalit nárůst teploty v okolí sopky, kterou vyvolá přítomnost magmatické směsi
+	* geochemické monitorování - bylo zjištěno, že před erupcí často dochází ke změně ve složení plynů před budoucí aktivitou sopky (např. nárůst zastoupení oxidů síry)
+	* měření změn magnetického pole - pohyb natavených hornin pod zemským povrchem, hydrologické proměnné, jako například vzrůstu teploty vody v kráterových jezerech
+* Využití DPZ
+	* sledování sopečných oblak
+	* měření obsahu oxidu siřičitého v sopečných oblacích
+	* odhalení tepelných změn
+	* monitorování nově vzniklých ploch po erupci
+
+====== Biologické hrozby (biohazardy) ======
+* biohazar => organismus nebo látka z tohoto organismu, ohrožující určitým svým výskytem a chováním zdraví 
+* vznik biohrozby = nastolení významně nerovnovážných vztahů přirozeného biologického (přírodního) prostředí => nekontrolované šíření většinou lidským zásahem (např. změna genetického kódu)
+* bioterorismus = cílené zneužití potenciálních rizikových prvků jako biologických zbraní
+* útok na lidskou společnost infikováním klíčových složek ŽP (vzduch, voda..)
+* rychlý, masový přenos a nákaza
+* v rámci společenských rizik vzniklých lidským zásahem - spadá po bok nukleárních a chemických rizik
+* i-MARQ
+	* projekt KM s využitím GIS, DPZ a a in-situ dat
+	* odhad rizika mikrobiologické kontaminace pláží v Evropě
+
+====== IMPAKTY ======
+* vesmírný prach, meteoroidy, meteory, meteority, asteroidy (planetky), komety
+* následky impaktu
+	* při dopadu se uvolní energie, vytvoří se impaktní kráter
+	* vyvržení pevných látek do atmosféry => nukleární zima
+	* tlaková vlna, zemětřesení, možné vlny tsunami

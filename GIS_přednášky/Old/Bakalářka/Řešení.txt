@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2012-03-24T13:39:52+01:00
+
+====== Řešení ======
+Created Sobota 24 březen 2012
+
+==== 1) config_default.xml ====
+	__<category name="cat_admin">__
+		<group>countries</group>
+		<group>cities10000eu</group>
+	</category> 
+	__<category name="moje"> __
+		<group>**tpoly**</group>
+		<group>**tbod**</group>
+		<group>**tlinie**</group>
+		<group>**chko**</group>
+		<group>**uzemi**</group>
+	</category>
+	**→ **
+	
+	== incphp/locate/language_en.php: ==
+	 __$_sl['moje'] = 'Mnou vytvorene vrstvy';__
+	
+
+	__<searchlist version="1.0">__
+		<dataroot>$</dataroot>
+		<searchitem name="cities" description="**City**">
+		            <layer type="**shape**" name="**cities10000eu**">
+		                <field type="s" name="NAME" description="City"  wildcard="0" />
+		            </layer>
+		</searchitem>
+		<searchitem name="tbod" description="**Mesta**">
+		            <layer type="**postgis**" name="**tbod**">
+		                <field type="s" name="NAME" description="Mesta"  wildcard="0" />
+		  </layer>
+	</searchitem>
+
+
+localhost/cgi-bin/mapserv?map=/var/www/work/my/pmapper_demo.map&REQUEST=GetMap&VESERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&SRS=EPSG:102067&WIDTH=400&HEIGHT=300&FORMAT=image/png

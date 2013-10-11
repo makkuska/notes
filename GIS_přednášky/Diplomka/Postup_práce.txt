@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-03-01T13:56:42+01:00
+
+====== Postup práce ======
+Created Pátek 01 březen 2013
+
+* prezentace - rozdělit pojmy synchronizace a replikace
+* rozšířit info o ArcSDE, název jen SDE?
+	* slide - co je výstupem
+* 1. teorie
+	* R + S (verze)
+	* IT literatura + chápání ESRI
+* 2. vytvořit prostředí
+	* 2PC - oba: PSQL, mSQL Server, SDE + ArcGIS
+	* 1. pc  - Virtus 64 bit
+	* 2. pc - PC učebna 32 bit
+	* testovat - založení GDB, nastavení, data, global ID
+* 3. I. praktická
+	* R + S dvou PSQL databází bez ArcGIS
+* 4. II. praktická
+	* R + S dvou PSQL databází s SDE 
+	* zkusit replikovat do file gdb
+* 5. III. praktická - možná pouze teoretická
+	* data online
+	* ArcGIS server
+
+

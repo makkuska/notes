@@ -1,0 +1,291 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title></title>
+		<meta name='Generator' content='Zim 0.52'>
+		<style type='text/css'>
+			a          { text-decoration: none      }
+			a:hover    { text-decoration: underline }
+			a:active   { text-decoration: underline }
+			strike     { color: grey                }
+			u          { text-decoration: none;
+			             background-color: yellow   }
+			tt         { color: #2e3436;            }
+			pre        { color: #2e3436;
+			             margin-left: 20px          }
+			h1         { text-decoration: underline;
+			             color: #4e9a06             }
+			h2         { color: #4e9a06             }
+			h3         { color: #4e9a06             }
+			h4         { color: #4e9a06             }
+			h5         { color: #4e9a06             }
+			span.insen { color: grey                }
+		</style>
+	</head>
+	<body>
+
+<!-- Header -->
+
+	[ <a href='./02_-_Interpolace.html'>Prev</a> ]
+
+			[ <a href='/'>Index</a> ]
+
+	[ <a href='./04_-_Chyby_v_DMREL.html'>Next</a> ]
+
+<!-- End Header -->
+
+<hr />
+
+<!-- Wiki content -->
+
+<h1>03 - Datové modely</h1>
+
+<p>
+Created Pátek 03 červen 2011<br>
+</p>
+
+<p>
+<ul>
+<li>hlavním cílem je získání optimální reprezentace terénu</li>
+<li><u>datové modely:</u> polyedrický model reliéfu <em>(TIN)</em>, rastrový model reliéfu <em>(grid)</em>, plátový model reliéfu <em>(lattice)</em></li>
+<li>nejlépe vystihuje modelovaný povrch TIN nebo lattice, ale nedají se moc používat pro modelování, kde chceme provádět mapovou algebru</li>
+<li>lattice znázorňuje povrch hladce</li>
+<li><strong>Polyedrický model reliéfu:</strong></li>
+<ul>
+<li>tvoří jej nepravidelné trojúhelníky, které na sebe navazují hranami a vytváří nepravidelný mnohostěn → tím tvoří polyedr</li>
+<li>trojúhelníky mění tvar a velikost</li>
+<li>trojúhelníky jsou vyjadřovány polynomy nultého a prvního řádu, které vyjadřují rovinný povrch</li>
+<li>hustota a rozmístění vstupních dat</li>
+<ul>
+<li>body na povrchu reliéfu je možné rozmístit tak, aby ce nejvíce vystihovaly členitosti terénu - <strong>hustější síť v členitém terénu, řidší v plošším terénu</strong></li>
+<li>je nutné zahrnout body ležící na všech důležitých singulárách - vrcholy, hřebeny</li>
+<li>v případě různé hustoty a rozmístění bodů je TIN lepší než grid</li>
+</ul>
+<li>vektorový topologický datový model</li>
+<ul>
+<li>body -  vrcholy trojůhelníku</li>
+<li>linie - hrany spojující vrcholy</li>
+<li>plochy - trojúhelníky se třemi vrcholy a hranami</li>
+<li>trojúhelníky dobře navazují, tvoří hladký povrch</li>
+</ul>
+<li>konstukce polyedrického modelu</li>
+<ul>
+<li>1. určení trojúhelníkové sítě </li>
+<ul>
+<li>určení vrcholů trojúhelníků body - nutné zahrnout i body ležící na významných singularitách</li>
+<li>optimalizační kritéria:</li>
+<ul>
+<li>Delaunay kritérium - kritérium opsané kružnice</li>
+<li>co největší rovnostrannost</li>
+<li>minimální obdov</li>
+</ul>
+</ul>
+<li>2. tvorba polyedrického modelu </li>
+<ul>
+<li>vrcholy P1[x1,y1,z1],P2[x2,y2,z2],P3[x3,y3,z3] každého trojúhelníku proložíme rovinu z=ax+by+c</li>
+<li>• uvnitř trojúhelníkových ploch je předpokládám pravidelný rovnoměrný průběh změn výšek</li>
+<li>delaunay triangulace - jen tehdy, pokud do kružnice opsané každému z trojúhelníků nepadne žádný jiný bod</li>
+<li>středy kružnic opsaných Dalaunay trojúhelníkům odpovídají vrcholů tzv.varonoi polygonů - viz. prezentace</li>
+</ul>
+</ul>
+<li><strong>Triangulace</strong></li>
+<ul>
+<ul>
+<li>povrch je spojitý, hrany na sebe navazují, derivace nejsou</li>
+<li>pro jakýkoliv bod uvnitř plochy lze odvodit nadmořskou výšku lineární interpolací</li>
+<li>jeden chybný bod může ovlivnit/zkazit průběh svého okoli</li>
+<li>vznik umělých ploch, řeší se přidáním hran</li>
+</ul>
+</ul>
+<li>výhody: </li>
+<ul>
+<li>dobře reprezentuje reliéf</li>
+<li>umí se přizpůsobit množství dat</li>
+<li>umí reprezentovat srázy</li>
+<li>pracuje přímo se vstupními daty (žádná interpolace)</li>
+<li>využívá všech typů geoprvků</li>
+<li>menší nároky na paměť</li>
+</ul>
+<li>nevýhody: </li>
+<ul>
+<li>těžší algoritmy pro analýzu (sklon, ..)</li>
+<li>špatně reprezentuje rovný porvch</li>
+</ul>
+</ul>
+<li><strong>Rastrový modelreliéfu</strong></li>
+<ul>
+<li>tvořen čtvercovou maticí bodů</li>
+<li>jeden bod reprezentuje čtvercovou plošku s konstantní</li>
+<li>nadmořská výška se vztahuje ke středu</li>
+<li>reliéf je reprezentován hranoly, je nespojitý </li>
+<li>reprezentace reliéfu</li>
+<ul>
+<li>záleží na velikosti pixelu (né moc velký, ale ani malý)</li>
+<li>čím větší rozlišení, tím větší náročnost na zpracování a oběm dat</li>
+</ul>
+<li>hustota a rozmístění vstupních bodů</li>
+<ul>
+<li>lze palikovat na pravidelně i nepravidelně rozmístěná bodová data</li>
+</ul>
+<li>výhody: </li>
+<ul>
+<li>dobře modeluje plochý reliéf bez hran</li>
+<li>snadné výpočty, analýzy</li>
+<li>dobře se integruje s rastrovými daty</li>
+</ul>
+<li>nevýhody: </li>
+<ul>
+<li>neumí dobře modelovat hrany, vrcholy, sedla</li>
+<li>špatně reprezentuje človenitý terén</li>
+<li>pracuje s bodovými geoprvky, neumí pracovat s liniemi apolygony</li>
+<li>velký objem dat</li>
+</ul>
+</ul>
+<li><strong>Plátový model reliéfu</strong></li>
+<ul>
+<li>nadmořská výška je vstahována k průsečíkům v síti</li>
+<li>reprezentuje nadmořskou výšku pouze v daném místě</li>
+<li>čtyřúhelníkové pláty, někdy trojúhelníkové pláty</li>
+<li>uvnitř plátů je povrch složitý (né rovinný)</li>
+<li>výhodou: styk sousedních plátů je složitý, ale souvislý</li>
+<li>pro vyjádření plošek se používají Beziérovy čtvercové pláty:</li>
+<ul>
+<li>4 hlavní body v rozích (celkem 16) = nositelé nadmořské výšky</li>
+<li>přechod mezi plýty může být ostrý nebo hladký</li>
+<li>nutné dodržet 2 podmínky:</li>
+<ul>
+<li>dva na sebe navazující pláty musí mít stené řídící body na společné hraně těchto plátů</li>
+<li>oba pláty musí mít v dotykových bodech skutečnou tečnu, musí existovat 4 trojice bodů, které leží na jedné usečce</li>
+</ul>
+</ul>
+<li>výhody: </li>
+<ul>
+<li>vhodný pro vizualizaci</li>
+<li>přechod mezi pláty je hladký</li>
+</ul>
+<li>nevýhody: </li>
+<ul>
+<li>není vhodný pro odvozování a analýzy</li>
+<li>průběh plošek není rovninný, ale složitý</li>
+<li>velký objem dat</li>
+</ul>
+</ul>
+<li><strong>Pro vyjádření reliéfu se někdy doplňuje vrstevnicemi</strong></li>
+<ul>
+<li>způsob získávání: </li>
+<ul>
+<li>fotogrammetricky ze stereopárů - poměrně přesné</li>
+<li>odvozování z bodových dat - nižší kvalita</li>
+</ul>
+</ul>
+<li><strong>Postupy tvorby DMR:</strong></li>
+<ul>
+<li><u>1. generování</u></li>
+<ul>
+<li>výběr datového modelu</li>
+<ul>
+<li>transformace vstupních dat do zvoleného datového modelu</li>
+<ul>
+<li>zvolený datový model (grid nebo TIN) je určující pro celý proces generování DMR</li>
+</ul>
+<li>v případě generování modelu typu grid je zpravidla nezbytné z nepravidelně rozmístěných bodů provádět interpolaci v pravidelné čtvercové síti </li>
+<ul>
+<li>tento krok může výrazně (zpravidla negativně) ovlivnit kvalitu výsledného modelu</li>
+</ul>
+<li>při generování modelu typu TIN lze vrcholy modelu ztotožnit s naměřenými vstupními body a tím dosáhnout velké věrnosti vytvořeného modelu</li>
+</ul>
+<li>výběr interpolační metody či triangulace</li>
+</ul>
+<li><u>2. manipulace</u></li>
+<ul>
+<li>→ modifikace, kalibrace a ladění DMR</li>
+<li>editace</li>
+<ul>
+<li>oprava chyb a aktualizace DMR</li>
+<li>vkládání a rušení bodů, změna polohy, změna atributu</li>
+<li>ruční vkládání strukturních linií</li>
+</ul>
+<li>filtrování</li>
+<ul>
+<li>oprava chyb</li>
+<li>snižování objemu dat – odstraňování redundantních dat, odstraňování dat v závislosti na prostorovém rozlišení DMR (VIP)</li>
+<li>odstraňování nepotřebných detailů</li>
+<li>vyhlazování (shlazování) a zvýrazňování hran (často používány stejné metody jako v DPZ)</li>
+</ul>
+<li>slučování</li>
+<ul>
+<li>provádí se nad alespoň částečně překrývajících se DMR</li>
+<li>zpravidla na datové úrovni (tj. u vstupních dat)</li>
+<li>nutno řešit problémy s odlišnostmi a systematickými chybami v datech</li>
+</ul>
+<li>spojování</li>
+<ul>
+<li>aplikovatelné pouze na sousedící DMR stejného typu a geometrických parametrů</li>
+<li>pro gridy: velikost buňky, směr os, návaznost sloupců a řádků</li>
+<li>pro TIN: návaznost na hranách (nutné zavedení topologických pravidel)</li>
+</ul>
+<li>konverze DMR z jednoho datového modelu do jiného</li>
+<ul>
+<li>TIN → grid/lattice</li>
+<ul>
+<li>nadefinují se parametry sítě bodů</li>
+<li>pro každý bod gridu se pomocí interpolace odvodí z TIN nadmořská výška</li>
+</ul>
+<li>grid/lattice → TIN</li>
+<ul>
+<li>buňky se rozdělí na dvojice trojúhelníkových plošek a vygeneruje se TIN</li>
+</ul>
+</ul>
+<li>převzorkování gridu</li>
+<ul>
+<li>vytvoření nového gridu z původního gridu – liší se jinými parametry</li>
+<li>změna rozlišení – velikosti buňky gridu (pokud je potřeba sjednotit více gridů, použije se nejhrubší rozlišení)</li>
+<li>pootočení – změna orientace souřadnicového systému</li>
+<li>transformace – změna souřadnicového systému</li>
+</ul>
+</ul>
+<li><u>3. analýza</u></li>
+<ul>
+<li>oskytuje další informace o modelovaném území</li>
+<li>odvozením lze získat</li>
+<ul>
+<li>informace o délce, ploše ve 3D</li>
+<li>morfometrické charakteristiky (sklon, orientace, ..., směr odtoku, rozvodnice a povodí, ...)</li>
+</ul>
+<li>zde se projeví, jak kvalitně byl vygenerován DMR</li>
+</ul>
+<li><u>4. vizualizace</u></li>
+<ul>
+<li>vizualizace DMR i vizualizace morfometrických charakteristik</li>
+<li>základním posláním je zobrazit a zpřístupnit získané výsledky</li>
+<li>slouží však i pro prvotní kontrolu kvality DMR</li>
+<li>lze využít různé metody</li>
+<ul>
+<li>statická, dynamická vizualizace</li>
+<li>klasické metody (hypsometrie, stínování,...), pokročilé metody (animace, průlety, VR)</li>
+</ul>
+</ul>
+<li><u>5. aplikace DMR</u></li>
+<ul>
+<li>konkrétní aplikace udává požadavky na parametry výsledného modelu</li>
+</ul>
+<li>Tvorba DMR není přímočarý proces. Postupuje v iteracích, které postupně procházejí jednotlivé fáze.</li>
+</ul>
+</ul>
+</p>
+
+
+<!-- End wiki content -->
+
+<hr />
+
+<!-- Backlinks -->
+
+	Backlinks:
+
+<!-- End Backlinks -->
+
+	</body>
+
+</html>
