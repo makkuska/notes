@@ -28,7 +28,7 @@ Pátek 27 září 2013
 		* transformace starých map, sken, analýza geografické přesnosti
 * proč mapy v historii?
 
-**BBC - dokument o mapách**
+**BBC - dokument o mapách "Jak zmapovat svět"**
 * Jindřich 8 nechal zmapovat pobřeží Anglie kvůli bezpečnosti - moc pěkná mapa z ptačího pohledu
 	* stavěl pevnosti tam, kde byly velké rozepstupy podle mapy
 	* analýza nejzranitelnějších míst — písčité oblasti vhodné pro vylodění detailně zmapované, skalní oblasti nepřesně
@@ -48,3 +48,19 @@ Pátek 27 září 2013
 		* velikost ostrovů na mapě značí významnost ostrovů né rozlohu
 * Mezinárodní mapa světa - Miliontiné mapy
 	* každá země má vytvořit mapu podle daných pravidel (měřítko 1:mil, symboly)
+* Kolumbus plul podle mapy, kde chyběl celý Atlantic, Pacifik a Ameriku
+	* vycházel z "největšího omylu antiky" - zeměkoule je o třetinu menší
+	* Kolumbus plul kvůli slávě a penězům, on nikdy nedozvěděl, že nalezl celý velký kontinent
+	* na Kanárech nabral jídlo a měl naplánované za 21 dní bude v Japonsku nebo Číně
+	* doplul na San Salvador
+	* po jeho návratu byla mapa překreslena
+	* od té doby mapy prostředkem k objevování a dobývání
+* Amerigo Vespuci
+	* objevil i západní pobřeží Ameriky → 4. kontinent, do té doby si mysleli, že Kolombus objevil východní pobřeží Asie
+	* vanzeMiller nakreslil první mapu, kde byla America jako samostatný kontinent mapa "Rodný list Ameriky"
+* Mercator - Belgie
+	* studoval kresliče námořních map
+	* vyrůstal za Kolombovy slávy
+	* vyráběl glóbusy pro šlechtu
+	* zobrazení - čtverce zvětšující se k pólů, posunul rovník na jih, aby byl větší prostor pro Evropu
+	* stále se používají v atlasech

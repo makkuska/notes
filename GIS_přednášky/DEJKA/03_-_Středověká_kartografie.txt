@@ -1,0 +1,78 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-10-11T10:34:01+02:00
+
+====== 03 - Středověká kartografie ======
+Pátek 11. října 2013
+
+====== Středověk v Evropě ======
+* církev kázala lidem, že Země je placatá, přestože v Bibli je psáno, že je kulatá
+* vznikají mapy trojího typu:
+
+===== Mappaemundi (Mapa mundi) =====
+* __kruhové mapy = O-T mapy__ (Asie, Evropa, Afrika, rozdělená řekami Don a Nil a středozemním mořem)
+* schématické znázornění světa
+* mapy jsou kruhové, ohraničuje je oceán
+* nejsou příliš přesné - poučný, náboženský charakter
+* orientované k východu
+* **Ebsdorfská mapa** (1234 n.l Německo) - nedochovala se, jen v kopii
+	* mapa součástí oltáře, 3x3m
+	* uprostřed Jeruzalém
+	* lidi byli negramotní, komunikovali skrze obrázky, mohli upevňovat myšlenky
+	* na okrajích jsou všelijaké potvory a děti žeroucí své rodiče → radši necestujte
+* **Hereforská mapa** (1280 n.l Anglie)
+	* taky součástí oltáře, podobná jako Ebsdorsfká
+	* na kravské kůži
+	* popisuje cestu do posmrtného života
+* **Mapa Petra Vesconte**
+	* má větrné směrové růžice, znaky portolánových map, ale jinak O-T mapa, podobná předchozím dvou
+* **Fra Maurova mapa**
+	* vychází z poznatků Marca Pola a jiných Benátstkých cestovatelů
+	* orientovaná k severu, už je víc přesná než předchozí 3
+* **Beatovy mapy**
+	* spíše oválné, ale stále schématické
+* __mapy jednotlivých území__
+	* více přesné, pro orientaci, plány měst a panství
+	* Goughova mapa (1360)
+		* mapa Britských ostrovů
+		* na seznamu Unesco Memory of the world
+		* orientovaná k východu
+
+===== Pásmové mapy = zonální =====
+* 5-7 pásem (studená, mírná, spálená země)
+* už věděli, že někdo na jižní polokouli žije
+* Makrobiova mapa
+
+===== Portolánové mapy =====
+* vznikaly 12-14století
+* přesné, prakticky používaní mořeplavectví
+* znázorňují především středozemní moře
+* portolani = písemní námořní pokyny
+* dobře zmapované pobřeží s městy, ostrovy, zátoky, vnitrozemí potlačeno
+* dochovaných asi kolem 180pak a atlasů, hodně se jich nedochovalo (zničeny i na lodích, když se vozily k navigaci)
+* materiál: pergamen (drahý), papír (rozmočí se)
+* metoda dead-reckoning - výpočet pozice na základně znalostí o předchozí pozici (směr - úhel, rychlosti, čas od předchozího bodu)
+	* čas - přesýpací hodiny, vzdálenost - provaz z uzly, směr - magnetovce (minerál) → předchůdce kompasu
+* na každé mapě 16 bodů, které jsou navzájem propojeny → větry používané k navigaci
+* neměly kartografickou síť, ale právě tu síť větrů
+* * v Benátkách, Janově, Anconě (Italská produkce) - pouze středozemí
+* * Mallorca, Barcelona (Katalánská produkce) - i Skandinávie či čína
+* nejstarší mapa Vescontiho
+* **Katalánský atlas** - Abraham Cresques (1375 - dnes je uložen v Paříži)
+	* 12 listů - 65*300cm
+	* nikdy se s ním nenavigovalo, dar pro Karla V. → je krásný, zdobený, barevný, mapa celého světa, jsou tam i znaky, které nejsou potřeba pro navigaci
+* **Portolánový atlas** - Jaume Olivese (1563 - vznikl až později)
+	* 6 exemplárů, jeden z nich v Olomouci
+	* originál na pergamenu, nepoužíval se k navigaci
+
+====== Středověk mimo Evropu ======
+* Byzantská říše 
+	* zachování Ptolemaiova odkazu:
+		* Vatopedion Codex
+		* Codex Sarangliensis
+* Islámská kultura
+* dědici řecké geografie, přeložili Ptolemaia
+* Al Idrisi (Abu Adb Aláh Muhammad al-Idrísi al-Kurtubi al-Hasani al-Sabti)
+	* Kruhová mapa světa - orientace na jih
+	* Mapa pobřeží Marmarského moře
+	* Rogerova kniha - atlas pro Rogerse (Sicilský král) - politický charakter (obchod), geografický popis + Idrisiho mapy

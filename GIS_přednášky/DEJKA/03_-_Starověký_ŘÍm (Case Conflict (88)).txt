@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-10-11T11:24:36+02:00
-
-====== 03 - Starověký Řím ======
-Created Pátek 11 říjen 2013
-
-* Říma

@@ -13,10 +13,10 @@ Created Středa 07 březen 2012
 	[ ] internet
 	[ ] ČEZ
 	[ ] nájem
-[ ] **ŘÍJEN**
-	[ ] internet
-	[ ] ČEZ
-	[ ] nájem
+[*] **ŘÍJEN**
+	[*] internet
+	[*] ČEZ
+	[*] nájem
 [*] **ZÁŘÍ**
 	[*] internet - 3.9.
 	[*] ČEZ - 11.9

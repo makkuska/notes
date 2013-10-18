@@ -2,9 +2,10 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2013-10-04T10:34:56+02:00
 
-====== 02 - Starověké Řecko ======
+====== 02 - Starověká kartografie ======
 Pátek 04. října 2013
 
+===== Starověké Řecko =====
 * historie Řecka viz. prezentace
 * moc se nedochovalo, přínos spíše teoretický - matematická kartografie
 * Achillův štít - vyobrazení představy světa
@@ -52,13 +53,30 @@ Pátek 04. října 2013
 		* rovnoběžky a poledníky se stejnými intervaly → Marinovo zobrazení - čtverečky
 		* podle Ptolemáia chyby: Marinos převzal špatnou délku od Poseidonia, má čtverečkovou síť - zkresluje to délky v pólech, nekriticky používal stará data bez korekcí
 	* **Klaudios Ptolemaios** (80-165 AD Alexandria)
-		* Syntaxis megale (Almagest ) - astronomický spis, encyklopedi hvězdářského 
+		* Syntaxis megale (Almagest ) - astronomický spis, encyklopedie hvězdářského 
 		* kniha Geographia Magna
 			* 8 kapitol:
 				* v jedné kritizuje Marina
 				* v jiné popisuje, jak udělat zeměpisnou síť a až do toho zapisovat data (dříve opačně)
 					* snažil se o lepší vyjádření zeměkoule na plochu
 					* 4 kartografická zobrazení - Marinovo, Ptolemaiovo kuželové, další dvě jsou celkem složité a moc se nepoužívají
-				* místopisný slovník - 8000 pojmů
+				* místopisný slovník - 8000 pojmů včetně souřadnice (docela přesné na tu dobu)
 				* 27 map, 4 kontinenty, 0° poledník = Ferro na Kanárských ostrovech, bylo to poslední známé území směrem na západ
 				* nedochoval se originál (nejstarší přepis 12stol.)
+
+===== Starověký Řím =====
+* moc toho od Řeků nepřebrali
+* Římané byli dobří stavitelé, měli dobré přístroje, dobyvatali, byli praktičtí
+* dobývali → měli dobré silnice
+	* Via Egnatia (Řecko) → dnes D2
+	* patníky podél cest značily místopisné informace, co je jak daleko
+	* mapovali/měřili silnice za Augusta (0BC)
+		* **Aggripova mapa** - nedochovala se
+			* 10x600m
+			* kopie **Peutingerova mapa** (13. stol)
+				* 12 svitků (11 se dochovalo) na pergamenu (3x60m)
+				* schématická mapa, nemá matematické kartografické základy
+				* silnice rovné čáry, které se zalamují - každé zalomení významný bod na mapě
+	* Polonius Mela - mapa světa, bádal podobně jako Řekové
+		* lépe zmapoval Anglii, protože měl od Římanů lepší informace
+

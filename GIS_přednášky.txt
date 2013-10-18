@@ -5,6 +5,14 @@ Creation-Date: 2012-02-01T22:00:26+01:00
 ====== GIS přednášky ======
 Created Středa 01 únor 2012
 
+Přidal
+* GDAL2tiles
+* oldmapsonline.org
+* tillemap
+	* https://github.com/klokantech/tileserver-php
+* webGL
+	* tak <canvas>kód Céčka
+	* webGL Globe pro vizualizaci starých map
 
 ===== DPZG =====
 http://earthobservatory.nasa.gov/Features/MeasuringVegetation/measuring_vegetation_2.php

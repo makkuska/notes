@@ -45,4 +45,5 @@ Creation-Date: 2013-10-03T10:59:18+02:00
 			* kořenový strom, dceřiné uzly
 			* binární pokud má 2 dceřiné uzly
 			* topologický rovinný - žádné dvě roviny se nekříží
+	* network is directed graf, in which every edge has inpedendance (Benenson)
 
