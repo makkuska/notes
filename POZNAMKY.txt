@@ -5,14 +5,18 @@ Creation-Date: 2012-01-22T23:22:41+01:00
 ====== POZNAMKY ======
 Created Neděle 22 leden 2012
 
-zápočet rprr
-úkol segm
-úkol mph
-úkol atpg
 
-**Tipy na filmy:**
-	Live is beatiful
-	Intouchable
+Kohovolit.cz
+* geografický výběr - město, okres
+* dotaz - strana, volby podle člověka
+* formát dbf, xml
+* 1db - fikaně uložit tak, aby šlo dotazovat
+* všechny volby (okrsky - senátní)
+* města - kódy
+* strany - koalice
+* lidi -přednostní hlasy
+* volny od 2010 - stáhnout
+* postgresql
 
 **TaTa solanskysro.cz**
 * sídlo firmy: Vigantice 278, PSČ

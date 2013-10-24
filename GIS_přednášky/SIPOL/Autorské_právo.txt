@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 Creation-Date: 2013-10-10T14:08:37+02:00
 
 ====== Autorské právo ======
-Čtvrtek 10. října 2013
+Čtvrtek 10. října 2013, Alena
 
 * autorské díly je jakékoliv dílo, které je vnímatelné smysly - i mluvené
 * Helwigova mapa Slezska 1561 měla autorské právo - za zneužití pokuta, která se rozdělila mezi panovníka i Helwiga

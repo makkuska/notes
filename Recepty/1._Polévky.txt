@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2011-10-29T16:18:03+02:00
 
-====== 1. Polévky ======
+====== Polévky ======
 Created Sobota 29 říjen 2011
 
 ==== Dýňová polévka ====

@@ -37,3 +37,25 @@ Created Sobota 04 červen 2011
 	* servery, knihovny: MapServer, GeoServer
 http://www.servishp.cz/index.php?site=kontakt&lang=cz#mapa
 
+**připojení volný**
+Uživatel
+    4 U<9e>ivatelské jméno VOLNÝ:   magiess
+  5 Heslo:  **********
+  6 E-mail:   magiess@volny.cz
+  7 WWW:  http://www.volny.cz/magiess/ nebo
+  8 http://www.vol.cz/magiess/ nebo
+  9 http://www.volweb.cz/magiess/ nebo
+ 10 http://web.vol.cz/magiess/
+ 11 
+ 12    Konfigurace pøipojeni
+ 13 Primární nameserver:  212.20.96.34
+ 14 Sekundární nameserver:  212.20.96.38
+ 15 POP3 server:  pop3.volny.cz
+ 16 SMTP server:  smtp.volny.cz
+ 17 News server:  news.volny.cz
+ 18 FTP pøístup:  ftp://ftp.volny.cz
+ 19 u<9e>ivatelské jméno: magiess
+ 20 heslo: **********
+~            
+
+
