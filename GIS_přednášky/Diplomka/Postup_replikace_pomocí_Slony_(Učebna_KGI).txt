@@ -5,97 +5,16 @@ Creation-Date: 2013-10-23T11:52:16+02:00
 ====== Postup replikace pomocí Slony (Učebna KGI) ======
 Středa 23 říjen 2013
 
-* návod zde http://www.youtube.com/watch?v=f_Q49NmmBSI&noredirect=1
-* požadavky:
-	* instalace PostgreSQL2.0 + PostGIS9.1 + Slony
-	* OS: XP
-	* skrze pgAdminIII
-* vypnout firewall
-* nastavení:
-	* pgAdminIII -> options -> binarypath -> nastavit Slony-I path: klasická cesta+\share
-* nastavení pro M i S stejné: hba.conf
-* pgAdminIII
-	* v Master i Slave
-		* vytvoření databáze sde_postgis (vlastní postgres, template: template_postgis20)
-		* nahrát tabulku road_st_24_10.shp skrze extenzi //PostGIS Shapefile and DBF loader 2.O//
-		* struktury se musí vytvořit stejně
-* vytvoření souborů:	
-	* master.txt
-		#Název clusteru - originální název
-			cluster name = slony_postgis;
-		
-		#Nastavení uzlů(nodes)
-		#Master
-			node 1 admin conninfo = 'dbname= sde_postgis host=158.194.94.110 user=postgres password=pg';
-		#Slave
-			node 2 admin conninfo = 'dbname= sde_postgis host=158.194.94.28 user=postgres password=pg';
-		#Inicializace clusteru
-			init cluster (id=1, comment='nodo postgis');
-		#Nastavení počítače jako mastera, název odpovídá názvu replikační sady
-			create set (id=1, origin=1, comment='Seznam replikovaných tabulek');
-		#Přidání tabulek
-			set add table (set id=1, origin=1, id=1, fully qualified name='public.road', comment='mi');
-		
-		# Nastavení cest
-			store node (id=2, EVENT NODE=1);
-
-			store path (server=1, client=2, conninfo='dbname= sde_postgis host=158.194.94.110 user=postgres password=pg');
-			store path (server=2, client=1, conninfo='dbname= sde_postgis host=158.194.94.28 user=postgres password=pg');
-
-			store listen (origin=1, provider=1, receiver=2);
-			store listen (origin=2, provider=2, receiver=1);
-	* slave.txt
-		#Název clusteru — stejný jako v master.txt
-			cluster name = slony_postgis;
-		#Nastavení uzlů — stejné jako v master.txt
-		#Master
-
-			node 1 admin conninfo = 'dbname= sde_postgis host=158.194.94.110 user=postgres password=pg';
-		#Slave
-			node 2 admin conninfo = 'dbname= sde_postgis host=158.194.94.28 user=postgres password=pg';
-		#Nastavení závislosti provider=master=node1, receiver=slave=node2
-			subscribe set (id=1, provider=1, receiver=2, forward=yes);
-* spuštění slonik.exe pro vytvoření clusteru
-	* spustit → cmd
-	* na Masterovi
-		* C:\Program Files\PostgreSQL\9.2\bin>slonik master.txt
-		* vypisuje: master.txt:16: waiting for event(1,5007) to be confirmed on node 2
-	* na Slavovi
-		* C:\Program Files\PostgreSQL\9.2\bin>slonik slave.txt
-		* vypisuje: waiting for event(2,5) to be confirmed on node 1
-	* pokud tohle vypisuje, po chvíli možno přerušit
-* spuštění slon.exe pro zapnutí procesu replikace (musí být zaplý, pokud se vypne, pak nereplikuje)
-	* na Master i Slave stejný příkaz
-		* C:\Program Files\PostgreSQL\9.2\bin>slon slony_postgis "dbname=sde_postgis user=postgres password=pg"
-	* spustí se a nechá běžet
-	* výpis by se měl pravidelně aktualizovat (slave stahuje data z masteru co 10min?)
-• v pgAdminIII
-	* po refresh by mělo přibýt:
-		* Replikace Slony 
-			* slony_postgis
-				* Uzly (2)
-					* nodo postgis
-						* Cesta — hodnoty odpovídají IP Slave
-					* nodo bez názvu
-						* Cesta — hodnoty odpovídají IP Master
-				* Replikační sady (1)
-					* Seznam replikovaných tabulek
-						* Tabulky(1) — seznam tabulek — !! POUZE u Mastera
-						* Odběry(1)
-				* __pozn.__ Pokud odběry neexistují, vytvořit (u vytváření nechat defaultní hodoty)
-					* tím se vytvoří odběr a pokud je správně navázané spojení mezi masterem a slavem, pak by se i u slave měly zobrazit Odběry(1) a po rozkliknutí by měly zobrazit odrážky Sekvence(0), Tabulky(0)
-	* __pozn.__ Pokud je replikace správně nastavena a existují odběry, pak by v tabulky (road) bylo být ve vlastnostech vidět Publikováni — Klastr "slony_postgis", sada1
-
-malé editace-velký soubor
-víc tabulek 
-	od začátku
-	přidat za pochodu
-	včetně tabulek typu trigger práva
-+ SDE
-jestli se to přenese - bod linie polygon
-master + 2x slave
-replikuje obsah né strukturu
-výsledek: tabulka
-nastudovat slony, 
+[ ] malé editace-velký soubor
+* víc tabulek 
+	[*] od začátku
+	[*] přidat za pochodu
+	[ ] včetně tabulek typu trigger práva
+[ ] SDE
+[*] jestli se to přenese - bod linie polygon
+[*] master + 2x slave
+[*] zjistit, proč replikuje obsah né strukturu
+[ ] výsledek: tabulka
+[ ] nastudovat slony-I
 
 

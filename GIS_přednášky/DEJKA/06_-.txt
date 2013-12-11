@@ -1,0 +1,88 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-11-29T09:50:27+01:00
+
+====== 06 - ======
+Created Pátek 29 listopad 2013
+
+* daně za feudalismu
+	* lenní pán - král měl z boží vůle nějaké území, propůjčoval půdu leníkům 
+		* → daň z pozemku, daň z osob
+	* lení - podmíněný držitel propůjčené půdy za radu a pomoc
+	* leníci to dál propůjčovali poddaní
+* počátky sčítání lidí
+* __zemské desky__ - **zápis práv pro výběr daně**
+	* v Čechách od 13stol. za Přemysla Otakara II., ale první shořely
+	* na Moravě od 16stol. 
+	* zápis práv → prodej, koupě, převod pozemku, ..
+	* zemští měřici
+* soupisy půd
+	* už za Přemyslovců
+	* kvůli majetkovým sporům nebo evidenci majetku
+	* mapy velkého měřítka + písemky výklad
+	* pokusy o jednotné zaměření Čech půdy se až do 17.stol nepodařilo prosadit
+* soupis poddaných podle víry (1651)
+	* seznam vrchosti, svobodných, poddaných
+	* zadavatelem katolická církev
+	* struktura: jméno, stav (poddaný, svobodný), povolání, věk, víra (u nekatoliků, zda je možné kovertovat k církvi)
+	* názvy obcí
+	* první soupis obyvatel
+* Čechy
+	* První berní rula (1654) pro Čechy
+		* královské rozhodutí
+		* soupis daňových povinností
+		* pozemek včetně tako, jak má velké pole, kolik toho seje na zimu, kolik na léto, kolik má dobytka, kolik má prostoru a kolik ve výsledku chová
+		* bez mapy
+		* daně vybírány podle využití půdy né podle rozlohy
+	* Druhá berní rula (1684)
+		* klasifikace úrodnosti, často špatně vyměřeno - nerovné daně
+	* 1. Tereziánský katastr (3. berní rula) od 1748
+		* daně dle velikost pozemku
+		* daně i z panské (dominikální) půdy jen za účelem evidence, neplatili daně
+		* zveřejnila to
+	* 2. Tereziánský katastr (4. berní rula)
+		* pokus  o lepší zaměření panské půdy - nebyl moc dobrý
+	* Josefský katastr
+		* výměr půdu bez ohledu na tom, komu to patří
+		* nezaměřovaly se řeky, cesty, neplodné pozemky
+		* od Marie měly domy číslo popisné
+	* Tereziásko-Josefský
+	* Stabilní katastr (1817-1861)
+• soupis, geodetické vyměření
+• viz prezentace
+• mapování Čech+Moravy+Slezka(česká část)
+• 8ha, 13tis. obcí
+• polní náčrty + jméno majitele, bonita půdy
+• zeměměřičský stolek
+• císařské otisky kolorované
+	* reambulace stabilního katastru
+		* 1869-1881
+		* narychlo, jednorázové doplnění, kvalita utrpěla
+	* vojenské
+		* 1. Josefské
+			* 1764-1768, 1780-1783
+			* stav před průmyslovou revolucí
+			* podkladem Mullerova mapa zvětšena do 1:28000
+			* doplněna pozorováním z koňského hřbetu
+			* bez triangulace
+			* 8barev, popis černě, sloupec s názvem vesnic a počtem obyvatel, koní, krav
+			* + textová část
+			* mapy ve Vídni, tajné
+		* 2. Františkovo
+			* trigonometrická síť
+			* v době nástupu průmyslové revoluce
+			* rozvoj zemědělství → lesní plochy ubývaly razantně
+		* 3. František-Josef I. 
+			* dlouho vládl, nesnášel techniku, nečetl dopisy psané strojem
+			* po něm Ferninand de Este
+		* Prozatímní vojenské mapování
+			* 3% podle Benešova zobrazení
+		* Definitní vojenské mapování
+			* 7% podle Křováka
+			* za 2. sv. se nemapovalo
+		* 2. Františkovo
+		* 3. Františsko-Josefské
+* Morava
+	* Lanová vizice pro Moravu — odpovídá První berní rule
+		* opravena 1669-79 — zemědělská půda rozdělena podle úrodnosti — odpovídá Druhé berní rule
+	* Rektifikační akta — odpovídá 1. Tereziánskému katastru

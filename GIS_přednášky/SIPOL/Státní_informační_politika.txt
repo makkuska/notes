@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-11-28T14:14:50+01:00
+
+====== Státní informační politika ======
+Čtvrtek 28 listopad 2013, Voženílek
+
+* od 1990 zahraniční investice
+* Rada vlády pro státní informační politiku
+* Úřad pro státní informační systém → Ministerstvo Informatiky ČR → už není 
+	* kompetence přešly pod Ministerstvo vnitra
+* Informační oblast
+	* Informační gramotnost
+	* Informatizovaná demokracie
+	* Komunikační infrastruktura
+	* Důvěryhodnost a bezpečnost informačních systémů a ochrana osobních dat
+	* Elektronický obchod
+	* Transparentní ekonomické prostředí

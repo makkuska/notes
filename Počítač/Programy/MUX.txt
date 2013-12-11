@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-11-25T20:53:54+01:00
+
+====== MUX ======
+Created Pondělí 25 listopad 2013
+
+https://gist.github.com/afair/3489752
+https://github.com/aziz/tmuxinator

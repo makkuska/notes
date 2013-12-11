@@ -5,6 +5,8 @@ Creation-Date: 2013-01-13T23:58:02+01:00
 ====== Diplomka ======
 Created Neděle 13 leden 2013
 
+http://www.youtube.com/watch?v=syIuMYj-sYM&noredirect=1
+
 pg_bench
 pg_basebackup
 slony (nerozumí si s 64bit verzí)

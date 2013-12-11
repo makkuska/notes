@@ -7,6 +7,20 @@ Creation-Date: 2013-10-10T14:06:23+02:00
 
 * 10. a 24. 10 s Alenou
 * 31. s Voženílkem
-* pak 2x s Hísem
+* 25.11. Petr Kubíček
+* 25.11. Přednáška Reinhard
+	* GIS ISO standardy začínají 191xx
+	* standards for common understanding about product
+	* 191113: quality elements:
+		* completness (too much or too less data in comparison to reality)
+		* logical consistency (conceptual, domain, format, topological consistency)
+		* position accuracy (absolute, relative)
+		* temporal accuracy
+		* thematic accuracy (data are not correctly classified, atributes)
+* Po 2.11 - Hís
+* Čt 5.11. Ispra - standartizace Řezník
+* 12.12. diskuze
+* 19.12.
+* zk - písemná - středa v lednu
 
 

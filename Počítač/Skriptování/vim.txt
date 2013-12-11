@@ -1,0 +1,113 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-11-27T03:47:48+01:00
+
+====== vim ======
+Created Wednesday 27 November 2013
+
+http://www.fprintf.net/vimCheatSheet.html
+http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
+http://www.glump.net/howto/desktop/vim-graphical-cheat-sheet-and-tutorial - pdf version of tutorial
+http://www.viemu.com/a-why-vi-vim.html
+
+* vimtutor - line 590 - LESSON 5.1
+* motion
+	* hjkl - left, down, up, right
+	* w - start of next word
+	* e - end of this word
+	* b - beginning of this word
+	* $ - end of line
+	* 0 - beginning of line
+	* ^ - first non-ws char on line
+	* t<char> - forward before char
+	* f<char> - forward on char
+	* <number><motion> - repeat motion
+	* % go to matching ), ], or } and back
+* operators
+	* <number><operator> - repeat operator
+	* <operator>[<number>]<motion> - combine with motion (and repeat)
+	* u - undo
+	* U - undo whole line
+	* . - repeat last change
+	* x - delete character
+	* d<motion> - delete upto - motions:
+		* w - start of next word (this word and space)
+		* e - end of this word (without space)
+		* $ - end of this line
+		* ...
+		* dd - delete line
+	* c<motion> - change upto - delete upto and insert
+	* y<motion> - yank (copy) upto
+* shortcuts
+	* A = $a
+	* => A<action>ESC - save action with movement to EOL
+		* j. - reply movement on next line
+	* C = c$
+	* s = cl = xi - delete right (current) char and insert
+	* S = ^C = ^c$ - change (delete and insert) whole line
+	* I = ^i - insert to beginning of line
+	* o = A<CR> - insert after this line
+	* O = ko - insert before this line
+* >G - increase indentation of current line
+* p - put deleted text after cursor / on next line (when whole line deleted)
+* r - replace current char
+	* R - enter replace mode
+* goto lines
+	* gg - go to beginning of file
+	* G - go to EOF
+	* <number>G - go to line <number>
+* search
+	* / - forward search
+		* end with \c to ignore case
+	* ? - backward search
+	* n - next match
+	* N - previous match
+	* *  - start a search for word under cursor
+* v - enter visual mode
+	* :w <name> after selection - write only this part of file
+	* or use an operator to do something with the text
+
+=== bindings ===
+* C-g - show file status
+* C-o - go back where you came from
+* C-i - go forward (in history)
+* C-w C-w - jump between windows
+
+=== commands ===
+* :w - write changes
+* :q - quit
+:q! - don't prompt for saving
+* :nohlsearch - hide search matches
+* :s/old/new[/g] - substitute old by new, g - all occurrences on line
+	* :#,#s/... - substitute from line # to line #
+	* :%s/... - every occurrence in file
+	* :%s/old/new/gc - -||- with prompt whether to substitute
+* :!<command> - run external command
+* :r <name> - insert contents of file
+	* :r !<command> - insert output of command
+* :set <option> - set option (for this session)
+* :help
+	* show help for help
+	* param - e.g. operator, c_<binding>, name of section
+* completion
+	* C-d - show list of options
+	* <TAB> - complete
+
+=== repetitions ===
+* . - repeat last change
+* ; - repeat last find (f{char} / t{char})
+* , - repeat last find in reverse direction (F{char} / T{char})
+* @: - repeat command
+* & - repeat last substitution
+* qx{changes}q - record changes, @x - repeat changes
+
+=== options ===
+* prepend 'no' to negate
+* set number
+* set ruler
+* set hlsearch - highline search matches
+* set ignorecase - in search
+* set incsearch - start searching while typing
+
+=== plugins ===
+* https://github.com/tpope/vim-rails

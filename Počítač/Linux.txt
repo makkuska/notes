@@ -5,5 +5,11 @@ Creation-Date: 2012-02-06T20:41:21+01:00
 ====== Linux ======
 Created Pondělí 06 únor 2012
 
+balíčky - repozitář
+/etc/apt/sources.list.d/ubuntugis-ppa-precise.list
+	pro nový qgis2
+		deb     http://qgis.org/debian-nightly precise main
+		deb-src http://qgis.org/debian-nightly precise main
+
 aurikelt_@0908
 .ssh/authorized_keys

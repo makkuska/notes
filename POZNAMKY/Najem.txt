@@ -9,10 +9,10 @@ Created Středa 07 březen 2012
 	[ ] internet
 	[ ] ČEZ
 	[ ] nájem
-[ ] **LISTOPAD**
-	[ ] internet
-	[ ] ČEZ
-	[ ] nájem
+[*] **LISTOPAD**
+	[*] internet
+	[*] ČEZ
+	[*] nájem
 [*] **ŘÍJEN**
 	[*] internet
 	[*] ČEZ

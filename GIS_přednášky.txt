@@ -18,18 +18,9 @@ Přidal
 http://earthobservatory.nasa.gov/Features/MeasuringVegetation/measuring_vegetation_2.php
 Dokument ve stažených 52960....pdf
 
-
-
-
 **Co chybí GISy:**
 * PONAS - kočka (GPSdrawing), DPSplanning, lavičky vrstva nadigitalizovaná  --- Michal
 * INFUZ :-( informační systém
-* přednášky DMREL, PONAS
-
-===== POKR =====
-__LZW:__
-jedno (acsii), pak dvojice
-
 
 __Metoda blokovým tříděním__
 * založena na seřazení bloku textu

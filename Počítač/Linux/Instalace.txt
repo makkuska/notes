@@ -6,6 +6,7 @@ Creation-Date: 2012-07-18T13:46:59+02:00
 Created Středa 18 červenec 2012
 
 === Instalace ===
+* tar xvzf soubor
 * instalace **./configure make make install**
 * odinstalovat se vším všude **aptitude pudge**
 * aptitude search linux-image | grep '^i'
@@ -21,12 +22,12 @@ Created Středa 18 červenec 2012
 	[ ] překopírovat konfigurák root:/etc/vim/vimrc jako zálohu do home a pak překopírovat zase zpátky (Kuba mi ho 23.9. upravoval, aby byl vim použitelnější)
 * vytvoření bootovací flashky
 	* stáhnout iso
-	* naformátovat flashdisk: gparted
-	* vytvořit bootovací flashdisk: unetbootin
+	* naformátovat flashdisk: **gparted**
+	* vytvořit bootovací flashdisk: **unetbootin**
 * upgrade pustit v konzoli, aby se to nemohlo časem nechtě přerušit
 * firmware (síťovka - wifi) sudo aptitu install bcmwl-kernel-source
 * __SYSTEM UTILS__
-	guake mc moc vim-gtk arj zip tree htop nmap ncdu
+	guake mc moc  moc-ffmpeg-plugin vim-gtk arj zip tree htop nmap ncdu
 	zim graphviz dvipng bzr python-gtkspell aspell-cs r-recommended
 	(fireware)
 	cifs-utils lftp filezilla openssh-server smbfs antiword pdftk openssh-server
@@ -54,7 +55,9 @@ Created Středa 18 červenec 2012
 	cgi-mapserver mapserver-bin mapserver-doc php5-mapscript  python-mapscript
 3) geoserver
 4) desktop GIS
-	qgis viking grass
+	qgis
+		nejnovější verze: http://www.qgis.org/en/site/forusers/alldownloads.html#debian
+	viking grass
 	googleearth googleearth-package
 5) framework geomoose
 	./configure

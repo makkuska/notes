@@ -1,0 +1,38 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-11-07T10:41:37+01:00
+
+====== 7.11. ======
+
+Mobility:
+* multiuser geodatabases in ArcGIS leverage ArcSDE technology
+	* always RDBMS (SQL Server Express, Oracle, PostgreSQL, SQL Server) + ArcSDE
+* single-user geodatabases
+	* file (local file structure) x personal (Microsoft Access)
+	* for all versions of ArcGIS for Desktop
+	* no versioning support
+	* file geodatabase
+		* can have more than 1 editor
+		* can be child geodatabase
+		* .gdb
+	* MS Access Personal geodatabase
+		* .mdb
+		* limit 2GB
+		* only one editor
+		* can be child geodatabase
+	* advantages of geodatabase
+		* every layers in one file - easy data migration
+* **file personal multi-edit	**
+	* one person can edit one dataset
+	* after refresh, the reader see the changes
+	* can be many reader, for every dataset can only one Start Editing
+	* when you can to add column, no one else can use the dataset (even as a reader!)
+* **personal database**
+	* ony one person can edit all database
+	* after refresh, the reader see the changes
+	* can be many reader, but only one can Start Editing
+* **shp**
+	* cannot edit two editors in one time
+	* after refresh, the reader see the changes
+
+

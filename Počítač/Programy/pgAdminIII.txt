@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-11-13T12:39:43+01:00
+
+====== pgAdminIII ======
+Created Středa 13 listopad 2013
+
+* přidání pluginu pro import do PostGIS
+	* v /usr/share/pgadmin3/plugins.d/plugins.ini přidat řádek
+		;
+		; pgShapeLoader (Linux):
+		;
+		Title=PostGIS Shapefile and DBF loader
+		Command=$$PGBINDIR/shp2pgsql-gui -U $$USERNAME -d $$DATABASE -p $$PORT -h $$HOSTNAME
+		Description=Open a PostGIS ESRI Shapefile or Plain dbf loader console to the current database.
+		KeyFile=$$PGBINDIR/shp2pgsql-gui
+		Platform=unix
+		ServerType=postgresql
+		Database=Yes
+		SetPassword=No
+		
+	* **$$PGBINDIR → nahradit za /usr/bin **nebo locate shp2pqsql a podle toho nahradit!
+* pak jen vypnout zapnout pgAdmina
+
+

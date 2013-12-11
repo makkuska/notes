@@ -3,5 +3,19 @@ Wiki-Format: zim 0.4
 Creation-Date: 2013-10-11T07:51:01+02:00
 
 ====== TREND ======
-Created Pátek 11 říjen 2013
+Pátek 11 říjen 2013
 
+* 25.10. Big Data
+* 8.11. Odpadá
+* 25.11. Nějaká přednáška nějakého němce
+* Prezentace od 15.11
+	* 10stran
+	* 10-15 minut
+* Prezentace 15.11.	
+	* 3D tisk 
+* Prezentace 29.11.	
+	* Mobile GIS
+	* Big Data
+* Prezentace 6.12.
+	* Participatory Mapping
+	* GIS & games

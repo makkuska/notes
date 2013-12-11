@@ -19,12 +19,12 @@ Created Úterý 17 září 2013
 		 hba_file          	 | /etc/postgresql/9.1/main/pg_hba.conf
 		 ident_file        	 | /etc/postgresql/9.1/main/pg_ident.conf
 		 (5 rows)
-	* __listen_addresses__ tells PostgreSQL **which IPs to listen on**. This usually defaults to **localhost**, but many people change it to** ***, meaning **all available IPs**.
+	* __listen_addresses__ tells PostgreSQL **which IPs to listen on**. This usually defaults to **localhost**, but many people change it to *, meaning **all available IPs**.
 	* __port__ defaults to 5432. Again, this is often set in a different file in some distributions, which overrides this setting. For instance, if you are on a Red Hat or CentOS, you can override the setting by setting a PGPORT value in /etc/sysconfig/pgsql/your_service_name_here. 
 	* __max_connections__ is the maximum number of concurrent connections allowed.
 
 ==== Roles ====
-	* SELECT * FROM pg_roles;
+	* **SELECT * FROM pg_roles;**
 	* nebo \du
 	* s přihlašováním byl zmatek → první jsme zakomentovali v //pg_hba.conf//
 			# "local" is for Unix domain socket connections only

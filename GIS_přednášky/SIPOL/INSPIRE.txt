@@ -1,0 +1,45 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-12-05T14:03:15+01:00
+
+====== INSPIRE ======
+Čtvrtek 05 prosinec 2013, doc. Řezník
+
+* **CENIA** je národním koordinátorem pro INSPIRE
+* má 14 stránek + 4848 dokumentace pro každé z 34 témat (obsahuje konkrétní požadavky, např. i to, jak by měla vypadal SLD)
+	* **přílohy I+II - referenční služby**
+	* **příloha III - tématická data**
+	* dohromady** 34 témat**
+* __vytvořena pro vyhledávání__
+	* skrze katalogové služby
+		* prostorové, časové, full-textové
+	* v kombinaci s prohlížecími službami
+		* WMS
+	* CSW - service pro web
+* směrnice ISPIRE určuje __pravidla pro__:
+	* **data** včetně aktualizací (data dostupná zdarma, pokud placené, tak musí mít vlastní e-shop)
+	* **medatada**
+	* **síťové služby** (WMS, WFS, GML, konverze dat, transformační souřadnicové, transformační obsahové)
+	* **sdílení dat **- autorská práva
+	* **monitoring** (zpráva každý rok v březnu) a** reporting** (zpráva jednou za 3 roky) - do EU
+* __dle novely zákona 123/1998 Sb. musí data poskytovat__:
+	* **správní úřady **a jiné složky státu - kraje, ORP, obce (však jen pokud finance pochází ze státu nebo EU)
+	* **právnické nebo fyzické osoby** - resortní organizace (ÚHUL, ..)
+	* **pravnické osoby** (komerční sféra), která vytváří subdodávky
+		* př. architekti, kteří dělají územní plány
+* __Obsarvations a Measurements __(ISO 19156)
+	* kde de, jak často měří, ... 
+* __Inspire metadata__
+	* metadatový editor → xml soubor
+* je potřeba __testování souladu,__ aby data získala INSPIRE certifikát
+* mapová kompozice dle inspire
+* ispire má pro specifikace pro všecko možné - např. pro hlukovou mapu
+* data atributy: DateTime, geometry, inspireID, tuna číselníků
+* //inspire-geoportal.ec.europa.eu//
+
+* pozn:
+	* standard schematrond - Micka ho splňuje
+	* extract transformal load (ETL) nádstavba nad databází - umožňuje udělat select a na základě určitých zdrojů, naplnit databázi
+	* směrnice PSI
+	* SLD, SE - taky je zahrnuto do inspire
+		* pokud se vytvoří data veřejné správy, 

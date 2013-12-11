@@ -47,7 +47,7 @@ zarovnání do bloku \setlength\parindent{0pt}
 		''   \includegraphics''**<1>**''scale=0.35]{pict/NDVI.png}''
 		''   \includegraphic''s**<2>**''[scale=0.35]{pict/Isodata.png}''
 		''   \includegraphics''**<3>**''[scale=0.35]{pict/SupervisedCl.png}''
-		''\end{columns}''
+	''\end{columns}''
 	\end{frame}
 
 * __pictures: __

@@ -1,0 +1,52 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-11-13T19:34:40+01:00
+
+====== 13.11 ======
+Created Středa 13 listopad 2013
+
+* postgres x mysql
+	* http://dba.stackexchange.com/questions/34472/is-postgresql-replication-production-ready
+* physical x logical
+	* http://www.continuent.com/news/live-webinars/18-news/blogs/1244-advanced-logical-replication-for-postgresql-13896
+* XLOG-based replikace → stejná verze Postgre
+* __Slony-I__ (PostgreSQl Replication od toho Hungarána, str 160)
+	* logical replication skrz** changelog trigger**
+	* obrázek v PostgreSQL Replication
+	* **transport protokol = pure text**
+	* není potřeba stejná verze Postgre
+	* __how Slony-I works:__
+		* The slon daemon will come along and **read all changes since the last commit.**
+		* All **changes will be** **replayed** on the slaves.
+		* Once this is done the **log can be deleted.**
+	* The __slon daemon__ will be in charge of** picking up the changes **made to a specific table or a set of tables and **transporting those changes to the desired destinations **(Obrázek 164)
+	* replication is **always related to a table** or to a group of tables (It might very well happen that one database is the master of tables A and B and another database will be the master of tables C and D) → Slony **allows the replication of data back and forth**
+	* __slonik__
+		* **to interpret scripts **and talk to Slony directly
+		* command-line interfafa
+	* Create this table in both databases in an identical way __because the table structure won't be replicated automaticall__
+		* The problem now is that Slony **relies heavily on triggers**. A trigger can fire when a row in a table changes. This works for all tables—but, it does not work for system tables. So, if you deploy a new table or if you happen to change a column, there is no way for Slony to detect that. So, you have to run a script to deploy changes inside the cluster to make it work
+		* **deploy changes of the data structures (so called DDLs).**
+			* přidat do skriptu:
+			* execute script (
+			//filename = '/tmp/deploy_ddl.sql',//
+			//event node = 1//
+			//);//
+			
+	* __A path__** (store path)** is basically the connection string to move from A to B. 
+		* Store path (server = 2, client = 1, conninfo='dbname=repl2 host=localhost user=postgres  password=tfgt)
+	* __triggers__ have been deployed automatically to keep track of these changes. **Each event is covered by a trigger**
+		* Slony setup is the so called **changelog triggers**. This means that** whenever Slony has to replicate the content of a table it will create a trigger**. This trigger will then store all changes made to the table in a log.
+		* example
+			* Triggers: 
+				* _first_cluster_logtrigger AFTER INSERT OR DELETE OR UPDATE ON repl_test FOR EACH ROW EXECUTE PROCEDURE _first_cluster.logtrigger('_first_cluster', '1', 'k')
+			* Disabled triggers: 
+				* _first_cluster_denyaccess BEFORE INSERT OR DELETE OR UPDATE ON repl_test FOR EACH ROW EXECUTE PROCEDURE _first_cluster.denyaccess('_first_cluster')
+	* __forward__ - nastavuje se u slave a pokud je **forward=yes**, potom se logy zachovávají a tento slave s pak může použít jako provider pro další server
+		* (meaning: A replicates to B and B replicates to C)
+	* **OMIT COPY = yes **In many cases you know already that you are in sync and you want to avoid copying gigabytes of data over and over again. To achieve that we can add OMIT COPY = yes. This will tell Slony that we are sufficiently confident that data is already in sync.
+	* we have to run exactly __one slon daemon per database__ in our cluster.
+	* one database is the **master of tables A and B** and another database will be the master of tables C and D
+
+ 
+

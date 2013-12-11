@@ -72,7 +72,7 @@ Pátek 11. října 2013
 		* Codex Sarangliensis
 * Islámská kultura
 * dědici řecké geografie, přeložili Ptolemaia
-* Al Idrisi (Abu Adb Aláh Muhammad al-Idrísi al-Kurtubi al-Hasani al-Sabti)
+* **Al Idrisi** (Abu Adb Aláh Muhammad al-Idrísi al-Kurtubi al-Hasani al-Sabti)
 	* Kruhová mapa světa - orientace na jih
 	* Mapa pobřeží Marmarského moře
 	* Rogerova kniha - atlas pro Rogerse (Sicilský král) - politický charakter (obchod), geografický popis + Idrisiho mapy
