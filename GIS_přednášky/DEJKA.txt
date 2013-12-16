@@ -5,39 +5,43 @@ Creation-Date: 2013-09-27T09:59:06+02:00
 ====== DEJKA ======
 Pátek 27 září 2013
 
-* dějiny kartograrie
-	* sleduje vznik, vývoj, kartografy
-* historická kartografie	
+* __dějiny kartografie__
+	* sleduje vznik, vývoj, kartografie
+* __historická kartografie	__
 	* vizualizace výsledků historicko-geografického výzkumu
-* stará mapa
+* __stará mapa__
 	* vydaná kdysi - Komenského mapa
-* historická mapa
+* __historická mapa__
 	* nová mapa, která zachycující historický jev
-* faksimile
+* __faksimile__
 	* moderní reprodukce starých map, kopie historických map
 	* věrné - vezmeš technologie, které byly použité dříve, ale uděláš to dnes
-	* pro vědecké účel
-* novotisk
+	* pro vědecké účely
+* __novotisk__
 	* novodobý tisk s využitím původní tiskové desky (vyryté do mědi nebo dřeva)
-* ICA International Cartography Association
-	* má několik komicí
+* **ICA International Cartography Association**
+	* má několik komisí
 	* Commission of the History of Cartography
 		* zaměřuje se na dokumenty staré 200let
-		* zabývájí se: měnící se téma map
-	* Commissiono of Digital Technologies in Cartography Heritage
+		* zabývají se: měnící se téma map
+	* Commission of Digital Technologies in Cartography Heritage
 		* transformace starých map, sken, analýza geografické přesnosti
-* proč mapy v historii?
+* __Proč se mapy vytvářely v historii?__
+	* vymezení teritoria, dobývání, politické důvody, náboženské důvody, strašení dobrodruhů nebo chudých obyvatel, dokumentace známého světa, orientace a navigace
+* __K čemu jsou nám dějiny kartografie dnes?__
+	* všeobecný přehled, informace o vývoji, dobývání, vývoj myšlení
+	* k moderním účelům (vývoj krajiny, archeologie)
 
 **BBC - dokument o mapách "Jak zmapovat svět"**
 * Jindřich 8 nechal zmapovat pobřeží Anglie kvůli bezpečnosti - moc pěkná mapa z ptačího pohledu
-	* stavěl pevnosti tam, kde byly velké rozepstupy podle mapy
+	* stavěl pevnosti tam, kde byly velké rozestupy podle mapy
 	* analýza nejzranitelnějších míst — písčité oblasti vhodné pro vylodění detailně zmapované, skalní oblasti nepřesně
 	* neměla jednotné měřítko
 	* 3 symboly pro stav pevnosti - návrh, rozestavěná, postavená
 * Ludvík XIV.
-	* Cassini - pro přesnou tvorbu map využil astronomie - pozorováním jupiterových měsíců (porovnat zatmění ve 2 městech → výpočet zeměpisné délky)
+	* **Cassini **- pro přesnou tvorbu map využil astronomie - pozorováním jupiterových měsíců (porovnat zatmění ve 2 městech → výpočet zeměpisné délky)
 		* 1. přesné měření pobřeží ukázalo, že Francie byla o 20% menší — Ludvík byl rozezlen - věda ho připravila o víc území než válka
-		* Carte de Cassini (Cassiniho mapa Francie)
+		* **Carte de Cassini** (Cassiniho mapa Francie)
 			* měření vnitrozemí pomocí triangulace (1789 - 120 let, 4 generace rodiny Cassiniových mapovala Francii)
 			* používá už sjednocené symboly, sjednocení jazyka, má měřítko
 			* pousloužila jako "nástroj revoluce" - administrativní reformy
@@ -48,17 +52,17 @@ Pátek 27 září 2013
 		* velikost ostrovů na mapě značí významnost ostrovů né rozlohu
 * Mezinárodní mapa světa - Miliontiné mapy
 	* každá země má vytvořit mapu podle daných pravidel (měřítko 1:mil, symboly)
-* Kolumbus plul podle mapy, kde chyběl celý Atlantic, Pacifik a Ameriku
+* **Kolumbus** plul podle mapy, kde chyběl celý Atlantic, Pacifik a Ameriku
 	* vycházel z "největšího omylu antiky" - zeměkoule je o třetinu menší
 	* Kolumbus plul kvůli slávě a penězům, on nikdy nedozvěděl, že nalezl celý velký kontinent
 	* na Kanárech nabral jídlo a měl naplánované za 21 dní bude v Japonsku nebo Číně
 	* doplul na San Salvador
 	* po jeho návratu byla mapa překreslena
 	* od té doby mapy prostředkem k objevování a dobývání
-* Amerigo Vespuci
+* **Amerigo Vespuci**
 	* objevil i západní pobřeží Ameriky → 4. kontinent, do té doby si mysleli, že Kolombus objevil východní pobřeží Asie
 	* vanzeMiller nakreslil první mapu, kde byla America jako samostatný kontinent mapa "Rodný list Ameriky"
-* Mercator - Belgie
+* **Mercator **
 	* studoval kresliče námořních map
 	* vyrůstal za Kolombovy slávy
 	* vyráběl glóbusy pro šlechtu

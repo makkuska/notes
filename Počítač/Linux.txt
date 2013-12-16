@@ -13,3 +13,6 @@ balíčky - repozitář
 
 aurikelt_@0908
 .ssh/authorized_keys
+
+* nastavení tiskárny:
+	* http://localhost:631/printers

@@ -48,21 +48,21 @@ Created Pátek 29 listopad 2013
 		* od Marie měly domy číslo popisné
 	* Tereziásko-Josefský
 	* Stabilní katastr (1817-1861)
-• soupis, geodetické vyměření
-• viz prezentace
-• mapování Čech+Moravy+Slezka(česká část)
-• 8ha, 13tis. obcí
-• polní náčrty + jméno majitele, bonita půdy
-• zeměměřičský stolek
-• císařské otisky kolorované
-	* reambulace stabilního katastru
-		* 1869-1881
-		* narychlo, jednorázové doplnění, kvalita utrpěla
+		* soupis, geodetické vyměření
+		* viz prezentace
+		* mapování Čech+Moravy+Slezka(česká část)
+		* 8ha, 13tis.Prv obcí
+		* polní náčrty + jméno majitele, bonita půdy
+		* zeměměřičský stolek
+	* císařské otisky kolorované
+		* reambulace stabilního katastru
+			* 1869-1881
+			* narychlo, jednorázové doplnění, kvalita utrpěla
 	* vojenské
 		* 1. Josefské
 			* 1764-1768, 1780-1783
 			* stav před průmyslovou revolucí
-			* podkladem Mullerova mapa zvětšena do 1:28000
+			* podkladem Mullerova mapa zvětšena do 1:2800
 			* doplněna pozorováním z koňského hřbetu
 			* bez triangulace
 			* 8barev, popis černě, sloupec s názvem vesnic a počtem obyvatel, koní, krav

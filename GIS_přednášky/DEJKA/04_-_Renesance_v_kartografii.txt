@@ -1,0 +1,142 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-10-25T09:50:24+02:00
+
+====== 04 - Renesance v kartografii ======
+Created Pátek 25 říjen 2013
+
+====== Před a po kolumbovská kartografie (1492 - 1520) ======
+* __velký rozvoj díky:__
+	* **díky rozvoji knihtisku** (dřevořez, mědirytiny)
+		* překreslování+přepisování = manuscripty
+		* tištěné = edice
+		* __nové materiály a postupy __při tvorbě map: **dřevořez, mědirytiny**
+	* **znovuobjevení antické** **vědy**, kultury a umění
+		* znovuobjevení Ptolemaiova díla Geographiké Hyphégésis → 1. tištěné edice Kondrada Sweynheim (Římská edice), další Ulmská, Benátská a další
+	* **zámořským objevům**, objevy nových kontinentů
+		* Kolumbus plul podle mapy, kde chyběl celý Atlantic, Pacifik a Ameriku
+			* vycházel z "největšího omylu antiky" - zeměkoule je o třetinu menší
+			* Kolumbus plul kvůli slávě a penězům, on nikdy nedozvěděl, že nalezl celý velký kontinent
+			* na Kanárech nabral jídlo a měl naplánované za 21 dní bude v Japonsku nebo Číně
+			* doplul na San Salvador
+			* po jeho návratu byla mapa překreslena
+			* od té doby mapy prostředkem k objevování a dobývání
+* Česko v nich pořád obývají Markomani, údaje nebyly aktualizovány
+* až do renesance se drželi největšího omylu antiky
+* **mapa Paolo dal Pozzo Toscanelliho** (1474)
+	* __vycházel z Ptolemaia__ (špatné rozměry) - Kolumbus podle mapy P. Toscanelliho jel do Asie, proto dojel do Ameriky (Japonsko=Zipangu bylo na té jeho mapě v takové vzdálenosti, v jaké je ve skutečnosti Mexiko)
+* **Martin Behaim**
+	* předkolumbovský rukopisný **glóbus**, dochoval se
+* **Juan de la Cosa**
+	* mořeplavec, kartograf, účastnil se 2. Kolumbovy výprav
+	* prý __první vyslovil domněnku,__ že to co nalezli, je **nový kontinent**
+	* mapa **Carta de Marear **(1500)
+		* portolánová mapa, nový kontinent zeleně, známé území jen konturou
+* Amerigo Vespuci
+	* objevil i západní pobřeží Ameriky → 4. kontinent, do té doby si mysleli, že Kolombus objevil východní pobřeží Asie
+	* Waldseemüiller nakreslil první mapu, kde byla America jako samostatný kontinent mapa "Rodný list Ameriky"
+* **Martin Waldseemuller**
+	* po kolumbovská kartografie - německý kartograf
+	* **Mapa světa **(1507)
+		* 12 dřevořezů (listů) + atlas + kniha popisující Amerigovy cesty
+		* **poprvé** použit označení **Amerika**
+		* Americký kontinent je pouze nudle, stále ho neměli dopodrobna procestovaný
+* **Smlouva Tordesillas **(1494)
+	* **rozdělení nově objeveného světa** mezi Španělskem a Portugalskem - na západní polokouli
+	* jednotka __leagues__ = kolik vidíš na moři k obzoru
+	* na základě této smlouvy Portugalsko získalo Brazílii a Španělsko všecko ostatní
+* Smlouva Saragusa (1629)
+	* rozdělení východní polokoule Špan a Port → Portugalci získali Moluky, kde v té době rost hřebíček, velmi významná komunikta
+* **Johannes Schoner**
+	* po kolumbovská kartografie - německý kartograf
+	* tvůrce glóbů (na glóbu z roku 1523 vyznačena trasa Magalienciho)
+	* už je známá velká část Ameriky
+* Vinlandská mapa "zajímavost"
+	* zachycuje znalosti Vikingů, objevení Ameriky, ještě před Kolumbem → podfuk?
+* __chorografické mapy__
+	* mapy malých území (např. Klaudiánova mapa)
+	* včetně kopců a vesnic, bývaly součástí velkých atlasů
+
+====== Počátky atlasové kartografie (16 stol.) ======
+* 1520 Magalhaes - první obeplutí Země
+* 1580 Francis Drake - druhé obeplutí Země
+* → důkazy o kulatosti země, podklady pro správné měření rozměrů
+* **rozvoj kosmografie, chorografické kartografie, matematické kartografie**
+* zmapováno pobřeží celého světa kromě Austrálie a Antarktidy
+* centrem Nizozemsko, Francie a Anglie nezajímavá
+	* __Itálie:__ **Vincenzo Coronelli**
+		* autor stovek map a glóbů
+		* atlas **Atlante Veneto** (400listů)
+
+==== Nizozemko (pol 16.stol - pol. 17.stol) ====
+* centrum atlasové kartografie v této době
+* rodiny Hondiové + Jannsonové x Blaeuové (kradli od sebe, rivalové)
+* **Gerhard Mercator**
+	* studoval kresliče námořních map
+	* vyrůstal za Kolombovy slávy
+	* kritikem spolehlivosti map, osvobození od vlivu Ptolemaiovy Geografie
+	* přechod z gotického písma na italiku (i díky tisku, bylo mnohem jednodušší a čitelnější)
+	* __zobrazení__
+		* **čtverce zvětšující se k pólů**, posunul rovník na jih, aby byl větší prostor pro Evropu
+		* stále se používají v atlasech
+	* loxodromická mapa světa - každá loxodroma jako přímka (každé dva body lze spojit přímkou)
+		* póly jsou přímky
+	* **oprava velikosti středozemního moře**
+	* **poprvé** použil slovo **atlas** pro soubor několika map
+	* **vydal atlas (1585)**
+		* první vydání: oprava  Ptolemaiových map
+		* další rozšířena o mapy Francie, Nizozemí, Belkánu a Německa
+	* vyráběl glóbusy pro šlechtu
+	* po něm pokračoval jeho syn
+* **Abraham Ortelius **
+	* současník Mercatora
+	* zakázka pro jistého obchodníka → chtěl hodně map a mělo se s nimi lehce manipulovat (ruličky nejsou lehce manipulovatelné) → **atlas**
+	* **1570 Theatrum Orbis Terrarum**
+		* sebral desky a přeryl je → jednotný grafický styl 
+		* velikost 30x50cm
+		* 25. vydání (1598 - 1612), **na začátku 53 map**, poslední vydání 129 map včetně **Fabriciovy** mapy Moravy
+* **Jodocus Hondius starší **(1563 - 1612)
+	* **Atlas **
+		* 1604 koupil Mercatorovy desky (60) z atlasu a přidal dalších 36 map → atlas vydal jako Mercatorův atlas, Hondius byl jen editor 
+		* asi 50vydání, včetně kapesní verze 
+	* **Atlas Minor**
+		* kapesní verze atlasu (15x20)
+	* dílo získal Blaeu, dílo dál rozšiřoval Janssonius - mluví se o Mercator-Hondius-Jansson atlasech• 
+* **Willem Janssoon Blaeu**
+	* učil se u Tycha de Brahe
+	* soupeřil s Hondiem a Janssoniem 
+	* **Atlas Novus **(1634)
+		* 400 map, 6 svazků
+	* **Atlas Maior** (1662)
+		* 600 map v 11. svazcích, mix různých desek, nebyl jednotný styl, stáří max +-100let
+		* část desek shořela
+		* i v latinské, holandské a německé verzi
+* **Hemův atlas**
+	* rozšíření Blaeuova atlasu na objednávku 
+* **Kneckle Atlas (1600)**
+	* největší atlas necelé 2m 
+
+====== Reformace kartografie (17 - 18 století) ======
+* začíná zeměměřičství, triangulace
+* měří se velikost zeměkoule - již přesné výpočty
+* centrum rozvoje se přesouvá do Francie
+* mapy pro vojsko = rozvoj map (Válka za americkou nezávislost, Velká francouzská revoluce, založeno ČVUT)
+* **Jean Dominique Cassini**
+	* zakladatel astronomicko-geodetické dynastie
+	* mapoval Francii pro Ludvíka XIV.
+	* pro přesnou tvorbu map (**pro přesné měření zeměpisné délky**) využil astronomie - pozorováním **jupiterových měsíců** (porovnat zatmění ve 2 městech → výpočet zeměpisné délky)
+	* 1. přesné měření pobřeží ukázalo, že Francie byla o 20% menší — Ludvík byl rozezlen - věda ho připravila o víc území než válka
+	* **Carte de Cassini** (Cassiniho mapa Francie)
+		* měření vnitrozemí pomocí triangulace (1789 - 120 let, 4 generace rodiny Cassiniových mapovala Francii)
+		* používá už sjednocené symboly, sjednocení jazyka, má měřítko
+		* posloužila jako "nástroj revoluce" - administrativní reformy
+		* centralizovala, standardizovala
+* **Jean Lambert**
+	* nové úhlojevné kuželové a plochojevné azimutální **zobrazení**
+	* řešil zkreslení v jednotlivých směrech při převodu z referenčního tělesa do zobrazovací roviny
+* **Guillaume Delisle (1725)**
+	* **Atlas Geographique** - konečně mapa Evropy se srpváně velikým středozemním mořem
+* **Jead d'Anville**
+	* **Atlas Général (1727)** začal používat bílá místa na mapě, tzn. že si nevymýšlel, když nevědět
+
+

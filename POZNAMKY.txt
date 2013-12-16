@@ -6,29 +6,6 @@ Creation-Date: 2012-01-22T23:22:41+01:00
 Created Neděle 22 leden 2012
 
 
-Add **new** tables into replication cluster
-__Instruction:__
-* To add new tables to replication, create first a new file with SQL query.
-* Then start a **slonik **script to execute the query. Advantage of than is it will create the same tables in both(all) databases.
-* Tables will be created in databases, but not added in replication clusture. To do so, create a file described in 4. Then execute the slon script, tables will add to the replication cluster. 
-* 1) create new file **sql_script.txt** in folder **/tmp/**
-* 2) create script, which add table to all databases
-* 3) execute slonik script
-* 4) create new file **add_tables_to_set.txt** in folder **/etc/postgresql/9.1/main/**
-* 5) execute slonik script
-
-options for two computers replication (in GIS lab)	
-
-Setting I used for computer to computer replication (computers in GIS lab)
-1) example of file **master.txt**
-	in both master.txt and slave.txt path should be edited
-2) edit **postgresql.conf** file in **/etc/postgresql/9.1/main/** folder
-	edit access for other computer
-3) edit **.pgpass** file in **/root/** folder
-
-Zavěrečná zpráva mobility:
-Na hostitelské univerzitě v Szegedu jsem strávila pět týdnů. Dostala jsem k dispozici počítač, kde jsem mohla celý den pracovat. Diplomovou práci a postupy i výsledky, kterých jsem dosáhla během stáže  jsem konzultovala s dvěma pracovníky katedry, kteří se zabývají gis technologiemi a prací s prostorovými daty. Stáž pro mne byla velice přínosnou, protože jsem získala prostor pro soustředěnou práci na diplomové práci ve spojení s konzultacemi a vhodnými podněty ze strany hostitelské katedry. Hlavním výsledkem stáže je podrobný návod, jak nastavit replikaci prostorových dat skrze databázový server PostgreSQL v kombinace i extenzemi PostGIS a SLONY-I. Tento návod bude součásní mé diplomové práci. 
-
 Můj osud ví, že chci žít ve slaměno-hliněné chaloupce někde v přírodě, mít zvířátka a klid kolem sebe, ticho a rkásné výhledy, klidnou práci 3, max 4 dny v týdnu, kuchyň venku, ložnici pod hvězdami a vlastní zahrádku se zeleninou a vzrostlý sad. .. a stejně mi dává v nabídku dobrou práci v Praze ... co mi tím chce naznačit? Že ještě není konec mému hledání? Že mám ještě poznat hnus dnešní společnosti, že jsem ještě nepoznala dostatečně negativ tohoto životního stylu, který žije většina z nás? Zdá se mi to správně, že je to cesta, kteoru musím jít, abych pochopila ještě další věci a až poté se odebrala na klidný venkov a dostatečně si vše uživala? Myslíš, že bych to teď nezvládla? Že by mě klid venkova dost neuspokojoval? Možná né dostatečně. Možná mám poznat nové lidi ... možná mi chce nabídnou snazší cestu pro cestování .. Praha bude tak velká a hnusná, že mě to donutí vydat se na cesty .. Uvidíme. Ať už to bude jakékoliv, bylo přínostné se zamyslet a zjistit, že cokoliv se stane, je akceptováno. 
 
 

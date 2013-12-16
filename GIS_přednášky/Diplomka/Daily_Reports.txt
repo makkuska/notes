@@ -5,3 +5,22 @@ Creation-Date: 2013-11-07T10:41:31+01:00
 ====== Daily Reports ======
 Created Čtvrtek 07 listopad 2013
 
+Add **new** tables into replication cluster
+__Instruction:__
+* To add new tables to replication, create first a new file with SQL query.
+* Then start a **slonik **script to execute the query. Advantage of than is it will create the same tables in both(all) databases.
+* Tables will be created in databases, but not added in replication clusture. To do so, create a file described in 4. Then execute the slon script, tables will add to the replication cluster. 
+* 1) create new file **sql_script.txt** in folder **/tmp/**
+* 2) create script, which add table to all databases
+* 3) execute slonik script
+* 4) create new file **add_tables_to_set.txt** in folder **/etc/postgresql/9.1/main/**
+* 5) execute slonik script
+
+options for two computers replication (in GIS lab)	
+
+Setting I used for computer to computer replication (computers in GIS lab)
+1) example of file **master.txt**
+	in both master.txt and slave.txt path should be edited
+2) edit **postgresql.conf** file in **/etc/postgresql/9.1/main/** folder
+	edit access for other computer
+3) edit **.pgpass** file in **/root/** folder
