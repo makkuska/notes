@@ -11,8 +11,13 @@ http://aspell.net/man-html/index.html
 	http://www.latextemplates.com/template/friggeri-resume-cv
 	https://www.writelatex.com/201457shbkfd
 
-zarovnání do bloku \setlength\parindent{0pt}
-
+* zarovnání do bloku \setlength\parindent{0pt}
+* **Formátování:**
+	* \text**it**{} % italics
+	* \text**bf**{} % bold
+	* \text**tt**{} % typewriter style
+	* text**sf**{} % sans-serif
+	* \text**sc**{} % all capital letters
 
 ==== Beamer ====
 * ''\documentclass[xcolor=dvipsnames]{beamer}''

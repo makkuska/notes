@@ -18,7 +18,9 @@ Creation-Date: 2013-11-08T10:46:09+01:00
 		* Geodatabase replication supports all advanced geodatabase objects like topologies, relationships, and geometric networks. DBMS replication does not know how to properly replicate advanced geodatabase objects.
 		* zdroj: http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/Understanding_distributed_data/002700000020000000/
 		 {{./pasted_image.bmp}}
-		• zdroj: http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/Scenarios_using_distributed_data/002700000021000000/
+		* zdroj: http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#/Scenarios_using_distributed_data/002700000021000000/
 * **The goal of archive_command is to transport the XLOG file from the database instance to an archive. (PostgreSQl Replication, 2013)**
 	* oposite restore_command
 
+__BIBTEX__
+http://en.wikibooks.org/wiki/LaTeX/Bibliography_Management

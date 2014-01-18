@@ -5,6 +5,8 @@ Creation-Date: 2013-02-11T08:43:00+01:00
 ====== GILES ======
 Created Pondělí 11 únor 2013
 
+http://www.youtube.com/watch?v=bjeMb9MOV14
+
 * knihovna GeoTools - knihovna geoprostorových funkcí 
 * mapguide - pro web
 * OSSM - pro zpracování DPZ snímků

@@ -1,0 +1,45 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-01-12T20:34:40+01:00
+
+====== Nejistota, neurčitost a entropie dat v GIS ======
+
+* __prvky__: **chyba**, **vágnost** (způsobená špatnou dokumentací nebo pokud jsou objekty rozmazané - fuzzy), **nejednoznačnost**
+* nejednozančnost ?=? chyba
+* __pojmy__: informace, informace, znalosti
+* **kvalita** nerovná se nejistota
+	* naopak **nejistota je vlastnost**, podle které **posuzujeme kvalitu** dat
+	* nejistota ve všech fázích - **nejistota v pozorování, modelování, měření, analýze**
+	* **závislá na datech i uživatelích**
+	* kvalita se určuje také podle potřeb uživatele
+	* snažíme **se kvalitu formalizovat **- tedy vytvořit standardy, abychom zaručili podobnou kvalitu všech dostupných dat
+	* __historie hodnocení kvality__ dat (viz prezentace NeoCartolink)
+	* standardy:
+		* BS7567 - NTF (National Transfer Format)
+		* OGC
+		* INSPIRE
+		* profil ČÚZK
+		* ISO/TC 211 (spolupráce s ICA)
+	* dimenze prostorových dat:  prostor, čas, měřítko, atribut, vztah
+	* __prvky kvality dat__: (dle tabulky)
+			* **polohová přesnost**
+			* **tematická atributová** přesnost (spolehlivost přiřazení skutečné hodnoty k reálnému prvku)
+			* **časová přesnost, úplnost** (soulad mezi daty v datové bázi a daty potřebnými k popisu)
+			* **logická konzistence** (udává úroveň rozporných nebo vícečetných dat)
+			* **sémantická přesnost **(jak dalece hodnoty odpovídají skutečnosti)
+			* **správnost** (míra správnosti, s jakou jsou data reálného světa zaznamenávána do prostorové databáze)
+			* **rozlišení** (detail), **homogenita** (stejnorodost), **spolehlivost**
+			* **původ** (zdroje dat, zodpovědné osoby), **rodokmen** (zdrojový materiál, ze kterého byla data odvozena)
+			* **použitelnost**, metakvalita
+* __entropie__
+  * veličina udávající **"míru neuspořádanosti"** zkoumaného systému
+  * množství neurčitosti, které je spojeno s daným jevem a zároveň: jaké množství informace je nutné dodat, abychom tu nevědomost odstranili
+  * kolik informace musí být dodáno k pochopení problému
+  * E. Shannon - významný matematik, elektronický inženýr a zakladatel teorie informace, která zkoumá možnosti komprese informace a metody rychlého a kvalitního přenosu informace
+    * formulovat pojem entrofie
+  * **Míra entropie** kvantifikuje množství informace ve zprávě.
+    * příkladem může být i mapa, která může nést velké množství informace
+  * použití v GIS
+    * pomocí entropie hodnotit stupeň uspořádanosti a vzájemné shody prostorových jevů
+      * příklad: optimální intervaly kvantitativních stupnic 
+    * hodnocení závislosti prostorových jevů, proměnlivosti jevů v území

@@ -5,37 +5,57 @@ Creation-Date: 2013-10-10T14:08:37+02:00
 ====== Autorské právo ======
 Čtvrtek 10. října 2013, Alena
 
-* autorské díly je jakékoliv dílo, které je vnímatelné smysly - i mluvené
-* Helwigova mapa Slezska 1561 měla autorské právo - za zneužití pokuta, která se rozdělila mezi panovníka i Helwiga
-* Bernská (mezinárodní) úmluva platí od roku 1886
-* Mezinárodní úmluva o ochraně výkonných umělců, audio-vizuálních děl
-* Evropa - Kontinentální právo
-* Amerika - anglo-saské země (USA)
-	* používá se precedentní systém
-* Test: Vyjmenujte 5 úmluv?
-* v kartografii v ČR
-	* autorské právo
-		* osobní (morální)
+* **autorské díly** je jakékoliv dílo, které je** vnímatelné smysly** - i mluvené
+* smlouvy v historii:
+	* **První autorský zákon** (Královny Anny - Anglie) 1709
+	* **Helwigova mapa Slezska** 1561 měla autorské právo - za zneužití pokuta, která se rozdělila mezi panovníka i Helwiga
+	* **Bernská úmluva o ochraně literárních a uměleckých děl** (mezinárodní) platí od roku 1886
+	* **Mezinárodní úmluva o ochraně výkonných umělců**, **audio-vizuálních děl **(1961)
+	* **Smlouva WIPO **o autorském právu (1996)
+	* **Směrnice Evropské unie**
+	* __Test:__ Vyjmenujte 5 úmluv?
+* právní systémy
+	* Evropa - Kontinentální právo
+	* Amerika - anglo-saské země (USA)
+		* používá se precedentní systém
+* __v kartografii v ČR__
+	* __autorské právo:__
+		* **osobní** (morální)
 			* právo osobovat si autorství
-		* majetkové	
+		* **majetkové	**
 			* právo dílo užívat, udělit oprávnění užívání díla, dědí se
-		* předmětem ochrany může být mapa, GIS software, toolbox, vědecký objev, goodwil (dobré jméno společnosti), obchodní tajemství
-	* Nemoforum, CAGI (odborná skupina pro autorské právo) aktivní při vytváření legislativy před 2000
-	* kartografická díla
-		* mapy, atlasy, plány
-		* software
+		* předmětem ochrany může být **mapa**, **GIS software**, **toolbox**, **vědecký objev**, **goodwil** (dobré jméno společnosti), **obchodní tajemství**
+	* **Nemoforum**, **CAGI** (odborná skupina pro autorské právo) aktivní při vytváření **legislativy před 2000**
+	* __kartografická díla__
+		* **mapy, atlasy, plány**
+		* **software**
 			* programovací jazyk není chráněn a.p.
 			* programový kód musí splňovat podmínku jedinečnosti 
 			* není chráněna funkcionalita, lze chránit jen způsob provedení (Clip může naprogramovat 5 lidí každý jiným způsobem)
 				* nejsou chráněny myšlenky, nápady, tedy ani funkce
-		* data
+		* **data**
 			* katastrální mapa nepodléhá autorskému zákonu (není tam žádný tvůrčí vnos)
 			* může být chráněna struktura databáze
 			* není chráněn seznam faktů (telefonní seznam, katastrální mapa)
-		* produkty a výsledky získané užitím GIS
-* licence
-	* public domain a GNU General Public License
+		* **produkty** a výsledky získané **užitím GIS**
 	* Státem poskytovaná data a státní mapová díla 
 		* katastrální mapa Státní mapa ČR, ZMČR, Topomapa, Zabaged, ortofota, geonames, ..
 	* Historická díla
 		* postmortální ochrana 70let
+	* __způsoby zneužití:__
+		* **prostorové složky** (vezmu data, přepracuju je)
+		* **atributové složky**
+		* použití **výřezu mapy** (mapy.cz bez uvedení autora)
+		* použití celého díla a přidání vrstvy, nebo pouze části díla
+		* **přepracování díla**: digitalizace (mapa.cz -> digitalizace + přidání znakového klíče = ?nová mapa?)
+		* použití **leteckých snímků**, které si nekoupíme, ani nejsou zdarma dostupné
+		* zneužití výsledků
+		* know-how
+* __licence__
+	* **Public domain** a **GNU General Public License **- možno zasahovat bez omezení, volné šíření
+	* **cardware** - nesmí se zasahovat do díla, šíření záleží na autorovi
+	* **freeware** - nesmí se zasahovat, šíření volné
+	* **shareware** - nesmí se zasahovat, šíření omezeno
+	* **komerční licenční software** - nesmí se zasahovat, šíření zakázáno
+	* **OEM** - software šířitelný v rámci "balíčku", nesmí se zasahovat, šíření zakázáno
+	* **OpenSource** - šíření volné, smí se zasahovat, ale často se musí zmínit původní autor

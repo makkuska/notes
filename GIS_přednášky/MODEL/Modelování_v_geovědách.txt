@@ -5,6 +5,41 @@ Creation-Date: 2013-10-03T12:08:06+02:00
 ====== Modelování v geovědách ======
 Čtvrtek 03 říjen 2013
 
-* modelování
-	* k přenosu informace formalizovaným jazykem k dalšímu uživateli
-	* změnou parametrů vyzkoušet různé varianty
+* **Model** je systém, který více či méně zjednodušeně napodobuje určitý reálný systém - jeho chování, fyzikální a chemické vlastnosti, geometrii, statické a dynamické vlastnosti, atd.
+	* mentální model - vnitřní reprezentace okolního světa, kombinace smyslů a získaných informací (individuální vnímání, proměnlivé)
+* **Modelování** je metoda nebo prostředek k poznávání objektivních zákonitostí přírody. 
+* **Simulace** je možno chápat jako napodobování činnosti či děje pomocí modelu.
+* __proč modelovat?__
+	* k přenosu informace **formalizovaným jazykem** k dalšímu uživateli
+	* **získání** nových poznatků, **popis a vysvětlení stavu** a chování jevu či systému
+	* **prognóza vývoje**, změnou parametrů vyzkoušet, co by se stalo //kdyby //
+* geoinformatika je používá **pro popis a zobrazování** vybraných částí světa a pro následné studium **reálného světa prostřednictví DMT**
+* __typy modelování:__
+	* **srážko-odtokové** modely
+	* **erozní** modely
+	* **hydrogeologické** modelování
+	* modelování **šíření** **znečištění** v ovzduší či ve vodě, **hluku** či **epidemií**, **lesních požárů**
+	* modelování **dopravy**, **migrace obyvatel**
+	* **meteorologické** modelování, modelování **tsunami**, **sesuvů půdy**
+* __práce geoinformatiků__: porozumění problematice, příprava dat pro modely, zpracování, vizualizace a interpretace výsledků
+* základní přístupy k poznávání: redukcionismus x holistický
+
+===== Teorie systémů =====
+* systém = prvky + vzájemné vazby mezi prvky + iterace s okolím
+* definice systému:
+	* struktura: vnitřní uspořádání, rozlišovací úroveň
+	* hranice systému: vymezení co je vně/uvnitř (izolovaný, uzavřený, otevřený systém)
+	* okolí systému
+	* komunikace s okolím: vstupy, výstupy, výměna dat, hmoty, informací, energií
+* chování systému: změny stavu, reakce na vstupní podněty, ..
+* stav systému: je dát stavovými veličinami a předchozím stavem systému
+* účelovost a cílovost systému 
+* **analýza** - rozložení na jednotlivé části, zkoumání jednotlivých částí, pomáhá lépe poznat celek
+	* předpokládá, že v každém jevu je určitý systém a platí určitě zákonitosti
+	* lepší orientace v složitějších vztazích 
+* **syntéza** - sjednocení jednotlivých částí v celek, sledujeme souvislosti mezi jednotlivými složkami jevu a hlouběji poznáváme jev jako celek
+	* odkhaluje vnitřní zákonitosti fungování
+* statický x dynamický systém
+
+===== Klasifikace modelů =====
+viz Pechanec + 3_Klasifikace modelů.pdf

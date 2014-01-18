@@ -5,10 +5,14 @@ Creation-Date: 2012-03-07T18:28:32+01:00
 ====== Najem ======
 Created Středa 07 březen 2012
 
-[ ] **PROSINEC**
-	[ ] internet
+[ ] **LEDEN**
+	[*] internet
 	[ ] ČEZ
 	[ ] nájem
+[*] **PROSINEC**
+	[*] internet
+	[*] ČEZ
+	[*] nájem
 [*] **LISTOPAD**
 	[*] internet
 	[*] ČEZ

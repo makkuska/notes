@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2013-02-19T13:02:04+01:00
 
-====== 02 - Data pro GIS ======
+====== J02 - Data pro GIS ======
 Úterý 19. února 2013
 
 ====== Krizový management v ČR ======

@@ -3,7 +3,7 @@ Wiki-Format: zim 0.4
 Creation-Date: 2013-10-25T09:50:24+02:00
 
 ====== 04 - Renesance v kartografii ======
-Created Pátek 25 říjen 2013
+Pátek 25. říjen 2013
 
 ====== Před a po kolumbovská kartografie (1492 - 1520) ======
 * __velký rozvoj díky:__
@@ -94,7 +94,10 @@ Created Pátek 25 říjen 2013
 	* **1570 Theatrum Orbis Terrarum**
 		* sebral desky a přeryl je → jednotný grafický styl 
 		* velikost 30x50cm
-		* 25. vydání (1598 - 1612), **na začátku 53 map**, poslední vydání 129 map včetně **Fabriciovy** mapy Moravy
+		* 25. vydání (1598 - 1612)
+			* **na začátku 53 map**,
+			* poslední vydání 129 map včetně **Fabriciovy** mapy Moravy
+			* jedno z vydání mělo i Crigingerovu mapu Čech a Helvigovu mapu Slezska
 * **Jodocus Hondius starší **(1563 - 1612)
 	* **Atlas **
 		* 1604 koupil Mercatorovy desky (60) z atlasu a přidal dalších 36 map → atlas vydal jako Mercatorův atlas, Hondius byl jen editor 
@@ -138,5 +141,3 @@ Created Pátek 25 říjen 2013
 	* **Atlas Geographique** - konečně mapa Evropy se srpváně velikým středozemním mořem
 * **Jead d'Anville**
 	* **Atlas Général (1727)** začal používat bílá místa na mapě, tzn. že si nevymýšlel, když nevědět
-
-

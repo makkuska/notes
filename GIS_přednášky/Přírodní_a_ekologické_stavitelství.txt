@@ -1,0 +1,153 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-12-30T00:22:00+01:00
+
+====== Přírodní a ekologické stavitelství ======
+**Ing.arch. Zuzana KIERULFOVÁ**
+pátek 22. a sobota 23. listopadu 2013
+
+* **"Dům jako ekosystém"** → dům jako součást cyklu
+* **"Půdu jsme nezdědili od našich předků, ale vypůjčili od našich vnoučat"**
+* naše představa ideálního domu:
+	* přírodní materiál, nehranatý tvar, zdroj energie: slunce, ohníček, samostatný bez napojení na sítě, vesnice, teplo od zvířat, zelená střecha, kde se můžou pást ovečky, letní kuchyň 
+• **zelená střecha:**
+	* __vrstvy:__
+		* hydroizolace: je potřeba použít hydroizolaci s certifikátem proti prorůstání kořenů
+		* drenáž (geotextílie)
+		* 2-5 cm substrátu (napři keramzit, která nasakuje vlhkost)
+		* sukulenty → v létě ochlazuje, v zimě to tolik neizoluje
+	* __výhody:__ snižuje návaly deště, vyrábí kyslík, je to zelené :)
+* __principy:__
+	* studený vzduch se dostane dovnitř → rychle oteplí se a tím se vysuší
+		* → klimatizace je špatná, vysouší vzduch
+	* důležité větrání jako prevence před plísní
+* přednášející doporučovala** přestavět dům** (nebourat):
+	* zateplit střechu, odvést dešťovku, opravit krov (dřevo bývalo kvalitnější než je dnes), dřevěná podlaha
+	* zachovat pec, o 70% účinnější než krb
+	* zachovat tvar a typické prvky
+	* zateplení paropropustnou omítkou - například nepálenou hlínou
+		* cementová omítka nepropouští páry (vzduch) → není paropropustná → voda kondenzuje
+	* zajištění větrání (např. pomocí průduchů)
+* pasivní domy:
+	* pasivní příjem (slunce - dům na jih)
+	* zateplení bez úniků tepla
+	* utěsnění dveří a spár pro úniku tepla
+	* regulované vetranie
+
+===== Stavební materiály: =====
+* **ovčí vlna**
+	* vlastnosti:
+		* dobře reguluje vlhkost
+		* tepelně izoluje
+			* → dobrý na zateplení oken, blízko k vnitřní stěně
+		* izoluji i když je vlhká
+	* před použitím se musí oprat, zbavit pržma (smradu), které přitahuje hmyz, a napustit něčím proti hořlavosti
+	* vhodná pro zateplení, izolace domu
+* **korek	**
+	* vlastnosti:
+		* nenasakuje vodu (vlhkost)
+		* je paropropustný
+	* vhodný pro izolace
+* **sláma**
+	* __vlastnosti:__
+		* __klady:__
+			* zvuková izolace
+			* vysoká **požární odolnost**, shoří jen ta část, co není dobře slisovaná (okraje, co trčí)
+				* zvlášť v kombinaci s hlínou
+				* nehoří, ale tlí
+			* je pružná, pamatuje si tvar
+			* voděodpudivá, **odvádí vlhkost**
+			* **zužitkování odpadového materiálu** - sláma se většinou zaorává, protože nemá využití, což není úplně vhodné, protože se rozkládá dlouho
+			* dobrá **akumulace tepla **
+		* __zápory:__
+			* jako izolace je o 10 cm tlustější
+			* dům max. 3 patra na výšku (pokud je sláma nosná, při dřevěné konstrukci asi i víc)
+			* prach, myši (je potřeba stavět rychle a hned omítnou)
+			* **při stavbě může zmoknout** (proto opět stavět rychle, nenechat přes zimu, stavbu kompletně zakrýt plachtou)
+			* různorodost kvality a délky slámy
+	* **povrieslo** - špagát ze slámy, namočené + zatočené → pevné, používal se pro stavbu doškové střechy
+	* __velikosti:__
+		* rozměry: 80x40x50cm
+		* 80-120 kg/m3
+			* **90kg/m3** - dobře izoluje
+			* **120kg/m3** se dá použít jako nosný materiál
+			* zhruba 500 balíků na dům (1 kamión)
+		* je vhodné použít kvalitní balíky s dlouhou slámou
+	* __použití:__
+		* **jako izolace domu** (místo polystyrenu)
+			* vhodné použít na stěny, strop, i podlahu
+				* na podlahu zvlášť pokud je dům na kůlech (tedy ve vzduchu) - pak se prostor mezi podlahou a zemí musí dobře odvětrat
+				* (ale i zem dobře izoluje)
+		* **jako nosný materiál** (když je dobře slisovaná, 120kg/m3) 
+			* pak je potřeba, aby byla sláma při stavbě dobře přikrytá
+			* ale vždy použití dřeva na okna a dveře
+			* na konci se balíky stahují tenkými pásy vždy, když se dodělá patro (dřív než se udělá patro) → dům už pak moc nesedá 
+			* základy u obou typů na šířku balíku
+		* **jako výplň dřevěné konstrukce**
+			* základy u obou typů na šířku balíku
+			* a) dřevěná **konstrukce je stejně široká **jako balík
+				* někdy se dají použít na stěnu OSB desky
+					* desky se jednoduše připevní k dřevěné konstrukci
+					* mezery mezi deskami přelepit páskou nebo fólií → vzduchotěsnost
+					* OSB desky - paropropustné, vzduchotěšné (jako goratex), vhodné i do interiéru
+					* dřevovláknitou desku do extrému
+					* z venku větrodolnou desku
+				* tuším, že i zde se balíky stahují dolů při dokončení každého patra
+			* b) dřevěná **konstrukce není stejně široká** jako balík
+				* negativum - mohou vznikat tepelné mosty
+				* jeden z příkladů použití: Tom Raiven - Cut systém 
+					* přidává horizontálně mezi každé 2 balíky tenkou laťku → umožňuje neovné stěny
+				{{~/Obrazky/baliky.png?width=350}}
+* **hlina**
+	* __hliněná omítka:__
+		* jíl (pojivo) + prach + písek + stěrk = **stavební hlína**
+		{{~/Dokumenty/hlina.png}}
+	* vhodné i pro koupelnu a kuchyň, protože pohlcuje vlhkost 5x víc než sádra nebo vápno
+	* __vlastnosti hlíny: __
+		* neizoluje
+		* není odolná vůči vodě
+			* ale udržuje rovnoměrnou vlhkost
+		* **přibrzí elektrosmog**
+		* dlouho schne - zato je tvárná
+	* kombinace dřevo + hlína
+		* hlína pohlcuje vodu, tedy chrání dřevo
+* další izolační materiály: 
+	* ovčí vlna, foukaná celulóza, sláma, korek, dřevovlákno, na podlahy: pěnové sklo
+		* ne cement!
+	* cihly nejsou dostatečně izolační - sláma je 2v1 - izolace + nosná stěna
+	* okna: 3-vrstvé sklo + dobrý rám
+
+===== 25 směrnic pro zdravé bydlení (stručný výběr): =====
+* pozemek bez přírodních a umělých anomálií
+* mimo hluk a smog (i světelný)
+* příroda, decentralizovaná výstavba
+* přírodní materiály
+* vlhkost - přírodní materiály mají schopnost regulovat vlhkost
+	* vzduch - vlhkost, proudění vzduchu
+* vytápění sálavým teplem (krb, pec)
+* omezení EM polí - hlína nepropouští síly
+* bez škodlivých látek, prachu, bakterií, plísní
+* minimální spotřeba energií
+* využití místních zdrojů
+* denní světlo 
+* slunce, voda
+* co ještě zohlednit při stavbě domu (směrnice dle našich nápadů jako jeden z úkolů na přednášce):
+	* estetika
+	* poloha, orientace
+	* kompost
+	* dostatek zeleně
+	* prostor pro sociální vztahy
+	* parkovací místo
+
+===== Další zdroje informací: =====
+* knihy:
+	* Jan Marton a kol.: Stavby ze slaměných balíků
+	* Cradle to Cradle (Z kolísky do kolísky) - kniha o recyklovatelných materiálech
+* Marek Vlček z Vyškova
+	* filmy: Hliněný dům
+* web projektu Leonardo: strawbale-net.en/leonardo
+* občanská sdružení zabývající se přírodním stavitelstvím:
+	* **o.s. Artur** http://ozartur.sk/kontakt/
+	* o.s. Hoblina
+	* o.s. Veronika - zelená obnova
+	* s. Hliněného stavitelství

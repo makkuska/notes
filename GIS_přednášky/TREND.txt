@@ -9,13 +9,265 @@ Pátek 11 říjen 2013
 * 8.11. Odpadá
 * 25.11. Nějaká přednáška nějakého němce
 * Prezentace od 15.11
-	* 10stran
-	* 10-15 minut
-* Prezentace 15.11.	
-	* 3D tisk 
+	* Augmented reality
+	* 3D tisk
+	* Cloud GIS
 * Prezentace 29.11.	
 	* Mobile GIS
 	* Big Data
 * Prezentace 6.12.
 	* Participatory Mapping
 	* GIS & games
+	* GIS&Cad
+* Prezentace 12.12.
+	* LIDAR and modelling
+	* Trendy v DPZ
+
+===== VGI a Crowdsourcing (Brus) =====
+Pátek 11 říjen 2013
+* __VGI__ (**Voolungtereed Geographic Information**) jako součást **UGC User Generated **Geographic** Content**
+* __UGC__ **obsah produkován uživateli nejčastěji přes web**, často spojeno se sociální sítí, nebo mají sociální kontext (místo, kde se sejdeme)
+* technologie + internet + mobilní aplikace
+* založeno na dostupnosti nástrojů pro sběr dat i pro negisáky (neogeografie, neokartografie)
+* sběrači dat - analyzátoři - tvůrci prezentací
+* čím více lidí, tím více chyb objeví, ale těch dat je kvantum, takže nikdy nezaručíš správnost všech
+* otázkou je kvalita dat
+* **kontrolované údaje:**
+	* Navteq, TeleAtlas
+* **Hybrid** (jejich data + data od uživatelů)
+	* Google, TomTom
+* **Crowdsources** (jen data od uživatelů)
+	* OSM, Foursquare, Mapa černých skládek
+
+===== 1) Augmented reality (Lenka a Verča) =====
+* **rozšíření reality** o další prvky, informace
+* **kombinace** reálného prostředí a virtuálním zobrazením
+* souvisí s virtuální realitou, která se vyvíjí od počátku 90.let
+* 1) __mobilní kamera nebo web kamera snímá scénu__ a pak __ji zobrazuje__ v zařízení a přidává další prvky
+	* **metoda magického zrcadla** - člověk vidí sám sebe + přidanou virtualitu
+	* **metoda magické čočky** - pozoruješ realitu, třeba památku, a na displayi se ti vypíše hisyorie, nebo denní menu u restaurace
+* 2) __rozpoznávání podle markerů__
+	* **jednoduché** - přesně definovaný tvar (čtverec) → na mobilu vidíš rozšířený čtverec, o nějakou informaci - nebo se ti na základě toho spustí video (vhodné pro výuku, př. v učebnici máš různé druhy ptáků, když na něj zamíříš mobilem, spustí se jejich zpěv)
+	* **složité **- složitým markerem může být třeba ruka - přiblíží se ke kameře a na displayi vidíš na ruce položený mrakodrap
+* __využití:__
+	* **vzdělávání** (výuka, hraní na kytaru)
+		* výuka chemie http://www.youtube.com/watch?v=IpNrWKQFq6Q
+	* reklama (jak si vybrat správné křeslo tak, aby sedělo do interiéru)
+	* marketing, e-shop
+	* hry, zábava
+	* **medicína** (napři. i kombinace rengenového snímku a fotky ruky)
+	* **navigace** (Google Glass), doprava (iOnRoad - detekce kolizí, sledování dopravy)
+	* získání **informace o objektech** (budovy, památky, restaurace, tramvaje), produktech (cena výrobku), př. Google Goggles
+
+===== 2) 3D tisk (Kolda, Hedrich) =====
+* historie od 90. let - stereolitografie - laserový paprsek počítačem řízený, který kreslí vrstvy v polymerové kapalině
+* materiály:
+	* tekutý fotopolymer - plastická hmota citlivá na světlo 
+	* tekutá pryskyřice
+	* **ABS** - __průmyslový polymer__ - využití při výrobě **nábytkový doplňků**, vyrábí se z něj **LEGO**
+	* **PLA** - __polyaktidová vlákna__ se skládají převážně z molekul kyseliny mléčné → **lékařský a textilní průmysl**
+	* **PE **- __polyethylen__ -** fólie, textilní vlákna, hračky, izolace**
+	* sklo - skleněný prášek, který vzniká recyklací skla v kombinaci se spojovacím materiálem
+	* kov - ve formě prášku (prášková ocel nebo bronz), popř. kombinace s jinými materiály
+	* nově i z keramiky, sádry, písku, vosku
+* __princip:__ ve 2D vrstvách se nanáší **roztavený plast**, který **rychle tuhne**
+* __využití:__
+	* automobilový průmysl, spotřební zboží, komerční stroje
+	* **stavebnictví **
+		* organické stavby bez dodržování pravých úhlů
+		* písek v kombinaci s vodou, vápnem nebo cementem 
+	* **potravinářství**
+		* jedné přísady - 3D vytisknutá pizza, výrobky z čokolády, cukru
+		* http://www.digitaltrends.com/cool-tech/3d-printed-pizza-might-coming-sooner-think/
+	* **medicína**
+		* implantáty (čelist, ucho)
+		* materiály mohou obsahovat živé buňky, tělo je umí přijmou a pak se implantáty mohou vyvíjet
+		* http://www.youtube.com/watch?v=sKgjwOGOFcg
+	* 3D tuška http://www.zive.cz/bleskovky/zapomente-na-3d-tiskarny-prichazi-3d-tuzka/sc-4-a-167684/default.aspx
+
+===== 3) GIS and Game (Helča, Martin) =====
+* herní průmysl se vyvíjí rychle a je dobře financovaný
+	* základem hry je engine (jádro počítačové hry, programu nebo databáze), je možné do něj doplňovat herní prvky, modely a úrovně
+	* moderní engine se snaží vytvářet reálnou vizualizaci prostředí
+* GIS engine inspirované hrami
+	* CitiEngine (Esri)
+		* 3D vizualizace měst, územní plánovaní, architektonické projekty 
+		* http://www.youtube.com/watch?v=AMmsQ3KbQLI&noredirect=1
+	* City Planner
+		* webová služba pro 3D vizualizace projektů (rozvoje měst, infrastruktury, energetiky)
+		* př. vizualizace návrhů pro nové objekty ve městě
+		* vhodný pro připomínkování územního plánu, hodnocení stavby a podob. 
+* GIS hry: Geocaching, GPS Drawing, TidyCity, Mafie, .
+
+===== 4) Participativní GIS (Dádule, Pája) =====
+* **participace**
+	* aktivní účast společnosti v procesu rozhodování, řízení, správy
+	* je součástí demokratického stylu řízení
+	* politická participace - rozhodování
+* __metody a nástroje__, které jsou používané v PGIS:
+	* Ground mapping
+	* Sketch mapping - mapování pomocí náčrtků
+	* Scale mapping - vytiskne se mapa (obrys státu), do které se zakresluje
+	* Participativní 3D modelování
+	* Ortofoto mapování
+	* Mapování pomocí GPS
+	* Mapování pomocí mobilního GISu
+	* Internetové mapové služby – metoda online mapování
+	* Velmi často je použito více metod dohromady.
+* webové PGIS aplikace:
+	* Ushahidy
+	* harava (portal.eharava.fi) - přípravy průzkumů a dotazníků, zpětná vazba (územní plán)
+	* Mapita
+
+===== 5) Big Data (Vojta, Jirka) =====
+* data, která **nemohou být kvůli své velikosti zpracovány** a zachycovány běžně **dostupným softwarem**
+* TB a víc → petabytech
+* __problematika:__ velké množství dat, kam ho uložit, jak ho zpracovat
+* __charakteristiky:__
+	* **volume** (objem) – objem dat narůstá exponenciálně
+	* **velocity** (rychlost) – úlohy vyžadují okamžité vyřešení a zpracování, data vznikají průběžně
+	* **variety** (různorodost) – zpracování nestrukturovaných textů
+	* **veracity** (věrohodnost) – neúplná a nejasná data (často z komunikace na sociálních sítích)
+* __oblasti big data:__
+	* údaje** o počasí** a podnebí
+	* energetické, telekomunikační, farmaceutické společnosti
+	* vládní organizace (dokumenty, emaily)
+	* **sociální sítě**
+	* **transakce v obchodech**
+	* data z průmyslových a dopravních **kamer**
+	* data ze **senzorů**
+* data jsou ukládána do **velkoobjemových datový skladů**
+	* architektura: server → Hadoop → dtabáze → analytický program nebo vizualizace dat
+* **Apache Hadoop**
+	* nástroj pro zpracování velkého objemu dat
+	* distribuované uložení dat (Hadoop Distributed File system) → na běžné počítačů (levné)
+	* → **distribuovaný výpočet**
+	* opensource
+
+===== 6) Mobilní GIS (já a Dali) =====
+* co to je, že? 
+	* “Mobilní zařízení společně se software, který umí pracovat s geografickou informací.”
+* __tři  hlavní  složky:__ software, hardware a  nástroje  určující  polohu
+* __software:__
+	* profesionální:
+		* **ArcGIS** for Smartphones and tables, ArcPad, ArcGIS for WM
+		* Janitor
+		* **Trimble** - diferenční GPS
+	* neprofesionální sw
+		* Google Maps, Mapy.cz, **Locus**, OSM editor,** iKatastr**, Sport Tracker
+* __hardware:__
+	* neprofesionální: **mobil**,** tablet**,** GPS**, Car system (monitorování vozidel)
+	* profesionální: **geodetické přístroje**, totální stanice, difereční GPS, **auta** (Navteq)
+		* příjem GNSS s přijímaním korekce (diferenční), auta často vybavena i kamerou a LIDARem
+* __lokalizace pomocí__: ** GNSS**, **Wi-Fi** sítě (v budovách), **GSM** 
+* **LBS (Location Based Services)**
+	* nebo taky geolokační služby
+	* služba dostupná skrze mobilní zařízení, která využívá schopnosti získat aktuální pozici zařízení
+		* aplikace, která uživateli nabídne informaci na základě jeho pozice
+	* zábava, orientace, obchod, při záchranných akcích.
+	* “Kde  jsem?”,  “Kde  je  nejbližší  lékárna”,  “Kudy  se  tam dostanu?”,  “Co  nejzajímavějšího  můžu  navštívit  v  tomto  městě?”,  “Kde   se  nachází  turistické centrum?”,  “Kde  jsou  mí  přátelé?”.
+	* __skládá se z:__
+		* **mobilního zařízení** typu mobilní telefon, tablet nebo PDA,	
+		* zařízení pro **učení polohy** (z GPS, wi­fi sítě, GMS, RFID kódy), 
+		* **Internet** skrze wi­fi nebo 3G pro stažení aplikace a dat, okamžitý upload dat na server­ aplikace a dat týkajících se aplikace (mapy, POI, ..)
+	* __2 typy služby:__
+		* **pull **- dopraví informaci až po požadavku (Kde je nejbližší obchod?)
+		* **push** - služba informací dopraví bez požadavku (sms o akci, když se přiblížím k obchodu)
+	* 5 typů užívání: určení  polohy,  hledání  někoho  či  něčeho,  navigace  na  dané  místo, identifikace míst a zjištění akcí a událostí v okolí
+	* výhody: snadná orientace a informovanost, cílená reklama, zábava, prostředek ke komunikaci
+	* nevýhoda: bezpečnost (lehce lokalizovatelný a sledovatelný), reklama - spam, životnost a výdrž zařízení, nutnost připojení na sítě (i GMS - v horách třeba připojení není)
+	* **geotagging** - GeoRSS, GeoURL, Geoblog, Foursquare
+	* **geotracking**
+	* využití:
+		* student čeká na konzultaci - ví kolik lidí je před ním, jestli je učitel v kabinetu
+		* přijde do menzy, stáhne se mu jídelníček
+		* přijde do auly - zapíše se tím na listinu
+		* RFID v muzeu - mluví, když se přiblížíš
+		* lékař v nemocnici
+
+===== 7) Cloud GIS (Adéla, Janča) =====
+* **sdílení výpočetních** prostředků, užívání formou **služby** prostřednictví **tenkého klienta**
+* služby poskytované na **vyžádání**,** samoobslužně**,** prostřednictví sítě**
+* vychází z utility computing (poskytování vody, elektřiny, plynu, kanalizace)
+* myšlenka existuje už dlouho, ale až dnes je možné ji díky technologiím a sítím realizovat
+* Cloudy **již od 2002** (**Amazon**), 2006 (**Google Apps**), 
+* __příklady Cloudů__: Amazon Cloud Drive, Google Apps, Sun Cloud (Oracle), Azure (Microsoft), Dropbox, Skydrive
+* __typy:__
+	* veřejný - poskytován široké veřejnosti jako služba
+	* soukromý - v rámci firmy
+	* hybridní - kombinace veřejné a soukromé, na venek vystupují jako jeden cloud
+	* komunitní - mezi několika organizacemi
+* __distrbuční modely:__
+	* IAAS - infrastruktura jako služba (včetně hardware - Amazon WS, Rackspace, Windows Azure) 
+	* PAAS - platforma jako služba (Google App Engine)
+	* SAAS - software jako služba (ArcGIS Online, Google Apps)
+* __nevýhody:__ 
+	* bezpečnost dat
+	* důvěryhodnost společnosti, která cloud poskytuje
+	* nutnost dobrého přístupu k internetu
+	* ukládání velkého množství dat přímo na server může být pomalé
+	* Cloud GIS nemusí poskytovat dostatek datových formátů
+* __výhody:__ 
+	* stačí jednoduchý počítač
+	* nenáročné na údržbu
+	* bez aktualizací
+	* přístup k datům odkudkoliv
+	* snížení počtu administrátorů ve firmě
+* __příklad__ **Cloud GIS:**
+	* Map2Net
+	* ArcGIS online
+	* GIS Cloud - pro aplikace, které organizují informace o poloze
+	* MapBox
+	* Mango Map
+	* CartoDB
+	* MapInfo Stratus
+
+===== 8) Lidar & Modelling (Víťa) =====
+* možnosti získání dat:
+	* **ALS** - __Airborne Laser Scanning__
+		* letecké, několik odrazů
+	* **TLS** - __Terrastrial Laser Scanning__
+		* pozemní, laser stojí pevně na zemi a mapuje objekty kolem sebe, př. skenování mostu (viz prezentace)
+	* **MLS **- __Mobile Laser Scanning__
+		* mobilní - připevněná na aurě, lodi, člověku, vlaku
+	* **Barymetrický lidar**
+		* červený se odrazí od povrchu
+		* modrozelený prochází i vodou
+* sbírá Point clouds (formát XYZ, LAS)
+* __využití LIDARu:__
+	* tvorba DMR
+	* rozeznávání objektů
+	* rekonstrukce reality do 3D
+	* př. modelování povodní, výšky porostu v lese
+	* http://www.youtube.com/watch?v=PeSpVRkEeZk&noredirect=1
+* zpracování speciálním sw, např LEICA nebo pomocí prohlížečky (LAS converter)
+* sw Road Docrot - skenuje silnici, určije její kvalitu
+
+===== 9)GIS & CAD =====
+* snazší **konverze** dat mezi CAD a GIS:
+	* SHP x V8 DGN, DWG, DXF
+	* __ArcGIS__: ArcToolbox -> **Export to CAD**
+	* __AutoCAD__: **Mapimport -> Import Data **
+* nástroje ESRI:
+• **Plug-in ArcGIS for AutoCAD**
+		* GIS obsah uživateli CADu
+		* sdílení informací
+		* mapy, analýzy
+* **AutoCAD Map 3D**
+	* pravé propojení CAD a GIS
+	* umožňuje přímé připojení k uloženým GIS datům a zároveň přístup v pracovním prostředí CAD
+	* sdílení společné datové sady
+	* nástroje pro:
+		* tvorbu mračen bodů (import a zobrazení velkých 3D sad)
+		* převody do modelů
+		* plánování a analýzu (dotazy, tematické mapy, topologie)
+		referenční systémy
+	* **AutoCAD Map 3D 2014**
+		* Infrastructure Map Server 2014
+		* GISový server od Autodesk
+		* navrhování, správa a údržba geoprostorových dat a publikování na webu
+* budoucnost:
+	* aplikace ArcGIS for Server do AutoCAD
+	* kompletní GIS serverové řešení pro CAD
+	* novinky v prezentaci dat
+	* integrace a centralizace – přibližování GIS a CAD

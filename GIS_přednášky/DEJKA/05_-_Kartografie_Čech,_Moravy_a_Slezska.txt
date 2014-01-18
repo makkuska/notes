@@ -1,0 +1,108 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2013-12-17T13:08:38+01:00
+
+====== 05 - Kartografie Čech, Moravy a Slezska ======
+Úterý 17. prosinec 2013 (chyba kvůli stáži v Maďarsku - výpis z prezentace)
+
+* __první zmínky o našem území:__
+	* **Geographia Magna**
+		* malý zájem, nepřesně zaměřeno
+		* v originálním místopisném seznamů jsou toponyma z 2.stol n. l. - dnes již zaniklé Keltské a Markomanské osady
+			* Sudéta Oré - Krušné hory, Lužické hory, ..
+			* Askiburgion oros - Krkonoše, Beskydy, ..
+			* Gabreta Silva a Luna Silva - Šumava
+			* Albis - Labe
+	* Herefordská a Ebsdorfská mapa
+		* Braga metropolis Beomariorum
+		* Morania (zakreslena i řeka Morava)
+	* Kosmas podle O-T mapy poipsuje rozložení světa a Čechy jsou podle nějak obklopeny jednou dlouhou táhlou horou
+	* Mapa v kronice Vavřince z Březové (poč. 15. stol.)
+		* O-T mapa, zřejmě nejstarší vytvořená na našem území 
+	* Olomoucká O-T mapa (kon. 15. stol.)
+		* popis Čech, Moravy i Slezska
+	* Portolánové mapy
+		* zakreslano Labe, Praha, Bratislava
+* __Poutnické mapy__ (15. stol)
+	* zákres poutnických cest do Říma při příležitosti posvátného roku 1500
+	* **Ergard Etzlaub**
+		* norimberský kartograf, 10 map, používal různé míle
+		* orientace na jih - nejen proto, že mapa směřovala k Římu, ale i proto, že se používaly sluneční hodiny, takže si uživatel nestínil
+* __mapy ČECH__
+	* **Klaudianova mapa **(vyryta 1517 v Norimberku)
+		* Mikuláš Klaudyán (lékař z Mladé Boleslavi
+		* ve dřevě, měřítko 1:600tis (120x60cm)
+		* **české názvosloví**
+		* mapa 1/3, erby a kresba 2/3
+		* předlohou Etzlaubovy mapy - ale změnil orientaci na sever
+		* bohatý místopis - 280 měst včetně hradů, tvrzí, klášterů
+		* schématické znázornění výškopisu ( - tam kde je les, tam je kopec), řek, hlavní zemské stezky, hrady
+		{{./pasted_image.bmp?width=60}}‎ 
+		* malovaná část
+			* Ludvík Jagellonský se znaky zemí, znaky nejvyšších zemských hodnostářů, znaky Prahy, Kutné hory a Žatce
+	* **Crigingerova mapa** (1568)
+		* Jan Criginger luteránský kněz
+		* chybí ř. Otava, Brdy, Ještěd
+		* kopečková metoda
+		* v Orteliově, Mercatorově a de Jodeho atlasu
+	* **Artinova mapa **(1619)
+		* Pavel Aretin (Uherský Brod)
+		* 1:500tis, 1200 měst, popis německy i česky
+		* rejštřík
+		* hranice 15ti krajů
+		* na okraji **postavy dobových krojích** (6 žen a 6 mužů)
+	* **Vogtova mapa **(1712)
+		* Jan Jiří Vogt (mnich cisterciáckého kláštera v Plasech)
+		* 1:400tis, 3tis pojmů včetně dolů a vodních ploch
+		* 24 druhů znaků
+		* vpravo nahoře lev-král
+		* nerozšířila se kvůli Müllerovu mapování
+* __mapy MORAVY__
+	* **Fabriciova mapa **(1569)
+		* Pavel Fabricius - vídeňský lékař, matematik, astronom a kartograf
+		* 1:288 tis., 95x85cm
+		* český i německý popis
+		* má geografickou síť na rámu a značkový klíč
+		* kopečková metoda
+		* lichoběžníkové kartografické zobrazení, nepříliš přesný
+		* pro vojenské účely (ohrožení Tureckem)
+		* v Orteliově atlase
+		* obsahuje kartuše nebo různé obrázky
+	* **Komenského mapa **(1624, 1627, 1664)
+		* pro poutníky, s cílem opravit Fabriciovy chyby
+		* 1:500tis, 500 místních názvů
+		* typická 4mi vedutami (Polná, Olomouc, Znojmo, Brno), nemá kartuši, má měřítko a symbologii
+		* symbologie včetně vinic, lázní, měst podle velikosti, typu
+	* **Vischerova mapa** (1692)
+		* Jiří Matyáš Vischer Tyrolský
+		* 1:200tis.
+		* 2 veduty
+		* podrobnější obsah
+		* nerozšířila se kvůli Müllerovu mapování
+* __mapy SLEZSKA__
+	* **Helwigova mapa** (1561)
+		* Martin Helvig, pedagog
+		* 1:550tis.
+		* obsahuje orientační sít
+		* typická tím, že je velice moooc zdobená a barevná (má zdobený i okraj)
+		* 308 míst, popis německy
+		* v Orteliově atlasu
+		* orientace k jihu
+* **Müllerovo mapování**
+	* Jan Kryštof Müller (17/18stol.)
+		* profesionální měřič, kartograf a topograf - polní vojenský inženýr císařských služeb
+		* používal trigonometrii, buzolu, kočár s měřením otáček kol
+		* měřilo se v létě, v zimě se zpracovávalo
+	* **vojenský účel**
+	* __mapování mělo 4 fáze__
+		* **mapování Uher** (1708-1709, 1rok)
+			* 4 mapové listy, 1:550tis, první správné zakreslení Dunaje
+		* **mapování Moravy** (1708-1716, 8let)
+			* 4 mapové listy, 1:180tis, (patent, mapa se nesměla po dobu 10 let rozmnožovat dalšími rytci)
+		* **mapování Čech** (1712-1718, 4roky)
+			* 25 mapových listů, 1:132 tis, + jeden přehledný list, 1:650tis
+		* **mapování Slezska** (1720, 1752, 32let)
+			* 1721 Müller umřel
+			* mapování prováděl jeho žák J. W. Weiland, které neměl moc čas, revize pak dělal někdo jiný
+			* než se mapování dodělalo, území začalo patřit Prusku .. tahanice
+			* výsledek Slezské atlas - 16 map jednotlivých knížectví (1:100-1:200tis), 4 přehledné mapy

@@ -9,7 +9,7 @@ Creation-Date: 2013-10-10T14:06:23+02:00
 * 31. s Voženílkem
 * 25.11. Petr Kubíček
 * 25.11. Přednáška Reinhard
-	* GIS ISO standardy začínají 191xx
+	* **GIS ISO standardy začínají 191xx**
 	* standards for common understanding about product
 	* 191113: quality elements:
 		* completness (too much or too less data in comparison to reality)

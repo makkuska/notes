@@ -68,3 +68,575 @@ Pátek 27 září 2013
 	* vyráběl glóbusy pro šlechtu
 	* zobrazení - čtverce zvětšující se k pólů, posunul rovník na jih, aby byl větší prostor pro Evropu
 	* stále se používají v atlasech
+
+====== 01 - Počátky kartografie ======
+Pátek 27. září 2013
+
+* rytiny na kamenech, kostech, hliněných nebo kovových destičkách, 
+* taky na kůře stromů, plátnech čí v písku - takové se většinou nedochovaly
+* za účely navigace, zaznamenávání struktury, tah zvěře, vytyčení pozemku
+* __paleolit__
+	* __mamutí kel__
+		* **Pavlovská mapa** (stará 25tis. let, Dyje)
+		* **Mezeričská mapa** (stará 14tis. let, Ukrajina)
+	* **Bedolinská mapa** (stará 8tis. let)
+		* Itálie, skalní rytina - pole, cesty, domy, studny
+	* Catalhöyük Turecko - plánek vesnice, co vypadá jak obrázek
+* __"primitivní" národy__ (týká se to i indiánů a Eskymáků, Tuaregové, Sibiř)
+	* mapy na kůži, kůře, v písku
+	* mapy se nedochovaly, metody jsou evidovány až od dob kolonizace a zámořských objevů
+	* **Marshallovy ostrovy**
+		* mapy složeny z: řapíky palmových listů (=proudění), kokosová vlákna, mušličky (=ostrov)
+		* dokumentuje proudy a větry, které ovlivňují přepravu mezi jednotlivými ostrovy
+		* __3 typy:__
+			* **mattang** - pro vyučování budoucích mořeplavců
+			* **meddo **- mapa pro 2 konkrétní ostrovy, konkrétní vlnová situace
+			* **rebbilib** - mapa celého souostroví nebo její části (ale pro víc než 2 ostrovy)
+ 
+
+====== 02 - Starověká kartografie ======
+Pátek 04. října 2013
+
+===== Starověké středomoří =====
+* vyspělejší blízký východ (Mezopotámie, Asýrie, Babylon, Malta, Alžírsko, Egypt) - plány měst, pozemky, zavlažování, ..
+* __hliněné destičky__ (i papyrus jsou nestabilní materiály)
+	* **mapa Mezopotámie** (4,5tis.) - Eufrat a Tigris, Zagorské hory, včetně světových stran
+	* **plán města Nippur** - pozemková správa, zavlažovací kanály, hradby, brány, Eufrat
+	* __Babylonská__ (2,5tis)
+* __papyrus__
+	* Plán zlatých dolů (3,3tis)
+
+===== Starověká Čína =====
+	* izolovaní od Evropy, i kartografie je specifická, odlišná
+	* mapy na hedvábí (160t př. n. l.)
+		* vojenská, topografická mapa a plán opevnění sídla prefektury
+	* říká se, že objevili kompas i metody tisku, mapovali oblohu, katastrální mapy
+	* **Pei Xiu **(Pchej Siou, 250 n.l.)  - "Ptolemaios z ČÍny" - matematický kartograf, používat triangulaci
+		* jeho mapa se nedochovala 
+
+===== Starověké Řecko =====
+* historie Řecka viz. prezentace
+* moc se nedochovalo (spíše v přepisech), přínos spíše teoretický - matematická kartografie
+* Achillův štít - vyobrazení představy světa
+* **Anaximandrova mapa** - Anaximandros z Milétu
+	* kruhová mapa, uprostřed Delphi, Středozemní moře dobře známo a pak velký flek Asie, Evropa a Lybie a kolem dokola všude oceán
+	* zobrazuje oikúmené = známý obývaný svět
+	* začátky grafického vyjádření místo slovního
+	* nedochovala se
+* **Hekataiova mapa** (Hekataios z Milétu, žák Anaximandros)
+	* podrobnější mapa než Anaximandrova, ale vychází s ní
+	* už nějaká topologie
+	* nedochovala se
+* Náčrtek stříbrného lomu
+	* dochoval se na skále před vstupem do lomu
+* __názory o tvaru Země__
+	* Homérovy básně -** Země je placatá **obklopena Oceánem
+	* Anaximandros - **nízký válec** volně se vznášející uprostřed kruhového vesmíru
+	* Hekataios, Pythagoras, Aristoteles - **Země je kulatá**
+		* koule má dokonalý tvar → Země je kulatá
+		* zatmění slunce dělá kulatý stín
+		* lodě mizí za obzor
+* **Eudoxos z Knidu**
+	* zmapoval hvězdy na viditelné obloze → hvězdy začal spojovat do souhvězdí
+	* **sestavil hvězdný glób**, který se nezachoval
+		* později podle tohoto glóbu byla vytvořena socha s glóbem místo hlavy (Římané ho vytvořili)
+* **Aristoteles**
+	* učitel Alexandra Velikého - učil ho ať cestou i poznává, nejen dobývá
+	* racionalizovat argumenty o tvaru Země
+	* rozdělil Zemi na **5 pásů** vzhledem ke klimatickým podmínkám obyvatelná
+	* popsal **známé větry**, které se používaly k navigaci na moři
+* __helénská doba__
+	* poznání Oikumeny, měření rozměrů Země
+	* **Pytheas z Massalie** (380-310 BC)
+		* zeměpisec, námořní cesta k Britským ostrovům, až k polárnímu kruhu - pozoroval, popisoval
+	* **Dikaiachos z Mesiny**
+		* začal používat kartografickou síť - měla jen jednu rovnoběžku =diafragma (36°) a jeden poledník = stragidy, prochází Rhodosem
+	* **Erastotenes z Kyrény** 
+		* mapa s 8 rovnoběžkami, 7 poledníky = má síť, sic není pravidelná
+		* počítal velikost Země - vzal 2 místa na stejném poledníku a podle Slunce změřil zeměpisnou šířku
+		* celkem přesný výpočet
+* __římská nadvláda__ = vrchol řecké kartografie, ale úpadek Řecka
+	* vojenské a obchodní výjezdy, obchodování s Čínou
+	* **Poseidonios z Apameia**
+		* **"největší omyl antiky"** → různé hodnoty měly řecké stadium a egyptské stadium (jednotka) a pak to převzal Marinos i Kolumbus - výsledek: Zeměkoule byla o třetinu menší
+	* **Marinos z Tyru**
+		* opravoval dosud vydané mapy tak, že se bavil s obchodníky a vojáky, co cestovali
+		* rovnoběžky a poledníky se stejnými intervaly → **Marinovo zobrazení** - čtverečky
+		* chyby podle Ptolemaia: 
+			* Marinos převzal špatnou délku od Poseidonia
+			* má čtverečkovou síť - zkresluje to délky v pólech
+			* nekriticky používal stará data bez korekcí
+	* **Klaudios Ptolemaios** (80-165 AD Alexandria)
+		* **Syntaxis megale **(Almagest ) - astronomický spis, encyklopedie hvězdářského 
+		* kniha **Geographike Hyphegesis**
+			* 8 částí/kapitol:
+				* v jedné **kritizuje Marina**
+				* v jiné popisuje, **jak udělat zeměpisnou síť **a až máš síť, pak můžeš zakreslovat data (dříve opačně)
+					* snažil se o lepší vyjádření zeměkoule na plochu
+					* popisuje **4 kartografická zobrazení** - Marinovo, Ptolemaiovo kuželové, další dvě jsou celkem složité a moc se nepoužívají
+				* **místopisný slovník** - 8000 pojmů včetně souřadnice (docela přesné na tu dobu)
+				* **27 map, 4 kontinenty, 0° poledník = Ferro** na Kanárských ostrovech, bylo to poslední známé území směrem na západ
+				* nedochoval se originál (nejstarší přepis 12stol.)
+* __shrnutí:__
+	* řecká kartografie neměla moc přesné výsledky, neznala orientaci podle světových strach + největší omyl antiky (středozemní moře bylo 1,5x větší než ve skutečnosti
+	* na druhou stranu byly položeny základy matematické kartografie, první zobrazení, určení nultého poledníku, Země je koule
+
+===== Starověký Řím =====
+* historie Říma viz. prezentace
+* moc toho od Řeků nepřebrali
+* Římané byli dobří stavitelé, měli dobré přístroje, dobývali, byli praktičtí
+* dobývali → měli dobré silnice, změřili délku silnic
+	* **Via Egnatia** (Řím - Istanbul) → dnes D2
+	* patníky podél cest značily místopisné informace, co je jak daleko
+	* mapovali/měřili silnice za Augusta (0BC)
+	* **Aggripova mapa** - nedochovala se
+		* 10x600m
+		* kopie **Peutingerova mapa** (13. stol)
+			* tzv. "pochodová mapa"
+			* **12 svitků** (11 se dochovalo) na pergamenu (3x60m)
+			* schématická mapa, má nějakou symbologii, 
+			* nemá matematické kartografické základy (nemá jednotné měřítko ani konstrukční zásady)
+			* východ nahoře
+			* silnice rovné čáry, které se zalamují - každé zalomení významný bod na mapě
+			* **Itinerarium Antonini Augusti** - seznam míst podél silnic se vzdálenostmi
+* **Polonius Mela** - mapa světa, bádal podobně jako Řekové
+	* lépe zmapoval Anglii, protože měl od Římanů lepší informace
+* Faméský atlas - socha s glóbem místo hlavy (kopie řeckého originálu)
+* Kapitolský plán věcného města
+
+====== 03 - Středověká kartografie ======
+Pátek 11. října 2013
+
+===== Středověk v Evropě =====
+* církev kázala lidem, že Země je placatá, přestože v Bibli je psáno, že je kulatá
+* církev nositelem vzdělání i kultury
+* úplně zapomnění antického učení, názorů i vědeckých poznatků
+* vznikají mapy trojího typu: mapa mundi, pásmové mapy, portolánové mapy
+* __1. Mappaemundi (mapa mundi)__
+	* __kruhové mapy = O-T mapy__ (Asie, Evropa, Afrika, rozdělená řekami Don a Nil a středozemním mořem)
+* schématické znázornění světa
+* mapy jsou kruhové, ohraničuje je oceán
+* nejsou příliš přesné - poučný, náboženský charakter
+* orientované k východu
+* **Ebsdorfská mapa** (1234 n.l Německo) - nedochovala se, jen v kopii
+			* mapa součástí oltáře, 3x3m
+			* uprostřed Jeruzalém
+			* lidi byli negramotní, komunikovali skrze obrázky, mohli upevňovat myšlenky
+			* na okrajích jsou všelijaké potvory a děti žeroucí své rodiče → radši necestujte
+		* **Herefordská mapa** (1280 n.l Anglie)
+			* taky součástí oltáře, podobná jako Ebsdorfská
+			* na kravské kůži
+			* popisuje cestu do posmrtného života
+			* výjevy z Bible - Babylon, Noe, ráj
+			* mořské panny, jednorožci, lvi, .. primitivní - odráží neznalost světa
+		* **Mapa Petra Vesconte**
+			* má větrné směrové růžice, znaky portolánových map, ale jinak O-T mapa, podobná předchozím dvou
+		* **Fra Maurova mapa**
+			* vychází z poznatků Marca Pola a jiných Benátstkých cestovatelů
+			* orientovaná k severu, už je víc přesná než předchozí 3
+	* __oválné__
+		* **Beatovy mapy**
+			* spíše oválné, ale stále schématické
+			* pořád orientované na jih, zahrnují i antipodes
+	* __pásmové mapy = zonální__
+		* 5-7 pásem (studená, mírná, spálená země)
+		* už věděli, že někdo na jižní polokouli žije
+		* **Makrobiova mapa**
+* __2. mapy jednotlivých území__
+	* více přesné, pro orientaci, plány měst a panství
+	* **Goughova mapa** (1360)
+		* mapa Britských ostrovů
+		* na seznamu Unesco Memory of the world
+		* orientovaná k východu
+* __3. portolánové mapy__
+	* vznikaly **12-14. **stol.
+	* **přesné**, prakticky používaní **mořeplavectví**
+	* **znázorňují **především** středozemní moře**
+	* portolani = písemné námořní pokyny
+	* **dobře zmapované** pobřeží s městy, ostrovy, zátoky, vnitrozemí potlačeno
+	* dochovaných asi kolem 180 map a atlasů, hodně se jich nedochovalo (zničeny i na lodích, když se vozily k navigaci)
+	* materiál: **pergamen** (drahý), papír (rozmočí se)
+	* __metoda dead-reckoning__ - výpočet pozice na základně znalostí o předchozí pozici (směr - úhel, rychlosti, čas od předchozího bodu)
+		* čas - přesýpací hodiny, vzdálenost - provaz z uzly, směr - magnetovce (minerál) → předchůdce kompasu
+	* na každé mapě **16 **nebo** 32 směrových růžic**, které jsou navzájem propojeny → větry používané k navigaci
+	* neměly kartografickou síť, ale právě tu síť větrů
+	* * v Benátkách, Janově, Anconě (Italská produkce) - pouze středozemí
+	* * Mallorca, Barcelona (Katalánská produkce) - i Skandinávie či čína
+	* nejstarší dochovaná mapa Písánská mapa (1300) a mapa P. Vescontiho (1311)
+	* **Katalánský atlas** - **Abraham Cresques (**1375 - dnes je uložen v Paříži)
+		* 12 listů - 65*300cm
+		* nikdy se s ním nenavigovalo, dar pro Karla V. → je krásný, zdobený, barevný, mapa celého světa, jsou tam i znaky, které nejsou potřeba pro navigaci
+	* **Portolánový atlas** - **Jaume Olivese** (1563 - vznikl až později)
+		* 6 exemplářů, jeden z nich v Olomouci
+		* originál na pergamenu, nepoužíval se k navigaci
+
+===== Středověk mimo Evropu =====
+* __Byzantská říše __
+	* zachování Ptolemaiova odkazu:
+		* Vatopedion Codex
+		* Codex Sarangliensis
+	* neodtrhli se od antiky tolik jako západ
+* __Islámská kultura__
+	* dědici řecké geografie, přeložili Ptolemaia
+	* **Al Idrisi** (Abu Adb Aláh Muhammad al-Idrísi al-Kurtubi al-Hasani al-Sabti)
+		* Kruhová mapa světa - orientace na jih
+		* Mapa pobřeží Marmarského moře
+		* Rogerova kniha - atlas pro Rogerse (Sicilský král) - politický charakter (obchod), geografický popis + Idrisiho mapy
+
+====== 04 - Renesance v kartografii ======
+Pátek 25. říjen 2013
+
+====== Před a po kolumbovská kartografie (1492 - 1520) ======
+* __velký rozvoj díky:__
+	* **díky rozvoji knihtisku** (dřevořez, mědirytiny)
+		* překreslování+přepisování = manuscripty
+		* tištěné = edice
+		* __nové materiály a postupy __při tvorbě map: **dřevořez, mědirytiny**
+	* **znovuobjevení antické** **vědy**, kultury a umění
+		* znovuobjevení Ptolemaiova díla Geographiké Hyphégésis → 1. tištěné edice Kondrada Sweynheim (Římská edice), další Ulmská, Benátská a další
+	* **zámořským objevům**, objevy nových kontinentů
+		* Kolumbus plul podle mapy, kde chyběl celý Atlantic, Pacifik a Ameriku
+			* vycházel z "největšího omylu antiky" - zeměkoule je o třetinu menší
+			* Kolumbus plul kvůli slávě a penězům, on nikdy nedozvěděl, že nalezl celý velký kontinent
+			* na Kanárech nabral jídlo a měl naplánované za 21 dní bude v Japonsku nebo Číně
+			* doplul na San Salvador
+			* po jeho návratu byla mapa překreslena
+			* od té doby mapy prostředkem k objevování a dobývání
+* Česko v nich pořád obývají Markomani, údaje nebyly aktualizovány
+* až do renesance se drželi největšího omylu antiky
+* **mapa Paolo dal Pozzo Toscanelliho** (1474)
+	* __vycházel z Ptolemaia__ (špatné rozměry) - Kolumbus podle mapy P. Toscanelliho jel do Asie, proto dojel do Ameriky (Japonsko=Zipangu bylo na té jeho mapě v takové vzdálenosti, v jaké je ve skutečnosti Mexiko)
+* **Martin Behaim**
+	* předkolumbovský rukopisný **glóbus**, dochoval se
+* **Juan de la Cosa**
+	* mořeplavec, kartograf, účastnil se 2. Kolumbovy výprav
+	* prý __první vyslovil domněnku,__ že to co nalezli, je **nový kontinent**
+	* mapa **Carta de Marear **(1500)
+		* portolánová mapa, nový kontinent zeleně, známé území jen konturou
+* Amerigo Vespuci
+	* objevil i západní pobřeží Ameriky → 4. kontinent, do té doby si mysleli, že Kolombus objevil východní pobřeží Asie
+	* Waldseemüiller nakreslil první mapu, kde byla America jako samostatný kontinent mapa "Rodný list Ameriky"
+* **Martin Waldseemuller**
+	* po kolumbovská kartografie - německý kartograf
+	* **Mapa světa **(1507)
+		* 12 dřevořezů (listů) + atlas + kniha popisující Amerigovy cesty
+		* **poprvé** použit označení **Amerika**
+		* Americký kontinent je pouze nudle, stále ho neměli dopodrobna procestovaný
+* **Smlouva Tordesillas **(1494)
+	* **rozdělení nově objeveného světa** mezi Španělskem a Portugalskem - na západní polokouli
+	* jednotka __leagues__ = kolik vidíš na moři k obzoru
+	* na základě této smlouvy Portugalsko získalo Brazílii a Španělsko všecko ostatní
+* Smlouva Saragusa (1629)
+	* rozdělení východní polokoule Špan a Port → Portugalci získali Moluky, kde v té době rost hřebíček, velmi významná komunikta
+* **Johannes Schoner**
+	* po kolumbovská kartografie - německý kartograf
+	* tvůrce glóbů (na glóbu z roku 1523 vyznačena trasa Magalienciho)
+	* už je známá velká část Ameriky
+* Vinlandská mapa "zajímavost"
+	* zachycuje znalosti Vikingů, objevení Ameriky, ještě před Kolumbem → podfuk?
+* __chorografické mapy__
+	* mapy malých území (např. Klaudiánova mapa)
+	* včetně kopců a vesnic, bývaly součástí velkých atlasů
+
+====== Počátky atlasové kartografie (16 stol.) ======
+* 1520 Magalhaes - první obeplutí Země
+* 1580 Francis Drake - druhé obeplutí Země
+* → důkazy o kulatosti země, podklady pro správné měření rozměrů
+* **rozvoj kosmografie, chorografické kartografie, matematické kartografie**
+* zmapováno pobřeží celého světa kromě Austrálie a Antarktidy
+* centrem Nizozemsko, Francie a Anglie nezajímavá
+	* __Itálie:__ **Vincenzo Coronelli**
+		* autor stovek map a glóbů
+		* atlas **Atlante Veneto** (400listů)
+
+==== Nizozemko (pol 16.stol - pol. 17.stol) ====
+* centrum atlasové kartografie v této době
+* rodiny Hondiové + Jannsonové x Blaeuové (kradli od sebe, rivalové)
+* **Gerhard Mercator**
+	* studoval kresliče námořních map
+	* vyrůstal za Kolombovy slávy
+	* kritikem spolehlivosti map, osvobození od vlivu Ptolemaiovy Geografie
+	* přechod z gotického písma na italiku (i díky tisku, bylo mnohem jednodušší a čitelnější)
+	* __zobrazení__
+		* **čtverce zvětšující se k pólů**, posunul rovník na jih, aby byl větší prostor pro Evropu
+		* stále se používají v atlasech
+	* loxodromická mapa světa - každá loxodroma jako přímka (každé dva body lze spojit přímkou)
+		* póly jsou přímky
+	* **oprava velikosti středozemního moře**
+	* **poprvé** použil slovo **atlas** pro soubor několika map
+	* **vydal atlas (1585)**
+		* první vydání: oprava  Ptolemaiových map
+		* další rozšířena o mapy Francie, Nizozemí, Belkánu a Německa
+	* vyráběl glóbusy pro šlechtu
+	* po něm pokračoval jeho syn
+* **Abraham Ortelius **
+	* současník Mercatora
+	* zakázka pro jistého obchodníka → chtěl hodně map a mělo se s nimi lehce manipulovat (ruličky nejsou lehce manipulovatelné) → **atlas**
+	* **1570 Theatrum Orbis Terrarum**
+		* sebral desky a přeryl je → jednotný grafický styl 
+		* velikost 30x50cm
+		* 25. vydání (1598 - 1612)
+			* **na začátku 53 map**,
+			* poslední vydání 129 map včetně **Fabriciovy** mapy Moravy
+			* jedno z vydání mělo i Crigingerovu mapu Čech a Helvigovu mapu Slezska
+* **Jodocus Hondius starší **(1563 - 1612)
+	* **Atlas **
+		* 1604 koupil Mercatorovy desky (60) z atlasu a přidal dalších 36 map → atlas vydal jako Mercatorův atlas, Hondius byl jen editor 
+		* asi 50vydání, včetně kapesní verze 
+	* **Atlas Minor**
+		* kapesní verze atlasu (15x20)
+	* dílo získal Blaeu, dílo dál rozšiřoval Janssonius - mluví se o Mercator-Hondius-Jansson atlasech• 
+* **Willem Janssoon Blaeu**
+	* učil se u Tycha de Brahe
+	* soupeřil s Hondiem a Janssoniem 
+	* **Atlas Novus **(1634)
+		* 400 map, 6 svazků
+	* **Atlas Maior** (1662)
+		* 600 map v 11. svazcích, mix různých desek, nebyl jednotný styl, stáří max +-100let
+		* část desek shořela
+		* i v latinské, holandské a německé verzi
+* **Hemův atlas**
+	* rozšíření Blaeuova atlasu na objednávku 
+* **Kneckle Atlas (1600)**
+	* největší atlas necelé 2m 
+
+====== Reformace kartografie (17 - 18 století) ======
+* začíná zeměměřičství, triangulace
+* měří se velikost zeměkoule - již přesné výpočty
+* centrum rozvoje se přesouvá do Francie
+* mapy pro vojsko = rozvoj map (Válka za americkou nezávislost, Velká francouzská revoluce, založeno ČVUT)
+* **Jean Dominique Cassini**
+	* zakladatel astronomicko-geodetické dynastie
+	* mapoval Francii pro Ludvíka XIV.
+	* pro přesnou tvorbu map (**pro přesné měření zeměpisné délky**) využil astronomie - pozorováním **jupiterových měsíců** (porovnat zatmění ve 2 městech → výpočet zeměpisné délky)
+	* 1. přesné měření pobřeží ukázalo, že Francie byla o 20% menší — Ludvík byl rozezlen - věda ho připravila o víc území než válka
+	* **Carte de Cassini** (Cassiniho mapa Francie)
+		* měření vnitrozemí pomocí triangulace (1789 - 120 let, 4 generace rodiny Cassiniových mapovala Francii)
+		* používá už sjednocené symboly, sjednocení jazyka, má měřítko
+		* posloužila jako "nástroj revoluce" - administrativní reformy
+		* centralizovala, standardizovala
+* **Jean Lambert**
+	* nové úhlojevné kuželové a plochojevné azimutální **zobrazení**
+	* řešil zkreslení v jednotlivých směrech při převodu z referenčního tělesa do zobrazovací roviny
+* **Guillaume Delisle (1725)**
+	* **Atlas Geographique** - konečně mapa Evropy se srpváně velikým středozemním mořem
+* **Jead d'Anville**
+	* **Atlas Général (1727)** začal používat bílá místa na mapě, tzn. že si nevymýšlel, když nevědět
+
+====== 05 - Kartografie Čech, Moravy a Slezska ======
+Úterý 17. prosinec 2013 (chyba kvůli stáži v Maďarsku - výpis z prezentace)
+
+* __první zmínky o našem území:__
+	* **Geographia Magna**
+		* malý zájem, nepřesně zaměřeno
+		* v originálním místopisném seznamů jsou toponyma z 2.stol n. l. - dnes již zaniklé Keltské a Markomanské osady
+			* Sudéta Oré - Krušné hory, Lužické hory, ..
+			* Askiburgion oros - Krkonoše, Beskydy, ..
+			* Gabreta Silva a Luna Silva - Šumava
+			* Albis - Labe
+	* Herefordská a Ebsdorfská mapa
+		* Braga metropolis Beomariorum
+		* Morania (zakreslena i řeka Morava)
+	* Kosmas podle O-T mapy poipsuje rozložení světa a Čechy jsou podle nějak obklopeny jednou dlouhou táhlou horou
+	* Mapa v kronice Vavřince z Březové (poč. 15. stol.)
+		* O-T mapa, zřejmě nejstarší vytvořená na našem území 
+	* Olomoucká O-T mapa (kon. 15. stol.)
+		* popis Čech, Moravy i Slezska
+	* Portolánové mapy
+		* zakreslano Labe, Praha, Bratislava
+* __Poutnické mapy__ (15. stol)
+	* zákres poutnických cest do Říma při příležitosti posvátného roku 1500
+	* **Ergard Etzlaub**
+		* norimberský kartograf, 10 map, používal různé míle
+		* orientace na jih - nejen proto, že mapa směřovala k Římu, ale i proto, že se používaly sluneční hodiny, takže si uživatel nestínil
+* __mapy ČECH__
+	* **Klaudianova mapa **(vyryta 1517 v Norimberku)
+		* Mikuláš Klaudyán (lékař z Mladé Boleslavi
+		* ve dřevě, měřítko 1:600tis (120x60cm)
+		* **české názvosloví**
+		* mapa 1/3, erby a kresba 2/3
+		* předlohou Etzlaubovy mapy - ale změnil orientaci na sever
+		* bohatý místopis - 280 měst včetně hradů, tvrzí, klášterů
+		* schématické znázornění výškopisu ( - tam kde je les, tam je kopec), řek, hlavní zemské stezky, hrady
+		{{./pasted_image.bmp?width=60}}‎ 
+		* malovaná část
+			* Ludvík Jagellonský se znaky zemí, znaky nejvyšších zemských hodnostářů, znaky Prahy, Kutné hory a Žatce
+	* **Crigingerova mapa** (1568)
+		* Jan Criginger luteránský kněz
+		* chybí ř. Otava, Brdy, Ještěd
+		* kopečková metoda
+		* v Orteliově, Mercatorově a de Jodeho atlasu
+	* **Artinova mapa **(1619)
+		* Pavel Aretin (Uherský Brod)
+		* 1:500tis, 1200 měst, popis německy i česky
+		* rejštřík
+		* hranice 15ti krajů
+		* na okraji **postavy dobových krojích** (6 žen a 6 mužů)
+	* **Vogtova mapa **(1712)
+		* Jan Jiří Vogt (mnich cisterciáckého kláštera v Plasech)
+		* 1:400tis, 3tis pojmů včetně dolů a vodních ploch
+		* 24 druhů znaků
+		* vpravo nahoře lev-král
+		* nerozšířila se kvůli Müllerovu mapování
+* __mapy MORAVY__
+	* **Fabriciova mapa **(1569)
+		* Pavel Fabricius - vídeňský lékař, matematik, astronom a kartograf
+		* 1:288 tis., 95x85cm
+		* český i německý popis
+		* má geografickou síť na rámu a značkový klíč
+		* kopečková metoda
+		* lichoběžníkové kartografické zobrazení, nepříliš přesný
+		* pro vojenské účely (ohrožení Tureckem)
+		* v Orteliově atlase
+		* obsahuje kartuše nebo různé obrázky
+	* **Komenského mapa **(1624, 1627, 1664)
+		* pro poutníky, s cílem opravit Fabriciovy chyby
+		* 1:500tis, 500 místních názvů
+		* typická 4mi vedutami (Polná, Olomouc, Znojmo, Brno), nemá kartuši, má měřítko a symbologii
+		* symbologie včetně vinic, lázní, měst podle velikosti, typu
+	* **Vischerova mapa** (1692)
+		* Jiří Matyáš Vischer Tyrolský
+		* 1:200tis.
+		* 2 veduty
+		* podrobnější obsah
+		* nerozšířila se kvůli Müllerovu mapování
+* __mapy SLEZSKA__
+	* **Helwigova mapa** (1561)
+		* Martin Helvig, pedagog
+		* 1:550tis.
+		* obsahuje orientační sít
+		* typická tím, že je velice moooc zdobená a barevná (má zdobený i okraj)
+		* 308 míst, popis německy
+		* v Orteliově atlasu
+		* orientace k jihu
+* **Müllerovo mapování**
+	* Jan Kryštof Müller (17/18stol.)
+		* profesionální měřič, kartograf a topograf - polní vojenský inženýr císařských služeb
+		* používal trigonometrii, buzolu, kočár s měřením otáček kol
+		* měřilo se v létě, v zimě se zpracovávalo
+	* **vojenský účel**
+	* __mapování mělo 4 fáze__
+		* **mapování Uher** (1708-1709, 1rok)
+			* 4 mapové listy, 1:550tis, první správné zakreslení Dunaje
+		* **mapování Moravy** (1708-1716, 8let)
+			* 4 mapové listy, 1:180tis, (patent, mapa se nesměla po dobu 10 let rozmnožovat dalšími rytci)
+		* **mapování Čech** (1712-1718, 4roky)
+			* 25 mapových listů, 1:132 tis, + jeden přehledný list, 1:650tis
+		* **mapování Slezska** (1720, 1752, 32let)
+			* 1721 Müller umřel
+			* mapování prováděl jeho žák J. W. Weiland, které neměl moc čas, revize pak dělal někdo jiný
+			* než se mapování dodělalo, území začalo patřit Prusku .. tahanice
+			* výsledek Slezské atlas - 16 map jednotlivých knížectví (1:100-1:200tis), 4 přehledné mapy
+
+====== 06 - První katastry a vojenské mapování ======
+Created Pátek 29 listopad 2013
+
+====== Katastry ======
+* __daně za feudalismu__
+	* lenní pán - král měl z boží vůle nějaké území, propůjčoval půdu leníkům 
+		* → daň z pozemku, daň z osob
+	* leník - podmíněný držitel propůjčené půdy za radu a pomoc, je povinen účastnit se shromáždění, finanční pomoc panovníkovi
+	* leníci to dál propůjčovali poddaným
+* počátky sčítání lidí
+* __zemské desky__ - **zápis práv pro výběr daně**
+	* v Čechách od 13stol. za Přemysla Otakara II., ale první shořely
+	* na Moravě od 16stol. 
+	* zápis práv → prodej, koupě, převod pozemku, ..
+	* zemští měřici
+* __soupisy půd__
+	* už za Přemyslovců
+	* **kvůli majetkovým sporům nebo evidenci majetku**
+	* **mapy velkého měřítka + písemky výklad**
+	* pokusy o jednotné zaměření Čech půdy se až do 17.stol nepodařilo prosadit
+* **soupis poddaných podle víry (1651)**
+	* seznam vrchnosti,  svobodných, poddaných
+	* zadavatelem **katolická církev**
+	* __struktura:__ jméno, stav (poddaný, svobodný), povolání, věk, víra (u nekatoliků, zda je možné kovertovat k církvi)
+	* názvy obcí
+	* první soupis obyvatel
+* **První berní rula** (1654) pro Čechy
+	* královské rozhodnutí
+	* __soupis daňových povinností__
+	* pozemek včetně toho, jak má velké pole, kolik toho seje na zimu, kolik na léto, kolik má dobytka, kolik má prostoru a kolik ve výsledku chová
+	* bez mapy
+	* daně vybírány podle využití půdy né podle rozlohy
+	* **Lanová vizice pro Moravu** — odpovídá První berní rule
+		* opravena 1669-79 — zemědělská půda rozdělena podle úrodnosti — odpovídá Druhé berní rule
+* **Druhá berní rula** (1684)
+	* klasifikace úrodnosti, často špatně vyměřeno - nerovné daně
+* **1. Tereziánský katastr** (3. berní rula) od 1711, platnost až 1748
+	* daně dle velikost pozemku
+	* daně i z panské (dominikální) půdy jen za účelem evidence, neplatili daně
+	* zveřejnila ho
+	* **Rektifikační akta** — odpovídá 1. Tereziánskému katastru
+* **2. Tereziánský katastr** (4. berní rula)
+	* pokus o lepší zaměření panské půdy - nebyl moc dobrý
+	* včetně bonity půdy
+* __— dosud vše bez map__
+* **Josefský katastr **(1785)
+	* Josef II. 
+	* výměr půdy bez ohledu na tom, komu to patří
+	* od Marie T. měly domy číslo popisné
+	* měřily se jen plodné pozemky provazem, řetězím nebo velké pozemky pak měřičským stolkem
+		* nezaměřovaly se řeky, cesty, neplodné pozemky
+		* atributy: role, louka, vinice, les + hrubý výnos
+		* domy se jen sepsaly a dostaly domovní čísla
+* **Tereziánsko-Josefský**
+	* po smrti Josefa II. boj za zrušení Josefského katastru, protože vrchnost platila víc daní než poddaní
+	* Leopold II. zavedl zpět Tereziánský katastr - výhodnější daně pro vrchnost, ale zanechal výměry z Josefského
+* **Stabilní katastr** (1817-1861)
+	* základem novodobého katastru
+	* František I. 
+	* přesný soupis + geodetické vyměření
+	* mapování Čech + Moravy + Slezska (česká část)
+	* katastrální operát měl tyto části:
+		* měřický operát - geodmetrické zaměření a zobrazení pozemků
+		* písemný operát - soupis pozemků a vlastníků
+		* vceňovací operát - druhové a bonití rozdělení pozemků
+	* Cassini-Soldnerovao nekonformní transverzální válcové zobrazení
+	* systém pravoúhlých souřadnic s počátky v trigonometrických bodech Gusterberg a Svatý Štěpán
+	* 1:2800
+	* zmapování 8tis ha, 13tis. obcí, 50tis mapových listů
+	* polní náčrty + jméno majitele, bonita půdy, číslo domů
+	* originální rukopisná mapa zaměřené zeměměřičským stolkem
+	* kopie originální mapy - císařský otisk - kolorovaná litografie
+* **Reambulace stabilního katastru **(1869-1881)
+	* narychlo, jednorázové doplnění, kvalita utrpěla
+
+====== Vojenské mapování ======
+* "Vojenští velitelé si stěžovali, že se o svém území dozví více z map ukradených Prušákům"
+* **1.** **Josefské **(1764-1768, 1780-1783)
+	* začalo za Marie Terezie, skončilo za Josefa II. 
+	* **stav před průmyslovou revolucí**
+	* **podkladem Mullerova mapa **zvětšena do 1:2800
+	* **doplněna pozorováním z koňského hřbetu**
+	* bez triangulace - listy pak nešly úplně spojit
+	* 8barev, popis černě, sloupec s názvem vesnic a počtem obyvatel, koní, krav
+	* + podrobná textová část (písemný operát)
+	* mapy ve Vídni, tajné
+* **2. Františkovo **(1826-1852) - zároveň se stabilním katastrem (1817-1861)
+	* trigonometrická síť (vybudována 1806-1821)
+	* v době nástupu průmyslové revoluce, rozvoj intensivního zemědělství
+		* rozvoj zemědělství → lesní plochy ubývaly razantně
+		* o 50% vzrostla výměra orné půdy, lesní plochy dosáhly historicky nejmenšího rozsahu
+	* stabilní katastr sloužil jako topografický podklad
+	* Cassini-Soldnerovo, matematické základy jako stabilní katastr
+	* přidány výšky trigonio bodů
+	* 11 barev, černý popis, šrafy pro výškpis
+	* mapy 1. i 2. byly vždy tajné a moc se nevyužívaly :-(
+* **3. František-Josef I. **(1876-1878 Morava a Slezsko, 1877-1880 Čechy)
+	* František-Josef I. - nejdéle vládnoucí panovník na evropském trůnu
+	* nesnášel techniku, pokrok, automobily, nečetl dopisy psané strojem
+	* podkladem stabilní katastr
+	* Besselův elipsoid, jadranský výškový systém, rovinné souřadnicové systémy Gusterberg a Sv. Štěpán
+	* 4x1:25tis. → mapa speciální (1:75tis) - 11 barvy, Lehmanovy šrafy, 100m vrstevnice
+	* 8x1:75tis → mapa generální (1:200tis) - 4 barvy
+	* ve Vojenském zeměpisném ústavu v Praze
+	* po něm Ferninand de Este
+* Prozatímní vojenské mapování (1923-33)
+	* současně s reambulací 3.VM
+	* jen 3% území podle Benešova zobrazení, Besselův elipsion
+* Definitní vojenské mapování (1934-38)
+	* jen 7%  území, podle Křováka
+	* za 2. sv. se nemapovalo
+

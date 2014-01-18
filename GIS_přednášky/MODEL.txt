@@ -5,45 +5,121 @@ Creation-Date: 2013-10-03T10:59:18+02:00
 ====== MODEL ======
 Čtvrtek 03 říjen 2013
 
-* časová škála
-	* spojitost (kontinuální/diskrétní)
-		* diskrétní - měří se skokem, není plynulá (kalendář)
-	* cykličnost
-		* lineární - pevně definovaný počátek a konec, je možno změřit čas
-		* cyklické - periodicky se opakují, není možné jednoznačně určitě čas události
-	* závislost určování času na jiné události
-		* absolutní - fyzikální základ
-		* relativní - př. geologie - prvohory, druhohory
-	* prostorový rozsah (globální/lokální)
-	* vztažené k/ke:
-		* místnímu poledníku - určují čas platný pro místo měření a místa na stejném poledníku
-		* konkrétnímu místu
-	* určování času (přímý/nepřímý)
-		* přímý: 3.10. 2013 11:07:43
-		* nepřímý: doba bronzová, za 2 sv. války
-	* čas: siderický, solární, univerzální, atomový, univerzální koordinovaný, efemeridový, dynamický, juliánský, .. 
-		* univerzální - od 1926, vztažen k nultému poledníku
-			* zpřesnění: UT0, UT1, UT2 (korigován dle kolísání rychlosti země)
-		* atomový čas atomovými hodinami
-		* univerzální koordinovaný čas UTC
-			* Pražský koordinovaný čas od r. 1969 UTCTP Tempus Pragense
-	* časové signály
-		* vysílá je pro Česko německá stanice
-* koncepce prostoru (viz prezentace)
-	* historie viz prezentace (chce se nás na to zeptat?)
-	* prostor:
-		* topologický prostor (metrický) 
-			* euklidovský - v souřadnicicích
-			* manhattanovský - bez souřadnic pouze vztahy mezi objekty
-	* teorie grafů G
-		* sestava bodů a jejich spojnic → G = uzly + hrany
-		* množina uzlů U = {u1,u2}
-		* množina hran H={h _{i j }}
-		* sled bez hran = cesta
-		* uzavřený sled = uzly se neopakují, ani hrany
-		* strom souvislý graf neobsahující cykly
-			* kořenový strom, dceřiné uzly
-			* binární pokud má 2 dceřiné uzly
-			* topologický rovinný - žádné dvě roviny se nekříží
-	* network is directed graf, in which every edge has inpedendance (Benenson)
+* Prostorové analýzy - typy, dělení příklady 
+* **Obecný postup při modelovaní problému**
+* **Projektování a management při modelování**
+* **Model a modelování** - základní pojmy, klasifikace modelů, příklady atd.
+* **Teorie systémů** - základní pojmy, klasifikace systémů, popis minulosti, přítomnosti a budoucnosti, příklady
+* **Teorie grafů**
+* **Multiagentní systémy** - definice, principy, příklady
+* **Celulární automata** - definice, principy, příklady
+* Síťové analýzy - definice, principy, příklady algoritmů
+* **Nejistota a neurčitost v GIS** - kvalita dat, možnosti vizualizace
+* **Chaos a fraktály v GIS modelování** (základní pojmy, matematické pojetí, využití)
+* **Prostorová entropie v GIS **- význam, matematický popis a její aplikace v realitě
+* Modely ve fyzické geografii - klasifikace, příklady ve fyzickogeografických disciplínách
+* Empirické modely vodní eroze – USLE, RUSLE - algoritmy, data, implementace
+* Deterministické modely vodní eroze – AGNPS, CREAMS, LISEM...- algoritmy, data, implementace
+* Modely v socioekonomické geografii - klasifikace, příklady ve socioekonomických disciplínách
+* **Ontologie v GIS** - pojmy, detekce objektů, klasifikace, resamplování
+* **Čas v GIS**
+* Modelování vývoje krajiny - predikční, iterační, what-if (algoritmy CA, MARKOV, GEOMOD...)
+* Digitální model krajiny – definice, skladebné části, datový model, úrovně
+* Sucha a požáry – příčiny, indexy, ukazatele, klasifikace, modelování
+
+===== Časová škála =====
+* spojitost (kontinuální/diskrétní)
+	* diskrétní - měří se skokem, není plynulá (kalendář)
+* cykličnost
+	* lineární - pevně definovaný počátek a konec, je možno změřit čas
+	* cyklické - periodicky se opakují, není možné jednoznačně určitě čas události
+* závislost určování času na jiné události
+	* absolutní - fyzikální základ
+	* relativní - př. geologie - prvohory, druhohory
+* prostorový rozsah (globální/lokální)
+* vztažené k/ke:
+	* místnímu poledníku - určují čas platný pro místo měření a místa na stejném poledníku
+	* konkrétnímu místu
+* určování času (přímý/nepřímý)
+	* přímý: 3.10. 2013 11:07:43
+	* nepřímý: doba bronzová, za 2 sv. války
+* čas: siderický, solární, univerzální, atomový, univerzální koordinovaný, efemeridový, dynamický, juliánský, .. 
+	* univerzální - od 1926, vztažen k nultému poledníku
+		* zpřesnění: UT0, UT1, UT2 (korigován dle kolísání rychlosti země)
+	* atomový čas atomovými hodinami
+	* univerzální koordinovaný čas UTC
+		* Pražský koordinovaný čas od r. 1969 UTCTP Tempus Pragense
+* časové signály
+* vysílá je pro Česko německá stanice
+
+===== Koncepce prostoru (viz prezentace) =====
+* historie viz prezentace (chce se nás na to zeptat?)
+* prostor:
+	* topologický prostor (metrický) 
+		* euklidovský - v souřadnicicích
+		* manhattanovský - bez souřadnic pouze vztahy mezi objekty
+* teorie grafů G
+	* sestava bodů a jejich spojnic → G = uzly + hrany
+	* množina uzlů U = {u1,u2}
+	* množina hran H={h _{i j }}
+	* sled bez hran = cesta
+	* uzavřený sled = uzly se neopakují, ani hrany
+	* strom souvislý graf neobsahující cykly
+		* kořenový strom, dceřiné uzly
+		* binární pokud má 2 dceřiné uzly
+		* topologický rovinný - žádné dvě roviny se nekříží
+* network is directed graf, in which every edge has inpedendance (Benenson)
+
+====== Ontologie ======
+* = **výslovný** popis určitě problematiky, zápis znalosti (chci popsat robotovi, jak operovat)
+* slovník, který slouží k předání a uchování znalostí týkajících se určitě problematiky
+* formální reprezentace, obsahuje **glosář** = definici pojmů a **tezaurus** = definice vztahů mezi pojmy
+* využití: umělá inteligence, sémantický web, softwarové inženýrství, ..
+* matika + filosofie + jazyk
+* datový model ontologie obsahuje
+	* jedince - objekt (člověk, tabulka, pojem, událost), více nedělitelný
+	* třídy - množina jedince a podtřídy
+		* podtřídy
+		* dělí se na 
+			* koncepty
+			* typy
+			* kategorie
+			* rámce
+	* atributy - popisují vlastnosti jedince
+	* vazby - propojení dvou jedinců (jednosměrná, obousměrná)
+* __Dělení__
+	* __druhy dle užití:__
+		* terminologická - tezaurus (slovník) - př. vyhledávání v katalogu
+		* informační - nástavba nad informačními databázemi
+		* znalostní - logické teorie, využívají se v umělé inteligenci
+	* __podle míry formalizace__
+		* neformální
+		* semi-formální
+		* formální
+	* __dle předmětu formalizace (druhy dle rozsahu)__
+		* top-level (nejobecnější
+		* doménové - jeden obor (lékařství)
+			* v kartografie - kartografická pravidla + tezaurus
+		* generické - obecné, nejsou tak přesné
+		* úlohové - diagnostika
+		* aplikační
+* objektové modelování 
+	* konceptuální modelování = pojmové modelování
+		* modeluje reálný svět kolem nás
+		* není závislé na programovacím jazyku
+		* analýza - návrh - implementace
+		* ontologie pomáhá aby konceptuální model byl přesný na významu
+		* konceptuální model se dá graficky vyjádřit pomocí UML Unified modeling language
+			* grafický jazyk pro vizualizaci, specifikaci, navrhování
+* sémantické vazby: homonyma, synonyma, holonyma 
+* axiomy (pravidla): vyjadřují vlastnosti
+* facety 
+* základy pro zápis ontologií
+	* eXtensible Ontology Language (XOL)
+	* CyC - nejstařší
+	* Open Knowledge Base Connectivity (OKBC)
+	* Ontology Interence Layer (OIL) - XML
+* specifikace - sběr znalostí - konceptualizace - formalizace - evaluace - dokumentace
+* sběr znalostí - ze stávající ontologie, slovníky, tezaury, mapy, atlasy, software, algoritmy, rozhovor, dotazníky
+* efekt hrdla láhve - znalostí znám, jen je těžké je přespat/předat
 

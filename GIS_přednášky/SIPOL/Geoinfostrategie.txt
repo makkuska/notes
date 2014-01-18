@@ -5,8 +5,41 @@ Creation-Date: 2013-10-24T13:53:31+02:00
 ====== Geoinfostrategie ======
 Čtvrtek 24 říjen 2013, Alena
 
-* na pokyn vlády
-* organizátor Ministerstvo Vnitra (Kubátová)
+* **na pokyn vlády** (14.listopadu 2012)
+	* __vypracování__ nutné ve spolupráci s MŽP, MMR, MO, MD, předsedou ČUZK do **28.února 2014**
+* organizátor: Ministerstvo Vnitra (Kubátová)
 	* komise - zástupci soukromé i státní sféry, př. ČAGI (Janečka)
-* předchůdce: Dohoda o spolupráci
-* dělají to lidi, co to chtějí a mělo by to mít smysl
+	* dělají to lidi, co to chtějí a mělo by to mít smysl
+* předchůdce strategie: Dohoda o spolupráci
+* __odůvodnění vzniku__ této strategie:
+	* prostorová data v rámci veřejné správy se vytváření **bez dostatečné koordinace mezi rezorty**, nebo mezi jednotlivými úrovněmi rezortu. 
+	* dochází k **opakovanému pořizování obdobných či stejných** prostorových dat 
+	* neefektivní aktualizace (viz katastrální mapa)
+* nástrojem koordinace a integrace jednotlivých aktivit subjektů veřejné správy i komerční sféry je:
+	* vypracování **GeoInfoStrategie** do roku 2020, v těsné vazbě na:
+	* **Strategii mezinárodní konkurenceschopnosti ČR** (2012-2010) 
+	* **Národní program reforem ČR**, jako příspěvek k naplňování:
+	* **Strategie Evropa 2020**
+* __spojena s:__
+	* **INSPIRE (** **zřízeno Evropskou komisí** v roce **2002)**
+		* účel: napomáhat tvorbě politik a činností, které můžou mít vliv na životní prostředí, ochranu obyvatelstva
+	* **GMES**, **SEIS** (Systém sdílení informací o životním prostředí), **Galileo**
+* __aktuální stav__ národní infrastruktury pro prostorová data: 
+	* **referenční data** o území (ČÚZK)
+		* základní státní mapová díla, ZABAGED, ortofoto, RUIAN, geoportál ČUZK
+	* **tématická data**
+		* statistická data, státní mapová díla, technická infrastruktura (ČEZ, RWE, ..), registr využití půdy, dopravní komunikace, ÚAP, cenové mapy, ..
+	* **INSPIRE**
+* __bude obsahovat:__
+	* popis **aktuálního stavu**
+	* vytýčení **cílového stavu** (včetně formulace priorit, návrhu opatření a úkolů k jeho dosažení, odhadu nákladů a přínosu)
+	* **upřesnění rolí** jednotlivých subjektů veřejné správy a dalších zainteresovaných
+	* **časový harmonogram**
+	* stanovení **legislativních a organizačních opatření**
+	* **opatření** týkající se ekonomických a lidských zdrojů a vzdělávání
+* __stručný výsledek:__
+	* pravidla pro efektivní a koordinovanou tvorbu, správu a užívaní dat - otevřená data
+	* **zajištění datových zdrojů**, **dostupnost** občanům, firmám i VS
+	* bude podpořena **transparentnost výkonu** veřejné správy
+	* finanční úspory: **zlevnění** výkonu VS, **snížení** nákladů pro využívání služeb
+	* zvýšení konkurenceschopnosti

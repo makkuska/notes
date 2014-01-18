@@ -1,0 +1,182 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-01-05T21:58:44+01:00
+
+====== KGI/SIPOL ======
+* 10. a 24. 10 s Alenou
+* 31. s Voženílkem
+* 25.11. Petr Kubíček
+* 25.11. **Přednáška Reinhard**
+	* **GIS ISO standardy začínají 191xx**
+	* standards for common understanding about product
+	* **191113**: quality elements:
+		* completness (too much or too less data in comparison to reality)
+		* logical consistency (conceptual, domain, format, topological consistency)
+		* position accuracy (absolute, relative)
+		* temporal accuracy
+		* thematic accuracy (data are not correctly classified, atributes)
+* Po 2.11 - **Hís**
+* Čt 5.11. **INSPIRE - standardizace Řezník**
+* 12.12. **diskuze**
+	* osoby: Mgr. Milan Jindáček, Mgr. Jiří Šafránek (krajský úřad)
+* 19.12. **prezentace**
+
+====== Autorské právo ======
+* **autorské díly** je jakékoliv dílo, které je** vnímatelné smysly** - i mluvené
+* smlouvy v historii:    (__Test:__ Vyjmenujte 5 úmluv?)
+	* **První autorský zákon** (Královny Anny - Anglie) 1709
+	* **Helwigova mapa Slezska** 1561 měla autorské právo - za zneužití pokuta, která se rozdělila mezi panovníka i Helwiga
+	* **Bernská úmluva o ochraně literárních a uměleckých děl** (mezinárodní) platí od roku 1886
+	* **Mezinárodní úmluva o ochraně výkonných umělců**, **audio-vizuálních děl **(1961)
+	* **Smlouva WIPO **o autorském právu (1996)
+	* **Směrnice Evropské unie**
+* právní systémy
+	* Evropa - Kontinentální právo
+	* Amerika - anglo-saské země (USA) - používá se precedentní systém
+* __v kartografii v ČR__
+	* __autorské právo:__
+		* **osobní** (morální) - právo osobovat si autorství
+		* **majetkové **- právo dílo užívat, udělit oprávnění užívání díla, dědí se
+		* předmětem ochrany může být **mapa**, **GIS software**, **toolbox**, **vědecký objev**, **goodwil** (dobré jméno společnosti), **obchodní tajemství**
+	* **Nemoforum**, **CAGI** (odborná skupina pro autorské právo) aktivní při vytváření **legislativy před 2000**
+	* __kartografická díla__
+		* **mapy, atlasy, plány**
+		* **software**
+			* programovací jazyk není chráněn a.p.
+			* programový kód musí splňovat podmínku jedinečnosti 
+			* není chráněna funkcionalita, lze chránit jen způsob provedení (Clip může naprogramovat 5 lidí každý jiným způsobem)
+				* nejsou chráněny myšlenky, nápady, tedy ani funkce
+		* **data**
+			* katastrální mapa nepodléhá autorskému zákonu (není tam žádný tvůrčí vnos)
+			* může být chráněna struktura databáze
+			* není chráněn seznam faktů (telefonní seznam, katastrální mapa)
+		* **produkty** a výsledky získané **užitím GIS**
+	* Státem poskytovaná data a státní mapová díla 
+		* katastrální mapa Státní mapa ČR, ZMČR, Topomapa, Zabaged, ortofota, geonames, ..
+	* historická díla - postmortální ochrana 70let
+	* __způsoby zneužití:__
+		* **prostorové složky** (vezmu data, přepracuju je)
+		* **atributové složky**
+		* použití **výřezu mapy** (mapy.cz bez uvedení autora)
+		* použití celého díla a přidání vrstvy, nebo pouze části díla
+		* **přepracování díla**: digitalizace (mapa.cz -> digitalizace + přidání znakového klíče = ?nová mapa?)
+		* použití **leteckých snímků**, které si nekoupíme, ani nejsou zdarma dostupné
+		* zneužití výsledků
+		* know-how
+* __licence__
+	* **Public domain** a **GNU General Public License **- možno zasahovat bez omezení, volné šíření
+	* **cardware** - nesmí se zasahovat do díla, šíření záleží na autorovi
+	* **freeware** - nesmí se zasahovat, šíření volné
+	* **shareware** - nesmí se zasahovat, šíření omezeno
+	* **komerční licenční software** - nesmí se zasahovat, šíření zakázáno
+	* **OEM** - software šířitelný v rámci "balíčku", nesmí se zasahovat, šíření zakázáno
+	* **OpenSource** - šíření volné, smí se zasahovat, ale často se musí zmínit původní autor
+
+====== Geoinfostrategie ======
+* **na pokyn vlády** (14.listopadu 2012) - __vypracování__ nutné ve spolupráci s MŽP, MMR, MO, MD, předsedou ČUZK do **28.února 2014**
+* organizátor: Ministerstvo Vnitra (Kubátová)
+	* komise - zástupci soukromé i státní sféry, př. ČAGI (Janečka)
+	* dělají to lidi, co to chtějí a mělo by to mít smysl
+* předchůdce strategie: Dohoda o spolupráci
+* __odůvodnění vzniku__ této strategie:
+	* prostorová data v rámci veřejné správy se vytváření **bez dostatečné koordinace mezi rezorty**, nebo mezi jednotlivými úrovněmi rezortu. 
+	* dochází k **opakovanému pořizování obdobných či stejných** prostorových dat 
+	* neefektivní aktualizace (viz katastrální mapa)
+* nástrojem koordinace a integrace jednotlivých aktivit subjektů veřejné správy i komerční sféry je:
+	* vypracování **GeoInfoStrategie** do roku 2020, v těsné vazbě na:
+	* **Strategii mezinárodní konkurenceschopnosti ČR** (2012-2010) 
+	* **Národní program reforem ČR**, jako příspěvek k naplňování:
+	* **Strategie Evropa 2020**
+* __spojena s:__
+	* **INSPIRE (** **zřízeno Evropskou komisí** v roce **2002)**
+		* účel: napomáhat tvorbě politik a činností, které můžou mít vliv na životní prostředí, ochranu obyvatelstva
+	* **GMES**, **SEIS** (Systém sdílení informací o životním prostředí), **Galileo**
+* __aktuální stav__ národní infrastruktury pro prostorová data: 
+	* **referenční data** o území (ČÚZK) - základní státní mapová díla, ZABAGED, ortofoto, RUIAN, geoportál ČUZK
+	* **tématická data **- statistická data, státní mapová díla, technická infrastruktura (ČEZ, RWE, ..), registr využití půdy, dopravní komunikace, ÚAP, cenové mapy, ..
+	* **INSPIRE**
+* __bude obsahovat:__
+	* popis **aktuálního stavu**
+	* vytýčení **cílového stavu** (včetně formulace priorit, návrhu opatření a úkolů k jeho dosažení, odhadu nákladů a přínosu)
+	* **upřesnění rolí** jednotlivých subjektů veřejné správy a dalších zainteresovaných
+	* **časový harmonogram**
+	* stanovení **legislativních a organizačních opatření**
+	* **opatření** týkající se ekonomických a lidských zdrojů a vzdělávání
+* __stručný výsledek:__
+	* pravidla pro efektivní a koordinovanou tvorbu, správu a užívaní dat - otevřená data
+	* **zajištění datových zdrojů**, **dostupnost** občanům, firmám i VS
+	* bude podpořena **transparentnost výkonu** veřejné správy
+	* finanční úspory: **zlevnění** výkonu VS, **snížení** nákladů pro využívání služeb
+	* zvýšení konkurenceschopnosti
+
+====== INSPIRE ======
+* **směrnice 2207/2/ES**, o zřízení Infrastruktury pro prostorové informace v Evropském společenství
+* **CENIA** je národním koordinátorem pro INSPIRE, INSPIRE tedy spadá po MŽP (Cenia je příspěvkovou organizací MŽP)
+* má 14 stránek + 4848 str. dokumentace pro každé z 34 témat (obsahuje konkrétní požadavky, např. i to, jak by měla vypadal SLD)
+	* **přílohy I+II - referenční služby**
+	* **příloha III - tématická data**
+	* dohromady** 34 témat**
+* __vytvořena pro vyhledávání__
+	* skrze katalogové služby - prostorové, časové, full-textové vyhledávání
+	* v kombinaci s prohlížecími službami: WMS
+	* **CSW (OGC)** - service pro web
+* směrnice INSPIRE určuje __pravidla pro__:
+	* **data** (interoperabilita, formáty, technické specifikace, bezešvá) včetně **aktualizací** (data dostupná zdarma, pokud placené, tak musí mít vlastní e-shop)
+	* **metadata**
+		* Inspire metadata:  metadatový editor → xml soubor
+		* standard **schematrond** - Micka ho splňuje
+	* **síťové služby** - přístup k datům a službám  (WMS, WFS, GML, konverze dat, transformační souřadnicové, transformační obsahové) 
+	* **sdílení dat **- autorská práva
+	* **monitoring** (zpráva každý rok v březnu) a** reporting** (zpráva jednou za 3 roky) - do EU
+* základní principy INSPIRE:
+	* data sbírat (vytvářet) jen jednou
+	* sdílení dat
+	* bezešvá data pro kombinaci zdrojů a přeshraniční spolupráci
+	* usnadnit vyhledávání dat i pro posuzování vhodnosti dat pro daný účel
+	* zpřístupnit podmínky pro poskytování a sdílení dat (nebránit rozsáhlému používání dat)
+* __dle novely zákona 123/1998 Sb. musí data poskytovat__:
+	* **správní úřady **a jiné složky státu - kraje, ORP, obce (však jen pokud finance pochází ze státu nebo EU)
+	* **právnické nebo fyzické osoby** - resortní organizace (ÚHUL, ..)
+	* **právnické osoby** (komerční sféra), která vytváří subdodávky, např. architekti, kteří dělají územní plány
+* __Obsarvations a Measurements __(ISO 19156) - senzorové sítě: kde de, jak často měří, ... 
+* aby data získala __INSPIRE certifikát__, je potřeba **testování souladu**
+* Ispire má pro **specifikace pro všecko možné** - např. pro hlukovou mapu
+	* mapová kompozice dle inspire
+	* data atributy: DateTime, geometry, inspireID, tuna číselníků
+	* SLD, SE
+* //inspire-geoportal.ec.europa.eu//
+* pozn:
+	* extract transformal load (ETL) nádstavba nad databází - umožňuje udělat select a na základě určitých zdrojů, naplnit databázi
+	* INSPIRE __doplňuje cíle Směrnice Evropského parlamentu__ 2003/98/ES o **opakovaném použití informací veřejného sektoru** (= směrnice **PSI** (Public Sector Information))
+		* směrnice se zabývá efektivním nakládáním s informacemi, které vznikly v procesech veřejné správy
+
+====== Státní informační politika ======
+* od 1990 zahraniční investice
+* Rada vlády pro státní informační politiku
+* **Úřad pro státní informační systém** → Ministerstvo Informatiky ČR → už není 
+	* kompetence přešly pod **Ministerstvo vnitra**
+* __Informační oblasti__
+	* **Informační gramotnost** -  dosažení informační gramotnosti všech oobčanů jako nezbytného předpokladu pro rozvoj a uplatnění osobnosti v 21. století
+	* **Informatizovaná demokracie** - realizace práva občana na přímý přístup k informacím
+	* **Rozvoj informačních systémů veřejné správy** - s využitím IT zlepšit služby poskytované občanům veřejnou správu
+	* **Komunikační infrastruktura** - vybudování komunikační infrastruktury jako podstatného předpokladu rozvoje informační společnosti
+	* **Důvěryhodnost a bezpečnost** informačních systémů a ochrana osobních dat 
+	* **Elektronický obchod**
+	* **Transparentní ekonomické prostředí**
+	* **Stabilní a bezpečná informační společnost**
+* **Státní informační politika **- dokument Úřadu Vlády ČR z roku 1999 a první ucelená koncepce v ČR
+* __Základní cíl SIP__ -** vybudovat a rozvíjet informační společnost**
+* Východiska Informační společnosti: současná technologická revoluce + informační dálnice
+* __Podmínky pro SIP v ČR__
+	* vysoká kvalifikace a tvořivost občanů
+	* rozsáhlé zahraniční investice do moderních a informačních technologií
+	* iniciační, koordinační a výkonné orgány: Rada vlády pro SIP, Úřad pro SIP - Ministerstvo informaticky ČR
+* Informační společnost: Informatizace, informační dálnice, informační společnost, informační politika, informační revoluce, komunikační a informační infrastruktura, informační kolaps, informační válka, informační terorismus a pirátství
+* Globální informační infrastruktura
+* Úskalí informační společnosti
+* Nepřeceňovat SIP
+* Informační politika z hlediska občana
+	* může přivodit zásadní obrat české ekonomiky od stagnace k růstu
+	* zlepšení kvality života nabídne lepší využití jejich kvalifikace a uplatnění tvůrčích činností
+* Informační politika z hlediska řízení veřejné správy
+* Informační politika z hlediska podpory rozvoje podnikání

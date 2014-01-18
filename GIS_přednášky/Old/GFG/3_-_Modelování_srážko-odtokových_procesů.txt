@@ -26,7 +26,7 @@ Created Neděle 16 prosinec 2012
 		* **hydrodynamické modely** - respektují zákony zachování hmoty, hybnosti, energie
 		* **koncepční modely** - reflektují fyzikální zákony ve zjednodučené formě
 		* **black-box modely** - neberou v úvahu žádný zákon
-	* **stachastické modely** - primárně neobsahují vazbu mezi příčinou a důsledkem
+	* **stochastické modely** - primárně neobsahují vazbu mezi příčinou a důsledkem
 			* **pravděpodobnostní modely** - min Q, max Q, vodní stav
 			* **model generování časových řad** - př. extrapolace časových řad pozorovaných parametrů
 * **míry časové a prostorové diskreditace**
@@ -55,7 +55,3 @@ Created Neděle 16 prosinec 2012
 	* použití pro malá povodí do 10km2
 	* odtok ovlivněn: množstvím srážek, infiltrací vody do půdy, vlhkostí půda, porostem, nepropustnými plochami, retencí povrchu
 	* základní vstup: srážkový úhrn (konkrétní přívalové srážky)
-
-
-
-

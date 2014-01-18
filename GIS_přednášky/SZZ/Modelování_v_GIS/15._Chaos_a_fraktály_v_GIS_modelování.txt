@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-01-18T18:48:02+01:00
+
+====== 15. Chaos a fraktály v GIS modelování ======
+Created Sobota 18 leden 2014
+
+* "skutečně chaotické věci se v přírodě nedějí"
+* __matematický chaos__
+	* deterministický proces dynamických a otevřených systému
+	* zabývá se komplexností a celistvostí systému
+	* velice senzitivní na počáteční podmínky
+		* **Butterfly effect**: i mávnutí křídly může ovlivnit výsledek
+		* pravidla kauzality: vysoká závislost na příčině - následku (vstupu - výstupu)
+		* extrémní případ - **bifurkace **-  jeden vstup, ale v každé iteraci vznikají různé výstupy
+* **atraktor**
+	* množina stavů, do kterých systém směřuje (konečný stav)
+	* např. počasí, proudění vody
+	* __3 druhy:__ **bodový** (hvězdy a planety), **cyklický** (8), **podivný** (fraktál)
+* geometrie
+	* dimenze - kolika parametry lze popsat těleso
+	* euklidovská geometrie - **topologická dimenze** 
+		* celočíselná dimenze (1D, 2D, 3D) 
+	* fraktální geometrie - **Hausdorffova dimenze**
+		* neceločíselná (2,38D; 1,234D) - udává stupeň členitosti objektu
+* __fraktál__
+	* útvar **definovaný rovnicí**, kdy po jeho **zvětšení získáme** ten **stejný obraz** bez ohledu na měřítko
+	* __typy fraktálů:__
+		* **L-systémy** - možné nalézt v přírodě, velmi pravidelné, symetrické, např. **trsy trávy**
+		* **IFS **- rovnice se vyhodnocuje v několika iteracích, př. **Kochova** vločka
+		* **Polynomické fraktály** - **Mandelbrotova** množina, **Juliova** množina
+		* **Náhodné fraktály** - nepravidelné, **fraktální krajina**
+* příklady: pobřeží, říční síť
