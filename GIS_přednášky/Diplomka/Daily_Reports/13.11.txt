@@ -9,12 +9,12 @@ Created Středa 13 listopad 2013
 	* http://dba.stackexchange.com/questions/34472/is-postgresql-replication-production-ready
 * physical x logical
 	* http://www.continuent.com/news/live-webinars/18-news/blogs/1244-advanced-logical-replication-for-postgresql-13896
-* XLOG-based replikace → stejná verze Postgre
+* XLOG-based replikace → stejná verze Postgres
 * __Slony-I__ (PostgreSQl Replication od toho Hungarána, str 160)
 	* logical replication skrz** changelog trigger**
 	* obrázek v PostgreSQL Replication
 	* **transport protokol = pure text**
-	* není potřeba stejná verze Postgre
+	* není potřeba stejná verze Postgres
 	* __how Slony-I works:__
 		* The slon daemon will come along and **read all changes since the last commit.**
 		* All **changes will be** **replayed** on the slaves.

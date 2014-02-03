@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-01-18T19:13:23+01:00
+
+====== Aplikovaný GIS ======
+Created Sobota 18 leden 2014
+
+===== 10. Modelování vývoje krajiny =====
+* modelování změn v krajině do budoucna 
+* **iterační modelování** - po krocích
+	* **cellular automata** - tvrdá predikce (má jen jeden výsledek)
+		* diskrétní dynamický model
+		* def: simulace chování systému vzájemným působením buněk podle určitých pravidel
+		* založené na zkoumání okolí buňky - určuje se stav buňky podle stav všech okolních buněk, tedy 1 buňka iteruje na základě svého okolí a daných pravidel
+		* př. když jsou 4 buňky okolo živé buňky mrtvé, živá buňka změní stav na mrtvou
+		* založený na **pravidle** + **poli** 1D nebo **mřížce** 2D (čtvercové, šestiúhelníkové)
+			* v GIS vstupem i výsledkem je **rastr**
+		* dle Pechance:
+			* **filtrační okno** (defult 5x5) a **reklafikační soubor**, který určuje co se v co může změnit (př. les se může změnit v pole, zástavba se nemůže změnit ve volní plochu)
+		* obecně CA
+		* typické použití: šíření požáru, šíření znečištění, růst urbanizace, klasifikace obrazu, simulace vodní hladiny, proudění vody, doprava
+		* nejčastější okolí: 
+			* Von Neumannovo (buňka + 4 okolní - kříž)
+			* Moorovo (buňka + 8 okolních - čtverec)
+			* kombinace: rozšířené Von Neumannovo (9 + 4)
+	* **Markovy řetězce** - měkká predikce (pravděpodobnost)
+		* stochastický model (náhodný)
+		* parcuje s pravděpodobností na časové ose, jaká je pravděpodobnost, že může nastav změna
+		* př. počasí: znám stav v čase t + hodnotu pravděpodobnosti přechodu 
+		* vstupem:
+			* obraz krajinného pokryvu 
+			* matice pravděpodobnosti přechodu - pravděpodobnost (0 -1), že les se změní v pole
+		* výsledkem je:
+			* matice přechodových oblastí - počet pixelů, u kolika pixelů se předpokládá, že přejdou do jiné kategorie
+	* **CA_Markov **- kombinace
+		* výsledkem ji mimo matici přechodových oblastí ještě rastr podmíněné pravděpodobnosti
+			* s jakou pravděpodobností bude každý typ krajinného pokryvu nalezen v každém pixelu po uplynutí definovaného počtu časových jednotek

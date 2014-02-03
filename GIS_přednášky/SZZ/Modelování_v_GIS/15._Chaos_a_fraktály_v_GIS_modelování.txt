@@ -17,7 +17,7 @@ Created Sobota 18 leden 2014
 	* množina stavů, do kterých systém směřuje (konečný stav)
 	* např. počasí, proudění vody
 	* __3 druhy:__ **bodový** (hvězdy a planety), **cyklický** (8), **podivný** (fraktál)
-* geometrie
+* __geometrie__
 	* dimenze - kolika parametry lze popsat těleso
 	* euklidovská geometrie - **topologická dimenze** 
 		* celočíselná dimenze (1D, 2D, 3D) 

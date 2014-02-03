@@ -5,3 +5,4 @@ Creation-Date: 2013-12-09T13:49:19+01:00
 ====== Linux ======
 Created Pondělí 09 prosinec 2013
 
+* viz drive

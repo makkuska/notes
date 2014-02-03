@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-01-18T19:30:33+01:00
+
+====== GIS technologie ======
+Created Sobota 18 leden 2014
+
+===== 5. Multiagentní systémy (MAS) =====
+* zadaný úkol vykonává více agentů (=člověk, počítač, systém, algoritmus)
+* agenti pracují na stejném zadání (společném úkolu) nezávisle - samostatně (autonomně), data jsou decentralizovaná
+	* → nakonec se vyhodnocuje podle výsledků všech agentů
+* př. více lidí hodnotí chování lidí na síti, každý vyhodnocuje jiný typ chování → výsledek se vyhodnocuje od všech agentů, tzn. pokud je prvek na síti podezřelý podle více agentů, stanoví se jako nebezpečný; naopak pokud je prvek nebezpečný jen podle jednoho agenta, vyhodnotí se jako bezpečný
+* http://cs.wikipedia.org/wiki/Multiagentní_systém

@@ -15,6 +15,6 @@ Středa 23 říjen 2013
 [*] master + 2x slave
 [*] zjistit, proč replikuje obsah né strukturu
 [ ] výsledek: tabulka
-[ ] nastudovat slony-I
+[*] nastudovat slony-I
 
 

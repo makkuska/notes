@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-01-23T17:48:10+01:00
+
+====== Konzultace ======
+Created Čtvrtek 23 leden 2014
+
+ArcSDE
+vzdálený přístup
+
+
+• Zvažovala jste použít binární replikaci která je přímo zabudovaná do PostgreSQL? Viz. např. http://bit.ly/1foswm0
+* Totiž Slony-I má některé unikátní vlastnosti (např. schopnost replikovat jen vybranou sadu tabulek), ale je to poměrně komplikovaná záležitost na konfiguraci, provoz i údržbu.
+* Čeho se **replikací snažíte dosáhnout? Spolehlivosti (mít kopii dat)? **
+* **Možnosti spouštět dotazy i na kopii**? Něco dalšího?
+
+* Ale já jsem netvrdil že binární replikace (zabudovaná přímo do PostgreSQL) je automaticky lepší než Slony-I. Já jsem se pouze zeptal zda jste zvažovala její nasazení, resp. jaké  důvody vás vedly právě k volbě Slony-I.
+* Předpokládám že **formulace požadavků** a **vyjasnění pro/proti jednotlivých replikačních** řešení bude jedním z témat praxe.
+
+* OK, takže v diplomce má být **diskutováno více variant replikace vs. různé scénáře**, a pro každý bude doporučena nějaké řešení replikace? Nebo se plánujete zaměřit na jedno replikační řešení? 
+* Každopádně bych vám ale doporučil udělat si o požadavcích vedoucího katedry jasnější představu, protože "předpokládám" nezní úplně spolehlivě.
+
+* Praktické pokusy s replikací je potřeba mít víc strojů, mezi kterými lze replikovat data apod. Budete mít něco takového k dispozici např. vzdáleně na fakultě?

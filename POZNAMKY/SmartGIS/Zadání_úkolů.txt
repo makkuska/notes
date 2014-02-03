@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-02-02T10:08:00+01:00
+
+====== Zadání úkolů ======
+Created Neděle 02 únor 2014
+
+===== Příprava dat pro archeology =====
+* 1) dgn file to shapefile, line to polygon
+* 2) vytvořit (pro vytvořená data) databázi Postgres (PostGIS)
+	* struktura db: id, název výzkumu, číslo výzkumu, číslo sondy, geometrie, editoval, datum editace
+	* 1 sonda = 1 záznam
+	* 1 výzkum - více sond

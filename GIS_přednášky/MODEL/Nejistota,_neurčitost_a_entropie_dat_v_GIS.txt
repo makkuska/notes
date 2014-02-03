@@ -32,14 +32,14 @@ Creation-Date: 2014-01-12T20:34:40+01:00
 			* **původ** (zdroje dat, zodpovědné osoby), **rodokmen** (zdrojový materiál, ze kterého byla data odvozena)
 			* **použitelnost**, metakvalita
 * __entropie__
-  * veličina udávající **"míru neuspořádanosti"** zkoumaného systému
-  * množství neurčitosti, které je spojeno s daným jevem a zároveň: jaké množství informace je nutné dodat, abychom tu nevědomost odstranili
-  * kolik informace musí být dodáno k pochopení problému
-  * E. Shannon - významný matematik, elektronický inženýr a zakladatel teorie informace, která zkoumá možnosti komprese informace a metody rychlého a kvalitního přenosu informace
-    * formulovat pojem entrofie
-  * **Míra entropie** kvantifikuje množství informace ve zprávě.
-    * příkladem může být i mapa, která může nést velké množství informace
-  * použití v GIS
-    * pomocí entropie hodnotit stupeň uspořádanosti a vzájemné shody prostorových jevů
-      * příklad: optimální intervaly kvantitativních stupnic 
-    * hodnocení závislosti prostorových jevů, proměnlivosti jevů v území
+	* veličina udávající **"míru neuspořádanosti"** zkoumaného systému
+	* množství neurčitosti, které je spojeno s daným jevem a zároveň: jaké množství informace je nutné dodat, abychom tu nevědomost odstranili
+	* kolik informace musí být dodáno k pochopení problému
+	* E. Shannon - významný matematik, elektronický inženýr a zakladatel teorie informace, která zkoumá možnosti komprese informace a metody rychlého a kvalitního přenosu informace
+		* formulovat pojem entrofie
+	* **Míra entropie** kvantifikuje množství informace ve zprávě.
+		* příkladem může být i mapa, která může nést velké množství informace
+	* použití v GIS
+		* pomocí entropie hodnotit stupeň uspořádanosti a vzájemné shody prostorových jevů
+		* příklad: optimální intervaly kvantitativních stupnic 
+		* hodnocení závislosti prostorových jevů, proměnlivosti jevů v území
