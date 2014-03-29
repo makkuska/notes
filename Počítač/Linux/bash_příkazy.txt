@@ -11,6 +11,8 @@ Created Pondělí 23 září 2013
 * **route21/route20**
 * **clear**
 
-Dokumenty2externi; Dokumenty2Server -- musím být root
-* /home/market/bin/Dokument2Server
-* /home/market/.bashrc    .vimrc   text.vim — configuráky
+* **Dokumenty2externi;** Dokumenty2Server -- musím být root
+	* /home/market/bin/Dokument2Server
+	* /home/market/.bashrc    .vimrc   text.vim — configuráky
+
+

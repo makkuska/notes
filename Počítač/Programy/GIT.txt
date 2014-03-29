@@ -5,6 +5,11 @@ Creation-Date: 2013-10-09T18:49:27+02:00
 ====== GIT ======
 Created Středa 09 říjen 2013
 
+===== Pro GIT =====
+http://git-scm.com/
+cool stránky, videa, kniha, návody
+
+- - - -
 https://help.github.com/
 kurz CodeSchool Git Real
 * configurace GIT
@@ -19,8 +24,9 @@ kurz CodeSchool Git Real
 * **git commit -a -m "bla"**
 	* = git add + git commit -m "bla"
 * ''git reset -- soft HEAD^ '' - vrátí soubory před jedním commitem
-* git reset - - hard HEAD^^  - vrátí a úplně smaže soubory před 1. i 2. commitem
-* git commit  - - amend -m "bla"
+* **git reset** - - hard HEAD^^  - vrátí a úplně smaže soubory před 1. i 2. commitem
+* **git rm** '*txt' — smaže všecky soubory ze souboru i na gitu
+* **git commit  - - amend -m** "bla"
 	* přidá do předchozího commitu
 * git remote -v
 	origin	git@github.com:makkuska/solanska-ucetnictvi.git (fetch)

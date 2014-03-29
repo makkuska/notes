@@ -1,7 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-01-13T23:58:02+01:00
-
 ====== Diplomka ======
 Created Neděle 13 leden 2013
 
@@ -32,6 +28,7 @@ Práce na diplomce:
 		12,26, 27.8, - MS SQL Server 2008
 * praktická část: 
 	* 4-15.11 Szeged
+	* 6.2. Konference Postgres
 	* 10-14.2 Vondra
 * kapitoly:
 	[ ] Úvod

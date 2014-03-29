@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-02-04T11:18:07+01:00
+
+====== 8.KDO ======
+Created Úterý 04 únor 2014
+
+http://kartoxgrafickyden.upol.cz/
+přístupové heslo: sn26en9
+
+Je potřeba:
+- založit záložku 8. KDO
+- napsat tam:
+Tradiční setkání kartografů se letos uskuteční v rámci konference CARTOCON2014. Odborný seminář Kartografický den, tentokrát se zaměřením na statistiku a vizualizaci statistických dat, se uskuteční v pátek 28. 2. 2014 v prostorách NH hotelu v Olomouci v čase od 9.00 do 14.30 hodin. ''Registrace'' na seminář je k dispozici prostřednictvím stránek CARTOCON2014 (fungující link přímo na registraci) s tím, že pokud se chcete zúčastnit pouze pátečního semináře, prosíme o zaškrtnutí příslušného dne účasti v registračním formuláři.
+
+Účast na akci je bezplatná. Program bude probíhat v anglickém jazyce.
+
+A k programu dej, že bude v nejbližších dnech upřesněn.
+
+V kontaktech, prosím, uprav adresu na moji školní, tj. alena.vondrakova@upol.cz
+
+Mělo by to být tak, že všude bude najíždět nový ročník KDO. Samozřejmě opravit i termín copyrightu apod.
+
+
+ .linux /live/vmlinuz1 boot=live config memtest noapic noapm nodma nomce nolapic nomodeset nosmp nosplash vga=normal initrd=/live/initrd1.img

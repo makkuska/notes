@@ -10,6 +10,7 @@ Created Pondělí 23 září 2013
 	* pro groupu: chown -R www-data:www-data www/
 * **chmod -R [číslo]**
 	* 775 
+	* xrw xrw xr
 	birnárně
 	001 >1;
 	010 > 2;
@@ -18,6 +19,5 @@ Created Pondělí 23 září 2013
 	101 > 5;
 	110 > 6;
 	111 > 7;
-{{./diagram001.png?type=diagram}}‌‬‫*
-Kopírování z počítače do počítače
-* scp -r nazev_slozky jakub(uzivatel) market@192.168.0.103:home/market/slozka
+* kopírování z počítače do počítače
+	* scp -r /cesta/nazev_slozky market@192.168.0.103:home/market/slozka

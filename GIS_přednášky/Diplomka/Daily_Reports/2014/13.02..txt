@@ -1,0 +1,77 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-02-13T12:30:58+01:00
+
+====== 13.02. ======
+Created Čtvrtek 13 únor 2014
+
+* **pgpool**
+	* __výhody:__
+		* load balance
+		* jednodušší na nastaní pro uživatele (přihlásí se na jednu db a nezajímá je, zda jen dělají jen select nebo i create/update
+	* __instalace __
+		i  A	**libpgpool0						**- pgpool control protocol library                                                  
+		i   	**pgpool2						**- connection pool server and replication proxy for PostgreSQL                      
+		u   	**postgresql-9.3-pgpool2		**- connection pool server and replication proxy for PostgreSQL - modules   
+	* __vytvoření hesla__ (více viz PostgreSQL Replication, str. 152)
+		* **pg_md5 -p**
+			   //password: <your password>//
+			   vypíše heslo v hashi, které se překopíruje do souboru **pcp.conf** ve formátu **username:[password encrypted in md5]**
+				př. market:098f6bcd4621d373cade4e832627b4f6
+		* soubor **pcp.conf** ve složce ///etc/pgpool/pcp.conf   —   //pokud tam není, tak hledat //locate pcp.conf.sample//
+	* __configurace pgpool__ (víc viz PostgreSQL Replication, str. 149)
+		* pokud chceme nastavovat __Master/Slave Mode__, pak je ideální překopírovat šablonu přednastavenou pro tento mód
+			* ve složce /etc/pgpool/ soubory pcp.conf, pgpool.conf, pg_hba.conf
+			* //locate pgpool.conf.sample-master-slave.gz  —  //překopírovat jej pod názvem **pgpool.conf** do ///etc/pgpool/  //
+			* v souboru **pgpool.conf **editovat řádky:
+			listen_addresses = 'localhost'
+			port = 9999  		# 9999 pak bude port, který se budou do databáze připojovat klienti, místo 5432
+			pcp_port = 9898 	# 9898 je port pro admina
+			 - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - 
+			# tato část nastavuje jednotlivé nody (databáze)
+			# node0 — **master server** — p 5436
+				backend_hostname0 = 'localhost' 		# Host name or IP address to connect to for backend 0
+				backend_port0 = 5436                                  # Port number for backend 0
+				backend_weight0 = 1					# Weight for backend 0 (only in load balancing mode)
+				backend_data_directory0 ='/var/lib/postgresql/9.3/main'
+	                               backend_flag0 = 'ALLOW_TO_FAILOVER'
+
+                               # node1 — **slave1 server** — p 9311
+				backend_hostname1 = 'localhost'
+				backend_port1 = 9311
+				backend_weight1 = 1
+				backend_data_directory1 = '/var/lib/postgresql/9.3/slave1'
+				backend_flag1 = 'ALLOW_TO_FAILOVER'
+			# node2 — **slave2 server** — p 9322
+				backend_hostname2 = 'localhost'
+				backend_port2 = 9322
+				backend_weight2 = 1
+				backend_data_directory2 = '/var/lib/postgresql/9.3/slave2'
+				backend_flag2 = 'ALLOW_TO_FAILOVER'
+	* __spuštění pgpool__
+		* /etc/init.d/pgpool2 start|status|stop
+			* pustí demona
+		* pgpool -f /etc/pgpool2/pgpool.conf -F /etc/pgpool2/pcp.conf -n -d
+			* -d debug (=včetně výpisu chyb), -n nespouští jako demon (= v pozadí)
+			* bez -d -n je příkaz stejný jako init.d skript
+	* __pcp_node_count__
+		* market ~ # pcp_node_count 30 localhost 9898 market test
+		* 3
+	* __pcp_node_info__
+		* market ~ # pcp_node_info 30 localhost 9898 market test 0
+		* localhost 5436 1 0.333333
+		* market ~ # pcp_node_info 30 localhost 9898 market test 1
+		* localhost 9311 1 0.333333
+		* market ~ # pcp_node_info 30 localhost 9898 market test 2
+		* localhost 9322 1 0.333333
+	* __pcp_pool_info __
+		* market ~ # pcp_pool_status 30 localhost 9898 market test 
+	* __co nastavit__
+		* **delay_threshold**
+			* log_standby_delay = 'if_over_threshold' # if_over_threshold, none
+			* delay_threshold = 10000000
+			* delay_threshold defines the maximum lag a slave is allowed to have to still receive reads. The setting is defined in bytes of changes inside the XLOG. So, if you set this to 1024 a slave is only allowed to be 1 KB of XLOG behind the master. Otherwise it will not receive read requests.
+			* Tam kde potřebuješ aby data byla na replice velice brzo (typicky když vytváříš profil na webu), nastavíš menší delay.
+
+
+

@@ -8,8 +8,7 @@ Created Čtvrtek 23 leden 2014
 ArcSDE
 vzdálený přístup
 
-
-• Zvažovala jste použít binární replikaci která je přímo zabudovaná do PostgreSQL? Viz. např. http://bit.ly/1foswm0
+* Zvažovala jste použít binární replikaci která je přímo zabudovaná do PostgreSQL? Viz. např. http://bit.ly/1foswm0
 * Totiž Slony-I má některé unikátní vlastnosti (např. schopnost replikovat jen vybranou sadu tabulek), ale je to poměrně komplikovaná záležitost na konfiguraci, provoz i údržbu.
 * Čeho se **replikací snažíte dosáhnout? Spolehlivosti (mít kopii dat)? **
 * **Možnosti spouštět dotazy i na kopii**? Něco dalšího?

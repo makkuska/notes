@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-02-06T11:39:04+01:00
+
+====== 06.02 ======
+Created Čtvrtek 06 únor 2014
+
+* Konference Postgresql Developers Day
+	* __Slony-I__
+		* **trigger-based** (logická) 
+			* trigger pouze pro změny v databázi (ne pro create a další)
+			* každé tabulce se nastaví triggery, aby když se něco změní, spustilo kopírování
+		* replikace vždy asynchronní
+		* hot stanby=je možno se kdykoliv dotazovat (x cold, warm)
+		* umožňuje kaskádovou replikaci
+		* data musí být před spuštěním databáze konzistentní (dump, pak omit copy = data už jsou zkopírovaná)
+		* switchover (změna rolí)
+		* failover (povýšení standby na master)
+		* nereplikuje změny schématu - modify set, execute script spuštěn na všech nodech clusteru, create set merge set .. 
+		* vše se zapisuje 2x, jednou do tabulek (schématu) Slonyho
+		* hot standby - 100% execution safe - dlouhý dotaz vždy doběhne
+	* __Streaming repl Postgre__
+		* **log shipping replikace** - přenáší se transakční log - binární log → stejná verze a architektura (rychlejší)
+		* přenáší se bitová data, né SQL příkazy
+		* bootstrap standby server = konzistentní kopie adresáře s datovými soubor
+		* nástroj pg_basebackup (závislý na architektuře), rsync
+		* rychlé, jednoduché :)
+		* switchover neexistuje
+		* failover pg_ctl promote na standby 
+		* replikuje vše DDL, DML změny
+		* hot standby - not 100% safe

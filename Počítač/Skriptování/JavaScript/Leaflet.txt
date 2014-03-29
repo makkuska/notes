@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-03-20T13:21:22+01:00
+
+====== Leaflet ======
+Created Čtvrtek 20 březen 2014
+
+* český souřadnicový systém
+	var crs5514 = new L.Proj.CRS('EPSG:5514',  '+proj=krovak +lat_0=49.5 +lon_0=24.83333333333333 +alpha=30.28813972222222 +k=0.9999 +x_0=0 +y_0=0 +ellps=bessel +towgs84=589,76,480,0,0,0,0 +units=m +no_defs', { } );
+           console.log(crs5514.code);
+* WGS84	     
+	var crs4326 = L.CRS.EPSG4326; fakt tak???
+* default 3395 ?? tak?

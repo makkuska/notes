@@ -12,7 +12,7 @@ Created Čtvrtek 16 únor 2012
 
 	* 102067 změna na **5514**
 * **teď: **#JTSK / Krovak 5513
-	  <5513> +proj=krovak +lat_0=49.5 +lon_0=24.83333333333333 +alpha=0 +k=0.9999 +x_0=0 +y_0=0 +ellps=bessel +towgs84=589,76,480,0,0,0,0 ;+units=m +no_defs  <>
+	  <5513> +proj=krovak +lat_0=49.5 +lon_0=24.83333333333333 +alpha=0 +k=0.9999 +x_0=0 +y_0=0 +ellps=bessel +towgs84=589,76,480,0,0,0,0 ;+units=m k+no_defs  <>
 * **extent: ** #EXTENT [minx][miny][maxx][maxy] #######
 		  #EXTENT -555336 -1128909 -534603 -1113135  #z,j,v,s  s-jtsk krovak east-north (epsg: 102067)
 		  #EXTENT  -9.717 35.01 56.358 66.317 #WGS84 Evropa

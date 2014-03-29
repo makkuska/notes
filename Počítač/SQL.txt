@@ -10,7 +10,7 @@ Created Pátek 23 březen 2012
 	* datové typy: varchar(), int(), date
 * create TABLE pokus as select the_geom from tlinie where id=1;
 	SELECT 1
-	postgisdatabaze=# select * from pokud;
+	postgisdatabaze=# select * from pokus;
 
 * __SELECT * FROM 'nazevtabulky'  order by 'atribut' ASC/DESC;__
 	* __WHERE 'nazevatributu'=hodnota or 'nazevatributu'=hodnota;__

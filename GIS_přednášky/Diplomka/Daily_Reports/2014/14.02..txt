@@ -1,0 +1,59 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-02-14T10:57:08+01:00
+
+====== 14.02. ======
+Created Pátek 14 únor 2014
+
+* pro replikaci **nejméně 3 node** - vždy chceme mít potřebujeme zálohu a kdychom měli jen 2 nody a vypadl by server, pak bychom, ikdyž na krátkou dobu neměli data zálohovaná
+
+* __co testovat__
+	* u synchroní replikace zpomalení vlivem latence sítěvlivem čekání na potvrzení zápisu na slavu
+	* u asynch LAG 
+	* (neřešit zátěž na masterovi kvůli replikaci)
+	* pgpool jak dobře loadbalancuje (viz obr papír 3)
+	* pgbench RW x RO, (master x slave) x pgpool
+* __pgbench__
+	* naistalovat balíček: postgresql-contrib-9.3 
+	* pgbench simuluje počet transakcí za nějakou dobu dle parametrů
+	* průběh:
+		* 1. inicializace:
+			* createdb pgbench 
+				* createdb -p 9999 -h localhost pgbench
+				* create table y as select i from generate_series(1,100000) s(i);
+			* pgbench -i (=inicializace) -s 1 (1 ~ db 15 MB) nebo 10 (~ 150 MB)
+				* /usr/lib/postgresql/9.3/bin/pgbench -i -s 10 -p 9999 -h localhost pgbench
+				* /usr/lib/postgresql/9.3/bin/pgbench -p 9999 -h localhost pgbench -T 30
+				* /usr/lib/postgresql/9.3/bin/pgbench -p 5436 -h localhost pgbench -T 30 -S
+				* zkusit pro 9999 i 5436 a porovnat rozdíl
+		* 2. testování
+			* pgbench -c 8 -T 60 -S -f
+				* c = počet uživatelů, má smysl testovat počet uživatelů podle velikosti RAM
+					* 8 procesorů ~ -c 8
+				* T 60 = čas 60s
+				* S =  pouze RO
+				* f = vlastní SQL skript (možno napsat skript, který používá i PostGIS)
+	* co testovat:	
+		* rychlost trs
+		* 1. spustit pgbech pro RW pro  pgpool x pro master a zjistit rozdíl
+		* 2. spustit pgbench pro RO pro pgpool a slave a zjistit rozdíl
+			* pak pgbench -c 24, když mám 8mi procesorové počítače a 3 slavy
+			* x pgbench -c 8 pro jeden slave
+		* ideálně pgpool by měl znásobit počet transakcí o třetinu, ale :)
+		* → zjištění jak dobře pgpool loadbalancuje
+		* pgpoolu nějakou dobu trvá než vyhodnotí příkaz, takže to trochu zpomaluje, pak záleží na tom, jak velké dotazy do něj posíláme
+		* zjistit, co za příkazy dělá ArcGIS, zjistit velikosti db na školních serverech — podle toho něco usuzovat
+			* pro zjištění typů příkazů ArcGISu je možné nastavit log-min-duration-statement, ten dělá log buď žádných, nebo všech nebo déle trvajících přikazů 
+	* pro RO by nemělo docházet ke zpomalení přenosu transakcí vlivem replikací u synchroní ani u asynchroní replikace
+	* v případě RW nemá vliv asynchroní replikace pro rychlost transakcí, ale synchroní ano, protože se čeká až se zapíše na slave
+	* zkusit pohledat gis pg_bench
+
+vyzkoušet
+[*] asynchroní replikace
+[ ] synchroní replikace
+[*] failover replikace
+[*] kaskádová replikace
+[*] pgpool
+[ ] failover pgpool
+[*] pgbench
+[ ] pg_basebackup

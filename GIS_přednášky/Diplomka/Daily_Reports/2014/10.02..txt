@@ -1,0 +1,56 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-02-10T11:35:36+01:00
+
+====== 10.02. ======
+Created Pondělí 10 únor 2014
+
+* **nastavení fyzické built-in replikace**
+	* postgresql.conf na master
+		wal_level = hot_standby
+		max_wal_senders = 1
+		#hot_standby = on	
+		#hot_standby_feedback = on
+	* postgresql.conf na slave (wal_levl a max_level sender může zůstat stejný i na slave, kdyby master vypadl a měl se začít používat slave jako master)
+		wal_level = hot_standby
+		max_wal_senders = 1
+		hot_standby = on	
+		hot_standby_feedback = on
+* 1. **pg_ctlcluster**
+	* Usage: /usr/bin/pg_ctlcluster <version> <cluster> <action>
+	* market 9.1 # pg_ctlcluster 9.1 slave start
+	* (nepoužívat /etc/init.d/postgresql na Debianu, protože má vlastně pg_ctlcluster)
+* 2. **/etc/postgresql/9.1/{název} **
+		→ main
+		→ slave
+	__postgresql.conf__ (**master**)
+		data_directory = '/var/lib/postgresql/9.1/main'
+		hba_file = '/etc/postgresql/9.1/main/pg_hba.conf
+		ident_file = '/etc/postgresql/9.1/main/pg_ident.conf
+		?? unix_socket_directory = '/var/run/postgresql/9.1-clon'
+		wal_level = hot_standby
+		max_wal_senders = 1
+		#hot_standby = on	
+		#hot_standby_feedback = on
+	**úprava** __postgresql.conf__ (**slave**)
+		data_directory = '/var/lib/postgresql/9.1/slave'
+		hba_file = '/etc/postgresql/9.1/slave/pg_hba.conf
+		ident_file = '/etc/postgresql/9.1/slave/pg_ident.conf
+		?? unix_socket_directory = '/var/run/postgresql/9.1-clon'
+		#wal_level = hot_standby
+		#max_wal_senders = 5
+		hot_standby = on	
+		hot_standby_feedback = on
+	**úprava** __pg_hba.conf__ (**main**)
+		local   replication     backup                               trust
+		host	replication	backup		127.0.0.1/32		trust
+* 3. data /var/lib/postgresql/9.1/**{název} **
+		→ main
+		→ slave
+	* ve slave **recovery.conf**
+* __důvody pro replikace (nastaveno pro katedru)__
+	* 1. **offloading** (přesun) pro read-only aplikace (přesun na repliku pro WebMapApp) - 100%R-O
+	* 2. **přesun zálohy na repliku**, pak i dumpy dělat z repliky, snížení zátěže
+	* 3. **failover/high availibility** - v případě výpadku serveru
+	* pro studijní účely nevymýšlet žádnou replikaci, prostě vytvořit další databází, na kterou budou moc studenti přistupovat, a data, která tam potřebuju, tak tam prostě dump/restore pošlu - když budu chtít testovací data promazat, pak je smazat
+	* pro stálá data, co se nemění (kraje, okresy) a data pro externí aplikace má smysl replikovat a když můžou uživatelé jen číst, pak jim udělat přístup jen na slave

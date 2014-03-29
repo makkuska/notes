@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-02-04T11:26:53+01:00
+
+====== Web Barbary Petchenik ======
+Created Úterý 04 únor 2014
+
+2. web Barbary Petchenik - musí vzniknout úplně nový
+Chtěla bych to jako WordPress - ukázka viz Mapa roku (http://www.geoinformatics.upol.cz/mapa_roku)
+Jakmile bys to připravila, tak to přehrajeme na stránky katedry přes Rosťu Nétka.
+
+Design - trošku barevnější a "dětštější" než Mapa roku. Ta je jednoduchá a strohá, tady ať je toho víc. Pěkné je třeba http://wordpress.org/themes/responsive
+
+Nasdílela jsem Ti složku s obrázkama za rok 2013 - ty by měly jednak přijít do fotogalerie ročníku 2013, ale hlavně je můžeš použít k nějaké ilustraci apod.
+
+Záložky:
+Úvod
+Pravidla soutěže
+Aktuální ročník
+Historie - založit ročník 2013, 2011 a "do roku 2009"
+Fotogalerie - ročník 2013 a 2011
+Kontakt a přihláška
+
+Jakmile to bude takto předchystané, tak já uuuž tam pak naházím asi texty sama. Takže chci pěknou šablonu, s pěkným záhlavím (můžeš vytvořit nějakou koláž z těch obrázků nebo něco, co se bude hodit, jak chceš).

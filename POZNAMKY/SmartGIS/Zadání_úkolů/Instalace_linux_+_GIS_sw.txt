@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-03-12T12:06:14+01:00
+
+====== Instalace linux + GIS sw ======
+Created Středa 12 březen 2014
+
+aptitude install postgis
+aptitude install postgresql
+aptitude install apache2
+aptitude install pgadmin3
+aptitude install mapserver, geoserver
+aptitude install 
+ 

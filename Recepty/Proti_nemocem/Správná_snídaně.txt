@@ -1,0 +1,35 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-03-09T12:24:41+01:00
+
+====== Správná snídaně ======
+Neděle 09 březen 2014
+
+* Úvod:
+	* Pokud si dáme na __snídani__ karbohydráty jako je **pečivo s máslem, jogurt s müsli a kávou nebo časem**, při trávení se hned __přemění na cukry__
+	* **Přebytek cukru** organismus odstraní tak, že jej __přemění na tuk__.
+	* → __Výsledkem__ je snížení hladiny cukru v krvi, což nám způsobuje pocit hladu a chuť na sladké. A znovu sáhneme po sušenkách, koblihách, sladkých nápojích.
+	* To vše způsobuje kolísající hladinu cukru. 
+	 {{./pasted_image001.bmp}}{{./pasted_image002.bmp}}
+* Pro správnou snídani, ale i regulaci stravy během dne:
+	* __snižte__ přísun **nesprávných karbohydrátů** jako jsou:
+		* brambory, těstoviny, chléb, rýže, sušenky, sladkosti, křupky, pečivo, buchta
+	* __zvyšte__ přísun **správných karbohydrátů** jako jsou:
+		* zelené fazolky, oranžová paprika, červené zelí
+	* __nahraďte__ karbohydráty **vlákninou a proteinem**
+	* __zvyšte__ přísun **vlákniny**:
+		* pomáhá dodat pocit plnosti, nedovolí pocit hladu
+		* obsahuje vitamíny a minerály
+		* pomáhá při trávení, a eliminaci odpadových látek v těle
+		* vytváří rovnováhu ve střevech
+		* **hodně vlákniny obsahuje zelenina a ovoce**
+		* nedostatek vlákniny může zpomalit vylučovací proces, tělo se může přetížit toxiny a zvyšovat se nadváha
+	* __snižte__ přísun **nesprávného** **proteinu **jako jsou:
+		* steaky, vejce, sýr nebo smetana
+	* __zvyšte__ přísun **správného** **proteinu **jako jsou:
+• **kuřecí** nebo **červené maso, ryby, tofu**
+• **proteinový nápoj**
+	* __snižte__ přísun **nesprávných tuků **jako jsou: 
+		* sušenky, pečivo, čokoláda, buchta
+	* __zvyšte__ přísun **správných tuků** jako jsou:
+		* **ořechy, semena, ryby** (sardinky, makrely, losos, tuňák)

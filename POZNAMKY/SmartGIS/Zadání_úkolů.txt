@@ -6,8 +6,43 @@ Creation-Date: 2014-02-02T10:08:00+01:00
 Created Neděle 02 únor 2014
 
 ===== Příprava dat pro archeology =====
-* 1) dgn file to shapefile, line to polygon
-* 2) vytvořit (pro vytvořená data) databázi Postgres (PostGIS)
-	* struktura db: id, název výzkumu, číslo výzkumu, číslo sondy, geometrie, editoval, datum editace
-	* 1 sonda = 1 záznam
-	* 1 výzkum - více sond
+[x] dgn file to shapefile, line to polygon
+[*] __vytvořit databázi __Postgres (PostGIS) → **archeo**
+	[*] tabulka **sondy**
+		* struktura tb: id, název výzkumu, číslo výzkumu, číslo sondy, geometrie, editoval, datum editace
+		* polygon
+		* 1 sonda = 1 záznam
+		* 1 výzkum - více sond
+	[*] tabulka **skelety**
+		* struktura tb: id, orientace (JV, SV, Z,.. - číselník), pohlaví (muž x žena), stáří (text, př. 14-24)
+		* multiline postGIS - QGIS
+	[*] tabulka **lokalita**
+		* struktura tb: id, název_lokality, určil (text), datum určení (date)
+		* polygon
+[ ] __QGIS__
+	[*] **sondy**
+		[*] na**digitalizovat** data
+		[*] do properties všech vrstev nastavit chování jednotlivých atributů
+		[*] vytvořit **symbologii** 
+		[*] label - různý zoom
+	[*] lokalita
+		[*] nakreslit lokalitu
+		[*] nastavit chování atributů při vytváření
+		[*] vytvořit **symbologii**
+		[*] label - různý zoom
+	[*] skelety
+		[*] nakreslit vzorového kostlivce (kostlivec 1), podle obrázku z netu
+		[*] nastavit chování atributů pro vytváření
+		[*] skeleton viditelný až při velkém přiblížení
+		[*] label - různý zoom
+	[ ] přidat **podkladové vrstvy**
+		[*] KN čuzk
+		[*] ZM 1:10tis. čuzk
+		[*] ortofoto
+		[*] QGIS cache tile
+			* Options → Network → Cache settings
+	[ ] __připravit komplet projekt, včetně ikonek ??__
+[ ] __Leaflat__
+	* vytvořit jednoduché rozhraní v Leaflet
+[ ] zjistit informace o QGIS Cloud
+[ ] zjistit informace o QGIS for Arndroid, vyzkoušet

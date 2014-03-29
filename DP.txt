@@ -1,6 +1,9 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
-Creation-Date: 2013-01-13T23:58:02+01:00
+Creation-Date: 2014-03-29T18:05:07+01:00
+
+====== DP ======
+Created Sobota 29 březen 2014
 
 ====== Diplomka ======
 Created Neděle 13 leden 2013
@@ -34,25 +37,35 @@ Práce na diplomce:
 	* 4-15.11 Szeged
 	* 10-14.2 Vondra
 * kapitoly:
-	[ ] Úvod
+	[*] Úvod
 	[ ] 1 CÍLE PRÁCE
 		* Opis zadání + jeden odstavec mého přínosu
 	[ ] 2 POUŽITÉ METODY A POSTUPY PRÁCE
 		* Napsat úplně nakonec, v rozsahu 1 stránky.
 	[ ] 3 TEORETICKÁ VÝCHODISKA
-		[ ] 3.1 Použité programové prostředky
-			[*] (Co je Esri platforma)
-			[ ] 3.1.1 SQL Server Express 2008
-			[*] 3.1.2 PostgreSQL 9.x (PostGIS)
-			[*] 3.1.3 ArcSDE geodatabase
-		[ ] 3.2 Použité postupy
+		[*] Databáze, geodatabáze, geodata
+		[ ] 3.1 Vymezení pojmů
 			[ ] 3.2.1 Replikace
 			[ ] 3.2.2 Synchronizace
 			[ ] 3.2.3 Verzování
-		[ ] 3.3 Geodata
-	[ ] 4 VÝSLEDKY
-	[ ] 5 DISKUZE
-	[ ] 6 ZÁVĚR
+		[*] 3.2 ArcGIS produkty
+		[*] 3.3 Použité programové prostředky
+			[*] 3.3.1 PostgreSQL 9.x (PostGIS)
+			[*] 3.3.2 SQL Server Express 2008
+			[*] 3.1.3 ArcSDE geodatabase
+		[ ] 3.4 Příprava prostředí pro testování
+			[ ] 3.4.1 Konfigurace
+	[ ] 4 NÁVRCH A IMPLEMENTACE REPLIKACE
+		[ ] 4.1 Návrch možných replikačních řešení
+		[ ] 4.2 Připojení produktů ArcGIS k databázi PostgreSQL
+		[ ] 4.3 Implementace replikace
+			[ ] 4.3.1 Slony-I replikace
+			[ ] 4.3.2. Built-in replikace
+			[ ] 4.3.3 pg-pool - podpora load-balancing
+			[ ] 4.3.4 SDE
+	[ ] 5 TESTOVÁNÍ
+	[ ] 6 DISKUZE
+	[ ] 7 ZÁVĚR
 	Zkratky
 	ZDROJE
 

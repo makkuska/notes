@@ -5,6 +5,9 @@ Creation-Date: 2012-03-09T21:54:51+01:00
 ====== JavaScript ======
 Created Pátek 09 březen 2012
 
+
+ 
+
 * function has **()**; 
 * function name (parameters) {instructions}
 * function name (parameters) {
@@ -15,34 +18,96 @@ Created Pátek 09 březen 2012
 	confirm(); - true x false
 	prompt(); - return string
 * object functions:
-	* string
+	* string methods
 		"BLA".toLowerCase();
 		.toUpperCase();
 		.charAt(//číslo//);
 		.replace("//co//", "//čím//");
 		.split("//čím//") 
 		"blaklahla".substring(0,3) → bla
+		pop, push
+			        var pole = ["one", "two", "three", "four"];
+			        console.log(pole);
+			        pole.pop();
+			        console.log(pole);
+			        pole.push("four");
+			        console.log(pole);
+			        pole.push("five");
+			        console.log(pole);
+		.split(" "); → rozdělí mezerou a uloží do array
+			phrase = "Ahoj, Kubo.";
+			phrase.split(" ");
+				 | 0 | Ahoj,  |
+				 | 1 | Kubo. |
+		.indexOf("string");
+			phrase.indexOf("Kubo");
+			→ 6  | hledá první písmeno hledaného slova
+		.slice(start position, lenght);
+			phrase.slice(7,2) → Ku
+		podobné .substring() .substr()
+		comparison
+			strin1 == string2
+			string1.toLowerCase() != string2.toLowerCase()
+
+			
 	* number
 		parseInt("123 bla"); -> 123
 		.toString();
+		Number() - změní string v číslo pokud to jde
+			— není to číslo?
+			if (isNaN(Number("55")) {
+				console.log("It's not a number");
+			} → true x false
+			— je to číslo?
+			if (!isNaN(Number("55")) {
+				console.log("It's not a number");
+			} → true x false
+		**math**
+			Math.round(x)
+			Math.max(x, y);
+			Math.random, 
+			Math.PI 
+			...
 	* array
 		var x = ["one","two","three"]
 		x[2]="three"
 		x.lenght
 		x.reverse(); 
-		
-
-
-
+		x.pop('four') → ["one","two","three", "four"]
+* zjištění typu **typeof** 		
+	* var num = 34;
+	* console.log(typeof num)
+	* → number (string, undefined, object)
 * document.write();
-* získat den: new Date → getDate (var d = new Date; var date=d.getDate();)
-* získat hodinu: new Date → getHour (var d = new Date; var date=d.getDate();)
-* if () {} else if {} else {}
+* console.log()
+* date
+	* new něco ==> object
+	* new Data(year,month,day,hours,minutes,seconds);
+	* získat den: new Date → getDate (var d = new Date; var date=d.getDate();)
+	* získat hodinu: new Date → getHour (var d = new Date; var date=d.getDate();)
+	* if () {} else if {} else {}
+	* var today=New Date();
+		* getMothods
+			* today.getMonth() - zero based
+			* today.getFullYear
+			* today.getData() - day of the month (1-31)
+			* today.getDay() - den (1-7)
+			* today.getTime() in milliseconds
+			* today.getHours (0-23)
+		* set methods
+			* .setMonth(5);
+			* .setFullYear(2014);
+			* .setDay(1);
+		* NE if (date1==date2)	
+			* ALE date1.getTime() ==date2.getTIme()
+	* var myDate = new Date(1989, 10, 04);
+	*
 * switch:
 	* switch (theDay) {
 		case 5: document.write("<b>Finally Friday</b>");
 		  break;
 		default: document.write("<b>I'm really looking forward to this weekend!</b>");  }
+
 * <input type="button" onclick="show_confirm()" value="Show confirm box" />
 	* alert("sometext");
 	* výběr ano ne - confirm("Opravdu do chceš");

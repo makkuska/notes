@@ -1,0 +1,39 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-02-10T23:25:37+01:00
+
+====== 11.02. ======
+Created Pondělí 10 únor 2014
+
+* __failover__
+	* v **recovery.conf** slave serveru je příkaz:
+		* trigger_file = 'failover.now'
+	* aby se slave změnil v mastera, stačí, aby soubor exitovat - takže pokud vypadne master, jen založím prázdný soubor s tímto názvem a tím zajistím, aby se ze slavu stal master
+	* pokud bych chtěla jiné nastavovky, můžu do souboru napsat něco :)
+* __cascade replication__
+	* zajistím pouze tím, že v **recovery.conf** nastavím jiný port, resp. nastavím port slave serveru a né mastera
+	* př. slave 1 
+		* port 9111
+		* primary_conninfo='host=localhost user=postgres password=dosys' (bez portu DEFAULT 5432 tedy master)
+	* př. slave 2
+		* port 9122
+		* primary_conninfo='host=localhost port=9111 user=postgres password=dosys' 
+* __archive_command__ (kopie dat se dělá z datadir do datadir, když však trvá dlouho, podívá se slave do WAL a zjistí, jaké změny se provedly v průběhu kopírování, když však kopírování trvalo tak dlouho, že se zaplnilo všechno místo ve WAL logu, je vhodné mít zaplé archivování, aby si mohla replika starší hodnoty vzít z tama)
+	* na master: //postgresql.conf// **archive_mode = on**, **archive_command = 'cp -i %p /var/lib/postgresql/9.1/archive/%f'**
+		* ideálně zkopírovat na jiný server, minimálně jiný cluster, pro případ, že by master spadl
+		* pozor na práva - složka archive musí mít práva postgres, aby to tam mohl postgre kopírovat
+	* na slave: //recovery.conf// **restore_command='cp /var/lib/postgresql/9.1/archive/%f %p'**
+* pg_revint - udělat z mastera, co spadl a ztratil svou master roli aspoň slave
+	* jinak pg_start_backup - rsync - pg_stop_backup
+* 2 pc - veřejná IP, neveřejná IP
+
+* troška teorie, otázky a odpovědi: 
+	* asynchronous i synchrous jsou streaming? 
+		* ano
+	* file-based (=log-shipping) - WAL (transaction LOG) se ukládá do archive, používala se ještě dřív než začla streaming replikace
+	* co je PITR?
+	* vyzkušet synchronní replikace, jen jeden příkaz?
+	* pgpool
+
+
+

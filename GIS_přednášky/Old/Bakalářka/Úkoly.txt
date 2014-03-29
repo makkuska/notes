@@ -53,7 +53,7 @@ Created Pondělí 17 říjen 2011
 [*] Editace atributů
 [ ] po kliknutí se bod překreslí ve vektorovou vrstvu http://openlayers.org/dev/examples/getfeatureinfo-control.html
 [*] přidat edit, reshape, drag, modify
-[ ] do 7.8. webovky
-[ ] do 14.8. napsat text bp
+[*] do 7.8. webovky
+[*] do 14.8. napsat text bp
 	
 	

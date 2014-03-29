@@ -5,6 +5,9 @@ Creation-Date: 2012-02-01T22:00:26+01:00
 ====== GIS přednášky ======
 Created Středa 01 únor 2012
 
+openlayers
+http://workshops.boundlessgeo.com/openlayers-intro/layers/wms.html
+
 Přidal
 * GDAL2tiles
 * oldmapsonline.org

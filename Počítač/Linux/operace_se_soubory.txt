@@ -7,6 +7,7 @@ Created Pondělí 23 září 2013
 
 * když chcu něco přidat do souboru apropos gtk >> vypis.txt
 * **df** - přehled o discích (volná místa)
+	* df -h (vypíše to v GB a % - lidsky čitelné :))
 * **pwd **- aktuální umístění
 * **tree **- zobrazí podadresářovou strukturu
 * **ll -t** seřazení od nejnovějších souborů
@@ -17,7 +18,8 @@ Created Pondělí 23 září 2013
 * **rename** 's/^[^[:digit:]]*//g' *.mp3
 	* rename 's/(:digit:*) /\1 - /g'd
 * for file in `ls *.gpx`; do gpx2shp $file; done
- 
+* zjištění velikosti složky 
+	* # du -a /var | sort -n -r | head -n 10
 
 === Vytvoření/smazání souboru/složky ===
 * **touch** - rychlé vytvoření souboru

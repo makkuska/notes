@@ -1,0 +1,51 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2014-02-04T11:17:53+01:00
+
+====== Weby KGI ======
+Created Úterý 04 únor 2014
+
+* __8. KDO__
+	* **Út 4.2.**: 11:15 - 11:45 (0:30)
+	* **St 5.2.**:14:00-15:30 (1:30), 18-21:15 (3:15)
+	* **Čt 6.2.**: 9:15 - 9:30 (0:15)
+	* __celkem__ **5:30 (5,5h)**
+* __Web Barbary Petchenik__
+	* **pá** **7.2.**: 14:30 - 15:00 (1:30) ,16:30-19:00 (2:30), 19:20-20:00 (0:40), 23:00 - 1:40 (2:40) - celkem (6:30)
+	* **so 8.2.**: 15:00 - 15:45 (0:45), 16:45 - 19:45 (3:00), 21:45 - 00:45 (3:00) - celkem (6:45)
+	* **ne 9.2.**: (0:45), 18:00 - 20:10 (2:10), 21:00 - 22:40(1:40), 23:00-23:30 - celkem (5:00)
+	* **út 19.2.**: stahování fotek 1:45 - 2:00 (0:15)
+	* __celkem__** 18:30 (18,5h)**
+* __QR já__
+	* předchozí práce na QR započínána k Web BP, protože jsem to dělala souběžně
+	* **ne 16.2.**: (1:30)
+		* univerzity:
+			* Masaryk University | MUNI
+			* Palacký University Olomouc | UPOL
+			* J. E. Purkyně University in Ústí n. L. | UJEP
+			* University of West Bohemia | ZČU
+			* University of Defence | UNOB
+			* Technical University of Liberec | TUL
+			* Mendel University in Brno | MENDULU
+			* VŠB - Technical University of Ostrava | VŠB-TUO
+	* **po 17.2.** 19:00 - 00:45 (5:45)
+	* **út 18.2. **23:15- 1:45  (2:30)
+	* **st 19.2.**  3:00 (nasazování webu s Rosťou, přípava formuláře, doplňování nových záznamů do tabulky)
+	* **čt 20.2.** 1:00 (dodělávka fotogalerie)
+	* **pá 21.2.** 2:00 (pravidelně + schůzka)
+	* **so. 22.2**. 14:00 - 14:30, 16:30 - 20:40 (celkem 4:45)
+	* **ne 23.2**. 22:00 - 1:30 (3:30)
+	* **po 24.2.** 13:20 - 14:05 (0:45),  14:35 - 16:10 (0:35), 21:00 - 23:00 (2:00) - celkem 3:15
+	* __celkem__ **27:15 (27, 25h)**
+
+===== Kuba =====
+* **pá 7.2.**: 18:00 - 19:00 (1:00), 00:00 - 4:30 (4:30) - celkem (5:30)
+* **so 8.2.**: 14:30 - 16:00 (1:30),  18:00 - 22:00 (4:00) - celkem (5:30)
+* **ne 9.2.**: průběžně (2:30)
+* **ne 16.2**.: 22:00 - 00:00 (2:00)
+* __celkem__ **18h**
+	* jméno 30pt - modrá, 
+	* příjmení (UPCASE) 24 pt - modrá,
+	* organizace, město, stát 12 pt - šedá,
+	* I wanna talk about 17 pt - modrá,
+	* modrá je ta 100-60-25-0šedá 0-0-0-70

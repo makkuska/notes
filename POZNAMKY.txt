@@ -5,6 +5,30 @@ Creation-Date: 2012-01-22T23:22:41+01:00
 ====== POZNAMKY ======
 Created Neděle 22 leden 2012
 
+PODÍVAT SE NA :
+https://www.codeschool.com/code_tv/vim-and-tmux
+https://www.codeschool.com/code_tv/javascript-objects
+https://www.codeschool.com/code_tv/testing-coffeescript-with-jasmine
+https://www.codeschool.com/code_tv/most-useful-jquery-libraries
+https://www.codeschool.com/code_tv/css3buttons-gem
+https://www.codeschool.com/code_tv/jquery-colorbox
+https://www.codeschool.com/code_tv/happymapper
+https://www.codeschool.com/code_tv/responsive-web-with-initializr
+https://www.codeschool.com/code_tv/agile-best-practices
+
+http://www.impressivewebs.com/javascript-string-methods-reference/
+
+Knížka - JAVA script
+http://eloquentjavascript.net/contents.html
+JAVAscript ScreenCast http://www.letscodejavascript.com/v3/subscribe
+	zdarma: http://learn.appendto.com/lesson/javascript-101
+	nejnudnější: http://showmedo.com/videotutorials/video?name=7550000&fromSeriesID=755
+
+Proj4Leaflet článek o projekcích http://blog.kartena.se/local-projections-in-a-world-of-spherical-mercator/
+Ukázka LaefletJS http://gis.utah.gov/using-base-maps-with-non-standard-coordinate-systems-in-leafletjs/
+
+
+* Praha Konference - 798 + 24+24 + 167 + 198 = 1211
 
 Můj osud ví, že chci žít ve slaměno-hliněné chaloupce někde v přírodě, mít zvířátka a klid kolem sebe, ticho a rkásné výhledy, klidnou práci 3, max 4 dny v týdnu, kuchyň venku, ložnici pod hvězdami a vlastní zahrádku se zeleninou a vzrostlý sad. .. a stejně mi dává v nabídku dobrou práci v Praze ... co mi tím chce naznačit? Že ještě není konec mému hledání? Že mám ještě poznat hnus dnešní společnosti, že jsem ještě nepoznala dostatečně negativ tohoto životního stylu, který žije většina z nás? Zdá se mi to správně, že je to cesta, kteoru musím jít, abych pochopila ještě další věci a až poté se odebrala na klidný venkov a dostatečně si vše uživala? Myslíš, že bych to teď nezvládla? Že by mě klid venkova dost neuspokojoval? Možná né dostatečně. Možná mám poznat nové lidi ... možná mi chce nabídnou snazší cestu pro cestování .. Praha bude tak velká a hnusná, že mě to donutí vydat se na cesty .. Uvidíme. Ať už to bude jakékoliv, bylo přínostné se zamyslet a zjistit, že cokoliv se stane, je akceptováno. 
 

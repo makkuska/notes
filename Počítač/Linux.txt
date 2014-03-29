@@ -5,14 +5,32 @@ Creation-Date: 2012-02-06T20:41:21+01:00
 ====== Linux ======
 Created Pondělí 06 únor 2012
 
-balíčky - repozitář
-/etc/apt/sources.list.d/ubuntugis-ppa-precise.list
-	pro nový qgis2
-		deb     http://qgis.org/debian-nightly precise main
-		deb-src http://qgis.org/debian-nightly precise main
+
 
 aurikelt_@0908
 .ssh/authorized_keys
 
 * nastavení tiskárny:
 	* http://localhost:631/printers
+
+* __problémy z locale__
+	* LOCALE:
+		perl: warning: Setting locale failed.
+		perl: warning: Please check that your locale settings:
+			LANGUAGE = "en_US:en",
+			LC_ALL = (unset),
+			LC_PAPER = "cs_CZ.UTF-8",
+			LC_ADDRESS = "cs_CZ.UTF-8",
+			LC_MONETARY = "cs_CZ.UTF-8",
+			LC_NUMERIC = "cs_CZ.UTF-8",
+			LC_TELEPHONE = "cs_CZ.UTF-8",
+			LC_IDENTIFICATION = "cs_CZ.UTF-8",
+			LC_MEASUREMENT = "cs_CZ.UTF-8",
+			LC_TIME = "cs_CZ.UTF-8",
+			LC_NAME = "cs_CZ.UTF-8",
+			LANG = "en_US.UTF-8"
+		    are supported and installed on your system.
+		perl: warning: Falling back to the standard locale ("C").
+		Error: The locale requested by the environment is invalid.
+* v /etc/locale.gen by melo byt odkomentovane cs_CZ.UTF-8 a en_US.UTF-8
+	* a pak pustit locale-gen
